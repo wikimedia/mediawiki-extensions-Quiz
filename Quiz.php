@@ -132,7 +132,6 @@ class Quiz {
 	    	}
 	    	if($this->mRequest->getVal('ignoringCoef') == "on") {
 	    		$this->mIgnoringCoef = true;
-	    		echo "checked";
 	    	}
 	    } elseif (array_key_exists('points',$argv) && preg_match('`(.*?)/?(.*?)(!)?`', $argv['points'], $matches)) {	
 	    	if(array_key_exists(1,$matches)) {
