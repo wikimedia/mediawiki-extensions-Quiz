@@ -130,8 +130,9 @@ class Quiz {
 	    	if(is_numeric($this->mRequest->getVal('cutoffPoints'))) {
 	    		$this->mCutoffPoints = $wgRequest->getVal('cutoffPoints');
 	    	}
-	    	if($this->mRequest->getVal('ignoreCoef') == "on") {
+	    	if($this->mRequest->getVal('ignoringCoef') == "on") {
 	    		$this->mIgnoringCoef = true;
+	    		echo "checked";
 	    	}
 	    } elseif (array_key_exists('points',$argv) && preg_match('`(.*?)/?(.*?)(!)?`', $argv['points'], $matches)) {	
 	    	if(array_key_exists(1,$matches)) {
@@ -192,50 +193,51 @@ class Quiz {
 		# Ouput the style and the script to the header once for all.
 		if($this->mQuizId == 0) {
 			$head  = "<style type=\"text/css\">\n";
-	    	$head .= "input.text { width:2em; }\n";	    	
-	    	$head .= ".question {margin-left: 2em }\n";
-	    	$head .= ".header>p:first-child {text-indent: -1.5em;}\n";
-			$head .= ".header>p:first-child:first-letter {font-size: 1.2em;}\n";
-			$head .= ".correction { background-color: ".$this->getColor('correction')."; ";
-	    	# All the tags of the correction class will only be displayed if the quiz is being corrected.
-	    	if(!$this->mBeingCorrected) {
-	    		$head .= "display: none; ";
-	    	}
-	    	$head .= "}\n";
-			$head .= ".quizLegend td { padding: 0 0.4em 0 0.4em }\n";
+	    	$head .= ".quiz input.text { width:2em; }\n";	    	
+	    	$head .= ".quiz .question {margin-left: 2em }\n";
+	    	$head .= ".quiz .header>p:first-child {text-indent: -1.5em;}\n";
+			$head .= ".quiz .header>p:first-child:first-letter {font-size: 1.2em;}\n";
+			$head .= ".quiz .correction { background-color: ".$this->getColor('correction').";}\n";
+	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
+			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
 	    	$head .= "</style>\n";
 	    	global $wgJsMimeType, $wgScriptPath, $wgOut;
 	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/quiz/quiz.js\"></script>\n";
 	    	$wgOut->addScript($head);
 		}
+		$classHide = ($this->mBeingCorrected)? "" : " class=\"hideCorrection\"";
 		$output  = "<div id=\"quiz$this->mQuizId\" class=\"quiz\">";    
-	    $output .= "<form method=\"post\" action=\"#quiz$this->mQuizId\" onsubmit=\"return(correctIt());\">\n";
-	    $output .= "<div class=\"quizSettings\">\n";
-	    $output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/>\n";
-	    $output .= wfMsgHtml('quiz_addedPoints')." : <input class=\"text\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>.<br />\n";
-	    $output .= wfMsgHtml('quiz_cutoffPoints')." : <input class=\"text\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/>.<br />\n";
-	    $output .= wfMsgHtml('quiz_ignoreCoef')." : <input type=\"checkbox\" name=\"ignoringCoef\"";
-	    $output .= ($this->mIgnoringCoef)? "checked/>" : "/>";
-	    $output .= "<br/>\n";
-
-		$output .= "<table class=\"quizLegend\"><tr>";
-		$output .= "<td style=\"background: ".$this->getColor('right')."\">". wfMsgHtml('quiz_colorRight')."</td> ";
-		$output .= "<td style=\"background: ".$this->getColor('wrong')."\">". wfMsgHtml('quiz_colorWrong')."</td> ";
-		$output .= "<td style=\"background: ".$this->getColor('NA')."\">". wfMsgHtml('quiz_colorNA')."</td> ";
-		$output .= "<td style=\"background: ".$this->getColor('error')."\">". wfMsgHtml('quiz_colorError')."</td> ";
-		$output .= "</tr></table>";
-		$output .= "</div>\n";
-	    
+	    $output .= "<form $classHide method=\"post\" action=\"#quiz$this->mQuizId\" onsubmit=\"return(correctIt());\">\n";
+	    $output .= 	"<table class=\"settings\"><tbody>";
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_addedPoints')." : </td>" .
+					"<td><input class=\"text\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/></td><td></td>" .
+					"<td>".wfMsgHtml('quiz_colorError')." : </td>" .
+					"<td style=\"background: ".$this->getColor('error')."\"></td></tr>";
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_cutoffPoints')." : </td>" .
+					"<td><input class=\"text\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td><td></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')." : </td>" .
+					"<td class=\"correction\" style=\"background: ".$this->getColor('right')."\"></td></tr>";
+		$bChecked = ($this->mIgnoringCoef)? "checked" : "";
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_ignoreCoef')." : </td>" .
+					"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td><td></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')." : </td>" .
+					"<td class=\"correction\" style=\"background: ".$this->getColor('wrong')."\"></td></tr>";
+		$output .= 	"<tr><td></td>" .
+					"<td><input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/></td><td></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')." : </td>" .
+					"<td class=\"correction\" style=\"background: ".$this->getColor('NA')."\"></td></tr>";
+		$output .= 	"</tbody></table>";
+		
 	    $input = $this->parseIncludes($input);
 		$output .= $this->parseQuestions($input);
 			   
 	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/></p>";
-		$output .= "</form>\n";
 		$output .= "<span class=\"correction\">";
 		$output .= wfMsgHtml('quiz_score', 
 			"<span class=\"score\">$this->mScore</span>",
 			"<span class=\"total\">$this->mTotal</span>" );
 	    $output .= "</span>";
+	    $output .= "</form>\n";
 		$output .= "</div>\n";		
 		return $output;
 	}
@@ -302,6 +304,9 @@ class Quiz {
 		# Determine the border-left color, score and the total of the question.
 		if($lState != "") {
 			$output .= "style=\"border-left:3px solid ".$this->getColor($lState)."\"";
+			if($this->mIgnoringCoef) {
+				$question->mCoef = 1;
+			} 
 			switch($lState) {
 			case "right":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;

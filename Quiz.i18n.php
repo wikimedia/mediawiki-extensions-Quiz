@@ -51,13 +51,13 @@ $wgQuizMessages = array(
 		'quiz_score'			=> "Your score is $1 / $2"
  	),
  	'fr' => array(
- 		'quiz_addedPoints' 		=> "Point(s) ajout&#233;(s) pour une r&#233;ponse juste",
-		'quiz_cutoffPoints' 	=> "Point(s) retir&#233;(s) pour une r&#233;ponse erron&#233;e",
+ 		'quiz_addedPoints' 		=> "Point(s) ajouté(s) pour une réponse juste",
+		'quiz_cutoffPoints' 	=> "Point(s) retiré(s) pour une réponse erronée",
 		'quiz_ignoreCoef'		=> "Ignorer les coefficients des questions",
-		'quiz_shuffle'			=> "M&#233;langer les questions",
+		'quiz_shuffle'			=> "Mélanger les questions",
 		'quiz_colorRight'		=> "Juste",
 		'quiz_colorWrong'		=> "Faux",
-		'quiz_colorNA'			=> "Non r&#233;pondu",
+		'quiz_colorNA'			=> "Non répondu",
 		'quiz_colorError'		=> "Erreur de syntaxe",
 		'quiz_correction'		=> "Correction",
 		'quiz_score'			=> "Votre score est $1 / $2"
