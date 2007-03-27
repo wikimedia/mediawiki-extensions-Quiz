@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.5b
+ * @version 0.6b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
@@ -39,7 +39,7 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.5b',
+    'version'=>'0.6b',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
     'description' => 'Quiz tool for MediaWiki'
@@ -199,6 +199,8 @@ class Quiz {
 			$head .= ".quiz .correction { background-color: ".$this->getColor('correction').";}\n";
 	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
 			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
+			$head .= ".quiz .sign {text-align:center; }\n";
+			$head .= ".quiz .sign>input {border: none !important; }\n";
 	    	$head .= "</style>\n";
 	    	global $wgJsMimeType, $wgScriptPath, $wgOut;
 	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/quiz/quiz.js\"></script>\n";
@@ -210,21 +212,21 @@ class Quiz {
 	    $output .= 	"<table class=\"settings\"><tbody>";
 		$output .= 	"<tr><td>".wfMsgHtml('quiz_addedPoints')." : </td>" .
 					"<td><input class=\"text\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/></td><td></td>" .
-					"<td>".wfMsgHtml('quiz_colorError')." : </td>" .
-					"<td style=\"background: ".$this->getColor('error')."\"></td></tr>";
+					"<td style=\"background: ".$this->getColor('error')."\"></td>" .
+					"<td>".wfMsgHtml('quiz_colorError')."</td></tr>";
 		$output .= 	"<tr><td>".wfMsgHtml('quiz_cutoffPoints')." : </td>" .
 					"<td><input class=\"text\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td><td></td>" .
-					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')." : </td>" .
-					"<td class=\"correction\" style=\"background: ".$this->getColor('right')."\"></td></tr>";
-		$bChecked = ($this->mIgnoringCoef)? "checked" : "";
+					"<td class=\"correction\" style=\"background: ".$this->getColor('right')."\"></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td></tr>";
+		$bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";
 		$output .= 	"<tr><td>".wfMsgHtml('quiz_ignoreCoef')." : </td>" .
 					"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td><td></td>" .
-					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')." : </td>" .
-					"<td class=\"correction\" style=\"background: ".$this->getColor('wrong')."\"></td></tr>";
+					"<td class=\"correction\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td></tr>";
 		$output .= 	"<tr><td></td>" .
 					"<td><input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/></td><td></td>" .
-					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')." : </td>" .
-					"<td class=\"correction\" style=\"background: ".$this->getColor('NA')."\"></td></tr>";
+					"<td class=\"correction\" style=\"background: ".$this->getColor('NA')."\"></td>" .
+					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td></tr>";
 		$output .= 	"</tbody></table>";
 		
 	    $input = $this->parseIncludes($input);
@@ -499,7 +501,8 @@ class Question {
 				$typeId  = substr($this->mType, 0, 1);
 				$typeId .= array_key_exists(1, $matches)? "c" : "n";				
 				foreach($matches as $signId => $sign) {
-					$cellStyle = "";
+					//$ieStyle = $ffStyle = "";
+					$inputStyle = "";
 					# Determine the input's name and value.
 					switch($typeId) {
 					case "mn":
@@ -520,7 +523,7 @@ class Question {
 						break;
 					}
 					# Determine if the input had to be checked.
-					$checked = ($quiz->mBeingCorrected && $quiz->mRequest->getVal($name) == $value)? "checked" : NULL;
+					$checked = ($quiz->mBeingCorrected && $quiz->mRequest->getVal($name) == $value)? "checked=\"checked\"" : NULL;
 					# Determine the color of the cell and modify the state of the question.
 					switch($sign) {
 					case "+":
@@ -530,16 +533,16 @@ class Question {
 						if($this->mType == "singleChoice" && $expectOn > 1) {
 							$expected = "=";
 							$this->setState("error");
-							$cellStyle = " style=\"background: ".$quiz->getColor('error').";\"";
+							$inputStyle = "style=\"outline: ".$quiz->getColor('error')." solid 3px; border: 3px solid ".$quiz->getColor('error').";\"";
 						}
 						if($quiz->mBeingCorrected) {
 							if($checked) {
 								$checkedCount++;
 								$this->setState("right");
-								$cellStyle = " style=\"background: ".$quiz->getColor('right').";\"";
+								$inputStyle = "style=\"outline: ".$quiz->getColor('right')." solid 3px; border: 3px solid ".$quiz->getColor('right').";\"";
 							} else {
 								$this->setState("na_wrong");
-								$cellStyle = " style=\"background: ".$quiz->getColor('wrong').";\"";
+								$inputStyle = "style=\"outline: ".$quiz->getColor('wrong')." solid 3px; border: 3px solid ".$quiz->getColor('wrong').";\"";
 							}
 						} 
 						break;
@@ -549,7 +552,7 @@ class Question {
 							if($checked) {
 								$checkedCount++;
 								$this->setState("wrong");
-								$cellStyle = " style=\"background: ".$quiz->getColor('wrong').";\"";
+								$inputStyle = "style=\"outline: ".$quiz->getColor('wrong')." solid 3px; border: 3px solid ".$quiz->getColor('wrong').";\"";
 							} else {
 								$this->setState("na_right");
 							}
@@ -558,11 +561,11 @@ class Question {
 					default:
 						$expected = "=";
 						$this->setState("error");
-						$cellStyle = " style=\"background: ".$quiz->getColor('error').";\"";
+						$inputStyle = "style=\"outline: ".$quiz->getColor('error')." solid 3px; border: 3px solid ".$quiz->getColor('error').";\"";
 						break;
 					}
-					$signesOutput  .= "<td$cellStyle>";
-					$signesOutput .= "<input class=\"$expected\" type=\"$inputType\" name=\"$name\" value=\"$value\" $checked/>";
+					$signesOutput .= "<td class=\"sign\">";
+					$signesOutput .= "<input class=\"$expected\" $inputStyle type=\"$inputType\" name=\"$name\" value=\"$value\" $checked/>";
 					$signesOutput .= "</td>";
 				}
 				if($typeId == "sc") {
@@ -594,7 +597,7 @@ class Question {
 			}
 		}
 		# A single choice object with no correct proposal is a syntax error.
-		if($typeId == "sn" && $expectOn == 0) {
+		if(isset($typeId) && $typeId == "sn" && $expectOn == 0) {
 			$this->setState("error");			
 		}	
 		return $output;
