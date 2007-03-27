@@ -2,7 +2,7 @@
 /**
  * ***** BEGIN LICENSE BLOCK *****
  * This file is part of Quiz.
- * Copyright (c) 2007 Louis-R�mi BABE. All rights reserved.
+ * Copyright (c) 2007 Louis-R�mi BABE. All rights reserved.
  *
  * Quiz is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@
  * @version 0.5b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
- * @author BABE Louis-R�mi <lrbabe@gmail.com>
+ * @author BABE Louis-R�mi <lrbabe@gmail.com>
  */
 
 /**
@@ -40,7 +40,7 @@
 $wgQuizMessages = array(
  	'en' => array(
  		'quiz_addedPoints' 		=> "Point(s) added for a correct answer",
-		'quiz_cutoffPoints' 	=> "Point(s) subtracted for a wrong answer",
+		'quiz_cutoffPoints'		=> "Point(s) subtracted for a wrong answer",
 		'quiz_ignoreCoef'		=> "Ignore the questions' coefficients",
 		'quiz_shuffle'			=> "Shuffling the questions",
 		'quiz_colorRight'		=> "Right",
@@ -50,9 +50,21 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Correction",
 		'quiz_score'			=> "Your score is $1 / $2"
  	),
+ 	'de' => array(
+ 		'quiz_addedPoints' 		=> "Pluspunkte für eine richtige Antwort",
+		'quiz_cutoffPoints'		=> "Minuspunkte für eine falsche Antwort",
+		'quiz_ignoreCoef'		=> "Ignoriere den Fragen-Koeffizienten",
+		'quiz_shuffle'			=> "Fragen mischen",
+		'quiz_colorRight'		=> "Richtig",
+		'quiz_colorWrong'		=> "Falsch",
+		'quiz_colorNA'			=> "Nicht beantwortet",
+		'quiz_colorError'		=> "Syntaxfehler",
+		'quiz_correction'		=> "Korrektur",
+		'quiz_score'			=> "Punkte: $1 / $2"
+ 	),
  	'fr' => array(
  		'quiz_addedPoints' 		=> "Point(s) ajouté(s) pour une réponse juste",
-		'quiz_cutoffPoints' 	=> "Point(s) retiré(s) pour une réponse erronée",
+		'quiz_cutoffPoints'		=> "Point(s) retiré(s) pour une réponse erronée",
 		'quiz_ignoreCoef'		=> "Ignorer les coefficients des questions",
 		'quiz_shuffle'			=> "Mélanger les questions",
 		'quiz_colorRight'		=> "Juste",
