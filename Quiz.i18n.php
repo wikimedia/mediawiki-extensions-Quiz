@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.5b
+ * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Rémi <lrbabe@gmail.com>

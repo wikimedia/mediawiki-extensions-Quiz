@@ -27,7 +27,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/quiz.php';
  * 
- * @version 0.4b
+ * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
@@ -36,20 +36,51 @@
 window.onload = prepareQuiz;
 
 /**
- * Prépare le questionnaire en cachant certains éléments.
+ * Prepare the quiz for "javascriptable" browsers
  */
 function prepareQuiz() {
-	// Ajoute la possibilité de décocher les boutons radio
 	var bodyContentDiv = document.getElementById('bodyContent').getElementsByTagName('div');
 	for(var i=0; i<bodyContentDiv.length; ++i) {
 		if(bodyContentDiv[i].className == 'quiz') {
-			var radioButton = bodyContentDiv[i].getElementsByTagName('input');
-			for(var j=0; j<radioButton.length; ++j) {
-				radioButton[j].ondblclick = function() {
-					this.checked = false;
-				};
+			var input = bodyContentDiv[i].getElementsByTagName('input');			
+			for(var j=0; j<input.length; ++j) {
+				// Add the possibility of unchecking radio buttons
+				if(input[j].type == "radio") {
+					input[j].ondblclick = function() {
+						this.checked = false;
+					};
+				}
+				// Displays the shuffle buttons.
+				if(input[j].className == "scriptshow") {
+					input[j].style.display = "inline";
+					input[j].onclick = function() { shuffle(this); };
+				}
 			}
 		}
-	}	
+	}
 }
 
+/**
+ * Shuffle questions
+ */
+function shuffle(input) {
+	var quiz = input.parentNode.parentNode.parentNode.parentNode.parentNode;
+	var div = quiz.getElementsByTagName('div');
+	var questions = new Array();
+	var k = 0;
+	for(var i=0; i<div.length; ++i) {
+		if(div[i].className == "quizQuestions") {
+			var quizQuestions = div[i];
+		} 
+		if(div[i].className == "question") {
+			questions[k] = div[i];
+			k++;
+		}
+	}
+	var quizHTML = "";
+	for(var l, x, m = questions.length; m; l = parseInt(Math.random() * m), x = questions[--m], questions[m] = questions[l], questions[l] = x);
+	for(var o=0; o<questions.length; ++o) {
+		quizHTML += "<div class='question'>" + questions[o].innerHTML + "</div>";		
+	}
+	quizQuestions.innerHTML = quizHTML;
+}

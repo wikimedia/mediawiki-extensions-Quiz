@@ -39,7 +39,7 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.6b',
+    'version'=>'0.7b',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
     'description' => 'Quiz tool for MediaWiki'
@@ -85,7 +85,7 @@ class Quiz {
 	/**#@+
 	 * @protected
 	 */
-	var $mQuizId, $mBeingCorrected, $mScore, $mTotal, $mAddedPoints, $mCutoffPoints, $mIgnoringCoef;
+	var $mQuizId, $mQuestionId, $mBeingCorrected, $mScore, $mTotal, $mAddedPoints, $mCutoffPoints, $mIgnoringCoef;
 	# Quiz parameters
 	var $mMessages, $mColors;
 	var $mParser, $mRequest;
@@ -98,7 +98,7 @@ class Quiz {
 	 * @public
 	 */
 	function Quiz($argv, &$parser) {
-		global $wgRequest, $wgLanguageCode, $wgQuizMessages, $wgQuizColors, $gQuestionId;
+		global $wgRequest, $wgLanguageCode;
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
 		# Determine which messages will be used, according to the language.
@@ -114,7 +114,9 @@ class Quiz {
 		$this->mQuizId = self::$sQuizId;
 		self::$sQuizId++;
 		# Reset the unique identifier of the questions.
-		$gQuestionId = 0;
+		$this->mQuestionId = 0;
+		# Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
+		$this->mShuffleDiv = 0;
 		# Determine if this quiz is being corrected or not, according to the quizId
 	    $this->mBeingCorrected = ($wgRequest->getVal('quizId') == "$this->mQuizId")? true : false;
 	    # Initialize various parameters used for the score calculation
@@ -194,8 +196,9 @@ class Quiz {
 			$head  = "<style type=\"text/css\">\n";
 	    	$head .= ".quiz input.text { width:2em; }\n";	    	
 	    	$head .= ".quiz .question {margin-left: 2em }\n";
-	    	$head .= ".quiz .header>p:first-child {text-indent: -1.5em;}\n";
-			$head .= ".quiz .header>p:first-child:first-letter {font-size: 1.2em;}\n";
+	    	$head .= ".quiz .header .questionId {font-size: 1.2em; float: left;}\n";
+	    	# This fu**ing ie hiddes the questionId when it is indented...
+	    	$head .= "*>.quiz .header .questionId {text-indent: -1.5em;}\n";
 			$head .= ".quiz .correction { background-color: ".$this->getColor('correction').";}\n";
 	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
 			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
@@ -208,29 +211,31 @@ class Quiz {
 		}
 		$classHide = ($this->mBeingCorrected)? "" : " class=\"hideCorrection\"";
 		$output  = "<div id=\"quiz$this->mQuizId\" class=\"quiz\">";    
-	    $output .= "<form $classHide method=\"post\" action=\"#quiz$this->mQuizId\" onsubmit=\"return(correctIt());\">\n";
+	    $output .= "<form $classHide method=\"post\" action=\"#quiz$this->mQuizId\" >\n";
 	    $output .= 	"<table class=\"settings\"><tbody>";
-		$output .= 	"<tr><td>".wfMsgHtml('quiz_addedPoints')." : </td>" .
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_addedPoints').":</td>" .
 					"<td><input class=\"text\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/></td><td></td>" .
 					"<td style=\"background: ".$this->getColor('error')."\"></td>" .
 					"<td>".wfMsgHtml('quiz_colorError')."</td></tr>";
-		$output .= 	"<tr><td>".wfMsgHtml('quiz_cutoffPoints')." : </td>" .
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_cutoffPoints').":</td>" .
 					"<td><input class=\"text\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td><td></td>" .
 					"<td class=\"correction\" style=\"background: ".$this->getColor('right')."\"></td>" .
 					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td></tr>";
 		$bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";
-		$output .= 	"<tr><td>".wfMsgHtml('quiz_ignoreCoef')." : </td>" .
+		$output .= 	"<tr><td>".wfMsgHtml('quiz_ignoreCoef').":</td>" .
 					"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td><td></td>" .
 					"<td class=\"correction\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
 					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td></tr>";
-		$output .= 	"<tr><td></td>" .
+		$output .= 	"<tr><td><input class=\"scriptshow\" type=\"button\" value=\"".wfMsgHtml('quiz_shuffle')."\" style=\"display: none;\"/></td>" .
 					"<td><input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/></td><td></td>" .
 					"<td class=\"correction\" style=\"background: ".$this->getColor('NA')."\"></td>" .
 					"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td></tr>";
 		$output .= 	"</tbody></table>";
 		
 	    $input = $this->parseIncludes($input);
+		$output .= "<div class=\"quizQuestions\">";
 		$output .= $this->parseQuestions($input);
+		$output .= "</div>";
 			   
 	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/></p>";
 		$output .= "<span class=\"correction\">";
@@ -244,7 +249,7 @@ class Quiz {
 	}
 	
 	/**
-	 * Replace inclusions from other quiz.
+	 * Replace inclusions from other quizzes.
 	 *
 	 * @param  $input				Text between <quiz> and </quiz> tags, in quiz syntax.
 	 */
@@ -276,27 +281,68 @@ class Quiz {
 	 * @param  $input				A question in quiz syntax.
 	 */
 	function parseQuestions($input) {
-		$questionPattern = '`(.*?)\n\{(.*?)\}[ \t]*\n(.*?)(\n[ \t]*\n|\s*$)`s';
-		return preg_replace_callback($questionPattern, array($this, "parseQuestion" ), $input);
+		$splitPattern = '`(^|\n[ \t]*)\n\{`';		
+		$unparsedQuestions = preg_split($splitPattern, $input, -1, PREG_SPLIT_NO_EMPTY );
+		$output = "";
+		$questionPattern = '`(.*?[^|])\}([ \t]*\n(.*))?`s';
+		foreach($unparsedQuestions as $unparsedQuestion) {
+			# If this "unparsedQuestion" is not a full question,
+			# we put the text into a buffer to add it at the beginning of the next question.
+			if(!empty($buffer)) $unparsedQuestion = "$buffer\n\n{".$unparsedQuestion;
+			if(preg_match($questionPattern, $unparsedQuestion, $matches)) {
+				$buffer = "";
+				$output.= $this->parseQuestion($matches);
+			} else {
+				$buffer = $unparsedQuestion;
+			}
+		}
+		# Close unclosed "shuffle" or "noshuffle" tags.
+		while($this->mShuffleDiv > 0) {
+			$output.= "</div>";
+			$this->mShuffleDiv--;
+		}
+		return $output;
 	}
 	
 	/**
 	 * Convert a question from quiz syntax to HTML
 	 * 
 	 * @param  $matches				Elements matching $questionPattern.
-	 * 								$matches[1] is the text before the question.
-	 * 								$matches[2] is the question header.
+	 * 								$matches[1] is the question header.
 	 * 								$matches[3] is the question object.
 	 */
 	function parseQuestion($matches) {
-		$question = new Question($this->mBeingCorrected);
-		$output  = $this->mParser->recursiveTagParse($matches[1]);
-		$buffer  = $question->parseHeader($matches[2], $this->mParser);
-		$output .= "<div class=\"question\">\n";
+		$question = new Question($this->mBeingCorrected, $this->mQuestionId);
+		$buffer  = $question->parseHeader($matches[1], $this->mParser);
+		if(!array_key_exists(3, $matches) || trim($matches[3]) == "") {
+			switch($matches[1]) {
+			case "X":
+				$this->mShuffleDiv++;
+				return "<div class=\"shuffle\">\n";
+				break;
+			case "!X":
+				$this->mShuffleDiv++;
+				return "<div class=\"noshuffle\">\n";
+				break;
+			case "/X":
+				# Prevent closing of other tags.
+				if($this->mShuffleDiv == 0) {
+					return;
+				} else {
+					$this->mShuffleDiv--;
+					return "</div>\n";
+				}
+				break;
+			default:
+				return "<div class=\"quizText\">$buffer<br/></div>";
+				break;
+			}
+		}
+		$output  = "<div class=\"question\">\n";
 		$output .= "<input type=\"hidden\" name=\"questionType\" value=\"{$question->mType}\"/>";
 		$output .= "<input type=\"hidden\" name=\"questionCoef\" value=\"{$question->mCoef}\"/>";
 		$output .= "<div class=\"header\">\n";
-		$output .= $buffer;
+		$output .= "<span class=\"questionId\">".++$this->mQuestionId.". </span>$buffer";
 		$output .= "</div>\n";
 		# Store the parsed object into a buffer to determine some parameters before outputing it.
 		$buffer = call_user_func(array($question, "{$question->mType}ParseObject"), $matches[3], $this);
@@ -344,11 +390,8 @@ class Question {
 	 * @public
 	 * @param  $beingCorrected			boolean.
 	 */
-	function Question($beingCorrected) {
-		# Determine a unique questionId
-		global $gQuestionId;
-		$this->mQuestionId = $gQuestionId;
-		$gQuestionId++;
+	function Question($beingCorrected, $questionId) {
+		$this->mQuestionId = $questionId;
 		$this->mState = ($beingCorrected)? "NA" : "";
 		$this->mType = "multipleChoice";
 		$this->mCoef = 1;
@@ -395,23 +438,27 @@ class Question {
 	}
 	
 	/**
+	 * Accessor for the question Id.
+	 * If the questionId is accessed, it is incremented.
+	 */
+	
+	/**
 	 * Convert the question's header into HTML.
 	 * 
 	 * @param  $input				The quiz header in quiz syntax.
 	 * @param  $parser				The wikitext parser.
 	 */
 	function parseHeader($input, $parser) {
-		$parametersPattern = '`\n\|(.*)\s*$`';
-		$input = preg_replace_callback($parametersPattern, array($this, "parseParameters"), $input);		
+		$parametersPattern = '`\n\|([^\|].*)\s*$`';
+		$input = preg_replace_callback($parametersPattern, array($this, "parseParameters"), $input);	
 		$splitHeaderPattern = '`\n\|\|`';
 		$unparsedHeader = preg_split($splitHeaderPattern, $input);
-	 	$output = ($this->mQuestionId+1).".&nbsp;&nbsp;";
-		# If the header is empty, the question has a syntax error.
+	 	# If the header is empty, the question has a syntax error.
 		if(trim($unparsedHeader[0]) == "") {
 	 		$unparsedHeader[0] = "???";
 	 		$this->setState("error");
-	 	}		
-		$output .= $parser->recursiveTagParse(trim($unparsedHeader[0])."\n");
+	 	}
+	 	$output = $parser->recursiveTagParse(trim($unparsedHeader[0])."\n");
 		if(array_key_exists(1,$unparsedHeader)) {
 	 		$output .= "<table><tbody><tr class=\"correction\">";
 			$output .= "<td>&#151;&#155;</td><td>".$parser->recursiveTagParse(trim($unparsedHeader[1]))."</td>";
@@ -501,7 +548,6 @@ class Question {
 				$typeId  = substr($this->mType, 0, 1);
 				$typeId .= array_key_exists(1, $matches)? "c" : "n";				
 				foreach($matches as $signId => $sign) {
-					//$ieStyle = $ffStyle = "";
 					$inputStyle = "";
 					# Determine the input's name and value.
 					switch($typeId) {
