@@ -75,9 +75,9 @@ $wgQuizMessages = array(
 		'quiz_score'			=> "Votre score est $1 / $2"
  	),
  	'sk' => array(
- 		'quiz_addedPoints' 		=> "Bod(y) prièítané za správnu odpoveï",
-		'quiz_cutoffPoints' 		=> "Bod(y) odèítané za nesprávnu odpoveï",
-		'quiz_ignoreCoef'		=> "Ignorova� koeficienty otázok",
+ 		'quiz_addedPoints' 		=> "Bod(y) pričítané za správnu odpoveď",
+		'quiz_cutoffPoints' 		=> "Bod(y) odčítané za nesprávnu odpoveď",
+		'quiz_ignoreCoef'		=> "Ignorovať koeficienty otázok",
 		'quiz_shuffle'			=> "Náhodný výber otázok",
 		'quiz_colorRight'		=> "Správne",
 		'quiz_colorWrong'		=> "Nesprávne",
