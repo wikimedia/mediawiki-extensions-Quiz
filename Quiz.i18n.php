@@ -74,5 +74,17 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Correction",
 		'quiz_score'			=> "Votre score est $1 / $2"
  	),
- );
+ 	'sk' => array(
+ 		'quiz_addedPoints' 		=> "Bod(y) prièítané za správnu odpoveï",
+		'quiz_cutoffPoints' 		=> "Bod(y) odèítané za nesprávnu odpoveï",
+		'quiz_ignoreCoef'		=> "Ignorova� koeficienty otázok",
+		'quiz_shuffle'			=> "Náhodný výber otázok",
+		'quiz_colorRight'		=> "Správne",
+		'quiz_colorWrong'		=> "Nesprávne",
+		'quiz_colorNA'			=> "Nezodpovedané",
+		'quiz_colorError'		=> "Syntaktická chyba",
+		'quiz_correction'		=> "Oprava",
+		'quiz_score'			=> "Vaše skóre je $1 / $2"
+ 	),
+);
  ?>
