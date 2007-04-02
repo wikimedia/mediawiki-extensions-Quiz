@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.6b
+ * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
@@ -196,7 +196,7 @@ class Quiz {
 			$head  = "<style type=\"text/css\">\n";
 	    	$head .= ".quiz input.text { width:2em; }\n";	    	
 	    	$head .= ".quiz .question {margin-left: 2em }\n";
-	    	$head .= ".quiz .header .questionId {font-size: 1.2em; float: left;}\n";
+	    	$head .= ".quiz .header .questionId {font-size: 1.1em; font-weight: bold; float: left;}\n";
 	    	# This fu**ing ie hiddes the questionId when it is indented...
 	    	$head .= "*>.quiz .header .questionId {text-indent: -1.5em;}\n";
 			$head .= ".quiz .correction { background-color: ".$this->getColor('correction').";}\n";
@@ -461,7 +461,7 @@ class Question {
 	 	$output = $parser->recursiveTagParse(trim($unparsedHeader[0])."\n");
 		if(array_key_exists(1,$unparsedHeader)) {
 	 		$output .= "<table><tbody><tr class=\"correction\">";
-			$output .= "<td>&#151;&#155;</td><td>".$parser->recursiveTagParse(trim($unparsedHeader[1]))."</td>";
+			$output .= "<td>&#x2192;</td><td>".$parser->recursiveTagParse(trim($unparsedHeader[1]))."</td>";
 			$output .= "</tr></tbody></table>";
 	 	}
 	 	return $output;
@@ -629,7 +629,7 @@ class Question {
 			} elseif(preg_match($this->mCorrectionPattern, $raw, $matches)) {
 				$rawClass = "correction";
 				$text = array_pop($matches);
-				$signesOutput = "<td>&#151;&#155;</td>";
+				$signesOutput = "<td>&#x2192;</td>";
 				# Hacks to avoid counting the number of signes.
 				$colSpan = " colspan=\"11\"";
 			}
