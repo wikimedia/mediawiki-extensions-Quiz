@@ -8,7 +8,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * Quiz is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -21,16 +21,16 @@
  * ***** END LICENSE BLOCK *****
  *
  * Quiz is a quiz tool for mediawiki.
- * 
+ *
  * To activate this extension :
  * * Create a new directory named quiz into the directory "extensions" of mediawiki.
  * * Place this file and the files Quiz.i18n.php and quiz.js there.
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
- * 
+ *
  * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
- * 
+ *
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
  */
 
@@ -74,7 +74,19 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Correction",
 		'quiz_score'			=> "Votre score est $1 / $2"
  	),
- 	'sk' => array(
+  	'id' => array(
+ 		'quiz_addedPoints' 		=> "Penambahan angka untuk jawaban yang benar",
+		'quiz_cutoffPoints'		=> "Pengurangan angka untuk jawaban yang salah",
+		'quiz_ignoreCoef'		=> "Abaikan koefisien pertanyaan",
+		'quiz_shuffle'			=> "Mengacak pertanyaan",
+		'quiz_colorRight'		=> "Benar",
+		'quiz_colorWrong'		=> "Salah",
+		'quiz_colorNA'			=> "Tak dijawab",
+		'quiz_colorError'		=> "Kesalahan sintaks",
+		'quiz_correction'		=> "Koreksi",
+		'quiz_score'			=> "Skor Anda adalah $1 / $2"
+ 	),
+	'sk' => array(
  		'quiz_addedPoints' 		=> "Bod(y) pričítané za správnu odpoveď",
 		'quiz_cutoffPoints' 		=> "Bod(y) odčítané za nesprávnu odpoveď",
 		'quiz_ignoreCoef'		=> "Ignorovať koeficienty otázok",
