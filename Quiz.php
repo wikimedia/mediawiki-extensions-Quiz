@@ -2,7 +2,7 @@
 /**
  * ***** BEGIN LICENSE BLOCK *****
  * This file is part of Quiz.
- * Copyright (c) 2007 Louis-Rémi BABE. All rights reserved.
+ * Copyright (c) 2007 Louis-Rï¿½mi BABE. All rights reserved.
  *
  * Quiz is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@
  * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
- * @author BABE Louis-Rémi <lrbabe@gmail.com>
+ * @author BABE Louis-Rï¿½mi <lrbabe@gmail.com>
  */
  
 /**
@@ -284,7 +284,7 @@ class Quiz {
 		$splitPattern = '`(^|\n[ \t]*)\n\{`';		
 		$unparsedQuestions = preg_split($splitPattern, $input, -1, PREG_SPLIT_NO_EMPTY );
 		$output = "";
-		$questionPattern = '`(.*?[^|])\}([ \t]*\n(.*))?`s';
+		$questionPattern = '`(.*?[^|])\}[ \t]*(\n(.*)|$)`s';
 		foreach($unparsedQuestions as $unparsedQuestion) {
 			# If this "unparsedQuestion" is not a full question,
 			# we put the text into a buffer to add it at the beginning of the next question.
