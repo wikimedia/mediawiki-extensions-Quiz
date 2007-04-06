@@ -1,7 +1,7 @@
 /**
  * ***** BEGIN LICENSE BLOCK *****
  * This file is part of Quiz.
- * Copyright (c) 2007 Louis-Rémi BABE. All rights reserved.
+ * Copyright (c) 2007 Louis-RÃ©mi BABE. All rights reserved.
  *
  * Quiz is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@
  * @version 0.7b
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
- * @author BABE Louis-Rémi <lrbabe@gmail.com>
+ * @author BABE Louis-RÃ©mi <lrbabe@gmail.com>
  */
  
 window.onload = prepareQuiz;
