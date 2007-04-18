@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.8.1
+ * @version 0.8
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * @author BABE Louis-Remi <lrbabe@gmail.com>
  */
@@ -38,10 +38,10 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.8.1',
+    'version'=>'0.8.2',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
-    'description' => 'Quiz tool for MediaWiki'
+    'description' => 'Allows creation of quizzes'
 );
     
 /**
@@ -205,9 +205,9 @@ class Quiz {
 			$head .= ".quiz .sign {text-align:center; }\n";
 			# Part for the inputfields
 			$head .= ".quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited { text-decoration:none; color:black; outline:0 }";
-			$head .= ".quiz a.input span { outline:black solid 1px}";
-			$head .= "* html .quiz a.input span { border:1px solid black }";
-			$head .= ".quiz a.input big { font-weight:bold; font-family:sans-serif; }";
+			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px}";
+			$head .= "* html .quiz a.input span { border:1px solid #7F9DB9 }";
+			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-right:1px; }";
 			$head .= ".quiz a.input input { padding-left:2px; border:0; }";
 			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:".Quiz::getColor("correction")."; }";
 			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }";
@@ -367,13 +367,16 @@ class Quiz {
 			case "right":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore += $this->mAddedPoints * $question->mCoef;
+				$output .= "title=\" ".wfMsgHtml('quiz_colorRight')." | ".($this->mAddedPoints * $question->mCoef)." \"";
 				break;
 			case "wrong":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore -= $this->mCutoffPoints * $question->mCoef;
+				$output .= "title=\" ".wfMsgHtml('quiz_colorWrong')." | -".($this->mCutoffPoints * $question->mCoef)." \"";
 				break;
 			case "NA":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
+				$output .= "title=\" ".wfMsgHtml('quiz_colorNA')." | 0 \"";
 				break;
 			}
 		}
@@ -424,10 +427,11 @@ class Question {
 	 */
 	function setState($pState) {
 		if ($pState == "error" 
-		|| ($pState == "wrong" && $this->mState != "error") 
-		|| ($pState == "right" && ($this->mState == "right" || $this->mState == "NA" || $this->mState == "na_right"))
-		|| ($pState == "na_wrong" && ($this->mState == "NA" || $this->mState == "na_right"))
-		|| ($pState == "na_right" && ($this->mState == "NA"))
+		|| ($pState == "wrong" 		&&  $this->mState != "error") 
+		|| ($pState == "right" 		&& ($this->mState == "NA" 		|| $this->mState == "na_right"))
+		|| ($pState == "na_wrong" 	&& ($this->mState == "NA" 		|| $this->mState == "na_right"))
+		|| ($pState == "na_right"	&& ($this->mState == "NA"))
+		|| ($pState == "new_NA" 	&&	$this->mState == "right")
 		) {
 			$this->mState = $pState;
 		}
@@ -446,7 +450,7 @@ class Question {
 	function getState() {
 		if ($this->mState == "na_right") {
 			return "right";
-		} elseif ($this->mState == "na_wrong") {
+		} elseif ($this->mState == "na_wrong" || $this->mState == "new_NA") {
 			return "NA";
 		} else {
 			return $this->mState;
@@ -753,7 +757,7 @@ class Question {
 						if(array_key_exists(5, $matches)) $strlen = $size = $maxlength = "";
 						elseif(array_key_exists(3, $matches)) $strlen = strlen($matches[1]) > strlen($matches[3])? strlen($matches[1]) : strlen($matches[3]);
 						else $strlen = strlen($matches[1]);						
-						if($this->mBeingCorrected && $value != "") {
+						if($this->mBeingCorrected && !empty($value)) {
 							$state = (is_numeric($value) &&
 							(  (array_key_exists(5, $matches) && $value >= ($matches[1]-($matches[1]*$matches[4])/100) && $value <= ($matches[1]+($matches[1]*$matches[4])/100) )
 							|| (array_key_exists(3, $matches) && $value >= $matches[1] && $value <= $matches[3])
@@ -762,7 +766,7 @@ class Question {
 					} else {
 						$strlen = strlen($possibility);
 						$class = "class=\"words\"";
-						if($this->mBeingCorrected && $value != "") $state = ($value == $possibility)? "right" : "wrong";
+						if($this->mBeingCorrected && !empty($value)) $state = ($value == $possibility)? "right" : "wrong";
 					}
 					if(array_key_exists(3, $input) && $strlen > $input[3]) {
 						# The textfield is too short for the answer
@@ -772,16 +776,16 @@ class Question {
 				}
 				if($this->mBeingCorrected) $a_inputBeg.= "$possibility<br/>";					
 			}
-			$value = "value=\"".Sanitizer::removeHTMLtags($value)."\"";
+			$value = empty($value)? "" : "value=\"".str_replace('"', "'", $value)."\"";
 			if($this->mBeingCorrected) {
 				$a_inputBeg.= "</span>";
 				$a_inputEnd = "</a>";				
-				$big = "<big>v</big>";
+				$big = "<em>&#9660;</em>";
 			}
 		}
 		if($state == "error" || $this->mBeingCorrected) {
 			$style = "style=\"border-left:3px solid ".Quiz::getColor($state)."; \"";
-			$this->setState($state);
+			$this->setState(empty($value)? "new_NA" : $state);
 			if($state == "error") {
 				$size = "";
 				$maxlength = "";
