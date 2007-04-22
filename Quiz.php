@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.8
+ * @version 0.9
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * @author BABE Louis-Remi <lrbabe@gmail.com>
  */
@@ -38,7 +38,7 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.8.2',
+    'version'=>'0.9.1',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
     'description' => 'Allows creation of quizzes'
@@ -119,22 +119,26 @@ class Quiz {
 		# Determine if this quiz is being corrected or not, according to the quizId
 	    $this->mBeingCorrected = ($wgRequest->getVal('quizId') == "$this->mQuizId")? true : false;
 	    # Initialize various parameters used for the score calculation
+	    $this->mState = "NA";
 	    $this->mScore = 0;
 	    $this->mTotal = 0;
 	    $this->mAddedPoints = 1;
 	    $this->mCutoffPoints = 0;
 	    $this->mIgnoringCoef = false;
 	    if($this->mBeingCorrected) {
-	    	if(is_numeric($this->mRequest->getVal('addedPoints'))) {
-	    		$this->mAddedPoints = $wgRequest->getVal('addedPoints');
+	    	$lAddedPoints = str_replace(',', '.', $this->mRequest->getVal('addedPoints'));
+	    	if(is_numeric($lAddedPoints)) {
+	    		$this->mAddedPoints = $lAddedPoints;
 	    	}
-	    	if(is_numeric($this->mRequest->getVal('cutoffPoints'))) {
-	    		$this->mCutoffPoints = $wgRequest->getVal('cutoffPoints');
+	    	$lCutoffPoints = str_replace(',', '.', $this->mRequest->getVal('cutoffPoints'));
+	    	if(is_numeric($lCutoffPoints)) {
+	    		$this->mCutoffPoints = $lCutoffPoints;
 	    	}
 	    	if($this->mRequest->getVal('ignoringCoef') == "on") {
 	    		$this->mIgnoringCoef = true;
 	    	}
-	    } elseif (array_key_exists('points',$argv) && preg_match('`([\d\.,]*)/?([\d\.,]*)(!)?`', $argv['points'], $matches)) {	
+	    } elseif (array_key_exists('points',$argv) 
+	    && preg_match('`([\d\.]*)/?([\d\.]*)(!)?`', str_replace(',', '.', $argv['points']), $matches)) {	
 	    	if(is_numeric($matches[1])) {
 	    		$this->mAddedPoints = $matches[1];
 	    	}
@@ -145,8 +149,11 @@ class Quiz {
 	    		$this->mIgnoringCoef = true;
 	    	}
 	    }
-	    $this->mDisplaySettings = (array_key_exists('display', $argv) && $argv['display'] == "simple")? false : true;
-	    $this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';		    
+	    $this->mDisplaySimple = (array_key_exists('display', $argv) && $argv['display'] == "simple")? true : false;
+	    $this->mShuffle = (array_key_exists('shuffle', $argv) && $argv['shuffle'] == "none")? false : true;
+	    $this->mCaseSensitive = (array_key_exists('case', $argv) && $argv['case'] == "(i)")? false : true;
+	    # Patterns used in several places
+	    $this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
 	
 	static function resetQuizID() {
@@ -194,10 +201,10 @@ class Quiz {
 		if($this->mQuizId == 0) {
 			$head  = "<style type=\"text/css\">\n";
 	    	$head .= ".quiz .settings input.numerical { width:2em; }\n";	    	
-	    	$head .= ".quiz .question {margin-left: 2em }\n";
+	    	$head .= ".quiz .question { margin-left:2em; }\n";
+	    	$head .= ".quiz .margin { padding-left:20px; }\n";
 	    	$head .= ".quiz .header .questionId {font-size: 1.1em; font-weight: bold; float: left;}\n";
-	    	# This fu**ing ie hiddes the questionId when it is indented...
-	    	$head .= "*>.quiz .header .questionId {text-indent: -1.5em;}\n";
+	    	$head .= "*>.quiz .header .questionId {text-indent: -1.5em; }\n"; // *> prevent ie6 to interprate it.
 			$head .= ".quiz .correction { background-color: ".Quiz::getColor('correction').";}\n";
 	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
 			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
@@ -205,45 +212,77 @@ class Quiz {
 			$head .= ".quiz .sign {text-align:center; }\n";
 			# Part for the inputfields
 			$head .= ".quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited { text-decoration:none; color:black; outline:0 }";
-			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px}";
-			$head .= "* html .quiz a.input span { border:1px solid #7F9DB9 }";
+			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px; *border:1px solid #7F9DB9; }"; // *border is for IE6/7
 			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-right:1px; }";
 			$head .= ".quiz a.input input { padding-left:2px; border:0; }";
 			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:".Quiz::getColor("correction")."; }";
 			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }";
 			$head .= "</style>\n";
 	    	global $wgJsMimeType, $wgScriptPath, $wgOut;
-	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/quiz/quiz.js\"></script>\n";
+	    	# Determine the extension folder
+	    	$folder = array_pop(explode("/", dirname(__FILE__)));
+	    	$folder = ($folder == "extensions")? "" : "/$folder";
+	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";	    	
 	    	$wgOut->addScript($head);
 		}
+		
+		# Process the input
+		$input = $this->parseQuestions($this->parseIncludes($input));
+		
+		# Generates the output.
 		$classHide = ($this->mBeingCorrected)? "" : " class=\"hideCorrection\"";
 		$output  = "<div id=\"quiz$this->mQuizId\" class=\"quiz\">";    
 	    $output .= "<form $classHide method=\"post\" action=\"#quiz$this->mQuizId\" >\n";
-	    if($this->mDisplaySettings) {
-		    $output .= 	"<table class=\"settings\"><tbody>";
-			$output .= 	"<tr><td>".wfMsgHtml('quiz_addedPoints').":</td>" .
-						"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/></td><td></td>" .
-						"<td style=\"background: ".$this->getColor('error')."\"></td>" .
-						"<td>".wfMsgHtml('quiz_colorError')."</td></tr>";
-			$output .= 	"<tr><td>".wfMsgHtml('quiz_cutoffPoints').":</td>" .
-						"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td><td></td>" .
-						"<td class=\"correction\" style=\"background: ".$this->getColor('right')."\"></td>" .
-						"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td></tr>";
-			$bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";
-			$output .= 	"<tr><td>".wfMsgHtml('quiz_ignoreCoef').":</td>" .
-						"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td><td></td>" .
-						"<td class=\"correction\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
-						"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td></tr>";
-			$output .= 	"<tr><td><input class=\"scriptshow\" type=\"button\" value=\"".wfMsgHtml('quiz_shuffle')."\" style=\"display: none;\"/></td>" .
-						"<td></td><td></td>" .
-						"<td class=\"correction\" style=\"background: ".$this->getColor('NA')."\"></td>" .
-						"<td class=\"correction\" style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td></tr>";
-			$output .= 	"</tbody></table>";
-	    }
+	    $output .= 	"<table class=\"settings\">\n";
+		$output .= 	"<tr>";
+		if(!$this->mDisplaySimple) {
+		 $output .=	"<td>".wfMsgHtml('quiz_addedPoints').":</td>" .
+					"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&nbsp;&nbsp;</td>";
+		}
+		if($this->mBeingCorrected) {
+		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('right')."\"></td>" .
+					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td>";
+		} elseif($this->mState == "error") {
+		 $output .=	"<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
+					"<td>".wfMsgHtml('quiz_colorError')."</td>";
+		}
+		$output .= 	"</tr>\n<tr>";
+		if(!$this->mDisplaySimple) {
+		 $output .=	"<td>".wfMsgHtml('quiz_cutoffPoints').":</td>" .
+					"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
+		}
+		if($this->mBeingCorrected) {
+		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
+					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td>";
+		}
+		$output .= 	"</tr>\n<tr>";
+		if(!$this->mDisplaySimple) {
+		 $bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";		
+		 $output .=	"<td>".wfMsgHtml('quiz_ignoreCoef').":</td>" .
+					"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td>";
+		}			
+		if($this->mBeingCorrected) {
+		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('NA')."\"></td>" .
+					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td>";
+		}
+		$output .= 	"</tr>\n<tr>";
+		if(!$this->mDisplaySimple) {
+		 if($this->mShuffle) {
+		  $output.=	"<td><input class=\"scriptshow\" type=\"button\" value=\"".wfMsgHtml('quiz_shuffle')."\" style=\"display: none;\"/></td>" .
+					"<td></td>";
+		 } else {
+		  $output.=	"<td></td><td></td>";
+		 }
+		}
+		if($this->mBeingCorrected && $this->mState == "error") {
+		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
+					"<td>".wfMsgHtml('quiz_colorError')."</td>";
+		}
+		$output .= 	"</tr>\n</table>\n";
 	    $output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/>";
-	    $input = $this->parseIncludes($input);
-		$output .= "<div class=\"quizQuestions\">";
-		$output .= $this->parseQuestions($input);
+	    
+	    $output .= "<div class=\"quizQuestions\">";
+		$output .= $input;
 		$output .= "</div>";
 			   
 	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/></p>";
@@ -321,7 +360,7 @@ class Quiz {
 	 * 								$matches[3] is the question object.
 	 */
 	function parseQuestion($matches) {
-		$question = new Question($this->mBeingCorrected, $this->mQuestionId, $this->mParser);
+		$question = new Question($this->mBeingCorrected, $this->mCaseSensitive, $this->mQuestionId, $this->mParser);
 		$buffer  = $question->parseHeader($matches[1]);
 		if(!array_key_exists(3, $matches) || trim($matches[3]) == "") {
 			switch($matches[1]) {
@@ -378,6 +417,9 @@ class Quiz {
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$output .= "title=\" ".wfMsgHtml('quiz_colorNA')." | 0 \"";
 				break;
+			case "error":
+				$this->mState = "error";
+				break;
 			}
 		}
 		$output .= "><tbody>\n";
@@ -401,14 +443,16 @@ class Question {
 	 * 
 	 * @public
 	 * @param  $beingCorrected			boolean.
+	 * @param  $caseSensitive			boolean.
 	 * @param  $questionId				The Identifier of the question used to gernerate input names.
 	 * @param  $parser					The wikitext parser.	 
 	 */
-	function Question($beingCorrected, $questionId, &$parser) {
+	function Question($beingCorrected, $caseSensitive, $questionId, &$parser) {
 		global $wgRequest;
 		$this->mRequest = &$wgRequest;
 		$this->mQuestionId = $questionId;
 		$this->mBeingCorrected = ($beingCorrected)? true : false;
+		$this->mCaseSensitive = ($caseSensitive)? true : false;
 		$this->mParser = $parser;
 		$this->mState = ($beingCorrected)? "NA" : "";
 		$this->mType = "multipleChoice";
@@ -479,9 +523,9 @@ class Question {
 	 	}
 	 	$output = $this->mParser->recursiveTagParse(trim($unparsedHeader[0])."\n");
 		if(array_key_exists(1,$unparsedHeader)) {
-	 		$output .= "<table><tbody><tr class=\"correction\">";
+	 		$output .= "<table><tr class=\"correction\">";
 			$output .= "<td>&#x2192;</td><td>".$this->mParser->recursiveTagParse(trim($unparsedHeader[1]))."</td>";
-			$output .= "</tr></tbody></table>";
+			$output .= "</tr></table>";
 	 	}
 	 	return $output;
 	}
@@ -564,7 +608,7 @@ class Question {
 				$typeId  = substr($this->mType, 0, 1);
 				$typeId .= array_key_exists(1, $matches)? "c" : "n";				
 				foreach($matches as $signId => $sign) {
-					$inputStyle = "";
+					$title = $disabled = $inputStyle = "";					
 					# Determine the input's name and value.
 					switch($typeId) {
 					case "mn":
@@ -595,16 +639,20 @@ class Question {
 						if($this->mType == "singleChoice" && $expectOn > 1) {
 							$expected = "=";
 							$this->setState("error");
-							$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; border: 3px solid ".Quiz::getColor('error').";\"";
+							$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; *border: 3px solid ".Quiz::getColor('error').";\"";
+							$title = "title=\"".wfMsgHtml('quiz_colorError')."\"";
+							$disabled = "disabled=\"disabled\"";
 						}
 						if($this->mBeingCorrected) {
 							if($checked) {
 								$checkedCount++;
 								$this->setState("right");
-								$inputStyle = "style=\"outline: ".Quiz::getColor('right')." solid 3px; border: 3px solid ".Quiz::getColor('right').";\"";
+								$inputStyle = "style=\"outline: ".Quiz::getColor('right')." solid 3px; *border: 3px solid ".Quiz::getColor('right').";\"";
+								$title = "title=\"".wfMsgHtml('quiz_colorRight')."\"";
 							} else {
 								$this->setState("na_wrong");
-								$inputStyle = "style=\"outline: ".Quiz::getColor('wrong')." solid 3px; border: 3px solid ".Quiz::getColor('wrong').";\"";
+								$inputStyle = "style=\"outline: ".Quiz::getColor('wrong')." solid 3px; *border: 3px solid ".Quiz::getColor('wrong').";\"";
+								$title = "title=\"".wfMsgHtml('quiz_colorWrong')."\"";
 							}
 						} 
 						break;
@@ -614,7 +662,8 @@ class Question {
 							if($checked) {
 								$checkedCount++;
 								$this->setState("wrong");
-								$inputStyle = "style=\"outline: ".Quiz::getColor('wrong')." solid 3px; border: 3px solid ".Quiz::getColor('wrong').";\"";
+								$inputStyle = "style=\"outline: ".Quiz::getColor('wrong')." solid 3px; *border: 3px solid ".Quiz::getColor('wrong').";\"";
+								$title = "title=\"".wfMsgHtml('quiz_colorWrong')."\"";
 							} else {
 								$this->setState("na_right");
 							}
@@ -623,12 +672,12 @@ class Question {
 					default:
 						$expected = "=";
 						$this->setState("error");
-						$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; border: 3px solid ".Quiz::getColor('error').";\"";
+						$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; *border: 3px solid ".Quiz::getColor('error').";\"";
+						$title = "title=\"".wfMsgHtml('quiz_colorError')."\"";
+						$disabled = "disabled=\"disabled\"";
 						break;
-					}
-					$signesOutput .= "<td class=\"sign\">";
-					$signesOutput .= "<input class=\"$expected\" $inputStyle type=\"$inputType\" name=\"$name\" value=\"$value\" $checked/>";
-					$signesOutput .= "</td>";
+					}					
+					$signesOutput .= "<td class=\"sign\"><input class=\"$expected\" $inputStyle type=\"$inputType\" $title name=\"$name\" value=\"$value\" $checked $disabled/></td>";					
 				}
 				if($typeId == "sc") {
 					# A single choice object with no correct proposal is a syntax error.
@@ -647,7 +696,7 @@ class Question {
 				$text = array_pop($matches);
 				$signesOutput = "<td>&#x2192;</td>";
 				# Hacks to avoid counting the number of signes.
-				$colSpan = " colspan=\"11\"";
+				$colSpan = " colspan=\"13\"";
 			}
 			if($text) {				
 				$output .= "<tr class=\"$rawClass\">\n";
@@ -731,7 +780,7 @@ class Question {
 	function parseTextField($input) {
 		global $wqInputId;
 		$wqInputId ++;
-		$state = $size = $maxlength = $class = $style = $value = $disabled = $a_inputBeg = $a_inputEnd = $big = "";
+		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $a_inputBeg = $a_inputEnd = $big = "";
 		# determine size and maxlength of the input.
 		if(array_key_exists(3, $input)) {
 			$size = $input[3];
@@ -744,39 +793,57 @@ class Question {
 		# Syntax error if there is no input text.
 		if(empty($input[1])) {
 			$value = "value=\"???\"";
+			$state = "error";
 		} else {
 			if($this->mBeingCorrected) {
 				$value = trim($this->mRequest->getVal($wqInputId));
 				$a_inputBeg = "<a class=\"input\" href=\"#nogo\"><span class=\"correction\">";				
-				$state = "NA";			
+				$state = "NA";
+				$title = "title=\"".wfMsgHtml('quiz_colorNA')."\"";	
 			}
 			$class = "class=\"numbers\"";
 			foreach(preg_split('` *\| *`', $input[1], -1, PREG_SPLIT_NO_EMPTY) as $possibility) {
 				if( $state == "" || $state == "NA" || $state == "wrong") {
-					if(preg_match('`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`', $possibility, $matches)) {
+					if(preg_match('`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`', str_replace(',', '.', $possibility), $matches)) {
 						if(array_key_exists(5, $matches)) $strlen = $size = $maxlength = "";
 						elseif(array_key_exists(3, $matches)) $strlen = strlen($matches[1]) > strlen($matches[3])? strlen($matches[1]) : strlen($matches[3]);
 						else $strlen = strlen($matches[1]);						
 						if($this->mBeingCorrected && !empty($value)) {
-							$state = (is_numeric($value) &&
+							$value = str_replace(',', '.', $value);
+							if(is_numeric($value) &&
 							(  (array_key_exists(5, $matches) && $value >= ($matches[1]-($matches[1]*$matches[4])/100) && $value <= ($matches[1]+($matches[1]*$matches[4])/100) )
 							|| (array_key_exists(3, $matches) && $value >= $matches[1] && $value <= $matches[3])
-							|| $value == $possibility ))? "right" : "wrong";
+							|| $value == $possibility )) {
+								$state = "right";
+								$title = "title=\"".wfMsgHtml('quiz_colorRight')."\"";
+							}  else {
+								$state = "wrong";
+								$title = "title=\"".wfMsgHtml('quiz_colorWrong')."\"";
+							}
 						}
 					} else {
 						$strlen = strlen($possibility);
 						$class = "class=\"words\"";
-						if($this->mBeingCorrected && !empty($value)) $state = ($value == $possibility)? "right" : "wrong";
+						if($this->mBeingCorrected && !empty($value)) {
+							if($value == $possibility || preg_match('`^'.$value.' \(i\)$`i', $possibility) 
+							|| (!$this->mCaseSensitive && preg_match('`^'.$value.'$`i', $possibility))) {
+								$state = "right";
+								$title = "title=\"".wfMsgHtml('quiz_colorRight')."\"";
+							}  else {
+								$state = "wrong";
+								$title = "title=\"".wfMsgHtml('quiz_colorWrong')."\"";
+							}
+						}
 					}
 					if(array_key_exists(3, $input) && $strlen > $input[3]) {
 						# The textfield is too short for the answer
 						$state = "error";
-						$value = "<_{$possibility}_>";
+						$value = "&lt;_{$possibility}_ &gt;";
 					}
 				}
 				if($this->mBeingCorrected) $a_inputBeg.= "$possibility<br/>";					
 			}
-			$value = empty($value)? "" : "value=\"".str_replace('"', "'", $value)."\"";
+			$value = empty($value)? "" : "value=\"".str_replace('"', "&quot;", $value)."\"";
 			if($this->mBeingCorrected) {
 				$a_inputBeg.= "</span>";
 				$a_inputEnd = "</a>";				
@@ -790,9 +857,10 @@ class Question {
 				$size = "";
 				$maxlength = "";
 				$disabled = "disabled=\"disabled\"";
+				$title = "title=\"".wfMsgHtml('quiz_colorError')."\"";
 			}						
 		}
-		return $output = "$a_inputBeg<span $style><input $class type=\"text\" name=\"$wqInputId\" $size $maxlength $value $disabled />$big</span>$a_inputEnd";		
+		return $output = "$a_inputBeg<span $style><input $class type=\"text\" name=\"$wqInputId\" $title $size $maxlength $value $disabled />$big</span>$a_inputEnd";		
 	}
 }
 ?>
