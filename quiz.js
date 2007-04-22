@@ -27,7 +27,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.8.1
+ * @version 0.9
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Remi <lrbabe@gmail.com>
@@ -37,26 +37,29 @@
 	/**
 	 * Shuffle questions
 	 */
-	function shuffle(input) {
-		var quiz = input.parentNode.parentNode.parentNode.parentNode.parentNode;
-		var div = quiz.getElementsByTagName('div');
-		var questions = new Array();
-		var k = 0;
-		for(var i=0; i<div.length; ++i) {
-			if(div[i].className == "quizQuestions") {
-				var quizQuestions = div[i];
-			} 
-			if(div[i].className == "question") {
-				questions[k] = div[i];
-				k++;
+	function shuffle(area) {
+		var div = area.childNodes;
+		for(var i = 0, questions = new Array(); i<div.length; ++i) {
+			if(div[i].className) {
+				if(questions.length == 0 && div[i].className == "quizText") {
+					var quizText = div[i];
+				} else {					
+					questions.push(div[i]);
+					if(div[i].className == "shuffle" || div[i].className == "noshuffle") {
+						shuffle(div[i]);
+					}
+				}
 			}
 		}
-		var quizHTML = "";
-		for(var l, x, m = questions.length; m; l = parseInt(Math.random() * m), x = questions[--m], questions[m] = questions[l], questions[l] = x);
-		for(var o=0; o<questions.length; ++o) {
-			quizHTML += "<div class='question'>" + questions[o].innerHTML + "</div>";		
+		if(area.className != "noshuffle") {
+			for(var l, x, m = questions.length; m; l = parseInt(Math.random() * m), x = questions[--m], questions[m] = questions[l], questions[l] = x);
+		}		
+		if(quizText) questions.unshift(quizText);
+		for(var j=0, areaHTML = ""; j<questions.length; ++j) {
+			areaHTML += '<div class="' + questions[j].className + '">' + questions[j].innerHTML + '</div>';			
 		}
-		quizQuestions.innerHTML = quizHTML;
+		area.innerHTML = areaHTML;
+		return;
 	}
 	
 	/**
@@ -77,7 +80,7 @@
 					// Displays the shuffle buttons.
 					else if(input[j].className == "scriptshow") {
 						input[j].style.display = "inline";
-						input[j].onclick = function() { shuffle(this); };
+						input[j].onclick = function() { shuffle(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]); };
 					} 
 					// Correct the bug of ie6 on textfields
 					else if((input[j].className == "numbers" || input[j].className == "words") 
