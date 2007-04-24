@@ -42,12 +42,12 @@ $wgQuizMessages = array(
  		'quiz_addedPoints' 		=> "Point(s) added for a correct answer",
 		'quiz_cutoffPoints'		=> "Point(s) subtracted for a wrong answer",
 		'quiz_ignoreCoef'		=> "Ignore the questions' coefficients",
-		'quiz_shuffle'			=> "Shuffling the questions",
+		'quiz_shuffle'			=> "Shuffle questions",
 		'quiz_colorRight'		=> "Right",
 		'quiz_colorWrong'		=> "Wrong",
 		'quiz_colorNA'			=> "Not answered",
 		'quiz_colorError'		=> "Syntax error",
-		'quiz_correction'		=> "Correction",
+		'quiz_correction'		=> "Submit",
 		'quiz_score'			=> "Your score is $1 / $2"
  	),
  	'de' => array(
