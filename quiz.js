@@ -78,21 +78,34 @@
 						};
 					}
 					// Displays the shuffle buttons.
-					else if(input[j].className == "scriptshow") {
+					else if(input[j].className == "shuffle") {
 						input[j].style.display = "inline";
-						input[j].onclick = function() { shuffle(this.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName('div')[0]); };
-					} 
+						input[j].onclick = function() { shuffle(this.form.getElementsByTagName('div')[0]); };
+					}
+					// Display the reset button
+					else if(input[j].className == "reset") {
+						input[j].style.display = "inline";
+						input[j].onclick = function() { 
+							this.form.quizId.value = "";
+							this.form.submit();
+						};
+					}
 					// Correct the bug of ie6 on textfields
-					else if((input[j].className == "numbers" || input[j].className == "words") 
-					&& typeof document.body.style.maxHeight == "undefined" ) {
-						input[j].parentNode.onclick = function() { 
-							this.parentNode.firstChild.style.display = "inline";
-							this.parentNode.firstChild.style.position = "absolute";
-							this.parentNode.firstChild.style.marginTop = "1.7em";
-						};
-						input[j].parentNode.onmouseout = function() {
-							this.parentNode.firstChild.style.display = "none";
-						};
+					else if(input[j].className == "numbers" || input[j].className == "words") {
+						if(typeof document.body.style.maxHeight == "undefined" ) {
+							input[j].parentNode.onclick = function() { 
+								this.parentNode.firstChild.style.display = "inline";
+								this.parentNode.firstChild.style.position = "absolute";
+								this.parentNode.firstChild.style.marginTop = "1.7em";
+							};
+							input[j].parentNode.onmouseout = function() {
+								this.parentNode.firstChild.style.display = "none";
+							};
+						}
+						input[j].onkeydown = function() { this.form.shuffleButton.disabled = true; };
+					}
+					if(input[j].className == "check") {
+						input[j].onclick = function() { this.form.shuffleButton.disabled = true; };
 					}
 				}
 			}
