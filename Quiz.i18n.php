@@ -48,7 +48,9 @@ $wgQuizMessages = array(
 		'quiz_colorNA'			=> "Not answered",
 		'quiz_colorError'		=> "Syntax error",
 		'quiz_correction'		=> "Submit",
-		'quiz_score'			=> "Your score is $1 / $2"
+		'quiz_score'			=> "Your score is $1 / $2",
+		'quiz_points'			=> "$1 | $2 point(s)",
+		'quiz_reset'			=> "Reset"
  	),
  	'de' => array(
  		'quiz_addedPoints' 		=> "Pluspunkte für eine richtige Antwort",
@@ -60,7 +62,9 @@ $wgQuizMessages = array(
 		'quiz_colorNA'			=> "Nicht beantwortet",
 		'quiz_colorError'		=> "Syntaxfehler",
 		'quiz_correction'		=> "Korrektur",
-		'quiz_score'			=> "Punkte: $1 / $2"
+		'quiz_score'			=> "Punkte: $1 / $2",
+		'quiz_points'			=> "$1 | $2 Punkte",
+		'quiz_reset'			=> "Reset"
  	),
  	'fr' => array(
  		'quiz_addedPoints' 		=> "Point(s) ajouté(s) pour une réponse juste",
@@ -72,7 +76,9 @@ $wgQuizMessages = array(
 		'quiz_colorNA'			=> "Non répondu",
 		'quiz_colorError'		=> "Erreur de syntaxe",
 		'quiz_correction'		=> "Correction",
-		'quiz_score'			=> "Votre score est $1 / $2"
+		'quiz_score'			=> "Votre score est $1 / $2",
+		'quiz_points'			=> "$1 | $2 point(s)",
+		'quiz_reset'			=> "Vider"
  	),
   	'id' => array(
  		'quiz_addedPoints' 		=> "Penambahan angka untuk jawaban yang benar",
@@ -88,7 +94,7 @@ $wgQuizMessages = array(
  	),
 	'sk' => array(
  		'quiz_addedPoints' 		=> "Bod(y) pričítané za správnu odpoveď",
-		'quiz_cutoffPoints' 		=> "Bod(y) odčítané za nesprávnu odpoveď",
+		'quiz_cutoffPoints' 	=> "Bod(y) odčítané za nesprávnu odpoveď",
 		'quiz_ignoreCoef'		=> "Ignorovať koeficienty otázok",
 		'quiz_shuffle'			=> "Náhodný výber otázok",
 		'quiz_colorRight'		=> "Správne",
@@ -99,4 +105,4 @@ $wgQuizMessages = array(
 		'quiz_score'			=> "Vaše skóre je $1 / $2"
  	),
 );
- ?>
+?>
