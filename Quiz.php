@@ -38,7 +38,7 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.9.2',
+    'version'=>'0.9.3',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
     'description' => 'Allows creation of quizzes'
@@ -82,11 +82,9 @@ function renderQuiz($input, $argv, &$parser) {
  */
 class Quiz {	
 	/**#@+
-	 * @protected
+	 * @public
 	 */
-	var $mQuizId, $mQuestionId, $mBeingCorrected, $mScore, $mTotal, $mAddedPoints, $mCutoffPoints, $mIgnoringCoef;
-	# Quiz parameters
-	var $mMessages;
+	# Quiz colors
 	static $mColors = array(
 		'right' 		=> "#1FF72D",
 		'wrong' 		=> "#F74245",
@@ -94,9 +92,9 @@ class Quiz {
 		'NA' 			=> "#2834FF",
 		'error' 		=> "#D700D7"
 	);
-	var $mParser, $mRequest;
-	/**#@- */
 	static $sQuizId = 0;
+	/**#@- */
+	
 	 
 	/** 
 	 * Constructor
@@ -120,11 +118,11 @@ class Quiz {
 	    $this->mBeingCorrected = ($wgRequest->getVal('quizId') == "$this->mQuizId")? true : false;
 	    # Initialize various parameters used for the score calculation
 	    $this->mState = "NA";
-	    $this->mScore = 0;
-	    $this->mTotal = 0;
+	    $this->mTotal = $this->mScore = 0;
 	    $this->mAddedPoints = 1;
 	    $this->mCutoffPoints = 0;
 	    $this->mIgnoringCoef = false;
+	    $this->mDisplaySimple = (array_key_exists('display', $argv) && $argv['display'] == "simple")? true : false;
 	    if($this->mBeingCorrected) {
 	    	$lAddedPoints = str_replace(',', '.', $this->mRequest->getVal('addedPoints'));
 	    	if(is_numeric($lAddedPoints)) {
@@ -137,7 +135,9 @@ class Quiz {
 	    	if($this->mRequest->getVal('ignoringCoef') == "on") {
 	    		$this->mIgnoringCoef = true;
 	    	}
-	    } elseif (array_key_exists('points',$argv)
+	    } 
+	    if (array_key_exists('points',$argv)
+	    && (!$this->mBeingCorrected || $this->mDisplaySimple)
 	    && preg_match('`([\d\.]*)/?([\d\.]*)(!)?`', str_replace(',', '.', $argv['points']), $matches)) {
 	    	if(is_numeric($matches[1])) {
 	    		$this->mAddedPoints = $matches[1];
@@ -149,7 +149,6 @@ class Quiz {
 	    		$this->mIgnoringCoef = true;
 	    	}
 	    }
-	    $this->mDisplaySimple = (array_key_exists('display', $argv) && $argv['display'] == "simple")? true : false;
 	    $this->mShuffle = (array_key_exists('shuffle', $argv) && $argv['shuffle'] == "none")? false : true;
 	    $this->mCaseSensitive = (array_key_exists('case', $argv) && $argv['case'] == "(i)")? false : true;
 	    # Patterns used in several places
@@ -204,9 +203,11 @@ class Quiz {
 	    	$head .= ".quiz .margin { padding-left:20px; }\n";
 	    	$head .= ".quiz .header .questionId {font-size: 1.1em; font-weight: bold; float: left;}\n";
 	    	$head .= "*>.quiz .header .questionId {text-indent: -1.5em; }\n"; // *> prevent ie6 to interprate it.
+			$head .= ".quiz table.object, .quiz table.correction { background-color:transparent; }";
 			$head .= ".quiz .correction { background-color: ".Quiz::getColor('correction').";}\n";
 	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
 			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
+			$head .= ".quiz table.settings { background-color:transparent; }\n";
 			# Part for the basic types's inputs.
 			$head .= ".quiz .sign {text-align:center; }\n";
 			# Part for the inputfields
@@ -230,61 +231,54 @@ class Quiz {
 		
 		# Generates the output.
 		$classHide = ($this->mBeingCorrected)? "" : " class=\"hideCorrection\"";
-		$output  = "<div id=\"quiz$this->mQuizId\" class=\"quiz\">";
-	    $output .= "<form $classHide method=\"post\" action=\"#quiz$this->mQuizId\" >\n";
-	    $output .= 	"<table class=\"settings\">\n";
-		$output .= 	"<tr>";
+		$output  = "<div class=\"quiz\">";
+	    $output .= "<form id=\"quiz$this->mQuizId\" $classHide method=\"post\" action=\"#quiz$this->mQuizId\" >\n";
+	    # Determine the content of the settings table.
+	    $settings = array_fill(0, 4, "");
 		if(!$this->mDisplaySimple) {
-		 $output .=	"<td>".wfMsgHtml('quiz_addedPoints').":</td>" .
-					"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&nbsp;&nbsp;</td>";
+		 	$settings[0] .=	"<td>".wfMsgHtml('quiz_addedPoints').":</td>" .
+							"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&nbsp;&nbsp;</td>";
+			$settings[1] .=	"<td>".wfMsgHtml('quiz_cutoffPoints').":</td>" .
+							"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
+			$bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";
+			$settings[2] .=	"<td>".wfMsgHtml('quiz_ignoreCoef').":</td>" .
+							"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td>";
+			 if($this->mShuffle && !$this->mBeingCorrected) {
+			 	$settings[3] .=	"<td><input class=\"shuffle\" name=\"shuffleButton\" type=\"button\" value=\"".wfMsgHtml('quiz_shuffle')."\" style=\"display: none;\"/></td>" .
+								"<td></td>";
+			 } else {
+			 	$settings[3] .=	"<td></td><td></td>";
+			 }
 		}
 		if($this->mBeingCorrected) {
-		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('right')."\"></td>" .
-					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td>";
-		} elseif($this->mState == "error") {
-		 $output .=	"<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
-					"<td>".wfMsgHtml('quiz_colorError')."</td>";
+			$settings[0] .= "<td class=\"margin\" style=\"background: ".$this->getColor('right')."\"></td>" .
+							"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorRight')."</td>";
+			$settings[1] .= "<td class=\"margin\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
+							"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td>";
+			$settings[2] .= "<td class=\"margin\" style=\"background: ".$this->getColor('NA')."\"></td>" .
+							"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td>";
+		} if($this->mState == "error") {
+			$errorKey = $this->mBeingCorrected? 3 : 0;
+			$settings[$errorKey] .=	"<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
+									"<td>".wfMsgHtml('quiz_colorError')."</td>";
+			
 		}
-		$output .= 	"</tr>\n<tr>";
-		if(!$this->mDisplaySimple) {
-		 $output .=	"<td>".wfMsgHtml('quiz_cutoffPoints').":</td>" .
-					"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
-		}
-		if($this->mBeingCorrected) {
-		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('wrong')."\"></td>" .
-					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorWrong')."</td>";
-		}
-		$output .= 	"</tr>\n<tr>";
-		if(!$this->mDisplaySimple) {
-		 $bChecked = ($this->mIgnoringCoef)? "checked=\"checked\"" : "";
-		 $output .=	"<td>".wfMsgHtml('quiz_ignoreCoef').":</td>" .
-					"<td><input type=\"checkbox\" name=\"ignoringCoef\" $bChecked/></td>";
-		}
-		if($this->mBeingCorrected) {
-		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('NA')."\"></td>" .
-					"<td style=\"background: transparent;\">".wfMsgHtml('quiz_colorNA')."</td>";
-		}
-		$output .= 	"</tr>\n<tr>";
-		if(!$this->mDisplaySimple) {
-		 if($this->mShuffle) {
-		  $output.=	"<td><input class=\"scriptshow\" type=\"button\" value=\"".wfMsgHtml('quiz_shuffle')."\" style=\"display: none;\"/></td>" .
-					"<td></td>";
-		 } else {
-		  $output.=	"<td></td><td></td>";
-		 }
-		}
-		if($this->mBeingCorrected && $this->mState == "error") {
-		 $output .= "<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
-					"<td>".wfMsgHtml('quiz_colorError')."</td>";
-		}
-		$output .= 	"</tr>\n</table>\n";
-	    $output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/>";
+		# Build the settings table.
+		$settingsTable = "";
+		foreach($settings as $settingsTr) {
+			if(!empty($settingsTr)) $settingsTable .= "<tr>\n$settingsTr</tr>\n";
+		}		
+		if(!empty($settingsTable)) $output .= "<table class=\"settings\">\n$settingsTable</table>\n";
+		$output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/ >";
 	    
 	    $output .= "<div class=\"quizQuestions\">";
 		$output .= $input;
 		$output .= "</div>";
 		
-	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/></p>";
+	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/>";
+	    if($this->mBeingCorrected) $output.= "<input class=\"reset\" type=\"submit\" value=\"" .
+	    	wfMsgHtml( 'quiz_reset' ) . "\" style=\"display: none;\" />";
+	    $output .= "</p>";
 		$output .= "<span class=\"correction\">";
 		$output .= wfMsgHtml('quiz_score',
 			"<span class=\"score\">$this->mScore</span>",
@@ -314,7 +308,7 @@ class Quiz {
 		$title = Title::makeTitleSafe( NS_MAIN, $matches[1]);
 		$text = $this->mParser->fetchTemplate($title);
 		$output = "";
-		if(preg_match('`<quiz[^>]*>(.*)</quiz>`sU', $text, $unparsedQuiz)) {
+		if(preg_match('`<quiz[^>]*>(.*?)</quiz>`sU', $text, $unparsedQuiz)) {
 			# Remove inclusions from included quiz.
 			$output  = preg_replace($this->mIncludePattern, "", StringUtils::escapeRegexReplacement($unparsedQuiz[1]));
 			$output .= "\n";
@@ -386,8 +380,6 @@ class Quiz {
 			}
 		}
 		$output  = "<div class=\"question\">\n";
-		$output .= "<input type=\"hidden\" name=\"questionType\" value=\"{$question->mType}\"/>";
-		$output .= "<input type=\"hidden\" name=\"questionCoef\" value=\"{$question->mCoef}\"/>";
 		$output .= "<div class=\"header\">\n";
 		$output .= "<span class=\"questionId\">".++$this->mQuestionId.". </span>$buffer";
 		$output .= "</div>\n";
@@ -395,7 +387,7 @@ class Quiz {
 		$buffer = call_user_func(array($question, "{$question->mType}ParseObject"), $matches[3]);
  		$output .= "<table class=\"object\" ";
 		$lState = $question->getState();
-		# Determine the border-left color, score and the total of the question.
+		# Determine the border-left color, title, score and the total of the question.
 		if($lState != "") {
 			$output .= "style=\"border-left:3px solid ".$this->getColor($lState)."\"";
 			if($this->mIgnoringCoef) {
@@ -405,16 +397,16 @@ class Quiz {
 			case "right":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore += $this->mAddedPoints * $question->mCoef;
-				$output .= "title=\" ".wfMsgHtml('quiz_colorRight')." | ".($this->mAddedPoints * $question->mCoef)." \"";
+				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorRight'), $this->mAddedPoints * $question->mCoef)."\"";
 				break;
 			case "wrong":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore -= $this->mCutoffPoints * $question->mCoef;
-				$output .= "title=\" ".wfMsgHtml('quiz_colorWrong')." | -".($this->mCutoffPoints * $question->mCoef)." \"";
+				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorWrong'), -$this->mCutoffPoints * $question->mCoef)."\"";
 				break;
 			case "NA":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
-				$output .= "title=\" ".wfMsgHtml('quiz_colorNA')." | 0 \"";
+				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorNA'), 0)."\"";
 				break;
 			case "error":
 				$this->mState = "error";
@@ -430,12 +422,6 @@ class Quiz {
 }
 
 class Question {
-	var $mQuestionId, $mType, $mCoef , $mCorrectionPattern, $mProposalPattern, $mCategoryPattern;
-	/**#@+
-	 * @private
-	 */
-	var $mState;
-	/**#@-*/
 	
 	/**
 	 * Constructor
@@ -450,15 +436,15 @@ class Question {
 		global $wgRequest;
 		$this->mRequest = &$wgRequest;
 		$this->mQuestionId = $questionId;
-		$this->mBeingCorrected = ($beingCorrected)? true : false;
-		$this->mCaseSensitive = ($caseSensitive)? true : false;
+		$this->mBeingCorrected = $beingCorrected;
+		$this->mCaseSensitive = $caseSensitive;
 		$this->mParser = $parser;
 		$this->mState = ($beingCorrected)? "NA" : "";
 		$this->mType = "multipleChoice";
 		$this->mCoef = 1;
 		$this->mProposalPattern 	= '`^([+-]) ?(.*)`';
 		$this->mCorrectionPattern 	= '`^\|\|(.*)`';
-		$this->mCategoryPattern 	= '`^\|([^\|].*)\s*`';
+		$this->mCategoryPattern 	= '`^\|(\n|[^\|].*\n)`';
 		$this->mTextFieldPattern 	= '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
 	}	
 	
@@ -501,11 +487,6 @@ class Question {
 	}
 	
 	/**
-	 * Accessor for the question Id.
-	 * If the questionId is accessed, it is incremented.
-	 */
-	
-	/**
 	 * Convert the question's header into HTML.
 	 * 
 	 * @param  $input				The quiz header in quiz syntax.
@@ -515,14 +496,9 @@ class Question {
 		$input = preg_replace_callback($parametersPattern, array($this, "parseParameters"), $input);
 		$splitHeaderPattern = '`\n\|\|`';
 		$unparsedHeader = preg_split($splitHeaderPattern, $input);
-	 	# If the header is empty, the question has a syntax error.
-		if(trim($unparsedHeader[0]) == "") {
-	 		$unparsedHeader[0] = "???";
-	 		$this->setState("error");
-	 	}
 	 	$output = $this->mParser->recursiveTagParse(trim($unparsedHeader[0])."\n");
 		if(array_key_exists(1,$unparsedHeader)) {
-	 		$output .= "<table><tr class=\"correction\">";
+	 		$output .= "<table class=\"correction\"><tr>";
 			$output .= "<td>&#x2192;</td><td>".$this->mParser->recursiveTagParse(trim($unparsedHeader[1]))."</td>";
 			$output .= "</tr></table>";
 	 	}
@@ -632,11 +608,9 @@ class Question {
 					# Determine the color of the cell and modify the state of the question.
 					switch($sign) {
 					case "+":
-						$expected = "+";
 						$expectOn++;
 						# A single choice object with many correct proposal is a syntax error.
 						if($this->mType == "singleChoice" && $expectOn > 1) {
-							$expected = "=";
 							$this->setState("error");
 							$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; *border: 3px solid ".Quiz::getColor('error').";\"";
 							$title = "title=\"".wfMsgHtml('quiz_colorError')."\"";
@@ -656,7 +630,6 @@ class Question {
 						}
 						break;
 					case "-":
-						$expected = "-";
 						if($this->mBeingCorrected) {
 							if($checked) {
 								$checkedCount++;
@@ -669,14 +642,13 @@ class Question {
 						}
 						break;
 					default:
-						$expected = "=";
 						$this->setState("error");
 						$inputStyle = "style=\"outline: ".Quiz::getColor('error')." solid 3px; *border: 3px solid ".Quiz::getColor('error').";\"";
 						$title = "title=\"".wfMsgHtml('quiz_colorError')."\"";
 						$disabled = "disabled=\"disabled\"";
 						break;
 					}
-					$signesOutput .= "<td class=\"sign\"><input class=\"$expected\" $inputStyle type=\"$inputType\" $title name=\"$name\" value=\"$value\" $checked $disabled/></td>";
+					$signesOutput .= "<td class=\"sign\"><input class=\"check\" $inputStyle type=\"$inputType\" $title name=\"$name\" value=\"$value\" $checked $disabled/></td>";
 				}
 				if($typeId == "sc") {
 					# A single choice object with no correct proposal is a syntax error.
@@ -759,9 +731,6 @@ class Question {
 		$wqInputId = $this->mQuestionId * 100;
 		$output = "";
 		foreach($raws as $raw) {
-			# soit c'est une correction, dans ce cas là on le parse tout court
-			# soit c'est un texte à trou et dans ce cas là on parse puis on remplace les {} par des trous en faisant un
-			# callback
 			if(preg_match($this->mCorrectionPattern, $raw, $matches)) {
 				$rawClass = "correction";
 				$text = "<td>&#x2192; ".$this->mParser->recursiveTagParse($matches[1])."</td>";
