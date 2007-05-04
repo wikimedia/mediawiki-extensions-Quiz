@@ -92,6 +92,20 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Koreksi",
 		'quiz_score'			=> "Skor Anda adalah $1 / $2"
  	),
+ 	'pt' => array(
+ 		'quiz_addedPoints' 		=> "Ponto(s) adicionados para cada resposta certa",
+		'quiz_cutoffPoints'		=> "Ponto(s) subtraídos para cada resposta errada",
+		'quiz_ignoreCoef'		=> "Ignorar os coeficientes das questões",
+		'quiz_shuffle'			=> "Embaralhar as questões",
+		'quiz_colorRight'		=> "Corretas",
+		'quiz_colorWrong'		=> "Erradas",
+		'quiz_colorNA'			=> "Não respondidas",
+		'quiz_colorError'		=> "Erro de sintaxe",
+		'quiz_correction'		=> "Enviar",
+		'quiz_score'			=> "Pontuação atual: $1 acertadas (dentre $2)",
+		'quiz_points'			=> "$1 | $2 ponto(s)",
+		'quiz_reset'			=> "Zerar"
+ 	),
 	'sk' => array(
  		'quiz_addedPoints' 		=> "Bod(y) pričítané za správnu odpoveď",
 		'quiz_cutoffPoints' 	=> "Bod(y) odčítané za nesprávnu odpoveď",
