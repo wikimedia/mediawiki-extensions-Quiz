@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  *
- * @version 0.7b
+ * @version 1.0
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  *
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
@@ -64,7 +64,7 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Korrektur",
 		'quiz_score'			=> "Punkte: $1 / $2",
 		'quiz_points'			=> "$1 | $2 Punkte",
-		'quiz_reset'			=> "Reset"
+		'quiz_reset'			=> "Neustart"
  	),
  	'fr' => array(
  		'quiz_addedPoints' 		=> "Point(s) ajouté(s) pour une réponse juste",
@@ -78,7 +78,7 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Correction",
 		'quiz_score'			=> "Votre score est $1 / $2",
 		'quiz_points'			=> "$1 | $2 point(s)",
-		'quiz_reset'			=> "Vider"
+		'quiz_reset'			=> "Réinitialiser"
  	),
   	'id' => array(
  		'quiz_addedPoints' 		=> "Penambahan angka untuk jawaban yang benar",
