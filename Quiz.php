@@ -28,7 +28,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.9
+ * @version 1.0
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * @author BABE Louis-Remi <lrbabe@gmail.com>
  */
@@ -38,7 +38,7 @@
  */
 $wgExtensionCredits['parserhook'][] = array(
     'name'=>'Quiz',
-    'version'=>'0.9.3',
+    'version'=>'1.0',
     'author'=>'lrbabe',
     'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
     'description' => 'Allows creation of quizzes'
@@ -55,7 +55,7 @@ $wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
 
 /**
  * Register the extension with the WikiText parser.
- * The tag used is <quiz> * 
+ * The tag used is <quiz>
  */
 function wfQuizExtension() {
     global $wgParser;
@@ -211,12 +211,12 @@ class Quiz {
 			# Part for the basic types's inputs.
 			$head .= ".quiz .sign {text-align:center; }\n";
 			# Part for the inputfields
-			$head .= ".quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited { text-decoration:none; color:black; outline:0 }";
-			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px; *border:1px solid #7F9DB9; }"; // *border is for IE6/7
-			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-right:1px; }";
-			$head .= ".quiz a.input input { padding-left:2px; border:0; }";
-			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:".Quiz::getColor("correction")."; }";
-			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }";
+			$head .= ".quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited { text-decoration:none; color:black; outline:0 }\n";
+			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px; *border:1px solid #7F9DB9; }\n"; // *border is for IE6/7
+			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-right:1px; }\n";
+			$head .= ".quiz a.input input { padding-left:2px; border:0; }\n";
+			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:".Quiz::getColor("correction")."; }\n";
+			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }\n";
 			$head .= "</style>\n";
 	    	global $wgJsMimeType, $wgScriptPath, $wgOut;
 	    	# Determine the extension folder
@@ -705,7 +705,7 @@ class Question {
 				$category = "???";
 				$this->setState("error");
 			}
-			$output .= "<th>".Sanitizer::removeHTMLtags($category)."</th>";
+			$output .= "<th>".$this->mParser->recursiveTagParse($category)."</th>";
 			if($key == 0) {
 				$this->mProposalPattern .= '([+-]) ?';
 			} else {
