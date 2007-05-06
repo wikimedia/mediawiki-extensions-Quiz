@@ -27,7 +27,7 @@
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
  * 
- * @version 0.9
+ * @version 1.0
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * 
  * @author BABE Louis-Remi <lrbabe@gmail.com>
@@ -58,7 +58,7 @@
 		for(var j=0, areaHTML = ""; j<questions.length; ++j) {
 			areaHTML += '<div class="' + questions[j].className + '">' + questions[j].innerHTML + '</div>';			
 		}
-		area.innerHTML = areaHTML;
+		area.innerHTML = areaHTML;		
 		return;
 	}
 	
@@ -80,7 +80,18 @@
 					// Displays the shuffle buttons.
 					else if(input[j].className == "shuffle") {
 						input[j].style.display = "inline";
-						input[j].onclick = function() { shuffle(this.form.getElementsByTagName('div')[0]); };
+						input[j].onclick = function() { 
+							shuffle(this.form.getElementsByTagName('div')[0]);
+							var sh_input = this.form.getElementsByTagName('input');
+							for(var k=0; k<sh_input.length; ++k) {
+								// Add the possibility of unchecking radio buttons
+								if(input[k].type == "radio") {
+									input[k].ondblclick = function() {
+										this.checked = false;
+									};
+								}
+							}
+						};
 					}
 					// Display the reset button
 					else if(input[j].className == "reset") {
@@ -106,6 +117,10 @@
 					}
 					if(input[j].className == "check") {
 						input[j].onclick = function() { this.form.shuffleButton.disabled = true; };
+					}
+					// Disable the submit button if the page is in preview mode
+					if(input[j].type == "submit" && document.editform) {
+						input[j].disabled = true;
 					}
 				}
 			}
