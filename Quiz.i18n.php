@@ -90,7 +90,9 @@ $wgQuizMessages = array(
 		'quiz_colorNA'			=> "Tak dijawab",
 		'quiz_colorError'		=> "Kesalahan sintaks",
 		'quiz_correction'		=> "Koreksi",
-		'quiz_score'			=> "Skor Anda adalah $1 / $2"
+		'quiz_score'			=> "Skor Anda adalah $1 / $2",
+		'quiz_points'			=> "$1 | $2 poin",
+		'quiz_reset'			=> "Reset"
  	),
  	'pt' => array(
  		'quiz_addedPoints' 		=> "Ponto(s) adicionados para cada resposta certa",
