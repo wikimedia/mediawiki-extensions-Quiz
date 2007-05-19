@@ -119,6 +119,20 @@ $wgQuizMessages = array(
 		'quiz_colorError'		=> "Syntaktická chyba",
 		'quiz_correction'		=> "Oprava",
 		'quiz_score'			=> "Vaše skóre je $1 / $2"
- 	),
+	),
+ 	'it' => array(
+ 	 	'quiz_addedPoints'		=> "Punti aggiunti per ogni risposta corretta",
+        'quiz_cutoffPoints'		=> "Punti sottratti per ogni risposta errata",
+        'quiz_ignoreCoef'		=> "Ignora i coefficienti di domanda",
+        'quiz_shuffle'			=> "Mescola le domande",
+        'quiz_colorRight'		=> "Giusto",
+        'quiz_colorWrong'		=> "Sbagliato",
+        'quiz_colorNA'			=> "Nessuna risposta",
+        'quiz_colorError'		=> "Errore di sintassi",
+        'quiz_correction'		=> "Correggi",
+        'quiz_score'			=> "Il tuo punteggio è $1 / $2",
+        'quiz_points'			=> "$1 | $2 punti",
+        'quiz_reset'			=> "Reset"
+	)
 );
 ?>
