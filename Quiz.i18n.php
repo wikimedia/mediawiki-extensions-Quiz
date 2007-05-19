@@ -133,6 +133,20 @@ $wgQuizMessages = array(
         'quiz_score'			=> "Il tuo punteggio è $1 / $2",
         'quiz_points'			=> "$1 | $2 punti",
         'quiz_reset'			=> "Reset"
+	),
+	'es' => array(
+		'quiz_addedPoints'		=> "Puntos por cada respuesta acertada",
+		'quiz_cutoffPoints'		=> "Penalización por cada respuesta errónea",
+		'quiz_ignoreCoef'		=> "Ignorar los puntos de cada pregunta",
+		'quiz_shuffle'			=> "Desordenar preguntas",
+		'quiz_colorRight'		=> "Acertadas",
+		'quiz_colorWrong'		=> "Falladas",
+		'quiz_colorNA'			=> "No contestadas",
+		'quiz_colorError'		=> "Error de sintaxis",
+		'quiz_correction'		=> "Contestar",
+		'quiz_score'			=> "Tu puntuación es de $1 / $2",
+		'quiz_points'			=> "$1 | $2 punto(s)",
+		'quiz_reset'			=> "Empezar de nuevo"
 	)
 );
 ?>
