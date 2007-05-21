@@ -162,12 +162,13 @@ class Quiz {
 	function loadMessages() {
 	    static $messagesLoaded = false;
 	    global $wgMessageCache;
-	    if ( $messagesLoaded ) return;
+	    if ( $messagesLoaded ) return true;
 	    $messagesLoaded = true;
 	    require( dirname( __FILE__ ) . '/Quiz.i18n.php' );
 	    foreach ($wgQuizMessages as $lang => $langMessages ) {
 	    	$wgMessageCache->addMessages( $langMessages, $lang );
 	    }
+		return true;
 	}	
 	
 	/**
