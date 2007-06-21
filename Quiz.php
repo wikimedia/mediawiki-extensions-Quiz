@@ -157,6 +157,7 @@ class Quiz {
 	
 	static function resetQuizID() {
 		self::$sQuizId = 0;
+		return true;
 	}
 	
 	function loadMessages() {
