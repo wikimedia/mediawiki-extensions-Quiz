@@ -160,7 +160,7 @@ class Quiz {
 		return true;
 	}
 	
-	function loadMessages() {
+	static function loadMessages() {
 	    static $messagesLoaded = false;
 	    global $wgMessageCache;
 	    if ( $messagesLoaded ) return true;
