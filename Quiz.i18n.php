@@ -66,6 +66,20 @@ $wgQuizMessages = array(
 		'quiz_points'			=> "$1 | $2 Punkte",
 		'quiz_reset'			=> "Neustart"
  	),
+	'es' => array(
+		'quiz_addedPoints'		=> "Puntos por cada respuesta acertada",
+		'quiz_cutoffPoints'		=> "Penalización por cada respuesta errónea",
+		'quiz_ignoreCoef'		=> "Ignorar los puntos de cada pregunta",
+		'quiz_shuffle'			=> "Desordenar preguntas",
+		'quiz_colorRight'		=> "Acertadas",
+		'quiz_colorWrong'		=> "Falladas",
+		'quiz_colorNA'			=> "No contestadas",
+		'quiz_colorError'		=> "Error de sintaxis",
+		'quiz_correction'		=> "Contestar",
+		'quiz_score'			=> "Tu puntuación es de $1 / $2",
+		'quiz_points'			=> "$1 | $2 punto(s)",
+		'quiz_reset'			=> "Empezar de nuevo"
+	),
  	'fr' => array(
  		'quiz_addedPoints' 		=> "Point(s) ajouté(s) pour une réponse juste",
 		'quiz_cutoffPoints'		=> "Point(s) retiré(s) pour une réponse erronée",
@@ -94,6 +108,34 @@ $wgQuizMessages = array(
 		'quiz_points'			=> "$1 | $2 poin",
 		'quiz_reset'			=> "Reset"
  	),
+ 	'it' => array(
+ 	 	'quiz_addedPoints'		=> "Punti aggiunti per ogni risposta corretta",
+        'quiz_cutoffPoints'		=> "Punti sottratti per ogni risposta errata",
+        'quiz_ignoreCoef'		=> "Ignora i coefficienti di domanda",
+        'quiz_shuffle'			=> "Mescola le domande",
+        'quiz_colorRight'		=> "Giusto",
+        'quiz_colorWrong'		=> "Sbagliato",
+        'quiz_colorNA'			=> "Nessuna risposta",
+        'quiz_colorError'		=> "Errore di sintassi",
+        'quiz_correction'		=> "Correggi",
+        'quiz_score'			=> "Il tuo punteggio è $1 / $2",
+        'quiz_points'			=> "$1 | $2 punti",
+        'quiz_reset'			=> "Reset"
+	),
+ 	'nl' => array(
+ 		'quiz_addedPoints' 		=> "Punt(en) toegvoegd voor correct antwoord",
+		'quiz_cutoffPoints'		=> "Punt(en) afgetrokkenv voor fout antwoord",
+		'quiz_ignoreCoef'		=> "Negeer de coefficienten van de vragen",
+		'quiz_shuffle'			=> "Orden de vragen willekeurig",
+		'quiz_colorRight'		=> "Goed",
+		'quiz_colorWrong'		=> "Fout",
+		'quiz_colorNA'			=> "Niet beantwoord",
+		'quiz_colorError'		=> "Algemene fout",
+		'quiz_correction'		=> "Verzenden",
+		'quiz_score'			=> "Uw score is $1 / $2",
+		'quiz_points'			=> "$1 | $2 punt(en)",
+		'quiz_reset'			=> "Opnieuw"
+ 	),
  	'pt' => array(
  		'quiz_addedPoints' 		=> "Ponto(s) adicionados para cada resposta certa",
 		'quiz_cutoffPoints'		=> "Ponto(s) subtraídos para cada resposta errada",
@@ -120,32 +162,4 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Oprava",
 		'quiz_score'			=> "Vaše skóre je $1 / $2"
 	),
- 	'it' => array(
- 	 	'quiz_addedPoints'		=> "Punti aggiunti per ogni risposta corretta",
-        'quiz_cutoffPoints'		=> "Punti sottratti per ogni risposta errata",
-        'quiz_ignoreCoef'		=> "Ignora i coefficienti di domanda",
-        'quiz_shuffle'			=> "Mescola le domande",
-        'quiz_colorRight'		=> "Giusto",
-        'quiz_colorWrong'		=> "Sbagliato",
-        'quiz_colorNA'			=> "Nessuna risposta",
-        'quiz_colorError'		=> "Errore di sintassi",
-        'quiz_correction'		=> "Correggi",
-        'quiz_score'			=> "Il tuo punteggio è $1 / $2",
-        'quiz_points'			=> "$1 | $2 punti",
-        'quiz_reset'			=> "Reset"
-	),
-	'es' => array(
-		'quiz_addedPoints'		=> "Puntos por cada respuesta acertada",
-		'quiz_cutoffPoints'		=> "Penalización por cada respuesta errónea",
-		'quiz_ignoreCoef'		=> "Ignorar los puntos de cada pregunta",
-		'quiz_shuffle'			=> "Desordenar preguntas",
-		'quiz_colorRight'		=> "Acertadas",
-		'quiz_colorWrong'		=> "Falladas",
-		'quiz_colorNA'			=> "No contestadas",
-		'quiz_colorError'		=> "Error de sintaxis",
-		'quiz_correction'		=> "Contestar",
-		'quiz_score'			=> "Tu puntuación es de $1 / $2",
-		'quiz_points'			=> "$1 | $2 punto(s)",
-		'quiz_reset'			=> "Empezar de nuevo"
-	)
 );
