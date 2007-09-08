@@ -162,4 +162,54 @@ $wgQuizMessages = array(
 		'quiz_correction'		=> "Oprava",
 		'quiz_score'			=> "Vaše skóre je $1 / $2"
 	),
+ 	'yue' => array(
+ 		'quiz_addedPoints' 		=> "答啱咗加上嘅分數",
+		'quiz_cutoffPoints'		=> "答錯咗減去嘅分數",
+		'quiz_ignoreCoef'		=> "略過問題嘅系數",
+		'quiz_shuffle'			=> "撈亂問題",
+		'quiz_colorRight'		=> "啱",
+		'quiz_colorWrong'		=> "錯",
+		'quiz_colorNA'			=> "未答",
+		'quiz_colorError'		=> "語法錯咗",
+		'quiz_correction'		=> "遞交",
+		'quiz_score'			=> "你嘅分數係 $1 / $2",
+		'quiz_points'			=> "$1 | $2 分",
+		'quiz_reset'			=> "重設"
+	),
+ 	'zh-hant' => array(
+ 		'quiz_addedPoints' 		=> "答对加上的分数",
+		'quiz_cutoffPoints'		=> "答错减去的分数",
+		'quiz_ignoreCoef'		=> "略过问题的系数",
+		'quiz_shuffle'			=> "随机问题",
+		'quiz_colorRight'		=> "对",
+		'quiz_colorWrong'		=> "错",
+		'quiz_colorNA'			=> "未回答",
+		'quiz_colorError'		=> "语法错误",
+		'quiz_correction'		=> "递交",
+		'quiz_score'			=> "您的分数是 $1 / $2",
+		'quiz_points'			=> "$1 | $2 分",
+		'quiz_reset'			=> "重设"
+ 	),
+
+ 	'zh-hant' => array(
+ 		'quiz_addedPoints' 		=> "答對加上的分數",
+		'quiz_cutoffPoints'		=> "答錯減去的分數",
+		'quiz_ignoreCoef'		=> "略過問題的系數",
+		'quiz_shuffle'			=> "隨機問題",
+		'quiz_colorRight'		=> "對",
+		'quiz_colorWrong'		=> "錯",
+		'quiz_colorNA'			=> "未回答",
+		'quiz_colorError'		=> "語法錯誤",
+		'quiz_correction'		=> "遞交",
+		'quiz_score'			=> "您的分數是 $1 / $2",
+		'quiz_points'			=> "$1 | $2 分",
+		'quiz_reset'			=> "重設"
+ 	),
 );
+
+$wgQuizMessages['zh'] = $wgQuizMessages['zh-hans'];
+$wgQuizMessages['zh-cn'] = $wgQuizMessages['zh-hans'];
+$wgQuizMessages['zh-hk'] = $wgQuizMessages['zh-hant'];
+$wgQuizMessages['zh-sg'] = $wgQuizMessages['zh-hans'];
+$wgQuizMessages['zh-tw'] = $wgQuizMessages['zh-hant'];
+$wgQuizMessages['zh-yue'] = $wgQuizMessages['yue'];
