@@ -98,6 +98,11 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Réinitialiser"
 	),
 
+	'hsb' => array(
+		'quiz_colorRight' => 'Prawje',
+		'quiz_colorWrong' => 'Wopak',
+	),
+
 	'id' => array(
 		'quiz_addedPoints'	=> "Penambahan angka untuk jawaban yang benar",
 		'quiz_cutoffPoints'	=> "Pengurangan angka untuk jawaban yang salah",
