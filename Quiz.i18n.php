@@ -99,8 +99,18 @@ $wgQuizMessages = array(
 	),
 
 	'hsb' => array(
+		'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
+		'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
+		'quiz_ignoreCoef' => 'Prašenske koeficienty ignorować',
+		'quiz_shuffle' => 'Prašenja měšeć',
 		'quiz_colorRight' => 'Prawje',
 		'quiz_colorWrong' => 'Wopak',
+		'quiz_colorNA' => 'Žana wotmołwa',
+		'quiz_colorError' => 'Syntaksowy zmylk',
+		'quiz_correction' => 'Korektura',
+		'quiz_score' => 'Twój hrajny staw je: $1 / $2',
+		'quiz_points' => '$1 | $2 dypkow',
+		'quiz_reset' => 'Znowastartowanje',
 	),
 
 	'id' => array(
