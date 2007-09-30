@@ -53,6 +53,14 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Reset"
 	),
 
+	'ar' => array(
+		'quiz_colorRight' => 'صواب',
+		'quiz_colorWrong' => 'خطأ',
+		'quiz_colorNA' => 'لم تتم الإجابة عليه',
+		'quiz_correction' => 'تنفيذ',
+		'quiz_reset' => 'إعادة ضبط',
+	),
+
 	'de' => array(
 		'quiz_addedPoints'	=> "Pluspunkte für eine richtige Antwort",
 		'quiz_cutoffPoints'	=> "Minuspunkte für eine falsche Antwort",
