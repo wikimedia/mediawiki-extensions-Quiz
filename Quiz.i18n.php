@@ -57,7 +57,9 @@ $wgQuizMessages = array(
 		'quiz_colorRight' => 'صواب',
 		'quiz_colorWrong' => 'خطأ',
 		'quiz_colorNA' => 'لم تتم الإجابة عليه',
+		'quiz_colorError' => 'خطأ صياغة',
 		'quiz_correction' => 'تنفيذ',
+		'quiz_score' => 'نتيجتك هي $1 / $2',
 		'quiz_reset' => 'إعادة ضبط',
 	),
 
