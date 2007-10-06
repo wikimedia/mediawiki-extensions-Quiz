@@ -184,16 +184,18 @@ $wgQuizMessages = array(
 	),
 
 	'sk' => array(
-		'quiz_addedPoints'	=> "Bod(y) pričítané za správnu odpoveď",
-		'quiz_cutoffPoints'	=>"Bod(y) odčítané za nesprávnu odpoveď",
-		'quiz_ignoreCoef'	=> "Ignorovať koeficienty otázok",
-		'quiz_shuffle'		=> "Náhodný výber otázok",
-		'quiz_colorRight'	=> "Správne",
-		'quiz_colorWrong'	=> "Nesprávne",
-		'quiz_colorNA'		=> "Nezodpovedané",
-		'quiz_colorError'	=> "Syntaktická chyba",
-		'quiz_correction'	=> "Oprava",
-		'quiz_score'		=> "Vaše skóre je $1 / $2"
+		'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
+		'quiz_cutoffPoints' => 'Bod(y) odčítané za nesprávnu odpoveď',
+		'quiz_ignoreCoef' => 'Ignorovať koeficienty otázok',
+		'quiz_shuffle' => 'Náhodný výber otázok',
+		'quiz_colorRight' => 'Správne',
+		'quiz_colorWrong' => 'Nesprávne',
+		'quiz_colorNA' => 'Nezodpovedané',
+		'quiz_colorError' => 'Syntaktická chyba',
+		'quiz_correction' => 'Oprava',
+		'quiz_score' => 'Vaše skóre je $1 / $2',
+		'quiz_points' => '$1 | $2 bodov',
+		'quiz_reset' => 'Reset',#identical but defined
 	),
 
 	'yue' => array(
