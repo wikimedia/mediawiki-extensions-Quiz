@@ -54,13 +54,27 @@ $wgQuizMessages = array(
 	),
 
 	'ar' => array(
+		'quiz_addedPoints' => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
+		'quiz_cutoffPoints' => 'نقطة (نقاط) تخصم للإجابة الخاطئة',
+		'quiz_ignoreCoef' => 'تجاهل معاملات الأسئلة',
+		'quiz_shuffle' => 'أسئلة مختلطة',
 		'quiz_colorRight' => 'صواب',
 		'quiz_colorWrong' => 'خطأ',
 		'quiz_colorNA' => 'لم تتم الإجابة عليه',
 		'quiz_colorError' => 'خطأ صياغة',
 		'quiz_correction' => 'تنفيذ',
 		'quiz_score' => 'نتيجتك هي $1 / $2',
+		'quiz_points' => '$1 | $2 نقطة(نقاط)',
 		'quiz_reset' => 'إعادة ضبط',
+	),
+
+	'bcl' => array(
+		'quiz_shuffle' => 'Balasahon an mga hapot',
+		'quiz_colorRight' => 'Tamâ',
+		'quiz_colorWrong' => 'Salâ',
+		'quiz_correction' => 'Isumitir',
+		'quiz_points' => '$1 | $2 punto(s)',
+		'quiz_reset' => 'Ibalik',
 	),
 
 	'de' => array(
