@@ -182,6 +182,21 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Opnieuw"
 	),
 
+	'pms' => array(
+		'quiz_addedPoints' => 'Pont da dé për n\'aspòsta giusta',
+		'quiz_cutoffPoints' => 'Pont da gavé për n\'aspòsta nen giusta',
+		'quiz_ignoreCoef' => 'Pa dovré ij coeficent dle domande',
+		'quiz_shuffle' => 'Mës-cé le domande',
+		'quiz_colorRight' => 'Giust',
+		'quiz_colorWrong' => 'Pa giust',
+		'quiz_colorNA' => 'Anco\' nen d\'arspòsta',
+		'quiz_colorError' => 'Eror ëd sintassi',
+		'quiz_correction' => 'Manda',
+		'quiz_score' => 'A l\'ha pijait $1 pont ansima a $2',
+		'quiz_points' => '$1 | $2 pont',
+		'quiz_reset' => 'Aseré',
+	),
+
 	'pt' => array(
 		'quiz_addedPoints'	=> "Ponto(s) adicionados para cada resposta certa",
 		'quiz_cutoffPoints'	=> "Ponto(s) subtraídos para cada resposta errada",
