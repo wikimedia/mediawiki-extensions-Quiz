@@ -182,6 +182,15 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Opnieuw"
 	),
 
+	'pl' => array(
+		'quiz_colorNA' => 'Brak odpowiedzi',
+		'quiz_colorError' => 'Błąd składni',
+		'quiz_correction' => 'Wyślij',
+		'quiz_score' => 'Twoje punty to $1 / $2',
+		'quiz_points' => '$1 | $2 punktów',
+		'quiz_reset' => 'Wyzeruj',
+	),
+
 	'pms' => array(
 		'quiz_addedPoints' => 'Pont da dé për n\'aspòsta giusta',
 		'quiz_cutoffPoints' => 'Pont da gavé për n\'aspòsta nen giusta',
