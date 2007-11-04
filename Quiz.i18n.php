@@ -122,6 +122,19 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Réinitialiser"
 	),
 
+	'gl' => array(
+		'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
+		'quiz_shuffle' => 'Barallar as preguntas',
+		'quiz_colorRight' => 'Ben',
+		'quiz_colorWrong' => 'Mal',
+		'quiz_colorNA' => 'Sen resposta',
+		'quiz_colorError' => 'Erro de sintaxe',
+		'quiz_correction' => 'Enviar',
+		'quiz_score' => 'A súa puntuación é $1 / $2',
+		'quiz_points' => '$1 | $2 punto(s)',
+		'quiz_reset' => 'Limpar',
+	),
+
 	'hsb' => array(
 		'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
 		'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
@@ -150,6 +163,14 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Skor Anda adalah $1 / $2",
 		'quiz_points'		=> "$1 | $2 poin",
 		'quiz_reset'		=> "Reset"
+	),
+
+	'is' => array(
+		'quiz_addedPoints' => 'Stig fyrir rétt svar',
+		'quiz_cutoffPoints' => 'Stig dregin frá fyrir rangt svar',
+		'quiz_shuffle' => 'Stokka svörin',
+		'quiz_colorRight' => 'Rétt',
+		'quiz_colorWrong' => 'Röng',
 	),
 
 	'it' => array(
