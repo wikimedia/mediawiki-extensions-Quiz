@@ -204,6 +204,12 @@ $wgQuizMessages = array(
 	),
 
 	'pl' => array(
+		'quiz_addedPoints' => 'Punkty dodawane za właściwą odpowiedź',
+		'quiz_cutoffPoints' => 'Punkty odejmowane za niewłaściwą odpowiedź',
+		'quiz_ignoreCoef' => 'Ignoruj punktację pytań',
+		'quiz_shuffle' => 'Losuj kolejność pytań',
+		'quiz_colorRight' => 'Właściwa',
+		'quiz_colorWrong' => 'Niewłaściwa',
 		'quiz_colorNA' => 'Brak odpowiedzi',
 		'quiz_colorError' => 'Błąd składni',
 		'quiz_correction' => 'Wyślij',
