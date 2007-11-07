@@ -124,6 +124,8 @@ $wgQuizMessages = array(
 
 	'gl' => array(
 		'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
+		'quiz_cutoffPoints' => 'Punto(s) restado(s) por cada resposta errónea',
+		'quiz_ignoreCoef' => 'Ignorar os coeficientes das preguntas',
 		'quiz_shuffle' => 'Barallar as preguntas',
 		'quiz_colorRight' => 'Ben',
 		'quiz_colorWrong' => 'Mal',
