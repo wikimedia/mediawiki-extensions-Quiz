@@ -205,6 +205,21 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Opnieuw"
 	),
 
+	'oc' => array(
+		'quiz_addedPoints' => 'Punt(s) ajustat(s) per una responsa justa',
+		'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
+		'quiz_ignoreCoef' => 'Ignorar los coeficients de las questions',
+		'quiz_shuffle' => 'Mesclar las questions',
+		'quiz_colorRight' => 'Just',
+		'quiz_colorWrong' => 'Fals',
+		'quiz_colorNA' => 'Pas respondut',
+		'quiz_colorError' => 'Error de sintaxi',
+		'quiz_correction' => 'Correccion',
+		'quiz_score' => 'Vòstra marca es $1 / $2',
+		'quiz_points' => '$1 | $2 punt(s)',
+		'quiz_reset' => 'Reïnicializar',
+	),
+
 	'pl' => array(
 		'quiz_addedPoints' => 'Punkty dodawane za właściwą odpowiedź',
 		'quiz_cutoffPoints' => 'Punkty odejmowane za niewłaściwą odpowiedź',
