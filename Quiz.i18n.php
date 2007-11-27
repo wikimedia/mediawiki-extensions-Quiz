@@ -92,6 +92,11 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Neustart"
 	),
 
+	'el' => array(
+		'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
+		'quiz_points' => '$1 | $2 βαθμοί',
+	),
+
 	'es' => array(
 		'quiz_addedPoints'	=> "Puntos por cada respuesta acertada",
 		'quiz_cutoffPoints'	=> "Penalización por cada respuesta errónea",
@@ -251,18 +256,18 @@ $wgQuizMessages = array(
 	),
 
 	'pt' => array(
-		'quiz_addedPoints'	=> "Ponto(s) adicionados para cada resposta certa",
-		'quiz_cutoffPoints'	=> "Ponto(s) subtraídos para cada resposta errada",
-		'quiz_ignoreCoef'	=> "Ignorar os coeficientes das questões",
-		'quiz_shuffle'		=> "Embaralhar as questões",
-		'quiz_colorRight'	=> "Corretas",
-		'quiz_colorWrong'	=> "Erradas",
-		'quiz_colorNA'		=> "Não respondidas",
-		'quiz_colorError'	=> "Erro de sintaxe",
-		'quiz_correction'	=> "Enviar",
-		'quiz_score'		=> "Pontuação atual: $1 acertadas (dentre $2)",
-		'quiz_points'		=> "$1 | $2 ponto(s)",
-		'quiz_reset'		=> "Zerar"
+		'quiz_addedPoints' => 'Ponto(s) adicionados por cada resposta certa',
+		'quiz_cutoffPoints' => 'Ponto(s) subtraídos por cada resposta errada',
+		'quiz_ignoreCoef' => 'Ignorar os coeficientes das questões',
+		'quiz_shuffle' => 'Baralhar as questões',
+		'quiz_colorRight' => 'Correctas',
+		'quiz_colorWrong' => 'Erradas',
+		'quiz_colorNA' => 'Não respondidas',
+		'quiz_colorError' => 'Erro de sintaxe',
+		'quiz_correction' => 'Enviar',
+		'quiz_score' => 'Pontuação actual: $1 certas em $2',
+		'quiz_points' => '$1 | $2 ponto(s)',
+		'quiz_reset' => 'Repor a zero',
 	),
 
 	'sk' => array(
