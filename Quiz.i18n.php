@@ -142,6 +142,21 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Limpar',
 	),
 
+	'hr' => array(
+		'quiz_addedPoints' => 'Broj bodova za točan odgovor',
+		'quiz_cutoffPoints' => 'Broj negativnih bodova (tj. bodova koji se oduzimaju) za netočan odgovor',
+		'quiz_ignoreCoef' => 'Ignoriraj težinske koeficijente pitanja',
+		'quiz_shuffle' => 'Promiješaj pitanja',
+		'quiz_colorRight' => 'Točno',
+		'quiz_colorWrong' => 'Netočno',
+		'quiz_colorNA' => 'Neodgovoreno',
+		'quiz_colorError' => 'Sintaksna greška',
+		'quiz_correction' => 'Ocijeni kviz',
+		'quiz_score' => 'Vaš rezultat je $1 / $2',
+		'quiz_points' => '$1 | $2 {{PLURAL:$1|bod|boda|bodova}}',
+		'quiz_reset' => 'Poništi kviz',
+	),
+
 	'hsb' => array(
 		'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
 		'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
@@ -196,18 +211,18 @@ $wgQuizMessages = array(
 	),
 
 	'nl' => array(
-		'quiz_addedPoints'	=> "Punt(en) toegvoegd voor correct antwoord",
-		'quiz_cutoffPoints'	=> "Punt(en) afgetrokkenv voor fout antwoord",
-		'quiz_ignoreCoef'	=> "Negeer de coefficienten van de vragen",
-		'quiz_shuffle'		=> "Orden de vragen willekeurig",
-		'quiz_colorRight'	=> "Goed",
-		'quiz_colorWrong'	=> "Fout",
-		'quiz_colorNA'		=> "Niet beantwoord",
-		'quiz_colorError'	=> "Algemene fout",
-		'quiz_correction'	=> "Verzenden",
-		'quiz_score'		=> "Uw score is $1 / $2",
-		'quiz_points'		=> "$1 | $2 punt(en)",
-		'quiz_reset'		=> "Opnieuw"
+		'quiz_addedPoints' => 'Punt(en) toegvoegd voor een goed antwoord',
+		'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
+		'quiz_ignoreCoef' => 'De coëfficienten van de vragen negeren',
+		'quiz_shuffle' => 'De vragen in willekeurige volgorde',
+		'quiz_colorRight' => 'Goed',
+		'quiz_colorWrong' => 'Fout',
+		'quiz_colorNA' => 'Niet beantwoord',
+		'quiz_colorError' => 'Algemene fout',
+		'quiz_correction' => 'Verbetering',
+		'quiz_score' => 'Uw score is $1 / $2',
+		'quiz_points' => '$1 | $2 punt(en)',
+		'quiz_reset' => 'Opnieuw',
 	),
 
 	'oc' => array(
