@@ -225,6 +225,21 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Opnieuw',
 	),
 
+	'no' => array(
+		'quiz_addedPoints' => 'Plusspoeng for korrekt svar',
+		'quiz_cutoffPoints' => 'Minuspoeng for galt svar',
+		'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
+		'quiz_shuffle' => 'Stokk spørsmålene',
+		'quiz_colorRight' => 'Riktig',
+		'quiz_colorWrong' => 'Galt',
+		'quiz_colorNA' => 'Ikke besvart',
+		'quiz_colorError' => 'Syntaksfeil',
+		'quiz_correction' => 'Svar',
+		'quiz_score' => 'Din poengsum er $1 av $2',
+		'quiz_points' => '$1 | $2 poeng',
+		'quiz_reset' => 'Resett',
+	),
+
 	'oc' => array(
 		'quiz_addedPoints' => 'Punt(s) ajustat(s) per una responsa justa',
 		'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
