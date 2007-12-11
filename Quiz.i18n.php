@@ -93,6 +93,8 @@ $wgQuizMessages = array(
 	),
 
 	'el' => array(
+		'quiz_colorRight' => 'Σωστό',
+		'quiz_colorWrong' => 'Λάθος',
 		'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
 		'quiz_points' => '$1 | $2 βαθμοί',
 	),
