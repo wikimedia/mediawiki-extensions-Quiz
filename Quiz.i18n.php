@@ -317,6 +317,14 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Reset',#identical but defined
 	),
 
+/** Albanian (Shqip)
+ * @author Ergon
+ */
+	'sq' => array(
+		'quiz_colorRight' => 'Korrekt',
+		'quiz_colorWrong' => 'Gabim',
+	),
+
 	'yue' => array(
 		'quiz_addedPoints'	=> "答啱咗加上嘅分數",
 		'quiz_cutoffPoints'	=> "答錯咗減去嘅分數",
