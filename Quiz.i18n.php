@@ -325,6 +325,24 @@ $wgQuizMessages = array(
 		'quiz_colorWrong' => 'Gabim',
 	),
 
+/** Swedish (Svenska)
+ * @author Lejonel
+ */
+	'sv' => array(
+		'quiz_addedPoints'  => 'Poäng för rätt svar',
+		'quiz_cutoffPoints' => 'Poängavdrag för fel svar',
+		'quiz_ignoreCoef'   => 'Använd inte frågornas koefficienter',
+		'quiz_shuffle'      => 'Blanda om frågorna',
+		'quiz_colorRight'   => 'Rätt',
+		'quiz_colorWrong'   => 'Fel',
+		'quiz_colorNA'      => 'Besvarades ej',
+		'quiz_colorError'   => 'Syntaxfel',
+		'quiz_correction'   => 'Skicka',
+		'quiz_score'        => 'Din poäng är $1 av $2',
+		'quiz_points'       => '$1: $2 poäng',
+		'quiz_reset'        => 'Återställ',
+	),
+
 	'yue' => array(
 		'quiz_addedPoints'	=> "答啱咗加上嘅分數",
 		'quiz_cutoffPoints'	=> "答錯咗減去嘅分數",
