@@ -343,6 +343,17 @@ $wgQuizMessages = array(
 		'quiz_colorWrong' => 'Gabim',
 	),
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+	'stq' => array(
+		'quiz_shuffle'    => 'Froagen miskje',
+		'quiz_correction' => 'Korrektuur',
+		'quiz_score'      => 'Punkte: $1 / $2',
+		'quiz_points'     => '$1 | $2 Punkte',
+		'quiz_reset'      => 'Näistart',
+	),
+
 /** Swedish (Svenska)
  * @author Lejonel
  */
