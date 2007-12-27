@@ -212,6 +212,24 @@ $wgQuizMessages = array(
 	'quiz_reset'			=> "Reset"
 	),
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+	'lb' => array(
+		'quiz_addedPoints'  => 'Punkt(en) derbäi fir eng richteg Äntwert',
+		'quiz_cutoffPoints' => 'Punkt(en) ofgezunn fir eng falsch Äntwert',
+		'quiz_ignoreCoef'   => 'Koeffizient vun der Fro ignoréieren',
+		'quiz_shuffle'      => 'Froe meschen',
+		'quiz_colorRight'   => 'Richteg',
+		'quiz_colorWrong'   => 'Falsch',
+		'quiz_colorNA'      => 'Net beäntwert',
+		'quiz_colorError'   => 'Syntaxfeeler',
+		'quiz_correction'   => 'Verbesserung',
+		'quiz_score'        => 'Punkten: $1 / $2',
+		'quiz_points'       => '$1 | $2 Punkten',
+		'quiz_reset'        => 'Zrécksetzen',
+	),
+
 	'nl' => array(
 		'quiz_addedPoints' => 'Punt(en) toegvoegd voor een goed antwoord',
 		'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
