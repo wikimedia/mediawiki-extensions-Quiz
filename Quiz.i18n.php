@@ -77,6 +77,15 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Ibalik',
 	),
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+	'bg' => array(
+		'quiz_colorRight' => 'Правилно',
+		'quiz_colorWrong' => 'Грешно',
+		'quiz_colorError' => 'Синтактична грешка',
+	),
+
 	'de' => array(
 		'quiz_addedPoints'	=> "Pluspunkte für eine richtige Antwort",
 		'quiz_cutoffPoints'	=> "Minuspunkte für eine falsche Antwort",
