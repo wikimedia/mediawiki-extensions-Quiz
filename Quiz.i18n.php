@@ -81,9 +81,11 @@ $wgQuizMessages = array(
  * @author DCLXVI
  */
 	'bg' => array(
+		'quiz_shuffle'    => 'Разбъркване на въпросите',
 		'quiz_colorRight' => 'Правилно',
 		'quiz_colorWrong' => 'Грешно',
 		'quiz_colorError' => 'Синтактична грешка',
+		'quiz_correction' => 'Изпращане',
 	),
 
 	'de' => array(
