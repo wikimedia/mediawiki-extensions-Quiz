@@ -125,6 +125,18 @@ $wgQuizMessages = array(
 		'quiz_reset'		=> "Empezar de nuevo"
 	),
 
+/** Finnish (Suomi)
+ * @author Str4nd
+ */
+	'fi' => array(
+		'quiz_colorRight' => 'Oikein',
+		'quiz_colorWrong' => 'Väärin',
+		'quiz_score'      => 'Tuloksesi on $1 / $2',
+	),
+
+/**French (Français)
+ *@author Grondin
+ */
 	'fr' => array(
 		'quiz_addedPoints'	=> "Point(s) ajouté(s) pour une réponse juste",
 		'quiz_cutoffPoints'	=> "Point(s) retiré(s) pour une réponse erronée",
@@ -331,6 +343,32 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Repor a zero',
 	),
 
+/** Message documentation (Message documentation)
+ * @author .:Ajvol:.
+ */
+	'qqq' => array(
+		'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
+	),
+
+/** Russian (Русский)
+ * @author .:Ajvol:.
+ */
+	'ru' => array(
+		'quiz_addedPoints'  => 'очко(ов) добавлено за правильный ответ',
+		'quiz_cutoffPoints' => 'очко(ов) вычтено за неправильный ответ',
+		'quiz_ignoreCoef'   => 'Пренебрегать коэффициентами вопросов',
+		'quiz_shuffle'      => 'Перемешать вопросы',
+		'quiz_colorRight'   => 'Правильно',
+		'quiz_colorWrong'   => 'Ошибка',
+		'quiz_colorNA'      => 'Нет ответа',
+		'quiz_colorError'   => 'Синтаксическая ошибка',
+		'quiz_correction'   => 'Отправить',
+		'quiz_score'        => 'Вы набрали $1 очков из $2',
+		'quiz_points'       => '$1 | $2 очко(ов)',
+		'quiz_reset'        => 'Сбросить',
+	),
+
+/* Slovenčina*/
 	'sk' => array(
 		'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
 		'quiz_cutoffPoints' => 'Bod(y) odčítané za nesprávnu odpoveď',
@@ -381,6 +419,13 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Din poäng är $1 av $2',
 		'quiz_points'       => '$1: $2 poäng',
 		'quiz_reset'        => 'Återställ',
+	),
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+	'vo' => array(
+		'quiz_colorRight' => 'Verätik',
+		'quiz_colorWrong' => 'Neverätik',
 	),
 
 	'yue' => array(
