@@ -261,19 +261,23 @@ $wgQuizMessages = array(
 		'quiz_colorWrong' => 'Verkehrt',
 	),
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ * @author SPQRobin
+ */
 	'nl' => array(
-		'quiz_addedPoints' => 'Punt(en) toegvoegd voor een goed antwoord',
+		'quiz_addedPoints'  => 'Punt(en) toegevoegd voor een goed antwoord',
 		'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
-		'quiz_ignoreCoef' => 'De coëfficienten van de vragen negeren',
-		'quiz_shuffle' => 'De vragen in willekeurige volgorde',
-		'quiz_colorRight' => 'Goed',
-		'quiz_colorWrong' => 'Fout',
-		'quiz_colorNA' => 'Niet beantwoord',
-		'quiz_colorError' => 'Algemene fout',
-		'quiz_correction' => 'Verbetering',
-		'quiz_score' => 'Uw score is $1 / $2',
-		'quiz_points' => '$1 | $2 punt(en)',
-		'quiz_reset' => 'Opnieuw',
+		'quiz_ignoreCoef'   => 'De coëfficienten van de vragen negeren',
+		'quiz_shuffle'      => 'De vragen in willekeurige volgorde',
+		'quiz_colorRight'   => 'Goed',
+		'quiz_colorWrong'   => 'Fout',
+		'quiz_colorNA'      => 'Niet beantwoord',
+		'quiz_colorError'   => 'Algemene fout',
+		'quiz_correction'   => 'Verbetering',
+		'quiz_score'        => 'Uw score is $1 / $2',
+		'quiz_points'       => '$1 | $2 punt(en)',
+		'quiz_reset'        => 'Opnieuw',
 	),
 
 	'no' => array(
@@ -398,6 +402,24 @@ $wgQuizMessages = array(
 	'sq' => array(
 		'quiz_colorRight' => 'Korrekt',
 		'quiz_colorWrong' => 'Gabim',
+	),
+
+/** ћирилица (ћирилица)
+ * @author Sasa Stefanovic
+ */
+	'sr-ec' => array(
+		'quiz_addedPoints'  => 'Поени додати за тачан одговор',
+		'quiz_cutoffPoints' => 'Поени одузети због погрешног одговора',
+		'quiz_ignoreCoef'   => 'Игнориши коефицијенте питања',
+		'quiz_shuffle'      => 'Измешај питања',
+		'quiz_colorRight'   => 'Тачно',
+		'quiz_colorWrong'   => 'Погрешно',
+		'quiz_colorNA'      => 'Није одговорено',
+		'quiz_colorError'   => 'Грешка у синтакси',
+		'quiz_correction'   => 'Постави',
+		'quiz_score'        => 'Ваш резултат је $1 / $2',
+		'quiz_points'       => '$1 | $2 поен(а)',
+		'quiz_reset'        => 'Ресетуј',
 	),
 
 /** Seeltersk (Seeltersk)
