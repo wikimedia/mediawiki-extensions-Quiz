@@ -253,6 +253,14 @@ $wgQuizMessages = array(
 		'quiz_reset'        => 'Zrécksetzen',
 	),
 
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+	'nds' => array(
+		'quiz_colorRight' => 'Stimmt',
+		'quiz_colorWrong' => 'Verkehrt',
+	),
+
 	'nl' => array(
 		'quiz_addedPoints' => 'Punt(en) toegvoegd voor een goed antwoord',
 		'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
