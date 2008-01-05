@@ -197,6 +197,24 @@ $wgQuizMessages = array(
 		'quiz_reset' => 'Znowastartowanje',
 	),
 
+/** Hungarian (Magyar)
+ * @author Bdanee
+ * @author KossuthRad
+ */
+	'hu' => array(
+		'quiz_addedPoints'  => 'Helyes válasz esetén adott pont',
+		'quiz_cutoffPoints' => 'Hibás válasz esetén levont pont',
+		'quiz_shuffle'      => 'Kérdések összekeverése',
+		'quiz_colorRight'   => 'Jó',
+		'quiz_colorWrong'   => 'Rossz',
+		'quiz_colorNA'      => 'Nem válaszoltál',
+		'quiz_colorError'   => 'Szintaktikai hiba',
+		'quiz_correction'   => 'Elküldés',
+		'quiz_score'        => 'A pontszámod: $1 / $2',
+		'quiz_points'       => '$1 | $2 pont',
+		'quiz_reset'        => 'Újraindít',
+	),
+
 	'id' => array(
 		'quiz_addedPoints'	=> "Penambahan angka untuk jawaban yang benar",
 		'quiz_cutoffPoints'	=> "Pengurangan angka untuk jawaban yang salah",
