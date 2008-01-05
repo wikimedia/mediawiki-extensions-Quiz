@@ -204,6 +204,7 @@ $wgQuizMessages = array(
 	'hu' => array(
 		'quiz_addedPoints'  => 'Helyes válasz esetén adott pont',
 		'quiz_cutoffPoints' => 'Hibás válasz esetén levont pont',
+		'quiz_ignoreCoef'   => 'Ne vegye figyelembe a kérdések együtthatóit',
 		'quiz_shuffle'      => 'Kérdések összekeverése',
 		'quiz_colorRight'   => 'Jó',
 		'quiz_colorWrong'   => 'Rossz',
