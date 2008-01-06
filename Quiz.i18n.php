@@ -124,6 +124,23 @@ $wgQuizMessages = array(
 		'quiz_points'		=> "$1 | $2 punto(s)",
 		'quiz_reset'		=> "Empezar de nuevo"
 	),
+	
+	# فارسی (Huji)
+	'fa' => array(
+		'quiz_addedPoints'  => 'امتیاز هر پاسخ درست',
+		'quiz_cutoffPoints' => 'امتیاز منفی هر پاسخ نادرست',
+		'quiz_ignoreCoef'   => 'نادیده گرفتن ضریب سوال‌ها',
+		'quiz_shuffle'      => 'برزدن سوال‌ها',
+		'quiz_colorRight'   => 'درست',
+		'quiz_colorWrong'   => 'نادرست',
+		'quiz_colorNA'      => 'پاسخ داده نشده',
+		'quiz_colorError'   => 'خطای نحوی',
+		'quiz_correction'   => 'ارسال',
+		'quiz_score'        => 'امتیاز شما $1 از $2 است',
+		'quiz_points'       => '$1 | $2 امتیاز',
+		'quiz_reset'        => 'از نو',
+
+	),
 
 /** Finnish (Suomi)
  * @author Str4nd
