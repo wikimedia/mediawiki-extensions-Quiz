@@ -47,6 +47,9 @@ $wgExtensionCredits['parserhook'][] = array(
 /**
  * Add this extension to the mediawiki's extensions list.
  */
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
+
 $wgExtensionFunctions[] = "wfQuizExtension";
 
 $wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
@@ -165,10 +168,7 @@ class Quiz {
 	    global $wgMessageCache;
 	    if ( $messagesLoaded ) return true;
 	    $messagesLoaded = true;
-	    require( dirname( __FILE__ ) . '/Quiz.i18n.php' );
-	    foreach ($wgQuizMessages as $lang => $langMessages ) {
-	    	$wgMessageCache->addMessages( $langMessages, $lang );
-	    }
+		wfLoadExtensionMessages('QuizExtension');
 		return true;
 	}	
 	

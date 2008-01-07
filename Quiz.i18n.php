@@ -37,8 +37,8 @@
 /**
  * Messages list.
  */
-$wgQuizMessages = array(
-	'en' => array(
+$messages = array();
+	$messages['en'] = array(
 		'quiz_addedPoints'	=> "Point(s) added for a correct answer",
 		'quiz_cutoffPoints'	=> "Point(s) subtracted for a wrong answer",
 		'quiz_ignoreCoef'	=> "Ignore the questions' coefficients",
@@ -51,9 +51,9 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Your score is $1 / $2",
 		'quiz_points'		=> "$1 | $2 point(s)",
 		'quiz_reset'		=> "Reset"
-	),
+	);
 
-	'ar' => array(
+	$messages['ar'] = array(
 		'quiz_addedPoints' => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
 		'quiz_cutoffPoints' => 'نقطة (نقاط) تخصم للإجابة الخاطئة',
 		'quiz_ignoreCoef' => 'تجاهل معاملات الأسئلة',
@@ -66,29 +66,29 @@ $wgQuizMessages = array(
 		'quiz_score' => 'نتيجتك هي $1 / $2',
 		'quiz_points' => '$1 | $2 نقطة(نقاط)',
 		'quiz_reset' => 'إعادة ضبط',
-	),
+	);
 
-	'bcl' => array(
+	$messages['bcl'] = array(
 		'quiz_shuffle' => 'Balasahon an mga hapot',
 		'quiz_colorRight' => 'Tamâ',
 		'quiz_colorWrong' => 'Salâ',
 		'quiz_correction' => 'Isumitir',
 		'quiz_points' => '$1 | $2 punto(s)',
 		'quiz_reset' => 'Ibalik',
-	),
+	);
 
 /** Bulgarian (Български)
  * @author DCLXVI
  */
-	'bg' => array(
+	$messages['bg'] = array(
 		'quiz_shuffle'    => 'Разбъркване на въпросите',
 		'quiz_colorRight' => 'Правилно',
 		'quiz_colorWrong' => 'Грешно',
 		'quiz_colorError' => 'Синтактична грешка',
 		'quiz_correction' => 'Изпращане',
-	),
+	);
 
-	'de' => array(
+	$messages['de'] = array(
 		'quiz_addedPoints'	=> "Pluspunkte für eine richtige Antwort",
 		'quiz_cutoffPoints'	=> "Minuspunkte für eine falsche Antwort",
 		'quiz_ignoreCoef'	=> "Ignoriere den Fragen-Koeffizienten",
@@ -101,16 +101,16 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Punkte: $1 / $2",
 		'quiz_points'		=> "$1 | $2 Punkte",
 		'quiz_reset'		=> "Neustart"
-	),
+	);
 
-	'el' => array(
+	$messages['el'] = array(
 		'quiz_colorRight' => 'Σωστό',
 		'quiz_colorWrong' => 'Λάθος',
 		'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
 		'quiz_points' => '$1 | $2 βαθμοί',
-	),
+	);
 
-	'es' => array(
+	$messages['es'] = array(
 		'quiz_addedPoints'	=> "Puntos por cada respuesta acertada",
 		'quiz_cutoffPoints'	=> "Penalización por cada respuesta errónea",
 		'quiz_ignoreCoef'	=> "Ignorar los puntos de cada pregunta",
@@ -123,10 +123,10 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Tu puntuación es de $1 / $2",
 		'quiz_points'		=> "$1 | $2 punto(s)",
 		'quiz_reset'		=> "Empezar de nuevo"
-	),
+	);
 	
 	# فارسی (Huji)
-	'fa' => array(
+	$messages['fa'] = array(
 		'quiz_addedPoints'  => 'امتیاز هر پاسخ درست',
 		'quiz_cutoffPoints' => 'امتیاز منفی هر پاسخ نادرست',
 		'quiz_ignoreCoef'   => 'نادیده گرفتن ضریب سوال‌ها',
@@ -140,21 +140,21 @@ $wgQuizMessages = array(
 		'quiz_points'       => '$1 | $2 امتیاز',
 		'quiz_reset'        => 'از نو',
 
-	),
+	);
 
 /** Finnish (Suomi)
  * @author Str4nd
  */
-	'fi' => array(
+	$messages['fi'] = array(
 		'quiz_colorRight' => 'Oikein',
 		'quiz_colorWrong' => 'Väärin',
 		'quiz_score'      => 'Tuloksesi on $1 / $2',
-	),
+	);
 
 /**French (Français)
  *@author Grondin
  */
-	'fr' => array(
+	$messages['fr'] = array(
 		'quiz_addedPoints'	=> "Point(s) ajouté(s) pour une réponse juste",
 		'quiz_cutoffPoints'	=> "Point(s) retiré(s) pour une réponse erronée",
 		'quiz_ignoreCoef'	=> "Ignorer les coefficients des questions",
@@ -167,9 +167,9 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Votre score est $1 / $2",
 		'quiz_points'		=> "$1 | $2 point(s)",
 		'quiz_reset'		=> "Réinitialiser"
-	),
+	);
 
-	'gl' => array(
+	$messages['gl'] = array(
 		'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
 		'quiz_cutoffPoints' => 'Punto(s) restado(s) por cada resposta errónea',
 		'quiz_ignoreCoef' => 'Ignorar os coeficientes das preguntas',
@@ -182,9 +182,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'A súa puntuación é $1 / $2',
 		'quiz_points' => '$1 | $2 punto(s)',
 		'quiz_reset' => 'Limpar',
-	),
+	);
 
-	'hr' => array(
+	$messages['hr'] = array(
 		'quiz_addedPoints' => 'Broj bodova za točan odgovor',
 		'quiz_cutoffPoints' => 'Broj negativnih bodova (tj. bodova koji se oduzimaju) za netočan odgovor',
 		'quiz_ignoreCoef' => 'Ignoriraj težinske koeficijente pitanja',
@@ -197,9 +197,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Vaš rezultat je $1 / $2',
 		'quiz_points' => '$1 | $2 {{PLURAL:$1|bod|boda|bodova}}',
 		'quiz_reset' => 'Poništi kviz',
-	),
+	);
 
-	'hsb' => array(
+	$messages['hsb'] = array(
 		'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
 		'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
 		'quiz_ignoreCoef' => 'Prašenske koeficienty ignorować',
@@ -212,13 +212,13 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Twój hrajny staw je: $1 / $2',
 		'quiz_points' => '$1 | $2 dypkow',
 		'quiz_reset' => 'Znowastartowanje',
-	),
+	);
 
 /** Hungarian (Magyar)
  * @author Bdanee
  * @author KossuthRad
  */
-	'hu' => array(
+	$messages['hu'] = array(
 		'quiz_addedPoints'  => 'Helyes válasz esetén adott pont',
 		'quiz_cutoffPoints' => 'Hibás válasz esetén levont pont',
 		'quiz_ignoreCoef'   => 'Ne vegye figyelembe a kérdések együtthatóit',
@@ -231,9 +231,9 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'A pontszámod: $1 / $2',
 		'quiz_points'       => '$1 | $2 pont',
 		'quiz_reset'        => 'Újraindít',
-	),
+	);
 
-	'id' => array(
+	$messages['id'] = array(
 		'quiz_addedPoints'	=> "Penambahan angka untuk jawaban yang benar",
 		'quiz_cutoffPoints'	=> "Pengurangan angka untuk jawaban yang salah",
 		'quiz_ignoreCoef'	=> "Abaikan koefisien pertanyaan",
@@ -246,17 +246,17 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "Skor Anda adalah $1 / $2",
 		'quiz_points'		=> "$1 | $2 poin",
 		'quiz_reset'		=> "Reset"
-	),
+	);
 
-	'is' => array(
+	$messages['is'] = array(
 		'quiz_addedPoints' => 'Stig fyrir rétt svar',
 		'quiz_cutoffPoints' => 'Stig dregin frá fyrir rangt svar',
 		'quiz_shuffle' => 'Stokka svörin',
 		'quiz_colorRight' => 'Rétt',
 		'quiz_colorWrong' => 'Röng',
-	),
+	);
 
-	'it' => array(
+	$messages['it'] = array(
 		'quiz_addedPoints'	=> "Punti aggiunti per ogni risposta corretta",
 	'quiz_cutoffPoints'		=> "Punti sottratti per ogni risposta errata",
 	'quiz_ignoreCoef'		=> "Ignora i coefficienti di domanda",
@@ -269,12 +269,12 @@ $wgQuizMessages = array(
 	'quiz_score'			=> "Il tuo punteggio è $1 / $2",
 	'quiz_points'			=> "$1 | $2 punti",
 	'quiz_reset'			=> "Reset"
-	),
+	);
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
-	'lb' => array(
+	$messages['lb'] = array(
 		'quiz_addedPoints'  => 'Punkt(en) derbäi fir eng richteg Äntwert',
 		'quiz_cutoffPoints' => 'Punkt(en) ofgezunn fir eng falsch Äntwert',
 		'quiz_ignoreCoef'   => 'Koeffizient vun der Fro ignoréieren',
@@ -287,21 +287,21 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Punkten: $1 / $2',
 		'quiz_points'       => '$1 | $2 Punkten',
 		'quiz_reset'        => 'Zrécksetzen',
-	),
+	);
 
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
-	'nds' => array(
+	$messages['nds'] = array(
 		'quiz_colorRight' => 'Stimmt',
 		'quiz_colorWrong' => 'Verkehrt',
-	),
+	);
 
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
  */
-	'nl' => array(
+	$messages['nl'] = array(
 		'quiz_addedPoints'  => 'Punt(en) toegevoegd voor een goed antwoord',
 		'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
 		'quiz_ignoreCoef'   => 'De coëfficienten van de vragen negeren',
@@ -314,9 +314,9 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Uw score is $1 / $2',
 		'quiz_points'       => '$1 | $2 punt(en)',
 		'quiz_reset'        => 'Opnieuw',
-	),
+	);
 
-	'no' => array(
+	$messages['no'] = array(
 		'quiz_addedPoints' => 'Plusspoeng for korrekt svar',
 		'quiz_cutoffPoints' => 'Minuspoeng for galt svar',
 		'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
@@ -329,9 +329,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Din poengsum er $1 av $2',
 		'quiz_points' => '$1 | $2 poeng',
 		'quiz_reset' => 'Resett',
-	),
+	);
 
-	'oc' => array(
+	$messages['oc'] = array(
 		'quiz_addedPoints' => 'Punt(s) ajustat(s) per una responsa justa',
 		'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
 		'quiz_ignoreCoef' => 'Ignorar los coeficients de las questions',
@@ -344,9 +344,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Vòstra marca es $1 / $2',
 		'quiz_points' => '$1 | $2 punt(s)',
 		'quiz_reset' => 'Reïnicializar',
-	),
+	);
 
-	'pl' => array(
+	$messages['pl'] = array(
 		'quiz_addedPoints' => 'Punkty dodawane za właściwą odpowiedź',
 		'quiz_cutoffPoints' => 'Punkty odejmowane za niewłaściwą odpowiedź',
 		'quiz_ignoreCoef' => 'Ignoruj punktację pytań',
@@ -359,9 +359,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Twoje punty to $1 / $2',
 		'quiz_points' => '$1 | $2 punktów',
 		'quiz_reset' => 'Wyzeruj',
-	),
+	);
 
-	'pms' => array(
+	$messages['pms'] = array(
 		'quiz_addedPoints' => 'Pont da dé për n\'aspòsta giusta',
 		'quiz_cutoffPoints' => 'Pont da gavé për n\'aspòsta nen giusta',
 		'quiz_ignoreCoef' => 'Pa dovré ij coeficent dle domande',
@@ -374,9 +374,9 @@ $wgQuizMessages = array(
 		'quiz_score' => 'A l\'ha pijait $1 pont ansima a $2',
 		'quiz_points' => '$1 | $2 pont',
 		'quiz_reset' => 'Aseré',
-	),
+	);
 
-	'pt' => array(
+	$messages['pt'] = array(
 		'quiz_addedPoints' => 'Ponto(s) adicionados por cada resposta certa',
 		'quiz_cutoffPoints' => 'Ponto(s) subtraídos por cada resposta errada',
 		'quiz_ignoreCoef' => 'Ignorar os coeficientes das questões',
@@ -389,19 +389,19 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Pontuação actual: $1 certas em $2',
 		'quiz_points' => '$1 | $2 ponto(s)',
 		'quiz_reset' => 'Repor a zero',
-	),
+	);
 
 /** Message documentation (Message documentation)
  * @author .:Ajvol:.
  */
-	'qqq' => array(
+	$messages['qqq'] = array(
 		'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
-	),
+	);
 
 /** Russian (Русский)
  * @author .:Ajvol:.
  */
-	'ru' => array(
+	$messages['ru'] = array(
 		'quiz_addedPoints'  => 'очко(ов) добавлено за правильный ответ',
 		'quiz_cutoffPoints' => 'очко(ов) вычтено за неправильный ответ',
 		'quiz_ignoreCoef'   => 'Пренебрегать коэффициентами вопросов',
@@ -414,10 +414,10 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Вы набрали $1 очков из $2',
 		'quiz_points'       => '$1 | $2 очко(ов)',
 		'quiz_reset'        => 'Сбросить',
-	),
+	);
 
 /* Slovenčina*/
-	'sk' => array(
+	$messages['sk'] = array(
 		'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
 		'quiz_cutoffPoints' => 'Bod(y) odčítané za nesprávnu odpoveď',
 		'quiz_ignoreCoef' => 'Ignorovať koeficienty otázok',
@@ -430,20 +430,20 @@ $wgQuizMessages = array(
 		'quiz_score' => 'Vaše skóre je $1 / $2',
 		'quiz_points' => '$1 | $2 bodov',
 		'quiz_reset' => 'Reset',#identical but defined
-	),
+	);
 
 /** Albanian (Shqip)
  * @author Ergon
  */
-	'sq' => array(
+	$messages['sq'] = array(
 		'quiz_colorRight' => 'Korrekt',
 		'quiz_colorWrong' => 'Gabim',
-	),
+	);
 
 /** ћирилица (ћирилица)
  * @author Sasa Stefanovic
  */
-	'sr-ec' => array(
+	$messages['sr-ec'] = array(
 		'quiz_addedPoints'  => 'Поени додати за тачан одговор',
 		'quiz_cutoffPoints' => 'Поени одузети због погрешног одговора',
 		'quiz_ignoreCoef'   => 'Игнориши коефицијенте питања',
@@ -456,23 +456,23 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Ваш резултат је $1 / $2',
 		'quiz_points'       => '$1 | $2 поен(а)',
 		'quiz_reset'        => 'Ресетуј',
-	),
+	);
 
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
-	'stq' => array(
+	$messages['stq'] = array(
 		'quiz_shuffle'    => 'Froagen miskje',
 		'quiz_correction' => 'Korrektuur',
 		'quiz_score'      => 'Punkte: $1 / $2',
 		'quiz_points'     => '$1 | $2 Punkte',
 		'quiz_reset'      => 'Näistart',
-	),
+	);
 
 /** Swedish (Svenska)
  * @author Lejonel
  */
-	'sv' => array(
+	$messages['sv'] = array(
 		'quiz_addedPoints'  => 'Poäng för rätt svar',
 		'quiz_cutoffPoints' => 'Poängavdrag för fel svar',
 		'quiz_ignoreCoef'   => 'Använd inte frågornas koefficienter',
@@ -485,16 +485,16 @@ $wgQuizMessages = array(
 		'quiz_score'        => 'Din poäng är $1 av $2',
 		'quiz_points'       => '$1: $2 poäng',
 		'quiz_reset'        => 'Återställ',
-	),
+	);
 /** Volapük (Volapük)
  * @author Malafaya
  */
-	'vo' => array(
+	$messages['vo'] = array(
 		'quiz_colorRight' => 'Verätik',
 		'quiz_colorWrong' => 'Neverätik',
-	),
+	);
 
-	'yue' => array(
+	$messages['yue'] = array(
 		'quiz_addedPoints'	=> "答啱咗加上嘅分數",
 		'quiz_cutoffPoints'	=> "答錯咗減去嘅分數",
 		'quiz_ignoreCoef'	=> "略過問題嘅系數",
@@ -507,9 +507,9 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "你嘅分數係 $1 / $2",
 		'quiz_points'		=> "$1 | $2 分",
 		'quiz_reset'		=> "重設"
-	),
+	);
 
-	'zh-hans' => array(
+	$messages['zh-hans'] = array(
 		'quiz_addedPoints'	=> "答对加上的分数",
 		'quiz_cutoffPoints'	=> "答错减去的分数",
 		'quiz_ignoreCoef'	=> "略过问题的系数",
@@ -522,9 +522,9 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "您的分数是 $1 / $2",
 		'quiz_points'		=> "$1 | $2 分",
 		'quiz_reset'		=> "重设"
-	),
+	);
 
-	'zh-hant' => array(
+	$messages['zh-hant'] = array(
 		'quiz_addedPoints'	=> "答對加上的分數",
 		'quiz_cutoffPoints'	=> "答錯減去的分數",
 		'quiz_ignoreCoef'	=> "略過問題的系數",
@@ -537,8 +537,7 @@ $wgQuizMessages = array(
 		'quiz_score'		=> "您的分數是 $1 / $2",
 		'quiz_points'		=> "$1 | $2 分",
 		'quiz_reset'		=> "重設"
-	),
-);
+	);
 
 $wgQuizMessages['zh'] = $wgQuizMessages['zh-hans'];
 $wgQuizMessages['zh-cn'] = $wgQuizMessages['zh-hans'];
