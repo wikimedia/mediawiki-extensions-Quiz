@@ -539,9 +539,9 @@ $messages = array();
 		'quiz_reset'		=> "重設"
 	);
 
-$wgQuizMessages['zh'] = $wgQuizMessages['zh-hans'];
-$wgQuizMessages['zh-cn'] = $wgQuizMessages['zh-hans'];
-$wgQuizMessages['zh-hk'] = $wgQuizMessages['zh-hant'];
-$wgQuizMessages['zh-sg'] = $wgQuizMessages['zh-hans'];
-$wgQuizMessages['zh-tw'] = $wgQuizMessages['zh-hant'];
-$wgQuizMessages['zh-yue'] = $wgQuizMessages['yue'];
+$messages['zh'] = $messages['zh-hans'];
+$messages['zh-cn'] = $messages['zh-hans'];
+$messages['zh-hk'] = $messages['zh-hant'];
+$messages['zh-sg'] = $messages['zh-hans'];
+$messages['zh-tw'] = $messages['zh-hant'];
+$messages['zh-yue'] = $messages['yue'];
