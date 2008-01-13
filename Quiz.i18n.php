@@ -55,6 +55,13 @@ $messages['en'] = array(
 	'quiz_reset'		=> "Reset"
 );
 
+/** Message documentation (Message documentation)
+ * @author .:Ajvol:.
+ */
+$messages['qqq'] = array(
+	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
+);
+
 $messages['ar'] = array(
 	'quiz_addedPoints' => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
 	'quiz_cutoffPoints' => 'نقطة (نقاط) تخصم للإجابة الخاطئة',
@@ -291,6 +298,24 @@ $messages['lb'] = array(
 	'quiz_reset'        => 'Zrécksetzen',
 );
 
+/** Limburgish (Limburgs)
+ * @author Ooswesthoesbes
+ */
+$messages['li'] = array(
+	'quiz_addedPoints'  => "Puntj(e) toegevoeg veur 'n good antjwaord",
+	'quiz_cutoffPoints' => "Puntj(e) aafgetróg veur 'n fout antjwaord",
+	'quiz_ignoreCoef'   => 'De coëfficiente van de vräög negere',
+	'quiz_shuffle'      => 'De vräög in willekäörige volgorde',
+	'quiz_colorRight'   => 'Ramkrèk',
+	'quiz_colorWrong'   => 'Ónkrèk',
+	'quiz_colorNA'      => 'Neet beantjwaord',
+	'quiz_colorError'   => 'Algemeine fout',
+	'quiz_correction'   => 'Verbaetering',
+	'quiz_score'        => 'Dien score is $1 / $2',
+	'quiz_points'       => '$1 | $2 puntj(e)',
+	'quiz_reset'        => 'Oppernuuj',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -391,13 +416,6 @@ $messages['pt'] = array(
 	'quiz_score' => 'Pontuação actual: $1 certas em $2',
 	'quiz_points' => '$1 | $2 ponto(s)',
 	'quiz_reset' => 'Repor a zero',
-);
-
-/** Message documentation (Message documentation)
- * @author .:Ajvol:.
- */
-$messages['qqq'] = array(
-	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
 );
 
 /** Russian (Русский)
