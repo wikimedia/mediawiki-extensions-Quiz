@@ -178,6 +178,24 @@ $messages['fr'] = array(
 	'quiz_reset'		=> "Réinitialiser"
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'quiz_addedPoints'  => 'Pouent(s) apondu(s) por una rèponsa justa',
+	'quiz_cutoffPoints' => 'Pouent(s) enlevâ(s) por una rèponsa fôssa',
+	'quiz_ignoreCoef'   => 'Ignorar los coèficients de les quèstions',
+	'quiz_shuffle'      => 'Mècllar les quèstions',
+	'quiz_colorRight'   => 'Justo',
+	'quiz_colorWrong'   => 'Fôx',
+	'quiz_colorNA'      => 'Pas rèpondu',
+	'quiz_colorError'   => 'Èrror de sintaxa',
+	'quiz_correction'   => 'Corrèccion',
+	'quiz_score'        => 'Voutra mârca est $1 / $2',
+	'quiz_points'       => '$1 | $2 pouent(s)',
+	'quiz_reset'        => 'Tornar inicialisar',
+);
+
 $messages['gl'] = array(
 	'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
 	'quiz_cutoffPoints' => 'Punto(s) restado(s) por cada resposta errónea',
@@ -416,6 +434,24 @@ $messages['pt'] = array(
 	'quiz_score' => 'Pontuação actual: $1 certas em $2',
 	'quiz_points' => '$1 | $2 ponto(s)',
 	'quiz_reset' => 'Repor a zero',
+);
+
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'quiz_addedPoints'  => 'Allin kutichisqapaq iñukuna yapasqa',
+	'quiz_cutoffPoints' => 'Panta kutichisqapaq iñukuna qichusqa',
+	'quiz_ignoreCoef'   => 'Sapa tapuypaq iñukunata qhawarpariy',
+	'quiz_shuffle'      => 'Tapuykunata arwiy',
+	'quiz_colorRight'   => 'Allin',
+	'quiz_colorWrong'   => 'Panta',
+	'quiz_colorNA'      => 'Mana kutichisqa',
+	'quiz_colorError'   => 'Sintaksis pantasqa',
+	'quiz_correction'   => 'Kutichiy',
+	'quiz_score'        => 'Taripasqaykikunaqa kay hinam: $1 / $2',
+	'quiz_points'       => '$1 | $2 iñu',
+	'quiz_reset'        => 'Musuqmanta qallariy',
 );
 
 /** Russian (Русский)
