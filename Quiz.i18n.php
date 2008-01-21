@@ -97,6 +97,22 @@ $messages['bg'] = array(
 	'quiz_correction' => 'Изпращане',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'quiz_addedPoints'  => 'সঠিক উত্তরের জন্য পয়েন্ট(সমূহ) যোগ হয়েছে',
+	'quiz_cutoffPoints' => 'ভুল উত্তরের জন্য পয়েন্ট(সমূহ) বিয়োগ হয়েছে',
+	'quiz_colorRight'   => 'সঠিক',
+	'quiz_colorWrong'   => 'ভুল',
+	'quiz_colorNA'      => 'উত্তর দেওয়া হয়নি',
+	'quiz_colorError'   => 'বাক্যপ্রকরণ ত্রুটি',
+	'quiz_correction'   => 'জমা দাও',
+	'quiz_score'        => 'আপনার স্কোর $1 / $2',
+	'quiz_points'       => '$1 | $2 পয়েন্ট(সমূহ)',
+	'quiz_reset'        => 'পুনরায় আরম্ভ করুন',
+);
+
 $messages['de'] = array(
 	'quiz_addedPoints'	=> "Pluspunkte für eine richtige Antwort",
 	'quiz_cutoffPoints'	=> "Minuspunkte für eine falsche Antwort",
@@ -548,6 +564,14 @@ $messages['sv'] = array(
 $messages['vo'] = array(
 	'quiz_colorRight' => 'Verätik',
 	'quiz_colorWrong' => 'Neverätik',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'quiz_colorRight' => 'ఒప్పు',
+	'quiz_colorWrong' => 'తప్పు',
 );
 
 $messages['yue'] = array(
