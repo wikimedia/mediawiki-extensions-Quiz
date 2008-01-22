@@ -350,6 +350,24 @@ $messages['li'] = array(
 	'quiz_reset'        => 'Oppernuuj',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Matasg
+ */
+$messages['lt'] = array(
+	'quiz_addedPoints'  => 'Taškai pridėti už teisingą atsakymą',
+	'quiz_cutoffPoints' => 'Taškai atimti už blogą atsakymą',
+	'quiz_ignoreCoef'   => 'Nepaisyti klausimų koeficientų',
+	'quiz_shuffle'      => 'Maišyti klausimus',
+	'quiz_colorRight'   => 'Teisingai',
+	'quiz_colorWrong'   => 'Neteisingai',
+	'quiz_colorNA'      => 'Neatsakyta',
+	'quiz_colorError'   => 'Sintaksės klaida',
+	'quiz_correction'   => 'Pateikti',
+	'quiz_score'        => 'Jūsų surinkti taškai yra $1 iš $2',
+	'quiz_points'       => '$1 | $2 taškas(ai)',
+	'quiz_reset'        => 'Valyti',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
