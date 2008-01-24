@@ -552,11 +552,18 @@ $messages['sr-ec'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
-	'quiz_shuffle'    => 'Froagen miskje',
-	'quiz_correction' => 'Korrektuur',
-	'quiz_score'      => 'Punkte: $1 / $2',
-	'quiz_points'     => '$1 | $2 Punkte',
-	'quiz_reset'      => 'Näistart',
+	'quiz_addedPoints'  => 'Pluspunkte foar ne gjuchte Oantwoud',
+	'quiz_cutoffPoints' => 'Minuspunkte foar ne falske Oantwoud',
+	'quiz_ignoreCoef'   => 'Ignorierje do Froagen-Koeffiziente',
+	'quiz_shuffle'      => 'Froagen miskje',
+	'quiz_colorRight'   => 'Gjucht',
+	'quiz_colorWrong'   => 'Falsk',
+	'quiz_colorNA'      => 'Nit beoantwouded',
+	'quiz_colorError'   => 'Syntaxfailer',
+	'quiz_correction'   => 'Korrektuur',
+	'quiz_score'        => 'Punkte: $1 / $2',
+	'quiz_points'       => '$1 | $2 Punkte',
+	'quiz_reset'        => 'Näistart',
 );
 
 /** Swedish (Svenska)
