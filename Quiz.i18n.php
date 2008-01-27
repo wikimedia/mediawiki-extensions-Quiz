@@ -600,6 +600,18 @@ $messages['te'] = array(
 	'quiz_correction' => 'దాఖలుచెయ్యి',
 );
 
+/** Volapük (Volapük)
+ * @author Smeira
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'quiz_colorRight' => 'Verätik',
+	'quiz_colorWrong' => 'Neverätik',
+	'quiz_colorNA'    => 'No pegesagon',
+	'quiz_colorError' => 'Süntagapöl',
+	'quiz_correction' => 'Sedön',
+);
+
 $messages['yue'] = array(
 	'quiz_addedPoints'	=> "答啱咗加上嘅分數",
 	'quiz_cutoffPoints'	=> "答錯咗減去嘅分數",
