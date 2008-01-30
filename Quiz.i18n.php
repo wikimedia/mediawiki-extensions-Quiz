@@ -291,12 +291,19 @@ $messages['id'] = array(
 	'quiz_reset'		=> "Reset"
 );
 
+/** Icelandic (Íslenska)
+ * @author S.Örvarr.S
+ */
 $messages['is'] = array(
-	'quiz_addedPoints' => 'Stig fyrir rétt svar',
+	'quiz_addedPoints'  => 'Stig fyrir rétt svar',
 	'quiz_cutoffPoints' => 'Stig dregin frá fyrir rangt svar',
-	'quiz_shuffle' => 'Stokka svörin',
-	'quiz_colorRight' => 'Rétt',
-	'quiz_colorWrong' => 'Röng',
+	'quiz_shuffle'      => 'Stokka svörin',
+	'quiz_colorRight'   => 'Rétt',
+	'quiz_colorWrong'   => 'Röng',
+	'quiz_colorNA'      => 'Ósvarað',
+	'quiz_colorError'   => 'Málfræðivilla',
+	'quiz_correction'   => 'Senda',
+	'quiz_reset'        => 'Endurstilla',
 );
 
 $messages['it'] = array(
