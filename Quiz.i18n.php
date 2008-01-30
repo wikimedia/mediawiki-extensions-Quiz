@@ -600,6 +600,23 @@ $messages['te'] = array(
 	'quiz_correction' => 'దాఖలుచెయ్యి',
 );
 
+/** Turkish (Türkçe)
+ * @author Erkan Yilmaz
+ */
+$messages['tr'] = array(
+	'quiz_colorRight' => 'Doğru',
+	'quiz_colorWrong' => 'Yanlış',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'quiz_colorRight' => 'Đúng',
+	'quiz_colorWrong' => 'Sai',
+	'quiz_colorNA'    => 'Không trả lời',
+);
+
 /** Volapük (Volapük)
  * @author Smeira
  * @author Malafaya
