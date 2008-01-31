@@ -462,6 +462,16 @@ $messages['pms'] = array(
 	'quiz_reset' => 'Aseré',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'quiz_colorRight' => 'سم',
+	'quiz_colorWrong' => 'ناسم',
+	'quiz_score'      => 'ستاسو نومرې $1 / $2 دي',
+	'quiz_points'     => '$1 | $2 نمره(ې)',
+);
+
 $messages['pt'] = array(
 	'quiz_addedPoints' => 'Ponto(s) adicionados por cada resposta certa',
 	'quiz_cutoffPoints' => 'Ponto(s) subtraídos por cada resposta errada',
@@ -600,10 +610,12 @@ $messages['vo'] = array(
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author Mpradeep
  */
 $messages['te'] = array(
 	'quiz_colorRight' => 'ఒప్పు',
 	'quiz_colorWrong' => 'తప్పు',
+	'quiz_colorError' => 'సింటాక్సు తప్పిదం',
 	'quiz_correction' => 'దాఖలుచెయ్యి',
 );
 
