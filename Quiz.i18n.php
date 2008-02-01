@@ -616,6 +616,7 @@ $messages['vo'] = array(
 $messages['te'] = array(
 	'quiz_colorRight' => 'ఒప్పు',
 	'quiz_colorWrong' => 'తప్పు',
+	'quiz_colorNA'    => 'జవాబు లేదు',
 	'quiz_colorError' => 'సింటాక్సు తప్పిదం',
 	'quiz_correction' => 'దాఖలుచెయ్యి',
 );
