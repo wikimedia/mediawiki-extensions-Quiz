@@ -103,6 +103,7 @@ $messages['bg'] = array(
 $messages['bn'] = array(
 	'quiz_addedPoints'  => 'সঠিক উত্তরের জন্য পয়েন্ট(সমূহ) যোগ হয়েছে',
 	'quiz_cutoffPoints' => 'ভুল উত্তরের জন্য পয়েন্ট(সমূহ) বিয়োগ হয়েছে',
+	'quiz_shuffle'      => 'প্রশ্ন উলোটপালোট করো',
 	'quiz_colorRight'   => 'সঠিক',
 	'quiz_colorWrong'   => 'ভুল',
 	'quiz_colorNA'      => 'উত্তর দেওয়া হয়নি',
