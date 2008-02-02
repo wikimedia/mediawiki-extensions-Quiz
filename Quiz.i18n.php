@@ -524,6 +524,24 @@ $messages['ru'] = array(
 	'quiz_reset'        => 'Сбросить',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'quiz_addedPoints'  => 'Очкуо сөп эппиэт иһин эбилиннэ',
+	'quiz_cutoffPoints' => 'очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
+	'quiz_ignoreCoef'   => 'Ыйытыылар коэффициеннарын аахсыма',
+	'quiz_shuffle'      => 'Ыйытыылары булкуй',
+	'quiz_colorRight'   => 'Сөп',
+	'quiz_colorWrong'   => 'Сыыһа',
+	'quiz_colorNA'      => 'Эппиэт суох',
+	'quiz_colorError'   => 'Синтаксическай алҕас',
+	'quiz_correction'   => 'Ыыт',
+	'quiz_score'        => '$2 очкуоттан $1 очкуону ыллыҥ',
+	'quiz_points'       => '$1 | $2 очкуо',
+	'quiz_reset'        => 'Саҥаттан',
+);
+
 /* Slovenčina*/
 $messages['sk'] = array(
 	'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
