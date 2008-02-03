@@ -132,6 +132,15 @@ $messages['bn'] = array(
 	'quiz_reset'        => 'পুনরায় আরম্ভ করুন',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'quiz_colorRight' => 'Mat',
+	'quiz_colorWrong' => 'Fall',
+	'quiz_colorNA'    => 'Direspont',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  */
