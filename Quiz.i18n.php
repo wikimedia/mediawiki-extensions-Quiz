@@ -77,6 +77,24 @@ $messages['ar'] = array(
 	'quiz_reset' => 'إعادة ضبط',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'quiz_addedPoints'  => 'Puntu/os añadíu/os por rempuesta correuta',
+	'quiz_cutoffPoints' => 'Puntu/os quitáu/os por rempuesta incorreuta',
+	'quiz_ignoreCoef'   => 'Inorar los coeficientes de les entrugues',
+	'quiz_shuffle'      => 'Revolver les entrugues',
+	'quiz_colorRight'   => 'Correuto',
+	'quiz_colorWrong'   => 'Incorreuto',
+	'quiz_colorNA'      => 'Non respondida',
+	'quiz_colorError'   => 'Error de sintaxis',
+	'quiz_correction'   => 'Unviar',
+	'quiz_score'        => 'La to puntuación ye $1 / $2',
+	'quiz_points'       => '$1 | $2 puntu/os',
+	'quiz_reset'        => 'Reinicializar',
+);
+
 $messages['bcl'] = array(
 	'quiz_shuffle' => 'Balasahon an mga hapot',
 	'quiz_colorRight' => 'Tamâ',
@@ -112,6 +130,22 @@ $messages['bn'] = array(
 	'quiz_score'        => 'আপনার স্কোর $1 / $2',
 	'quiz_points'       => '$1 | $2 পয়েন্ট(সমূহ)',
 	'quiz_reset'        => 'পুনরায় আরম্ভ করুন',
+);
+
+/** Czech (Česky)
+ * @author Li-sung
+ */
+$messages['cs'] = array(
+	'quiz_addedPoints'  => 'Bod(y) připočtené za správnou odpověď',
+	'quiz_cutoffPoints' => 'Bod(y) odečtené za špatnou odpověď',
+	'quiz_ignoreCoef'   => 'Ignorovat koeficienty otázek',
+	'quiz_shuffle'      => 'Promíchat otázky',
+	'quiz_colorRight'   => 'Správně',
+	'quiz_colorWrong'   => 'Špatně',
+	'quiz_colorNA'      => 'Nezodpovězeno',
+	'quiz_correction'   => 'Odeslat',
+	'quiz_score'        => 'Váš výsledek je $1 / $2',
+	'quiz_points'       => '$1 | $2 bodů',
 );
 
 $messages['de'] = array(
@@ -637,6 +671,8 @@ $messages['te'] = array(
 	'quiz_colorNA'    => 'జవాబు లేదు',
 	'quiz_colorError' => 'సింటాక్సు తప్పిదం',
 	'quiz_correction' => 'దాఖలుచెయ్యి',
+	'quiz_score'      => 'మీ స్కోరు $1 / $2',
+	'quiz_points'     => '$1 | $2 పాయింట్(లు)',
 );
 
 /** Turkish (Türkçe)
