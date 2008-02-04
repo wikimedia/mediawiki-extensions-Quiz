@@ -675,13 +675,15 @@ $messages['vo'] = array(
  * @author Mpradeep
  */
 $messages['te'] = array(
-	'quiz_colorRight' => 'ఒప్పు',
-	'quiz_colorWrong' => 'తప్పు',
-	'quiz_colorNA'    => 'జవాబు లేదు',
-	'quiz_colorError' => 'సింటాక్సు తప్పిదం',
-	'quiz_correction' => 'దాఖలుచెయ్యి',
-	'quiz_score'      => 'మీ స్కోరు $1 / $2',
-	'quiz_points'     => '$1 | $2 పాయింట్(లు)',
+	'quiz_addedPoints'  => 'సరియైన జవాబుకి కలిపే పాయింటు(లు)',
+	'quiz_cutoffPoints' => 'తప్పు జవాబుకి తీసివేసే పాయింటు(లు)',
+	'quiz_colorRight'   => 'ఒప్పు',
+	'quiz_colorWrong'   => 'తప్పు',
+	'quiz_colorNA'      => 'జవాబు లేదు',
+	'quiz_colorError'   => 'సింటాక్సు తప్పిదం',
+	'quiz_correction'   => 'దాఖలుచెయ్యి',
+	'quiz_score'        => 'మీ స్కోరు $1 / $2',
+	'quiz_points'       => '$1 | $2 పాయింట్(లు)',
 );
 
 /** Turkish (Türkçe)
