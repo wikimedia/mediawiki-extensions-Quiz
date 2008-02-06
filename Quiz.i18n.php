@@ -686,6 +686,24 @@ $messages['te'] = array(
 	'quiz_points'       => '$1 | $2 పాయింట్(లు)',
 );
 
+/** Tajik (Тоҷикӣ)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'quiz_addedPoints'  => 'Имтиёзи ҳар посухи дуруст',
+	'quiz_cutoffPoints' => 'Имтиёзи манфии ҳар посухи нодуруст',
+	'quiz_ignoreCoef'   => 'Нодида гирифтани зариби саволҳо',
+	'quiz_shuffle'      => 'Бар задани саволҳо',
+	'quiz_colorRight'   => 'Дуруст',
+	'quiz_colorWrong'   => 'Нодуруст',
+	'quiz_colorNA'      => 'Посух дода нашуд',
+	'quiz_colorError'   => 'Хатои наҳвӣ',
+	'quiz_correction'   => 'Ирсол',
+	'quiz_score'        => 'Имтиёзи шумо $1 аз $2 аст',
+	'quiz_points'       => '$1 | $2 имтиёз',
+	'quiz_reset'        => 'Аз нав',
+);
+
 /** Turkish (Türkçe)
  * @author Erkan Yilmaz
  */
