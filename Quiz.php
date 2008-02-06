@@ -37,11 +37,12 @@
  * Extension's parameters.
  */
 $wgExtensionCredits['parserhook'][] = array(
-    'name'=>'Quiz',
-    'version'=>'1.0',
-    'author'=>'lrbabe',
-    'url'=>'http://www.mediawiki.org/wiki/Extension:Quiz',
-    'description' => 'Allows creation of quizzes'
+    'name'           => 'Quiz',
+    'version'        => '1.0.1',
+    'author'         => 'lrbabe',
+    'url'            => 'http://www.mediawiki.org/wiki/Extension:Quiz',
+    'description'    => 'Allows creation of quizzes',
+    'descriptionmsg' => 'quiz_desc'
 );
     
 /**

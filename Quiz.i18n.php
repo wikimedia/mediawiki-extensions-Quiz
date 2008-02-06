@@ -41,6 +41,7 @@
 $messages = array();
 
 $messages['en'] = array(
+	'quiz_desc'	        => 'Allows creation of quizzes',
 	'quiz_addedPoints'	=> "Point(s) added for a correct answer",
 	'quiz_cutoffPoints'	=> "Point(s) subtracted for a wrong answer",
 	'quiz_ignoreCoef'	=> "Ignore the questions' coefficients",
@@ -157,7 +158,11 @@ $messages['cs'] = array(
 	'quiz_points'       => '$1 | $2 bodů',
 );
 
+/** German (Deutsch)
+ * @author Raimond Spekking
+ */
 $messages['de'] = array(
+	'quiz_desc'	        => 'Ermöglicht die Erstellung von Quizspielen',
 	'quiz_addedPoints'	=> "Pluspunkte für eine richtige Antwort",
 	'quiz_cutoffPoints'	=> "Minuspunkte für eine falsche Antwort",
 	'quiz_ignoreCoef'	=> "Ignoriere den Fragen-Koeffizienten",
@@ -778,7 +783,6 @@ $messages['zh-hant'] = array(
 	'quiz_reset'		=> "重設"
 );
 
-$messages['de-formal'] = $messages['de'];
 $messages['zh'] = $messages['zh-hans'];
 $messages['zh-cn'] = $messages['zh-hans'];
 $messages['zh-hk'] = $messages['zh-hant'];
