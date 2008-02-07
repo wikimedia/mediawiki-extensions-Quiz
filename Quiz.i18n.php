@@ -63,19 +63,23 @@ $messages['qqq'] = array(
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
 );
 
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $messages['ar'] = array(
-	'quiz_addedPoints' => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
+	'quiz_desc'         => 'يسمح بإنشاء اختبارات',
+	'quiz_addedPoints'  => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
 	'quiz_cutoffPoints' => 'نقطة (نقاط) تخصم للإجابة الخاطئة',
-	'quiz_ignoreCoef' => 'تجاهل معاملات الأسئلة',
-	'quiz_shuffle' => 'أسئلة مختلطة',
-	'quiz_colorRight' => 'صواب',
-	'quiz_colorWrong' => 'خطأ',
-	'quiz_colorNA' => 'لم تتم الإجابة عليه',
-	'quiz_colorError' => 'خطأ صياغة',
-	'quiz_correction' => 'تنفيذ',
-	'quiz_score' => 'نتيجتك هي $1 / $2',
-	'quiz_points' => '$1 | $2 نقطة(نقاط)',
-	'quiz_reset' => 'إعادة ضبط',
+	'quiz_ignoreCoef'   => 'تجاهل معاملات الأسئلة',
+	'quiz_shuffle'      => 'أسئلة مختلطة',
+	'quiz_colorRight'   => 'صواب',
+	'quiz_colorWrong'   => 'خطأ',
+	'quiz_colorNA'      => 'لم تتم الإجابة عليه',
+	'quiz_colorError'   => 'خطأ صياغة',
+	'quiz_correction'   => 'تنفيذ',
+	'quiz_score'        => 'نتيجتك هي $1 / $2',
+	'quiz_points'       => '$1 | $2 نقطة(نقاط)',
+	'quiz_reset'        => 'إعادة ضبط',
 );
 
 /** Asturian (Asturianu)
@@ -144,8 +148,10 @@ $messages['br'] = array(
 
 /** Czech (Česky)
  * @author Li-sung
+ * @author Matěj Grabovský
  */
 $messages['cs'] = array(
+	'quiz_desc'         => 'Umožňuje tvorbu kvízů',
 	'quiz_addedPoints'  => 'Bod(y) připočtené za správnou odpověď',
 	'quiz_cutoffPoints' => 'Bod(y) odečtené za špatnou odpověď',
 	'quiz_ignoreCoef'   => 'Ignorovat koeficienty otázek',
@@ -153,9 +159,11 @@ $messages['cs'] = array(
 	'quiz_colorRight'   => 'Správně',
 	'quiz_colorWrong'   => 'Špatně',
 	'quiz_colorNA'      => 'Nezodpovězeno',
+	'quiz_colorError'   => 'Syntaktická chyba',
 	'quiz_correction'   => 'Odeslat',
 	'quiz_score'        => 'Váš výsledek je $1 / $2',
 	'quiz_points'       => '$1 | $2 bodů',
+	'quiz_reset'        => 'Reset',
 );
 
 /** German (Deutsch)
@@ -373,6 +381,25 @@ $messages['it'] = array(
 	'quiz_reset'			=> "Reset"
 );
 
+/** Japanese (日本語)
+ * @author JtFuruhata
+ */
+$messages['ja'] = array(
+	'quiz_desc'         => 'クイズの作成',
+	'quiz_addedPoints'  => '正解時の得点',
+	'quiz_cutoffPoints' => '不正解時の失点',
+	'quiz_ignoreCoef'   => '問題ごとの倍率を無視する',
+	'quiz_shuffle'      => '問題をシャッフル',
+	'quiz_colorRight'   => '正解',
+	'quiz_colorWrong'   => '不正解',
+	'quiz_colorNA'      => '無回答',
+	'quiz_colorError'   => '構文エラー',
+	'quiz_correction'   => '送信',
+	'quiz_score'        => '得点：$1点（$2点満点）',
+	'quiz_points'       => '$1 | $2点',
+	'quiz_reset'        => 'リセット',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -427,6 +454,17 @@ $messages['lt'] = array(
 	'quiz_reset'        => 'Valyti',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Jacob.jose
+ */
+$messages['ml'] = array(
+	'quiz_desc'       => 'ക്വിസുകള്‍ സൃഷ്ടിക്കാന്‍ സഹായിക്കുന്നു',
+	'quiz_shuffle'    => 'ചോദ്യങ്ങള്‍ കശക്കുക',
+	'quiz_colorRight' => 'ശരി',
+	'quiz_colorWrong' => 'തെറ്റ്',
+	'quiz_colorNA'    => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -436,10 +474,11 @@ $messages['nds'] = array(
 );
 
 /** Dutch (Nederlands)
- * @author Siebrand
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['nl'] = array(
+	'quiz_desc'         => 'Maakt het aanmaken van tests mogelijk',
 	'quiz_addedPoints'  => 'Punt(en) toegevoegd voor een goed antwoord',
 	'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
 	'quiz_ignoreCoef'   => 'De coëfficienten van de vragen negeren',
@@ -524,19 +563,23 @@ $messages['ps'] = array(
 	'quiz_points'     => '$1 | $2 نمره(ې)',
 );
 
+/** Portuguese (Português)
+ * @author Malafaya
+ */
 $messages['pt'] = array(
-	'quiz_addedPoints' => 'Ponto(s) adicionados por cada resposta certa',
+	'quiz_desc'         => 'Permite a criação de questionários',
+	'quiz_addedPoints'  => 'Ponto(s) adicionados por cada resposta certa',
 	'quiz_cutoffPoints' => 'Ponto(s) subtraídos por cada resposta errada',
-	'quiz_ignoreCoef' => 'Ignorar os coeficientes das questões',
-	'quiz_shuffle' => 'Baralhar as questões',
-	'quiz_colorRight' => 'Correctas',
-	'quiz_colorWrong' => 'Erradas',
-	'quiz_colorNA' => 'Não respondidas',
-	'quiz_colorError' => 'Erro de sintaxe',
-	'quiz_correction' => 'Enviar',
-	'quiz_score' => 'Pontuação actual: $1 certas em $2',
-	'quiz_points' => '$1 | $2 ponto(s)',
-	'quiz_reset' => 'Repor a zero',
+	'quiz_ignoreCoef'   => 'Ignorar os coeficientes das questões',
+	'quiz_shuffle'      => 'Baralhar as questões',
+	'quiz_colorRight'   => 'Correctas',
+	'quiz_colorWrong'   => 'Erradas',
+	'quiz_colorNA'      => 'Não respondidas',
+	'quiz_colorError'   => 'Erro de sintaxe',
+	'quiz_correction'   => 'Enviar',
+	'quiz_score'        => 'Pontuação actual: $1 certas em $2',
+	'quiz_points'       => '$1 | $2 ponto(s)',
+	'quiz_reset'        => 'Repor a zero',
 );
 
 /** Quechua (Runa Simi)
@@ -593,20 +636,23 @@ $messages['sah'] = array(
 	'quiz_reset'        => 'Саҥаттан',
 );
 
-/* Slovenčina*/
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
 $messages['sk'] = array(
-	'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
+	'quiz_desc'         => 'Umožňuje tvorbu kvízov',
+	'quiz_addedPoints'  => 'Bod(y) pričítané za správnu odpoveď',
 	'quiz_cutoffPoints' => 'Bod(y) odčítané za nesprávnu odpoveď',
-	'quiz_ignoreCoef' => 'Ignorovať koeficienty otázok',
-	'quiz_shuffle' => 'Náhodný výber otázok',
-	'quiz_colorRight' => 'Správne',
-	'quiz_colorWrong' => 'Nesprávne',
-	'quiz_colorNA' => 'Nezodpovedané',
-	'quiz_colorError' => 'Syntaktická chyba',
-	'quiz_correction' => 'Oprava',
-	'quiz_score' => 'Vaše skóre je $1 / $2',
-	'quiz_points' => '$1 | $2 bodov',
-	'quiz_reset' => 'Reset',#identical but defined
+	'quiz_ignoreCoef'   => 'Ignorovať koeficienty otázok',
+	'quiz_shuffle'      => 'Náhodný výber otázok',
+	'quiz_colorRight'   => 'Správne',
+	'quiz_colorWrong'   => 'Nesprávne',
+	'quiz_colorNA'      => 'Nezodpovedané',
+	'quiz_colorError'   => 'Syntaktická chyba',
+	'quiz_correction'   => 'Oprava',
+	'quiz_score'        => 'Vaše skóre je $1 / $2',
+	'quiz_points'       => '$1 | $2 bodov',
+	'quiz_reset'        => 'Reset',
 );
 
 /** Albanian (Shqip)
@@ -655,8 +701,10 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author Lejonel
+ * @author Max sonnelid
  */
 $messages['sv'] = array(
+	'quiz_desc'         => 'Tillåt skapande av utfrågningar',
 	'quiz_addedPoints'  => 'Poäng för rätt svar',
 	'quiz_cutoffPoints' => 'Poängavdrag för fel svar',
 	'quiz_ignoreCoef'   => 'Använd inte frågornas koefficienter',
@@ -669,13 +717,6 @@ $messages['sv'] = array(
 	'quiz_score'        => 'Din poäng är $1 av $2',
 	'quiz_points'       => '$1: $2 poäng',
 	'quiz_reset'        => 'Återställ',
-);
-/** Volapük (Volapük)
- * @author Malafaya
- */
-$messages['vo'] = array(
-	'quiz_colorRight' => 'Verätik',
-	'quiz_colorWrong' => 'Neverätik',
 );
 
 /** Telugu (తెలుగు)
