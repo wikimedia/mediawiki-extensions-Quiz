@@ -199,8 +199,11 @@ $messages['es'] = array(
 	'quiz_reset'		=> "Empezar de nuevo"
 );
 
-	# فارسی (Huji)
+/** فارسی (فارسی)
+ * @author Huji
+ */
 $messages['fa'] = array(
+	'quiz_desc'         => 'ایجاد آزمون را ممکن می‌سازد',
 	'quiz_addedPoints'  => 'امتیاز هر پاسخ درست',
 	'quiz_cutoffPoints' => 'امتیاز منفی هر پاسخ نادرست',
 	'quiz_ignoreCoef'   => 'نادیده گرفتن ضریب سوال‌ها',
