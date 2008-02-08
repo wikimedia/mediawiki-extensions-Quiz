@@ -166,7 +166,6 @@ class Quiz {
 	
 	static function loadMessages() {
 	    static $messagesLoaded = false;
-	    global $wgMessageCache;
 	    if ( $messagesLoaded ) return true;
 	    $messagesLoaded = true;
 		wfLoadExtensionMessages('QuizExtension');

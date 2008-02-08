@@ -826,10 +826,3 @@ $messages['zh-hant'] = array(
 	'quiz_points'		=> "$1 | $2 分",
 	'quiz_reset'		=> "重設"
 );
-
-$messages['zh'] = $messages['zh-hans'];
-$messages['zh-cn'] = $messages['zh-hans'];
-$messages['zh-hk'] = $messages['zh-hant'];
-$messages['zh-sg'] = $messages['zh-hans'];
-$messages['zh-tw'] = $messages['zh-hant'];
-$messages['zh-yue'] = $messages['yue'];
