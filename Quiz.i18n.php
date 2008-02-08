@@ -236,22 +236,22 @@ $messages['fi'] = array(
 	'quiz_score'      => 'Tuloksesi on $1 / $2',
 );
 
-/**French (Français)
- *@author Grondin
+/** French (Français)
+ * @author Grondin
  */
 $messages['fr'] = array(
-	'quiz_addedPoints'	=> "Point(s) ajouté(s) pour une réponse juste",
-	'quiz_cutoffPoints'	=> "Point(s) retiré(s) pour une réponse erronée",
-	'quiz_ignoreCoef'	=> "Ignorer les coefficients des questions",
-	'quiz_shuffle'		=> "Mélanger les questions",
-	'quiz_colorRight'	=> "Juste",
-	'quiz_colorWrong'	=> "Faux",
-	'quiz_colorNA'		=> "Non répondu",
-	'quiz_colorError'	=> "Erreur de syntaxe",
-	'quiz_correction'	=> "Correction",
-	'quiz_score'		=> "Votre score est $1 / $2",
-	'quiz_points'		=> "$1 | $2 point(s)",
-	'quiz_reset'		=> "Réinitialiser"
+	'quiz_desc'         => 'Permet la création des Quiz',
+	'quiz_addedPoints'  => 'Point(s) ajouté(s) pour une réponse juste',
+	'quiz_cutoffPoints' => 'Point(s) retiré(s) pour une réponse erronée',
+	'quiz_ignoreCoef'   => 'Ignorer les coefficients des questions',
+	'quiz_shuffle'      => 'Mélanger les questions',
+	'quiz_colorRight'   => 'Juste',
+	'quiz_colorWrong'   => 'Faux',
+	'quiz_colorNA'      => 'Non répondu',
+	'quiz_colorError'   => 'Erreur de syntaxe',
+	'quiz_correction'   => 'Correction',
+	'quiz_score'        => 'Votre score est $1 / $2',
+	'quiz_reset'        => 'Réinitialiser',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -302,19 +302,23 @@ $messages['hr'] = array(
 	'quiz_reset' => 'Poništi kviz',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
 $messages['hsb'] = array(
-	'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
+	'quiz_desc'         => 'Dowola wutworjenje kwisow',
+	'quiz_addedPoints'  => 'Plusdypki za prawu wotmołwu',
 	'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
-	'quiz_ignoreCoef' => 'Prašenske koeficienty ignorować',
-	'quiz_shuffle' => 'Prašenja měšeć',
-	'quiz_colorRight' => 'Prawje',
-	'quiz_colorWrong' => 'Wopak',
-	'quiz_colorNA' => 'Žana wotmołwa',
-	'quiz_colorError' => 'Syntaksowy zmylk',
-	'quiz_correction' => 'Korektura',
-	'quiz_score' => 'Twój hrajny staw je: $1 / $2',
-	'quiz_points' => '$1 | $2 dypkow',
-	'quiz_reset' => 'Znowastartowanje',
+	'quiz_ignoreCoef'   => 'Prašenske koeficienty ignorować',
+	'quiz_shuffle'      => 'Prašenja měšeć',
+	'quiz_colorRight'   => 'Prawje',
+	'quiz_colorWrong'   => 'Wopak',
+	'quiz_colorNA'      => 'Žana wotmołwa',
+	'quiz_colorError'   => 'Syntaksowy zmylk',
+	'quiz_correction'   => 'Korektura',
+	'quiz_score'        => 'Twój hrajny staw je: $1 / $2',
+	'quiz_points'       => '$1 | $2 dypkow',
+	'quiz_reset'        => 'Znowastartowanje',
 );
 
 /** Hungarian (Magyar)
@@ -493,19 +497,23 @@ $messages['nl'] = array(
 	'quiz_reset'        => 'Opnieuw',
 );
 
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
 $messages['no'] = array(
-	'quiz_addedPoints' => 'Plusspoeng for korrekt svar',
+	'quiz_desc'         => 'Tillater oppretting av quizer',
+	'quiz_addedPoints'  => 'Plusspoeng for korrekt svar',
 	'quiz_cutoffPoints' => 'Minuspoeng for galt svar',
-	'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
-	'quiz_shuffle' => 'Stokk spørsmålene',
-	'quiz_colorRight' => 'Riktig',
-	'quiz_colorWrong' => 'Galt',
-	'quiz_colorNA' => 'Ikke besvart',
-	'quiz_colorError' => 'Syntaksfeil',
-	'quiz_correction' => 'Svar',
-	'quiz_score' => 'Din poengsum er $1 av $2',
-	'quiz_points' => '$1 | $2 poeng',
-	'quiz_reset' => 'Resett',
+	'quiz_ignoreCoef'   => 'Ignorer spørsmålets verdier',
+	'quiz_shuffle'      => 'Stokk spørsmålene',
+	'quiz_colorRight'   => 'Riktig',
+	'quiz_colorWrong'   => 'Galt',
+	'quiz_colorNA'      => 'Ikke besvart',
+	'quiz_colorError'   => 'Syntaksfeil',
+	'quiz_correction'   => 'Svar',
+	'quiz_score'        => 'Din poengsum er $1 av $2',
+	'quiz_points'       => '$1 | $2 poeng',
+	'quiz_reset'        => 'Resett',
 );
 
 $messages['oc'] = array(
@@ -826,3 +834,4 @@ $messages['zh-hant'] = array(
 	'quiz_points'		=> "$1 | $2 分",
 	'quiz_reset'		=> "重設"
 );
+
