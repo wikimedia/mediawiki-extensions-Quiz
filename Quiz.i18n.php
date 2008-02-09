@@ -251,6 +251,7 @@ $messages['fr'] = array(
 	'quiz_colorError'   => 'Erreur de syntaxe',
 	'quiz_correction'   => 'Correction',
 	'quiz_score'        => 'Votre score est $1 / $2',
+	'quiz_points'       => '$1 | $2 point(s)',
 	'quiz_reset'        => 'Réinitialiser',
 );
 
@@ -747,6 +748,7 @@ $messages['te'] = array(
  * @author Ibrahim
  */
 $messages['tg'] = array(
+	'quiz_desc'         => 'Эҷоди озмунҳоро мумкин месозад',
 	'quiz_addedPoints'  => 'Имтиёзи ҳар посухи дуруст',
 	'quiz_cutoffPoints' => 'Имтиёзи манфии ҳар посухи нодуруст',
 	'quiz_ignoreCoef'   => 'Нодида гирифтани зариби саволҳо',
