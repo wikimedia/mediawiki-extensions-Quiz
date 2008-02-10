@@ -327,6 +327,7 @@ $messages['hsb'] = array(
  * @author KossuthRad
  */
 $messages['hu'] = array(
+	'quiz_desc'         => 'Lehetővé teszi kvízkérdések létrehozását',
 	'quiz_addedPoints'  => 'Helyes válasz esetén adott pont',
 	'quiz_cutoffPoints' => 'Hibás válasz esetén levont pont',
 	'quiz_ignoreCoef'   => 'Ne vegye figyelembe a kérdések együtthatóit',
@@ -427,6 +428,7 @@ $messages['lb'] = array(
  * @author Ooswesthoesbes
  */
 $messages['li'] = array(
+	'quiz_desc'         => "Maak 't aanmake van tes meugelik",
 	'quiz_addedPoints'  => "Puntj(e) toegevoeg veur 'n good antjwaord",
 	'quiz_cutoffPoints' => "Puntj(e) aafgetróg veur 'n fout antjwaord",
 	'quiz_ignoreCoef'   => 'De coëfficiente van de vräög negere',
