@@ -113,6 +113,7 @@ $messages['bcl'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
+	'quiz_desc'       => 'Позволява създаването на анкети',
 	'quiz_shuffle'    => 'Разбъркване на въпросите',
 	'quiz_colorRight' => 'Правилно',
 	'quiz_colorWrong' => 'Грешно',
