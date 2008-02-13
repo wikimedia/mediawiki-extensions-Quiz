@@ -520,19 +520,23 @@ $messages['no'] = array(
 	'quiz_reset'        => 'Resett',
 );
 
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
 $messages['oc'] = array(
-	'quiz_addedPoints' => 'Punt(s) ajustat(s) per una responsa justa',
+	'quiz_desc'         => 'Permet la creacion dels Quiz',
+	'quiz_addedPoints'  => 'Punt(s) ajustat(s) per una responsa justa',
 	'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
-	'quiz_ignoreCoef' => 'Ignorar los coeficients de las questions',
-	'quiz_shuffle' => 'Mesclar las questions',
-	'quiz_colorRight' => 'Just',
-	'quiz_colorWrong' => 'Fals',
-	'quiz_colorNA' => 'Pas respondut',
-	'quiz_colorError' => 'Error de sintaxi',
-	'quiz_correction' => 'Correccion',
-	'quiz_score' => 'Vòstra marca es $1 / $2',
-	'quiz_points' => '$1 | $2 punt(s)',
-	'quiz_reset' => 'Reïnicializar',
+	'quiz_ignoreCoef'   => 'Ignorar los coeficients de las questions',
+	'quiz_shuffle'      => 'Mesclar las questions',
+	'quiz_colorRight'   => 'Just',
+	'quiz_colorWrong'   => 'Fals',
+	'quiz_colorNA'      => 'Pas respondut',
+	'quiz_colorError'   => 'Error de sintaxi',
+	'quiz_correction'   => 'Correccion',
+	'quiz_score'        => 'Vòstra marca es $1 / $2',
+	'quiz_points'       => '$1 | $2 punt(s)',
+	'quiz_reset'        => 'Reïnicializar',
 );
 
 $messages['pl'] = array(
@@ -616,6 +620,7 @@ $messages['qu'] = array(
  * @author .:Ajvol:.
  */
 $messages['ru'] = array(
+	'quiz_desc'         => 'Позволяет создавать вопросники',
 	'quiz_addedPoints'  => 'очко(ов) добавлено за правильный ответ',
 	'quiz_cutoffPoints' => 'очко(ов) вычтено за неправильный ответ',
 	'quiz_ignoreCoef'   => 'Пренебрегать коэффициентами вопросов',
@@ -736,8 +741,10 @@ $messages['sv'] = array(
  * @author Mpradeep
  */
 $messages['te'] = array(
+	'quiz_desc'         => 'క్విజ్&zwnj;ల తయారీని అనుమతిస్తుంది',
 	'quiz_addedPoints'  => 'సరియైన జవాబుకి కలిపే పాయింటు(లు)',
 	'quiz_cutoffPoints' => 'తప్పు జవాబుకి తీసివేసే పాయింటు(లు)',
+	'quiz_shuffle'      => 'ప్రశ్నలను గజిబిజిచేయి',
 	'quiz_colorRight'   => 'ఒప్పు',
 	'quiz_colorWrong'   => 'తప్పు',
 	'quiz_colorNA'      => 'జవాబు లేదు',
