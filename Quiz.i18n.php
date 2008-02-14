@@ -401,7 +401,7 @@ $messages['ja'] = array(
 	'quiz_colorWrong'   => '不正解',
 	'quiz_colorNA'      => '無回答',
 	'quiz_colorError'   => '構文エラー',
-	'quiz_correction'   => '送信',
+	'quiz_correction'   => '採点',
 	'quiz_score'        => '得点：$1点（$2点満点）',
 	'quiz_points'       => '$1 | $2点',
 	'quiz_reset'        => 'リセット',
@@ -539,19 +539,24 @@ $messages['oc'] = array(
 	'quiz_reset'        => 'Reïnicializar',
 );
 
+/** Polish (Polski)
+ * @author Derbeth
+ * @author Sp5uhe
+ */
 $messages['pl'] = array(
-	'quiz_addedPoints' => 'Punkty dodawane za właściwą odpowiedź',
+	'quiz_desc'         => 'Umożliwia tworzenie quizów',
+	'quiz_addedPoints'  => 'Punkty dodawane za właściwą odpowiedź',
 	'quiz_cutoffPoints' => 'Punkty odejmowane za niewłaściwą odpowiedź',
-	'quiz_ignoreCoef' => 'Ignoruj punktację pytań',
-	'quiz_shuffle' => 'Losuj kolejność pytań',
-	'quiz_colorRight' => 'Właściwa',
-	'quiz_colorWrong' => 'Niewłaściwa',
-	'quiz_colorNA' => 'Brak odpowiedzi',
-	'quiz_colorError' => 'Błąd składni',
-	'quiz_correction' => 'Wyślij',
-	'quiz_score' => 'Twoje punty to $1 / $2',
-	'quiz_points' => '$1 | $2 punktów',
-	'quiz_reset' => 'Wyzeruj',
+	'quiz_ignoreCoef'   => 'Ignoruj punktację pytań',
+	'quiz_shuffle'      => 'Losuj kolejność pytań',
+	'quiz_colorRight'   => 'Właściwa',
+	'quiz_colorWrong'   => 'Niewłaściwa',
+	'quiz_colorNA'      => 'Brak odpowiedzi',
+	'quiz_colorError'   => 'Błąd składni',
+	'quiz_correction'   => 'Wyślij',
+	'quiz_score'        => 'Twoje punty to $1 / $2',
+	'quiz_points'       => '$1 | $2 punktów',
+	'quiz_reset'        => 'Wyzeruj',
 );
 
 $messages['pms'] = array(
@@ -673,11 +678,16 @@ $messages['sk'] = array(
 );
 
 /** Albanian (Shqip)
+ * @author Cradel
  * @author Ergon
  */
 $messages['sq'] = array(
+	'quiz_desc'       => 'Lejon krijimin e enigmave',
+	'quiz_ignoreCoef' => 'Injoro koificientin e pyetjes',
+	'quiz_shuffle'    => 'Përziej pyetjet',
 	'quiz_colorRight' => 'Korrekt',
 	'quiz_colorWrong' => 'Gabim',
+	'quiz_correction' => 'Dërgo',
 );
 
 /** ћирилица (ћирилица)
@@ -785,9 +795,15 @@ $messages['tr'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'quiz_colorRight' => 'Đúng',
-	'quiz_colorWrong' => 'Sai',
-	'quiz_colorNA'    => 'Không trả lời',
+	'quiz_desc'         => 'Tạo ra bài thi',
+	'quiz_addedPoints'  => 'Số điểm cộng khi trả lời đúng',
+	'quiz_cutoffPoints' => 'Số điểm trừ khi trả lời sai',
+	'quiz_colorRight'   => 'Đúng',
+	'quiz_colorWrong'   => 'Sai',
+	'quiz_colorNA'      => 'Không trả lời',
+	'quiz_colorError'   => 'Lỗi cú pháp',
+	'quiz_points'       => '$1 | $2 điểm',
+	'quiz_reset'        => 'Tẩy trống',
 );
 
 /** Volapük (Volapük)
