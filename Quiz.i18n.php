@@ -731,7 +731,7 @@ $messages['stq'] = array(
  * @author Max sonnelid
  */
 $messages['sv'] = array(
-	'quiz_desc'         => 'Tillåt skapande av utfrågningar',
+	'quiz_desc'         => 'Ger möjlighet att skapa frågeformulär',
 	'quiz_addedPoints'  => 'Poäng för rätt svar',
 	'quiz_cutoffPoints' => 'Poängavdrag för fel svar',
 	'quiz_ignoreCoef'   => 'Använd inte frågornas koefficienter',
