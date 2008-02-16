@@ -754,6 +754,7 @@ $messages['te'] = array(
 	'quiz_desc'         => 'క్విజ్&zwnj;ల తయారీని అనుమతిస్తుంది',
 	'quiz_addedPoints'  => 'సరియైన జవాబుకి కలిపే పాయింటు(లు)',
 	'quiz_cutoffPoints' => 'తప్పు జవాబుకి తీసివేసే పాయింటు(లు)',
+	'quiz_ignoreCoef'   => 'ప్రశ్నల యొక్క గుణకాలని పట్టించుకోకు',
 	'quiz_shuffle'      => 'ప్రశ్నలను గజిబిజిచేయి',
 	'quiz_colorRight'   => 'ఒప్పు',
 	'quiz_colorWrong'   => 'తప్పు',
@@ -762,6 +763,7 @@ $messages['te'] = array(
 	'quiz_correction'   => 'దాఖలుచెయ్యి',
 	'quiz_score'        => 'మీ స్కోరు $1 / $2',
 	'quiz_points'       => '$1 | $2 పాయింట్(లు)',
+	'quiz_reset'        => 'రీసెట్',
 );
 
 /** Tajik (Тоҷикӣ)
