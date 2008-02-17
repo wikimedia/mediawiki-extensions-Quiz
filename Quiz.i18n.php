@@ -123,10 +123,13 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Zaheen
  */
 $messages['bn'] = array(
+	'quiz_desc'         => 'কুইজ সৃষ্টির অনুমতি দেয়',
 	'quiz_addedPoints'  => 'সঠিক উত্তরের জন্য পয়েন্ট(সমূহ) যোগ হয়েছে',
 	'quiz_cutoffPoints' => 'ভুল উত্তরের জন্য পয়েন্ট(সমূহ) বিয়োগ হয়েছে',
+	'quiz_ignoreCoef'   => 'প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক',
 	'quiz_shuffle'      => 'প্রশ্ন উলোটপালোট করো',
 	'quiz_colorRight'   => 'সঠিক',
 	'quiz_colorWrong'   => 'ভুল',
