@@ -65,6 +65,7 @@ $messages['qqq'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author Alnokta
  */
 $messages['ar'] = array(
 	'quiz_desc'         => 'يسمح بإنشاء اختبارات',
@@ -79,7 +80,7 @@ $messages['ar'] = array(
 	'quiz_correction'   => 'تنفيذ',
 	'quiz_score'        => 'نتيجتك هي $1 / $2',
 	'quiz_points'       => '$1 | $2 نقطة(نقاط)',
-	'quiz_reset'        => 'إعادة ضبط',
+	'quiz_reset'        => 'صفر',
 );
 
 /** Asturian (Asturianu)
@@ -242,9 +243,10 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Sherbrooke
  */
 $messages['fr'] = array(
-	'quiz_desc'         => 'Permet la création des Quiz',
+	'quiz_desc'         => 'Permet la création des quiz',
 	'quiz_addedPoints'  => 'Point(s) ajouté(s) pour une réponse juste',
 	'quiz_cutoffPoints' => 'Point(s) retiré(s) pour une réponse erronée',
 	'quiz_ignoreCoef'   => 'Ignorer les coefficients des questions',
@@ -277,19 +279,24 @@ $messages['frp'] = array(
 	'quiz_reset'        => 'Tornar inicialisar',
 );
 
+/** Galician (Galego)
+ * @author Xosé
+ * @author Alma
+ */
 $messages['gl'] = array(
-	'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
+	'quiz_desc'         => 'Permite a creación de preguntas',
+	'quiz_addedPoints'  => 'Punto(s) engadidos para unha resposta correcta',
 	'quiz_cutoffPoints' => 'Punto(s) restado(s) por cada resposta errónea',
-	'quiz_ignoreCoef' => 'Ignorar os coeficientes das preguntas',
-	'quiz_shuffle' => 'Barallar as preguntas',
-	'quiz_colorRight' => 'Ben',
-	'quiz_colorWrong' => 'Mal',
-	'quiz_colorNA' => 'Sen resposta',
-	'quiz_colorError' => 'Erro de sintaxe',
-	'quiz_correction' => 'Enviar',
-	'quiz_score' => 'A súa puntuación é $1 / $2',
-	'quiz_points' => '$1 | $2 punto(s)',
-	'quiz_reset' => 'Limpar',
+	'quiz_ignoreCoef'   => 'Ignorar os coeficientes das preguntas',
+	'quiz_shuffle'      => 'Barallar as preguntas',
+	'quiz_colorRight'   => 'Ben',
+	'quiz_colorWrong'   => 'Mal',
+	'quiz_colorNA'      => 'Sen resposta',
+	'quiz_colorError'   => 'Erro de sintaxe',
+	'quiz_correction'   => 'Enviar',
+	'quiz_score'        => 'A súa puntuación é $1 / $2',
+	'quiz_points'       => '$1 | $2 punto(s)',
+	'quiz_reset'        => 'Limpar',
 );
 
 $messages['hr'] = array(
@@ -647,6 +654,7 @@ $messages['ru'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
+	'quiz_desc'         => 'Вопросниктары оҥорор кыаҕы биэрэр',
 	'quiz_addedPoints'  => 'Очкуо сөп эппиэт иһин эбилиннэ',
 	'quiz_cutoffPoints' => 'очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
 	'quiz_ignoreCoef'   => 'Ыйытыылар коэффициеннарын аахсыма',
@@ -803,6 +811,7 @@ $messages['vi'] = array(
 	'quiz_desc'         => 'Tạo ra bài thi',
 	'quiz_addedPoints'  => 'Số điểm cộng khi trả lời đúng',
 	'quiz_cutoffPoints' => 'Số điểm trừ khi trả lời sai',
+	'quiz_shuffle'      => 'Xáo trộn các câu hỏi',
 	'quiz_colorRight'   => 'Đúng',
 	'quiz_colorWrong'   => 'Sai',
 	'quiz_colorNA'      => 'Không trả lời',
