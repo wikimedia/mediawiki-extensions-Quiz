@@ -151,6 +151,22 @@ $messages['br'] = array(
 	'quiz_colorNA'    => 'Direspont',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'quiz_addedPoints'  => 'Punt(s) guanyats per resposta correcta',
+	'quiz_cutoffPoints' => 'Punt(s) perduts per resposta incorrecta',
+	'quiz_shuffle'      => 'Preguntes aleatòries',
+	'quiz_colorRight'   => 'Correcte',
+	'quiz_colorWrong'   => 'Incorrecte',
+	'quiz_colorNA'      => 'Sense resposta',
+	'quiz_colorError'   => 'Error de sintaxi',
+	'quiz_correction'   => 'Envia',
+	'quiz_score'        => 'La vostra puntuació és $1 / $2',
+	'quiz_points'       => '$1 | $2 punt(s)',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  * @author Matěj Grabovský
@@ -195,6 +211,25 @@ $messages['el'] = array(
 	'quiz_colorWrong' => 'Λάθος',
 	'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
 	'quiz_points' => '$1 | $2 βαθμοί',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'quiz_desc'         => 'Permesas kreadon de kvizoj',
+	'quiz_addedPoints'  => 'Poento(j) por ĝusta respondo',
+	'quiz_cutoffPoints' => 'Poento(j) subtrahita(j) por malĝusta respondo',
+	'quiz_ignoreCoef'   => 'Ignoru la koeficientojn de demandoj.',
+	'quiz_shuffle'      => 'Miksu demandaron',
+	'quiz_colorRight'   => 'Ĝusta',
+	'quiz_colorWrong'   => 'Malĝusta',
+	'quiz_colorNA'      => 'Ne respondita',
+	'quiz_colorError'   => 'Sintaksa eraro',
+	'quiz_correction'   => 'Ek!',
+	'quiz_score'        => 'Viaj poentoj estas $1 / $2',
+	'quiz_points'       => '$1 | $2 poento(j)',
+	'quiz_reset'        => 'Restarigu',
 );
 
 $messages['es'] = array(
@@ -588,8 +623,10 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'quiz_shuffle'    => 'پوښتنې ګډوډول',
 	'quiz_colorRight' => 'سم',
 	'quiz_colorWrong' => 'ناسم',
+	'quiz_colorNA'    => 'بې ځوابه',
 	'quiz_score'      => 'ستاسو نومرې $1 / $2 دي',
 	'quiz_points'     => '$1 | $2 نمره(ې)',
 );
