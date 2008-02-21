@@ -300,6 +300,7 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
+	'quiz_desc'         => 'Pèrmèt la crèacion des quiz.',
 	'quiz_addedPoints'  => 'Pouent(s) apondu(s) por una rèponsa justa',
 	'quiz_cutoffPoints' => 'Pouent(s) enlevâ(s) por una rèponsa fôssa',
 	'quiz_ignoreCoef'   => 'Ignorar los coèficients de les quèstions',
@@ -848,6 +849,7 @@ $messages['vi'] = array(
 	'quiz_desc'         => 'Tạo ra bài thi',
 	'quiz_addedPoints'  => 'Số điểm cộng khi trả lời đúng',
 	'quiz_cutoffPoints' => 'Số điểm trừ khi trả lời sai',
+	'quiz_ignoreCoef'   => 'Bỏ qua hệ số của các câu hỏi',
 	'quiz_shuffle'      => 'Xáo trộn các câu hỏi',
 	'quiz_colorRight'   => 'Đúng',
 	'quiz_colorWrong'   => 'Sai',
