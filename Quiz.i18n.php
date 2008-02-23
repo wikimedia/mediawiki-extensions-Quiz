@@ -335,19 +335,24 @@ $messages['gl'] = array(
 	'quiz_reset'        => 'Limpar',
 );
 
+/** Croatian (Hrvatski)
+ * @author SpeedyGonsales
+ * @author Dnik
+ */
 $messages['hr'] = array(
-	'quiz_addedPoints' => 'Broj bodova za točan odgovor',
+	'quiz_desc'         => 'Dozvoljava kreiranje kvizova',
+	'quiz_addedPoints'  => 'Broj bodova za točan odgovor',
 	'quiz_cutoffPoints' => 'Broj negativnih bodova (tj. bodova koji se oduzimaju) za netočan odgovor',
-	'quiz_ignoreCoef' => 'Ignoriraj težinske koeficijente pitanja',
-	'quiz_shuffle' => 'Promiješaj pitanja',
-	'quiz_colorRight' => 'Točno',
-	'quiz_colorWrong' => 'Netočno',
-	'quiz_colorNA' => 'Neodgovoreno',
-	'quiz_colorError' => 'Sintaksna greška',
-	'quiz_correction' => 'Ocijeni kviz',
-	'quiz_score' => 'Vaš rezultat je $1 / $2',
-	'quiz_points' => '$1 | $2 {{PLURAL:$1|bod|boda|bodova}}',
-	'quiz_reset' => 'Poništi kviz',
+	'quiz_ignoreCoef'   => 'Ignoriraj težinske koeficijente pitanja',
+	'quiz_shuffle'      => 'Promiješaj pitanja',
+	'quiz_colorRight'   => 'Točno',
+	'quiz_colorWrong'   => 'Netočno',
+	'quiz_colorNA'      => 'Neodgovoreno',
+	'quiz_colorError'   => 'Sintaksna greška',
+	'quiz_correction'   => 'Ocijeni kviz',
+	'quiz_score'        => 'Vaš rezultat je $1 / $2',
+	'quiz_points'       => '$1 | $2 {{PLURAL:$1|bod|boda|bodova}}',
+	'quiz_reset'        => 'Poništi kviz',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
