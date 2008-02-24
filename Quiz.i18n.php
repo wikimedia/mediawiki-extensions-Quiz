@@ -278,6 +278,7 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Urhixidur
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -291,7 +292,7 @@ $messages['fr'] = array(
 	'quiz_colorNA'      => 'Non répondu',
 	'quiz_colorError'   => 'Erreur de syntaxe',
 	'quiz_correction'   => 'Correction',
-	'quiz_score'        => 'Votre score est $1 / $2',
+	'quiz_score'        => 'Votre pointage est $1 / $2',
 	'quiz_points'       => '$1 | $2 point(s)',
 	'quiz_reset'        => 'Réinitialiser',
 );
@@ -424,19 +425,22 @@ $messages['is'] = array(
 	'quiz_reset'        => 'Endurstilla',
 );
 
+/** Italian (Italiano)
+ * @author BrokenArrow
+ */
 $messages['it'] = array(
-	'quiz_addedPoints'	=> "Punti aggiunti per ogni risposta corretta",
-	'quiz_cutoffPoints'		=> "Punti sottratti per ogni risposta errata",
-	'quiz_ignoreCoef'		=> "Ignora i coefficienti di domanda",
-	'quiz_shuffle'			=> "Mescola le domande",
-	'quiz_colorRight'		=> "Giusto",
-	'quiz_colorWrong'		=> "Sbagliato",
-	'quiz_colorNA'			=> "Nessuna risposta",
-	'quiz_colorError'		=> "Errore di sintassi",
-	'quiz_correction'		=> "Correggi",
-	'quiz_score'			=> "Il tuo punteggio è $1 / $2",
-	'quiz_points'			=> "$1 | $2 punti",
-	'quiz_reset'			=> "Reset"
+	'quiz_desc'         => 'Consente di creare dei quiz',
+	'quiz_addedPoints'  => 'Punti aggiunti per ogni risposta corretta',
+	'quiz_cutoffPoints' => 'Punti sottratti per ogni risposta errata',
+	'quiz_ignoreCoef'   => 'Ignora i coefficienti di domanda',
+	'quiz_shuffle'      => 'Mescola le domande',
+	'quiz_colorRight'   => 'Giusto',
+	'quiz_colorWrong'   => 'Sbagliato',
+	'quiz_colorNA'      => 'Nessuna risposta',
+	'quiz_colorError'   => 'Errore di sintassi',
+	'quiz_correction'   => 'Correggi',
+	'quiz_score'        => 'Il tuo punteggio è $1 / $2',
+	'quiz_points'       => '$1 | $2 punti',
 );
 
 /** Japanese (日本語)
@@ -456,6 +460,24 @@ $messages['ja'] = array(
 	'quiz_score'        => '得点：$1点（$2点満点）',
 	'quiz_points'       => '$1 | $2点',
 	'quiz_reset'        => 'リセット',
+);
+
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'quiz_desc'         => 'អនុញ្ញាតិ អោយបង្កើត ចំណោទសួរ',
+	'quiz_addedPoints'  => 'ពិន្ទុ ត្រូវបានបូកចូល ចំពោះចំលើយត្រូវ',
+	'quiz_cutoffPoints' => 'ពិន្ទុ ត្រូវបានដកចេញ ចំពោះចំលើយខុស',
+	'quiz_shuffle'      => 'សំណួរបង្អូស',
+	'quiz_colorRight'   => 'ត្រូវ',
+	'quiz_colorWrong'   => 'ខុស',
+	'quiz_colorNA'      => 'មិនបានឆ្លើយ',
+	'quiz_colorError'   => 'កំហុសពាក្យសម្ពន្ធ',
+	'quiz_correction'   => 'ដាក់ស្នើ',
+	'quiz_score'        => 'តារាងពិន្ទុ របស់អ្នក គឺ  $1 / $2',
+	'quiz_points'       => '$1 | $2 ពិន្ទុ',
+	'quiz_reset'        => 'ធ្វើដូចដើមវិញ',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -837,6 +859,14 @@ $messages['tg'] = array(
 	'quiz_score'        => 'Имтиёзи шумо $1 аз $2 аст',
 	'quiz_points'       => '$1 | $2 имтиёз',
 	'quiz_reset'        => 'Аз нав',
+);
+
+/** Thai (ไทย)
+ * @author Passawuth
+ */
+$messages['th'] = array(
+	'quiz_colorRight' => 'ถูกต้อง',
+	'quiz_colorWrong' => 'ผิด',
 );
 
 /** Turkish (Türkçe)
