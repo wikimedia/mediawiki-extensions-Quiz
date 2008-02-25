@@ -395,19 +395,22 @@ $messages['hu'] = array(
 	'quiz_reset'        => 'Újraindít',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
 $messages['id'] = array(
-	'quiz_addedPoints'	=> "Penambahan angka untuk jawaban yang benar",
-	'quiz_cutoffPoints'	=> "Pengurangan angka untuk jawaban yang salah",
-	'quiz_ignoreCoef'	=> "Abaikan koefisien pertanyaan",
-	'quiz_shuffle'		=> "Mengacak pertanyaan",
-	'quiz_colorRight'	=> "Benar",
-	'quiz_colorWrong'	=> "Salah",
-	'quiz_colorNA'		=> "Tak dijawab",
-	'quiz_colorError'	=> "Kesalahan sintaks",
-	'quiz_correction'	=> "Koreksi",
-	'quiz_score'		=> "Skor Anda adalah $1 / $2",
-	'quiz_points'		=> "$1 | $2 poin",
-	'quiz_reset'		=> "Reset"
+	'quiz_desc'         => 'Menyediakan fasilitas pembuatan kuis',
+	'quiz_addedPoints'  => 'Penambahan angka untuk jawaban yang benar',
+	'quiz_cutoffPoints' => 'Pengurangan angka untuk jawaban yang salah',
+	'quiz_ignoreCoef'   => 'Abaikan koefisien pertanyaan',
+	'quiz_shuffle'      => 'Mengacak pertanyaan',
+	'quiz_colorRight'   => 'Benar',
+	'quiz_colorWrong'   => 'Salah',
+	'quiz_colorNA'      => 'Tak dijawab',
+	'quiz_colorError'   => 'Kesalahan sintaks',
+	'quiz_correction'   => 'Koreksi',
+	'quiz_score'        => 'Skor Anda adalah $1 / $2',
+	'quiz_points'       => '$1 | $2 poin',
 );
 
 /** Icelandic (Íslenska)
