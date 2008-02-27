@@ -411,6 +411,7 @@ $messages['id'] = array(
 	'quiz_correction'   => 'Koreksi',
 	'quiz_score'        => 'Skor Anda adalah $1 / $2',
 	'quiz_points'       => '$1 | $2 poin',
+	'quiz_reset'		=> "Reset"
 );
 
 /** Icelandic (Íslenska)
