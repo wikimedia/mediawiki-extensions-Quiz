@@ -377,7 +377,7 @@ class Quiz {
 				}
 				break;
 			default:
-				return "<div class=\"quizText\">$buffer<br/></div>";
+				return "<div class=\"quizText\">$buffer<br /></div>";
 				break;
 			}
 		}
@@ -418,7 +418,7 @@ class Quiz {
 		$output .= "><tbody>\n";
 		$output .= $buffer;
 		$output .= "</tbody></table>\n";
-		$output .= "<br/></div>\n";
+		$output .= "<br /></div>\n";
 		return $output;
 	}
 }
@@ -811,7 +811,7 @@ class Question {
 						$value = "&lt;_{$possibility}_ &gt;";
 					}
 				}
-				if($this->mBeingCorrected) $a_inputBeg.= "$possibility<br/>";
+				if($this->mBeingCorrected) $a_inputBeg.= "$possibility<br />";
 			}
 			$value = empty($value)? "" : "value=\"".str_replace('"', "&quot;", $value)."\"";
 			if($this->mBeingCorrected) {
