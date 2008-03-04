@@ -112,6 +112,7 @@ $messages['bcl'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Borislav
  */
 $messages['bg'] = array(
 	'quiz_desc'       => 'Позволява създаването на анкети',
@@ -120,6 +121,9 @@ $messages['bg'] = array(
 	'quiz_colorWrong' => 'Грешно',
 	'quiz_colorError' => 'Синтактична грешка',
 	'quiz_correction' => 'Изпращане',
+	'quiz_score'      => 'Постижението ви е $1 / $2',
+	'quiz_points'     => '$1 | $2 {{plural:$2|точка|точки}}',
+	'quiz_reset'      => 'Отмяна',
 );
 
 /** Bengali (বাংলা)
@@ -473,6 +477,7 @@ $messages['km'] = array(
 	'quiz_desc'         => 'អនុញ្ញាតិ អោយបង្កើត ចំណោទសួរ',
 	'quiz_addedPoints'  => 'ពិន្ទុ ត្រូវបានបូកចូល ចំពោះចំលើយត្រូវ',
 	'quiz_cutoffPoints' => 'ពិន្ទុ ត្រូវបានដកចេញ ចំពោះចំលើយខុស',
+	'quiz_ignoreCoef'   => 'មិនខ្វល់ មេគុណ នៃ សំណួរ',
 	'quiz_shuffle'      => 'សំណួរបង្អូស',
 	'quiz_colorRight'   => 'ត្រូវ',
 	'quiz_colorWrong'   => 'ខុស',
@@ -481,7 +486,7 @@ $messages['km'] = array(
 	'quiz_correction'   => 'ដាក់ស្នើ',
 	'quiz_score'        => 'តារាងពិន្ទុ របស់អ្នក គឺ  $1 / $2',
 	'quiz_points'       => '$1 | $2 ពិន្ទុ',
-	'quiz_reset'        => 'ធ្វើដូចដើមវិញ',
+	'quiz_reset'        => 'ធ្វើ ដូចដើមវិញ',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -576,6 +581,25 @@ $messages['nl'] = array(
 	'quiz_score'        => 'Uw score is $1 / $2',
 	'quiz_points'       => '$1 | $2 punt(en)',
 	'quiz_reset'        => 'Opnieuw',
+);
+
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Eirik
+ */
+$messages['nn'] = array(
+	'quiz_desc'         => 'Gjer oppretting av spørjekonkurransar mogleg',
+	'quiz_addedPoints'  => 'Plusspoeng for rett svar',
+	'quiz_cutoffPoints' => 'Minuspoeng for feil svar',
+	'quiz_ignoreCoef'   => 'Oversjå verdiane på spørsmåla',
+	'quiz_shuffle'      => 'Stokk om på spørsmåla',
+	'quiz_colorRight'   => 'Rett',
+	'quiz_colorWrong'   => 'Feil',
+	'quiz_colorNA'      => 'Ikkje svara på',
+	'quiz_colorError'   => 'Syntaksfeil',
+	'quiz_correction'   => 'Svar',
+	'quiz_score'        => 'Poengsummen din er $1 av $2 moglege',
+	'quiz_points'       => '$1 | $2 poeng',
+	'quiz_reset'        => 'Nullstill',
 );
 
 /** Norwegian (‪Norsk (bokmål)‬)
