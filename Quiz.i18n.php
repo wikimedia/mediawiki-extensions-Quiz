@@ -111,19 +111,22 @@ $messages['bcl'] = array(
 );
 
 /** Bulgarian (Български)
- * @author DCLXVI
  * @author Borislav
+ * @author DCLXVI
  */
 $messages['bg'] = array(
-	'quiz_desc'       => 'Позволява създаването на анкети',
-	'quiz_shuffle'    => 'Разбъркване на въпросите',
-	'quiz_colorRight' => 'Правилно',
-	'quiz_colorWrong' => 'Грешно',
-	'quiz_colorError' => 'Синтактична грешка',
-	'quiz_correction' => 'Изпращане',
-	'quiz_score'      => 'Постижението ви е $1 / $2',
-	'quiz_points'     => '$1 | $2 {{plural:$2|точка|точки}}',
-	'quiz_reset'      => 'Отмяна',
+	'quiz_desc'         => 'Позволява създаването на анкети',
+	'quiz_addedPoints'  => 'Точки, добавяни за правилен отговор',
+	'quiz_cutoffPoints' => 'Точки, отнемани за грешен отговор',
+	'quiz_shuffle'      => 'Разбъркване на въпросите',
+	'quiz_colorRight'   => 'Правилно',
+	'quiz_colorWrong'   => 'Грешно',
+	'quiz_colorNA'      => 'Без отговор',
+	'quiz_colorError'   => 'Синтактична грешка',
+	'quiz_correction'   => 'Изпращане',
+	'quiz_score'        => 'Постижението ви е $1 / $2',
+	'quiz_points'       => '$1 | $2 {{plural:$2|точка|точки}}',
+	'quiz_reset'        => 'Отмяна',
 );
 
 /** Bengali (বাংলা)
