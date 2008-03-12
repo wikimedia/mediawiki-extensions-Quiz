@@ -475,6 +475,7 @@ $messages['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
 	'quiz_desc'         => 'អនុញ្ញាតិ អោយបង្កើត ចំណោទសួរ',
@@ -489,7 +490,7 @@ $messages['km'] = array(
 	'quiz_correction'   => 'ដាក់ស្នើ',
 	'quiz_score'        => 'តារាងពិន្ទុ របស់អ្នក គឺ  $1 / $2',
 	'quiz_points'       => '$1 | $2 ពិន្ទុ',
-	'quiz_reset'        => 'ធ្វើ ដូចដើមវិញ',
+	'quiz_reset'        => 'ធ្វើឱ្យដូចដើមវិញ',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -835,7 +836,7 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author Lejonel
- * @author Max sonnelid
+ * @author M.M.S.
  */
 $messages['sv'] = array(
 	'quiz_desc'         => 'Ger möjlighet att skapa frågeformulär',
