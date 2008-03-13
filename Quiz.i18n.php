@@ -563,8 +563,18 @@ $messages['ml'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
-	'quiz_colorRight' => 'Stimmt',
-	'quiz_colorWrong' => 'Verkehrt',
+	'quiz_desc'         => 'Verlööft dat Opstellen vun Quizspelen',
+	'quiz_addedPoints'  => 'Punkten för richtige Antwoort',
+	'quiz_cutoffPoints' => 'Minuspunkten för verkehrte Antwoort',
+	'quiz_ignoreCoef'   => 'op Fragen-Koeffizienten nix op geven',
+	'quiz_shuffle'      => 'Fragen mischen',
+	'quiz_colorRight'   => 'Stimmt',
+	'quiz_colorWrong'   => 'Verkehrt',
+	'quiz_colorNA'      => 'Nich antert',
+	'quiz_colorError'   => 'Syntaxfehler',
+	'quiz_score'        => 'Punkten: $1 / $2',
+	'quiz_points'       => '$1 | $2 Punkt(en)',
+	'quiz_reset'        => 'Trüchsetten',
 );
 
 /** Dutch (Nederlands)
