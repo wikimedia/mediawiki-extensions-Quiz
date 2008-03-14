@@ -475,18 +475,19 @@ $messages['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author គីមស៊្រុន
  * @author Lovekhmer
  */
 $messages['km'] = array(
-	'quiz_desc'         => 'អនុញ្ញាតិ អោយបង្កើត ចំណោទសួរ',
+	'quiz_desc'         => 'អនុញ្ញាតអោយបង្កើតចំណោទសួរ',
 	'quiz_addedPoints'  => 'ពិន្ទុ ត្រូវបានបូកចូល ចំពោះចំលើយត្រូវ',
 	'quiz_cutoffPoints' => 'ពិន្ទុ ត្រូវបានដកចេញ ចំពោះចំលើយខុស',
-	'quiz_ignoreCoef'   => 'មិនខ្វល់ មេគុណ នៃ សំណួរ',
-	'quiz_shuffle'      => 'សំណួរបង្អូស',
+	'quiz_ignoreCoef'   => 'មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ',
+	'quiz_shuffle'      => 'សាប់សំណួរ',
 	'quiz_colorRight'   => 'ត្រូវ',
 	'quiz_colorWrong'   => 'ខុស',
 	'quiz_colorNA'      => 'មិនបានឆ្លើយ',
-	'quiz_colorError'   => 'កំហុសពាក្យសម្ពន្ធ',
+	'quiz_colorError'   => 'កំហុសពាក្យសម័្ពន្ធ',
 	'quiz_correction'   => 'ដាក់ស្នើ',
 	'quiz_score'        => 'តារាងពិន្ទុ របស់អ្នក គឺ  $1 / $2',
 	'quiz_points'       => '$1 | $2 ពិន្ទុ',
