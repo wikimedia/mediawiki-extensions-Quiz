@@ -239,19 +239,23 @@ $messages['eo'] = array(
 	'quiz_reset'        => 'Restarigu',
 );
 
+/** Spanish (Español)
+ * @author Ascánder
+ */
 $messages['es'] = array(
-	'quiz_addedPoints'	=> "Puntos por cada respuesta acertada",
-	'quiz_cutoffPoints'	=> "Penalización por cada respuesta errónea",
-	'quiz_ignoreCoef'	=> "Ignorar los puntos de cada pregunta",
-	'quiz_shuffle'		=> "Desordenar preguntas",
-	'quiz_colorRight'	=> "Acertadas",
-	'quiz_colorWrong'	=> "Falladas",
-	'quiz_colorNA'		=> "No contestadas",
-	'quiz_colorError'	=> "Error de sintaxis",
-	'quiz_correction'	=> "Contestar",
-	'quiz_score'		=> "Tu puntuación es de $1 / $2",
-	'quiz_points'		=> "$1 | $2 punto(s)",
-	'quiz_reset'		=> "Empezar de nuevo"
+	'quiz_desc'         => 'Permite la creación de quices',
+	'quiz_addedPoints'  => 'Puntos por cada respuesta acertada',
+	'quiz_cutoffPoints' => 'Penalización por cada respuesta errónea',
+	'quiz_ignoreCoef'   => 'Ignorar los puntos de cada pregunta',
+	'quiz_shuffle'      => 'Desordenar preguntas',
+	'quiz_colorRight'   => 'Acertadas',
+	'quiz_colorWrong'   => 'Falladas',
+	'quiz_colorNA'      => 'No contestadas',
+	'quiz_colorError'   => 'Error de sintaxis',
+	'quiz_correction'   => 'Contestar',
+	'quiz_score'        => 'Tu puntuación es de $1 / $2',
+	'quiz_points'       => '$1 | $2 punto(s)',
+	'quiz_reset'        => 'Empezar de nuevo',
 );
 
 /** فارسی (فارسی)
@@ -558,6 +562,25 @@ $messages['ml'] = array(
 	'quiz_colorRight' => 'ശരി',
 	'quiz_colorWrong' => 'തെറ്റ്',
 	'quiz_colorNA'    => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+);
+
+/** Marathi (मराठी)
+ * @author Kaustubh
+ */
+$messages['mr'] = array(
+	'quiz_desc'         => 'प्रश्नावल्या तयार करण्याची परवानगी देते.',
+	'quiz_addedPoints'  => 'बरोबर उत्तरासाठी गुण दिले',
+	'quiz_cutoffPoints' => 'चुकीच्या उत्तरासाठी गुण वजा केले',
+	'quiz_ignoreCoef'   => 'प्रश्नाच्या कोएफिशियंटकडे लक्ष देऊ नका',
+	'quiz_shuffle'      => 'प्रश्न वरखाली करा',
+	'quiz_colorRight'   => 'बरोबर',
+	'quiz_colorWrong'   => 'चूक',
+	'quiz_colorNA'      => 'उत्तर दिलेले नाही',
+	'quiz_colorError'   => 'चुकीचा सिन्टॅक्स',
+	'quiz_correction'   => 'पाठवा',
+	'quiz_score'        => 'तुमचे गुण $1 / $2',
+	'quiz_points'       => '$1 | $2 गुण',
+	'quiz_reset'        => 'पूर्ववत करा',
 );
 
 /** Low German (Plattdüütsch)
