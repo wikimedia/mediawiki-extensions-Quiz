@@ -280,11 +280,15 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Str4nd
+ * @author Cimon Avaro
  */
 $messages['fi'] = array(
-	'quiz_colorRight' => 'Oikein',
-	'quiz_colorWrong' => 'Väärin',
-	'quiz_score'      => 'Tuloksesi on $1 / $2',
+	'quiz_addedPoints'  => 'Pisteiden lisäysmäärä oikeasta vastauksesta',
+	'quiz_cutoffPoints' => 'Pisteiden vähennysmäärä väärästä vastauksesta',
+	'quiz_colorRight'   => 'Oikein',
+	'quiz_colorWrong'   => 'Väärin',
+	'quiz_score'        => 'Tuloksesi on $1 / $2',
+	'quiz_reset'        => 'Palautus',
 );
 
 /** French (Français)
@@ -475,6 +479,25 @@ $messages['ja'] = array(
 	'quiz_score'        => '得点：$1点（$2点満点）',
 	'quiz_points'       => '$1 | $2点',
 	'quiz_reset'        => 'リセット',
+);
+
+/** Jutish (Jysk)
+ * @author Huslåke
+ */
+$messages['jut'] = array(
+	'quiz_desc'         => 'Gæv kreåsje der kwesser æ mågleghed',
+	'quiz_addedPoints'  => 'Punkt(er) tilføjer før æ korrekt answer',
+	'quiz_cutoffPoints' => 'Punkt(er) subtraktet før æ fejl answer',
+	'quiz_ignoreCoef'   => 'Ignorær æ fråge han koeffisienter',
+	'quiz_shuffle'      => 'Skuffel fråge',
+	'quiz_colorRight'   => 'Gåd',
+	'quiz_colorWrong'   => 'Fejl',
+	'quiz_colorNA'      => 'Ekke answered',
+	'quiz_colorError'   => 'Syntaks fejl',
+	'quiz_correction'   => 'Gå',
+	'quiz_score'        => 'Diin skår er $1 / $2',
+	'quiz_points'       => '$1 | $2 punkt(er)',
+	'quiz_reset'        => 'Reset',
 );
 
 /** Khmer (ភាសាខ្មែរ)
