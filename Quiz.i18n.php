@@ -390,6 +390,25 @@ $messages['hsb'] = array(
 	'quiz_reset'        => 'Znowastartowanje',
 );
 
+/** Haitian (Kreyòl ayisyen)
+ * @author Jvm
+ */
+$messages['ht'] = array(
+	'quiz_desc'         => 'Pemèt Kreyasyon kwiz yo',
+	'quiz_addedPoints'  => 'Pwen mete pou repons kòrèk',
+	'quiz_cutoffPoints' => 'Pwen retire pou repons ki enkòrèk',
+	'quiz_ignoreCoef'   => 'Ignore koefisyan kesyon yo',
+	'quiz_shuffle'      => 'Mikse kesyon yo',
+	'quiz_colorRight'   => 'Korèk',
+	'quiz_colorWrong'   => 'Enkòrèk',
+	'quiz_colorNA'      => 'San repons',
+	'quiz_colorError'   => 'Erè Sintaks',
+	'quiz_correction'   => 'Soumèt',
+	'quiz_score'        => 'Rezilta w se $1 / $2',
+	'quiz_points'       => '$1 | $2 pwen',
+	'quiz_reset'        => 'Resèt',
+);
+
 /** Hungarian (Magyar)
  * @author Bdanee
  * @author KossuthRad
@@ -993,6 +1012,13 @@ $messages['vo'] = array(
 	'quiz_colorNA'    => 'No pegesagon',
 	'quiz_colorError' => 'Süntagapöl',
 	'quiz_correction' => 'Sedön',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'quiz_desc' => 'דערלויבט שאפן אויספרעגן',
 );
 
 $messages['yue'] = array(
