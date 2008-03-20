@@ -213,11 +213,16 @@ $messages['de'] = array(
 	'quiz_reset'		=> "Neustart"
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ * @author ZaDiak
+ */
 $messages['el'] = array(
 	'quiz_colorRight' => 'Σωστό',
 	'quiz_colorWrong' => 'Λάθος',
-	'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
-	'quiz_points' => '$1 | $2 βαθμοί',
+	'quiz_correction' => 'Καταχώρηση',
+	'quiz_score'      => 'Η Βαθμολογία σας είναι $1 / $2',
+	'quiz_points'     => '$1 | $2 βαθμοί',
 );
 
 /** Esperanto (Esperanto)
