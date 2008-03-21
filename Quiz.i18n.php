@@ -415,7 +415,7 @@ $messages['ht'] = array(
 );
 
 /** Hungarian (Magyar)
- * @author Bdanee
+ * @author Dani
  * @author KossuthRad
  */
 $messages['hu'] = array(
