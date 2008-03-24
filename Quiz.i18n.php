@@ -194,6 +194,13 @@ $messages['cs'] = array(
 	'quiz_reset'        => 'Reset',
 );
 
+/** Danish (Dansk)
+ * @author Jon Harald Søby
+ */
+$messages['da'] = array(
+	'quiz_colorError' => 'syntaksfejl',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
@@ -687,7 +694,7 @@ $messages['nn'] = array(
 	'quiz_reset'        => 'Nullstill',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -703,7 +710,7 @@ $messages['no'] = array(
 	'quiz_correction'   => 'Svar',
 	'quiz_score'        => 'Din poengsum er $1 av $2',
 	'quiz_points'       => '$1 | $2 poeng',
-	'quiz_reset'        => 'Resett',
+	'quiz_reset'        => 'Nullstill',
 );
 
 /** Occitan (Occitan)
