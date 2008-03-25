@@ -922,6 +922,20 @@ $messages['stq'] = array(
 	'quiz_reset'        => 'Näistart',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Kandar
+ */
+$messages['su'] = array(
+	'quiz_colorRight' => 'Bener',
+	'quiz_colorWrong' => 'Salah',
+	'quiz_colorNA'    => 'Teu dijawab',
+	'quiz_colorError' => 'Salah rumpaka',
+	'quiz_correction' => 'Kirim',
+	'quiz_score'      => 'Peunteun anjeun $1 / $2',
+	'quiz_points'     => '$1 | $2 poin',
+	'quiz_reset'      => 'Rését',
+);
+
 /** Swedish (Svenska)
  * @author Lejonel
  * @author M.M.S.
