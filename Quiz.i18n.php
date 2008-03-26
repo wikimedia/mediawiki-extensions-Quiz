@@ -20,10 +20,10 @@
  *
  * ***** END LICENSE BLOCK *****
  *
- * Quiz is a quiz tool for mediawiki.
+ * Quiz is a quiz tool for MediaWiki.
  *
  * To activate this extension :
- * * Create a new directory named quiz into the directory "extensions" of mediawiki.
+ * * Create a new directory named quiz into the directory "extensions" of MediaWiki.
  * * Place this file and the files Quiz.i18n.php and quiz.js there.
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
