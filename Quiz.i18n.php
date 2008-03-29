@@ -608,14 +608,21 @@ $messages['lt'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Shijualex
  * @author Jacob.jose
  */
 $messages['ml'] = array(
-	'quiz_desc'       => 'ക്വിസുകള്‍ സൃഷ്ടിക്കാന്‍ സഹായിക്കുന്നു',
-	'quiz_shuffle'    => 'ചോദ്യങ്ങള്‍ കശക്കുക',
-	'quiz_colorRight' => 'ശരി',
-	'quiz_colorWrong' => 'തെറ്റ്',
-	'quiz_colorNA'    => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+	'quiz_desc'         => 'ക്വിസുകള്‍ സൃഷ്ടിക്കാന്‍ സഹായിക്കുന്നു',
+	'quiz_addedPoints'  => 'ശരിയുത്തരത്തിനു പോയിന്റ് ചേര്‍ത്തു',
+	'quiz_cutoffPoints' => 'തെറ്റായ ഉത്തരത്തിനു പോയിന്റ് കുറച്ചു',
+	'quiz_shuffle'      => 'ചോദ്യങ്ങള്‍ കശക്കുക',
+	'quiz_colorRight'   => 'ശരി',
+	'quiz_colorWrong'   => 'തെറ്റ്',
+	'quiz_colorNA'      => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+	'quiz_correction'   => 'സമര്‍പ്പിക്കുക',
+	'quiz_score'        => 'താങ്കളുടെ സ്കോര്‍ $1/$2',
+	'quiz_points'       => '$1|$2 പോയിന്റ്',
+	'quiz_reset'        => 'പുനഃക്രമീകരിക്കുക',
 );
 
 /** Marathi (मराठी)
