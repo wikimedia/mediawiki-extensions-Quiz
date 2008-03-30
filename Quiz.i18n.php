@@ -153,9 +153,15 @@ $messages['bn'] = array(
  * @author Fulup
  */
 $messages['br'] = array(
+	'quiz_desc'       => 'Aotren a ra krouiñ kwizoù',
+	'quiz_shuffle'    => 'Meskañ ar goulennoù',
 	'quiz_colorRight' => 'Mat',
 	'quiz_colorWrong' => 'Fall',
 	'quiz_colorNA'    => 'Direspont',
+	'quiz_colorError' => 'Fazi ereadur',
+	'quiz_correction' => 'Kas',
+	'quiz_score'      => 'Ho skor zo par da $1 / $2',
+	'quiz_points'     => '$1 | $2 poent',
 );
 
 /** Catalan (Català)
