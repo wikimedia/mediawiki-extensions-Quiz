@@ -994,7 +994,7 @@ $messages['te'] = array(
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'quiz_desc'         => 'Эҷоди озмунҳоро мумкин месозад',
 	'quiz_addedPoints'  => 'Имтиёзи ҳар посухи дуруст',
 	'quiz_cutoffPoints' => 'Имтиёзи манфии ҳар посухи нодуруст',
