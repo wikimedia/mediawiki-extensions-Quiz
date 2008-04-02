@@ -166,6 +166,7 @@ $messages['br'] = array(
 
 /** Catalan (Català)
  * @author SMP
+ * @author Paucabot
  */
 $messages['ca'] = array(
 	'quiz_addedPoints'  => 'Punt(s) guanyats per resposta correcta',
@@ -178,6 +179,7 @@ $messages['ca'] = array(
 	'quiz_correction'   => 'Envia',
 	'quiz_score'        => 'La vostra puntuació és $1 / $2',
 	'quiz_points'       => '$1 | $2 punt(s)',
+	'quiz_reset'        => 'Restaura',
 );
 
 /** Czech (Česky)
@@ -201,10 +203,16 @@ $messages['cs'] = array(
 );
 
 /** Danish (Dansk)
+ * @author M.M.S.
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
+	'quiz_colorRight' => 'Ret',
+	'quiz_colorWrong' => 'Fejl',
+	'quiz_colorNA'    => 'Ikke svared',
 	'quiz_colorError' => 'syntaksfejl',
+	'quiz_correction' => 'Send',
+	'quiz_points'     => '$1 | $2 poeng',
 );
 
 /** German (Deutsch)
