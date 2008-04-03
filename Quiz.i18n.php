@@ -377,6 +377,25 @@ $messages['gl'] = array(
 	'quiz_reset'        => 'Limpar',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'quiz_desc'         => 'क्विज़ बनाने के लिये सहायता करता हैं',
+	'quiz_addedPoints'  => 'सही जवाब के लिये मार्क्स दिये',
+	'quiz_cutoffPoints' => 'गलत जवाबके लिये मार्क्स घटाये',
+	'quiz_ignoreCoef'   => 'प्रश्नोंके कोएफिशिअंटको नजर अंदाज करें',
+	'quiz_shuffle'      => 'सवाल उपर नीचे करें',
+	'quiz_colorRight'   => 'सहीं',
+	'quiz_colorWrong'   => 'गलत',
+	'quiz_colorNA'      => 'जवाब दिया नहीं',
+	'quiz_colorError'   => 'सिन्टॅक्स गलती',
+	'quiz_correction'   => 'भेजें',
+	'quiz_score'        => 'आपके गुण $1 / $2',
+	'quiz_points'       => '$1 | $2 गुण',
+	'quiz_reset'        => 'पूर्ववत करें',
+);
+
 /** Croatian (Hrvatski)
  * @author SpeedyGonsales
  * @author Dnik
