@@ -63,6 +63,25 @@ $messages['qqq'] = array(
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'quiz_desc'         => 'Premite a creyazión de quizes',
+	'quiz_addedPoints'  => 'Puntos por cada respuesta enzertata',
+	'quiz_cutoffPoints' => 'Puntos sacatos por cada respuesta entibocata',
+	'quiz_ignoreCoef'   => "Innorar os puntos d'as preguntas",
+	'quiz_shuffle'      => 'Desordenar as preguntas',
+	'quiz_colorRight'   => 'Enzertatas',
+	'quiz_colorWrong'   => 'Entibocatas',
+	'quiz_colorNA'      => 'No responditas',
+	'quiz_colorError'   => 'Error de sintacsis',
+	'quiz_correction'   => 'Correchir',
+	'quiz_score'        => 'A suya puntuazión ye $1 / $2',
+	'quiz_points'       => '$1 | $2 punto(s)',
+	'quiz_reset'        => 'Prenzipiar',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author Alnokta
