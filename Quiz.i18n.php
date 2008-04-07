@@ -671,6 +671,7 @@ $messages['ml'] = array(
 	'quiz_colorRight'   => 'ശരി',
 	'quiz_colorWrong'   => 'തെറ്റ്',
 	'quiz_colorNA'      => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+	'quiz_colorError'   => 'സിന്റാക്സ് പിഴവ്',
 	'quiz_correction'   => 'സമര്‍പ്പിക്കുക',
 	'quiz_score'        => 'താങ്കളുടെ സ്കോര്‍ $1/$2',
 	'quiz_points'       => '$1|$2 പോയിന്റ്',
@@ -1070,6 +1071,14 @@ $messages['th'] = array(
 $messages['tr'] = array(
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'quiz_colorRight' => 'Giusto',
+	'quiz_colorWrong' => 'Sbaglià',
 );
 
 /** Vietnamese (Tiếng Việt)
