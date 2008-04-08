@@ -1151,6 +1151,7 @@ $messages['yi'] = array(
 );
 
 $messages['yue'] = array(
+	'quiz_desc'	        => '容許開小測題',
 	'quiz_addedPoints'	=> "答啱咗加上嘅分數",
 	'quiz_cutoffPoints'	=> "答錯咗減去嘅分數",
 	'quiz_ignoreCoef'	=> "略過問題嘅系數",
@@ -1166,6 +1167,7 @@ $messages['yue'] = array(
 );
 
 $messages['zh-hans'] = array(
+	'quiz_desc'	        => '容许建立小测题目',
 	'quiz_addedPoints'	=> "答对加上的分数",
 	'quiz_cutoffPoints'	=> "答错减去的分数",
 	'quiz_ignoreCoef'	=> "略过问题的系数",
@@ -1181,6 +1183,7 @@ $messages['zh-hans'] = array(
 );
 
 $messages['zh-hant'] = array(
+	'quiz_desc'	        => '容許建立小測題目',
 	'quiz_addedPoints'	=> "答對加上的分數",
 	'quiz_cutoffPoints'	=> "答錯減去的分數",
 	'quiz_ignoreCoef'	=> "略過問題的系數",
