@@ -324,15 +324,24 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Pe3
  * @author Str4nd
  * @author Cimon Avaro
+ * @author Crt
  */
 $messages['fi'] = array(
+	'quiz_desc'         => 'Mahdollistaa kyselyiden luomisen.',
 	'quiz_addedPoints'  => 'Pisteiden lisäysmäärä oikeasta vastauksesta',
 	'quiz_cutoffPoints' => 'Pisteiden vähennysmäärä väärästä vastauksesta',
+	'quiz_ignoreCoef'   => 'Jätä huomioimatta kysymysten kertoimet',
+	'quiz_shuffle'      => 'Sekoita kysymykset',
 	'quiz_colorRight'   => 'Oikein',
 	'quiz_colorWrong'   => 'Väärin',
+	'quiz_colorNA'      => 'Vastaamatta',
+	'quiz_colorError'   => 'Jäsennysvirhe',
+	'quiz_correction'   => 'Lähetä',
 	'quiz_score'        => 'Tuloksesi on $1 / $2',
+	'quiz_points'       => '$1 | $2 pistettä',
 	'quiz_reset'        => 'Palautus',
 );
 
@@ -581,6 +590,18 @@ $messages['jut'] = array(
 	'quiz_score'        => 'Diin skår er $1 / $2',
 	'quiz_points'       => '$1 | $2 punkt(er)',
 	'quiz_reset'        => 'Reset',
+);
+
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'quiz_colorRight' => 'Bener',
+	'quiz_colorWrong' => 'Salah',
+	'quiz_colorNA'    => 'Ora diwangsuli',
+	'quiz_colorError' => "Kaluputan sintaksis (''syntax error'')",
+	'quiz_correction' => 'Kirim',
+	'quiz_score'      => 'Skor biji panjenengan iku $1 / $2',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1077,8 +1098,19 @@ $messages['tr'] = array(
  * @author Candalua
  */
 $messages['vec'] = array(
-	'quiz_colorRight' => 'Giusto',
-	'quiz_colorWrong' => 'Sbaglià',
+	'quiz_desc'         => 'Perméte de crear dei zughi a quiz',
+	'quiz_addedPoints'  => 'Ponti zontà par ogni risposta giusta',
+	'quiz_cutoffPoints' => 'Ponti cavà par ogni risposta sbaglià',
+	'quiz_ignoreCoef'   => 'Ignora i coeficenti de domanda',
+	'quiz_shuffle'      => 'Mìssia le domande',
+	'quiz_colorRight'   => 'Giusto',
+	'quiz_colorWrong'   => 'Sbaglià',
+	'quiz_colorNA'      => 'Nissuna risposta',
+	'quiz_colorError'   => 'Eror de sintassi',
+	'quiz_correction'   => 'Corègi',
+	'quiz_score'        => 'El to puntegio el xe $1 / $2',
+	'quiz_points'       => '$1 | $2 ponti',
+	'quiz_reset'        => 'Azzèra',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -1094,6 +1126,7 @@ $messages['vi'] = array(
 	'quiz_colorWrong'   => 'Sai',
 	'quiz_colorNA'      => 'Không trả lời',
 	'quiz_colorError'   => 'Lỗi cú pháp',
+	'quiz_correction'   => 'Đệ trình',
 	'quiz_points'       => '$1 | $2 điểm',
 	'quiz_reset'        => 'Tẩy trống',
 );
