@@ -1039,6 +1039,13 @@ $messages['sv'] = array(
 	'quiz_reset'        => 'Återställ',
 );
 
+/** Tamil (தமிழ்)
+ * @author Trengarasu
+ */
+$messages['ta'] = array(
+	'quiz_reset' => 'மீட்டமைக்க',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  * @author Mpradeep
