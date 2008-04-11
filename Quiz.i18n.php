@@ -596,6 +596,7 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
+	'quiz_desc'       => 'Nyedyakaké fasilitas nggawé kuis',
 	'quiz_colorRight' => 'Bener',
 	'quiz_colorWrong' => 'Salah',
 	'quiz_colorNA'    => 'Ora diwangsuli',
