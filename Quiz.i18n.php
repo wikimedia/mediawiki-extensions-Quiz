@@ -597,12 +597,14 @@ $messages['jut'] = array(
  */
 $messages['jv'] = array(
 	'quiz_desc'       => 'Nyedyakaké fasilitas nggawé kuis',
+	'quiz_shuffle'    => 'Ngacak pitakonan',
 	'quiz_colorRight' => 'Bener',
 	'quiz_colorWrong' => 'Salah',
 	'quiz_colorNA'    => 'Ora diwangsuli',
 	'quiz_colorError' => "Kaluputan sintaksis (''syntax error'')",
 	'quiz_correction' => 'Kirim',
 	'quiz_score'      => 'Skor biji panjenengan iku $1 / $2',
+	'quiz_reset'      => 'Reset',
 );
 
 /** Khmer (ភាសាខ្មែរ)
