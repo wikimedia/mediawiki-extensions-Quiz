@@ -104,6 +104,7 @@ $messages['ar'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Cedric31
  */
 $messages['ast'] = array(
 	'quiz_addedPoints'  => 'Puntu/os añadíu/os por rempuesta correuta',
@@ -117,7 +118,7 @@ $messages['ast'] = array(
 	'quiz_correction'   => 'Unviar',
 	'quiz_score'        => 'La to puntuación ye $1 / $2',
 	'quiz_points'       => '$1 | $2 puntu/os',
-	'quiz_reset'        => 'Reinicializar',
+	'quiz_reset'        => 'Reïnicializar',
 );
 
 $messages['bcl'] = array(
@@ -520,6 +521,9 @@ $messages['id'] = array(
 	'quiz_points'       => '$1 | $2 poin',
 	'quiz_reset'		=> "Reset"
 );
+
+/** Ido (Ido) */
+$messages['io'] = array();
 
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
