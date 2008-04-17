@@ -540,6 +540,24 @@ $messages['is'] = array(
 	'quiz_reset'        => 'Endurstilla',
 );
 
+/** Icelandic (Íslenska)
+ * @author S.Örvarr.S
+ */
+$messages['is'] = array(
+	'quiz_desc'         => 'Heimilar gerð skyndiprófa',
+	'quiz_addedPoints'  => 'Stig fyrir rétt svar',
+	'quiz_cutoffPoints' => 'Stig dregin frá fyrir rangt svar',
+	'quiz_shuffle'      => 'Stokka svörin',
+	'quiz_colorRight'   => 'Rétt',
+	'quiz_colorWrong'   => 'Röng',
+	'quiz_colorNA'      => 'Ósvarað',
+	'quiz_colorError'   => 'Málfræðivilla',
+	'quiz_correction'   => 'Senda',
+	'quiz_score'        => 'Stigafjöldinn þinn er $1 / $2',
+	'quiz_points'       => '$1 | $2 stig',
+	'quiz_reset'        => 'Endurstilla',
+);
+
 /** Italian (Italiano)
  * @author BrokenArrow
  */
@@ -600,15 +618,19 @@ $messages['jut'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'quiz_desc'       => 'Nyedyakaké fasilitas nggawé kuis',
-	'quiz_shuffle'    => 'Ngacak pitakonan',
-	'quiz_colorRight' => 'Bener',
-	'quiz_colorWrong' => 'Salah',
-	'quiz_colorNA'    => 'Ora diwangsuli',
-	'quiz_colorError' => "Kaluputan sintaksis (''syntax error'')",
-	'quiz_correction' => 'Kirim',
-	'quiz_score'      => 'Skor biji panjenengan iku $1 / $2',
-	'quiz_reset'      => 'Reset',
+	'quiz_desc'         => 'Nyedyakaké fasilitas nggawé kuis',
+	'quiz_addedPoints'  => 'Ditambahi angka biji kanggo wangsulan sing bener',
+	'quiz_cutoffPoints' => 'Angka biji dikurangi kanggo wangsulan sing salah',
+	'quiz_ignoreCoef'   => 'Lirwakna koéfisièn pitakonan',
+	'quiz_shuffle'      => 'Ngacak pitakonan',
+	'quiz_colorRight'   => 'Bener',
+	'quiz_colorWrong'   => 'Salah',
+	'quiz_colorNA'      => 'Ora diwangsuli',
+	'quiz_colorError'   => "Kaluputan sintaksis (''syntax error'')",
+	'quiz_correction'   => 'Kirim',
+	'quiz_score'        => 'Skor biji panjenengan iku $1 / $2',
+	'quiz_points'       => '$1 | $2 poin',
+	'quiz_reset'        => 'Reset',
 );
 
 /** Khmer (ភាសាខ្មែរ)
