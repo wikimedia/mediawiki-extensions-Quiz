@@ -750,6 +750,7 @@ $messages['nds'] = array(
 	'quiz_colorWrong'   => 'Verkehrt',
 	'quiz_colorNA'      => 'Nich antert',
 	'quiz_colorError'   => 'Syntaxfehler',
+	'quiz_correction'   => 'Korrektur',
 	'quiz_score'        => 'Punkten: $1 / $2',
 	'quiz_points'       => '$1 | $2 Punkt(en)',
 	'quiz_reset'        => 'Trüchsetten',
