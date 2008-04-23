@@ -648,6 +648,7 @@ $messages['km'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'quiz_desc'         => 'Erméiglecht et Quizzer ze maachen',
 	'quiz_addedPoints'  => 'Punkt(en) derbäi fir eng richteg Äntwert',
 	'quiz_cutoffPoints' => 'Punkt(en) ofgezunn fir eng falsch Äntwert',
 	'quiz_ignoreCoef'   => 'Koeffizient vun der Fro ignoréieren',
