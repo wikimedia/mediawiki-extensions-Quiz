@@ -1122,6 +1122,23 @@ $messages['tr'] = array(
 	'quiz_colorWrong' => 'Yanlış',
 );
 
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'quiz_addedPoints'  => 'очко(ок) додано за правильну відповідь',
+	'quiz_cutoffPoints' => 'очко(ок) віднято за неправильну відповідь',
+	'quiz_ignoreCoef'   => 'Нехтувати коефіцієнтами запитань',
+	'quiz_shuffle'      => 'Перемішати запитання',
+	'quiz_colorRight'   => 'Правильно',
+	'quiz_colorWrong'   => 'Неправильно',
+	'quiz_colorNA'      => 'Нема відповіді',
+	'quiz_colorError'   => 'Синтаксична помилка',
+	'quiz_correction'   => 'Надіслати',
+	'quiz_score'        => 'Ви набрали $1 очок із $2',
+	'quiz_points'       => '$1 | $2 очко(ок)',
+);
+
 /** Vèneto (Vèneto)
  * @author Candalua
  */
