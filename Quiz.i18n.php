@@ -920,6 +920,7 @@ $messages['qu'] = array(
 
 /** Russian (Русский)
  * @author .:Ajvol:.
+ * @author EugeneZelenko
  */
 $messages['ru'] = array(
 	'quiz_desc'         => 'Позволяет создавать вопросники',
@@ -932,7 +933,7 @@ $messages['ru'] = array(
 	'quiz_colorNA'      => 'Нет ответа',
 	'quiz_colorError'   => 'Синтаксическая ошибка',
 	'quiz_correction'   => 'Отправить',
-	'quiz_score'        => 'Вы набрали $1 очков из $2',
+	'quiz_score'        => 'Вы набрали $1 {{PLURAL:$1|очко|очка|очков}} из $2',
 	'quiz_points'       => '$1 | $2 очко(ов)',
 	'quiz_reset'        => 'Сбросить',
 );
@@ -1135,8 +1136,9 @@ $messages['uk'] = array(
 	'quiz_colorNA'      => 'Нема відповіді',
 	'quiz_colorError'   => 'Синтаксична помилка',
 	'quiz_correction'   => 'Надіслати',
-	'quiz_score'        => 'Ви набрали $1 очок із $2',
+	'quiz_score'        => 'Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2',
 	'quiz_points'       => '$1 | $2 очко(ок)',
+	'quiz_reset'        => 'Скинути',
 );
 
 /** Vèneto (Vèneto)
@@ -1172,6 +1174,7 @@ $messages['vi'] = array(
 	'quiz_colorNA'      => 'Không trả lời',
 	'quiz_colorError'   => 'Lỗi cú pháp',
 	'quiz_correction'   => 'Đệ trình',
+	'quiz_score'        => 'Bạn đã trúng $1 trên tổng số $2 điểm',
 	'quiz_points'       => '$1 | $2 điểm',
 	'quiz_reset'        => 'Tẩy trống',
 );
