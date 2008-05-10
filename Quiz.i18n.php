@@ -528,6 +528,7 @@ $messages['id'] = array(
 $messages['io'] = array(
 	'quiz_colorRight' => 'Justa',
 	'quiz_colorWrong' => 'Nejusta',
+	'quiz_points'     => '$1 | $2 punti',
 );
 
 /** Icelandic (Íslenska)
