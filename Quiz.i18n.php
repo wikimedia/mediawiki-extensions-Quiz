@@ -57,7 +57,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
@@ -920,7 +920,7 @@ $messages['qu'] = array(
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  * @author EugeneZelenko
  */
 $messages['ru'] = array(
