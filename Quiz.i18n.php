@@ -645,6 +645,13 @@ $messages['km'] = array(
 	'quiz_reset'        => 'ធ្វើឱ្យដូចដើមវិញ',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'quiz_correction' => 'Verbessere!',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
