@@ -282,7 +282,7 @@ $messages['eo'] = array(
 	'quiz_correction'   => 'Ek!',
 	'quiz_score'        => 'Viaj poentoj estas $1 / $2',
 	'quiz_points'       => '$1 | $2 poento(j)',
-	'quiz_reset'        => 'Restarigu',
+	'quiz_reset'        => 'Reŝarĝi',
 );
 
 /** Spanish (Español)
@@ -1125,10 +1125,12 @@ $messages['th'] = array(
 
 /** Turkish (Türkçe)
  * @author Erkan Yilmaz
+ * @author Runningfridgesrule
  */
 $messages['tr'] = array(
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
+	'quiz_colorNA'    => 'Cevaplandırılmadı',
 );
 
 /** Ukrainian (Українська)
