@@ -51,7 +51,11 @@ $wgExtensionCredits['parserhook'][] = array(
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 
-$wgExtensionFunctions[] = "wfQuizExtension";
+if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+	$wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
+} else {
+	$wgExtensionFunctions[] = 'wfQuizExtension';
+}
 
 $wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
 $wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
@@ -64,6 +68,7 @@ $wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
 function wfQuizExtension() {
     global $wgParser;
     $wgParser->setHook("quiz", "renderQuiz");
+	return true;
 }
 
 /**
