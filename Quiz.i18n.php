@@ -131,8 +131,8 @@ $messages['bcl'] = array(
 );
 
 /** Bulgarian (Български)
- * @author Borislav
  * @author DCLXVI
+ * @author Borislav
  */
 $messages['bg'] = array(
 	'quiz_desc'         => 'Позволява създаването на анкети',
@@ -145,7 +145,7 @@ $messages['bg'] = array(
 	'quiz_colorError'   => 'Синтактична грешка',
 	'quiz_correction'   => 'Изпращане',
 	'quiz_score'        => 'Постижението ви е $1 / $2',
-	'quiz_points'       => '$1 | $2 {{plural:$2|точка|точки}}',
+	'quiz_points'       => '$1 | $2 {{PLURAL:$2|точка|точки}}',
 	'quiz_reset'        => 'Отмяна',
 );
 
