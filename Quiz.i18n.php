@@ -406,6 +406,25 @@ $messages['gl'] = array(
 	'quiz_reset'        => 'Limpar',
 );
 
+/** Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$messages['he'] = array(
+	'quiz_desc'         => 'אפשרות ליצירת חידונים',
+	'quiz_addedPoints'  => 'הנקודות שנוספות עבור כל תשובה נכונה',
+	'quiz_cutoffPoints' => 'הנקודות שמורדות עבור כל תשובה שגויה',
+	'quiz_ignoreCoef'   => 'התעלמות ממקדמי שאלות',
+	'quiz_shuffle'      => 'סדר משתנה של השאלות',
+	'quiz_colorRight'   => 'נכון',
+	'quiz_colorWrong'   => 'שגוי',
+	'quiz_colorNA'      => 'לא סומנה תשובה',
+	'quiz_colorError'   => 'שגיאת תחביר',
+	'quiz_correction'   => 'שליחה',
+	'quiz_score'        => 'הניקוד שלך הוא $1 / $2',
+	'quiz_points'       => '$1 | $2 נקודות',
+	'quiz_reset'        => 'איפוס',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
