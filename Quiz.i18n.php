@@ -766,6 +766,23 @@ $messages['mr'] = array(
 	'quiz_reset'        => 'पूर्ववत करा',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'quiz_desc'         => 'Membolehkan penciptaan kuiz',
+	'quiz_addedPoints'  => 'Mata yang ditambah untuk jawapan betul',
+	'quiz_cutoffPoints' => 'Mata yang ditolak untuk jawapan salah',
+	'quiz_colorRight'   => 'Betul',
+	'quiz_colorWrong'   => 'Salah',
+	'quiz_colorNA'      => 'Tidak dijawab',
+	'quiz_colorError'   => 'Ralat sintaks',
+	'quiz_correction'   => 'Serah',
+	'quiz_score'        => 'Anda mendapat $1 daripada $2 mata',
+	'quiz_points'       => '$1 | $2 mata',
+	'quiz_reset'        => 'Set semula',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
