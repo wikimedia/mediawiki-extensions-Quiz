@@ -773,6 +773,7 @@ $messages['ms'] = array(
 	'quiz_desc'         => 'Membolehkan penciptaan kuiz',
 	'quiz_addedPoints'  => 'Mata yang ditambah untuk jawapan betul',
 	'quiz_cutoffPoints' => 'Mata yang ditolak untuk jawapan salah',
+	'quiz_ignoreCoef'   => 'Abaikan pekali soalan',
 	'quiz_colorRight'   => 'Betul',
 	'quiz_colorWrong'   => 'Salah',
 	'quiz_colorNA'      => 'Tidak dijawab',
