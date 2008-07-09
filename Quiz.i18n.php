@@ -52,7 +52,7 @@ $messages['en'] = array(
 	'quiz_colorError'	=> "Syntax error",
 	'quiz_correction'	=> "Submit",
 	'quiz_score'		=> "Your score is $1 / $2",
-	'quiz_points'		=> "$1 | $2 point(s)",
+	'quiz_points'		=> "$1 | {{PLURAL:$2|1 point|$2 points}}",
 	'quiz_reset'		=> "Reset"
 );
 
@@ -421,7 +421,7 @@ $messages['he'] = array(
 	'quiz_colorError'   => 'שגיאת תחביר',
 	'quiz_correction'   => 'שליחה',
 	'quiz_score'        => 'הניקוד שלך הוא $1 / $2',
-	'quiz_points'       => '$1 | $2 נקודות',
+	'quiz_points'       => '$1 | {{PLURAL:$2|נקודה אחת|$2 נקודות}}',
 	'quiz_reset'        => 'איפוס',
 );
 

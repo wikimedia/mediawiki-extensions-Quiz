@@ -409,16 +409,16 @@ class Quiz {
 			case "right":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore += $this->mAddedPoints * $question->mCoef;
-				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorRight'), $this->mAddedPoints * $question->mCoef)."\"";
+				$output.= "title=\"".wfMsgExt('quiz_points', array('escape', 'parsemag'), wfMsg('quiz_colorRight'), $this->mAddedPoints * $question->mCoef)."\"";
 				break;
 			case "wrong":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
 				$this->mScore -= $this->mCutoffPoints * $question->mCoef;
-				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorWrong'), -$this->mCutoffPoints * $question->mCoef)."\"";
+				$output.= "title=\"".wfMsgExt('quiz_points', array('escape', 'parsemag'), wfMsg('quiz_colorWrong'), -$this->mCutoffPoints * $question->mCoef)."\"";
 				break;
 			case "NA":
 				$this->mTotal += $this->mAddedPoints * $question->mCoef;
-				$output.= "title=\"".wfMsgHtml('quiz_points', wfMsgHtml('quiz_colorNA'), 0)."\"";
+				$output.= "title=\"".wfMsgExt('quiz_points', array('escape', 'parsemag'), wfMsg('quiz_colorNA'), 0)."\"";
 				break;
 			case "error":
 				$this->mState = "error";
