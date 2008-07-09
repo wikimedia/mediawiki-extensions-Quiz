@@ -250,7 +250,7 @@ $messages['de'] = array(
 	'quiz_colorError'	=> "Syntaxfehler",
 	'quiz_correction'	=> "Korrektur",
 	'quiz_score'		=> "Punkte: $1 / $2",
-	'quiz_points'		=> "$1 | $2 Punkte",
+	'quiz_points'		=> "$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}",
 	'quiz_reset'		=> "Neustart"
 );
 
