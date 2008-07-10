@@ -152,7 +152,7 @@ $messages['bg'] = array(
 	'quiz_colorError'   => 'Синтактична грешка',
 	'quiz_correction'   => 'Изпращане',
 	'quiz_score'        => 'Постижението ви е $1 / $2',
-	'quiz_points'       => '$1 | $2 {{PLURAL:$2|точка|точки}}',
+	'quiz_points'       => '$1 | {{PLURAL:$2|една точка|$2 точки}}',
 	'quiz_reset'        => 'Отмяна',
 );
 
