@@ -1225,6 +1225,7 @@ $messages['vec'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
+ * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'quiz_desc'         => 'Tạo ra bài thi',
@@ -1238,7 +1239,7 @@ $messages['vi'] = array(
 	'quiz_colorError'   => 'Lỗi cú pháp',
 	'quiz_correction'   => 'Đệ trình',
 	'quiz_score'        => 'Bạn đã trúng $1 trên tổng số $2 điểm',
-	'quiz_points'       => '$1 | $2 điểm',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 điểm|$2 điểm}}',
 	'quiz_reset'        => 'Tẩy trống',
 );
 
