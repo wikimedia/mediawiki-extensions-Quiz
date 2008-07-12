@@ -348,7 +348,7 @@ $messages['fi'] = array(
 	'quiz_colorError'   => 'Jäsennysvirhe',
 	'quiz_correction'   => 'Lähetä',
 	'quiz_score'        => 'Tuloksesi on $1 / $2',
-	'quiz_points'       => '$1 | $2 pistettä',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 piste|$2 pistettä}}',
 	'quiz_reset'        => 'Palautus',
 );
 
