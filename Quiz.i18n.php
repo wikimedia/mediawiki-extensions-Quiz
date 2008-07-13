@@ -67,6 +67,16 @@ $messages['qqq'] = array(
 	'quiz_reset'      => '{{Identical|Reset}}',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'quiz_colorRight' => 'Reg',
+	'quiz_colorWrong' => 'Verkeerd',
+	'quiz_colorNA'    => 'Nie geantwoord',
+	'quiz_reset'      => 'Herstel',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
@@ -529,6 +539,13 @@ $messages['hu'] = array(
 	'quiz_reset'        => 'Újraindít',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'quiz_reset' => 'Reinitiar',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Irwangatot
  * @author IvanLanin
@@ -893,6 +910,7 @@ $messages['oc'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author Sp5uhe
+ * @author Maikking
  */
 $messages['pl'] = array(
 	'quiz_desc'         => 'Umożliwia tworzenie quizów',
@@ -906,7 +924,7 @@ $messages['pl'] = array(
 	'quiz_colorError'   => 'Błąd składni',
 	'quiz_correction'   => 'Wyślij',
 	'quiz_score'        => 'Twoje punty to $1 / $2',
-	'quiz_points'       => '$1 | $2 punktów',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punkt|$2 punktów}}',
 	'quiz_reset'        => 'Wyzeruj',
 );
 
@@ -1219,7 +1237,7 @@ $messages['vec'] = array(
 	'quiz_colorError'   => 'Eror de sintassi',
 	'quiz_correction'   => 'Corègi',
 	'quiz_score'        => 'El to puntegio el xe $1 / $2',
-	'quiz_points'       => '$1 | $2 ponti',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 ponto|$2 ponti}}',
 	'quiz_reset'        => 'Azzèra',
 );
 
