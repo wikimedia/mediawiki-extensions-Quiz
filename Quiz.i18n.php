@@ -135,6 +135,25 @@ $messages['ast'] = array(
 	'quiz_reset'        => 'Reïnicializar',
 );
 
+/** Southern Balochi (بلوچی مکرانی)
+ * @author Mostafadaneshvar
+ */
+$messages['bcc'] = array(
+	'quiz_desc'         => 'اجازه دنت په شرکتن معما',
+	'quiz_addedPoints'  => 'نمره په درستین جواب اضافه بوت',
+	'quiz_cutoffPoints' => 'نمره په جواب غلظ کم بوت',
+	'quiz_ignoreCoef'   => 'ضریب سوالات مه دید',
+	'quiz_shuffle'      => 'جوستان به هم ریچ',
+	'quiz_colorRight'   => 'راست',
+	'quiz_colorWrong'   => 'اشتباه',
+	'quiz_colorNA'      => 'بی پسوء',
+	'quiz_colorError'   => 'حطا ساختار',
+	'quiz_correction'   => 'دیم دی',
+	'quiz_score'        => 'شمی نمره $1 / $2 اینت',
+	'quiz_points'       => '$1 | $2 نکته(s)',
+	'quiz_reset'        => 'برگردینگ',
+);
+
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
  */
