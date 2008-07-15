@@ -254,7 +254,7 @@ $messages['cs'] = array(
 	'quiz_colorError'   => 'Syntaktická chyba',
 	'quiz_correction'   => 'Odeslat',
 	'quiz_score'        => 'Váš výsledek je $1 / $2',
-	'quiz_points'       => '$1 | $2 bodů',
+	'quiz_points'       => '$1 | {{PLURAL:$2|$2 bod|$2 body|$2 bodů}}',
 	'quiz_reset'        => 'Reset',
 );
 
@@ -299,7 +299,7 @@ $messages['el'] = array(
 	'quiz_colorWrong' => 'Λάθος',
 	'quiz_correction' => 'Καταχώρηση',
 	'quiz_score'      => 'Η Βαθμολογία σας είναι $1 / $2',
-	'quiz_points'     => '$1 | $2 βαθμοί',
+	'quiz_points'     => '$1 | {{PLURAL:$2|1 βαθμό|$2 βαθμούς}}',
 );
 
 /** Esperanto (Esperanto)
@@ -865,7 +865,7 @@ $messages['nl'] = array(
 	'quiz_colorError'   => 'Algemene fout',
 	'quiz_correction'   => 'Verbetering',
 	'quiz_score'        => 'Uw score is $1 / $2',
-	'quiz_points'       => '$1 | $2 punt(en)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punt|$2 punten}}',
 	'quiz_reset'        => 'Opnieuw',
 );
 
