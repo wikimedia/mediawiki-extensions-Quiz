@@ -1088,8 +1088,10 @@ $messages['sq'] = array(
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Millosh
  */
 $messages['sr-ec'] = array(
+	'quiz_desc'         => 'Омогући стварање упитника.',
 	'quiz_addedPoints'  => 'Поени додати за тачан одговор',
 	'quiz_cutoffPoints' => 'Поени одузети због погрешног одговора',
 	'quiz_ignoreCoef'   => 'Игнориши коефицијенте питања',
