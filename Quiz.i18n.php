@@ -943,7 +943,7 @@ $messages['pl'] = array(
 	'quiz_colorError'   => 'Błąd składni',
 	'quiz_correction'   => 'Wyślij',
 	'quiz_score'        => 'Twoje punty to $1 / $2',
-	'quiz_points'       => '$1 | {{PLURAL:$2|1 punkt|$2 punktów}}',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}',
 	'quiz_reset'        => 'Wyzeruj',
 );
 
