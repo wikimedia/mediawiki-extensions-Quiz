@@ -317,7 +317,7 @@ $messages['eo'] = array(
 	'quiz_colorError'   => 'Sintaksa eraro',
 	'quiz_correction'   => 'Ek!',
 	'quiz_score'        => 'Viaj poentoj estas $1 / $2',
-	'quiz_points'       => '$1 | $2 poento(j)',
+	'quiz_points'       => '$1 | $2 {{PLURAL:$2|1 poento|poentoj}}',
 	'quiz_reset'        => 'Reŝarĝi',
 );
 
@@ -1102,7 +1102,7 @@ $messages['sr-ec'] = array(
 	'quiz_colorError'   => 'Грешка у синтакси',
 	'quiz_correction'   => 'Постави',
 	'quiz_score'        => 'Ваш резултат је $1 / $2',
-	'quiz_points'       => '$1 | $2 поен(а)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 бод|$2 бода|$2 бодова}}',
 	'quiz_reset'        => 'Ресетуј',
 );
 
