@@ -71,9 +71,13 @@ $messages['qqq'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
+	'quiz_shuffle'    => 'Skommel vrae',
 	'quiz_colorRight' => 'Reg',
 	'quiz_colorWrong' => 'Verkeerd',
 	'quiz_colorNA'    => 'Nie geantwoord',
+	'quiz_colorError' => 'Sintaksfout',
+	'quiz_score'      => 'U punte is $1 / $2',
+	'quiz_points'     => '$1 | {{PLURAL:$2|1 punt|$2 punte}}',
 	'quiz_reset'      => 'Herstel',
 );
 
@@ -568,6 +572,7 @@ $messages['ia'] = array(
 /** Indonesian (Bahasa Indonesia)
  * @author Irwangatot
  * @author IvanLanin
+ * @author Rex
  */
 $messages['id'] = array(
 	'quiz_desc'         => 'Menyediakan fasilitas pembuatan kuis',
@@ -581,7 +586,7 @@ $messages['id'] = array(
 	'quiz_colorError'   => 'Kesalahan sintaks',
 	'quiz_correction'   => 'Koreksi',
 	'quiz_score'        => 'Skor Anda adalah $1 / $2',
-	'quiz_points'       => '$1 | $2 poin',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 poin|$2 poin}}',
 	'quiz_reset'        => 'Tataulang',
 );
 
