@@ -359,7 +359,7 @@ $messages['fa'] = array(
 	'quiz_colorError'   => 'خطای نحوی',
 	'quiz_correction'   => 'ارسال',
 	'quiz_score'        => 'امتیاز شما $1 از $2 است',
-	'quiz_points'       => '$1 | $2 امتیاز',
+	'quiz_points'       => '$1 | {{PLURAL:$2|۱ امتیاز|$2 امتیاز}}',
 	'quiz_reset'        => 'از نو',
 );
 
