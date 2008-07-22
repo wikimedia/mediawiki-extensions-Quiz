@@ -205,7 +205,7 @@ $messages['bn'] = array(
 	'quiz_colorError'   => 'বাক্যপ্রকরণ ত্রুটি',
 	'quiz_correction'   => 'জমা দাও',
 	'quiz_score'        => 'আপনার স্কোর $1 / $2',
-	'quiz_points'       => '$1 | $2 পয়েন্ট(সমূহ)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 পয়েন্ট|$2 পয়েন্টসমূহ}}',
 	'quiz_reset'        => 'পুনরায় আরম্ভ করুন',
 );
 
@@ -558,7 +558,7 @@ $messages['hu'] = array(
 	'quiz_colorError'   => 'Szintaktikai hiba',
 	'quiz_correction'   => 'Elküldés',
 	'quiz_score'        => 'A pontszámod: $1 / $2',
-	'quiz_points'       => '$1 | $2 pont',
+	'quiz_points'       => '$1 | {{PLURAL:$2|egy|$2}} pont',
 	'quiz_reset'        => 'Újraindít',
 );
 
@@ -566,7 +566,19 @@ $messages['hu'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'quiz_reset' => 'Reinitiar',
+	'quiz_desc'         => 'Permitte le creation de quizes',
+	'quiz_addedPoints'  => 'Puncto(s) addite pro cata responsa correcte',
+	'quiz_cutoffPoints' => 'Puncto(s) subtrahite pro cata responsa erronee',
+	'quiz_ignoreCoef'   => 'Ignorar le coefficientes del questiones',
+	'quiz_shuffle'      => 'Miscer questiones',
+	'quiz_colorRight'   => 'Juste',
+	'quiz_colorWrong'   => 'False',
+	'quiz_colorNA'      => 'Non respondite',
+	'quiz_colorError'   => 'Error de syntaxe',
+	'quiz_correction'   => 'Submitter',
+	'quiz_score'        => 'Punctos: $1 / $2',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 puncto|$2 punctos}}',
+	'quiz_reset'        => 'Reinitiar',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1244,7 +1256,7 @@ $messages['uk'] = array(
 	'quiz_colorError'   => 'Синтаксична помилка',
 	'quiz_correction'   => 'Надіслати',
 	'quiz_score'        => 'Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2',
-	'quiz_points'       => '$1 | $2 очко(ок)',
+	'quiz_points'       => '$1 | $2 {{PLURAL:$2|очко|очки|очок}}',
 	'quiz_reset'        => 'Скинути',
 );
 
