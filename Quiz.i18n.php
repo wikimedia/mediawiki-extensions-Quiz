@@ -847,6 +847,13 @@ $messages['ms'] = array(
 	'quiz_reset'        => 'Set semula',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'quiz_correction' => 'Tiquihuāz',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
