@@ -76,6 +76,7 @@ $messages['af'] = array(
 	'quiz_colorWrong' => 'Verkeerd',
 	'quiz_colorNA'    => 'Nie geantwoord',
 	'quiz_colorError' => 'Sintaksfout',
+	'quiz_correction' => 'Verbetering',
 	'quiz_score'      => 'U punte is $1 / $2',
 	'quiz_points'     => '$1 | {{PLURAL:$2|1 punt|$2 punte}}',
 	'quiz_reset'      => 'Herstel',
@@ -117,7 +118,7 @@ $messages['ar'] = array(
 	'quiz_correction'   => 'تنفيذ',
 	'quiz_score'        => 'نتيجتك هي $1 / $2',
 	'quiz_points'       => '$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}',
-	'quiz_reset'        => 'صفر',
+	'quiz_reset'        => 'إعادة ضبط',
 );
 
 /** Asturian (Asturianu)
