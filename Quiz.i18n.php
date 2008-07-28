@@ -426,6 +426,13 @@ $messages['frp'] = array(
 	'quiz_reset'        => 'Tornar inicialisar',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'quiz_reset' => 'Leechmeitsje',
+);
+
 /** Galician (Galego)
  * @author Xosé
  * @author Alma
@@ -732,7 +739,19 @@ $messages['km'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'quiz_correction' => 'Verbessere!',
+	'quiz_desc'         => 'Mäht et möschlesch, em Wiki e Quiß opzesäze',
+	'quiz_addedPoints'  => 'Punkte, di för en reschtijje Antwoot dobeijezallt wäde',
+	'quiz_cutoffPoints' => "Punkte, die för en fo'keehte Antwoot affjetroke wääde",
+	'quiz_ignoreCoef'   => 'Donn de einzel Jeweschte fun de Froore nit zälle',
+	'quiz_shuffle'      => 'Frore neu mesche',
+	'quiz_colorRight'   => 'Reschtesch',
+	'quiz_colorWrong'   => "Fo'keeht",
+	'quiz_colorNA'      => 'Kei Antwoot',
+	'quiz_colorError'   => 'Fääler en de Syntax',
+	'quiz_correction'   => 'Verbessere!',
+	'quiz_score'        => 'Do häs zesamme {{PLURAL:$1|eine Punk|$1 Punkte|keine Punk}} {{PLURAL:$2|fun einem möschlesche Punk jemaat|fun möschlesche $2 Punke jemaat|Punk jemaat, et wohr ävver och nix ze holle do}}.',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 Punk|$2 Punkte|Nix}}',
+	'quiz_reset'        => 'Neu Aanfange!',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
