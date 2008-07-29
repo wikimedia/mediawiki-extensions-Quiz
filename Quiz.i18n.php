@@ -775,6 +775,7 @@ $messages['lb'] = array(
 
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
+ * @author Matthias
  */
 $messages['li'] = array(
 	'quiz_desc'         => "Maak 't aanmake van tes meugelik",
@@ -788,7 +789,7 @@ $messages['li'] = array(
 	'quiz_colorError'   => 'Algemeine fout',
 	'quiz_correction'   => 'Verbaetering',
 	'quiz_score'        => 'Dien score is $1 / $2',
-	'quiz_points'       => '$1 | $2 puntj(e)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 puntj|$2 puntje}}',
 	'quiz_reset'        => 'Oppernuuj',
 );
 
