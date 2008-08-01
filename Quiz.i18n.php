@@ -957,7 +957,7 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'quiz_desc'         => 'Permet la creacion dels Quiz',
-	'quiz_addedPoints'  => 'Punt(s) ajustat(s) per una responsa justa',
+	'quiz_addedPoints'  => 'Punt(s) apondut(s) per una responsa corrècta',
 	'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
 	'quiz_ignoreCoef'   => 'Ignorar los coeficients de las questions',
 	'quiz_shuffle'      => 'Mesclar las questions',
