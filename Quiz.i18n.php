@@ -1272,8 +1272,10 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author AS
  */
 $messages['uk'] = array(
+	'quiz_desc'         => 'Дозволяє створювати питальники',
 	'quiz_addedPoints'  => 'очко(ок) додано за правильну відповідь',
 	'quiz_cutoffPoints' => 'очко(ок) віднято за неправильну відповідь',
 	'quiz_ignoreCoef'   => 'Нехтувати коефіцієнтами запитань',
