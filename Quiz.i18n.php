@@ -126,6 +126,7 @@ $messages['ar'] = array(
  * @author Cedric31
  */
 $messages['ast'] = array(
+	'quiz_desc'         => "Permite la creación d'encuestes",
 	'quiz_addedPoints'  => 'Puntu/os añadíu/os por rempuesta correuta',
 	'quiz_cutoffPoints' => 'Puntu/os quitáu/os por rempuesta incorreuta',
 	'quiz_ignoreCoef'   => 'Inorar los coeficientes de les entrugues',
@@ -136,8 +137,8 @@ $messages['ast'] = array(
 	'quiz_colorError'   => 'Error de sintaxis',
 	'quiz_correction'   => 'Unviar',
 	'quiz_score'        => 'La to puntuación ye $1 / $2',
-	'quiz_points'       => '$1 | $2 puntu/os',
-	'quiz_reset'        => 'Reïnicializar',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 puntu|$2 puntos}}',
+	'quiz_reset'        => 'Reinicializar',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
@@ -868,6 +869,13 @@ $messages['ms'] = array(
 	'quiz_reset'        => 'Set semula',
 );
 
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'quiz_reset' => 'Irrisettja',
+);
+
 /** Nahuatl (Nahuatl)
  * @author Fluence
  */
@@ -967,7 +975,7 @@ $messages['oc'] = array(
 	'quiz_colorError'   => 'Error de sintaxi',
 	'quiz_correction'   => 'Correccion',
 	'quiz_score'        => 'Vòstra marca es $1 / $2',
-	'quiz_points'       => '$1 | $2 punt(s)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punt|$2 punts}}',
 	'quiz_reset'        => 'Reïnicializar',
 );
 
