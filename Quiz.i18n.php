@@ -812,6 +812,22 @@ $messages['lt'] = array(
 	'quiz_reset'        => 'Valyti',
 );
 
+/** Latvian (Latviešu)
+ * @author Xil
+ */
+$messages['lv'] = array(
+	'quiz_addedPoints'  => 'Punkti par pareizu atbildi',
+	'quiz_cutoffPoints' => 'Punkti, kas tiek atņemti par nepareizu atbildi',
+	'quiz_ignoreCoef'   => 'Neņemt vērā jautājumu koeficientus',
+	'quiz_shuffle'      => 'Sajaukt jautājumus',
+	'quiz_colorRight'   => 'Pareizi',
+	'quiz_colorWrong'   => 'Nepareizi',
+	'quiz_colorNA'      => 'Nav atbildēts',
+	'quiz_colorError'   => 'Sintakses kļūda',
+	'quiz_score'        => 'Tavs rezultāts ir $1 / $2',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punkts|$2 punkti}}',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  * @author Jacob.jose
