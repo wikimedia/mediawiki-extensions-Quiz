@@ -660,6 +660,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author JtFuruhata
+ * @author Aotake
  */
 $messages['ja'] = array(
 	'quiz_desc'         => 'クイズの作成',
