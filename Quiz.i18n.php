@@ -231,6 +231,7 @@ $messages['br'] = array(
  * @author Paucabot
  */
 $messages['ca'] = array(
+	'quiz_desc'         => 'Permet la creació de concursos',
 	'quiz_addedPoints'  => 'Punt(s) guanyats per resposta correcta',
 	'quiz_cutoffPoints' => 'Punt(s) perduts per resposta incorrecta',
 	'quiz_shuffle'      => 'Preguntes aleatòries',
@@ -240,7 +241,7 @@ $messages['ca'] = array(
 	'quiz_colorError'   => 'Error de sintaxi',
 	'quiz_correction'   => 'Envia',
 	'quiz_score'        => 'La vostra puntuació és $1 / $2',
-	'quiz_points'       => '$1 | $2 punt(s)',
+	'quiz_points'       => '$1 | {{PLURAL:$2|1 punt|$2 punts}}',
 	'quiz_reset'        => 'Restaura',
 );
 
