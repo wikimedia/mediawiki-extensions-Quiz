@@ -1091,6 +1091,25 @@ $messages['qu'] = array(
 	'quiz_reset' => 'Musuqmanta qallariy',
 );
 
+/** Romanian (Română)
+ * @author Mihai
+ */
+$messages['ro'] = array(
+	'quiz_desc' => 'Permite crearea de chestionare',
+	'quiz_addedPoints' => 'Punct(e) adăugat(e) pentru un răspuns corect',
+	'quiz_cutoffPoints' => 'Punct(e) scăzut(e) pentru un răspuns greşit',
+	'quiz_ignoreCoef' => 'Ignoră coeficienţii întrebărilor',
+	'quiz_shuffle' => 'Întrebări amestecate',
+	'quiz_colorRight' => 'Corect',
+	'quiz_colorWrong' => 'Greşit',
+	'quiz_colorNA' => 'Fără răspuns',
+	'quiz_colorError' => 'Eroare de sintaxă',
+	'quiz_correction' => 'Aplică',
+	'quiz_score' => 'Scorul tău este $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 punct|$2 puncte}}',
+	'quiz_reset' => 'Reiniţializare',
+);
+
 /** Russian (Русский)
  * @author EugeneZelenko
  * @author Александр Сигачёв
