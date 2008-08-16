@@ -500,6 +500,7 @@ $messages['hi'] = array(
 );
 
 /** Croatian (Hrvatski)
+ * @author Dalibor Bosits
  * @author Dnik
  * @author SpeedyGonsales
  */
@@ -515,7 +516,7 @@ $messages['hr'] = array(
 	'quiz_colorError' => 'Sintaksna greška',
 	'quiz_correction' => 'Ocijeni kviz',
 	'quiz_score' => 'Vaš rezultat je $1 / $2',
-	'quiz_points' => '$1 | $2 {{PLURAL:$1|bod|boda|bodova}}',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 bod|$2 bodova}}',
 	'quiz_reset' => 'Poništi kviz',
 );
 
