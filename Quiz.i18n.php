@@ -127,6 +127,26 @@ $messages['ar'] = array(
 	'quiz_reset' => 'إعادة ضبط',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ghaly
+ * @author Ramsis II
+ */
+$messages['arz'] = array(
+	'quiz_desc' => 'بيسمح بعمل امتحانات',
+	'quiz_addedPoints' => 'النقطة(النقط) اللي بتتضاف لما تجاوب صح',
+	'quiz_cutoffPoints' => 'النقطة(النقط) اللي بتتخصم لما تجاوب غلط',
+	'quiz_ignoreCoef' => 'اتجاهل معاملات الاسئلة',
+	'quiz_shuffle' => 'اسئلة متلخبطة',
+	'quiz_colorRight' => 'صح',
+	'quiz_colorWrong' => 'غلط',
+	'quiz_colorNA' => 'ماتجاوبش عليه',
+	'quiz_colorError' => 'غلط في السينتاكس',
+	'quiz_correction' => 'تنفيذ',
+	'quiz_score' => '$1 / $2 النتيجة بتاعتك هي',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}',
+	'quiz_reset' => 'اضبط من تاني',
+);
+
 /** Asturian (Asturianu)
  * @author Cedric31
  * @author Esbardu
