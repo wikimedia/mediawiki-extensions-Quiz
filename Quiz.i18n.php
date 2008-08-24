@@ -1071,7 +1071,7 @@ $messages['ps'] = array(
 	'quiz_colorWrong' => 'ناسم',
 	'quiz_colorNA' => 'بې ځوابه',
 	'quiz_score' => 'ستاسو نومرې $1 / $2 دي',
-	'quiz_points' => '$1 | $2 نمره(ې)',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 نمره|$2 نمرې}}',
 );
 
 /** Portuguese (Português)
