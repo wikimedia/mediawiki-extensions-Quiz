@@ -486,8 +486,8 @@ $messages['gl'] = array(
  */
 $messages['he'] = array(
 	'quiz_desc' => 'אפשרות ליצירת חידונים',
-	'quiz_addedPoints' => 'הנקודות שנוספות עבור כל תשובה נכונה',
-	'quiz_cutoffPoints' => 'הנקודות שמורדות עבור כל תשובה שגויה',
+	'quiz_addedPoints' => '{{PLURAL:$1|הנקודה שנוספת|הנקודות שנוספות}} עבור כל תשובה נכונה',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|הנקודה שמורדת|הנקודות שמורדות}} עבור כל תשובה שגויה',
 	'quiz_ignoreCoef' => 'התעלמות ממקדמי שאלות',
 	'quiz_shuffle' => 'סדר משתנה של השאלות',
 	'quiz_colorRight' => 'נכון',
