@@ -42,8 +42,8 @@ $messages = array();
 
 $messages['en'] = array(
 	'quiz_desc'	        => 'Allows creation of quizzes',
-	'quiz_addedPoints'	=> "Point(s) added for a correct answer",
-	'quiz_cutoffPoints'	=> "Point(s) subtracted for a wrong answer",
+	'quiz_addedPoints'	=> "{{PLURAL:$1|Point|Points}} added for a correct answer",
+	'quiz_cutoffPoints'	=> "{{PLURAL:$1|Point|Points}} for a wrong answer",
 	'quiz_ignoreCoef'	=> "Ignore the questions' coefficients",
 	'quiz_shuffle'		=> "Shuffle questions",
 	'quiz_colorRight'	=> "Right",
