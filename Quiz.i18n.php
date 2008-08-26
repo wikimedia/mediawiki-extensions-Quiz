@@ -113,8 +113,8 @@ $messages['an'] = array(
  */
 $messages['ar'] = array(
 	'quiz_desc' => 'يسمح بإنشاء اختبارات',
-	'quiz_addedPoints' => 'نقطة (نقاط) مضافة للإجابة الصحيحة',
-	'quiz_cutoffPoints' => 'نقطة (نقاط) تخصم للإجابة الخاطئة',
+	'quiz_addedPoints' => '{{PLURAL:$1|نقطة|نقطة}} مضافة للإجابة الصحيحة',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|نقطة|نقطة}} تخصم للإجابة الخاطئة',
 	'quiz_ignoreCoef' => 'تجاهل معاملات الأسئلة',
 	'quiz_shuffle' => 'أسئلة مختلطة',
 	'quiz_colorRight' => 'صواب',
@@ -133,8 +133,8 @@ $messages['ar'] = array(
  */
 $messages['arz'] = array(
 	'quiz_desc' => 'بيسمح بعمل امتحانات',
-	'quiz_addedPoints' => 'النقطة(النقط) اللي بتتضاف لما تجاوب صح',
-	'quiz_cutoffPoints' => 'النقطة(النقط) اللي بتتخصم لما تجاوب غلط',
+	'quiz_addedPoints' => '{{PLURAL:$1|النقطة|النقط}} اللي بتضاف لما تجاوب صح',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|النقطة|النقط}} اللي بتتخصم لما تجاوب غلط',
 	'quiz_ignoreCoef' => 'اتجاهل معاملات الاسئلة',
 	'quiz_shuffle' => 'اسئلة متلخبطة',
 	'quiz_colorRight' => 'صح',
@@ -277,8 +277,8 @@ $messages['ca'] = array(
  */
 $messages['cs'] = array(
 	'quiz_desc' => 'Umožňuje tvorbu kvízů',
-	'quiz_addedPoints' => 'Bod(y) připočtené za správnou odpověď',
-	'quiz_cutoffPoints' => 'Bod(y) odečtené za špatnou odpověď',
+	'quiz_addedPoints' => '{{PLURAL:$1|Bod připočtený|Body připočtené|Body připočtené}} za správnou odpověď',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Bod odečtený|Body odečtené|Body odečtené}} za špatnou odpověď',
 	'quiz_ignoreCoef' => 'Ignorovat koeficienty otázek',
 	'quiz_shuffle' => 'Promíchat otázky',
 	'quiz_colorRight' => 'Správně',
@@ -308,8 +308,8 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'quiz_desc' => 'Ermöglicht die Erstellung von Quizspielen',
-	'quiz_addedPoints' => 'Pluspunkte für eine richtige Antwort',
-	'quiz_cutoffPoints' => 'Minuspunkte für eine falsche Antwort',
+	'quiz_addedPoints' => '{{PLURAL:$1|Pluspunkt|Pluspunkte}} für eine richtige Antwort',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspunkt|Minuspunkte}} für eine falsche Antwort',
 	'quiz_ignoreCoef' => 'Ignoriere den Fragen-Koeffizienten',
 	'quiz_shuffle' => 'Fragen mischen',
 	'quiz_colorRight' => 'Richtig',
@@ -691,8 +691,8 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'quiz_desc' => 'クイズの作成',
-	'quiz_addedPoints' => '正解時の得点',
-	'quiz_cutoffPoints' => '不正解時の失点',
+	'quiz_addedPoints' => '正解により$1点追加',
+	'quiz_cutoffPoints' => '不正解に$1点追加',
 	'quiz_ignoreCoef' => '問題ごとの倍率を無視する',
 	'quiz_shuffle' => '問題をシャッフル',
 	'quiz_colorRight' => '正解',
@@ -769,8 +769,8 @@ $messages['km'] = array(
  */
 $messages['ksh'] = array(
 	'quiz_desc' => 'Mäht et müjjelesch, em Wiki e Quiß opzesäze',
-	'quiz_addedPoints' => 'Punkte, di för en reschtijje Antwoot dobeijezallt wäde',
-	'quiz_cutoffPoints' => "Punkte, die för en fo'keehte Antwoot affjetroke wääde",
+	'quiz_addedPoints' => '{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en reschtijje Antwoot dobeijezallt {{PLURAL:$1|weed|wäde|weede}}',
+	'quiz_cutoffPoints' => "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en fo'keehte Antwoot affjetroke {{PLURAL:$1|weed|wäde|weede}}",
 	'quiz_ignoreCoef' => 'Donn de einzel Jeweschte fun de Froore nit zälle',
 	'quiz_shuffle' => 'Frore neu mesche',
 	'quiz_colorRight' => 'Reschtesch',
@@ -788,8 +788,8 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'quiz_desc' => 'Erméiglecht et Quizzer ze maachen',
-	'quiz_addedPoints' => 'Punkt(en) derbäi fir eng richteg Äntwert',
-	'quiz_cutoffPoints' => 'Punkt(en) ofgezunn fir eng falsch Äntwert',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punkt|Punkten}} derbäi fir eng richteg Äntwert',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punkt|Punkten}} ofgezunn fir eng falsch Äntwert',
 	'quiz_ignoreCoef' => 'Koeffizient vun der Fro ignoréieren',
 	'quiz_shuffle' => 'Froe meschen',
 	'quiz_colorRight' => 'Richteg',
@@ -932,8 +932,8 @@ $messages['nah'] = array(
  */
 $messages['nds'] = array(
 	'quiz_desc' => 'Verlööft dat Opstellen vun Quizspelen',
-	'quiz_addedPoints' => 'Punkten för richtige Antwoort',
-	'quiz_cutoffPoints' => 'Minuspunkten för verkehrte Antwoort',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punkt|Punkten}} för richtige Antwoord',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspunkt|Minuspunkten}} för verkehrte Antwoord',
 	'quiz_ignoreCoef' => 'op Fragen-Koeffizienten nix op geven',
 	'quiz_shuffle' => 'Fragen mischen',
 	'quiz_colorRight' => 'Stimmt',
@@ -952,8 +952,8 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'quiz_desc' => 'Maakt het aanmaken van tests mogelijk',
-	'quiz_addedPoints' => 'Punt(en) toegevoegd voor een goed antwoord',
-	'quiz_cutoffPoints' => 'Punt(en) afgetrokken voor een fout antwoord',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punt|Punten}} afgetrokken voor een fout antwoord',
 	'quiz_ignoreCoef' => 'De coëfficienten van de vragen negeren',
 	'quiz_shuffle' => 'De vragen in willekeurige volgorde',
 	'quiz_colorRight' => 'Goed',
@@ -1009,8 +1009,8 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'quiz_desc' => 'Permet la creacion dels Quiz',
-	'quiz_addedPoints' => 'Punt(s) apondut(s) per una responsa corrècta',
-	'quiz_cutoffPoints' => 'Punt(s) levat(s) per una responsa erronèa',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punt apondut|Punts aponduts}} per una responsa corrècta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punt levat|Punts levats}} per una responsa erronèa',
 	'quiz_ignoreCoef' => 'Ignorar los coeficients de las questions',
 	'quiz_shuffle' => 'Mesclar las questions',
 	'quiz_colorRight' => 'Just',
@@ -1132,13 +1132,14 @@ $messages['ro'] = array(
 );
 
 /** Russian (Русский)
+ * @author Aleksandrit
  * @author EugeneZelenko
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'quiz_desc' => 'Позволяет создавать вопросники',
-	'quiz_addedPoints' => 'очко(ов) добавлено за правильный ответ',
-	'quiz_cutoffPoints' => 'очко(ов) вычтено за неправильный ответ',
+	'quiz_addedPoints' => '{{PLURAL:$1|очко|очков}} добавлено за правильный ответ',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|очко|очков}} вычтено за неправильный ответ',
 	'quiz_ignoreCoef' => 'Пренебрегать коэффициентами вопросов',
 	'quiz_shuffle' => 'Перемешать вопросы',
 	'quiz_colorRight' => 'Правильно',
@@ -1366,8 +1367,8 @@ $messages['uk'] = array(
  */
 $messages['vec'] = array(
 	'quiz_desc' => 'Perméte de crear dei zughi a quiz',
-	'quiz_addedPoints' => 'Ponti zontà par ogni risposta giusta',
-	'quiz_cutoffPoints' => 'Ponti cavà par ogni risposta sbaglià',
+	'quiz_addedPoints' => '{{PLURAL:$1|Ponto|Ponti}} zontà par ogni risposta giusta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Ponto|Ponti}} cavà par ogni risposta sbaglià',
 	'quiz_ignoreCoef' => 'Ignora i coeficenti de domanda',
 	'quiz_shuffle' => 'Mìssia le domande',
 	'quiz_colorRight' => 'Giusto',
