@@ -153,8 +153,8 @@ $messages['arz'] = array(
  */
 $messages['ast'] = array(
 	'quiz_desc' => "Permite la creación d'encuestes",
-	'quiz_addedPoints' => 'Puntu/os añadíu/os por rempuesta correuta',
-	'quiz_cutoffPoints' => 'Puntu/os quitáu/os por rempuesta incorreuta',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puntu añadíu|Puntos añadíos}} por rempuesta correuta',
+	'quiz_cutoffPoints' => 'PLURAL:$1|Puntu quitáu|Puntos quitaos}} por rempuesta incorreuta',
 	'quiz_ignoreCoef' => 'Inorar los coeficientes de les entrugues',
 	'quiz_shuffle' => 'Revolver les entrugues',
 	'quiz_colorRight' => 'Correuto',
@@ -526,8 +526,8 @@ $messages['hi'] = array(
  */
 $messages['hr'] = array(
 	'quiz_desc' => 'Dozvoljava kreiranje kvizova',
-	'quiz_addedPoints' => 'Broj bodova za točan odgovor',
-	'quiz_cutoffPoints' => 'Broj negativnih bodova (tj. bodova koji se oduzimaju) za netočan odgovor',
+	'quiz_addedPoints' => '{{PLURAL:$1|Bod|Bodovi}} za točan odgovor',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Bod|Bodovi}} za netočan odgovor',
 	'quiz_ignoreCoef' => 'Ignoriraj težinske koeficijente pitanja',
 	'quiz_shuffle' => 'Promiješaj pitanja',
 	'quiz_colorRight' => 'Točno',
@@ -603,8 +603,8 @@ $messages['hu'] = array(
  */
 $messages['ia'] = array(
 	'quiz_desc' => 'Permitte le creation de quizes',
-	'quiz_addedPoints' => 'Puncto(s) addite pro cata responsa correcte',
-	'quiz_cutoffPoints' => 'Puncto(s) subtrahite pro cata responsa erronee',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puncto|Punctos}} addite pro cata responsa correcte',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Puncto|Punctos}} subtrahite pro cata responsa erronee',
 	'quiz_ignoreCoef' => 'Ignorar le coefficientes del questiones',
 	'quiz_shuffle' => 'Miscer questiones',
 	'quiz_colorRight' => 'Juste',
@@ -750,8 +750,8 @@ $messages['jv'] = array(
  */
 $messages['km'] = array(
 	'quiz_desc' => 'អនុញ្ញាតអោយបង្កើតចំណោទសួរ',
-	'quiz_addedPoints' => 'ពិន្ទុត្រូវបានបូកចូលចំពោះចំលើយត្រឹមត្រូវ',
-	'quiz_cutoffPoints' => 'ពិន្ទុត្រូវបានដកចេញចំពោះចំលើយខុស',
+	'quiz_addedPoints' => '$1ពិន្ទុត្រូវបានបូកចូលចំពោះចំលើយត្រឹមត្រូវ',
+	'quiz_cutoffPoints' => '$1ពិន្ទុត្រូវបានដកចេញចំពោះចំលើយខុស',
 	'quiz_ignoreCoef' => 'មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ',
 	'quiz_shuffle' => 'សាប់សំណួរ',
 	'quiz_colorRight' => 'ត្រូវ',
@@ -1080,8 +1080,8 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'quiz_desc' => 'Permite a criação de questionários',
-	'quiz_addedPoints' => 'Ponto(s) adicionados por cada resposta certa',
-	'quiz_cutoffPoints' => 'Ponto(s) subtraídos por cada resposta errada',
+	'quiz_addedPoints' => '{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} por cada resposta certa',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Ponto subtraído|Pontos subtraídos}} por cada resposta errada',
 	'quiz_ignoreCoef' => 'Ignorar os coeficientes das questões',
 	'quiz_shuffle' => 'Baralhar as questões',
 	'quiz_colorRight' => 'Correctas',
