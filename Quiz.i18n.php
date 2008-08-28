@@ -129,18 +129,19 @@ $messages['ar'] = array(
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
+ * @author Meno25
  * @author Ramsis II
  */
 $messages['arz'] = array(
 	'quiz_desc' => 'بيسمح بعمل امتحانات',
-	'quiz_addedPoints' => '{{PLURAL:$1|النقطة|النقط}} اللي بتضاف لما تجاوب صح',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|النقطة|النقط}} اللي بتتخصم لما تجاوب غلط',
+	'quiz_addedPoints' => '{{PLURAL:$1|النقطة|النقط}} اللى بتضاف لما تجاوب صح',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|النقطة|النقط}} اللى بتتخصم لما تجاوب غلط',
 	'quiz_ignoreCoef' => 'اتجاهل معاملات الاسئلة',
 	'quiz_shuffle' => 'اسئلة متلخبطة',
 	'quiz_colorRight' => 'صح',
 	'quiz_colorWrong' => 'غلط',
 	'quiz_colorNA' => 'ماتجاوبش عليه',
-	'quiz_colorError' => 'غلط في السينتاكس',
+	'quiz_colorError' => 'غلط فى السينتاكس',
 	'quiz_correction' => 'تنفيذ',
 	'quiz_score' => '$1 / $2 النتيجة بتاعتك هي',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}',
@@ -258,8 +259,8 @@ $messages['br'] = array(
  */
 $messages['ca'] = array(
 	'quiz_desc' => 'Permet la creació de concursos',
-	'quiz_addedPoints' => 'Punt(s) guanyats per resposta correcta',
-	'quiz_cutoffPoints' => 'Punt(s) perduts per resposta incorrecta',
+	'quiz_addedPoints' => '{{PLURAL:$1|punt|punts}} per resposta correcta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|punt|punts}} per resposta incorrecta',
 	'quiz_shuffle' => 'Preguntes aleatòries',
 	'quiz_colorRight' => 'Correcte',
 	'quiz_colorWrong' => 'Incorrecte',
