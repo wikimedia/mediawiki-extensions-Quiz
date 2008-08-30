@@ -205,8 +205,8 @@ $messages['bcl'] = array(
  */
 $messages['bg'] = array(
 	'quiz_desc' => 'Позволява създаването на анкети',
-	'quiz_addedPoints' => 'Точки, добавяни за правилен отговор',
-	'quiz_cutoffPoints' => 'Точки, отнемани за грешен отговор',
+	'quiz_addedPoints' => '{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор',
 	'quiz_shuffle' => 'Разбъркване на въпросите',
 	'quiz_colorRight' => 'Правилно',
 	'quiz_colorWrong' => 'Грешно',
@@ -340,8 +340,8 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'quiz_desc' => 'Permesas kreadon de kvizoj',
-	'quiz_addedPoints' => 'Poento(j) por ĝusta respondo',
-	'quiz_cutoffPoints' => 'Poento(j) subtrahita(j) por malĝusta respondo',
+	'quiz_addedPoints' => '{{PLURAL:$1|Poento|Poentoj}} por ĝusta respondo',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Poento subtrahita|Poentoj subtrahitaj}} por malĝusta respondo',
 	'quiz_ignoreCoef' => 'Ignoru la koeficientojn de demandoj.',
 	'quiz_shuffle' => 'Miksu demandaron',
 	'quiz_colorRight' => 'Ĝusta',
