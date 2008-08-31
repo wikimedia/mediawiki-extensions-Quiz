@@ -1031,8 +1031,8 @@ $messages['oc'] = array(
  */
 $messages['pl'] = array(
 	'quiz_desc' => 'Umożliwia tworzenie quizów',
-	'quiz_addedPoints' => 'Punkty dodawane za właściwą odpowiedź',
-	'quiz_cutoffPoints' => 'Punkty odejmowane za niewłaściwą odpowiedź',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punkt odejmowany|Punkty odejmowane|Punktów odejmowanych}} za niewłaściwą odpowiedź',
 	'quiz_ignoreCoef' => 'Ignoruj punktację pytań',
 	'quiz_shuffle' => 'Losuj kolejność pytań',
 	'quiz_colorRight' => 'Właściwa',
