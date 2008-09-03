@@ -93,8 +93,8 @@ $messages['af'] = array(
  */
 $messages['an'] = array(
 	'quiz_desc' => 'Premite a creyazión de quizes',
-	'quiz_addedPoints' => 'Puntos por cada respuesta enzertata',
-	'quiz_cutoffPoints' => 'Puntos sacatos por cada respuesta entibocata',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punto|Puntos}} por cada respuesta enzertata',
+	'quiz_cutoffPoints' => 'Puntos sacatos por cada respuesta entibocata:',
 	'quiz_ignoreCoef' => "Innorar os puntos d'as preguntas",
 	'quiz_shuffle' => 'Desordenar as preguntas',
 	'quiz_colorRight' => 'Enzertatas',
@@ -468,8 +468,8 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'quiz_desc' => 'Permite a creación de preguntas',
-	'quiz_addedPoints' => 'Punto(s) engadidos para unha resposta correcta',
-	'quiz_cutoffPoints' => 'Punto(s) restado(s) por cada resposta errónea',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea',
 	'quiz_ignoreCoef' => 'Ignorar os coeficientes das preguntas',
 	'quiz_shuffle' => 'Barallar as preguntas',
 	'quiz_colorRight' => 'Ben',
