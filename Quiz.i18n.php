@@ -1243,6 +1243,7 @@ $messages['stq'] = array(
 );
 
 /** Sundanese (Basa Sunda)
+ * @author Irwangatot
  * @author Kandar
  */
 $messages['su'] = array(
@@ -1254,7 +1255,7 @@ $messages['su'] = array(
 	'quiz_colorError' => 'Salah rumpaka',
 	'quiz_correction' => 'Kirim',
 	'quiz_score' => 'Peunteun anjeun $1 / $2',
-	'quiz_points' => '$1 | $2 poin',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 poin|$2 poin}}',
 	'quiz_reset' => 'Rését',
 );
 
