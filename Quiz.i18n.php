@@ -625,8 +625,8 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'quiz_desc' => 'Menyediakan fasilitas pembuatan kuis',
-	'quiz_addedPoints' => 'Penambahan angka untuk jawaban yang benar',
-	'quiz_cutoffPoints' => 'Pengurangan angka untuk jawaban yang salah',
+	'quiz_addedPoints' => 'Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat',
+	'quiz_cutoffPoints' => 'Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah',
 	'quiz_ignoreCoef' => 'Abaikan koefisien pertanyaan',
 	'quiz_shuffle' => 'Mengacak pertanyaan',
 	'quiz_colorRight' => 'Benar',
@@ -672,8 +672,8 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'quiz_desc' => 'Consente di creare dei quiz',
-	'quiz_addedPoints' => 'Punti aggiunti per ogni risposta corretta',
-	'quiz_cutoffPoints' => 'Punti sottratti per ogni risposta errata',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punto aggiunto|Punti aggiunti}} per ogni risposta corretta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punto sottratto|Punti sottratti}} per ogni risposta errata',
 	'quiz_ignoreCoef' => 'Ignora i coefficienti di domanda',
 	'quiz_shuffle' => 'Mescola le domande',
 	'quiz_colorRight' => 'Giusto',
