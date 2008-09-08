@@ -416,13 +416,14 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Meno25
  * @author Sherbrooke
  * @author Urhixidur
  */
 $messages['fr'] = array(
 	'quiz_desc' => 'Permet la création des quiz',
-	'quiz_addedPoints' => 'Point(s) ajouté(s) pour une réponse juste',
-	'quiz_cutoffPoints' => 'Point(s) retiré(s) pour une réponse erronée',
+	'quiz_addedPoints' => '{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse erronée',
 	'quiz_ignoreCoef' => 'Ignorer les coefficients des questions',
 	'quiz_shuffle' => 'Mélanger les questions',
 	'quiz_colorRight' => 'Juste',
@@ -546,8 +547,8 @@ $messages['hr'] = array(
  */
 $messages['hsb'] = array(
 	'quiz_desc' => 'Dowola wutworjenje kwisow',
-	'quiz_addedPoints' => 'Plusdypki za prawu wotmołwu',
-	'quiz_cutoffPoints' => 'Minusdypki za wopačnu wotmołwu',
+	'quiz_addedPoints' => '{{PLURAL:$1|Plusdypk|Plusdypkaj|Plusdypki|Plusdypkow}} za prawu wotmołwu',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minusdypk|Minusdypkaj|Minusdypki|Minusdypkow}} za wopačnu wotmołwu',
 	'quiz_ignoreCoef' => 'Prašenske koeficienty ignorować',
 	'quiz_shuffle' => 'Prašenja měšeć',
 	'quiz_colorRight' => 'Prawje',
@@ -556,7 +557,7 @@ $messages['hsb'] = array(
 	'quiz_colorError' => 'Syntaksowy zmylk',
 	'quiz_correction' => 'Korektura',
 	'quiz_score' => 'Twój hrajny staw je: $1 / $2',
-	'quiz_points' => '$1 | $2 dypkow',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 dypk|$2 dypkaj|$2 dypki|$2 dypkow}}',
 	'quiz_reset' => 'Znowastartowanje',
 );
 
