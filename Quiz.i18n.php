@@ -378,8 +378,8 @@ $messages['es'] = array(
  */
 $messages['fa'] = array(
 	'quiz_desc' => 'ایجاد آزمون را ممکن می‌سازد',
-	'quiz_addedPoints' => 'امتیاز هر پاسخ درست',
-	'quiz_cutoffPoints' => 'امتیاز منفی هر پاسخ نادرست',
+	'quiz_addedPoints' => '{{PLURAL:$1|امتیاز|امتیاز}} هر پاسخ درست',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|امتیاز|امتیاز}} منفی هر پاسخ نادرست',
 	'quiz_ignoreCoef' => 'نادیده گرفتن ضریب سوال‌ها',
 	'quiz_shuffle' => 'برزدن سوال‌ها',
 	'quiz_colorRight' => 'درست',
@@ -992,8 +992,8 @@ $messages['nn'] = array(
  */
 $messages['no'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
-	'quiz_addedPoints' => 'Plusspoeng for korrekt svar',
-	'quiz_cutoffPoints' => 'Minuspoeng for galt svar',
+	'quiz_addedPoints' => 'Plusspoeng for korrekt svar<!--{{PLURAL:$1}}-->',
+	'quiz_cutoffPoints' => 'Minuspoeng for galt svar<!--{{PLURAL:$1}}-->',
 	'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
 	'quiz_shuffle' => 'Stokk spørsmålene',
 	'quiz_colorRight' => 'Riktig',
@@ -1115,12 +1115,13 @@ $messages['qu'] = array(
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author Mihai
  */
 $messages['ro'] = array(
 	'quiz_desc' => 'Permite crearea de chestionare',
-	'quiz_addedPoints' => 'Punct(e) adăugat(e) pentru un răspuns corect',
-	'quiz_cutoffPoints' => 'Punct(e) scăzut(e) pentru un răspuns greşit',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punct adăugat|Puncte adăugate}} pentru un răspuns corect',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greşit',
 	'quiz_ignoreCoef' => 'Ignoră coeficienţii întrebărilor',
 	'quiz_shuffle' => 'Întrebări amestecate',
 	'quiz_colorRight' => 'Corect',
@@ -1351,8 +1352,8 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'quiz_desc' => 'Дозволяє створювати питальники',
-	'quiz_addedPoints' => 'очко(ок) додано за правильну відповідь',
-	'quiz_cutoffPoints' => 'очко(ок) віднято за неправильну відповідь',
+	'quiz_addedPoints' => '{{PLURAL:$1|Очко|Очки}} додано за правильну відповідь',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Очко|Очки}} віднято за неправильну відповідь',
 	'quiz_ignoreCoef' => 'Нехтувати коефіцієнтами запитань',
 	'quiz_shuffle' => 'Перемішати запитання',
 	'quiz_colorRight' => 'Правильно',
