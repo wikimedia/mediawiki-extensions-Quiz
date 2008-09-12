@@ -1352,8 +1352,8 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'quiz_desc' => 'Дозволяє створювати питальники',
-	'quiz_addedPoints' => '{{PLURAL:$1|Очко|Очки}} додано за правильну відповідь',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Очко|Очки}} віднято за неправильну відповідь',
+	'quiz_addedPoints' => '{{PLURAL:$1|Очко додане|Очки додані}} за правильну відповідь',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Очко відняте|Очки відняті}} за неправильну відповідь',
 	'quiz_ignoreCoef' => 'Нехтувати коефіцієнтами запитань',
 	'quiz_shuffle' => 'Перемішати запитання',
 	'quiz_colorRight' => 'Правильно',
