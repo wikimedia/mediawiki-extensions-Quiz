@@ -1161,7 +1161,7 @@ $messages['ru'] = array(
 $messages['sah'] = array(
 	'quiz_desc' => 'Вопросниктары оҥорор кыаҕы биэрэр',
 	'quiz_addedPoints' => 'Очкуо сөп эппиэт иһин эбилиннэ',
-	'quiz_cutoffPoints' => 'очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
+	'quiz_cutoffPoints' => 'Очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
 	'quiz_ignoreCoef' => 'Ыйытыылар коэффициеннарын аахсыма',
 	'quiz_shuffle' => 'Ыйытыылары булкуй',
 	'quiz_colorRight' => 'Сөп',
@@ -1170,7 +1170,7 @@ $messages['sah'] = array(
 	'quiz_colorError' => 'Синтаксическай алҕас',
 	'quiz_correction' => 'Ыыт',
 	'quiz_score' => '$2 очкуоттан $1 очкуону ыллыҥ',
-	'quiz_points' => '$1 | $2 очкуо',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 очкуо|$2 очкуо}}',
 	'quiz_reset' => 'Саҥаттан',
 );
 
@@ -1265,11 +1265,12 @@ $messages['su'] = array(
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
+ * @author Najami
  */
 $messages['sv'] = array(
 	'quiz_desc' => 'Ger möjlighet att skapa frågeformulär',
-	'quiz_addedPoints' => 'Poäng för rätt svar',
-	'quiz_cutoffPoints' => 'Poängavdrag för fel svar',
+	'quiz_addedPoints' => '{{PLURAL:$1|Poäng}} för rätt svar',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Poängavdrag}} för fel svar',
 	'quiz_ignoreCoef' => 'Använd inte frågornas koefficienter',
 	'quiz_shuffle' => 'Blanda om frågorna',
 	'quiz_colorRight' => 'Rätt',
