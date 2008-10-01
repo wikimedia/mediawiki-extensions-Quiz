@@ -1213,8 +1213,8 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'quiz_desc' => 'Омогући стварање упитника.',
-	'quiz_addedPoints' => 'Поени додати за тачан одговор',
-	'quiz_cutoffPoints' => 'Поени одузети због погрешног одговора',
+	'quiz_addedPoints' => '{{PLURAL:$1|бод|бода|бодова}} се додаје на тачан одговор',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Бод|Бода|Бодова}} за погрешан одговор',
 	'quiz_ignoreCoef' => 'Игнориши коефицијенте питања',
 	'quiz_shuffle' => 'Измешај питања',
 	'quiz_colorRight' => 'Тачно',
