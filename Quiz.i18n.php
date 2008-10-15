@@ -923,6 +923,15 @@ $messages['mt'] = array(
 	'quiz_reset' => 'Irrisettja',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'quiz_colorRight' => 'Виде',
+	'quiz_colorWrong' => 'А виде',
+	'quiz_colorNA' => 'Апак пандо',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
