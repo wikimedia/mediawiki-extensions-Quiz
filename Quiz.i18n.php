@@ -203,11 +203,13 @@ $messages['bcl'] = array(
 /** Bulgarian (Български)
  * @author Borislav
  * @author DCLXVI
+ * @author Spiritia
  */
 $messages['bg'] = array(
 	'quiz_desc' => 'Позволява създаването на анкети',
 	'quiz_addedPoints' => '{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор',
+	'quiz_ignoreCoef' => 'Пренебрегване на коефициентите на въпросите',
 	'quiz_shuffle' => 'Разбъркване на въпросите',
 	'quiz_colorRight' => 'Правилно',
 	'quiz_colorWrong' => 'Грешно',
