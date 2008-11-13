@@ -256,6 +256,13 @@ $messages['br'] = array(
 	'quiz_points' => '$1 | $2 poent',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'quiz_reset' => 'Očisti',
+);
+
 /** Catalan (Català)
  * @author Paucabot
  * @author SMP
@@ -731,11 +738,12 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'quiz_desc' => 'Nyedyakaké fasilitas nggawé kuis',
-	'quiz_addedPoints' => 'Ditambahi angka biji kanggo wangsulan sing bener',
-	'quiz_cutoffPoints' => 'Angka biji dikurangi kanggo wangsulan sing salah',
+	'quiz_addedPoints' => 'Panambahan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing bener',
+	'quiz_cutoffPoints' => 'Pangurangan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing salah',
 	'quiz_ignoreCoef' => 'Lirwakna koéfisièn pitakonan',
 	'quiz_shuffle' => 'Ngacak pitakonan',
 	'quiz_colorRight' => 'Bener',
@@ -744,7 +752,7 @@ $messages['jv'] = array(
 	'quiz_colorError' => "Kaluputan sintaksis (''syntax error'')",
 	'quiz_correction' => 'Kirim',
 	'quiz_score' => 'Skor biji panjenengan iku $1 / $2',
-	'quiz_points' => '$1 | $2 poin',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 poin|$2 poin}}',
 	'quiz_reset' => 'Reset',
 );
 
