@@ -982,10 +982,10 @@ $messages['nl'] = array(
 	'quiz_colorWrong' => 'Fout',
 	'quiz_colorNA' => 'Niet beantwoord',
 	'quiz_colorError' => 'Algemene fout',
-	'quiz_correction' => 'Verbetering',
+	'quiz_correction' => 'Antwoord opslaan',
 	'quiz_score' => 'Uw score is $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punt|$2 punten}}',
-	'quiz_reset' => 'Opnieuw',
+	'quiz_reset' => 'Herstellen',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
