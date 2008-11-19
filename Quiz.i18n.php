@@ -1155,6 +1155,14 @@ $messages['ro'] = array(
 	'quiz_reset' => 'Reiniţializare',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'quiz_colorRight' => 'Esatte',
+	'quiz_colorWrong' => 'Sbagliete',
+);
+
 /** Russian (Русский)
  * @author Aleksandrit
  * @author EugeneZelenko
