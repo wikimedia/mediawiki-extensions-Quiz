@@ -260,6 +260,7 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'quiz_correction' => 'Pošalji',
 	'quiz_reset' => 'Očisti',
 );
 
