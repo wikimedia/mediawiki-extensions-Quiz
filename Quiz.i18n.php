@@ -260,8 +260,18 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'quiz_desc' => 'Omogućuje pravljenje kvizova',
+	'quiz_addedPoints' => '{{PLURAL:$1|Bod dodan|Boda dodana|Bodova dodano}} za tačan odgovor',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor',
+	'quiz_ignoreCoef' => 'Zanemari koeficijente pitanja',
+	'quiz_shuffle' => 'Izmiješaj pitanja',
 	'quiz_colorRight' => 'Tačno',
+	'quiz_colorWrong' => 'Pogrešno',
+	'quiz_colorNA' => 'Nije odgovoreno',
+	'quiz_colorError' => 'Sintaksna greška',
 	'quiz_correction' => 'Pošalji',
+	'quiz_score' => 'Vaš rezultat je $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 bod|$2 boda|$2 bodova}}',
 	'quiz_reset' => 'Očisti',
 );
 
@@ -493,6 +503,13 @@ $messages['gl'] = array(
 	'quiz_score' => 'A súa puntuación é $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 puntos}}',
 	'quiz_reset' => 'Limpar',
+);
+
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'quiz_correction' => 'Ὑποβάλλειν',
 );
 
 /** Hebrew (עברית)
@@ -1503,6 +1520,19 @@ $messages['zh-hant'] = array(
 	'quiz_correction' => '遞交',
 	'quiz_score' => '您的分數是 $1 / $2',
 	'quiz_points' => '$1 | $2 分',
+	'quiz_reset' => '重設',
+);
+
+/** Chinese (Taiwan) (‪中文(台灣)‬)
+ * @author Roc michael
+ */
+$messages['zh-tw'] = array(
+	'quiz_desc' => '允許新增試卷',
+	'quiz_colorRight' => '正確',
+	'quiz_colorWrong' => '錯誤',
+	'quiz_colorNA' => '未答',
+	'quiz_colorError' => '語法錯誤',
+	'quiz_correction' => '提交',
 	'quiz_reset' => '重設',
 );
 
