@@ -612,11 +612,13 @@ $messages['ht'] = array(
 /** Hungarian (Magyar)
  * @author Dani
  * @author KossuthRad
+ * @author Terik
  */
 $messages['hu'] = array(
 	'quiz_desc' => 'Lehetővé teszi kvízkérdések létrehozását',
-	'quiz_addedPoints' => 'Helyes válasz esetén adott pont',
-	'quiz_cutoffPoints' => 'Hibás válasz esetén levont pont',
+	'quiz_addedPoints' => '
+{{PLURAL:$1|Pont|Pont}} hozzáadva a helyes válaszért.',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Pont|Pont}} levonva a rossz válaszért.',
 	'quiz_ignoreCoef' => 'Ne vegye figyelembe a kérdések együtthatóit',
 	'quiz_shuffle' => 'Kérdések összekeverése',
 	'quiz_colorRight' => 'Jó',
@@ -959,6 +961,7 @@ $messages['myv'] = array(
 	'quiz_colorRight' => 'Виде',
 	'quiz_colorWrong' => 'А виде',
 	'quiz_colorNA' => 'Апак пандо',
+	'quiz_correction' => 'Максомс',
 );
 
 /** Nahuatl (Nāhuatl)
