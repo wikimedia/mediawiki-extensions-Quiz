@@ -616,9 +616,8 @@ $messages['ht'] = array(
  */
 $messages['hu'] = array(
 	'quiz_desc' => 'Lehetővé teszi kvízkérdések létrehozását',
-	'quiz_addedPoints' => '
-{{PLURAL:$1|Pont|Pont}} hozzáadva a helyes válaszért.',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Pont|Pont}} levonva a rossz válaszért.',
+	'quiz_addedPoints' => 'Pont hozzáadva a helyes válaszért.',
+	'quiz_cutoffPoints' => 'Pont levonva a rossz válaszért.',
 	'quiz_ignoreCoef' => 'Ne vegye figyelembe a kérdések együtthatóit',
 	'quiz_shuffle' => 'Kérdések összekeverése',
 	'quiz_colorRight' => 'Jó',
@@ -723,7 +722,7 @@ $messages['it'] = array(
  * @author JtFuruhata
  */
 $messages['ja'] = array(
-	'quiz_desc' => 'クイズの作成',
+	'quiz_desc' => 'クイズの作成を可能にする',
 	'quiz_addedPoints' => '正解により$1点追加',
 	'quiz_cutoffPoints' => '不正解に$1点追加',
 	'quiz_ignoreCoef' => '問題ごとの倍率を無視する',
@@ -780,12 +779,13 @@ $messages['jv'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
-	'quiz_desc' => 'អនុញ្ញាតអោយបង្កើតចំណោទសួរ',
-	'quiz_addedPoints' => '$1ពិន្ទុត្រូវបានបូកចូលចំពោះចំលើយត្រឹមត្រូវ',
-	'quiz_cutoffPoints' => '$1ពិន្ទុត្រូវបានដកចេញចំពោះចំលើយខុស',
+	'quiz_desc' => 'អនុញ្ញាតឱ្យបង្កើតចំណោទសួរ',
+	'quiz_addedPoints' => '{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}}$1 ត្រូវបានបូកចូលចំពោះចម្លើយត្រឹមត្រូវ',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}} $1 ត្រូវបានដកចេញចំពោះចម្លើយខុស',
 	'quiz_ignoreCoef' => 'មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ',
 	'quiz_shuffle' => 'សាប់សំណួរ',
 	'quiz_colorRight' => 'ត្រូវ',
