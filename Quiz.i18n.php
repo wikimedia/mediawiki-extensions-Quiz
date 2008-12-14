@@ -58,6 +58,7 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
+ * @author Kwj2772
  * @author Purodha
  * @author Александр Сигачёв
  */
@@ -71,6 +72,8 @@ $messages['qqq'] = array(
 	'quiz_colorNA' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_colorError' => '{{Identical|Syntax error}}',
 	'quiz_correction' => '{{Identical|Submit}}',
+	'quiz_score' => "$1 = Examminee's score
+$2 = Perfect score",
 	'quiz_reset' => '{{Identical|Reset}}',
 );
 
@@ -796,6 +799,18 @@ $messages['km'] = array(
 	'quiz_score' => 'តារាងពិន្ទុរបស់អ្នកគឺ  $1/$2',
 	'quiz_points' => '$1 | {{PLURAL:$2|១ពិន្ទុ|$2ពិន្ទុ}}',
 	'quiz_reset' => 'ធ្វើឱ្យដូចដើមវិញ',
+);
+
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'quiz_colorRight' => '정답',
+	'quiz_colorWrong' => '오답',
+	'quiz_colorNA' => '무응답',
+	'quiz_correction' => '제출',
+	'quiz_score' => '당신의 점수는 $1 / $2입니다.',
+	'quiz_points' => '$1 | {{PLURAL:$2|1점|$2점}}',
 );
 
 /** Ripoarisch (Ripoarisch)
