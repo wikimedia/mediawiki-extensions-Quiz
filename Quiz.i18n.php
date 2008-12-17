@@ -381,6 +381,7 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Ascánder
+ * @author Sanbec
  */
 $messages['es'] = array(
 	'quiz_desc' => 'Permite la creación de quices',
@@ -394,7 +395,7 @@ $messages['es'] = array(
 	'quiz_colorError' => 'Error de sintaxis',
 	'quiz_correction' => 'Contestar',
 	'quiz_score' => 'Tu puntuación es de $1 / $2',
-	'quiz_points' => '$1 | $2 punto(s)',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 puntos}}',
 	'quiz_reset' => 'Empezar de nuevo',
 );
 
