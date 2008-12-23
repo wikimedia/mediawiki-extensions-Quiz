@@ -423,11 +423,12 @@ $messages['fa'] = array(
  * @author Crt
  * @author Pe3
  * @author Str4nd
+ * @author Tarmo
  */
 $messages['fi'] = array(
 	'quiz_desc' => 'Mahdollistaa kyselyiden luomisen.',
-	'quiz_addedPoints' => 'Pisteiden lisäysmäärä oikeasta vastauksesta',
-	'quiz_cutoffPoints' => 'Pisteiden vähennysmäärä väärästä vastauksesta',
+	'quiz_addedPoints' => '{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Piste|Pisteitä}} väärästä vastauksesta',
 	'quiz_ignoreCoef' => 'Jätä huomioimatta kysymysten kertoimet',
 	'quiz_shuffle' => 'Sekoita kysymykset',
 	'quiz_colorRight' => 'Oikein',
@@ -809,6 +810,7 @@ $messages['ko'] = array(
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
 	'quiz_colorNA' => '무응답',
+	'quiz_colorError' => '문법 오류',
 	'quiz_correction' => '제출',
 	'quiz_score' => '당신의 점수는 $1 / $2입니다.',
 	'quiz_points' => '$1 | {{PLURAL:$2|1점|$2점}}',
@@ -1245,8 +1247,8 @@ $messages['sah'] = array(
  */
 $messages['sk'] = array(
 	'quiz_desc' => 'Umožňuje tvorbu kvízov',
-	'quiz_addedPoints' => 'Bod(y) pričítané za správnu odpoveď',
-	'quiz_cutoffPoints' => 'Bod(y) odčítané za nesprávnu odpoveď',
+	'quiz_addedPoints' => '{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď',
 	'quiz_ignoreCoef' => 'Ignorovať koeficienty otázok',
 	'quiz_shuffle' => 'Náhodný výber otázok',
 	'quiz_colorRight' => 'Správne',
