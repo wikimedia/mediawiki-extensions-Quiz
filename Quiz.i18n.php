@@ -393,7 +393,7 @@ $messages['es'] = array(
 	'quiz_colorWrong' => 'Falladas',
 	'quiz_colorNA' => 'No contestadas',
 	'quiz_colorError' => 'Error de sintaxis',
-	'quiz_correction' => 'Contestar',
+	'quiz_correction' => 'Enviar',
 	'quiz_score' => 'Tu puntuación es de $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 puntos}}',
 	'quiz_reset' => 'Empezar de nuevo',
@@ -1403,6 +1403,25 @@ $messages['tg-cyrl'] = array(
 $messages['th'] = array(
 	'quiz_colorRight' => 'ถูกต้อง',
 	'quiz_colorWrong' => 'ผิด',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'quiz_desc' => 'Nagpapahintulot na makalikha ng mumunting mga pagsusulit',
+	'quiz_addedPoints' => 'Nagdaragdag ng {{PLURAL:$1|puntos|mga puntos}} para sa isang tamang sagot',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Puntos|Mga puntos}} para sa isang maling sagot',
+	'quiz_ignoreCoef' => 'Balewalain ang mga koepisyente (katuwang na bilang) ng mga katanungan.',
+	'quiz_shuffle' => 'Balasahin ang mga katanungan',
+	'quiz_colorRight' => 'Tama',
+	'quiz_colorWrong' => 'Mali',
+	'quiz_colorNA' => 'Hindi nasagot',
+	'quiz_colorError' => 'Kamalian sa palaugnayan',
+	'quiz_correction' => 'Ipasa',
+	'quiz_score' => 'Ang puntos mo ay $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}',
+	'quiz_reset' => 'Itakdang muli',
 );
 
 /** Turkish (Türkçe)
