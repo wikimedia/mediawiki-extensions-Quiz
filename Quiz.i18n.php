@@ -204,21 +204,22 @@ $messages['bcl'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
-	'quiz_desc' => 'Дазваляе стварэньне пытальнікаў',
-	'quiz_addedPoints' => '{{PLURAL:$1|Даданы пункт|Даданых пункта|Даданых пунктаў}} за правільны адказ',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Зняты пункт|Зьнятых пункта|Зьнятых пунктаў}} за няправільны адказ',
+	'quiz_desc' => 'Дазваляе стварэньне віктарын',
+	'quiz_addedPoints' => '$1 {{PLURAL:$1|даданы пункт|даданых пункты|даданых пунктаў}} за правільны адказ',
+	'quiz_cutoffPoints' => '$1 {{PLURAL:$1|зняты пункт|зьнятых пункты|зьнятых пунктаў}} за няправільны адказ',
 	'quiz_ignoreCoef' => 'Ігнараваць каэфіцыенты пытаньняў',
 	'quiz_shuffle' => 'Перамяшаць пытаньні',
 	'quiz_colorRight' => 'Правільна',
-	'quiz_colorWrong' => 'Памылка',
+	'quiz_colorWrong' => 'Няправільна',
 	'quiz_colorNA' => 'Няма адказу',
 	'quiz_colorError' => 'Сынтаксычная памылка',
 	'quiz_correction' => 'Даслаць',
 	'quiz_score' => 'Вы набралі $1 {{PLURAL:$1|пункт|пункты|пунктаў}} з $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 пункт|$2 пункты|$2 пунктаў}}',
+	'quiz_points' => '$1 | $2 {{PLURAL:$2|пункт|пункты|пунктаў}}',
 	'quiz_reset' => 'Скінуць',
 );
 
@@ -457,7 +458,7 @@ $messages['fi'] = array(
 	'quiz_correction' => 'Lähetä',
 	'quiz_score' => 'Tuloksesi on $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 piste|$2 pistettä}}',
-	'quiz_reset' => 'Palautus',
+	'quiz_reset' => 'Tyhjennä',
 );
 
 /** French (Français)
