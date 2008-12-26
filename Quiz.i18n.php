@@ -203,6 +203,25 @@ $messages['bcl'] = array(
 	'quiz_reset' => 'Ibalik',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'quiz_desc' => 'Дазваляе стварэньне пытальнікаў',
+	'quiz_addedPoints' => '{{PLURAL:$1|Даданы пункт|Даданых пункта|Даданых пунктаў}} за правільны адказ',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Зняты пункт|Зьнятых пункта|Зьнятых пунктаў}} за няправільны адказ',
+	'quiz_ignoreCoef' => 'Ігнараваць каэфіцыенты пытаньняў',
+	'quiz_shuffle' => 'Перамяшаць пытаньні',
+	'quiz_colorRight' => 'Правільна',
+	'quiz_colorWrong' => 'Памылка',
+	'quiz_colorNA' => 'Няма адказу',
+	'quiz_colorError' => 'Сынтаксычная памылка',
+	'quiz_correction' => 'Даслаць',
+	'quiz_score' => 'Вы набралі $1 {{PLURAL:$1|пункт|пункты|пунктаў}} з $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 пункт|$2 пункты|$2 пунктаў}}',
+	'quiz_reset' => 'Скінуць',
+);
+
 /** Bulgarian (Български)
  * @author Borislav
  * @author DCLXVI
