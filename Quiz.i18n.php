@@ -1050,6 +1050,7 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Eirik
+ * @author Harald Khan
  */
 $messages['nn'] = array(
 	'quiz_desc' => 'Gjer oppretting av spørjekonkurransar mogleg',
@@ -1063,7 +1064,7 @@ $messages['nn'] = array(
 	'quiz_colorError' => 'Syntaksfeil',
 	'quiz_correction' => 'Svar',
 	'quiz_score' => 'Poengsummen din er $1 av $2 moglege',
-	'quiz_points' => '$1 | $2 poeng',
+	'quiz_points' => '$1 | {{PLURAL:$2|eitt poeng|$2 poeng}}',
 	'quiz_reset' => 'Nullstill',
 );
 
