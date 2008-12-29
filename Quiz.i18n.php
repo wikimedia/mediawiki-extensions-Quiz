@@ -206,11 +206,12 @@ $messages['bcl'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
 	'quiz_desc' => 'Дазваляе стварэньне віктарын',
-	'quiz_addedPoints' => '$1 {{PLURAL:$1|даданы пункт|даданых пункты|даданых пунктаў}} за правільны адказ',
-	'quiz_cutoffPoints' => '$1 {{PLURAL:$1|зняты пункт|зьнятых пункты|зьнятых пунктаў}} за няправільны адказ',
+	'quiz_addedPoints' => '$1 {{PLURAL:$1|пункт дададзены|пункты дададзеныя|пунктаў дададзена}} за правільны адказ',
+	'quiz_cutoffPoints' => '$1 {{PLURAL:$1|пункт зьняты|пункты зьнятыя|пунктаў зьнята}} за няправільны адказ',
 	'quiz_ignoreCoef' => 'Ігнараваць каэфіцыенты пытаньняў',
 	'quiz_shuffle' => 'Перамяшаць пытаньні',
 	'quiz_colorRight' => 'Правільна',
