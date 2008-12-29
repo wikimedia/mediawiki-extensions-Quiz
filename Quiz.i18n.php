@@ -373,11 +373,19 @@ $messages['de'] = array(
  * @author ZaDiak
  */
 $messages['el'] = array(
+	'quiz_desc' => 'Επιτρέπει τη δημιουργία των κουίζ',
+	'quiz_addedPoints' => '{{PLURAL:$1|πόντος|πόντοι}} προστίθονται για μια σωστή απάντηση',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|πόντος|πόντοι}} για μια λανθασμένη απάντηση',
+	'quiz_ignoreCoef' => 'Αγνοήστε τους συντελεστές των ερωτήσεων',
+	'quiz_shuffle' => 'Ανακάτεμα ερωτήσεων',
 	'quiz_colorRight' => 'Σωστό',
 	'quiz_colorWrong' => 'Λάθος',
+	'quiz_colorNA' => 'Δεν απαντήθηκε',
+	'quiz_colorError' => 'Συντακτικό λάθος',
 	'quiz_correction' => 'Καταχώρηση',
 	'quiz_score' => 'Η Βαθμολογία σας είναι $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 βαθμό|$2 βαθμούς}}',
+	'quiz_reset' => 'Αναίρεση',
 );
 
 /** Esperanto (Esperanto)
