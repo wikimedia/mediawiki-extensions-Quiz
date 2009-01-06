@@ -729,7 +729,7 @@ $messages['id'] = array(
 $messages['io'] = array(
 	'quiz_colorRight' => 'Justa',
 	'quiz_colorWrong' => 'Nejusta',
-	'quiz_points' => '$1 | $2 punti',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 punti}}',
 );
 
 /** Icelandic (Íslenska)
