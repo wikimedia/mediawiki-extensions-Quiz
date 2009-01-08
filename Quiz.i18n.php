@@ -447,6 +447,20 @@ $messages['es'] = array(
 	'quiz_reset' => 'Empezar de nuevo',
 );
 
+/** Basque (Euskara)
+ * @author Kobazulo
+ */
+$messages['eu'] = array(
+	'quiz_desc' => 'Galdera-sortak sortzeko',
+	'quiz_colorRight' => 'Zuzenak',
+	'quiz_colorWrong' => 'Okerrak',
+	'quiz_colorNA' => 'Erantzun gabe',
+	'quiz_colorError' => 'Sintaxi-errorea',
+	'quiz_correction' => 'Bidali',
+	'quiz_score' => 'Zure kalifikazioa $1 / $2 da',
+	'quiz_reset' => 'Berrezarri',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
@@ -563,6 +577,25 @@ $messages['gl'] = array(
  */
 $messages['grc'] = array(
 	'quiz_correction' => 'Ὑποβάλλειν',
+);
+
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'quiz_desc' => 'Macht s Aalege vu Quizspiiler megli',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punkt|Pinkt}} fir e richtigi Antwort',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspunkt|Minuspinkt}} fir e falschi Antwort',
+	'quiz_ignoreCoef' => 'Ignorier dr Froge-Koeffizient',
+	'quiz_shuffle' => 'Froge mischle',
+	'quiz_colorRight' => 'Richtig',
+	'quiz_colorWrong' => 'Falsch',
+	'quiz_colorNA' => 'Kei Antwort gee',
+	'quiz_colorError' => 'Syntaxfähler',
+	'quiz_correction' => 'Korrektur',
+	'quiz_score' => 'Pinkt: $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 Punkt|$2 Pinkt}}',
+	'quiz_reset' => 'Nejstart',
 );
 
 /** Hebrew (עברית)
@@ -862,6 +895,7 @@ $messages['ko'] = array(
 	'quiz_correction' => '제출',
 	'quiz_score' => '당신의 점수는 $1 / $2입니다.',
 	'quiz_points' => '$1 | {{PLURAL:$2|1점|$2점}}',
+	'quiz_reset' => '초기화',
 );
 
 /** Ripoarisch (Ripoarisch)
