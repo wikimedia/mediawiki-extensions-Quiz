@@ -888,6 +888,7 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
+	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
 	'quiz_colorNA' => '무응답',
@@ -1509,12 +1510,23 @@ $messages['tl'] = array(
 
 /** Turkish (Türkçe)
  * @author Erkan Yilmaz
+ * @author Joseph
  * @author Runningfridgesrule
  */
 $messages['tr'] = array(
+	'quiz_desc' => 'Quiz oluşturulmasına izin verir',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puan|Puan}} doğru cevap için eklendi',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Puan|Puan}} yanlış cevap için',
+	'quiz_ignoreCoef' => 'Soruların katsayısını ihmal et',
+	'quiz_shuffle' => 'Soruları karıştır',
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
 	'quiz_colorNA' => 'Cevaplandırılmadı',
+	'quiz_colorError' => 'Sözdizim hatası',
+	'quiz_correction' => 'Gönder',
+	'quiz_score' => 'Skorunuz $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 puan|$2 puan}}',
+	'quiz_reset' => 'Sıfırla',
 );
 
 /** Ukrainian (Українська)
@@ -1586,6 +1598,7 @@ $messages['vo'] = array(
 	'quiz_colorNA' => 'No pegesagon',
 	'quiz_colorError' => 'Süntagapöl',
 	'quiz_correction' => 'Sedön',
+	'quiz_reset' => 'Geükön ad stad kösömik',
 );
 
 /** Yiddish (ייִדיש)
