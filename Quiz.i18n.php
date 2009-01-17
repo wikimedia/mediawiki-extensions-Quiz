@@ -862,6 +862,15 @@ $messages['jv'] = array(
 	'quiz_reset' => 'Reset',
 );
 
+/** Georgian (ქართული)
+ * @author Malafaya
+ */
+$messages['ka'] = array(
+	'quiz_colorRight' => 'სწორი',
+	'quiz_colorWrong' => 'არასწორი',
+	'quiz_points' => '$1 | $2 ქულა',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
