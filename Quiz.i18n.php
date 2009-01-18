@@ -1145,8 +1145,8 @@ $messages['nn'] = array(
  */
 $messages['no'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
-	'quiz_addedPoints' => 'Plusspoeng for korrekt svar<!--{{PLURAL:$1}}-->',
-	'quiz_cutoffPoints' => 'Minuspoeng for galt svar<!--{{PLURAL:$1}}-->',
+	'quiz_addedPoints' => 'Plusspoeng for korrekt svar',
+	'quiz_cutoffPoints' => 'Minuspoeng for galt svar',
 	'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
 	'quiz_shuffle' => 'Stokk spørsmålene',
 	'quiz_colorRight' => 'Riktig',
