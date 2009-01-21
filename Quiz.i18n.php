@@ -1391,8 +1391,9 @@ $messages['sr-ec'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
-	'quiz_addedPoints' => 'Pluspunkte foar ne gjuchte Oantwoud',
-	'quiz_cutoffPoints' => 'Minuspunkte foar ne falske Oantwoud',
+	'quiz_desc' => 'Moaket dät Moakjen fon Quizspiele muugelk',
+	'quiz_addedPoints' => '{{PLURAL:$1|Pluspunkt|Pluspunkte}} foar ne gjuchte Oantwoud',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspunkt|Minuspunkte}} foar ne falske Oantwoud',
 	'quiz_ignoreCoef' => 'Ignorierje do Froagen-Koeffiziente',
 	'quiz_shuffle' => 'Froagen miskje',
 	'quiz_colorRight' => 'Gjucht',
@@ -1401,7 +1402,7 @@ $messages['stq'] = array(
 	'quiz_colorError' => 'Syntaxfailer',
 	'quiz_correction' => 'Korrektuur',
 	'quiz_score' => 'Punkte: $1 / $2',
-	'quiz_points' => '$1 | $2 Punkte',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}',
 	'quiz_reset' => 'Näistart',
 );
 
