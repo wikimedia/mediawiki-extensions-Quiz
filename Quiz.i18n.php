@@ -897,6 +897,7 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
+	'quiz_desc' => '퀴즈 생성을 허용',
 	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
