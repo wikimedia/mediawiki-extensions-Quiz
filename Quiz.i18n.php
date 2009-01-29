@@ -429,12 +429,13 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Ascánder
+ * @author Crazymadlover
  * @author Sanbec
  */
 $messages['es'] = array(
 	'quiz_desc' => 'Permite la creación de quices',
-	'quiz_addedPoints' => 'Puntos por cada respuesta acertada',
-	'quiz_cutoffPoints' => 'Penalización por cada respuesta errónea',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punto|Puntos}} agregados por una respuesta acertada',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punto|Puntos}} penalizados por una respuesta errónea',
 	'quiz_ignoreCoef' => 'Ignorar los puntos de cada pregunta',
 	'quiz_shuffle' => 'Desordenar preguntas',
 	'quiz_colorRight' => 'Acertadas',
