@@ -307,6 +307,7 @@ $messages['ca'] = array(
 	'quiz_desc' => 'Permet la creació de concursos',
 	'quiz_addedPoints' => '{{PLURAL:$1|punt|punts}} per resposta correcta',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|punt|punts}} per resposta incorrecta',
+	'quiz_ignoreCoef' => 'Ignora els coeficients de les qüestions',
 	'quiz_shuffle' => 'Preguntes aleatòries',
 	'quiz_colorRight' => 'Correcte',
 	'quiz_colorWrong' => 'Incorrecte',
