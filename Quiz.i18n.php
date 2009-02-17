@@ -510,6 +510,7 @@ $messages['fi'] = array(
  * @author Meno25
  * @author Sherbrooke
  * @author Urhixidur
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'quiz_desc' => 'Permet la création des quiz',
@@ -523,7 +524,7 @@ $messages['fr'] = array(
 	'quiz_colorError' => 'Erreur de syntaxe',
 	'quiz_correction' => 'Correction',
 	'quiz_score' => 'Votre pointage est $1 / $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 point|$2 points}}',
+	'quiz_points' => '$1 | $2 point{{PLURAL:||s}}',
 	'quiz_reset' => 'Réinitialiser',
 );
 
@@ -764,6 +765,7 @@ $messages['id'] = array(
 $messages['io'] = array(
 	'quiz_colorRight' => 'Justa',
 	'quiz_colorWrong' => 'Nejusta',
+	'quiz_score' => 'Vua nombro di punti esas $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 punti}}',
 );
 
