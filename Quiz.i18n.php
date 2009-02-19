@@ -1254,6 +1254,25 @@ $messages['pt'] = array(
 	'quiz_reset' => 'Repor a zero',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'quiz_desc' => 'Permite a criação de questionários',
+	'quiz_addedPoints' => '{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} por cada resposta certa',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Ponto subtraído|Pontos subtraídos}} por cada resposta errada',
+	'quiz_ignoreCoef' => 'Ignorar os coeficientes das questões',
+	'quiz_shuffle' => 'Embaralhar as questões',
+	'quiz_colorRight' => 'Corretas',
+	'quiz_colorWrong' => 'Erradas',
+	'quiz_colorNA' => 'Não respondidas',
+	'quiz_colorError' => 'Erro de sintaxe',
+	'quiz_correction' => 'Enviar',
+	'quiz_score' => 'Pontuação atual: $1 certas em $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|um ponto|$2 pontos}}',
+	'quiz_reset' => 'Reiniciar',
+);
+
 /** Quechua (Runa Simi)
  * @author AlimanRuna
  */
