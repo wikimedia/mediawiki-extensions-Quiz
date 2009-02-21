@@ -270,6 +270,9 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'quiz_desc' => 'Aotren a ra krouiñ kwizoù',
+	'quiz_addedPoints' => 'Ouzhpennet {{PLURAL:$1|Poent|Poent}} dre respont mat',
+	'quiz_cutoffPoints' => 'Tennet {{PLURAL:$1|Poent|Poent}} dre respont fall',
+	'quiz_ignoreCoef' => 'Na ober van ouzh kenefeder ar goulennoù',
 	'quiz_shuffle' => 'Meskañ ar goulennoù',
 	'quiz_colorRight' => 'Mat',
 	'quiz_colorWrong' => 'Fall',
@@ -277,7 +280,8 @@ $messages['br'] = array(
 	'quiz_colorError' => 'Fazi ereadur',
 	'quiz_correction' => 'Kas',
 	'quiz_score' => 'Ho skor zo par da $1 / $2',
-	'quiz_points' => '$1 | $2 poent',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 poent|$2 poent}}',
+	'quiz_reset' => 'Adweredekaat',
 );
 
 /** Bosnian (Bosanski)
