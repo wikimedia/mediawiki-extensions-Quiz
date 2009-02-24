@@ -1486,8 +1486,8 @@ $messages['ta'] = array(
  */
 $messages['te'] = array(
 	'quiz_desc' => 'క్విజ్&zwnj;ల తయారీని అనుమతిస్తుంది',
-	'quiz_addedPoints' => 'సరియైన జవాబుకి కలిపే పాయింటు(లు)',
-	'quiz_cutoffPoints' => 'తప్పు జవాబుకి తీసివేసే పాయింటు(లు)',
+	'quiz_addedPoints' => 'సరియైన జవాబుకి కలిపే {{PLURAL:$1|పాయింటు|పాయింట్లు}}',
+	'quiz_cutoffPoints' => 'తప్పు జవాబుకి తీసివేసే {{PLURAL:$1|పాయింటు|పాయింట్లు}}',
 	'quiz_ignoreCoef' => 'ప్రశ్నల యొక్క గుణకాలని పట్టించుకోకు',
 	'quiz_shuffle' => 'ప్రశ్నలను గజిబిజిచేయి',
 	'quiz_colorRight' => 'ఒప్పు',
