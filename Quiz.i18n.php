@@ -1496,7 +1496,7 @@ $messages['te'] = array(
 	'quiz_colorError' => 'సింటాక్సు తప్పిదం',
 	'quiz_correction' => 'దాఖలుచెయ్యి',
 	'quiz_score' => 'మీ స్కోరు $1 / $2',
-	'quiz_points' => '$1 | $2 పాయింట్(లు)',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 పాయింటు|$2 పాయింట్లు}}',
 	'quiz_reset' => 'రీసెట్',
 );
 
