@@ -961,8 +961,8 @@ $messages['lb'] = array(
  */
 $messages['li'] = array(
 	'quiz_desc' => "Maak 't aanmake van tes meugelik",
-	'quiz_addedPoints' => "Puntj(e) toegevoeg veur 'n good antjwaord",
-	'quiz_cutoffPoints' => "Puntj(e) aafgetróg veur 'n fout antjwaord",
+	'quiz_addedPoints' => "{{PLURAL:$1|Pöntj|Pöntjer}} toegevoeg veur 'n good antjwaord",
+	'quiz_cutoffPoints' => "{{PLURAL:$1|Pöntj|Pöntjer}} aafgetróg veur 'n fout antjwaord",
 	'quiz_ignoreCoef' => 'De coëfficiente van de vräög negere',
 	'quiz_shuffle' => 'De vräög in willekäörige volgorde',
 	'quiz_colorRight' => 'Ramkrèk',
