@@ -77,6 +77,17 @@ $2 = Perfect score",
 	'quiz_reset' => '{{Identical|Reset}}',
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'quiz_colorRight' => 'Oikti',
+	'quiz_colorWrong' => 'Värin',
+	'quiz_colorNA' => 'Ei ole vastust',
+	'quiz_colorError' => 'Sintaksine petuz',
+	'quiz_correction' => 'Oigeta',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
