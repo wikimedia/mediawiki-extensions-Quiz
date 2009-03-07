@@ -1198,6 +1198,14 @@ $messages['oc'] = array(
 	'quiz_reset' => 'Reïnicializar',
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'quiz_colorRight' => 'Раст',
+	'quiz_colorWrong' => 'Рæдыд',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Maikking
