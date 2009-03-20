@@ -1300,8 +1300,8 @@ $messages['pt-br'] = array(
  * @author AlimanRuna
  */
 $messages['qu'] = array(
-	'quiz_addedPoints' => 'Allin kutichisqapaq iñukuna yapasqa',
-	'quiz_cutoffPoints' => 'Panta kutichisqapaq iñukuna qichusqa',
+	'quiz_addedPoints' => 'Allin kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} yapasqa',
+	'quiz_cutoffPoints' => 'Panta kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} qichusqa',
 	'quiz_ignoreCoef' => 'Sapa tapuypaq iñukunata qhawarpariy',
 	'quiz_shuffle' => 'Tapuykunata arwiy',
 	'quiz_colorRight' => 'Allin',
@@ -1310,7 +1310,7 @@ $messages['qu'] = array(
 	'quiz_colorError' => 'Sintaksis pantasqa',
 	'quiz_correction' => 'Kutichiy',
 	'quiz_score' => 'Taripasqaykikunaqa kay hinam: $1 / $2',
-	'quiz_points' => '$1 | $2 iñu',
+	'quiz_points' => '$1 | {{PLURAL:$1|huk iñu|$2 iñukuna}}',
 	'quiz_reset' => 'Musuqmanta qallariy',
 );
 
