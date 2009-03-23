@@ -913,11 +913,13 @@ $messages['km'] = array(
 );
 
 /** Korean (한국어)
+ * @author Ilovesabbath
  * @author Kwj2772
  */
 $messages['ko'] = array(
 	'quiz_desc' => '퀴즈 생성을 허용',
 	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
+	'quiz_shuffle' => '문제 섞기',
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
 	'quiz_colorNA' => '무응답',
