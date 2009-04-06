@@ -77,17 +77,6 @@ $2 = Perfect score",
 	'quiz_reset' => '{{Identical|Reset}}',
 );
 
-/** Veps (Vepsan kel')
- * @author Игорь Бродский
- */
-$messages['vep'] = array(
-	'quiz_colorRight' => 'Oikti',
-	'quiz_colorWrong' => 'Värin',
-	'quiz_colorNA' => 'Ei ole vastust',
-	'quiz_colorError' => 'Sintaksine petuz',
-	'quiz_correction' => 'Oigeta',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -919,6 +908,8 @@ $messages['km'] = array(
 $messages['ko'] = array(
 	'quiz_desc' => '퀴즈 생성을 허용',
 	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
+	'quiz_cutoffPoints' => '틀린 답마다 {{PLURAL:$1|Point|Points}} 감점',
+	'quiz_ignoreCoef' => '질문 계수 무시',
 	'quiz_shuffle' => '문제 섞기',
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
@@ -1625,6 +1616,17 @@ $messages['vec'] = array(
 	'quiz_score' => 'El to puntegio el xe $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 ponto|$2 ponti}}',
 	'quiz_reset' => 'Azzèra',
+);
+
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'quiz_colorRight' => 'Oikti',
+	'quiz_colorWrong' => 'Värin',
+	'quiz_colorNA' => 'Ei ole vastust',
+	'quiz_colorError' => 'Sintaksine petuz',
+	'quiz_correction' => 'Oigeta',
 );
 
 /** Vietnamese (Tiếng Việt)
