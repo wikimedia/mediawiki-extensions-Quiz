@@ -37,6 +37,7 @@
  * Extension's parameters.
  */
 $wgExtensionCredits['parserhook'][] = array(
+    'path'           => __FILE__,
     'name'           => 'Quiz',
     'version'        => '1.0.1',
     'author'         => 'lrbabe',
