@@ -1539,7 +1539,7 @@ $messages['th'] = array(
 	'quiz_colorRight' => 'ถูกต้อง',
 	'quiz_colorWrong' => 'ผิด',
 	'quiz_correction' => 'ยืนยัน',
-	'quiz_score' => 'คุณได้คะแนน $1 / $2',
+	'quiz_score' => 'คุณได้คะแนน $1 จาก $2 คะแนน',
 );
 
 /** Tagalog (Tagalog)
