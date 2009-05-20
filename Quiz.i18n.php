@@ -983,8 +983,9 @@ $messages['li'] = array(
  * @author Matasg
  */
 $messages['lt'] = array(
-	'quiz_addedPoints' => 'Taškai pridėti už teisingą atsakymą',
-	'quiz_cutoffPoints' => 'Taškai atimti už blogą atsakymą',
+	'quiz_desc' => 'Leidžia kurti klausimynus',
+	'quiz_addedPoints' => '{{PLURAL:$1|Taškas|Taškai}} {{PLURAL:$1|pridėtas|pridėti}} už teisingą atsakymą',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Taškas|Taškai}} {{PLURAL:$1|atimtas|atimti}} už neteisingą atsakymą',
 	'quiz_ignoreCoef' => 'Nepaisyti klausimų koeficientų',
 	'quiz_shuffle' => 'Maišyti klausimus',
 	'quiz_colorRight' => 'Teisingai',
@@ -993,7 +994,7 @@ $messages['lt'] = array(
 	'quiz_colorError' => 'Sintaksės klaida',
 	'quiz_correction' => 'Pateikti',
 	'quiz_score' => 'Jūsų surinkti taškai yra $1 iš $2',
-	'quiz_points' => '$1 | $2 taškas(ai)',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 taškas|$2 taškai}}',
 	'quiz_reset' => 'Valyti',
 );
 
