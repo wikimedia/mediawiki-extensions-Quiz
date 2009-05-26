@@ -1072,9 +1072,11 @@ $messages['ms'] = array(
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'quiz_score' => "L-iskor tiegħek hu ta' $1 / $2",
 	'quiz_reset' => 'Irrisettja',
 );
 
