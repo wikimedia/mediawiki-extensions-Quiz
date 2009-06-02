@@ -1642,8 +1642,8 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'quiz_desc' => 'Tạo ra bài thi',
-	'quiz_addedPoints' => 'Số điểm cộng khi trả lời đúng',
-	'quiz_cutoffPoints' => 'Số điểm trừ khi trả lời sai',
+	'quiz_addedPoints' => '{{PLURAL:$1|Điểm|Số điểm}} cộng khi trả lời đúng',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Điểm|Số điểm}} trừ khi trả lời sai',
 	'quiz_ignoreCoef' => 'Bỏ qua hệ số của các câu hỏi',
 	'quiz_shuffle' => 'Xáo trộn các câu hỏi',
 	'quiz_colorRight' => 'Đúng',
