@@ -1378,6 +1378,13 @@ $messages['sah'] = array(
 	'quiz_reset' => 'Саҥаттан',
 );
 
+/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+ * @author OC Ripper
+ */
+$messages['sh'] = array(
+	'quiz_correction' => 'Unesi',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
