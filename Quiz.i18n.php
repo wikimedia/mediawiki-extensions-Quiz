@@ -536,10 +536,10 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'quiz_desc' => 'Pèrmèt la crèacion des quiz.',
-	'quiz_addedPoints' => 'Pouent(s) apondu(s) por una rèponsa justa',
-	'quiz_cutoffPoints' => 'Pouent(s) enlevâ(s) por una rèponsa fôssa',
-	'quiz_ignoreCoef' => 'Ignorar los coèficients de les quèstions',
+	'quiz_desc' => 'Pèrmèt la crèacion des quèstionèros.',
+	'quiz_addedPoints' => '{{PLURAL:$1|Pouent apondu|Pouents apondus}} por una rèponsa justa',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Pouent enlevâ|Pouents enlevâs}} por una rèponsa fôssa',
+	'quiz_ignoreCoef' => 'Ignorar los factors de les quèstions',
 	'quiz_shuffle' => 'Mècllar les quèstions',
 	'quiz_colorRight' => 'Justo',
 	'quiz_colorWrong' => 'Fôx',
@@ -547,7 +547,7 @@ $messages['frp'] = array(
 	'quiz_colorError' => 'Èrror de sintaxa',
 	'quiz_correction' => 'Corrèccion',
 	'quiz_score' => 'Voutra mârca est $1 / $2',
-	'quiz_points' => '$1 | $2 pouent(s)',
+	'quiz_points' => '$1 | $2 pouent{{PLURAL:$2||s}}',
 	'quiz_reset' => 'Tornar inicialisar',
 );
 
@@ -1336,6 +1336,8 @@ $messages['ro'] = array(
 $messages['roa-tara'] = array(
 	'quiz_colorRight' => 'Esatte',
 	'quiz_colorWrong' => 'Sbagliete',
+	'quiz_correction' => 'Conferme',
+	'quiz_reset' => 'Azzera',
 );
 
 /** Russian (Русский)
