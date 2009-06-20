@@ -817,8 +817,8 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'quiz_desc' => 'クイズの作成を可能にする',
-	'quiz_addedPoints' => '正解により$1点追加',
-	'quiz_cutoffPoints' => '不正解に$1点追加',
+	'quiz_addedPoints' => '正解により$1{{PLURAL:$1|点}}追加',
+	'quiz_cutoffPoints' => '不正解に$1{{PLURAL:$1|点}}',
 	'quiz_ignoreCoef' => '問題ごとの倍率を無視する',
 	'quiz_shuffle' => '問題をシャッフル',
 	'quiz_colorRight' => '正解',
@@ -827,7 +827,7 @@ $messages['ja'] = array(
 	'quiz_colorError' => '構文エラー',
 	'quiz_correction' => '採点',
 	'quiz_score' => '得点：$1点（$2点満点）',
-	'quiz_points' => '$1 | $2点',
+	'quiz_points' => '$1 | $2{{PLURAL:$2|点}}',
 	'quiz_reset' => 'リセット',
 );
 
