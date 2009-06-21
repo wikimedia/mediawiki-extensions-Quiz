@@ -580,10 +580,12 @@ $messages['gl'] = array(
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
  * @author Omnipaedista
  */
 $messages['grc'] = array(
 	'quiz_correction' => 'Ὑποβάλλειν',
+	'quiz_reset' => 'Ἀνατιθέναι',
 );
 
 /** Swiss German (Alemannisch)
