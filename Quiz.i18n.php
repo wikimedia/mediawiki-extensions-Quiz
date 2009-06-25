@@ -114,11 +114,12 @@ $messages['an'] = array(
 /** Arabic (العربية)
  * @author Alnokta
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'quiz_desc' => 'يسمح بإنشاء اختبارات',
-	'quiz_addedPoints' => '{{PLURAL:$1|نقطة|نقطة}} مضافة للإجابة الصحيحة',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|نقطة|نقطة}} تخصم للإجابة الخاطئة',
+	'quiz_addedPoints' => 'أضيفت {{PLURAL:$1||نقطة|نقطتان|نقاط}} مقابل الإجابة الصحيحة',
+	'quiz_cutoffPoints' => 'خصمت {{PLURAL:$1||نقطة|نقطتان|نقطاط}} مقابل الإجابة الخاطئة',
 	'quiz_ignoreCoef' => 'تجاهل معاملات الأسئلة',
 	'quiz_shuffle' => 'أسئلة مختلطة',
 	'quiz_colorRight' => 'صواب',
@@ -127,7 +128,7 @@ $messages['ar'] = array(
 	'quiz_colorError' => 'خطأ صياغة',
 	'quiz_correction' => 'تنفيذ',
 	'quiz_score' => 'نتيجتك هي $1 / $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}',
+	'quiz_points' => '$1 | {{PLURAL:$2||نقطة واحدة|نقطتان|$2 نقاط|$2 نقطة}}',
 	'quiz_reset' => 'إعادة ضبط',
 );
 
@@ -745,6 +746,7 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
  * @author Rex
@@ -759,7 +761,7 @@ $messages['id'] = array(
 	'quiz_colorWrong' => 'Salah',
 	'quiz_colorNA' => 'Tak dijawab',
 	'quiz_colorError' => 'Kesalahan sintaks',
-	'quiz_correction' => 'Koreksi',
+	'quiz_correction' => 'Kirim',
 	'quiz_score' => 'Skor Anda adalah $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 poin|$2 poin}}',
 	'quiz_reset' => 'Tataulang',
