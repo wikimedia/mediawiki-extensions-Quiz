@@ -764,7 +764,7 @@ $messages['id'] = array(
 	'quiz_correction' => 'Kirim',
 	'quiz_score' => 'Skor Anda adalah $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 poin|$2 poin}}',
-	'quiz_reset' => 'Tataulang',
+	'quiz_reset' => 'Reset',
 );
 
 /** Ido (Ido)
