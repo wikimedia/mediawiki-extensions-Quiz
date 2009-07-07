@@ -908,11 +908,12 @@ $messages['km'] = array(
 /** Korean (한국어)
  * @author Ilovesabbath
  * @author Kwj2772
+ * @author ToePeu
  * @author Yknok29
  */
 $messages['ko'] = array(
 	'quiz_desc' => '퀴즈 생성을 허용',
-	'quiz_addedPoints' => '$1{{PLURAL:$1|점|점}}이 정답으로 추가되었습니다.',
+	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
 	'quiz_cutoffPoints' => '틀린 답마다 {{PLURAL:$1|Point|Points}} 감점',
 	'quiz_ignoreCoef' => '질문 계수 무시',
 	'quiz_shuffle' => '문제 섞기',
@@ -1371,8 +1372,8 @@ $messages['ru'] = array(
  */
 $messages['sah'] = array(
 	'quiz_desc' => 'Вопросниктары оҥорор кыаҕы биэрэр',
-	'quiz_addedPoints' => 'Очкуо сөп эппиэт иһин эбилиннэ',
-	'quiz_cutoffPoints' => 'Очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
+	'quiz_addedPoints' => '$1 очкуо сөп эппиэт иһин эбилиннэ',
+	'quiz_cutoffPoints' => '$1 очкуо сыыһа эппиэт иһин көҕүрэтилиннэ',
 	'quiz_ignoreCoef' => 'Ыйытыылар коэффициеннарын аахсыма',
 	'quiz_shuffle' => 'Ыйытыылары булкуй',
 	'quiz_colorRight' => 'Сөп',
