@@ -1340,9 +1340,13 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'quiz_shuffle' => 'Miscke le domande',
 	'quiz_colorRight' => 'Esatte',
 	'quiz_colorWrong' => 'Sbagliete',
+	'quiz_colorError' => 'Errore de sindasse',
 	'quiz_correction' => 'Conferme',
+	'quiz_score' => "'U pundegge tue ète $1 / $2",
+	'quiz_points' => '$1 | {{PLURAL:$2|1 punde|$2 punde}}',
 	'quiz_reset' => 'Azzera',
 );
 
