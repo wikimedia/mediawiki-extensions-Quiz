@@ -712,8 +712,8 @@ $messages['ht'] = array(
  */
 $messages['hu'] = array(
 	'quiz_desc' => 'Lehetővé teszi kvízkérdések létrehozását',
-	'quiz_addedPoints' => 'Pont hozzáadva a helyes válaszért.',
-	'quiz_cutoffPoints' => 'Pont levonva a rossz válaszért.',
+	'quiz_addedPoints' => 'Helyesen válaszoltál, így {{PLURAL:$1|pontot|pontokat}} szereztél',
+	'quiz_cutoffPoints' => 'Hibásan válaszoltál, így {{PLURAL:$1|pont lett|pontok lettek}} levonva',
 	'quiz_ignoreCoef' => 'Ne vegye figyelembe a kérdések együtthatóit',
 	'quiz_shuffle' => 'Kérdések összekeverése',
 	'quiz_colorRight' => 'Jó',
