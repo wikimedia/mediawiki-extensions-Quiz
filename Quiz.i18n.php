@@ -1449,6 +1449,25 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Ресетуј',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'quiz_desc' => 'Omogući stvaranje upitnika.',
+	'quiz_addedPoints' => '{{PLURAL:$1|bod|boda|bodova}} se dodaje na tačan odgovor',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor',
+	'quiz_ignoreCoef' => 'Ignoriši koeficijente pitanja',
+	'quiz_shuffle' => 'Izmešaj pitanja',
+	'quiz_colorRight' => 'Tačno',
+	'quiz_colorWrong' => 'Pogrešno',
+	'quiz_colorNA' => 'Nije odgovoreno',
+	'quiz_colorError' => 'Greška u sintaksi',
+	'quiz_correction' => 'Postavi',
+	'quiz_score' => 'Vaš rezultat je $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 bod|$2 boda|$2 bodova}}',
+	'quiz_reset' => 'Resetuj',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
