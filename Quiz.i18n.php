@@ -454,6 +454,17 @@ $messages['es'] = array(
 	'quiz_reset' => 'Empezar de nuevo',
 );
 
+/** Estonian (Eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'quiz_colorRight' => 'Õige',
+	'quiz_colorWrong' => 'Vale',
+	'quiz_colorNA' => 'Vastamata',
+	'quiz_colorError' => 'Süntaksiviga',
+	'quiz_correction' => 'Saada',
+);
+
 /** Basque (Euskara)
  * @author Kobazulo
  */
