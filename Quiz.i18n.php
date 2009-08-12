@@ -923,9 +923,9 @@ $messages['km'] = array(
  * @author Yknok29
  */
 $messages['ko'] = array(
-	'quiz_desc' => '퀴즈 생성을 허용',
+	'quiz_desc' => '퀴즈를 만들 수 있도록 해줍니다',
 	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
-	'quiz_cutoffPoints' => '틀린 답마다 {{PLURAL:$1|Point|Points}} 감점',
+	'quiz_cutoffPoints' => '틀린 답마다 $1점 감점',
 	'quiz_ignoreCoef' => '질문 계수 무시',
 	'quiz_shuffle' => '문제 섞기',
 	'quiz_colorRight' => '정답',
