@@ -282,7 +282,7 @@ $messages['br'] = array(
 	'quiz_correction' => 'Kas',
 	'quiz_score' => 'Ho skor zo par da $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 poent|$2 poent}}',
-	'quiz_reset' => 'Adweredekaat',
+	'quiz_reset' => 'Adderaouekaat',
 );
 
 /** Bosnian (Bosanski)
