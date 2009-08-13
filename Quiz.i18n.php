@@ -1031,6 +1031,25 @@ $messages['lv'] = array(
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punkts|$2 punkti}}',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'quiz_desc' => 'Овозможува создавање на квизови',
+	'quiz_addedPoints' => 'добивате {{PLURAL:$1|поен|поени}} за точен одговор',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|поен|поени}} за погрешен одговор',
+	'quiz_ignoreCoef' => 'Занемари ги коефициентите на прашањата',
+	'quiz_shuffle' => 'Измешај ги прашањата',
+	'quiz_colorRight' => 'Точно',
+	'quiz_colorWrong' => 'Погрешно',
+	'quiz_colorNA' => 'Неодговорено',
+	'quiz_colorError' => 'синтаксна грешка',
+	'quiz_correction' => 'Внеси',
+	'quiz_score' => 'Вашето бодовно салдо изнесува $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 поен|$2 поени}}',
+	'quiz_reset' => 'Врати одново',
+);
+
 /** Malayalam (മലയാളം)
  * @author Jacob.jose
  * @author Shijualex
