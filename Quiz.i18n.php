@@ -1017,10 +1017,11 @@ $messages['lt'] = array(
 
 /** Latvian (Latviešu)
  * @author Xil
+ * @author Yyy
  */
 $messages['lv'] = array(
-	'quiz_addedPoints' => 'Punkti par pareizu atbildi',
-	'quiz_cutoffPoints' => 'Punkti, kas tiek atņemti par nepareizu atbildi',
+	'quiz_addedPoints' => '{{PLURAL:$1|Punkts|Punkti}} par pareizu atbildi',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi',
 	'quiz_ignoreCoef' => 'Neņemt vērā jautājumu koeficientus',
 	'quiz_shuffle' => 'Sajaukt jautājumus',
 	'quiz_colorRight' => 'Pareizi',
