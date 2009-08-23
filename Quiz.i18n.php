@@ -456,13 +456,16 @@ $messages['es'] = array(
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
+	'quiz_desc' => 'Võimaldab küsitlusi korraldada.',
 	'quiz_colorRight' => 'Õige',
 	'quiz_colorWrong' => 'Vale',
 	'quiz_colorNA' => 'Vastamata',
 	'quiz_colorError' => 'Süntaksiviga',
 	'quiz_correction' => 'Saada',
+	'quiz_score' => 'Punktid: $1 / $2',
 );
 
 /** Basque (Euskara)
@@ -1460,7 +1463,7 @@ $messages['sq'] = array(
 	'quiz_correction' => 'Dërgo',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  * @author Sasa Stefanovic
  */
@@ -1480,7 +1483,7 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Ресетуј',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
