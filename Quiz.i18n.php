@@ -1265,10 +1265,12 @@ $messages['pl'] = array(
 
 /** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
+ * @author Dragonòt
  */
 $messages['pms'] = array(
-	'quiz_addedPoints' => "Pont da dé për n'aspòsta giusta",
-	'quiz_cutoffPoints' => "Pont da gavé për n'aspòsta nen giusta",
+	'quiz_desc' => 'A përmëtt la creassion ëd quiz',
+	'quiz_addedPoints' => "{{PLURAL:$1|Pont|Pont}} da dé për n'aspòsta giusta",
+	'quiz_cutoffPoints' => "{{PLURAL:$1|Pont|Pont}} da gavé për n'aspòsta pa giusta",
 	'quiz_ignoreCoef' => 'Pa dovré ij coeficent dle domande',
 	'quiz_shuffle' => 'Mës-cé le domande',
 	'quiz_colorRight' => 'Giust',
@@ -1277,7 +1279,7 @@ $messages['pms'] = array(
 	'quiz_colorError' => 'Eror ëd sintassi',
 	'quiz_correction' => 'Manda',
 	'quiz_score' => "A l'ha pijait $1 pont ansima a $2",
-	'quiz_points' => '$1 | $2 pont',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 pont|$2 pont}}',
 	'quiz_reset' => 'Aseré',
 );
 
