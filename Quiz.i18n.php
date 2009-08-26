@@ -1767,7 +1767,9 @@ $messages['yue'] = array(
 	'quiz_reset' => '重設',
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author PhiLiP
+ */
 $messages['zh-hans'] = array(
 	'quiz_desc' => '容许建立小测题目',
 	'quiz_addedPoints' => '答对加上的分数',
@@ -1781,7 +1783,7 @@ $messages['zh-hans'] = array(
 	'quiz_correction' => '递交',
 	'quiz_score' => '您的分数是 $1 / $2',
 	'quiz_points' => '$1 | $2 分',
-	'quiz_reset' => '重设',
+	'quiz_reset' => '重置',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
