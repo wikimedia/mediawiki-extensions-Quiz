@@ -52,12 +52,7 @@ $wgExtensionCredits['parserhook'][] = array(
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 
-if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
-	$wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
-} else {
-	$wgExtensionFunctions[] = 'wfQuizExtension';
-}
-
+$wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
 $wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
 $wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
 
@@ -66,9 +61,8 @@ $wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
  * Register the extension with the WikiText parser.
  * The tag used is <quiz>
  */
-function wfQuizExtension() {
-    global $wgParser;
-    $wgParser->setHook("quiz", "renderQuiz");
+function wfQuizExtension( &$parser ) {
+    $parser->setHook("quiz", "renderQuiz");
 	return true;
 }
 
