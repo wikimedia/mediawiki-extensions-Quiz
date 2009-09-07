@@ -844,7 +844,7 @@ $messages['ja'] = array(
 	'quiz_colorNA' => '無回答',
 	'quiz_colorError' => '構文エラー',
 	'quiz_correction' => '採点',
-	'quiz_score' => '得点：$1点（$2点満点）',
+	'quiz_score' => '得点：$1点($2点満点)',
 	'quiz_points' => '$1 | $2{{PLURAL:$2|点}}',
 	'quiz_reset' => 'リセット',
 );
