@@ -345,6 +345,7 @@ $messages['cs'] = array(
 );
 
 /** Danish (Dansk)
+ * @author Byrial
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
@@ -353,7 +354,7 @@ $messages['da'] = array(
 	'quiz_colorNA' => 'Ikke svared',
 	'quiz_colorError' => 'syntaksfejl',
 	'quiz_correction' => 'Send',
-	'quiz_points' => '$1 | $2 poeng',
+	'quiz_points' => '$1 | $2 {{PLURAL:$2|point|point}}',
 );
 
 /** German (Deutsch)
