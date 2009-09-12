@@ -274,7 +274,7 @@ class Quiz {
 			if(!empty($settingsTr)) $settingsTable .= "<tr>\n$settingsTr</tr>\n";
 		}		
 		if(!empty($settingsTable)) $output .= "<table class=\"settings\">\n$settingsTable</table>\n";
-		$output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\"/ >";
+		$output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\" />";
 	    
 	    $output .= "<div class=\"quizQuestions\">";
 		$output .= $input;
