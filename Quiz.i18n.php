@@ -349,6 +349,8 @@ $messages['cs'] = array(
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
+	'quiz_desc' => 'Tillader oprettelse af quizzer',
+	'quiz_addedPoints' => '{{PLURAL:$1|Point|point}} for korrekt svar',
 	'quiz_colorRight' => 'Ret',
 	'quiz_colorWrong' => 'Fejl',
 	'quiz_colorNA' => 'Ikke svared',
