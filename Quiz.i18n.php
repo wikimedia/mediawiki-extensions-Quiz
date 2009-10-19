@@ -378,6 +378,25 @@ $messages['de'] = array(
 	'quiz_reset' => 'Neustart',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'quiz_desc' => 'desturê vıraştışê quizi dano',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puan|Puan}} qey cewabo raşt diyayo.',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Puan|Puan}} qey cewabo şaş',
+	'quiz_ignoreCoef' => 'Soruların katsayısını ihmal et',
+	'quiz_shuffle' => 'persan têmiyan ker.',
+	'quiz_colorRight' => 'raşt',
+	'quiz_colorWrong' => 'şaş',
+	'quiz_colorNA' => 'cewab cı nêdiya',
+	'quiz_colorError' => 'xetaya sebtaksi',
+	'quiz_correction' => 'bışaw',
+	'quiz_score' => 'Skorê şıma $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 puan|$2 puan}}',
+	'quiz_reset' => 'sıfır ker/reset ker',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
