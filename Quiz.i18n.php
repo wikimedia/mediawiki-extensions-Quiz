@@ -1002,6 +1002,7 @@ $messages['lb'] = array(
 );
 
 /** Limburgish (Limburgs)
+ * @author Aelske
  * @author Matthias
  * @author Ooswesthoesbes
  */
@@ -1012,7 +1013,7 @@ $messages['li'] = array(
 	'quiz_ignoreCoef' => 'De coëfficiente van de vräög negere',
 	'quiz_shuffle' => 'De vräög in willekäörige volgorde',
 	'quiz_colorRight' => 'Ramkrèk',
-	'quiz_colorWrong' => 'Ónkrèk',
+	'quiz_colorWrong' => 'Verkièrd',
 	'quiz_colorNA' => 'Neet beantjwaord',
 	'quiz_colorError' => 'Algemeine fout',
 	'quiz_correction' => 'Verbaetering',
