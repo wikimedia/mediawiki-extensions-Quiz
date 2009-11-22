@@ -1400,9 +1400,14 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'quiz_desc' => 'Permette de ccrejà le quiz',
+	'quiz_addedPoints' => "{{PLURAL:$1|Punde|Punde}} aggiunde pe 'na resposta corrette",
+	'quiz_cutoffPoints' => "{{PLURAL:$1|Punde|Punde}} pe 'na resposta sbagliate",
+	'quiz_ignoreCoef' => 'No scè penzanne a le coefficiende de le domande',
 	'quiz_shuffle' => 'Miscke le domande',
 	'quiz_colorRight' => 'Esatte',
 	'quiz_colorWrong' => 'Sbagliete',
+	'quiz_colorNA' => 'Nò resposte',
 	'quiz_colorError' => 'Errore de sindasse',
 	'quiz_correction' => 'Conferme',
 	'quiz_score' => "'U pundegge tue ète $1 / $2",
