@@ -951,7 +951,7 @@ $messages['ko'] = array(
 	'quiz_desc' => '퀴즈를 만들 수 있도록 해줍니다',
 	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
 	'quiz_cutoffPoints' => '틀린 답마다 $1점 감점',
-	'quiz_ignoreCoef' => '질문 계수 무시',
+	'quiz_ignoreCoef' => '문제의 배점 무시',
 	'quiz_shuffle' => '문제 섞기',
 	'quiz_colorRight' => '정답',
 	'quiz_colorWrong' => '오답',
@@ -1042,10 +1042,12 @@ $messages['lt'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author Dark Eagle
  * @author Xil
  * @author Yyy
  */
 $messages['lv'] = array(
+	'quiz_desc' => 'Ļauj veidot anketas',
 	'quiz_addedPoints' => '{{PLURAL:$1|Punkts|Punkti}} par pareizu atbildi',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi',
 	'quiz_ignoreCoef' => 'Neņemt vērā jautājumu koeficientus',
@@ -1054,8 +1056,10 @@ $messages['lv'] = array(
 	'quiz_colorWrong' => 'Nepareizi',
 	'quiz_colorNA' => 'Nav atbildēts',
 	'quiz_colorError' => 'Sintakses kļūda',
+	'quiz_correction' => 'Sūtīt',
 	'quiz_score' => 'Tavs rezultāts ir $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punkts|$2 punkti}}',
+	'quiz_reset' => 'Notīrīt',
 );
 
 /** Macedonian (Македонски)
