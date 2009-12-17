@@ -911,11 +911,15 @@ $messages['jv'] = array(
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author Malafaya
  */
 $messages['ka'] = array(
 	'quiz_colorRight' => 'სწორი',
 	'quiz_colorWrong' => 'არასწორი',
+	'quiz_colorNA' => 'პასუხი არ არის',
+	'quiz_colorError' => 'სინტაქსური შეცდომა',
+	'quiz_correction' => 'გაგზავნა',
 	'quiz_points' => '$1 | $2 ქულა',
 );
 
