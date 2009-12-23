@@ -491,6 +491,7 @@ $messages['et'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Kobazulo
  */
 $messages['eu'] = array(
@@ -501,6 +502,7 @@ $messages['eu'] = array(
 	'quiz_colorError' => 'Sintaxi-errorea',
 	'quiz_correction' => 'Bidali',
 	'quiz_score' => 'Zure kalifikazioa $1 / $2 da',
+	'quiz_points' => '$1 | {{PLURAL:$2|puntu 1|$2 puntu}}',
 	'quiz_reset' => 'Berrezarri',
 );
 
@@ -1657,6 +1659,19 @@ $messages['th'] = array(
 	'quiz_reset' => 'ตั้งค่าใหม่',
 );
 
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'quiz_colorRight' => 'Dogry',
+	'quiz_colorWrong' => 'Ýalňyş',
+	'quiz_colorNA' => 'Jogapsyz',
+	'quiz_colorError' => 'Sintaksis säwligi',
+	'quiz_correction' => 'Tabşyr',
+	'quiz_score' => 'Utugyňyz $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 utuk|$2 utuk}}',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
@@ -1805,12 +1820,13 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Gaoxuewei
  * @author PhiLiP
  */
 $messages['zh-hans'] = array(
 	'quiz_desc' => '容许建立小测题目',
-	'quiz_addedPoints' => '答对加上的分数',
-	'quiz_cutoffPoints' => '答错减去的分数',
+	'quiz_addedPoints' => '答对加上的{{PLURAL:$1|分数|分数}}',
+	'quiz_cutoffPoints' => '答错减去的{{PLURAL:$1|分数|分数}}',
 	'quiz_ignoreCoef' => '略过问题的系数',
 	'quiz_shuffle' => '随机问题',
 	'quiz_colorRight' => '对',
@@ -1823,11 +1839,13 @@ $messages['zh-hans'] = array(
 	'quiz_reset' => '重置',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Gaoxuewei
+ */
 $messages['zh-hant'] = array(
 	'quiz_desc' => '容許建立小測題目',
-	'quiz_addedPoints' => '答對加上的分數',
-	'quiz_cutoffPoints' => '答錯減去的分數',
+	'quiz_addedPoints' => '答對加上的{{PLURAL:$1|分數|分數}}',
+	'quiz_cutoffPoints' => '答錯減去的{{PLURAL:$1|分數|分數}}',
 	'quiz_ignoreCoef' => '略過問題的系數',
 	'quiz_shuffle' => '隨機問題',
 	'quiz_colorRight' => '對',
