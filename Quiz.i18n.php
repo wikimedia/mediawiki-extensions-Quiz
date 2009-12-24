@@ -1663,6 +1663,9 @@ $messages['th'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'quiz_desc' => 'Soragnama döretmeklige rugsat berýär',
+	'quiz_addedPoints' => 'Dogry jogap üçin {{PLURAL:$1|utuk|utuk}} goşuldy',
+	'quiz_cutoffPoints' => 'Nädogry jogap üçin {{PLURAL:$1|utuk|utuk}}',
 	'quiz_colorRight' => 'Dogry',
 	'quiz_colorWrong' => 'Ýalňyş',
 	'quiz_colorNA' => 'Jogapsyz',
