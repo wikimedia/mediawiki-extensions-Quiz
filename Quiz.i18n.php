@@ -947,6 +947,14 @@ $messages['km'] = array(
 	'quiz_reset' => 'ធ្វើឱ្យដូចដើមវិញ',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'quiz_colorRight' => 'ಸರಿ',
+	'quiz_colorWrong' => 'ತಪ್ಪು',
+);
+
 /** Korean (한국어)
  * @author Ilovesabbath
  * @author Kwj2772
@@ -1666,6 +1674,8 @@ $messages['tk'] = array(
 	'quiz_desc' => 'Soragnama döretmeklige rugsat berýär',
 	'quiz_addedPoints' => 'Dogry jogap üçin {{PLURAL:$1|utuk|utuk}} goşuldy',
 	'quiz_cutoffPoints' => 'Nädogry jogap üçin {{PLURAL:$1|utuk|utuk}}',
+	'quiz_ignoreCoef' => 'Soraglaryň koeffisientlerine üns berme',
+	'quiz_shuffle' => 'Soraglary gar',
 	'quiz_colorRight' => 'Dogry',
 	'quiz_colorWrong' => 'Ýalňyş',
 	'quiz_colorNA' => 'Jogapsyz',
@@ -1673,6 +1683,7 @@ $messages['tk'] = array(
 	'quiz_correction' => 'Tabşyr',
 	'quiz_score' => 'Utugyňyz $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 utuk|$2 utuk}}',
+	'quiz_reset' => 'Başky ýagdaýa getir',
 );
 
 /** Tagalog (Tagalog)
