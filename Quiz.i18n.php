@@ -1655,6 +1655,22 @@ $messages['tg-cyrl'] = array(
 	'quiz_reset' => 'Аз нав',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'quiz_desc' => 'Eçodi ozmunhoro mumkin mesozad',
+	'quiz_ignoreCoef' => 'Nodida giriftani zaribi savolho',
+	'quiz_shuffle' => 'Bar zadani savolho',
+	'quiz_colorRight' => 'Durust',
+	'quiz_colorWrong' => 'Nodurust',
+	'quiz_colorNA' => 'Posux doda naşud',
+	'quiz_colorError' => 'Xatoi nahvī',
+	'quiz_correction' => 'Irsol',
+	'quiz_score' => 'Imtijozi şumo $1 az $2 ast',
+	'quiz_reset' => 'Az nav',
+);
+
 /** Thai (ไทย)
  * @author Mopza
  * @author Passawuth
