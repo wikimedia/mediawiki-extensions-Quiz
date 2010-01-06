@@ -578,7 +578,7 @@ class Question {
 		$expectOn 		= 0;
 		$checkedCount 	= 0;
 		foreach($raws as $proposalId => $raw) {
-			$text 			= NULL;
+			$text 			= null;
 			$colSpan 		= "";
 			$signesOutput 	= "";
 			if(preg_match($this->mProposalPattern, $raw, $matches)) {
@@ -611,7 +611,7 @@ class Question {
 						break;
 					}
 					# Determine if the input had to be checked.
-					$checked = ($this->mBeingCorrected && $this->mRequest->getVal($name) == $value)? "checked=\"checked\"" : NULL;
+					$checked = ($this->mBeingCorrected && $this->mRequest->getVal($name) == $value)? "checked=\"checked\"" : null;
 					# Determine the color of the cell and modify the state of the question.
 					switch($sign) {
 					case "+":
