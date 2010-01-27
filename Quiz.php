@@ -75,7 +75,7 @@ function wfQuizExtension( &$parser ) {
  * 
  * @return 						An HTML quiz.
  */
-function renderQuiz($input, $argv, &$parser) {
+function renderQuiz($input, $argv, $parser) {
 	$parser->disableCache();
 	$quiz = new Quiz($argv, $parser);
 	return $quiz->parseQuiz($input);
