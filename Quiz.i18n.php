@@ -808,6 +808,19 @@ $messages['id'] = array(
 	'quiz_reset' => 'Reset',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'quiz_desc' => 'Në nyé uzor I ké nlele akwúkwuó',
+	'quiz_colorRight' => 'Ézíbóté',
+	'quiz_colorWrong' => 'Í dạrạ ya',
+	'quiz_colorNA' => 'O saghị',
+	'quiz_correction' => 'Nyefwuör',
+	'quiz_score' => 'Owu gi bu $1 / $2',
+	'quiz_reset' => 'Kuwaria',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
