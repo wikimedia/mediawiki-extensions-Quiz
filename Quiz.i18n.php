@@ -783,7 +783,7 @@ $messages['ia'] = array(
 	'quiz_correction' => 'Submitter',
 	'quiz_score' => 'Punctos: $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 puncto|$2 punctos}}',
-	'quiz_reset' => 'Reinitiar',
+	'quiz_reset' => 'Reinitialisar',
 );
 
 /** Indonesian (Bahasa Indonesia)
