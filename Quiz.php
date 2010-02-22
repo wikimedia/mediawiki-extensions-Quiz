@@ -8,7 +8,7 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * Quiz is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -21,31 +21,30 @@
  * ***** END LICENSE BLOCK *****
  *
  * Quiz is a quiz tool for mediawiki.
- * 
+ *
  * To activate this extension :
  * * Create a new directory named quiz into the directory "extensions" of mediawiki.
  * * Place this file and the files Quiz.i18n.php and quiz.js there.
  * * Add this line at the end of your LocalSettings.php file :
  * require_once 'extensions/quiz/Quiz.php';
- * 
+ *
  * @version 1.0
  * @link http://www.mediawiki.org/wiki/Extension:Quiz
  * @author BABE Louis-Remi <lrbabe@gmail.com>
  */
- 
+
 /**
  * Extension's parameters.
  */
 $wgExtensionCredits['parserhook'][] = array(
-    'path'           => __FILE__,
-    'name'           => 'Quiz',
-    'version'        => '1.0.1',
-    'author'         => 'lrbabe',
-    'url'            => 'http://www.mediawiki.org/wiki/Extension:Quiz',
-    'description'    => 'Allows creation of quizzes',
-    'descriptionmsg' => 'quiz_desc'
+	'path'           => __FILE__,
+	'name'           => 'Quiz',
+	'version'        => '1.0.1',
+	'author'         => 'lrbabe',
+	'url'            => 'http://www.mediawiki.org/wiki/Extension:Quiz',
+	'descriptionmsg' => 'quiz_desc'
 );
-    
+
 /**
  * Add this extension to the mediawiki's extensions list.
  */
@@ -68,11 +67,11 @@ function wfQuizExtension( &$parser ) {
 
 /**
  * Call the quiz parser on an input text.
- * 
+ *
  * @param  $input				Text between <quiz> and </quiz> tags, in quiz syntax.
  * @param  $argv				An array containing any arguments passed to the extension
  * @param  &$parser				The wikitext parser.
- * 
+ *
  * @return 						An HTML quiz.
  */
 function renderQuiz($input, $argv, $parser) {
@@ -84,7 +83,7 @@ function renderQuiz($input, $argv, $parser) {
 /**
  * Processes quiz markup
  */
-class Quiz {	
+class Quiz {
 	/**#@+
 	 * @public
 	 */
@@ -98,11 +97,11 @@ class Quiz {
 	);
 	static $sQuizId = 0;
 	/**#@- */
-	
-	 
-	/** 
+
+
+	/**
 	 * Constructor
-	 * 
+	 *
 	 * @public
 	 */
 	function Quiz($argv, &$parser) {
@@ -139,7 +138,7 @@ class Quiz {
 	    	if($this->mRequest->getVal('ignoringCoef') == "on") {
 	    		$this->mIgnoringCoef = true;
 	    	}
-	    } 
+	    }
 	    if (array_key_exists('points',$argv)
 	    && (!$this->mBeingCorrected || $this->mDisplaySimple)
 	    && preg_match('`([\d\.]*)/?([\d\.]*)(!)?`', str_replace(',', '.', $argv['points']), $matches)) {
@@ -158,24 +157,24 @@ class Quiz {
 	    # Patterns used in several places
 	    $this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
-	
+
 	static function resetQuizID() {
 		self::$sQuizId = 0;
 		return true;
 	}
-	
+
 	static function loadMessages() {
 	    static $messagesLoaded = false;
 	    if ( $messagesLoaded ) return true;
 	    $messagesLoaded = true;
 		wfLoadExtensionMessages('QuizExtension');
 		return true;
-	}	
-	
+	}
+
 	/**
 	 * Accessor for the color array
 	 * Dispalys an error message if the colorId doesn't exists.
-	 * 
+	 *
 	 * @public
 	 * @param  $colorId
 	 */
@@ -185,15 +184,15 @@ class Quiz {
 				return self::$mColors[$colorId];
 			} else {
 				throw new Exception($colorId);
-			}			
+			}
 		} catch(Exception $e) {
 			echo "Invalid color ID : ".$e->getMessage()."\n";
 		}
 	}
-	
+
 	/**
 	 * Convert the input text to an HTML output.
-	 * 
+	 *
 	 * @param  $input				Text between <quiz> and </quiz> tags, in quiz syntax.
 	 */
 	function parseQuiz($input) {
@@ -230,10 +229,10 @@ class Quiz {
 	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";
 	    	$wgOut->addScript($head);
 		}
-		
+
 		# Process the input
 		$input = $this->parseQuestions($this->parseIncludes($input));
-		
+
 		# Generates the output.
 		$classHide = ($this->mBeingCorrected)? "" : " class=\"hideCorrection\"";
 		$output  = "<div class=\"quiz\">";
@@ -266,20 +265,20 @@ class Quiz {
 			$errorKey = $this->mBeingCorrected? 3 : 0;
 			$settings[$errorKey] .=	"<td class=\"margin\" style=\"background: ".$this->getColor('error')."\"></td>" .
 									"<td>".wfMsgHtml('quiz_colorError')."</td>";
-			
+
 		}
 		# Build the settings table.
 		$settingsTable = "";
 		foreach($settings as $settingsTr) {
 			if(!empty($settingsTr)) $settingsTable .= "<tr>\n$settingsTr</tr>\n";
-		}		
+		}
 		if(!empty($settingsTable)) $output .= "<table class=\"settings\">\n$settingsTable</table>\n";
 		$output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\" />";
-	    
+
 	    $output .= "<div class=\"quizQuestions\">";
 		$output .= $input;
 		$output .= "</div>";
-		
+
 	    $output .= "<p><input type=\"submit\" value=\"" . wfMsgHtml( 'quiz_correction' ) . "\"/>";
 	    if($this->mBeingCorrected) $output.= "<input class=\"reset\" type=\"submit\" value=\"" .
 	    	wfMsgHtml( 'quiz_reset' ) . "\" style=\"display: none;\" />";
@@ -293,19 +292,19 @@ class Quiz {
 	    $output .= "</div>\n";
 		return $output;
 	}
-	
+
 	/**
 	 * Replace inclusions from other quizzes.
 	 *
 	 * @param  $input				Text between <quiz> and </quiz> tags, in quiz syntax.
 	 */
 	function parseIncludes($input) {
-		return preg_replace_callback($this->mIncludePattern, array($this, "parseInclude"), $input);			
+		return preg_replace_callback($this->mIncludePattern, array($this, "parseInclude"), $input);
 	}
-	
+
 	/**
 	 * Include text between <quiz> and <quiz> from another page to this quiz.
-	 * 
+	 *
 	 * @param  $matches				Elements matching $includePattern.
 	 * 								$matches[1] is the page title.
 	 */
@@ -320,10 +319,10 @@ class Quiz {
 		}
 		return $output;
 	}
-	
+
 	/**
 	 * Replace questions from quiz syntax to HTML.
-	 * 
+	 *
 	 * @param  $input				A question in quiz syntax.
 	 */
 	function parseQuestions($input) {
@@ -349,10 +348,10 @@ class Quiz {
 		}
 		return $output;
 	}
-	
+
 	/**
 	 * Convert a question from quiz syntax to HTML
-	 * 
+	 *
 	 * @param  $matches				Elements matching $questionPattern.
 	 * 								$matches[1] is the question header.
 	 * 								$matches[3] is the question object.
@@ -429,15 +428,15 @@ class Quiz {
 }
 
 class Question {
-	
+
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @public
 	 * @param  $beingCorrected			boolean.
 	 * @param  $caseSensitive			boolean.
 	 * @param  $questionId				The Identifier of the question used to gernerate input names.
-	 * @param  $parser					The wikitext parser.	 
+	 * @param  $parser					The wikitext parser.
 	 */
 	function Question($beingCorrected, $caseSensitive, $questionId, &$parser) {
 		global $wgRequest;
@@ -453,11 +452,11 @@ class Question {
 		$this->mCorrectionPattern 	= '`^\|\|(.*)`';
 		$this->mCategoryPattern 	= '`^\|(\n|[^\|].*\n)`';
 		$this->mTextFieldPattern 	= '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
-	}	
-	
+	}
+
 	/**
 	 * Mutator of the question state
-	 * 
+	 *
 	 * @protected
 	 * @param  $pState
 	 */
@@ -477,10 +476,10 @@ class Question {
 		}
 		return;
 	}
-	
+
 	/**
 	 * Accessor of the question state.
-	 * 
+	 *
 	 * @protected
 	 */
 	function getState() {
@@ -492,10 +491,10 @@ class Question {
 			return $this->mState;
 		}
 	}
-	
+
 	/**
 	 * Convert the question's header into HTML.
-	 * 
+	 *
 	 * @param  $input				The quiz header in quiz syntax.
 	 */
 	function parseHeader($input) {
@@ -511,10 +510,10 @@ class Question {
 	 	}
 	 	return $output;
 	}
-	
+
 	/**
 	 * Determine the question's parameters.
-	 * 
+	 *
 	 * @param  $matches				Elements matching $parametersPattern
 	 * 								$matches[0] are the potential question parameters.
 	 */
@@ -540,35 +539,35 @@ class Question {
 		}
 		return;
 	}
-	
+
 	/**
 	 * Transmit a single choice object to the basic type parser.
-	 * 
+	 *
 	 * @param  $input				A question object in quiz syntax.
-	 * 
+	 *
 	 * @return $output				A question object in HTML.
 	 */
 	function singleChoiceParseObject($input) {
 		return $this->basicTypeParseObject($input, "radio");
 	}
-	
+
 	/**
 	 * Transmit a multiple choice object to the basic type parser.
-	 * 
+	 *
 	 * @param  $input				A question object in quiz syntax.
-	 * 
+	 *
 	 * @return $output				A question object in HTML.
 	 */
 	function multipleChoiceParseObject($input) {
 		return $this->basicTypeParseObject($input, "checkbox");
 	}
-	
+
 	/**
 	 * Convert a basic type object from quiz syntax to HTML.
-	 * 
+	 *
 	 * @param  $input				A question object in quiz syntax
 	 * @param  $inputType
-	 * 
+	 *
 	 * @return $output				A question object in HTML.
 	 */
 	function basicTypeParseObject($input, $inputType) {
@@ -690,11 +689,11 @@ class Question {
 			$this->setState("error");
 		}
 		return $output;
-	}	
-	
+	}
+
 	/**
 	 * Determine the object's parameters and convert a list of categories from quiz syntax to HTML.
-	 * 
+	 *
 	 * @param  $input			The various categories.
 	 */
 	function parseCategories($input) {
@@ -724,10 +723,10 @@ class Question {
 		$this->mProposalPattern .= '(.*)`';
 		return $output;
 	}
-	
+
 	/**
 	 * Convert a "text field" object to HTML.
-	 * 
+	 *
 	 * @param  $input				A question object in quiz syntax.
 	 *
 	 * @return $output				A question object in HTML.
@@ -751,7 +750,7 @@ class Question {
 		}
 		return $output;
 	}
-	
+
 	function parseTextField($input) {
 		global $wqInputId;
 		$wqInputId ++;
