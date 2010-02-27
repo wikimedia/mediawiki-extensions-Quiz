@@ -1349,7 +1349,7 @@ $messages['ps'] = array(
 	'quiz_colorRight' => 'سم',
 	'quiz_colorWrong' => 'ناسم',
 	'quiz_colorNA' => 'بې ځوابه',
-	'quiz_score' => 'ستاسو نومرې $1 / $2 دي',
+	'quiz_score' => 'ستاسې نومرې $1 / $2 دي',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 نمره|$2 نمرې}}',
 );
 
