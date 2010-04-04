@@ -1516,6 +1516,25 @@ $messages['sk'] = array(
 	'quiz_reset' => 'Reset',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'quiz_desc' => 'Omogoča ustvarjanje kvizov',
+	'quiz_addedPoints' => '{{PLURAL:$1|Točka dodana|Točki dodani|Točke dodane}} za pravilen odgovor',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Točka odbita|Točki odbiti|Točke odbite}} za napačen odgovor',
+	'quiz_ignoreCoef' => 'Prezri koeficiente vprašanj',
+	'quiz_shuffle' => 'Premešaj vprašanja',
+	'quiz_colorRight' => 'Pravilno',
+	'quiz_colorWrong' => 'Napačno',
+	'quiz_colorNA' => 'Ni odgovorjeno',
+	'quiz_colorError' => 'Skladenjska napaka',
+	'quiz_correction' => 'Pošlji',
+	'quiz_score' => 'Vaš rezultat je $1 / $2',
+	'quiz_points' => '$1 | $2 {{PLURAL:$2|točka|točki|točke|točk}}',
+	'quiz_reset' => 'Ponastavi',
+);
+
 /** Albanian (Shqip)
  * @author Cradel
  * @author Ergon
