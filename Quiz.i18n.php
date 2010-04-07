@@ -1117,16 +1117,16 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'quiz_desc' => 'ക്വിസുകള്‍ സൃഷ്ടിക്കാന്‍ സഹായിക്കുന്നു',
-	'quiz_addedPoints' => 'ശരിയുത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} ചേര്‍ത്തു',
+	'quiz_desc' => 'ക്വിസുകൾ സൃഷ്ടിക്കാൻ സഹായിക്കുന്നു',
+	'quiz_addedPoints' => 'ശരിയുത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} ചേർത്തു',
 	'quiz_cutoffPoints' => 'തെറ്റായ ഉത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} കുറച്ചു',
-	'quiz_shuffle' => 'ചോദ്യങ്ങള്‍ കശക്കുക',
+	'quiz_shuffle' => 'ചോദ്യങ്ങൾ കശക്കുക',
 	'quiz_colorRight' => 'ശരി',
 	'quiz_colorWrong' => 'തെറ്റ്',
-	'quiz_colorNA' => 'ഉത്തരം നല്‍കിയിട്ടില്ല',
+	'quiz_colorNA' => 'ഉത്തരം നൽകിയിട്ടില്ല',
 	'quiz_colorError' => 'സിന്റാക്സ് പിഴവ്',
-	'quiz_correction' => 'സമര്‍പ്പിക്കുക',
-	'quiz_score' => 'താങ്കളുടെ സ്കോര്‍ $1/$2',
+	'quiz_correction' => 'സമർപ്പിക്കുക',
+	'quiz_score' => 'താങ്കളുടെ സ്കോർ $1/$2',
 	'quiz_points' => '$1|{{PLURAL:$2|ഒരു പോയിന്റ്|$2 പോയിന്റുകൾ}}',
 	'quiz_reset' => 'പുനഃക്രമീകരിക്കുക',
 );
