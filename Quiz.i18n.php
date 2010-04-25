@@ -993,7 +993,7 @@ $messages['ko'] = array(
 	'quiz_reset' => '초기화',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -1868,7 +1868,7 @@ $messages['yi'] = array(
 	'quiz_desc' => 'דערלויבט שאפן אויספרעגן',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'quiz_desc' => '容許開小測題',
 	'quiz_addedPoints' => '答啱咗加上嘅分數',
