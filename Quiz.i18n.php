@@ -931,6 +931,7 @@ $messages['jv'] = array(
 /** Georgian (ქართული)
  * @author BRUTE
  * @author Malafaya
+ * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'quiz_colorRight' => 'სწორი',
@@ -938,7 +939,9 @@ $messages['ka'] = array(
 	'quiz_colorNA' => 'პასუხი არ არის',
 	'quiz_colorError' => 'სინტაქსური შეცდომა',
 	'quiz_correction' => 'გაგზავნა',
+	'quiz_score' => 'თქვენ შეაგროვეთ $1 {{PLURAL:$1|ქულა|ქულები}} $2-დან',
 	'quiz_points' => '$1 | $2 ქულა',
+	'quiz_reset' => 'გაუქმება',
 );
 
 /** Khmer (ភាសាខ្មែរ)
