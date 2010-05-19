@@ -1421,17 +1421,17 @@ $messages['qu'] = array(
 $messages['ro'] = array(
 	'quiz_desc' => 'Permite crearea de chestionare',
 	'quiz_addedPoints' => '{{PLURAL:$1|Punct adăugat|Puncte adăugate}} pentru un răspuns corect',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greşit',
-	'quiz_ignoreCoef' => 'Ignoră coeficienţii întrebărilor',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greșit',
+	'quiz_ignoreCoef' => 'Ignoră coeficienții întrebărilor',
 	'quiz_shuffle' => 'Întrebări amestecate',
 	'quiz_colorRight' => 'Corect',
-	'quiz_colorWrong' => 'Greşit',
+	'quiz_colorWrong' => 'Greșit',
 	'quiz_colorNA' => 'Fără răspuns',
 	'quiz_colorError' => 'Eroare de sintaxă',
 	'quiz_correction' => 'Aplică',
 	'quiz_score' => 'Scorul tău este $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punct|$2 puncte}}',
-	'quiz_reset' => 'Reiniţializare',
+	'quiz_reset' => 'Reinițializare',
 );
 
 /** Tarandíne (Tarandíne)
