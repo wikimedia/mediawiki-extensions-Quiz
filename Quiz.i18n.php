@@ -813,11 +813,17 @@ $messages['id'] = array(
  */
 $messages['ig'] = array(
 	'quiz_desc' => 'Në nyé uzor I ké nlele akwúkwuó',
+	'quiz_addedPoints' => '{{PLURAL:$1|Ogùgù Onyìnyé|Onú Ogùgù Onyìnyé}} a bálá màkà otu é shi a zá ajújú ofuma',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Ogùgù Onyìnyé|Onú Ogùgù Onyìnyé}} màkà otu é shi daá I zá ajújú ofuma',
+	'quiz_ignoreCoef' => 'Á zàkwàlà nkwado ónú ogùgù bu nke ájújú ndiá',
+	'quiz_shuffle' => 'gbàsá ájújú',
 	'quiz_colorRight' => 'Ézíbóté',
 	'quiz_colorWrong' => 'Í dạrạ ya',
 	'quiz_colorNA' => 'O saghị',
+	'quiz_colorError' => 'Édé nwèrè nsogbú',
 	'quiz_correction' => 'Nyefwuör',
 	'quiz_score' => 'Owu gi bu $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 ogùgù onyìnyé|$2 onú ogùgù onyìnyé}}',
 	'quiz_reset' => 'Kuwaria',
 );
 
