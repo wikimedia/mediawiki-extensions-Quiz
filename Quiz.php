@@ -53,6 +53,8 @@ $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
 $wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
+$wgHooks['LoadAllMessages'][] = 'Quiz::loadMessages';
+
 
 /**
  * Register the extension with the WikiText parser.
@@ -106,6 +108,8 @@ class Quiz {
 		global $wgRequest, $wgLanguageCode;
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
+		# Determine which messages will be used, according to the language.
+		self::loadMessages();
 		# Allot a unique identifier to the quiz.
 		$this->mQuizId = self::$sQuizId;
 		self::$sQuizId++;
@@ -156,6 +160,14 @@ class Quiz {
 
 	static function resetQuizID() {
 		self::$sQuizId = 0;
+		return true;
+	}
+
+	static function loadMessages() {
+	    static $messagesLoaded = false;
+	    if ( $messagesLoaded ) return true;
+	    $messagesLoaded = true;
+		wfLoadExtensionMessages('QuizExtension');
 		return true;
 	}
 
