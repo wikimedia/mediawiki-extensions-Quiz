@@ -936,10 +936,12 @@ $messages['jv'] = array(
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author ITshnik
  * @author Malafaya
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'quiz_cutoffPoints' => '(($1 ქულა)) ერთი არასწორი პასუხისთვის',
 	'quiz_colorRight' => 'სწორი',
 	'quiz_colorWrong' => 'არასწორი',
 	'quiz_colorNA' => 'პასუხი არ არის',
