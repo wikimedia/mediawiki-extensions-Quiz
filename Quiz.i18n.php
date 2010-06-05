@@ -1408,6 +1408,7 @@ $messages['pt-br'] = array(
  * @author AlimanRuna
  */
 $messages['qu'] = array(
+	'quiz_desc' => 'Watuchi pukllay kamariyta saqillan',
 	'quiz_addedPoints' => 'Allin kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} yapasqa',
 	'quiz_cutoffPoints' => 'Panta kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} qichusqa',
 	'quiz_ignoreCoef' => 'Sapa tapuypaq iñukunata qhawarpariy',
