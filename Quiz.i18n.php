@@ -1427,6 +1427,7 @@ $messages['qu'] = array(
  * @author Cin
  * @author Firilacroco
  * @author Mihai
+ * @author Minisarm
  */
 $messages['ro'] = array(
 	'quiz_desc' => 'Permite crearea de chestionare',
@@ -1438,7 +1439,7 @@ $messages['ro'] = array(
 	'quiz_colorWrong' => 'Greșit',
 	'quiz_colorNA' => 'Fără răspuns',
 	'quiz_colorError' => 'Eroare de sintaxă',
-	'quiz_correction' => 'Trimite',
+	'quiz_correction' => 'Trimitere',
 	'quiz_score' => 'Scorul tău este $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punct|$2 puncte}}',
 	'quiz_reset' => 'Reinițializare',
