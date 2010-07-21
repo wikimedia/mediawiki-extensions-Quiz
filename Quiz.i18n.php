@@ -57,6 +57,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author EugeneZelenko
  * @author Jon Harald Søby
  * @author Kwj2772
  * @author Purodha
@@ -67,7 +68,8 @@ $messages['qqq'] = array(
 	'quiz_addedPoints' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_ignoreCoef' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
-	'quiz_colorRight' => 'http://en.wikiversity.org/wiki/Help:Quiz',
+	'quiz_colorRight' => 'http://en.wikiversity.org/wiki/Help:Quiz
+{{Identical|Right}}',
 	'quiz_colorWrong' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_colorNA' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_colorError' => '{{Identical|Syntax error}}',
