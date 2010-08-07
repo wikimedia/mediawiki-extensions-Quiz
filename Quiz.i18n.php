@@ -329,6 +329,11 @@ $messages['ca'] = array(
 	'quiz_reset' => 'Restaura',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'quiz_correction' => 'ناردن',
+);
+
 /** Czech (Česky)
  * @author Li-sung
  * @author Matěj Grabovský
