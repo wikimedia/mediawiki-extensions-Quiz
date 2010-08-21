@@ -61,10 +61,11 @@ $messages['en'] = array(
  * @author Jon Harald Søby
  * @author Kwj2772
  * @author Purodha
+ * @author The Evil IP address
  * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
-	'quiz_desc' => 'Short description of the quizz extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'quiz_desc' => '{{desc}}',
 	'quiz_addedPoints' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_ignoreCoef' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
