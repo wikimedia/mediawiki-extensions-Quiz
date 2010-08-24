@@ -1668,9 +1668,15 @@ $messages['sv'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'quiz_colorRight' => 'சரி',
+	'quiz_colorWrong' => 'தவறு',
+	'quiz_colorNA' => 'பதிலளிக்கப்படவில்லை',
+	'quiz_colorError' => 'வழிமுறைத் தொடரமைப்பு பிழை',
+	'quiz_correction' => 'சமர்ப்பி',
 	'quiz_reset' => 'மீட்டமைக்க',
 );
 
