@@ -1677,6 +1677,8 @@ $messages['ta'] = array(
 	'quiz_colorNA' => 'பதிலளிக்கப்படவில்லை',
 	'quiz_colorError' => 'வழிமுறைத் தொடரமைப்பு பிழை',
 	'quiz_correction' => 'சமர்ப்பி',
+	'quiz_score' => 'தங்களுக்குக் கிடைத்த மதிப்பெண்கள் $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|புள்ளி|$2 புள்ளிகள்}}',
 	'quiz_reset' => 'மீட்டமைக்க',
 );
 
