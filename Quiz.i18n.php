@@ -1519,6 +1519,14 @@ $messages['sh'] = array(
 	'quiz_correction' => 'Unesi',
 );
 
+/** Sinhala (සිංහල)
+ * @author බිඟුවා
+ */
+$messages['si'] = array(
+	'quiz_colorRight' => 'නිවැරදි',
+	'quiz_colorWrong' => 'වැරදි',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -1672,6 +1680,10 @@ $messages['sv'] = array(
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'quiz_desc' => 'புதிர்களை உருவாக்க அனுமதிக்கிறது',
+	'quiz_addedPoints' => 'சரியான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது',
+	'quiz_cutoffPoints' => 'தவறான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது',
+	'quiz_shuffle' => 'கேள்விகளை மாற்றிப்போடவும்',
 	'quiz_colorRight' => 'சரி',
 	'quiz_colorWrong' => 'தவறு',
 	'quiz_colorNA' => 'பதிலளிக்கப்படவில்லை',
