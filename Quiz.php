@@ -104,7 +104,7 @@ class Quiz {
 	 *
 	 * @public
 	 */
-	function Quiz($argv, &$parser) {
+	function __construct($argv, &$parser) {
 		global $wgRequest, $wgLanguageCode;
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
@@ -438,7 +438,7 @@ class Question {
 	 * @param  $questionId				The Identifier of the question used to gernerate input names.
 	 * @param  $parser					The wikitext parser.
 	 */
-	function Question($beingCorrected, $caseSensitive, $questionId, &$parser) {
+	function __construct($beingCorrected, $caseSensitive, $questionId, &$parser) {
 		global $wgRequest;
 		$this->mRequest = &$wgRequest;
 		$this->mQuestionId = $questionId;
