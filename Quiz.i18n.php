@@ -1675,6 +1675,11 @@ $messages['sv'] = array(
 	'quiz_reset' => 'Återställ',
 );
 
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'quiz_correction' => 'Wasilisha',
+);
+
 /** Tamil (தமிழ்)
  * @author TRYPPN
  * @author Trengarasu
