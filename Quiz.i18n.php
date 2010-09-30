@@ -1688,6 +1688,7 @@ $messages['ta'] = array(
 	'quiz_desc' => 'புதிர்களை உருவாக்க அனுமதிக்கிறது',
 	'quiz_addedPoints' => 'சரியான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது',
 	'quiz_cutoffPoints' => 'தவறான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது',
+	'quiz_ignoreCoef' => 'கேள்வியின் பெருக்கும் எண்ணை ஒதுக்கித்தள்ளவும்',
 	'quiz_shuffle' => 'கேள்விகளை மாற்றிப்போடவும்',
 	'quiz_colorRight' => 'சரி',
 	'quiz_colorWrong' => 'தவறு',
