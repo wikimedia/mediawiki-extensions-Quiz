@@ -1493,6 +1493,14 @@ $messages['ru'] = array(
 	'quiz_reset' => 'Сбросить',
 );
 
+/** Rusyn (Русиньскый)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'quiz_colorRight' => 'Правилно',
+	'quiz_colorWrong' => 'Неправилно',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
