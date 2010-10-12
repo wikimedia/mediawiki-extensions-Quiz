@@ -56,6 +56,7 @@ $wgExtensionCredits['parserhook'][] = array(
  */
 $dir = dirname( __FILE__ ) . '/';
 $wgAutoloadClasses['Quiz'] = $dir . 'Quiz.class.php';
+$wgAutoloadClasses['Question'] = $dir . 'Quiz.class.php';
 $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
