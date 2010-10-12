@@ -2,7 +2,7 @@
 /**
  * ***** BEGIN LICENSE BLOCK *****
  * This file is part of Quiz.
- * Copyright (c) 2007 Louis-Rémi BABE. All rights reserved.
+ * Copyright © 2007 Louis-Rémi BABE. All rights reserved.
  *
  * Quiz is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,14 +23,14 @@
  * Quiz is a quiz tool for MediaWiki.
  *
  * To activate this extension :
- * * Create a new directory named quiz into the directory "extensions" of MediaWiki.
- * * Place this file and the files Quiz.i18n.php and quiz.js there.
+ * * Create a new directory named Quiz into the "extensions" directory of MediaWiki.
+ * * Place this file and the files Quiz.php and quiz.js there.
  * * Add this line at the end of your LocalSettings.php file :
- * require_once 'extensions/quiz/Quiz.php';
+ * require_once 'extensions/Quiz/Quiz.php';
  *
+ * @file
  * @version 1.0
- * @link http://www.mediawiki.org/wiki/Extension:Quiz
- *
+ * @link http://www.mediawiki.org/wiki/Extension:Quiz Documentation
  * @author BABE Louis-Rémi <lrbabe@gmail.com>
  */
 
@@ -40,20 +40,23 @@
 
 $messages = array();
 
+/** English
+ * @author Louis-Rémi Babe <lrbabe@gmail.com>
+ */
 $messages['en'] = array(
 	'quiz_desc'	        => 'Allows creation of quizzes',
-	'quiz_addedPoints'	=> "{{PLURAL:$1|Point|Points}} added for a correct answer",
-	'quiz_cutoffPoints'	=> "{{PLURAL:$1|Point|Points}} for a wrong answer",
+	'quiz_addedPoints'	=> '{{PLURAL:$1|Point|Points}} added for a correct answer',
+	'quiz_cutoffPoints'	=> '{{PLURAL:$1|Point|Points}} for a wrong answer',
 	'quiz_ignoreCoef'	=> "Ignore the questions' coefficients",
-	'quiz_shuffle'		=> "Shuffle questions",
-	'quiz_colorRight'	=> "Right",
-	'quiz_colorWrong'	=> "Wrong",
-	'quiz_colorNA'		=> "Not answered",
-	'quiz_colorError'	=> "Syntax error",
-	'quiz_correction'	=> "Submit",
-	'quiz_score'		=> "Your score is $1 / $2",
-	'quiz_points'		=> "$1 | {{PLURAL:$2|1 point|$2 points}}",
-	'quiz_reset'		=> "Reset"
+	'quiz_shuffle'		=> 'Shuffle questions',
+	'quiz_colorRight'	=> 'Right',
+	'quiz_colorWrong'	=> 'Wrong',
+	'quiz_colorNA'		=> 'Not answered',
+	'quiz_colorError'	=> 'Syntax error',
+	'quiz_correction'	=> 'Submit',
+	'quiz_score'		=> 'Your score is $1 / $2',
+	'quiz_points'		=> '$1 | {{PLURAL:$2|1 point|$2 points}}',
+	'quiz_reset'		=> 'Reset'
 );
 
 /** Message documentation (Message documentation)
