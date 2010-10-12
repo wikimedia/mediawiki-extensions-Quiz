@@ -24,8 +24,6 @@ class Quiz {
 		global $wgRequest, $wgLanguageCode;
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
-		# Determine which messages will be used, according to the language.
-		self::loadMessages();
 		# Allot a unique identifier to the quiz.
 		$this->mQuizId = self::$sQuizId;
 		self::$sQuizId++;
@@ -79,16 +77,6 @@ class Quiz {
 
 	static function resetQuizID() {
 		self::$sQuizId = 0;
-		return true;
-	}
-
-	static function loadMessages() {
-		static $messagesLoaded = false;
-		if ( $messagesLoaded ) {
-			return true;
-		}
-		$messagesLoaded = true;
-		wfLoadExtensionMessages( 'QuizExtension' );
 		return true;
 	}
 
@@ -168,10 +156,10 @@ class Quiz {
 			$settings[2] .=	'<td>' . wfMsgHtml( 'quiz_ignoreCoef' ) . ':</td>' .
 							"<td><input type=\"checkbox\" name=\"ignoringCoef\"$bChecked/></td>";
 			if( $this->mShuffle && !$this->mBeingCorrected ) {
-			 	$settings[3] .=	'<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMsgHtml( 'quiz_shuffle' ) . '" style="display: none;"/></td>' .
+				$settings[3] .=	'<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMsgHtml( 'quiz_shuffle' ) . '" style="display: none;"/></td>' .
 								'<td></td>';
 			} else {
-			 	$settings[3] .=	'<td></td><td></td>';
+				$settings[3] .=	'<td></td><td></td>';
 			}
 		}
 		if( $this->mBeingCorrected ) {
