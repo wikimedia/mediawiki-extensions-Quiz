@@ -34,47 +34,47 @@ class Quiz {
 		# Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
 		$this->mShuffleDiv = 0;
 		# Determine if this quiz is being corrected or not, according to the quizId
-	    $this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == "$this->mQuizId" )? true : false;
-	    # Initialize various parameters used for the score calculation
-	    $this->mState = 'NA';
-	    $this->mTotal = $this->mScore = 0;
-	    $this->mAddedPoints = 1;
-	    $this->mCutoffPoints = 0;
-	    $this->mIgnoringCoef = false;
-	    $this->mDisplaySimple = ( array_key_exists( 'display', $argv ) && $argv['display'] == 'simple' ) ? true : false;
-	    if( $this->mBeingCorrected ) {
-	    	$lAddedPoints = str_replace( ',', '.', $this->mRequest->getVal( 'addedPoints' ) );
-	    	if( is_numeric( $lAddedPoints ) ) {
-	    		$this->mAddedPoints = $lAddedPoints;
-	    	}
-	    	$lCutoffPoints = str_replace( ',', '.', $this->mRequest->getVal( 'cutoffPoints' ) );
-	    	if( is_numeric( $lCutoffPoints ) ) {
-	    		$this->mCutoffPoints = $lCutoffPoints;
-	    	}
-	    	if( $this->mRequest->getVal( 'ignoringCoef' ) == 'on' ) {
-	    		$this->mIgnoringCoef = true;
-	    	}
-	    }
-	    if (
+		$this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == "$this->mQuizId" )? true : false;
+		# Initialize various parameters used for the score calculation
+		$this->mState = 'NA';
+		$this->mTotal = $this->mScore = 0;
+		$this->mAddedPoints = 1;
+		$this->mCutoffPoints = 0;
+		$this->mIgnoringCoef = false;
+		$this->mDisplaySimple = ( array_key_exists( 'display', $argv ) && $argv['display'] == 'simple' ) ? true : false;
+		if( $this->mBeingCorrected ) {
+			$lAddedPoints = str_replace( ',', '.', $this->mRequest->getVal( 'addedPoints' ) );
+			if( is_numeric( $lAddedPoints ) ) {
+				$this->mAddedPoints = $lAddedPoints;
+			}
+			$lCutoffPoints = str_replace( ',', '.', $this->mRequest->getVal( 'cutoffPoints' ) );
+			if( is_numeric( $lCutoffPoints ) ) {
+				$this->mCutoffPoints = $lCutoffPoints;
+			}
+			if( $this->mRequest->getVal( 'ignoringCoef' ) == 'on' ) {
+				$this->mIgnoringCoef = true;
+			}
+		}
+		if (
 			array_key_exists( 'points', $argv ) &&
 			( !$this->mBeingCorrected || $this->mDisplaySimple ) &&
 			preg_match( '`([\d\.]*)/?([\d\.]*)(!)?`', str_replace( ',', '.', $argv['points'] ), $matches )
 		)
 		{
-	    	if( is_numeric( $matches[1] ) ) {
-	    		$this->mAddedPoints = $matches[1];
-	    	}
-	    	if( is_numeric( $matches[2] ) ) {
-	    		$this->mCutoffPoints = $matches[2];
-	    	}
-	    	if( array_key_exists( 3, $matches ) ) {
-	    		$this->mIgnoringCoef = true;
-	    	}
-	    }
-	    $this->mShuffle = ( array_key_exists( 'shuffle', $argv ) && $argv['shuffle'] == 'none' ) ? false : true;
-	    $this->mCaseSensitive = ( array_key_exists( 'case', $argv ) && $argv['case'] == '(i)' ) ? false : true;
-	    # Patterns used in several places
-	    $this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
+			if( is_numeric( $matches[1] ) ) {
+				$this->mAddedPoints = $matches[1];
+			}
+			if( is_numeric( $matches[2] ) ) {
+				$this->mCutoffPoints = $matches[2];
+			}
+			if( array_key_exists( 3, $matches ) ) {
+				$this->mIgnoringCoef = true;
+			}
+		}
+		$this->mShuffle = ( array_key_exists( 'shuffle', $argv ) && $argv['shuffle'] == 'none' ) ? false : true;
+		$this->mCaseSensitive = ( array_key_exists( 'case', $argv ) && $argv['case'] == '(i)' ) ? false : true;
+		# Patterns used in several places
+		$this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
 
 	static function resetQuizID() {
@@ -83,10 +83,10 @@ class Quiz {
 	}
 
 	static function loadMessages() {
-	    static $messagesLoaded = false;
-	    if ( $messagesLoaded ) {
+		static $messagesLoaded = false;
+		if ( $messagesLoaded ) {
 			return true;
-	    }
+		}
 		$messagesLoaded = true;
 		wfLoadExtensionMessages( 'QuizExtension' );
 		return true;
@@ -122,14 +122,14 @@ class Quiz {
 			$start = $wgContLang->isRTL() ? 'right' : 'left';
 			$end = $wgContLang->isRTL() ? 'left' : 'right';
 			$head  = "<style type=\"text/css\">\n";
-	    	$head .= ".quiz .settings input.numerical { width: 2em; }\n";
-	    	$head .= ".quiz .question { margin-$start: 2em; }\n";
-	    	$head .= ".quiz .margin { padding-$start: 20px; }\n";
-	    	$head .= ".quiz .header .questionId { font-size: 1.1em; font-weight: bold; float: $start;}\n";
-	    	$head .= "*>.quiz .header .questionId { text-indent: -1.5em; }\n"; // *> prevent ie6 from interpreting it.
+			$head .= ".quiz .settings input.numerical { width: 2em; }\n";
+			$head .= ".quiz .question { margin-$start: 2em; }\n";
+			$head .= ".quiz .margin { padding-$start: 20px; }\n";
+			$head .= ".quiz .header .questionId { font-size: 1.1em; font-weight: bold; float: $start;}\n";
+			$head .= "*>.quiz .header .questionId { text-indent: -1.5em; }\n"; // *> prevent ie6 from interpreting it.
 			$head .= ".quiz table.object, .quiz table.correction { background-color: transparent; }";
 			$head .= '.quiz .correction { background-color: ' . Quiz::getColor( 'correction' ) . ";}\n";
-	    	$head .= ".quiz .hideCorrection .correction { display: none; }\n";
+			$head .= ".quiz .hideCorrection .correction { display: none; }\n";
 			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
 			$head .= ".quiz table.settings { background-color: transparent; }\n";
 			# Part for the basic types's inputs.
@@ -142,12 +142,12 @@ class Quiz {
 			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:" . Quiz::getColor( 'correction' ) . "; }\n";
 			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }\n";
 			$head .= "</style>\n";
-	    	global $wgJsMimeType, $wgScriptPath, $wgOut;
-	    	# Determine the extension folder
-	    	$folder = array_pop( explode( '/', dirname( __FILE__ ) ) );
-	    	$folder = ( $folder == 'extensions' ) ? '' : "/$folder";
-	    	$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";
-	    	$wgOut->addScript( $head );
+			global $wgJsMimeType, $wgScriptPath, $wgOut;
+			# Determine the extension folder
+			$folder = array_pop( explode( '/', dirname( __FILE__ ) ) );
+			$folder = ( $folder == 'extensions' ) ? '' : "/$folder";
+			$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";
+			$wgOut->addScript( $head );
 		}
 
 		# Process the input
@@ -156,11 +156,11 @@ class Quiz {
 		# Generates the output.
 		$classHide = ( $this->mBeingCorrected ) ? '' : ' class="hideCorrection"';
 		$output  = '<div class="quiz">';
-	    $output .= "<form id=\"quiz$this->mQuizId\" $classHide method=\"post\" action=\"#quiz$this->mQuizId\">\n";
-	    # Determine the content of the settings table.
-	    $settings = array_fill( 0, 4, '' );
+		$output .= "<form id=\"quiz$this->mQuizId\" $classHide method=\"post\" action=\"#quiz$this->mQuizId\">\n";
+		# Determine the content of the settings table.
+		$settings = array_fill( 0, 4, '' );
 		if( !$this->mDisplaySimple ) {
-		 	$settings[0] .=	'<td>' . wfMsgHtml( 'quiz_addedPoints', $this->mAddedPoints ) . ':</td>' .
+			$settings[0] .=	'<td>' . wfMsgHtml( 'quiz_addedPoints', $this->mAddedPoints ) . ':</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&#160;&#160;</td>";
 			$settings[1] .=	'<td>' . wfMsgHtml( 'quiz_cutoffPoints', $this->mCutoffPoints ) . ':</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
@@ -199,23 +199,23 @@ class Quiz {
 		}
 		$output .= "<input type=\"hidden\" name=\"quizId\" value=\"$this->mQuizId\" />";
 
-	    $output .= '<div class="quizQuestions">';
+		$output .= '<div class="quizQuestions">';
 		$output .= $input;
 		$output .= '</div>';
 
-	    $output .= '<p><input type="submit" value="' . wfMsgHtml( 'quiz_correction' ) . '"/>';
-	    if( $this->mBeingCorrected ) {
+		$output .= '<p><input type="submit" value="' . wfMsgHtml( 'quiz_correction' ) . '"/>';
+		if( $this->mBeingCorrected ) {
 			$output .= '<input class="reset" type="submit" value="' .
 				wfMsgHtml( 'quiz_reset' ) . '" style="display: none;" />';
-	    }
+		}
 		$output .= '</p>';
 		$output .= '<span class="correction">';
 		$output .= wfMsgHtml( 'quiz_score',
 			"<span class=\"score\">$this->mScore</span>",
 			"<span class=\"total\">$this->mTotal</span>" );
-	    $output .= '</span>';
-	    $output .= "</form>\n";
-	    $output .= "</div>\n";
+		$output .= '</span>';
+		$output .= "</form>\n";
+		$output .= "</div>\n";
 		return $output;
 	}
 
