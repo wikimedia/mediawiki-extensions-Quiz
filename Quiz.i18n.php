@@ -1502,6 +1502,12 @@ $messages['ru'] = array(
 $messages['rue'] = array(
 	'quiz_colorRight' => 'Правилно',
 	'quiz_colorWrong' => 'Неправилно',
+	'quiz_colorNA' => 'Неодповіджене',
+	'quiz_colorError' => 'Сінтаксічна хыба',
+	'quiz_correction' => 'Одослати',
+	'quiz_score' => 'Ваш резултат є $1 / $2',
+	'quiz_points' => '$1 | $2 {{PLURAL:$2|очко|очка|очок}}',
+	'quiz_reset' => 'Ресетовати',
 );
 
 /** Yakut (Саха тыла)
