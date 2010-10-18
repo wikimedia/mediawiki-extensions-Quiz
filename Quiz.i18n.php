@@ -182,6 +182,23 @@ $messages['ast'] = array(
 	'quiz_reset' => 'Reinicializar',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Haqmar
+ */
+$messages['ba'] = array(
+	'quiz_cutoffPoints' => 'Яңылыш яуап өсөн {{PLURAL:$1|мәрәй|мәрәй}}',
+	'quiz_ignoreCoef' => 'Һорау коэффициенттарын иҫәпкә алмаҫҡа',
+	'quiz_shuffle' => 'Һорауҙарҙы бутарға',
+	'quiz_colorRight' => 'Дөрөҫ',
+	'quiz_colorWrong' => 'Яңылыш',
+	'quiz_colorNA' => 'Яуапланманы',
+	'quiz_colorError' => 'Синтаксик хата',
+	'quiz_correction' => 'Ебәрергә',
+	'quiz_score' => 'Мәрәйегеҙ: $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 мәрәй|$2 мәрәй}}',
+	'quiz_reset' => 'Баштан алырға',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
