@@ -186,6 +186,7 @@ $messages['ast'] = array(
  * @author Haqmar
  */
 $messages['ba'] = array(
+	'quiz_addedPoints' => 'Дөрөҫ яуап өсөн {{PLURAL:$1|мәрәй|мәрәй}} өҫтәлде',
 	'quiz_cutoffPoints' => 'Яңылыш яуап өсөн {{PLURAL:$1|мәрәй|мәрәй}}',
 	'quiz_ignoreCoef' => 'Һорау коэффициенттарын иҫәпкә алмаҫҡа',
 	'quiz_shuffle' => 'Һорауҙарҙы бутарға',
@@ -1517,6 +1518,11 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'quiz_desc' => 'Уможнює створёвати квізы',
+	'quiz_addedPoints' => '{{PLURAL:$1|Очко придане|Очка приданы}} за правилну одповідь',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Очко одняте|Очка одняты}} за неправилну одповідь',
+	'quiz_ignoreCoef' => 'Іґноровати коефіціенты вопросів',
+	'quiz_shuffle' => 'Замішати вопросы',
 	'quiz_colorRight' => 'Правилно',
 	'quiz_colorWrong' => 'Неправилно',
 	'quiz_colorNA' => 'Неодповіджене',
