@@ -597,7 +597,7 @@ $messages['fr'] = array(
 	'quiz_colorWrong' => 'Faux',
 	'quiz_colorNA' => 'Non répondu',
 	'quiz_colorError' => 'Erreur de syntaxe',
-	'quiz_correction' => 'Correction',
+	'quiz_correction' => 'Soumettre',
 	'quiz_score' => 'Votre pointage est $1 / $2',
 	'quiz_points' => '$1 | $2 point{{PLURAL:||s}}',
 	'quiz_reset' => 'Réinitialiser',
@@ -1954,6 +1954,14 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'quiz_desc' => 'דערלויבט שאפן אויספרעגן',
+);
+
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'quiz_colorRight' => 'Ẹ̀tọ́',
+	'quiz_colorWrong' => 'Àìtọ́',
 );
 
 /** Cantonese (粵語) */
