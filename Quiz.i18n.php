@@ -1962,6 +1962,7 @@ $messages['yi'] = array(
 $messages['yo'] = array(
 	'quiz_colorRight' => 'Ẹ̀tọ́',
 	'quiz_colorWrong' => 'Àìtọ́',
+	'quiz_reset' => 'Ìtúntò',
 );
 
 /** Cantonese (粵語) */
