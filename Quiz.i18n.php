@@ -141,6 +141,17 @@ $messages['ar'] = array(
 	'quiz_reset' => 'إعادة ضبط',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'quiz_colorRight' => 'ܬܪܝܨܐ',
+	'quiz_colorWrong' => 'ܠܐ ܬܪܝܨܐ',
+	'quiz_correction' => 'ܫܕܪ',
+	'quiz_score' => 'ܦܠܛܐ ܕܝܠܟ ܗܘ $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 ܢܘܩܙܐ|$2 ܢܘܩܙ̈ܐ}}',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Meno25
@@ -1169,6 +1180,13 @@ $messages['ml'] = array(
 	'quiz_score' => 'താങ്കളുടെ സ്കോർ $1/$2',
 	'quiz_points' => '$1|{{PLURAL:$2|ഒരു പോയിന്റ്|$2 പോയിന്റുകൾ}}',
 	'quiz_reset' => 'പുനഃക്രമീകരിക്കുക',
+);
+
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'quiz_correction' => 'Явуулах',
 );
 
 /** Marathi (मराठी)
