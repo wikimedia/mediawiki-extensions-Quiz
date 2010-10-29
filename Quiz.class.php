@@ -21,7 +21,7 @@ class Quiz {
 	 * Constructor
 	 */
 	public function __construct( $argv, &$parser ) {
-		global $wgRequest, $wgLanguageCode;
+		global $wgRequest;
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
 		# Allot a unique identifier to the quiz.
