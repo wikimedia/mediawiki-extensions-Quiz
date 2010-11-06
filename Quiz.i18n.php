@@ -546,7 +546,7 @@ $messages['eu'] = array(
 	'quiz_correction' => 'Bidali',
 	'quiz_score' => 'Zure kalifikazioa $1 / $2 da',
 	'quiz_points' => '$1 | {{PLURAL:$2|puntu 1|$2 puntu}}',
-	'quiz_reset' => 'Berrezarri',
+	'quiz_reset' => 'Hasieratu',
 );
 
 /** Persian (فارسی)
