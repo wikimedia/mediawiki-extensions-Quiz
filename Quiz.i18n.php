@@ -1150,8 +1150,8 @@ $messages['lv'] = array(
  */
 $messages['mk'] = array(
 	'quiz_desc' => 'Овозможува создавање на квизови',
-	'quiz_addedPoints' => 'добивате {{PLURAL:$1|поен|поени}} за точен одговор',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|поен|поени}} за погрешен одговор',
+	'quiz_addedPoints' => 'добивате {{PLURAL:$1|бод|бода}} за точен одговор',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|бод|бода}} за погрешен одговор',
 	'quiz_ignoreCoef' => 'Занемари ги коефициентите на прашањата',
 	'quiz_shuffle' => 'Измешај ги прашањата',
 	'quiz_colorRight' => 'Точно',
@@ -1160,7 +1160,7 @@ $messages['mk'] = array(
 	'quiz_colorError' => 'синтаксна грешка',
 	'quiz_correction' => 'Поднеси',
 	'quiz_score' => 'Вашето бодовно салдо изнесува $1 / $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 поен|$2 поени}}',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 бод|$2 бода}}',
 	'quiz_reset' => 'Врати одново',
 );
 
