@@ -1360,6 +1360,13 @@ $messages['os'] = array(
 	'quiz_colorWrong' => 'Рæдыд',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'quiz_colorNA' => 'Kene Antwatt gewwe',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Maikking
