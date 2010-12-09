@@ -405,6 +405,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Raimond Spekking
  */
 $messages['de'] = array(
@@ -417,7 +418,7 @@ $messages['de'] = array(
 	'quiz_colorWrong' => 'Falsch',
 	'quiz_colorNA' => 'Nicht beantwortet',
 	'quiz_colorError' => 'Syntaxfehler',
-	'quiz_correction' => 'Korrektur',
+	'quiz_correction' => 'Speichern',
 	'quiz_score' => 'Punkte: $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}',
 	'quiz_reset' => 'Neustart',
