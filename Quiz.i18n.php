@@ -1636,6 +1636,7 @@ $messages['sl'] = array(
 /** Albanian (Shqip)
  * @author Cradel
  * @author Ergon
+ * @author Mikullovci11
  */
 $messages['sq'] = array(
 	'quiz_desc' => 'Lejon krijimin e enigmave',
@@ -1643,7 +1644,12 @@ $messages['sq'] = array(
 	'quiz_shuffle' => 'Përziej pyetjet',
 	'quiz_colorRight' => 'Korrekt',
 	'quiz_colorWrong' => 'Gabim',
+	'quiz_colorNA' => "S'ka përgjigje",
+	'quiz_colorError' => 'Gabim sintakse',
 	'quiz_correction' => 'Dërgo',
+	'quiz_score' => 'Rezultati juaj është $ 1 / $ 2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 pikë|$2 pikë}}',
+	'quiz_reset' => 'Riktheje',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
