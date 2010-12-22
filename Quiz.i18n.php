@@ -1589,6 +1589,7 @@ $messages['sh'] = array(
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author තඹරු විජේසේකර
  * @author බිඟුවා
  */
 $messages['si'] = array(
@@ -1596,6 +1597,7 @@ $messages['si'] = array(
 	'quiz_colorRight' => 'නිවැරදි',
 	'quiz_colorWrong' => 'වැරදි',
 	'quiz_colorNA' => 'පිළිතුරුදී නැත',
+	'quiz_colorError' => 'කාරක-රීති දෝෂය',
 	'quiz_correction' => 'යොමන්න',
 	'quiz_score' => 'ඔබේ ලකුණ $1 / $2 ය',
 	'quiz_points' => '$1 | {{PLURAL:$2|එක් ලකුණක්|ලකුණු $2 ක්}}',
