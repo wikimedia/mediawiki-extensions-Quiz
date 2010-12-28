@@ -389,6 +389,14 @@ $messages['cs'] = array(
 	'quiz_reset' => 'Reset',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'quiz_colorRight' => 'Cywir',
+	'quiz_colorWrong' => 'Anghywir',
+);
+
 /** Danish (Dansk)
  * @author Byrial
  * @author Jon Harald Søby
