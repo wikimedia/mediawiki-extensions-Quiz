@@ -1601,6 +1601,10 @@ $messages['sh'] = array(
  * @author බිඟුවා
  */
 $messages['si'] = array(
+	'quiz_desc' => 'ප්‍රශ්න විමසුම් නිර්මාණයට අවසර දෙයි',
+	'quiz_addedPoints' => 'නිවැරදි පිළිතුර සඳහා ලැබෙන {{PLURAL:$1|ලකුණ|ලකුණු}}',
+	'quiz_cutoffPoints' => 'වැරදි පිළිතුර සඳහා ලැබෙන {{PLURAL:$1|ලකුණ|ලකුණු}}',
+	'quiz_ignoreCoef' => 'ප්‍රශ්නවල සංගුණක නොසලකන්න',
 	'quiz_shuffle' => 'ප්‍රශ්න අනුපිළිවෙල වෙනස් කරන්න',
 	'quiz_colorRight' => 'නිවැරදි',
 	'quiz_colorWrong' => 'වැරදි',
