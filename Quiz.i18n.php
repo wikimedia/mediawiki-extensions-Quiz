@@ -779,22 +779,23 @@ $messages['hsb'] = array(
 );
 
 /** Haitian (Kreyòl ayisyen)
+ * @author Boukman
  * @author Jvm
  */
 $messages['ht'] = array(
 	'quiz_desc' => 'Pemèt Kreyasyon kwiz yo',
-	'quiz_addedPoints' => 'Pwen mete pou repons kòrèk',
-	'quiz_cutoffPoints' => 'Pwen retire pou repons ki enkòrèk',
-	'quiz_ignoreCoef' => 'Ignore koefisyan kesyon yo',
+	'quiz_addedPoints' => '{{PLURAL:$1|Pwen|Pwen}} mete pou repons ki bon',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Pwen|Pwen}} retire pou repons ki pa bon',
+	'quiz_ignoreCoef' => 'Inyore koefisyan kesyon yo',
 	'quiz_shuffle' => 'Mikse kesyon yo',
-	'quiz_colorRight' => 'Korèk',
-	'quiz_colorWrong' => 'Enkòrèk',
+	'quiz_colorRight' => 'Bon',
+	'quiz_colorWrong' => 'Move',
 	'quiz_colorNA' => 'San repons',
-	'quiz_colorError' => 'Erè Sintaks',
+	'quiz_colorError' => 'Erè Sentaks',
 	'quiz_correction' => 'Soumèt',
 	'quiz_score' => 'Rezilta w se $1 / $2',
-	'quiz_points' => '$1 | $2 pwen',
-	'quiz_reset' => 'Resèt',
+	'quiz_points' => '$1 | $2 pwen{{PLURAL:||}}',
+	'quiz_reset' => 'Rekomanse',
 );
 
 /** Hungarian (Magyar)
