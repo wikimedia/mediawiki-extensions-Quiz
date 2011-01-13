@@ -1674,8 +1674,9 @@ $messages['sq'] = array(
 	'quiz_reset' => 'Riktheje',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
@@ -1691,7 +1692,7 @@ $messages['sr-ec'] = array(
 	'quiz_correction' => 'Постави',
 	'quiz_score' => 'Ваш резултат је $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 бод|$2 бода|$2 бодова}}',
-	'quiz_reset' => 'Ресетуј',
+	'quiz_reset' => 'Поништи',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
