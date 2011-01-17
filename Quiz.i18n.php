@@ -2061,12 +2061,13 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
+ * @author Mark85296341
  */
 $messages['zh-hant'] = array(
 	'quiz_desc' => '容許建立小測題目',
 	'quiz_addedPoints' => '答對加上的{{PLURAL:$1|分數|分數}}',
 	'quiz_cutoffPoints' => '答錯減去的{{PLURAL:$1|分數|分數}}',
-	'quiz_ignoreCoef' => '略過問題的系數',
+	'quiz_ignoreCoef' => '略過問題的係數',
 	'quiz_shuffle' => '隨機問題',
 	'quiz_colorRight' => '對',
 	'quiz_colorWrong' => '錯',
