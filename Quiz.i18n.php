@@ -2011,6 +2011,7 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'quiz_desc' => 'דערלויבט שאפן אויספרעגן',
+	'quiz_reset' => 'צוריקשטעלן',
 );
 
 /** Yoruba (Yorùbá)
