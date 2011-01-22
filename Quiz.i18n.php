@@ -193,7 +193,7 @@ $messages['ast'] = array(
 	'quiz_reset' => 'Reinicializar',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -244,7 +244,7 @@ $messages['bcl'] = array(
 	'quiz_reset' => 'Ibalik',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -1695,7 +1695,7 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Поништи',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
