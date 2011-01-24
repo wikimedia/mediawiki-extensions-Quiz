@@ -1075,6 +1075,15 @@ $messages['ksh'] = array(
 	'quiz_reset' => 'Neu Aanfange!',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'quiz_colorRight' => 'Rast',
+	'quiz_colorWrong' => 'Nerast',
+	'quiz_score' => 'Skora te  $1 / $2 e',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
