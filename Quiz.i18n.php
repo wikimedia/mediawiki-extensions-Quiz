@@ -1678,7 +1678,7 @@ $messages['sq'] = array(
 	'quiz_colorNA' => "S'ka përgjigje",
 	'quiz_colorError' => 'Gabim sintakse',
 	'quiz_correction' => 'Dërgo',
-	'quiz_score' => 'Rezultati juaj është $ 1 / $ 2',
+	'quiz_score' => 'Rezultati juaj është $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 pikë|$2 pikë}}',
 	'quiz_reset' => 'Riktheje',
 );
