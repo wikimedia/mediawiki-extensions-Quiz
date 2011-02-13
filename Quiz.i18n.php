@@ -393,8 +393,18 @@ $messages['cs'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'quiz_addedPoints' => 'Nifer y {{PLURAL:$1|pwyntiau}} am ateb cywir',
+	'quiz_cutoffPoints' => 'Nifer y {{PLURAL:$1|pwyntiau}} am ateb anghywir',
+	'quiz_ignoreCoef' => "Anwybyddu cyfernodau'r cwestiynau",
+	'quiz_shuffle' => 'Cymysger y cwestiynau',
 	'quiz_colorRight' => 'Cywir',
 	'quiz_colorWrong' => 'Anghywir',
+	'quiz_colorNA' => 'Heb ei ateb',
+	'quiz_colorError' => 'Gwall yn y gystrawen',
+	'quiz_correction' => 'Cyflwyner',
+	'quiz_score' => 'Eich sgôr yw $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|0 pwyntiau|1 pwynt|2 bwynt|3 phwynt|6 phwynt|$2 pwynt}}',
+	'quiz_reset' => 'Ailosoder',
 );
 
 /** Danish (Dansk)
@@ -1781,9 +1791,17 @@ $messages['sv'] = array(
 	'quiz_reset' => 'Återställ',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Lloffiwr
+ */
 $messages['sw'] = array(
+	'quiz_colorRight' => 'Ni sahihi',
+	'quiz_colorWrong' => 'Si sahihi',
+	'quiz_colorNA' => 'Haikujibiwa',
 	'quiz_correction' => 'Wasilisha',
+	'quiz_score' => 'Una maksi $1/$2',
+	'quiz_points' => '{{PLURAL:$2|Maksi}} | $1',
+	'quiz_reset' => 'Panga upya',
 );
 
 /** Tamil (தமிழ்)
