@@ -1678,9 +1678,12 @@ $messages['sl'] = array(
  * @author Cradel
  * @author Ergon
  * @author Mikullovci11
+ * @author Olsi
  */
 $messages['sq'] = array(
 	'quiz_desc' => 'Lejon krijimin e enigmave',
+	'quiz_addedPoints' => '{{PLURAL:$1|Pika|Pikët}} shtuar për një përgjigje të saktë',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Pika|Pikët}} për një përgjigje të gabuar',
 	'quiz_ignoreCoef' => 'Injoro koificientin e pyetjes',
 	'quiz_shuffle' => 'Përziej pyetjet',
 	'quiz_colorRight' => 'Korrekt',
@@ -1716,6 +1719,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  */
 $messages['sr-el'] = array(
 	'quiz_desc' => 'Omogući stvaranje upitnika.',
@@ -1730,7 +1734,7 @@ $messages['sr-el'] = array(
 	'quiz_correction' => 'Postavi',
 	'quiz_score' => 'Vaš rezultat je $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 bod|$2 boda|$2 bodova}}',
-	'quiz_reset' => 'Resetuj',
+	'quiz_reset' => 'Poništi',
 );
 
 /** Seeltersk (Seeltersk)
