@@ -1393,6 +1393,7 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'quiz_colorWrong' => 'Letz',
 	'quiz_colorNA' => 'Kene Antwatt gewwe',
 );
 
