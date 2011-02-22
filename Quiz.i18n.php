@@ -1091,6 +1091,7 @@ $messages['ksh'] = array(
 $messages['ku-latn'] = array(
 	'quiz_colorRight' => 'Rast',
 	'quiz_colorWrong' => 'Nerast',
+	'quiz_correction' => 'Tomar bike',
 	'quiz_score' => 'Skora te  $1 / $2 e',
 );
 
