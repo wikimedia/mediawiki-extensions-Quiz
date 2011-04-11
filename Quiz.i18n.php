@@ -1243,6 +1243,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  */
 $messages['ms'] = array(
@@ -1255,7 +1256,7 @@ $messages['ms'] = array(
 	'quiz_colorWrong' => 'Salah',
 	'quiz_colorNA' => 'Tidak dijawab',
 	'quiz_colorError' => 'Ralat sintaks',
-	'quiz_correction' => 'Serah',
+	'quiz_correction' => 'Serahkan',
 	'quiz_score' => 'Anda mendapat $1 daripada $2 mata',
 	'quiz_points' => '$1 | $2 mata',
 	'quiz_reset' => 'Set semula',
