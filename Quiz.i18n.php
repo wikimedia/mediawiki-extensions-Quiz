@@ -176,6 +176,7 @@ $messages['arz'] = array(
 /** Asturian (Asturianu)
  * @author Cedric31
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'quiz_desc' => "Permite la creación d'encuestes",
@@ -190,7 +191,7 @@ $messages['ast'] = array(
 	'quiz_correction' => 'Unviar',
 	'quiz_score' => 'La to puntuación ye $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 puntu|$2 puntos}}',
-	'quiz_reset' => 'Reinicializar',
+	'quiz_reset' => 'Reaniciar',
 );
 
 /** Bashkir (Башҡортса)
