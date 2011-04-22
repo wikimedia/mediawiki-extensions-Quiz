@@ -194,6 +194,15 @@ $messages['ast'] = array(
 	'quiz_reset' => 'Reaniciar',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Vugar 1981
+ */
+$messages['az'] = array(
+	'quiz_colorRight' => 'Doğru',
+	'quiz_colorWrong' => 'Yanlış',
+	'quiz_correction' => 'Yolla',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
