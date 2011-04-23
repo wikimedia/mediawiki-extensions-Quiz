@@ -135,7 +135,7 @@ $messages['ar'] = array(
 	'quiz_colorWrong' => 'خطأ',
 	'quiz_colorNA' => 'لم تتم الإجابة عليه',
 	'quiz_colorError' => 'خطأ صياغة',
-	'quiz_correction' => 'تنفيذ',
+	'quiz_correction' => 'أرسل',
 	'quiz_score' => 'نتيجتك هي $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2||نقطة واحدة|نقطتان|$2 نقاط|$2 نقطة}}',
 	'quiz_reset' => 'إعادة ضبط',
@@ -195,12 +195,14 @@ $messages['ast'] = array(
 );
 
 /** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
  * @author Vugar 1981
  */
 $messages['az'] = array(
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
 	'quiz_correction' => 'Yolla',
+	'quiz_reset' => 'Qur',
 );
 
 /** Bashkir (Башҡортса)
