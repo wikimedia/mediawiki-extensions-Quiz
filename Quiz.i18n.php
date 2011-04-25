@@ -422,6 +422,7 @@ $messages['cy'] = array(
 /** Danish (Dansk)
  * @author Byrial
  * @author Jon Harald Søby
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'quiz_desc' => 'Tillader oprettelse af quizzer',
@@ -431,7 +432,9 @@ $messages['da'] = array(
 	'quiz_colorNA' => 'Ikke svared',
 	'quiz_colorError' => 'syntaksfejl',
 	'quiz_correction' => 'Send',
+	'quiz_score' => 'Din pointsum er $1 af $2 mulige',
 	'quiz_points' => '$1 | $2 {{PLURAL:$2|point|point}}',
+	'quiz_reset' => 'Nulstil',
 );
 
 /** German (Deutsch)
