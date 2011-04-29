@@ -201,6 +201,7 @@ $messages['ast'] = array(
 $messages['az'] = array(
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
+	'quiz_colorNA' => 'Cavabsız',
 	'quiz_correction' => 'Yolla',
 	'quiz_reset' => 'Qur',
 );
