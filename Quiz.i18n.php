@@ -1832,6 +1832,7 @@ $messages['sw'] = array(
 /** Tamil (தமிழ்)
  * @author TRYPPN
  * @author Trengarasu
+ * @author செல்வா
  */
 $messages['ta'] = array(
 	'quiz_desc' => 'புதிர்களை உருவாக்க அனுமதிக்கிறது',
@@ -1841,7 +1842,7 @@ $messages['ta'] = array(
 	'quiz_shuffle' => 'கேள்விகளை மாற்றிப்போடவும்',
 	'quiz_colorRight' => 'சரி',
 	'quiz_colorWrong' => 'தவறு',
-	'quiz_colorNA' => 'பதிலளிக்கப்படவில்லை',
+	'quiz_colorNA' => 'விடை அளிக்கவில்லை',
 	'quiz_colorError' => 'வழிமுறைத் தொடரமைப்பு பிழை',
 	'quiz_correction' => 'சமர்ப்பி',
 	'quiz_score' => 'தங்களுக்குக் கிடைத்த மதிப்பெண்கள் $1 / $2',
