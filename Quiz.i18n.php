@@ -1240,11 +1240,12 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Htt
  * @author Kaustubh
  */
 $messages['mr'] = array(
 	'quiz_desc' => 'प्रश्नावल्या तयार करण्याची परवानगी देते.',
-	'quiz_addedPoints' => 'बरोबर उत्तरासाठी गुण दिले',
+	'quiz_addedPoints' => 'बरोबर उत्तरासाठी गुण {{PLURAL:$1|दिला|दिले}}',
 	'quiz_cutoffPoints' => 'चुकीच्या उत्तरासाठी गुण वजा केले',
 	'quiz_ignoreCoef' => 'प्रश्नाच्या कोएफिशियंटकडे लक्ष देऊ नका',
 	'quiz_shuffle' => 'प्रश्न वरखाली करा',
