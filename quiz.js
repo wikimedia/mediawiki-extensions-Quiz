@@ -116,12 +116,16 @@
 							};
 						}
 						input[j].onkeydown = function() {
-							this.form.shuffleButton.disabled = true;
+							if( this.form.shuffleButton ) {
+								this.form.shuffleButton.disabled = true;
+							}
 						};
 					}
 					if( input[j].className == 'check' ) {
 						input[j].onclick = function() {
-							this.form.shuffleButton.disabled = true;
+							if( this.form.shuffleButton ) {
+								this.form.shuffleButton.disabled = true;
+							}
 						};
 					}
 					// Disable the submit button if the page is in preview mode
