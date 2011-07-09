@@ -406,6 +406,7 @@ $messages['cs'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'quiz_desc' => 'Yn galluogi llunio cwisiau',
 	'quiz_addedPoints' => 'Nifer y {{PLURAL:$1|pwyntiau}} am ateb cywir',
 	'quiz_cutoffPoints' => 'Nifer y {{PLURAL:$1|pwyntiau}} am ateb anghywir',
 	'quiz_ignoreCoef' => "Anwybyddu cyfernodau'r cwestiynau",
