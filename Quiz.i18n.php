@@ -2100,7 +2100,7 @@ $messages['yue'] = array(
  * @author PhiLiP
  */
 $messages['zh-hans'] = array(
-	'quiz_desc' => '容许建立小测题目',
+	'quiz_desc' => '允许创建测验',
 	'quiz_addedPoints' => '答对加上的{{PLURAL:$1|分数|分数}}',
 	'quiz_cutoffPoints' => '答错减去的{{PLURAL:$1|分数|分数}}',
 	'quiz_ignoreCoef' => '略过问题的系数',
