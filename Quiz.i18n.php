@@ -1403,7 +1403,7 @@ $messages['oc'] = array(
 	'quiz_reset' => 'Reïnicializar',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -1612,7 +1612,7 @@ $messages['rue'] = array(
 	'quiz_reset' => 'Ресетовати',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
