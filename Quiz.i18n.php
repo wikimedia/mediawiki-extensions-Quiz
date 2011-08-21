@@ -1460,6 +1460,16 @@ $messages['pms'] = array(
 	'quiz_reset' => 'Aseré',
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'quiz_shuffle' => 'سوال رلاؤ',
+	'quiz_colorRight' => 'ٹھیک۔ سجے پاسے',
+	'quiz_colorWrong' => 'غلط',
+	'quiz_colorNA' => 'جواب نئیں دتا گیا۔',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
