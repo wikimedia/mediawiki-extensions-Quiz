@@ -197,12 +197,13 @@ $messages['ast'] = array(
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
  * @author Vugar 1981
+ * @author Wertuose
  */
 $messages['az'] = array(
 	'quiz_colorRight' => 'Doğru',
 	'quiz_colorWrong' => 'Yanlış',
 	'quiz_colorNA' => 'Cavabsız',
-	'quiz_correction' => 'Yolla',
+	'quiz_correction' => 'Təsdiq et',
 	'quiz_reset' => 'Qur',
 );
 
@@ -1464,10 +1465,14 @@ $messages['pms'] = array(
  * @author Khalid Mahmood
  */
 $messages['pnb'] = array(
+	'quiz_desc' => 'کوئز دے بنن دی اجازت',
 	'quiz_shuffle' => 'سوال رلاؤ',
 	'quiz_colorRight' => 'ٹھیک۔ سجے پاسے',
 	'quiz_colorWrong' => 'غلط',
 	'quiz_colorNA' => 'جواب نئیں دتا گیا۔',
+	'quiz_colorError' => 'بولی دی غلطی',
+	'quiz_correction' => 'اگے رکھو',
+	'quiz_reset' => 'دوبارہ ٹھیک کرنا',
 );
 
 /** Pashto (پښتو)
