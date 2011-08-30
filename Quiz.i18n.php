@@ -1404,6 +1404,14 @@ $messages['oc'] = array(
 	'quiz_reset' => 'Reïnicializar',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'quiz_correction' => 'ଦାଖଲ କରିବା',
+	'quiz_reset' => 'ପୁନଃ ସ୍ଥାପନ',
+);
+
 /** Ossetic (Ирон)
  * @author Amikeco
  */
