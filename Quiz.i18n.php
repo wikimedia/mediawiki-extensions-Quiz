@@ -1409,9 +1409,21 @@ $messages['oc'] = array(
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
+ * @author Psubhashish
  */
 $messages['or'] = array(
+	'quiz_desc' => 'ପ୍ରଶ୍ନୋତ୍ତର ତିଆରି କରିବାରେ ସହଯୋଗ କରିଥାଏ ।',
+	'quiz_addedPoints' => 'ଠିକ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟି ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}} ଯୋଡ଼ାଗଲା',
+	'quiz_cutoffPoints' => 'ଭୁଲ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟିଏ ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}}',
+	'quiz_ignoreCoef' => 'ପ୍ରଶ୍ନର ଗୁଣାଙ୍କସବୁକୁ ଅଣଦେଖା କରନ୍ତୁ',
+	'quiz_shuffle' => 'ପ୍ରଶ୍ନ ସବୁକୁ ଗୋଳାଇଘାଣ୍ଟି ଦିଅନ୍ତୁ',
+	'quiz_colorRight' => 'ଠିକ',
+	'quiz_colorWrong' => 'ଭୁଲ',
+	'quiz_colorNA' => 'ଉତ୍ତର ଦିଆଯାଇନାହିଁ',
+	'quiz_colorError' => 'ସିଣ୍ଟାକ୍ସ ଭୁଲ',
 	'quiz_correction' => 'ଦାଖଲ କରିବା',
+	'quiz_score' => 'ଆପଣଙ୍କର ସ୍କୋର $1 / $2 ହେଲା',
+	'quiz_points' => '$1 | {{PLURAL:$2|ଗୋଟିଏ ପଏଣ୍ଟ|$2 ଗୋଟି ପଏଣ୍ଟ}}',
 	'quiz_reset' => 'ପୁନଃ ସ୍ଥାପନ',
 );
 
