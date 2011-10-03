@@ -1489,12 +1489,15 @@ $messages['pms'] = array(
  */
 $messages['pnb'] = array(
 	'quiz_desc' => 'کوئز دے بنن دی اجازت',
+	'quiz_addedPoints' => '{{انیک:$1|نمبر}} جوڑے گۓ ٹھیک جواب لئی۔',
+	'quiz_ignoreCoef' => 'سوال دے کوایفیشینٹو نوں چھڈو',
 	'quiz_shuffle' => 'سوال رلاؤ',
 	'quiz_colorRight' => 'ٹھیک۔ سجے پاسے',
 	'quiz_colorWrong' => 'غلط',
 	'quiz_colorNA' => 'جواب نئیں دتا گیا۔',
 	'quiz_colorError' => 'بولی دی غلطی',
 	'quiz_correction' => 'اگے رکھو',
+	'quiz_score' => 'تواڈا سکور اے $1 / $2',
 	'quiz_reset' => 'دوبارہ ٹھیک کرنا',
 );
 
