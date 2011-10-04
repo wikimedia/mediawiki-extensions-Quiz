@@ -132,7 +132,8 @@ class Quiz {
 			$head .= "</style>\n";
 			global $wgJsMimeType, $wgScriptPath, $wgOut;
 			# Determine the extension folder
-			$folder = array_pop( explode( '/', dirname( __FILE__ ) ) );
+			$folderList = explode( '/', dirname( __FILE__ ) );
+			$folder = array_pop( $folderList );
 			$folder = ( $folder == 'extensions' ) ? '' : "/$folder";
 			$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";
 			$wgOut->addScript( $head );
