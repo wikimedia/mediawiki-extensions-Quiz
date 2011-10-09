@@ -1762,20 +1762,20 @@ $messages['sq'] = array(
 	'quiz_reset' => 'Riktheje',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
-	'quiz_desc' => 'Омогући стварање упитника.',
+	'quiz_desc' => 'Омогућава стварање квизова',
 	'quiz_addedPoints' => '{{PLURAL:$1|бод|бода|бодова}} се додаје на тачан одговор',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|Бод|Бода|Бодова}} за погрешан одговор',
 	'quiz_ignoreCoef' => 'Игнориши коефицијенте питања',
 	'quiz_shuffle' => 'Измешај питања',
 	'quiz_colorRight' => 'Тачно',
 	'quiz_colorWrong' => 'Погрешно',
-	'quiz_colorNA' => 'Није одговорено',
+	'quiz_colorNA' => 'Неодговорено',
 	'quiz_colorError' => 'Грешка у синтакси',
 	'quiz_correction' => 'Пошаљи',
 	'quiz_score' => 'Ваш резултат је $1 / $2',
