@@ -1683,6 +1683,7 @@ $messages['sh'] = array(
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author Singhalawap
  * @author තඹරු විජේසේකර
  * @author බිඟුවා
  */
@@ -1699,7 +1700,7 @@ $messages['si'] = array(
 	'quiz_correction' => 'යොමන්න',
 	'quiz_score' => 'ඔබේ ලකුණ $1 / $2 ය',
 	'quiz_points' => '$1 | {{PLURAL:$2|එක් ලකුණක්|ලකුණු $2 ක්}}',
-	'quiz_reset' => 'ප්‍රත්‍යාරම්භ කරන්න',
+	'quiz_reset' => 'නැවත සකසන්න',
 );
 
 /** Slovak (Slovenčina)
