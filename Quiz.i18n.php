@@ -1108,7 +1108,7 @@ $messages['ksh'] = array(
 	'quiz_reset' => 'Neu Aanfange!',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -1674,7 +1674,7 @@ $messages['sah'] = array(
 	'quiz_reset' => 'Саҥаттан',
 );
 
-/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+/** Serbo-Croatian (Srpskohrvatski)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -1784,7 +1784,7 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Поништи',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -1916,7 +1916,7 @@ $messages['te'] = array(
 	'quiz_reset' => 'రీసెట్',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1935,7 +1935,7 @@ $messages['tg-cyrl'] = array(
 	'quiz_reset' => 'Аз нав',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
