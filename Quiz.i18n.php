@@ -1424,7 +1424,7 @@ $messages['or'] = array(
 	'quiz_correction' => 'ଦାଖଲ କରିବା',
 	'quiz_score' => 'ଆପଣଙ୍କର ସ୍କୋର $1 / $2 ହେଲା',
 	'quiz_points' => '$1 | {{PLURAL:$2|ଗୋଟିଏ ପଏଣ୍ଟ|$2 ଗୋଟି ପଏଣ୍ଟ}}',
-	'quiz_reset' => 'ପୁନଃ ସ୍ଥାପନ',
+	'quiz_reset' => 'ପୁନସ୍ଥାପନ',
 );
 
 /** Ossetic (Ирон)
