@@ -1246,12 +1246,13 @@ $messages['mn'] = array(
 
 /** Marathi (मराठी)
  * @author Htt
+ * @author Kaajawa
  * @author Kaustubh
  */
 $messages['mr'] = array(
 	'quiz_desc' => 'प्रश्नावल्या तयार करण्याची परवानगी देते.',
 	'quiz_addedPoints' => 'बरोबर उत्तरासाठी गुण {{PLURAL:$1|दिला|दिले}}',
-	'quiz_cutoffPoints' => 'चुकीच्या उत्तरासाठी गुण वजा केले',
+	'quiz_cutoffPoints' => 'चुकीच्या उत्तरासाठी {{PLURAL:$1|गुण|गुण}} वजा',
 	'quiz_ignoreCoef' => 'प्रश्नाच्या कोएफिशियंटकडे लक्ष देऊ नका',
 	'quiz_shuffle' => 'प्रश्न वरखाली करा',
 	'quiz_colorRight' => 'बरोबर',
@@ -1260,7 +1261,7 @@ $messages['mr'] = array(
 	'quiz_colorError' => 'चुकीचा सिन्टॅक्स',
 	'quiz_correction' => 'पाठवा',
 	'quiz_score' => 'तुमचे गुण $1 / $2',
-	'quiz_points' => '$1 | $2 गुण',
+	'quiz_points' => '$1 | {{PLURAL:$2|१ गुण|$2 गुण}}',
 	'quiz_reset' => 'पूर्ववत करा',
 );
 
