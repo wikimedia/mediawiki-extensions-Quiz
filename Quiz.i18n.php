@@ -1373,7 +1373,7 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
 	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspoeng}} for galt svar',
