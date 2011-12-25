@@ -1311,6 +1311,25 @@ $messages['nah'] = array(
 	'quiz_correction' => 'Tiquihuāz',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'quiz_desc' => 'Tillater oppretting av quizer',
+	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspoeng}} for galt svar',
+	'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
+	'quiz_shuffle' => 'Stokk spørsmålene',
+	'quiz_colorRight' => 'Riktig',
+	'quiz_colorWrong' => 'Galt',
+	'quiz_colorNA' => 'Ikke besvart',
+	'quiz_colorError' => 'Syntaksfeil',
+	'quiz_correction' => 'Svar',
+	'quiz_score' => 'Din poengsum er $1 av $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 poeng|$2 poeng}}',
+	'quiz_reset' => 'Nullstill',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1367,25 +1386,6 @@ $messages['nn'] = array(
 	'quiz_correction' => 'Svar',
 	'quiz_score' => 'Poengsummen din er $1 av $2 moglege',
 	'quiz_points' => '$1 | {{PLURAL:$2|eitt poeng|$2 poeng}}',
-	'quiz_reset' => 'Nullstill',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'quiz_desc' => 'Tillater oppretting av quizer',
-	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Minuspoeng}} for galt svar',
-	'quiz_ignoreCoef' => 'Ignorer spørsmålets verdier',
-	'quiz_shuffle' => 'Stokk spørsmålene',
-	'quiz_colorRight' => 'Riktig',
-	'quiz_colorWrong' => 'Galt',
-	'quiz_colorNA' => 'Ikke besvart',
-	'quiz_colorError' => 'Syntaksfeil',
-	'quiz_correction' => 'Svar',
-	'quiz_score' => 'Din poengsum er $1 av $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 poeng|$2 poeng}}',
 	'quiz_reset' => 'Nullstill',
 );
 
@@ -1515,6 +1515,7 @@ $messages['ps'] = array(
 	'quiz_correction' => 'سپارل',
 	'quiz_score' => 'ستاسې نومرې $1 / $2 دي',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 نمره|$2 نمرې}}',
+	'quiz_reset' => 'بياايښودل',
 );
 
 /** Portuguese (Português)
