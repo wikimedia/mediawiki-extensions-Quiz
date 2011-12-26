@@ -1676,6 +1676,14 @@ $messages['sah'] = array(
 	'quiz_reset' => 'Саҥаттан',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'quiz_colorRight' => 'Giustu',
+	'quiz_colorWrong' => 'Sbajjàtu',
+);
+
 /** Serbo-Croatian (Srpskohrvatski)
  * @author OC Ripper
  */
