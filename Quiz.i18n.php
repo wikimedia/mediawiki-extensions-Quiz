@@ -910,6 +910,25 @@ $messages['ig'] = array(
 	'quiz_reset' => 'Kuwaria',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'quiz_desc' => 'Agpalubos ti agramid kadagiti saludsod',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puntos|Pun-puntos}} ti mainayon iti pudno a sungbat',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Puntos|Pun-puntos}} para iti di umisu a sungbat',
+	'quiz_ignoreCoef' => 'Saan nga ikaskaso dagiti coefficient ti salusod',
+	'quiz_shuffle' => 'Yakar-akaren dagiti saludsod',
+	'quiz_colorRight' => 'Umisu',
+	'quiz_colorWrong' => 'Di umisu',
+	'quiz_colorNA' => 'Saan a nasungbatan',
+	'quiz_colorError' => 'Biddut iti syntax',
+	'quiz_correction' => 'Ited',
+	'quiz_score' => 'Ti iskor mo ket $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 puntos|$2 pun-puntos}}',
+	'quiz_reset' => 'Isubli',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
