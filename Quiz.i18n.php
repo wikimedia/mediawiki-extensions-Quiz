@@ -2135,10 +2135,13 @@ $messages['vo'] = array(
 );
 
 /** Yiddish (ייִדיש)
+ * @author Imre
  * @author פוילישער
  */
 $messages['yi'] = array(
 	'quiz_desc' => 'דערלויבט שאפן אויספרעגן',
+	'quiz_colorRight' => 'ריכטיק',
+	'quiz_colorWrong' => 'פֿאַלש',
 	'quiz_reset' => 'צוריקשטעלן',
 );
 
