@@ -633,6 +633,18 @@ $messages['fi'] = array(
 	'quiz_reset' => 'Tyhjennä',
 );
 
+/** Faroese (Føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'quiz_desc' => 'Loyvir upprættan av spurnarkappingum',
+	'quiz_colorRight' => 'Rætt',
+	'quiz_colorWrong' => 'Skeivt',
+	'quiz_colorNA' => 'Onki svar',
+	'quiz_colorError' => 'Syntaks feilur',
+	'quiz_correction' => 'Send inn',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Meno25
@@ -2151,6 +2163,7 @@ $messages['yi'] = array(
 $messages['yo'] = array(
 	'quiz_colorRight' => 'Ẹ̀tọ́',
 	'quiz_colorWrong' => 'Àìtọ́',
+	'quiz_correction' => 'Fúnsílẹ̀',
 	'quiz_reset' => 'Ìtúntò',
 );
 
