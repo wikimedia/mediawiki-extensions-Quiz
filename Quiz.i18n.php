@@ -85,11 +85,13 @@ $2 = Perfect score",
 
 /** Afrikaans (Afrikaans)
  * @author Naudefj
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'quiz_desc' => 'Maak dit moontlik om toetse te skep.',
 	'quiz_addedPoints' => "{{PLURAL:$1|Punt|Punte}} bygevoeg vir 'n korrekte antwoord",
 	'quiz_cutoffPoints' => "{{PLURAL:$1|Punt|Punte}} afgetrek vir 'n verkeerde antwoord",
+	'quiz_ignoreCoef' => "Ignoreer die vrae 'koëffisiënte",
 	'quiz_shuffle' => 'Skommel vrae',
 	'quiz_colorRight' => 'Reg',
 	'quiz_colorWrong' => 'Verkeerd',
