@@ -745,6 +745,14 @@ $messages['gsw'] = array(
 	'quiz_reset' => 'Nejstart',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author KartikMistry
+ */
+$messages['gu'] = array(
+	'quiz_colorRight' => 'સાચું',
+	'quiz_colorWrong' => 'ખોટું',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
