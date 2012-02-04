@@ -747,10 +747,14 @@ $messages['gsw'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author KartikMistry
+ * @author Sushant savla
  */
 $messages['gu'] = array(
 	'quiz_colorRight' => 'સાચું',
 	'quiz_colorWrong' => 'ખોટું',
+	'quiz_colorNA' => 'જવાબ ન અપાયેલ',
+	'quiz_correction' => 'જમા કરો',
+	'quiz_reset' => 'ફરી ગોઠવો',
 );
 
 /** Hebrew (עברית)
