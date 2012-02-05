@@ -750,10 +750,13 @@ $messages['gsw'] = array(
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'quiz_shuffle' => 'પ્રશ્ન બદલો',
 	'quiz_colorRight' => 'સાચું',
 	'quiz_colorWrong' => 'ખોટું',
 	'quiz_colorNA' => 'જવાબ ન અપાયેલ',
+	'quiz_colorError' => 'સૂત્રલેખન ત્રુટિ',
 	'quiz_correction' => 'જમા કરો',
+	'quiz_score' => 'તમારા ગુણ છે $1 / $2',
 	'quiz_reset' => 'ફરી ગોઠવો',
 );
 
