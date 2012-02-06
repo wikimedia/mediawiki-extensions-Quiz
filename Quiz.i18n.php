@@ -750,6 +750,9 @@ $messages['gsw'] = array(
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'quiz_desc' => 'પ્રશોત્તર રચવાની પરવાનગિ આપો',
+	'quiz_addedPoints' => 'ખરા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}} ઉમેરાયા.',
+	'quiz_cutoffPoints' => 'ખોટા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}}.',
 	'quiz_shuffle' => 'પ્રશ્ન બદલો',
 	'quiz_colorRight' => 'સાચું',
 	'quiz_colorWrong' => 'ખોટું',
@@ -757,6 +760,7 @@ $messages['gu'] = array(
 	'quiz_colorError' => 'સૂત્રલેખન ત્રુટિ',
 	'quiz_correction' => 'જમા કરો',
 	'quiz_score' => 'તમારા ગુણ છે $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 પોઈન્ટ|$2 પોઈન્ટ}}',
 	'quiz_reset' => 'ફરી ગોઠવો',
 );
 
