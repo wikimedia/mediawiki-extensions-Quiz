@@ -753,6 +753,7 @@ $messages['gu'] = array(
 	'quiz_desc' => 'પ્રશોત્તર રચવાની પરવાનગિ આપો',
 	'quiz_addedPoints' => 'ખરા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}} ઉમેરાયા.',
 	'quiz_cutoffPoints' => 'ખોટા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}}.',
+	'quiz_ignoreCoef' => 'પ્રશ્નોના અચળાંકો અવગણો',
 	'quiz_shuffle' => 'પ્રશ્ન બદલો',
 	'quiz_colorRight' => 'સાચું',
 	'quiz_colorWrong' => 'ખોટું',
