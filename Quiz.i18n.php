@@ -1543,8 +1543,8 @@ $messages['pms'] = array(
  */
 $messages['pnb'] = array(
 	'quiz_desc' => 'کوئز دے بنن دی اجازت',
-	'quiz_addedPoints' => '{{انیک:$1|نمبر}} جوڑے گۓ ٹھیک جواب لئی۔',
-	'quiz_cutoffPoints' => 'غلط جواب لئی {{انیک:$1|پوائینٹ|پوائینٹ}}',
+	'quiz_addedPoints' => '{{PLURAL:$1|نمبر}} جوڑے گۓ ٹھیک جواب لئی۔',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|پوائینٹ|پوائینٹ}} غلط جواب لئی',
 	'quiz_ignoreCoef' => 'سوال دے کوایفیشینٹو نوں چھڈو',
 	'quiz_shuffle' => 'سوال رلاؤ',
 	'quiz_colorRight' => 'ٹھیک۔ سجے پاسے',
@@ -1553,7 +1553,7 @@ $messages['pnb'] = array(
 	'quiz_colorError' => 'بولی دی غلطی',
 	'quiz_correction' => 'اگے رکھو',
 	'quiz_score' => 'تواڈا سکور اے $1 / $2',
-	'quiz_points' => '$1 | {{انیک:$2|1 پوائینٹ|$2 پوائینٹ}}',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 پوائینٹ|$2 پوائینٹ}}',
 	'quiz_reset' => 'دوبارہ ٹھیک کرنا',
 );
 
@@ -2234,6 +2234,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Gaoxuewei
  * @author Mark85296341
+ * @author Oapbtommy
  */
 $messages['zh-hant'] = array(
 	'quiz_desc' => '容許建立小測題目',
@@ -2245,7 +2246,7 @@ $messages['zh-hant'] = array(
 	'quiz_colorWrong' => '錯',
 	'quiz_colorNA' => '未回答',
 	'quiz_colorError' => '語法錯誤',
-	'quiz_correction' => '遞交',
+	'quiz_correction' => '提交',
 	'quiz_score' => '您的分數是 $1 / $2',
 	'quiz_points' => '$1 | $2 分',
 	'quiz_reset' => '重設',
