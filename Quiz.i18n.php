@@ -569,12 +569,18 @@ $messages['es'] = array(
  */
 $messages['et'] = array(
 	'quiz_desc' => 'Võimaldab küsitlusi korraldada.',
+	'quiz_addedPoints' => '{{PLURAL:$1|Lisapunkt|Lisapunkte}} õige vastuse eest',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Punkt|Punkte}} vale vastuse eest',
+	'quiz_ignoreCoef' => 'Eira küsimuste kaale',
+	'quiz_shuffle' => 'Sega küsimused',
 	'quiz_colorRight' => 'Õige',
 	'quiz_colorWrong' => 'Vale',
 	'quiz_colorNA' => 'Vastamata',
 	'quiz_colorError' => 'Süntaksiviga',
 	'quiz_correction' => 'Saada',
 	'quiz_score' => 'Punktid: $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 punkt|$2 punkti}}',
+	'quiz_reset' => 'Lähtesta',
 );
 
 /** Basque (Euskara)
