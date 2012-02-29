@@ -751,11 +751,10 @@ class Question {
 									( array_key_exists( 3, $matches ) && $value >= $matches[1] && $value <= $matches[3] ) ||
 									$value == $possibility
 								)
-							)
-							{
+							) {
 								$state = 'right';
 								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
-							}  else {
+							} else {
 								$state = 'wrong';
 								$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
 							}
@@ -768,8 +767,7 @@ class Question {
 								$value == $possibility ||
 								( preg_match( '`^' . $value . ' \(i\)$`i', $possibility ) ) ||
 								( !$this->mCaseSensitive && preg_match( '`^' . $value . '$`i', $possibility ) )
-							)
-							{
+							) {
 								$state = 'right';
 								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
 							}  else {
