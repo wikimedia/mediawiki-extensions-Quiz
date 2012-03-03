@@ -752,11 +752,12 @@ $messages['gsw'] = array(
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author Dsvyas
  * @author KartikMistry
  * @author Sushant savla
  */
 $messages['gu'] = array(
-	'quiz_desc' => 'પ્રશોત્તર રચવાની પરવાનગિ આપો',
+	'quiz_desc' => 'પ્રશ્નોત્તરી રચવાની પરવાનગી આપો',
 	'quiz_addedPoints' => 'ખરા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}} ઉમેરાયા.',
 	'quiz_cutoffPoints' => 'ખોટા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}}.',
 	'quiz_ignoreCoef' => 'પ્રશ્નોના અચળાંકો અવગણો',
