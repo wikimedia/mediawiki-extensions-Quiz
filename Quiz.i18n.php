@@ -1085,7 +1085,10 @@ $messages['jv'] = array(
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'quiz_desc' => 'იძლევა კითხვარების შექმნის საშუალებას',
+	'quiz_addedPoints' => '{{PLURAL:$1|ქულა|ქულა}} დაემატა სწორი პასუხისათვის',
 	'quiz_cutoffPoints' => '(($1 ქულა)) ერთი არასწორი პასუხისთვის',
+	'quiz_ignoreCoef' => 'შეკითხვების კოეფიციენტების იგნორირება',
 	'quiz_shuffle' => 'კითხვების არევა',
 	'quiz_colorRight' => 'სწორი',
 	'quiz_colorWrong' => 'არასწორი',
