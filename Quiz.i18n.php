@@ -1021,12 +1021,13 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author JtFuruhata
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'quiz_desc' => 'クイズの作成を可能にする',
+	'quiz_desc' => 'クイズの作成を許可する',
 	'quiz_addedPoints' => '正解により$1{{PLURAL:$1|点}}追加',
 	'quiz_cutoffPoints' => '不正解に$1{{PLURAL:$1|点}}',
-	'quiz_ignoreCoef' => '問題ごとの倍率を無視する',
+	'quiz_ignoreCoef' => '問題ごとの倍率を無視',
 	'quiz_shuffle' => '問題をシャッフル',
 	'quiz_colorRight' => '正解',
 	'quiz_colorWrong' => '不正解',
