@@ -175,6 +175,16 @@ $messages['arz'] = array(
 	'quiz_reset' => 'اضبط من تاني',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'quiz_colorRight' => 'শুদ্ধ',
+	'quiz_colorWrong' => 'ভুল',
+	'quiz_correction' => 'দাখিল কৰক',
+	'quiz_reset' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
+);
+
 /** Asturian (Asturianu)
  * @author Cedric31
  * @author Esbardu
@@ -1201,6 +1211,16 @@ $messages['lb'] = array(
 	'quiz_reset' => 'Zrécksetzen',
 );
 
+/** Lezghian (Лезги)
+ * @author Migraghvi
+ */
+$messages['lez'] = array(
+	'quiz_colorRight' => 'Дуьз я',
+	'quiz_colorWrong' => 'Дуьз туш',
+	'quiz_correction' => 'Ракъурун',
+	'quiz_reset' => 'Гадарун',
+);
+
 /** Limburgish (Limburgs)
  * @author Aelske
  * @author Matthias
@@ -1436,6 +1456,7 @@ $messages['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Eirik
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'quiz_desc' => 'Gjer oppretting av spørjekonkurransar mogleg',
@@ -1506,6 +1527,14 @@ $messages['os'] = array(
 $messages['pdc'] = array(
 	'quiz_colorWrong' => 'Letz',
 	'quiz_colorNA' => 'Kene Antwatt gewwe',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'quiz_colorRight' => 'Rischdisch',
+	'quiz_colorWrong' => 'Falsch',
 );
 
 /** Polish (Polski)
@@ -2009,7 +2038,7 @@ $messages['tg-cyrl'] = array(
 	'quiz_reset' => 'Аз нав',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2135,7 +2164,7 @@ $messages['vec'] = array(
 	'quiz_reset' => 'Azzèra',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
