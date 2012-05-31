@@ -181,6 +181,7 @@ $messages['arz'] = array(
 $messages['as'] = array(
 	'quiz_colorRight' => 'শুদ্ধ',
 	'quiz_colorWrong' => 'ভুল',
+	'quiz_colorNA' => 'উত্তৰ দিয়া হোৱা নাই',
 	'quiz_correction' => 'দাখিল কৰক',
 	'quiz_reset' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
 );
