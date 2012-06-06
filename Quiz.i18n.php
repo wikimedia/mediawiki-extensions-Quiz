@@ -1000,13 +1000,14 @@ $messages['io'] = array(
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punto|$2 punti}}',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  */
 $messages['is'] = array(
 	'quiz_desc' => 'Heimilar gerð skyndiprófa',
-	'quiz_addedPoints' => 'Stig fyrir rétt svar',
-	'quiz_cutoffPoints' => 'Stig dregin frá fyrir rangt svar',
+	'quiz_addedPoints' => '{{PLURAL:$1|Stig}} fyrir rétt svar',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Stig dregið|Stig dregin}} frá fyrir rangt svar',
 	'quiz_shuffle' => 'Stokka svörin',
 	'quiz_colorRight' => 'Rétt',
 	'quiz_colorWrong' => 'Röng',
@@ -1014,7 +1015,7 @@ $messages['is'] = array(
 	'quiz_colorError' => 'Málfræðivilla',
 	'quiz_correction' => 'Senda',
 	'quiz_score' => 'Stigafjöldinn þinn er $1 / $2',
-	'quiz_points' => '$1 | $2 stig',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 stig|$2 stig}}',
 	'quiz_reset' => 'Endurstilla',
 );
 
