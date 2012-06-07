@@ -190,7 +190,7 @@ $messages['as'] = array(
 	'quiz_colorNA' => 'উত্তৰ দিয়া হোৱা নাই',
 	'quiz_colorError' => 'চীন্‌টেক্স ত্ৰুটি',
 	'quiz_correction' => 'দাখিল কৰক',
-	'quiz_score' => "আপোনাৰ স্ক'ৰ $1 / $2",
+	'quiz_score' => 'আপোনাৰ নম্বৰ $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 পইণ্ট|$2 পইণ্ট}}',
 	'quiz_reset' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
 );
@@ -1045,7 +1045,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'quiz_desc' => 'クイズの作成を許可する',
+	'quiz_desc' => 'クイズを作成できるようにする',
 	'quiz_addedPoints' => '正解により$1{{PLURAL:$1|点}}追加',
 	'quiz_cutoffPoints' => '不正解に$1{{PLURAL:$1|点}}',
 	'quiz_ignoreCoef' => '問題ごとの倍率を無視',
@@ -1055,7 +1055,7 @@ $messages['ja'] = array(
 	'quiz_colorNA' => '無回答',
 	'quiz_colorError' => '構文エラー',
 	'quiz_correction' => '採点',
-	'quiz_score' => '得点：$1点($2点満点)',
+	'quiz_score' => '得点：$1点（$2点満点）',
 	'quiz_points' => '$1 | $2{{PLURAL:$2|点}}',
 	'quiz_reset' => 'リセット',
 );
