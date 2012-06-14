@@ -195,7 +195,7 @@ $messages['as'] = array(
 	'quiz_reset' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Cedric31
  * @author Esbardu
  * @author Xuacu
@@ -216,7 +216,7 @@ $messages['ast'] = array(
 	'quiz_reset' => 'Reaniciar',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vugar 1981
  * @author Wertuose
@@ -301,7 +301,7 @@ $messages['be-tarask'] = array(
 	'quiz_reset' => 'Скінуць',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Borislav
  * @author DCLXVI
  * @author Spiritia
@@ -342,7 +342,7 @@ $messages['bn'] = array(
 	'quiz_reset' => 'পুনরায় আরম্ভ করুন',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -361,7 +361,7 @@ $messages['br'] = array(
 	'quiz_reset' => 'Adderaouekaat',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -380,7 +380,7 @@ $messages['bs'] = array(
 	'quiz_reset' => 'Očisti',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  * @author SMP
  */
@@ -400,12 +400,12 @@ $messages['ca'] = array(
 	'quiz_reset' => 'Restaura',
 );
 
-/** Sorani (کوردی) */
+/** Sorani Kurdish (کوردی) */
 $messages['ckb'] = array(
 	'quiz_correction' => 'ناردن',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Li-sung
  * @author Matěj Grabovský
  */
@@ -444,7 +444,7 @@ $messages['cy'] = array(
 	'quiz_reset' => 'Ailosoder',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Jon Harald Søby
  * @author Peter Alberti
@@ -562,7 +562,7 @@ $messages['eo'] = array(
 	'quiz_reset' => 'Reŝarĝi',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Ascánder
  * @author Crazymadlover
  * @author Sanbec
@@ -583,7 +583,7 @@ $messages['es'] = array(
 	'quiz_reset' => 'Empezar de nuevo',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -603,7 +603,7 @@ $messages['et'] = array(
 	'quiz_reset' => 'Lähtesta',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  */
@@ -638,7 +638,7 @@ $messages['fa'] = array(
 	'quiz_reset' => 'از نو',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
  * @author Pe3
@@ -661,7 +661,7 @@ $messages['fi'] = array(
 	'quiz_reset' => 'Tyhjennä',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author EileenSanda
  */
 $messages['fo'] = array(
@@ -673,7 +673,7 @@ $messages['fo'] = array(
 	'quiz_correction' => 'Send inn',
 );
 
-/** French (Français)
+/** French (français)
  * @author Grondin
  * @author Meno25
  * @author Sherbrooke
@@ -696,7 +696,7 @@ $messages['fr'] = array(
 	'quiz_reset' => 'Réinitialiser',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -830,7 +830,7 @@ $messages['hi'] = array(
 	'quiz_reset' => 'पूर्ववत करें',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
  * @author SpeedyGonsales
@@ -890,7 +890,7 @@ $messages['ht'] = array(
 	'quiz_reset' => 'Rekomanse',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author KossuthRad
  * @author Terik
@@ -911,7 +911,7 @@ $messages['hu'] = array(
 	'quiz_reset' => 'Újraindít',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1019,7 +1019,7 @@ $messages['is'] = array(
 	'quiz_reset' => 'Endurstilla',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author BrokenArrow
  * @author Darth Kule
  */
@@ -1060,7 +1060,7 @@ $messages['ja'] = array(
 	'quiz_reset' => 'リセット',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  */
 $messages['jut'] = array(
@@ -1253,7 +1253,7 @@ $messages['li'] = array(
 	'quiz_reset' => 'Oppernuuj',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Matasg
  */
 $messages['lt'] = array(
@@ -1272,7 +1272,7 @@ $messages['lt'] = array(
 	'quiz_reset' => 'Valyti',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Dark Eagle
  * @author Xil
  * @author Yyy
@@ -1293,7 +1293,7 @@ $messages['lv'] = array(
 	'quiz_reset' => 'Notīrīt',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1332,7 +1332,7 @@ $messages['ml'] = array(
 	'quiz_reset' => 'പുനഃക്രമീകരിക്കുക',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -1464,7 +1464,7 @@ $messages['nl'] = array(
 	'quiz_reset' => 'Herstellen',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -1485,7 +1485,7 @@ $messages['nn'] = array(
 	'quiz_reset' => 'Nullstill',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1548,7 +1548,7 @@ $messages['pfl'] = array(
 	'quiz_colorWrong' => 'Falsch',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Maikking
  * @author Sp5uhe
@@ -1622,7 +1622,7 @@ $messages['ps'] = array(
 	'quiz_reset' => 'بياايښودل',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Malafaya
  */
@@ -1642,7 +1642,7 @@ $messages['pt'] = array(
 	'quiz_reset' => 'Repor a zero',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -1680,7 +1680,7 @@ $messages['qu'] = array(
 	'quiz_reset' => 'Musuqmanta qallariy',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Cin
  * @author Firilacroco
  * @author Mihai
@@ -1702,7 +1702,7 @@ $messages['ro'] = array(
 	'quiz_reset' => 'Reinițializare',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1721,7 +1721,7 @@ $messages['roa-tara'] = array(
 	'quiz_reset' => 'Azzera',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Aleksandrit
  * @author EugeneZelenko
  * @author Александр Сигачёв
@@ -1761,7 +1761,7 @@ $messages['rue'] = array(
 	'quiz_reset' => 'Ресетовати',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1780,7 +1780,7 @@ $messages['sah'] = array(
 	'quiz_reset' => 'Саҥаттан',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -1788,7 +1788,7 @@ $messages['scn'] = array(
 	'quiz_colorWrong' => 'Sbajjàtu',
 );
 
-/** Serbo-Croatian (Srpskohrvatski)
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -1817,7 +1817,7 @@ $messages['si'] = array(
 	'quiz_reset' => 'නැවත සකසන්න',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1836,7 +1836,7 @@ $messages['sk'] = array(
 	'quiz_reset' => 'Reset',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1855,7 +1855,7 @@ $messages['sl'] = array(
 	'quiz_reset' => 'Ponastavi',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Cradel
  * @author Ergon
  * @author Mikullovci11
@@ -1877,7 +1877,7 @@ $messages['sq'] = array(
 	'quiz_reset' => 'Riktheje',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -1898,7 +1898,7 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Поништи',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -1954,7 +1954,7 @@ $messages['su'] = array(
 	'quiz_reset' => 'Rését',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
@@ -2030,7 +2030,7 @@ $messages['te'] = array(
 	'quiz_reset' => 'రీసెట్',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -2049,7 +2049,7 @@ $messages['tg-cyrl'] = array(
 	'quiz_reset' => 'Аз нав',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2136,7 +2136,7 @@ $messages['tr'] = array(
 	'quiz_reset' => 'Sıfırla',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  */
@@ -2156,7 +2156,7 @@ $messages['uk'] = array(
 	'quiz_reset' => 'Скинути',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -2262,7 +2262,7 @@ $messages['yue'] = array(
 	'quiz_reset' => '重設',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Gaoxuewei
  * @author PhiLiP
  */
@@ -2282,7 +2282,7 @@ $messages['zh-hans'] = array(
 	'quiz_reset' => '重置',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Gaoxuewei
  * @author Mark85296341
  * @author Oapbtommy
