@@ -103,7 +103,7 @@ $messages['af'] = array(
 	'quiz_reset' => 'Herstel',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -280,7 +280,7 @@ $messages['bcl'] = array(
 	'quiz_reset' => 'Ibalik',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -504,7 +504,7 @@ $messages['diq'] = array(
 	'quiz_reset' => 'sıfır ker/reset ker',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -722,7 +722,7 @@ $messages['fy'] = array(
 	'quiz_reset' => 'Leechmeitsje',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -851,7 +851,7 @@ $messages['hr'] = array(
 	'quiz_reset' => 'Poništi kviz',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1742,7 +1742,7 @@ $messages['ru'] = array(
 	'quiz_reset' => 'Сбросить',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
