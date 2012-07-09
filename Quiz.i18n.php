@@ -1321,6 +1321,7 @@ $messages['ml'] = array(
 	'quiz_desc' => 'ക്വിസുകൾ സൃഷ്ടിക്കാൻ സഹായിക്കുന്നു',
 	'quiz_addedPoints' => 'ശരിയുത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} ചേർത്തു',
 	'quiz_cutoffPoints' => 'തെറ്റായ ഉത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} കുറച്ചു',
+	'quiz_ignoreCoef' => 'ചോദ്യത്തിനുള്ള ഗുണകം അവഗണിക്കുക',
 	'quiz_shuffle' => 'ചോദ്യങ്ങൾ കശക്കുക',
 	'quiz_colorRight' => 'ശരി',
 	'quiz_colorWrong' => 'തെറ്റ്',
