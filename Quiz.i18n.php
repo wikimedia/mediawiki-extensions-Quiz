@@ -229,7 +229,7 @@ $messages['az'] = array(
 	'quiz_reset' => 'Qur',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -1222,7 +1222,7 @@ $messages['lb'] = array(
 	'quiz_reset' => 'Zrécksetzen',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  */
 $messages['lez'] = array(
@@ -1390,7 +1390,7 @@ $messages['mt'] = array(
 	'quiz_reset' => 'Irrisettja',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -1407,9 +1407,7 @@ $messages['nah'] = array(
 	'quiz_correction' => 'Tiquihuāz',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
 	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
@@ -2176,7 +2174,7 @@ $messages['vec'] = array(
 	'quiz_reset' => 'Azzèra',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
