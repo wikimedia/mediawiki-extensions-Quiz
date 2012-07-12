@@ -87,14 +87,10 @@ class Quiz {
 	 * @param $colorId Integer: color hex code
 	 */
 	public static function getColor( $colorId ) {
-		try {
-			if( array_key_exists( $colorId, self::$mColors ) ) {
-				return self::$mColors[$colorId];
-			} else {
-				throw new Exception( $colorId );
-			}
-		} catch( Exception $e ) {
-			echo 'Invalid color ID : ' . $e->getMessage() . "\n";
+		if( array_key_exists( $colorId, self::$mColors ) ) {
+			return self::$mColors[$colorId];
+		} else {
+			echo 'Invalid color ID : ' . $colorId . "\n";
 		}
 	}
 
