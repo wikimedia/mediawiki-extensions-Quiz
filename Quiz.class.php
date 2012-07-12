@@ -3,9 +3,6 @@
  * Processes quiz markup
  */
 class Quiz {
-	/**#@+
-	 * @public
-	 */
 	# Quiz colors
 	static $mColors = array(
 		'right' 		=> '#1FF72D',
@@ -15,10 +12,14 @@ class Quiz {
 		'error' 		=> '#D700D7'
 	);
 	static $sQuizId = 0;
-	/**#@- */
+
+	protected $mScore;
 
 	/**
 	 * Constructor
+	 *
+	 * @param $argv array
+	 * @param $parser Parser
 	 */
 	public function __construct( $argv, &$parser ) {
 		global $wgRequest;
@@ -130,13 +131,10 @@ class Quiz {
 			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:" . Quiz::getColor( 'correction' ) . "; }\n";
 			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }\n";
 			$head .= "</style>\n";
-			global $wgJsMimeType, $wgScriptPath, $wgOut;
-			# Determine the extension folder
-			$folderList = explode( '/', dirname( __FILE__ ) );
-			$folder = array_pop( $folderList );
-			$folder = ( $folder == 'extensions' ) ? '' : "/$folder";
-			$head .= "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions$folder/quiz.js\"></script>\n";
+			global $wgOut;
+
 			$wgOut->addScript( $head );
+			$wgOut->addModules( 'ext.quiz' );
 		}
 
 		# Process the input
@@ -384,7 +382,7 @@ class Question {
 	 * @param $beingCorrected Boolean.
 	 * @param $caseSensitive Boolean.
 	 * @param $questionId Integer: the Identifier of the question used to generate input names.
-	 * @param $parser Object: the wikitext parser.
+	 * @param $parser Parser the wikitext parser.
 	 */
 	public function __construct( $beingCorrected, $caseSensitive, $questionId, &$parser ) {
 		global $wgRequest;
@@ -682,7 +680,7 @@ class Question {
 	 *
 	 * @param $input A question object in quiz syntax.
 	 *
-	 * @return $output A question object in HTML.
+	 * @return string A question object in HTML.
 	 */
 	function textFieldParseObject( $input ) {
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
@@ -704,6 +702,10 @@ class Question {
 		return $output;
 	}
 
+	/**
+	 * @param $input array
+	 * @return string
+	 */
 	function parseTextField( $input ) {
 		global $wqInputId;
 		$wqInputId ++;
