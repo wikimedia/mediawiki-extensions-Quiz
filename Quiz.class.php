@@ -76,6 +76,9 @@ class Quiz {
 		$this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
 
+	/**
+	 * @return bool
+	 */
 	static function resetQuizID() {
 		self::$sQuizId = 0;
 		return true;
@@ -99,6 +102,7 @@ class Quiz {
 	 * Convert the input text to an HTML output.
 	 *
 	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @return string
 	 */
 	function parseQuiz( $input ) {
 		# Ouput the style and the script to the header once for all.
@@ -206,6 +210,7 @@ class Quiz {
 	 * Replace inclusions from other quizzes.
 	 *
 	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @return string
 	 */
 	function parseIncludes( $input ) {
 		return preg_replace_callback(
@@ -220,6 +225,7 @@ class Quiz {
 	 *
 	 * @param $matches Array: elements matching $includePattern.
 	 * 							$matches[1] is the page title.
+	 * @return mixed|string
 	 */
 	function parseInclude( $matches ) {
 		$title = Title::makeTitleSafe( NS_MAIN, $matches[1] );
@@ -241,6 +247,7 @@ class Quiz {
 	 * Replace questions from quiz syntax to HTML.
 	 *
 	 * @param $input String: a question in quiz syntax.
+	 * @return string
 	 */
 	function parseQuestions( $input ) {
 		$splitPattern = '`(^|\n[ \t]*)\n\{`';
@@ -279,6 +286,7 @@ class Quiz {
 	 * @param $matches Array: elements matching $questionPattern.
 	 * 						$matches[1] is the question header.
 	 * 						$matches[3] is the question object.
+	 * @return string
 	 */
 	function parseQuestion( $matches ) {
 		$question = new Question(
@@ -301,7 +309,7 @@ class Quiz {
 				case '/X':
 					# Prevent closing of other tags.
 					if( $this->mShuffleDiv == 0 ) {
-						return;
+						return '';
 					} else {
 						$this->mShuffleDiv--;
 						return "</div>\n";
@@ -440,6 +448,7 @@ class Question {
 	 * Convert the question's header into HTML.
 	 *
 	 * @param $input String: the quiz header in quiz syntax.
+	 * @return string
 	 */
 	function parseHeader( $input ) {
 		$parametersPattern = '`\n\|([^\|].*)\s*$`';
@@ -489,9 +498,9 @@ class Question {
 	/**
 	 * Transmit a single choice object to the basic type parser.
 	 *
-	 * @param $input A question object in quiz syntax.
+	 * @param $input string A question object in quiz syntax.
 	 *
-	 * @return $output A question object in HTML.
+	 * @return string A question object in HTML.
 	 */
 	function singleChoiceParseObject( $input ) {
 		return $this->basicTypeParseObject( $input, 'radio' );
@@ -500,9 +509,9 @@ class Question {
 	/**
 	 * Transmit a multiple choice object to the basic type parser.
 	 *
-	 * @param $input A question object in quiz syntax.
+	 * @param $input string A question object in quiz syntax.
 	 *
-	 * @return $output A question object in HTML.
+	 * @return string A question object in HTML.
 	 */
 	function multipleChoiceParseObject( $input ) {
 		return $this->basicTypeParseObject( $input, 'checkbox' );
@@ -511,10 +520,10 @@ class Question {
 	/**
 	 * Convert a basic type object from quiz syntax to HTML.
 	 *
-	 * @param $input A question object in quiz syntax
-	 * @param $inputType
+	 * @param $input string A question object in quiz syntax
+	 * @param $inputType string
 	 *
-	 * @return $output A question object in HTML.
+	 * @return string A question object in HTML.
 	 */
 	function basicTypeParseObject( $input, $inputType ) {
 		$output = preg_match( $this->mCategoryPattern, $input, $matches ) ? $this->parseCategories( $matches[1] ) : '';
@@ -642,6 +651,7 @@ class Question {
 	 * quiz syntax to HTML.
 	 *
 	 * @param $input String: pipe-separated list of the various categories.
+	 * @return string
 	 */
 	function parseCategories( $input ) {
 		$categories = explode( '|', $input );
@@ -674,7 +684,7 @@ class Question {
 	/**
 	 * Convert a "text field" object to HTML.
 	 *
-	 * @param $input A question object in quiz syntax.
+	 * @param $input string A question object in quiz syntax.
 	 *
 	 * @return string A question object in HTML.
 	 */
