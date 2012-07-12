@@ -62,12 +62,22 @@ $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 $wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
 $wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
 
+$commonModuleInfo = array(
+	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'remoteExtPath' => 'Quiz/modules',
+);
+
+// Styles and any code common to all Special:Code subviews:
+$wgResourceModules['ext.quiz'] = array(
+	'scripts' => 'ext.quiz.js',
+) + $commonModuleInfo;
+
 /**
  * Register the extension with the WikiText parser.
  * The tag used is <quiz>
  *
- * @param $parser Object: the wikitext parser
- * @return Boolean: true to continue hook processing
+ * @param $parser Parser the wikitext parser
+ * @return Boolean true to continue hook processing
  */
 function wfQuizExtension( &$parser ) {
 	$parser->setHook( 'quiz', 'renderQuiz' );
@@ -77,11 +87,11 @@ function wfQuizExtension( &$parser ) {
 /**
  * Call the quiz parser on an input text.
  *
- * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
- * @param $argv Array: an array containing any arguments passed to the extension
- * @param $parser Object: the wikitext parser.
+ * @param $input String text between <quiz> and </quiz> tags, in quiz syntax.
+ * @param $argv Array an array containing any arguments passed to the extension
+ * @param $parser Parser the wikitext parser.
  *
- * @return An HTML quiz.
+ * @return string An HTML quiz.
  */
 function renderQuiz( $input, $argv, $parser ) {
 	$parser->disableCache();
