@@ -111,25 +111,14 @@ class Quiz {
 			$start = $wgContLang->isRTL() ? 'right' : 'left';
 			$end = $wgContLang->isRTL() ? 'left' : 'right';
 			$head  = "<style type=\"text/css\">\n";
-			$head .= ".quiz .settings input.numerical { width: 2em; }\n";
 			$head .= ".quiz .question { margin-$start: 2em; }\n";
 			$head .= ".quiz .margin { padding-$start: 20px; }\n";
 			$head .= ".quiz .header .questionId { font-size: 1.1em; font-weight: bold; float: $start;}\n";
-			$head .= "*>.quiz .header .questionId { text-indent: -1.5em; }\n"; // *> prevent ie6 from interpreting it.
-			$head .= ".quiz table.object, .quiz table.correction { background-color: transparent; }";
-			$head .= '.quiz .correction { background-color: ' . Quiz::getColor( 'correction' ) . ";}\n";
-			$head .= ".quiz .hideCorrection .correction { display: none; }\n";
-			$head .= ".quiz .settings td { padding: 0.1em 0.4em 0.1em 0.4em }\n";
-			$head .= ".quiz table.settings { background-color: transparent; }\n";
-			# Part for the basic types's inputs.
-			$head .= ".quiz .sign { text-align: center; }\n";
-			# Part for the inputfields
-			$head .= ".quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited { text-decoration:none; color:black; outline:0 }\n";
-			$head .= ".quiz a.input span { outline:#7F9DB9 solid 1px; *border:1px solid #7F9DB9; }\n"; // *border is for IE6/7
 			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-$end:1px; }\n";
 			$head .= ".quiz a.input input { padding-$start:2px; border:0; }\n";
+
+			$head .= '.quiz .correction { background-color: ' . Quiz::getColor( 'correction' ) . ";}\n";
 			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:" . Quiz::getColor( 'correction' ) . "; }\n";
-			$head .= ".quiz a.input:active span.correction, .quiz a.input:focus span.correction { display:inline; position:absolute; margin:1.8em 0 0 0.1em; }\n";
 			$head .= "</style>\n";
 			global $wgOut;
 

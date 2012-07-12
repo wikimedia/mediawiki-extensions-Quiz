@@ -1,0 +1,43 @@
+.quiz .settings input.numerical {
+	width: 2em;
+}
+
+*>.quiz .header .questionId {
+	text-indent: -1.5em;
+}
+
+.quiz table.object, .quiz table.correction {
+	background-color: transparent;
+}
+
+.quiz .hideCorrection .correction {
+	display: none;
+}
+
+.quiz .settings td {
+	padding: 0.1em 0.4em 0.1em 0.4em;
+}
+
+.quiz table.settings {
+	background-color: transparent; }
+
+.quiz .sign {
+	text-align: center;
+}
+
+.quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited {
+	text-decoration: none;
+	color: black;
+	outline: 0;
+}
+
+.quiz a.input span {
+	outline: #7F9DB9 solid 1px;
+	*border: 1px solid #7F9DB9;
+}
+
+.quiz a.input:active span.correction, .quiz a.input:focus span.correction {
+	display: inline;
+	position: absolute;
+	margin: 1.8em 0 0 0.1em;
+}

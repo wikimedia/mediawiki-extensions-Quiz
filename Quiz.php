@@ -70,6 +70,7 @@ $commonModuleInfo = array(
 // Styles and any code common to all Special:Code subviews:
 $wgResourceModules['ext.quiz'] = array(
 	'scripts' => 'ext.quiz.js',
+	'styles' => 'ext.quiz.css',
 ) + $commonModuleInfo;
 
 /**
