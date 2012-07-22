@@ -22,15 +22,12 @@
  *
  * Quiz is a quiz tool for MediaWiki.
  *
- * To activate this extension :
- * * Create a new directory named Quiz into the "extensions" directory of MediaWiki.
- * * Place this file and the files Quiz.i18n.php and quiz.js there.
- * * Add this line at the end of your LocalSettings.php file :
- * require_once 'extensions/Quiz/Quiz.php';
+ * To activate this extension, add the following to your LocalSettings.php :
+ * require_once( "$IP/extensions/Quiz/Quiz.php" );
  *
  * @file
  * @ingroup Extensions
- * @version 1.0.2
+ * @version 1.1.0
  * @author Louis-Rémi Babe <lrbabe@gmail.com>
  * @link http://www.mediawiki.org/wiki/Extension:Quiz Documentation
  */
@@ -45,7 +42,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Quiz',
-	'version'        => '1.0.2',
+	'version'        => '1.1.0',
 	'author'         => 'Louis-Rémi Babe',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Quiz',
 	'descriptionmsg' => 'quiz_desc'
@@ -71,6 +68,7 @@ $commonModuleInfo = array(
 $wgResourceModules['ext.quiz'] = array(
 	'scripts' => 'ext.quiz.js',
 	'styles' => 'ext.quiz.css',
+	'position' => 'top',
 ) + $commonModuleInfo;
 
 /**
