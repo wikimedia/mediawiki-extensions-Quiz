@@ -2186,6 +2186,7 @@ $messages['vep'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author AmieKim
  * @author Minh Nguyen
  * @author Vinhtantran
  */
@@ -2193,16 +2194,16 @@ $messages['vi'] = array(
 	'quiz_desc' => 'Tạo ra bài thi',
 	'quiz_addedPoints' => '{{PLURAL:$1|Điểm|Số điểm}} cộng khi trả lời đúng',
 	'quiz_cutoffPoints' => '{{PLURAL:$1|Điểm|Số điểm}} trừ khi trả lời sai',
-	'quiz_ignoreCoef' => 'Bỏ qua hệ số của các câu hỏi',
+	'quiz_ignoreCoef' => 'Bỏ qua hệ số điểm của các câu hỏi',
 	'quiz_shuffle' => 'Xáo trộn các câu hỏi',
 	'quiz_colorRight' => 'Đúng',
 	'quiz_colorWrong' => 'Sai',
 	'quiz_colorNA' => 'Không trả lời',
 	'quiz_colorError' => 'Lỗi cú pháp',
-	'quiz_correction' => 'Đệ trình',
-	'quiz_score' => 'Bạn đã trúng $1 trên tổng số $2 điểm',
+	'quiz_correction' => 'Gửi',
+	'quiz_score' => 'Điểm của bạn là $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 điểm|$2 điểm}}',
-	'quiz_reset' => 'Tẩy trống',
+	'quiz_reset' => 'Làm lại',
 );
 
 /** Volapük (Volapük)
