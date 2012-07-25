@@ -669,4 +669,139 @@ class Question {
 		$this->mProposalPattern .= '(.*)`';
 		return $output;
 	}
+
+	/**
+	 * Convert a "text field" object to HTML.
+	 *
+	 * @param $input string A question object in quiz syntax.
+	 *
+	 * @return string A question object in HTML.
+	 */
+	function textFieldParseObject( $input ) {
+		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
+		global $wqInputId;
+		$wqInputId = $this->mQuestionId * 100;
+		$output = '';
+		foreach( $raws as $raw ) {
+			if( preg_match( $this->mCorrectionPattern, $raw, $matches ) ) {
+				$rawClass = 'correction';
+				$text = '<td>&#x2192; ' . $this->mParser->recursiveTagParse( $matches[1] ) . '</td>';
+			} elseif( trim( $raw ) != '' ) {
+				$rawClass = 'proposal';
+				$text = $this->mParser->recursiveTagParse( $raw );
+				$text = preg_replace_callback( $this->mTextFieldPattern, array( $this, 'parseTextField' ), $text );
+				$text = "<td class=\"input\">$text</td>";
+			}
+			$output.= "<tr class=\"$rawClass\">\n$text</tr>\n";
+		}
+		return $output;
+	}
+
+	/**
+	 * @param $input array
+	 * @return string
+	 */
+	function parseTextField( $input ) {
+		global $wqInputId;
+		$wqInputId ++;
+		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $a_inputBeg = $a_inputEnd = $big = '';
+		# determine size and maxlength of the input.
+		if( array_key_exists( 3, $input ) ) {
+			$size = $input[3];
+			if( $size < 3 ) {
+				$size = 'size="1"';
+			} elseif( $size < 12 ) {
+				$size = 'size="' . ( $size - 2 ) . '"';
+			} else {
+				$size = 'size="' . ( $size - 1 ) . '"';
+			}
+			$maxlength = 'maxlength="' . $input[3] . '"';
+		}
+		# Syntax error if there is no input text.
+		if( empty( $input[1] ) ) {
+			$value = 'value="???"';
+			$state = 'error';
+		} else {
+			if( $this->mBeingCorrected ) {
+				$value = trim( $this->mRequest->getVal( $wqInputId ) );
+				$a_inputBeg = '<a class="input" href="#nogo"><span class="correction">';
+				$state = 'NA';
+				$title = 'title="' . wfMsgHtml( 'quiz_colorNA' ) . '"';
+			}
+			$class = 'class="numbers"';
+			foreach( preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility ) {
+				if( $state == '' || $state == 'NA' || $state == 'wrong' ) {
+					if( preg_match( '`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`', str_replace( ',', '.', $possibility ), $matches ) ) {
+						if( array_key_exists( 5, $matches ) ) {
+							$strlen = $size = $maxlength = '';
+						} elseif( array_key_exists( 3, $matches ) ) {
+							$strlen = strlen( $matches[1] ) > strlen( $matches[3] ) ? strlen( $matches[1] ) : strlen( $matches[3] );
+						} else {
+							$strlen = strlen( $matches[1] );
+						}
+						if( $this->mBeingCorrected && !empty( $value ) ) {
+							$value = str_replace( ',', '.', $value );
+							if(
+								is_numeric( $value ) &&
+								(
+									( array_key_exists( 5, $matches ) && $value >= ( $matches[1] - ( $matches[1] * $matches[4] ) / 100 ) && $value <= ( $matches[1] + ( $matches[1] * $matches[4] ) / 100 ) ) ||
+									( array_key_exists( 3, $matches ) && $value >= $matches[1] && $value <= $matches[3] ) ||
+									$value == $possibility
+								)
+							) {
+								$state = 'right';
+								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
+							} else {
+								$state = 'wrong';
+								$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+							}
+						}
+					} else {
+						$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
+						$class = 'class="words"';
+						if( $this->mBeingCorrected && !empty( $value ) ) {
+							if(
+								$value == $possibility ||
+								( preg_match( '`^' . $value . ' \(i\)$`i', $possibility ) ) ||
+								( !$this->mCaseSensitive && preg_match( '`^' . $value . '$`i', $possibility ) )
+							) {
+								$state = 'right';
+								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
+							}  else {
+								$state = 'wrong';
+								$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+							}
+						}
+					}
+					if( array_key_exists( 3, $input ) && $strlen > $input[3] ) {
+						# The textfield is too short for the answer
+						$state = 'error';
+						$value = "&lt;_{$possibility}_ &gt;";
+					}
+				}
+				if( $this->mBeingCorrected ) {
+					$a_inputBeg .= "$possibility<br />";
+				}
+			}
+			$value = empty( $value ) ? '' : 'value="' . str_replace( '"', '&quot;', $value ) . '"';
+			if( $this->mBeingCorrected ) {
+				$a_inputBeg.= '</span>';
+				$a_inputEnd = '</a>';
+				$big = '<em>&#9660;</em>';
+			}
+		}
+		if( $state == 'error' || $this->mBeingCorrected ) {
+			global $wgContLang;
+			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
+			$style = "style=\"$border:3px solid " . Quiz::getColor( $state ) . '; "';
+			$this->setState( empty( $value ) ? 'new_NA' : $state );
+			if( $state == 'error' ) {
+				$size = '';
+				$maxlength = '';
+				$disabled = 'disabled="disabled"';
+				$title = 'title="' . wfMsgHtml( 'quiz_colorError' ) . '"';
+			}
+		}
+		return $output = "$a_inputBeg<span $style><input $class type=\"text\" name=\"$wqInputId\" $title $size $maxlength $value $disabled autocomplete=\"off\" />$big</span>$a_inputEnd";
+	}
 }
