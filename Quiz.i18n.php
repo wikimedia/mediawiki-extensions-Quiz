@@ -1760,6 +1760,22 @@ $messages['rue'] = array(
 	'quiz_reset' => 'Ресетовати',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Shubha
+ */
+$messages['sa'] = array(
+	'quiz_ignoreCoef' => 'प्रश्नस्य गुणकः निर्लक्ष्यताम्',
+	'quiz_shuffle' => 'प्रश्नान् इतस्ततः करोतु',
+	'quiz_colorRight' => 'शुद्धम्',
+	'quiz_colorWrong' => 'अशुद्धम्',
+	'quiz_colorNA' => 'उत्तरं न प्राप्तम्',
+	'quiz_colorError' => 'समवायदोषः',
+	'quiz_correction' => 'उपस्थाप्यताम्',
+	'quiz_score' => 'भवतः अङ्काः $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 अङ्कः|$2 अङ्काः}}',
+	'quiz_reset' => 'पुनर्स्थापयतु',
+);
+
 /** Sakha (саха тыла)
  * @author HalanTul
  */
