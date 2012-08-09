@@ -1203,6 +1203,13 @@ $messages['ku-latn'] = array(
 	'quiz_score' => 'Skora te  $1 / $2 e',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Chorobek
+ */
+$messages['ky'] = array(
+	'quiz_reset' => 'Тазала',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
