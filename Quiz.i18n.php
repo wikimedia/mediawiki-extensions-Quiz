@@ -137,7 +137,7 @@ $messages['ar'] = array(
 	'quiz_colorWrong' => 'خطأ',
 	'quiz_colorNA' => 'لم تتم الإجابة عليه',
 	'quiz_colorError' => 'خطأ صياغة',
-	'quiz_correction' => 'أرسل',
+	'quiz_correction' => 'إرسال',
 	'quiz_score' => 'نتيجتك هي $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2||نقطة واحدة|نقطتان|$2 نقاط|$2 نقطة}}',
 	'quiz_reset' => 'إعادة ضبط',
@@ -1771,6 +1771,9 @@ $messages['rue'] = array(
  * @author Shubha
  */
 $messages['sa'] = array(
+	'quiz_desc' => 'रसप्रशनानां सज्जीकरणे सहकरोति',
+	'quiz_addedPoints' => 'शुद्धोत्तराय {{PLURAL:$1|अङ्कः|अङ्काः}} दत्ताः',
+	'quiz_cutoffPoints' => 'अशुद्धोत्तराय {{PLURAL:$1|अङ्कः|अङ्काः}}दत्ताः',
 	'quiz_ignoreCoef' => 'प्रश्नस्य गुणकः निर्लक्ष्यताम्',
 	'quiz_shuffle' => 'प्रश्नान् इतस्ततः करोतु',
 	'quiz_colorRight' => 'शुद्धम्',
@@ -2000,14 +2003,15 @@ $messages['sv'] = array(
 
 /** Swahili (Kiswahili)
  * @author Lloffiwr
+ * @author Stephenwanjau
  */
 $messages['sw'] = array(
-	'quiz_colorRight' => 'Ni sahihi',
-	'quiz_colorWrong' => 'Si sahihi',
+	'quiz_colorRight' => 'Sahihi',
+	'quiz_colorWrong' => 'Batili',
 	'quiz_colorNA' => 'Haikujibiwa',
 	'quiz_correction' => 'Wasilisha',
 	'quiz_score' => 'Una maksi $1/$2',
-	'quiz_points' => '{{PLURAL:$2|Maksi}} | $1',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 point|$2 pointi}}',
 	'quiz_reset' => 'Panga upya',
 );
 
