@@ -830,6 +830,13 @@ $messages['hi'] = array(
 	'quiz_reset' => 'पूर्ववत करें',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Karthi.dr
+ */
+$messages['hif-latn'] = array(
+	'quiz_correction' => 'Submit karo',
+);
+
 /** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
@@ -1393,6 +1400,11 @@ $messages['ms'] = array(
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'quiz_colorRight' => 'Tajjeb',
+	'quiz_colorWrong' => 'Ħażin',
+	'quiz_colorNA' => 'L-ebda risposta',
+	'quiz_colorError' => 'Żball fis-sintassi',
+	'quiz_correction' => 'Ibgħat',
 	'quiz_score' => "L-iskor tiegħek hu ta' $1 / $2",
 	'quiz_reset' => 'Irrisettja',
 );
