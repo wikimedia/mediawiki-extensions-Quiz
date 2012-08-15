@@ -722,6 +722,13 @@ $messages['fy'] = array(
 	'quiz_reset' => 'Leechmeitsje',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'quiz_reset' => 'Athshocraigh',
+);
+
 /** Galician (galego)
  * @author Alma
  * @author Toliño
@@ -1062,7 +1069,7 @@ $messages['ja'] = array(
 	'quiz_colorNA' => '無回答',
 	'quiz_colorError' => '構文エラー',
 	'quiz_correction' => '採点',
-	'quiz_score' => '得点：$1点（$2点満点）',
+	'quiz_score' => '得点: $1点 ($2点満点)',
 	'quiz_points' => '$1 | $2{{PLURAL:$2|点}}',
 	'quiz_reset' => 'リセット',
 );
@@ -1486,6 +1493,13 @@ $messages['nl'] = array(
 	'quiz_score' => 'Uw score is $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 punt|$2 punten}}',
 	'quiz_reset' => 'Herstellen',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'quiz_score' => 'Je score is $1 / $2',
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
