@@ -2214,6 +2214,17 @@ $messages['uk'] = array(
 	'quiz_reset' => 'Скинути',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'quiz_colorRight' => 'حق',
+	'quiz_colorWrong' => 'غلط',
+	'quiz_colorNA' => 'ان كا جواب نہیں تھا',
+	'quiz_correction' => 'جمع کرائیں',
+	'quiz_reset' => 'دوبارہ مرتب کریں',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
