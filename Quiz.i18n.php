@@ -847,6 +847,7 @@ $messages['hif-latn'] = array(
 /** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Dnik
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -858,7 +859,7 @@ $messages['hr'] = array(
 	'quiz_colorRight' => 'Točno',
 	'quiz_colorWrong' => 'Netočno',
 	'quiz_colorNA' => 'Neodgovoreno',
-	'quiz_colorError' => 'Sintaksna greška',
+	'quiz_colorError' => 'Sintaksna pogrješka',
 	'quiz_correction' => 'Ocijeni kviz',
 	'quiz_score' => 'Vaš rezultat je $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 bod|$2 bodova}}',
