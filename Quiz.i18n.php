@@ -280,7 +280,7 @@ $messages['bcl'] = array(
 	'quiz_reset' => 'Ibalik',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -1208,7 +1208,7 @@ $messages['ksh'] = array(
 	'quiz_reset' => 'Neu Aanfange!',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -1440,7 +1440,7 @@ $messages['nah'] = array(
 	'quiz_correction' => 'Tiquihuāz',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
 	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
@@ -1496,14 +1496,14 @@ $messages['nl'] = array(
 	'quiz_reset' => 'Herstellen',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
 	'quiz_score' => 'Je score is $1 / $2',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -1935,7 +1935,7 @@ $messages['sq'] = array(
 	'quiz_reset' => 'Riktheje',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -1956,7 +1956,7 @@ $messages['sr-ec'] = array(
 	'quiz_reset' => 'Поништи',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  */
@@ -2333,7 +2333,7 @@ $messages['yue'] = array(
 	'quiz_reset' => '重設',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Gaoxuewei
  * @author PhiLiP
  */
@@ -2353,7 +2353,7 @@ $messages['zh-hans'] = array(
 	'quiz_reset' => '重置',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Gaoxuewei
  * @author Mark85296341
  * @author Oapbtommy
