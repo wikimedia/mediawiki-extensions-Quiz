@@ -34,24 +34,24 @@
  */
 
 (function() {
-	/**
-	 * Shuffle questions
-	 */
+	'use strict';
+
+	// Shuffle questions
 	function shuffle( area ) {
 		var div = area.childNodes;
-		for( var i = 0, questions = new Array(); i < div.length; ++i ) {
+		for( var i = 0, questions = []; i < div.length; ++i ) {
 			if( div[i].className ) {
-				if( questions.length == 0 && div[i].className == 'quizText' ) {
+				if( questions.length === 0 && div[i].className === 'quizText' ) {
 					var quizText = div[i];
 				} else {
 					questions.push( div[i] );
-					if( div[i].className == 'shuffle' || div[i].className == 'noshuffle' ) {
+					if( div[i].className === 'shuffle' || div[i].className === 'noshuffle' ) {
 						shuffle( div[i] );
 					}
 				}
 			}
 		}
-		if( area.className != 'noshuffle' ) {
+		if( area.className !== 'noshuffle' ) {
 			for( var l, x, m = questions.length; m; l = parseInt( Math.random() * m ), x = questions[--m], questions[m] = questions[l], questions[l] = x );
 		}
 		if( quizText ) {
@@ -61,33 +61,30 @@
 			areaHTML += '<div class="' + questions[j].className + '">' + questions[j].innerHTML + '</div>';
 		}
 		area.innerHTML = areaHTML;
-		return;
 	}
 
-	/**
-	 * Prepare the quiz for "javascriptable" browsers
-	 */
+	// Prepare the quiz for "javascriptable" browsers
 	function prepareQuiz() {
 		var bodyContentDiv = document.getElementById( 'bodyContent' ).getElementsByTagName( 'div' );
 		for( var i = 0; i < bodyContentDiv.length; ++i ) {
-			if( bodyContentDiv[i].className == 'quiz' ) {
+			if( bodyContentDiv[i].className === 'quiz' ) {
 				var input = bodyContentDiv[i].getElementsByTagName( 'input' );
 				for( var j = 0; j < input.length; ++j ) {
 					// Add the possibility of unchecking radio buttons
-					if( input[j].type == 'radio' ) {
+					if( input[j].type === 'radio' ) {
 						input[j].ondblclick = function() {
 							this.checked = false;
 						};
 					}
 					// Displays the shuffle buttons.
-					else if( input[j].className == 'shuffle' ) {
+					else if( input[j].className === 'shuffle' ) {
 						input[j].style.display = 'inline';
 						input[j].onclick = function() {
 							shuffle( this.form.getElementsByTagName( 'div' )[0] );
 							var sh_input = this.form.getElementsByTagName( 'input' );
 							for( var k = 0; k < sh_input.length; ++k ) {
 								// Add the possibility of unchecking radio buttons
-								if( input[k].type == 'radio' ) {
+								if( input[k].type === 'radio' ) {
 									input[k].ondblclick = function() {
 										this.checked = false;
 									};
@@ -96,7 +93,7 @@
 						};
 					}
 					// Display the reset button
-					else if( input[j].className == 'reset' ) {
+					else if( input[j].className === 'reset' ) {
 						input[j].style.display = 'inline';
 						input[j].onclick = function() {
 							this.form.quizId.value = '';
@@ -104,8 +101,8 @@
 						};
 					}
 					// Correct the bug of ie6 on textfields
-					else if( input[j].className == 'numbers' || input[j].className == 'words' ) {
-						if( typeof document.body.style.maxHeight == 'undefined' ) {
+					else if( input[j].className === 'numbers' || input[j].className === 'words' ) {
+						if( typeof document.body.style.maxHeight === 'undefined' ) {
 							input[j].parentNode.onclick = function() {
 								this.parentNode.firstChild.style.display = 'inline';
 								this.parentNode.firstChild.style.position = 'absolute';
@@ -121,7 +118,7 @@
 							}
 						};
 					}
-					if( input[j].className == 'check' ) {
+					if( input[j].className === 'check' ) {
 						input[j].onclick = function() {
 							if( this.form.shuffleButton ) {
 								this.form.shuffleButton.disabled = true;
@@ -129,7 +126,7 @@
 						};
 					}
 					// Disable the submit button if the page is in preview mode
-					if( input[j].type == 'submit' && document.editform ) {
+					if( input[j].type === 'submit' && document.editform ) {
 						input[j].disabled = true;
 					}
 				}

@@ -86,16 +86,17 @@ class Quiz {
 
 	/**
 	 * Accessor for the color array
-	 * Dispalys an error message if the colorId doesn't exists.
+	 * Displays an error message if the colorId doesn't exists.
 	 *
 	 * @param $colorId Integer: color hex code
+	 * @throws MWException
 	 */
 	public static function getColor( $colorId ) {
 		if( array_key_exists( $colorId, self::$mColors ) ) {
 			return self::$mColors[$colorId];
-		} else {
-			echo 'Invalid color ID : ' . $colorId . "\n";
 		}
+
+		throw new MWException( 'Invalid color ID: ' . $colorId );
 	}
 
 	/**
@@ -136,15 +137,16 @@ class Quiz {
 		# Determine the content of the settings table.
 		$settings = array_fill( 0, 4, '' );
 		if( !$this->mDisplaySimple ) {
-			$settings[0] .=	'<td>' . wfMsgHtml( 'quiz_addedPoints', $this->mAddedPoints ) . ':</td>' .
+			// @todo FIXME: Hard coded colons below (a few times). Should be part of messages.
+			$settings[0] .=	'<td>' . wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->escaped() . ':</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&#160;&#160;</td>";
-			$settings[1] .=	'<td>' . wfMsgHtml( 'quiz_cutoffPoints', $this->mCutoffPoints ) . ':</td>' .
+			$settings[1] .=	'<td>' . wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->escaped() . ':</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
 			$bChecked = ( $this->mIgnoringCoef ) ? ' checked="checked"' : '';
-			$settings[2] .=	'<td>' . wfMsgHtml( 'quiz_ignoreCoef' ) . ':</td>' .
+			$settings[2] .=	'<td>' . wfMessage( 'quiz_ignoreCoef' )->escaped() . ':</td>' .
 							"<td><input type=\"checkbox\" name=\"ignoringCoef\"$bChecked/></td>";
 			if( $this->mShuffle && !$this->mBeingCorrected ) {
-				$settings[3] .=	'<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMsgHtml( 'quiz_shuffle' ) . '" style="display: none;"/></td>' .
+				$settings[3] .=	'<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMessage( 'quiz_shuffle' )->escaped() . '" style="display: none;"/></td>' .
 								'<td></td>';
 			} else {
 				$settings[3] .=	'<td></td><td></td>';
@@ -152,16 +154,16 @@ class Quiz {
 		}
 		if( $this->mBeingCorrected ) {
 			$settings[0] .= '<td class="margin" style="background: ' . $this->getColor( 'right' ) . '"></td>' .
-							'<td style="background: transparent;">' . wfMsgHtml( 'quiz_colorRight' ) . '</td>';
+							'<td style="background: transparent;">' . wfMessage( 'quiz_colorRight' )->escaped() . '</td>';
 			$settings[1] .= '<td class="margin" style="background: ' . $this->getColor( 'wrong' ) . '"></td>' .
-							'<td style="background: transparent;">' . wfMsgHtml( 'quiz_colorWrong' ) . '</td>';
+							'<td style="background: transparent;">' . wfMessage( 'quiz_colorWrong' )->escaped() . '</td>';
 			$settings[2] .= '<td class="margin" style="background: ' . $this->getColor( 'NA' ) . '"></td>' .
-							'<td style="background: transparent;">' . wfMsgHtml( 'quiz_colorNA' ) . '</td>';
+							'<td style="background: transparent;">' . wfMessage( 'quiz_colorNA' )->escaped() . '</td>';
 		}
 		if( $this->mState == 'error' ) {
 			$errorKey = $this->mBeingCorrected ? 3 : 0;
 			$settings[$errorKey] .=	'<td class="margin" style=\"background: ' . $this->getColor( 'error' ) . '"></td>' .
-									'<td>' . wfMsgHtml( 'quiz_colorError' ) . '</td>';
+									'<td>' . wfMessage( 'quiz_colorError' )->escaped() . '</td>';
 		}
 		# Build the settings table.
 		$settingsTable = '';
@@ -179,16 +181,17 @@ class Quiz {
 		$output .= $input;
 		$output .= '</div>';
 
-		$output .= '<p><input type="submit" value="' . wfMsgHtml( 'quiz_correction' ) . '"/>';
+		$output .= '<p><input type="submit" value="' . wfMessage( 'quiz_correction' )->escaped() . '"/>';
 		if( $this->mBeingCorrected ) {
 			$output .= '<input class="reset" type="submit" value="' .
-				wfMsgHtml( 'quiz_reset' ) . '" style="display: none;" />';
+				wfMessage( 'quiz_reset' )->escaped() . '" style="display: none;" />';
 		}
 		$output .= '</p>';
 		$output .= '<span class="correction">';
-		$output .= wfMsgHtml( 'quiz_score',
+		$output .= wfMessage( 'quiz_score' )->rawParams(
 			"<span class=\"score\">$this->mScore</span>",
-			"<span class=\"total\">$this->mTotal</span>" );
+			"<span class=\"total\">$this->mTotal</span>"
+		)->escaped();
 		$output .= '</span>';
 		$output .= "</form>\n";
 		$output .= "</div>\n";
@@ -329,30 +332,27 @@ class Quiz {
 				case 'right':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore += $this->mAddedPoints * $question->mCoef;
-					$output .= 'title="' . wfMsgExt(
+					$output .= 'title="' . wfMessage(
 						'quiz_points',
-						array( 'escape', 'parsemag' ),
-						wfMsg( 'quiz_colorRight' ),
+						wfMessage( 'quiz_colorRight' )->text(),
 						$this->mAddedPoints * $question->mCoef
-					) . '"';
+					)->escaped() . '"';
 					break;
 				case 'wrong':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore -= $this->mCutoffPoints * $question->mCoef;
-					$output .= 'title="' . wfMsgExt(
+					$output .= 'title="' . wfMessage(
 						'quiz_points',
-						array( 'escape', 'parsemag' ),
-						wfMsg( 'quiz_colorWrong' ),
+						wfMessage( 'quiz_colorWrong' )->text(),
 						-$this->mCutoffPoints * $question->mCoef
-					) . '"';
+					)->escaped() . '"';
 					break;
 				case 'NA':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
-					$output .= 'title="' . wfMsgExt(
+					$output .= 'title="' . wfMessage(
 						'quiz_points',
-						array( 'escape', 'parsemag'),
-						wfMsg( 'quiz_colorNA' ), 0
-					) . '"';
+						wfMessage( 'quiz_colorNA' )->text(), 0
+					)->escaped() . '"';
 					break;
 				case 'error':
 					$this->mState = 'error';
@@ -368,7 +368,6 @@ class Quiz {
 }
 
 class Question {
-
 	/**
 	 * Constructor
 	 *
@@ -563,7 +562,7 @@ class Question {
 							if( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
 								$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) . ';"';
-								$title = 'title="' . wfMsgHtml( 'quiz_colorError' ) . '"';
+								$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . '"';
 								$disabled = 'disabled="disabled"';
 							}
 							if( $this->mBeingCorrected ) {
@@ -571,11 +570,11 @@ class Question {
 									$checkedCount++;
 									$this->setState( 'right' );
 									$inputStyle = 'style="outline: ' . Quiz::getColor( 'right' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'right' ) . ';"';
-									$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
+									$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
 								} else {
 									$this->setState( 'na_wrong' );
 									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
 								}
 							}
 							break;
@@ -585,7 +584,7 @@ class Question {
 									$checkedCount++;
 									$this->setState( 'wrong' );
 									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
 								} else {
 									$this->setState( 'na_right' );
 								}
@@ -594,7 +593,7 @@ class Question {
 						default:
 							$this->setState( 'error' );
 							$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) . ';"';
-							$title = 'title="' . wfMsgHtml( 'quiz_colorError')."\"";
+							$title = 'title="' . wfMessage( 'quiz_colorError')->escaped() . "\"";
 							$disabled = 'disabled="disabled"';
 							break;
 					}
@@ -726,7 +725,7 @@ class Question {
 				$value = trim( $this->mRequest->getVal( $wqInputId ) );
 				$a_inputBeg = '<a class="input" href="#nogo"><span class="correction">';
 				$state = 'NA';
-				$title = 'title="' . wfMsgHtml( 'quiz_colorNA' ) . '"';
+				$title = 'title="' . wfMessage( 'quiz_colorNA' )->escaped() . '"';
 			}
 			$class = 'class="numbers"';
 			foreach( preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility ) {
@@ -750,10 +749,10 @@ class Question {
 								)
 							) {
 								$state = 'right';
-								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
+								$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
 							} else {
 								$state = 'wrong';
-								$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+								$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
 							}
 						}
 					} else {
@@ -766,10 +765,10 @@ class Question {
 								( !$this->mCaseSensitive && preg_match( '`^' . $value . '$`i', $possibility ) )
 							) {
 								$state = 'right';
-								$title = 'title="' . wfMsgHtml( 'quiz_colorRight' ) . '"';
+								$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
 							}  else {
 								$state = 'wrong';
-								$title = 'title="' . wfMsgHtml( 'quiz_colorWrong' ) . '"';
+								$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
 							}
 						}
 					}
@@ -799,7 +798,7 @@ class Question {
 				$size = '';
 				$maxlength = '';
 				$disabled = 'disabled="disabled"';
-				$title = 'title="' . wfMsgHtml( 'quiz_colorError' ) . '"';
+				$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . '"';
 			}
 		}
 		return $output = "$a_inputBeg<span $style><input $class type=\"text\" name=\"$wqInputId\" $title $size $maxlength $value $disabled autocomplete=\"off\" />$big</span>$a_inputEnd";
