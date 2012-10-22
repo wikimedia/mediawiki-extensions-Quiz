@@ -254,8 +254,8 @@ $messages['ba'] = array(
  */
 $messages['bcc'] = array(
 	'quiz_desc' => 'اجازه دنت په شرکتن معما',
-	'quiz_addedPoints' => 'نمره په درستین جواب اضافه بوت',
-	'quiz_cutoffPoints' => 'نمره په جواب غلظ کم بوت',
+	'quiz_addedPoints' => 'نمره په درستین جواب اضافه بوت', # Fuzzy
+	'quiz_cutoffPoints' => 'نمره په جواب غلظ کم بوت', # Fuzzy
 	'quiz_ignoreCoef' => 'ضریب سوالات مه دید',
 	'quiz_shuffle' => 'جوستان به هم ریچ',
 	'quiz_colorRight' => 'راست',
@@ -264,7 +264,7 @@ $messages['bcc'] = array(
 	'quiz_colorError' => 'حطا ساختار',
 	'quiz_correction' => 'دیم دی',
 	'quiz_score' => 'شمی نمره $1 / $2 اینت',
-	'quiz_points' => '$1 | $2 نکته(s)',
+	'quiz_points' => '$1 | $2 نکته(s)', # Fuzzy
 	'quiz_reset' => 'برگردینگ',
 );
 
@@ -276,7 +276,7 @@ $messages['bcl'] = array(
 	'quiz_colorRight' => 'Tamâ',
 	'quiz_colorWrong' => 'Salâ',
 	'quiz_correction' => 'Isumitir',
-	'quiz_points' => '$1 | $2 punto(s)',
+	'quiz_points' => '$1 | $2 punto(s)', # Fuzzy
 	'quiz_reset' => 'Ibalik',
 );
 
@@ -400,7 +400,8 @@ $messages['ca'] = array(
 	'quiz_reset' => 'Restaura',
 );
 
-/** Sorani Kurdish (کوردی) */
+/** Sorani Kurdish (کوردی)
+ */
 $messages['ckb'] = array(
 	'quiz_correction' => 'ناردن',
 );
@@ -823,8 +824,8 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'quiz_desc' => 'क्विज़ बनाने के लिये सहायता करता हैं',
-	'quiz_addedPoints' => 'सही जवाब के लिये मार्क्स दिये',
-	'quiz_cutoffPoints' => 'गलत जवाबके लिये मार्क्स घटाये',
+	'quiz_addedPoints' => 'सही जवाब के लिये मार्क्स दिये', # Fuzzy
+	'quiz_cutoffPoints' => 'गलत जवाबके लिये मार्क्स घटाये', # Fuzzy
 	'quiz_ignoreCoef' => 'प्रश्नोंके कोएफिशिअंटको नजर अंदाज करें',
 	'quiz_shuffle' => 'सवाल उपर नीचे करें',
 	'quiz_colorRight' => 'सहीं',
@@ -833,7 +834,7 @@ $messages['hi'] = array(
 	'quiz_colorError' => 'सिन्टॅक्स गलती',
 	'quiz_correction' => 'भेजें',
 	'quiz_score' => 'आपके गुण $1 / $2',
-	'quiz_points' => '$1 | $2 गुण',
+	'quiz_points' => '$1 | $2 गुण', # Fuzzy
 	'quiz_reset' => 'पूर्ववत करें',
 );
 
@@ -1080,8 +1081,8 @@ $messages['ja'] = array(
  */
 $messages['jut'] = array(
 	'quiz_desc' => 'Gæv kreåsje der kwesser æ mågleghed',
-	'quiz_addedPoints' => 'Punkt(er) tilføjer før æ korrekt answer',
-	'quiz_cutoffPoints' => 'Punkt(er) subtraktet før æ fejl answer',
+	'quiz_addedPoints' => 'Punkt(er) tilføjer før æ korrekt answer', # Fuzzy
+	'quiz_cutoffPoints' => 'Punkt(er) subtraktet før æ fejl answer', # Fuzzy
 	'quiz_ignoreCoef' => 'Ignorær æ fråge han koeffisienter',
 	'quiz_shuffle' => 'Skuffel fråge',
 	'quiz_colorRight' => 'Gåd',
@@ -1090,7 +1091,7 @@ $messages['jut'] = array(
 	'quiz_colorError' => 'Syntaks fejl',
 	'quiz_correction' => 'Gå',
 	'quiz_score' => 'Diin skår er $1 / $2',
-	'quiz_points' => '$1 | $2 punkt(er)',
+	'quiz_points' => '$1 | $2 punkt(er)', # Fuzzy
 	'quiz_reset' => 'Reset',
 );
 
@@ -1440,7 +1441,8 @@ $messages['nah'] = array(
 	'quiz_correction' => 'Tiquihuāz',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
 	'quiz_addedPoints' => '{{PLURAL:$1|Plusspoeng}} for korrekt svar',
@@ -1510,8 +1512,8 @@ $messages['nl-informal'] = array(
  */
 $messages['nn'] = array(
 	'quiz_desc' => 'Gjer oppretting av spørjekonkurransar mogleg',
-	'quiz_addedPoints' => 'Plusspoeng for rett svar',
-	'quiz_cutoffPoints' => 'Minuspoeng for feil svar',
+	'quiz_addedPoints' => 'Plusspoeng for rett svar', # Fuzzy
+	'quiz_cutoffPoints' => 'Minuspoeng for feil svar', # Fuzzy
 	'quiz_ignoreCoef' => 'Oversjå verdiane på spørsmåla',
 	'quiz_shuffle' => 'Stokk om på spørsmåla',
 	'quiz_colorRight' => 'Rett',
@@ -1662,8 +1664,8 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
- * @author 555
  * @author Malafaya
+ * @author 555
  */
 $messages['pt'] = array(
 	'quiz_desc' => 'Permite a criação de questionários',
@@ -2000,8 +2002,8 @@ $messages['stq'] = array(
  * @author Kandar
  */
 $messages['su'] = array(
-	'quiz_addedPoints' => 'Peunteun ditambahan pikeun jawaban nu bener',
-	'quiz_cutoffPoints' => 'Peunteun dikurangan pikeun jawaban nu salah',
+	'quiz_addedPoints' => 'Peunteun ditambahan pikeun jawaban nu bener', # Fuzzy
+	'quiz_cutoffPoints' => 'Peunteun dikurangan pikeun jawaban nu salah', # Fuzzy
 	'quiz_colorRight' => 'Bener',
 	'quiz_colorWrong' => 'Salah',
 	'quiz_colorNA' => 'Teu dijawab',
@@ -2043,7 +2045,7 @@ $messages['sw'] = array(
 	'quiz_colorWrong' => 'Batili',
 	'quiz_colorNA' => 'Haikujibiwa',
 	'quiz_correction' => 'Wasilisha',
-	'quiz_score' => 'Una maksi $1/$2',
+	'quiz_score' => 'Una maksi $1/$2', # Fuzzy
 	'quiz_points' => '$1 | {{PLURAL:$2|1 point|$2 pointi}}',
 	'quiz_reset' => 'Panga upya',
 );
@@ -2094,8 +2096,8 @@ $messages['te'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'quiz_desc' => 'Эҷоди озмунҳоро мумкин месозад',
-	'quiz_addedPoints' => 'Имтиёзи ҳар посухи дуруст',
-	'quiz_cutoffPoints' => 'Имтиёзи манфии ҳар посухи нодуруст',
+	'quiz_addedPoints' => 'Имтиёзи ҳар посухи дуруст', # Fuzzy
+	'quiz_cutoffPoints' => 'Имтиёзи манфии ҳар посухи нодуруст', # Fuzzy
 	'quiz_ignoreCoef' => 'Нодида гирифтани зариби саволҳо',
 	'quiz_shuffle' => 'Бар задани саволҳо',
 	'quiz_colorRight' => 'Дуруст',
@@ -2104,7 +2106,7 @@ $messages['tg-cyrl'] = array(
 	'quiz_colorError' => 'Хатои наҳвӣ',
 	'quiz_correction' => 'Ирсол',
 	'quiz_score' => 'Имтиёзи шумо $1 аз $2 аст',
-	'quiz_points' => '$1 | $2 имтиёз',
+	'quiz_points' => '$1 | $2 имтиёз', # Fuzzy
 	'quiz_reset' => 'Аз нав',
 );
 
@@ -2316,11 +2318,12 @@ $messages['yo'] = array(
 	'quiz_reset' => 'Ìtúntò',
 );
 
-/** Cantonese (粵語) */
+/** Cantonese (粵語)
+ */
 $messages['yue'] = array(
 	'quiz_desc' => '容許開小測題',
-	'quiz_addedPoints' => '答啱咗加上嘅分數',
-	'quiz_cutoffPoints' => '答錯咗減去嘅分數',
+	'quiz_addedPoints' => '答啱咗加上嘅分數', # Fuzzy
+	'quiz_cutoffPoints' => '答錯咗減去嘅分數', # Fuzzy
 	'quiz_ignoreCoef' => '略過問題嘅系數',
 	'quiz_shuffle' => '撈亂問題',
 	'quiz_colorRight' => '啱',
@@ -2386,4 +2389,3 @@ $messages['zh-tw'] = array(
 	'quiz_correction' => '提交',
 	'quiz_reset' => '重設',
 );
-
