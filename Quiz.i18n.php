@@ -229,6 +229,17 @@ $messages['az'] = array(
 	'quiz_reset' => 'Qur',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'quiz_colorRight' => 'دوغرو',
+	'quiz_colorWrong' => 'یانلیش',
+	'quiz_colorNA' => 'جوابسیز',
+	'quiz_correction' => 'تسدیق ائت',
+	'quiz_reset' => 'قور',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
