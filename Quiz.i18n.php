@@ -231,12 +231,13 @@ $messages['az'] = array(
 
 /** South Azerbaijani (تورکجه)
  * @author Amir a57
+ * @author Mousa
  */
 $messages['azb'] = array(
 	'quiz_colorRight' => 'دوغرو',
 	'quiz_colorWrong' => 'یانلیش',
 	'quiz_colorNA' => 'جوابسیز',
-	'quiz_correction' => 'تسدیق ائت',
+	'quiz_correction' => 'گؤندر',
 	'quiz_reset' => 'قور',
 );
 
