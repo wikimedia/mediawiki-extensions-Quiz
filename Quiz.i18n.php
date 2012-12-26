@@ -996,7 +996,7 @@ $messages['ig'] = array(
 	'quiz_correction' => 'Dànyé',
 	'quiz_score' => 'Owu gi bu $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|1 ogùgù onyìnyé|$2 onú ogùgù onyìnyé}}',
-	'quiz_reset' => 'Kuwaria',
+	'quiz_reset' => "Mẹ̀wárí n'ísí",
 );
 
 /** Iloko (Ilokano)
