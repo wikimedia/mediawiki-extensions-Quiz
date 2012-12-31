@@ -2209,6 +2209,16 @@ $messages['tr'] = array(
 	'quiz_reset' => 'Sıfırla',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'quiz_colorRight' => 'ئوڭ',
+	'quiz_colorError' => 'گرامماتىكىلىق خاتالىق',
+	'quiz_correction' => 'تاپشۇر',
+	'quiz_reset' => 'ئەسلىگە قايتۇر',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
