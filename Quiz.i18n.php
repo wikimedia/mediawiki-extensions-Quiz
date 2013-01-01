@@ -413,8 +413,11 @@ $messages['ca'] = array(
 );
 
 /** Sorani Kurdish (کوردی)
+ * @author Calak
  */
 $messages['ckb'] = array(
+	'quiz_colorRight' => 'ڕاست',
+	'quiz_colorWrong' => 'ھەڵە',
 	'quiz_correction' => 'ناردن',
 );
 
