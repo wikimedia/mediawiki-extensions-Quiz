@@ -1188,6 +1188,7 @@ $messages['kn'] = array(
  * @author Kwj2772
  * @author ToePeu
  * @author Yknok29
+ * @author 아라
  */
 $messages['ko'] = array(
 	'quiz_desc' => '퀴즈를 만들 수 있도록 해줍니다',
@@ -1200,7 +1201,7 @@ $messages['ko'] = array(
 	'quiz_colorNA' => '무응답',
 	'quiz_colorError' => '문법 오류',
 	'quiz_correction' => '제출',
-	'quiz_score' => '당신의 점수는 $1 / $2입니다.',
+	'quiz_score' => '점수는 $1 / $2입니다.',
 	'quiz_points' => '$1 | {{PLURAL:$2|1점|$2점}}',
 	'quiz_reset' => '초기화',
 );
