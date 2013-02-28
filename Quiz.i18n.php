@@ -64,11 +64,12 @@ $messages['en'] = array(
  * @author Jon Harald Søby
  * @author Kwj2772
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Александр Сигачёв
  */
 $messages['qqq'] = array(
-	'quiz_desc' => '{{desc}}',
+	'quiz_desc' => '{{desc|name=Quiz|url=http://www.mediawiki.org/wiki/Extension:Quiz}}',
 	'quiz_addedPoints' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_ignoreCoef' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
