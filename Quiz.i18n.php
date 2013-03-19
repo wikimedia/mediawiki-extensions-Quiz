@@ -71,6 +71,8 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'quiz_desc' => '{{desc|name=Quiz|url=http://www.mediawiki.org/wiki/Extension:Quiz}}',
 	'quiz_addedPoints' => 'http://en.wikiversity.org/wiki/Help:Quiz',
+	'quiz_cutoffPoints' => 'Used as label for "cutoff points" input box. Parameters:
+* $1 - cutoff points',
 	'quiz_ignoreCoef' => 'http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
 	'quiz_colorRight' => 'http://en.wikiversity.org/wiki/Help:Quiz
@@ -81,6 +83,12 @@ $messages['qqq'] = array(
 	'quiz_correction' => '{{Identical|Submit}}',
 	'quiz_score' => "$1 = Examminee's score
 $2 = Perfect score",
+	'quiz_points' => 'Used as title for the <code><nowiki><table></nowiki></code>. Parameters:
+* $1 - label for <code>$2</code>. Any one of the following messages:
+** {{msg-mw|quiz_colorRight}}
+** {{msg-mw|quiz_colorWrong}}
+** {{msg-mw|quiz_colorNA}}
+* $2 - number of points',
 	'quiz_reset' => '{{Identical|Reset}}',
 );
 
