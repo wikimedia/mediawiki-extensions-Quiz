@@ -1219,7 +1219,7 @@ $messages['ko'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'quiz_desc' => 'Mäht et müjjelesch, em Wiki e Quiß opzesäze',
+	'quiz_desc' => 'Määd ed möjjelesch, em Wiki e Quiß opzesäze.',
 	'quiz_addedPoints' => '{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en reschtijje Antwoot dobeijezallt {{PLURAL:$1|weed|wäde|weede}}',
 	'quiz_cutoffPoints' => "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en fo'keehte Antwoot affjetroke {{PLURAL:$1|weed|wäde|weede}}",
 	'quiz_ignoreCoef' => 'Donn de einzel Jeweschte fun de Froore nit zälle',
