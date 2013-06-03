@@ -184,7 +184,7 @@ $messages['arz'] = array(
 	'quiz_reset' => 'اضبط من تاني',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Gitartha.bordoloi
  */
@@ -1466,7 +1466,7 @@ $messages['nah'] = array(
 	'quiz_correction' => 'Tiquihuāz',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'quiz_desc' => 'Tillater oppretting av quizer',
@@ -1530,7 +1530,7 @@ $messages['nl-informal'] = array(
 	'quiz_score' => 'Je score is $1 / $2',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Eirik
  * @author Harald Khan
  * @author Njardarlogar
@@ -1570,7 +1570,7 @@ $messages['oc'] = array(
 	'quiz_reset' => 'Reïnicializar',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
  * @author Psubhashish
  */
