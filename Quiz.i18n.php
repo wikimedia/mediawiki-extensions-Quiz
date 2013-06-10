@@ -1689,6 +1689,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
+ * @author Luckas
  * @author Malafaya
  * @author 555
  */
@@ -1703,7 +1704,7 @@ $messages['pt'] = array(
 	'quiz_colorNA' => 'Não respondidas',
 	'quiz_colorError' => 'Erro de sintaxe',
 	'quiz_correction' => 'Enviar',
-	'quiz_score' => 'Pontuação actual: $1 certas em $2',
+	'quiz_score' => 'Sua pontuação é $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|um ponto|$2 pontos}}',
 	'quiz_reset' => 'Repor a zero',
 );
