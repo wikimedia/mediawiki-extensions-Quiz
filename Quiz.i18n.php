@@ -421,6 +421,13 @@ $messages['ca'] = array(
 	'quiz_reset' => 'Restaura',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'quiz_correction' => 'ДӀадахьийта',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
