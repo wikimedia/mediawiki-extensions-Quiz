@@ -425,6 +425,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'quiz_colorWrong' => 'ГӀалат',
 	'quiz_correction' => 'ДӀадахьийта',
 );
 
