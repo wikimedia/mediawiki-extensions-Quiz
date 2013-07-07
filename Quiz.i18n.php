@@ -291,11 +291,18 @@ $messages['bcc'] = array(
 
 /** Bikol Central (Bikol Central)
  * @author Filipinayzd
+ * @author Geopoet
  */
 $messages['bcl'] = array(
+	'quiz_desc' => 'Minatugot sa pagmumukna kan mga halipot na kahaputan',
+	'quiz_addedPoints' => '{{PLURAL:$1|Puntos|Mga Puntos}} pigdugang para sa sarong tama na kasimbagan',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|Point|Points}} para sa sarong sala na kasimbagan',
+	'quiz_ignoreCoef' => 'Balewalaon an koepisyenteng mga kahaputan',
 	'quiz_shuffle' => 'Balasahon an mga hapot',
 	'quiz_colorRight' => 'Tamâ',
 	'quiz_colorWrong' => 'Salâ',
+	'quiz_colorNA' => 'Dae pinagsimbagan',
+	'quiz_colorError' => 'Kasalaan sa sintaks',
 	'quiz_correction' => 'Isumitir',
 	'quiz_points' => '$1 | $2 punto(s)', # Fuzzy
 	'quiz_reset' => 'Ibalik',
