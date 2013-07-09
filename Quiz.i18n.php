@@ -304,7 +304,8 @@ $messages['bcl'] = array(
 	'quiz_colorNA' => 'Dae pinagsimbagan',
 	'quiz_colorError' => 'Kasalaan sa sintaks',
 	'quiz_correction' => 'Isumitir',
-	'quiz_points' => '$1 | $2 punto(s)', # Fuzzy
+	'quiz_score' => 'An eskor mo $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}',
 	'quiz_reset' => 'Ibalik',
 );
 
