@@ -1218,8 +1218,8 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'quiz_desc' => '퀴즈를 만들 수 있도록 해줍니다',
-	'quiz_addedPoints' => '$1점이 정답으로 추가되었습니다.',
-	'quiz_cutoffPoints' => '틀린 답마다 $1점 감점',
+	'quiz_addedPoints' => '정답이면 {{PLURAL:$1|$1점}} 추가',
+	'quiz_cutoffPoints' => '틀린 답이면 {{PLURAL:$1|$1점}} 감점',
 	'quiz_ignoreCoef' => '문제의 배점 무시',
 	'quiz_shuffle' => '문제 섞기',
 	'quiz_colorRight' => '정답',
