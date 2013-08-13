@@ -287,7 +287,7 @@ class Quiz {
 			$this->mQuestionId,
 			$this->mParser
 		);
-		wfRunHooks( 'QuizQuestionCreated', array( &$this, &$question ) );
+		wfRunHooks( 'QuizQuestionCreated', array( $this, &$question ) );
 		$buffer = $question->parseHeader( $matches[1] );
 		if( !array_key_exists( 3, $matches ) || trim( $matches[3] ) == '' ) {
 			switch( $matches[1] ) {
