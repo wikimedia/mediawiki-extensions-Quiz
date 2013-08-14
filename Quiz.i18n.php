@@ -85,9 +85,9 @@ $messages['qqq'] = array(
 $2 = Perfect score",
 	'quiz_points' => 'Used as title for the <code><nowiki><table></nowiki></code>. Parameters:
 * $1 - label for <code>$2</code>. Any one of the following messages:
-** {{msg-mw|quiz_colorRight}}
-** {{msg-mw|quiz_colorWrong}}
-** {{msg-mw|quiz_colorNA}}
+** {{msg-mw|Quiz colorRight}}
+** {{msg-mw|Quiz colorWrong}}
+** {{msg-mw|Quiz colorNA}}
 * $2 - number of points',
 	'quiz_reset' => '{{Identical|Reset}}',
 );
