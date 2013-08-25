@@ -70,26 +70,37 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'quiz_desc' => '{{desc|name=Quiz|url=http://www.mediawiki.org/wiki/Extension:Quiz}}',
-	'quiz_addedPoints' => 'http://en.wikiversity.org/wiki/Help:Quiz',
+	'quiz_addedPoints' => 'Used as label for the "Added points" input box. Parameters:
+* $1 - number of points',
 	'quiz_cutoffPoints' => 'Used as label for "cutoff points" input box. Parameters:
 * $1 - cutoff points',
-	'quiz_ignoreCoef' => 'http://en.wikiversity.org/wiki/Help:Quiz',
-	'quiz_shuffle' => 'Button title. See http://en.wikiversity.org/wiki/Help:Quiz',
-	'quiz_colorRight' => 'http://en.wikiversity.org/wiki/Help:Quiz
+	'quiz_ignoreCoef' => 'Used as label for the "Ignore coef" checkbox.',
+	'quiz_shuffle' => 'Used as label for the "Shuffle" button.',
+	'quiz_colorRight' => 'Used as label for correct answer.
+{{Related|Quiz color}}
 {{Identical|Right}}',
-	'quiz_colorWrong' => 'http://en.wikiversity.org/wiki/Help:Quiz',
-	'quiz_colorNA' => 'http://en.wikiversity.org/wiki/Help:Quiz',
-	'quiz_colorError' => '{{Identical|Syntax error}}',
-	'quiz_correction' => '{{Identical|Submit}}',
-	'quiz_score' => "$1 = Examminee's score
-$2 = Perfect score",
+	'quiz_colorWrong' => 'Used as label for wrong answer.
+{{Related|Quiz color}}',
+	'quiz_colorNA' => 'Used as label for "Not answered question".
+{{Related|Quiz color}}',
+	'quiz_colorError' => 'Used as label.
+{{Related|Quiz color}}
+{{Identical|Syntax error}}',
+	'quiz_correction' => 'Used as label for the "Submit" button.
+{{Identical|Submit}}',
+	'quiz_score' => "Parameters:
+* $1 - examminee's score
+* $2 - perfect score",
 	'quiz_points' => 'Used as title for the <code><nowiki><table></nowiki></code>. Parameters:
 * $1 - label for <code>$2</code>. Any one of the following messages:
 ** {{msg-mw|Quiz colorRight}}
 ** {{msg-mw|Quiz colorWrong}}
 ** {{msg-mw|Quiz colorNA}}
 * $2 - number of points',
-	'quiz_reset' => '{{Identical|Reset}}',
+	'quiz_reset' => 'Used as label for the "Reset" button.
+
+Preceded by the "Submit" button.
+{{Identical|Reset}}',
 );
 
 /** Afrikaans (Afrikaans)
