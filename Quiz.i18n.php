@@ -1272,7 +1272,7 @@ $messages['ku-latn'] = array(
 	'quiz_score' => 'Skora te  $1 / $2 e',
 );
 
-/** Kirghiz (Кыргызча)
+/** Kyrgyz (Кыргызча)
  * @author Chorobek
  */
 $messages['ky'] = array(
