@@ -446,6 +446,7 @@ $messages['ca'] = array(
 $messages['ce'] = array(
 	'quiz_colorWrong' => 'ГӀалат',
 	'quiz_correction' => 'ДӀадахьийта',
+	'quiz_reset' => 'Кхоссар',
 );
 
 /** Sorani Kurdish (کوردی)
