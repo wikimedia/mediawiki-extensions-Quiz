@@ -1421,6 +1421,7 @@ $messages['mn'] = array(
  * @author Htt
  * @author Kaajawa
  * @author Kaustubh
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'quiz_desc' => 'प्रश्नावल्या तयार करण्याची परवानगी देते.',
@@ -1432,7 +1433,7 @@ $messages['mr'] = array(
 	'quiz_colorWrong' => 'चूक',
 	'quiz_colorNA' => 'उत्तर दिलेले नाही',
 	'quiz_colorError' => 'चुकीचा सिन्टॅक्स',
-	'quiz_correction' => 'पाठवा',
+	'quiz_correction' => 'सादर करा',
 	'quiz_score' => 'तुमचे गुण $1 / $2',
 	'quiz_points' => '$1 | {{PLURAL:$2|१ गुण|$2 गुण}}',
 	'quiz_reset' => 'पूर्ववत करा',
