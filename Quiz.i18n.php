@@ -1330,6 +1330,18 @@ $messages['li'] = array(
 	'quiz_reset' => 'Oppernuuj',
 );
 
+/** لوری (لوری)
+ * @author Mogoeilor
+ */
+$messages['lrc'] = array(
+	'quiz_colorRight' => 'درست',
+	'quiz_colorWrong' => 'اشتوا',
+	'quiz_colorNA' => 'جواو ندیئه',
+	'quiz_colorError' => 'خطا دستوری',
+	'quiz_correction' => 'كل كردن',
+	'quiz_reset' => 'د نو شرو كردن',
+);
+
 /** Lithuanian (lietuvių)
  * @author Matasg
  */
