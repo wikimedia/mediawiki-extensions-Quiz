@@ -458,7 +458,7 @@ $messages['ckb'] = array(
 	'quiz_correction' => 'ناردن',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Li-sung
  * @author Matěj Grabovský
  */
