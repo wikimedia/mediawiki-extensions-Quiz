@@ -267,8 +267,8 @@ $messages['azb'] = array(
  */
 $messages['ba'] = array(
 	'quiz_desc' => 'Һораулыҡ булдырырға мөмкинлек бирә',
-	'quiz_addedPoints' => 'Дөрөҫ яуап өсөн {{PLURAL:$1|мәрәй|мәрәй}} өҫтәлде',
-	'quiz_cutoffPoints' => 'Яңылыш яуап өсөн {{PLURAL:$1|мәрәй|мәрәй}}',
+	'quiz_addedPoints' => 'Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй|мәрәй}} өҫтәлде', # Fuzzy
+	'quiz_cutoffPoints' => 'Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй|мәрәй}}', # Fuzzy
 	'quiz_ignoreCoef' => 'Һорау коэффициенттарын иҫәпкә алмаҫҡа',
 	'quiz_shuffle' => 'Һорауҙарҙы бутарға',
 	'quiz_colorRight' => 'Дөрөҫ',
@@ -277,7 +277,7 @@ $messages['ba'] = array(
 	'quiz_colorError' => 'Синтаксик хата',
 	'quiz_correction' => 'Ебәрергә',
 	'quiz_score' => 'Мәрәйегеҙ: $1 / $2',
-	'quiz_points' => '$1 | {{PLURAL:$2|1 мәрәй|$2 мәрәй}}',
+	'quiz_points' => '$1 | {{PLURAL:$2|1=1 мәрәй|$2 мәрәй}}', # Fuzzy
 	'quiz_reset' => 'Баштан алырға',
 );
 
@@ -1832,13 +1832,14 @@ $messages['roa-tara'] = array(
 
 /** Russian (русский)
  * @author Aleksandrit
+ * @author Amire80
  * @author EugeneZelenko
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'quiz_desc' => 'Позволяет создавать вопросники',
-	'quiz_addedPoints' => '{{PLURAL:$1|очко|очков}} добавлено за правильный ответ',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|очко|очков}} вычтено за неправильный ответ',
+	'quiz_addedPoints' => '{{PLURAL:$1|1=Добавлено очко|Добавлены очки}} за правильный ответ',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|1=Очко|Очки}} за неправильный ответ',
 	'quiz_ignoreCoef' => 'Пренебрегать коэффициентами вопросов',
 	'quiz_shuffle' => 'Перемешать вопросы',
 	'quiz_colorRight' => 'Правильно',
@@ -1846,8 +1847,8 @@ $messages['ru'] = array(
 	'quiz_colorNA' => 'Нет ответа',
 	'quiz_colorError' => 'Синтаксическая ошибка',
 	'quiz_correction' => 'Отправить',
-	'quiz_score' => 'Вы набрали $1 {{PLURAL:$1|очко|очка|очков}} из $2',
-	'quiz_points' => '$1 | $2 {{PLURAL:$2|очко|очка|очков}}',
+	'quiz_score' => 'Ваш счёт: $1 из $2',
+	'quiz_points' => '$1 | $2 {{PLURAL:$2|очко|очков|очка}}',
 	'quiz_reset' => 'Сбросить',
 );
 
@@ -2278,11 +2279,12 @@ $messages['ug-arab'] = array(
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
+ * @author Andriykopanytsia
  */
 $messages['uk'] = array(
 	'quiz_desc' => 'Дозволяє створювати питальники',
-	'quiz_addedPoints' => '{{PLURAL:$1|Очко додане|Очки додані}} за правильну відповідь',
-	'quiz_cutoffPoints' => '{{PLURAL:$1|Очко відняте|Очки відняті}} за неправильну відповідь',
+	'quiz_addedPoints' => '{{PLURAL:$1|1=Очко додане|Очки додані}} за правильну відповідь',
+	'quiz_cutoffPoints' => '{{PLURAL:$1|1=Очко відняте|Очки відняті}} за неправильну відповідь',
 	'quiz_ignoreCoef' => 'Нехтувати коефіцієнтами запитань',
 	'quiz_shuffle' => 'Перемішати запитання',
 	'quiz_colorRight' => 'Правильно',
