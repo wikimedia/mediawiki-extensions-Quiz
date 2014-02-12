@@ -874,21 +874,22 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
-	'quiz_desc' => 'क्विज़ बनाने के लिये सहायता करता हैं',
-	'quiz_addedPoints' => 'सही जवाब के लिये मार्क्स दिये', # Fuzzy
-	'quiz_cutoffPoints' => 'गलत जवाबके लिये मार्क्स घटाये', # Fuzzy
-	'quiz_ignoreCoef' => 'प्रश्नोंके कोएफिशिअंटको नजर अंदाज करें',
-	'quiz_shuffle' => 'सवाल उपर नीचे करें',
-	'quiz_colorRight' => 'सहीं',
+	'quiz_desc' => 'क्विज़ बनाना संभव करता है',
+	'quiz_addedPoints' => 'सही जवाब के लिये {{PLURAL:$1|मार्क दिया|मार्क्स दिये}}',
+	'quiz_cutoffPoints' => 'गलत जवाब के लिये {{PLURAL:$1|मार्क घटाया|मार्क्स घटाये}}',
+	'quiz_ignoreCoef' => 'प्रश्नों के कोएफिशेंट को नजरअंदाज करें',
+	'quiz_shuffle' => 'प्रश्न ऊपर नीचे करें',
+	'quiz_colorRight' => 'सही',
 	'quiz_colorWrong' => 'गलत',
 	'quiz_colorNA' => 'जवाब दिया नहीं',
-	'quiz_colorError' => 'सिन्टॅक्स गलती',
+	'quiz_colorError' => 'सिन्टॅक्स त्रुटि',
 	'quiz_correction' => 'भेजें',
-	'quiz_score' => 'आपके गुण $1 / $2',
-	'quiz_points' => '$1 | $2 गुण', # Fuzzy
-	'quiz_reset' => 'पूर्ववत करें',
+	'quiz_score' => 'आपका स्कोर है $1 / $2',
+	'quiz_points' => '$1 | {{PLURAL:$2|एक मार्क|$2 मार्क्स}}',
+	'quiz_reset' => 'रीसेट करें',
 );
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
