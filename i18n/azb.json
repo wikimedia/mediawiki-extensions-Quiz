@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Amir a57",
+            "Mousa"
+        ]
+    },
+    "quiz_colorRight": "دوغرو",
+    "quiz_colorWrong": "یانلیش",
+    "quiz_colorNA": "جوابسیز",
+    "quiz_correction": "گؤندر",
+    "quiz_reset": "قور"
+}

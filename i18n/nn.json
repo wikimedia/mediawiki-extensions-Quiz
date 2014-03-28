@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Eirik",
+            "Harald Khan",
+            "Njardarlogar"
+        ]
+    },
+    "quiz_desc": "Gjer oppretting av spørjekonkurransar mogleg",
+    "quiz_addedPoints": "Plusspoeng for rett svar",
+    "quiz_cutoffPoints": "Minuspoeng for feil svar",
+    "quiz_ignoreCoef": "Oversjå verdiane på spørsmåla",
+    "quiz_shuffle": "Stokk om på spørsmåla",
+    "quiz_colorRight": "Rett",
+    "quiz_colorWrong": "Feil",
+    "quiz_colorNA": "Ikkje svara på",
+    "quiz_colorError": "Syntaksfeil",
+    "quiz_correction": "Svar",
+    "quiz_score": "Poengsummen din er $1 av $2 moglege",
+    "quiz_points": "$1 | {{PLURAL:$2|eitt poeng|$2 poeng}}",
+    "quiz_reset": "Nullstill"
+}

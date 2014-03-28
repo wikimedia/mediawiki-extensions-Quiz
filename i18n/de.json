@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kghbln",
+            "Raimond Spekking"
+        ]
+    },
+    "quiz_desc": "Ermöglicht die Erstellung von Quizspielen",
+    "quiz_addedPoints": "{{PLURAL:$1|Pluspunkt|Pluspunkte}} für eine richtige Antwort",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkte}} für eine falsche Antwort",
+    "quiz_ignoreCoef": "Ignoriere den Fragen-Koeffizienten",
+    "quiz_shuffle": "Fragen mischen",
+    "quiz_colorRight": "Richtig",
+    "quiz_colorWrong": "Falsch",
+    "quiz_colorNA": "Nicht beantwortet",
+    "quiz_colorError": "Syntaxfehler",
+    "quiz_correction": "Speichern",
+    "quiz_score": "Punkte: $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}",
+    "quiz_reset": "Neustart"
+}

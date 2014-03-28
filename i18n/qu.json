@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "AlimanRuna"
+        ]
+    },
+    "quiz_desc": "Watuchi pukllay kamariyta saqillan",
+    "quiz_addedPoints": "Allin kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} yapasqa",
+    "quiz_cutoffPoints": "Panta kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} qichusqa",
+    "quiz_ignoreCoef": "Sapa tapuypaq iñukunata qhawarpariy",
+    "quiz_shuffle": "Tapuykunata arwiy",
+    "quiz_colorRight": "Allin",
+    "quiz_colorWrong": "Panta",
+    "quiz_colorNA": "Mana kutichisqa",
+    "quiz_colorError": "Sintaksis pantasqa",
+    "quiz_correction": "Kachay",
+    "quiz_score": "Taripasqaykikunaqa kay hinam: $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$1|huk iñu|$2 iñukuna}}",
+    "quiz_reset": "Musuqmanta qallariy"
+}

@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "EugeneZelenko",
+            "Jim-by",
+            "Red Winged Duck"
+        ]
+    },
+    "quiz_desc": "Дазваляе стварэньне віктарын",
+    "quiz_addedPoints": "$1 {{PLURAL:$1|пункт дададзены|пункты дададзеныя|пунктаў дададзена}} за правільны адказ",
+    "quiz_cutoffPoints": "$1 {{PLURAL:$1|пункт зьняты|пункты зьнятыя|пунктаў зьнята}} за няправільны адказ",
+    "quiz_ignoreCoef": "Ігнараваць каэфіцыенты пытаньняў",
+    "quiz_shuffle": "Перамяшаць пытаньні",
+    "quiz_colorRight": "Правільна",
+    "quiz_colorWrong": "Няправільна",
+    "quiz_colorNA": "Няма адказу",
+    "quiz_colorError": "Сынтаксычная памылка",
+    "quiz_correction": "Даслаць",
+    "quiz_score": "Вы набралі $1 {{PLURAL:$1|пункт|пункты|пунктаў}} з $2",
+    "quiz_points": "$1 | $2 {{PLURAL:$2|пункт|пункты|пунктаў}}",
+    "quiz_reset": "Скінуць"
+}

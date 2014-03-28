@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Alma",
+            "Toliño",
+            "Xosé"
+        ]
+    },
+    "quiz_desc": "Permite a creación de preguntas",
+    "quiz_addedPoints": "{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea",
+    "quiz_ignoreCoef": "Ignorar os coeficientes das preguntas",
+    "quiz_shuffle": "Barallar as preguntas",
+    "quiz_colorRight": "Ben",
+    "quiz_colorWrong": "Mal",
+    "quiz_colorNA": "Sen resposta",
+    "quiz_colorError": "Erro de sintaxe",
+    "quiz_correction": "Enviar",
+    "quiz_score": "A súa puntuación é $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
+    "quiz_reset": "Limpar"
+}

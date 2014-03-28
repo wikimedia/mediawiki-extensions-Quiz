@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ascánder",
+            "Crazymadlover",
+            "Sanbec"
+        ]
+    },
+    "quiz_desc": "Permite la creación de quices",
+    "quiz_addedPoints": "{{PLURAL:$1|Punto|Puntos}} agregados por una respuesta acertada",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Punto|Puntos}} penalizados por una respuesta errónea",
+    "quiz_ignoreCoef": "Ignorar los puntos de cada pregunta",
+    "quiz_shuffle": "Desordenar preguntas",
+    "quiz_colorRight": "Acertadas",
+    "quiz_colorWrong": "Falladas",
+    "quiz_colorNA": "No contestadas",
+    "quiz_colorError": "Error de sintaxis",
+    "quiz_correction": "Enviar",
+    "quiz_score": "Tu puntuación es de $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
+    "quiz_reset": "Empezar de nuevo"
+}

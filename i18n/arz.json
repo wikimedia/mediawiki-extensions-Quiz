@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ghaly",
+            "Meno25",
+            "Ramsis II"
+        ]
+    },
+    "quiz_desc": "بيسمح بعمل امتحانات",
+    "quiz_addedPoints": "{{PLURAL:$1|النقطة|النقط}} اللى بتضاف لما تجاوب صح",
+    "quiz_cutoffPoints": "{{PLURAL:$1|النقطة|النقط}} اللى بتتخصم لما تجاوب غلط",
+    "quiz_ignoreCoef": "اتجاهل معاملات الاسئلة",
+    "quiz_shuffle": "اسئلة متلخبطة",
+    "quiz_colorRight": "صح",
+    "quiz_colorWrong": "غلط",
+    "quiz_colorNA": "ماتجاوبش عليه",
+    "quiz_colorError": "غلط فى السينتاكس",
+    "quiz_correction": "تنفيذ",
+    "quiz_score": "$1 / $2 النتيجة بتاعتك هي",
+    "quiz_points": "$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}",
+    "quiz_reset": "اضبط من تاني"
+}

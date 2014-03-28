@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Slomox"
+        ]
+    },
+    "quiz_desc": "Verlööft dat Opstellen vun Quizspelen",
+    "quiz_addedPoints": "{{PLURAL:$1|Punkt|Punkten}} för richtige Antwoord",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkten}} för verkehrte Antwoord",
+    "quiz_ignoreCoef": "op Fragen-Koeffizienten nix op geven",
+    "quiz_shuffle": "Fragen mischen",
+    "quiz_colorRight": "Stimmt",
+    "quiz_colorWrong": "Verkehrt",
+    "quiz_colorNA": "Nich antert",
+    "quiz_colorError": "Syntaxfehler",
+    "quiz_correction": "Korrektur",
+    "quiz_score": "Punkten: $1 / $2",
+    "quiz_points": "$1 | $2 {{PLURAL:$2|Punkt|Punkten}}",
+    "quiz_reset": "Trüchsetten"
+}

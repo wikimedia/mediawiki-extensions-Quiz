@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Meursault2004",
+            "Pras"
+        ]
+    },
+    "quiz_desc": "Nyedyakaké fasilitas nggawé kuis",
+    "quiz_addedPoints": "Panambahan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing bener",
+    "quiz_cutoffPoints": "Pangurangan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing salah",
+    "quiz_ignoreCoef": "Lirwakna koéfisièn pitakonan",
+    "quiz_shuffle": "Ngacak pitakonan",
+    "quiz_colorRight": "Bener",
+    "quiz_colorWrong": "Salah",
+    "quiz_colorNA": "Ora diwangsuli",
+    "quiz_colorError": "Kaluputan sintaksis (''syntax error'')",
+    "quiz_correction": "Kirim",
+    "quiz_score": "Skor biji panjenengan iku $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
+    "quiz_reset": "Reset"
+}

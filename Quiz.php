@@ -42,7 +42,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Quiz',
-	'version'        => '1.1.0',
+	'version'        => '1.2.0',
 	'author'         => 'Louis-Rémi Babe',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Quiz',
 	'descriptionmsg' => 'quiz_desc'
@@ -51,9 +51,10 @@ $wgExtensionCredits['parserhook'][] = array(
 /**
  * Add this extension to MediaWiki's extensions list.
  */
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 $wgAutoloadClasses['Quiz'] = $dir . 'Quiz.class.php';
 $wgAutoloadClasses['Question'] = $dir . 'Quiz.class.php';
+$wgMessagesDirs['QuizExtension'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
 
 $wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';

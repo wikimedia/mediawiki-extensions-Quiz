@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "quiz_desc": "Tillater oppretting av quizer",
+    "quiz_addedPoints": "{{PLURAL:$1|Plusspoeng}} for korrekt svar",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Minuspoeng}} for galt svar",
+    "quiz_ignoreCoef": "Ignorer spørsmålets verdier",
+    "quiz_shuffle": "Stokk spørsmålene",
+    "quiz_colorRight": "Riktig",
+    "quiz_colorWrong": "Galt",
+    "quiz_colorNA": "Ikke besvart",
+    "quiz_colorError": "Syntaksfeil",
+    "quiz_correction": "Svar",
+    "quiz_score": "Din poengsum er $1 av $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 poeng|$2 poeng}}",
+    "quiz_reset": "Nullstill"
+}

@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "An13sa",
+            "Kobazulo"
+        ]
+    },
+    "quiz_desc": "Galdera-sortak sortzeko",
+    "quiz_colorRight": "Zuzenak",
+    "quiz_colorWrong": "Okerrak",
+    "quiz_colorNA": "Erantzun gabe",
+    "quiz_colorError": "Sintaxi-errorea",
+    "quiz_correction": "Bidali",
+    "quiz_score": "Zure kalifikazioa $1 / $2 da",
+    "quiz_points": "$1 | {{PLURAL:$2|puntu 1|$2 puntu}}",
+    "quiz_reset": "Hasieratu"
+}

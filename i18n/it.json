@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "BrokenArrow",
+            "Darth Kule"
+        ]
+    },
+    "quiz_desc": "Consente di creare dei quiz",
+    "quiz_addedPoints": "{{PLURAL:$1|Punto aggiunto|Punti aggiunti}} per ogni risposta corretta",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Punto sottratto|Punti sottratti}} per ogni risposta errata",
+    "quiz_ignoreCoef": "Ignora i coefficienti di domanda",
+    "quiz_shuffle": "Mescola le domande",
+    "quiz_colorRight": "Giusto",
+    "quiz_colorWrong": "Sbagliato",
+    "quiz_colorNA": "Nessuna risposta",
+    "quiz_colorError": "Errore di sintassi",
+    "quiz_correction": "Correggi",
+    "quiz_score": "Il tuo punteggio è $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 punti}}",
+    "quiz_reset": "Reimposta"
+}

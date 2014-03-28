@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "quiz_desc": "容許開小測題",
+    "quiz_addedPoints": "答啱咗加上嘅分數",
+    "quiz_cutoffPoints": "答錯咗減去嘅分數",
+    "quiz_ignoreCoef": "略過問題嘅系數",
+    "quiz_shuffle": "撈亂問題",
+    "quiz_colorRight": "啱",
+    "quiz_colorWrong": "錯",
+    "quiz_colorNA": "未答",
+    "quiz_colorError": "語法錯咗",
+    "quiz_correction": "遞交",
+    "quiz_score": "你嘅分數係 $1 / $2",
+    "quiz_points": "$1 | $2 分",
+    "quiz_reset": "重設"
+}

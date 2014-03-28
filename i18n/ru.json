@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Aleksandrit",
+            "Amire80",
+            "EugeneZelenko",
+            "Александр Сигачёв"
+        ]
+    },
+    "quiz_desc": "Позволяет создавать вопросники",
+    "quiz_addedPoints": "{{PLURAL:$1|1=Добавлено очко|Добавлены очки}} за правильный ответ",
+    "quiz_cutoffPoints": "{{PLURAL:$1|1=Очко|Очки}} за неправильный ответ",
+    "quiz_ignoreCoef": "Пренебрегать коэффициентами вопросов",
+    "quiz_shuffle": "Перемешать вопросы",
+    "quiz_colorRight": "Правильно",
+    "quiz_colorWrong": "Ошибка",
+    "quiz_colorNA": "Нет ответа",
+    "quiz_colorError": "Синтаксическая ошибка",
+    "quiz_correction": "Отправить",
+    "quiz_score": "Ваш счёт: $1 из $2",
+    "quiz_points": "$1 | $2 {{PLURAL:$2|очко|очков|очка}}",
+    "quiz_reset": "Сбросить"
+}

@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bellayet",
+            "Zaheen"
+        ]
+    },
+    "quiz_desc": "কুইজ সৃষ্টির অনুমতি দেয়",
+    "quiz_addedPoints": "সঠিক উত্তরের জন্য {{PLURAL:$1|পয়েন্ট|পয়েন্টসমূহ}} যোগ হয়েছে",
+    "quiz_cutoffPoints": "ভুল উত্তরের জন্য {{PLURAL:$1|পয়েন্ট|পয়েন্টসমূহ}} বিয়োগ হয়েছে",
+    "quiz_ignoreCoef": "প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক",
+    "quiz_shuffle": "প্রশ্ন উলোটপালোট করো",
+    "quiz_colorRight": "সঠিক",
+    "quiz_colorWrong": "ভুল",
+    "quiz_colorNA": "উত্তর দেওয়া হয়নি",
+    "quiz_colorError": "বাক্যপ্রকরণ ত্রুটি",
+    "quiz_correction": "জমা দাও",
+    "quiz_score": "আপনার স্কোর $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 পয়েন্ট|$2 পয়েন্টসমূহ}}",
+    "quiz_reset": "পুনরায় আরম্ভ করুন"
+}

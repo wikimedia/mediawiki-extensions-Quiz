@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Candalua"
+        ]
+    },
+    "quiz_desc": "Perméte de crear dei zughi a quiz",
+    "quiz_addedPoints": "{{PLURAL:$1|Ponto|Ponti}} zontà par ogni risposta giusta",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Ponto|Ponti}} cavà par ogni risposta sbaglià",
+    "quiz_ignoreCoef": "Ignora i coeficenti de domanda",
+    "quiz_shuffle": "Mìssia le domande",
+    "quiz_colorRight": "Giusto",
+    "quiz_colorWrong": "Sbaglià",
+    "quiz_colorNA": "Nissuna risposta",
+    "quiz_colorError": "Eror de sintassi",
+    "quiz_correction": "Corègi",
+    "quiz_score": "El to puntegio el xe $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 ponto|$2 ponti}}",
+    "quiz_reset": "Azzèra"
+}

@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "quiz_desc": "Permet la creacion dels Quiz",
+    "quiz_addedPoints": "{{PLURAL:$1|Punt apondut|Punts aponduts}} per una responsa corrècta",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Punt levat|Punts levats}} per una responsa erronèa",
+    "quiz_ignoreCoef": "Ignorar los coeficients de las questions",
+    "quiz_shuffle": "Mesclar las questions",
+    "quiz_colorRight": "Just",
+    "quiz_colorWrong": "Fals",
+    "quiz_colorNA": "Pas respondut",
+    "quiz_colorError": "Error de sintaxi",
+    "quiz_correction": "Correccion",
+    "quiz_score": "Vòstra marca es $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
+    "quiz_reset": "Reïnicializar"
+}

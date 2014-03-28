@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": [
+            "Chhorran",
+            "Lovekhmer",
+            "Thearith",
+            "គីមស៊្រុន"
+        ]
+    },
+    "quiz_desc": "អនុញ្ញាតឱ្យបង្កើតចំណោទសួរ",
+    "quiz_addedPoints": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}}$1 ត្រូវបានបូកចូលចំពោះចម្លើយត្រឹមត្រូវ",
+    "quiz_cutoffPoints": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}} $1 ត្រូវបានដកចេញចំពោះចម្លើយខុស",
+    "quiz_ignoreCoef": "មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ",
+    "quiz_shuffle": "សាប់សំណួរ",
+    "quiz_colorRight": "ត្រូវ",
+    "quiz_colorWrong": "ខុស",
+    "quiz_colorNA": "មិនបានឆ្លើយ",
+    "quiz_colorError": "កំហុសពាក្យសម័្ពន្ធ",
+    "quiz_correction": "ដាក់ស្នើ",
+    "quiz_score": "តារាងពិន្ទុរបស់អ្នកគឺ  $1/$2",
+    "quiz_points": "$1 | {{PLURAL:$2|១ពិន្ទុ|$2ពិន្ទុ}}",
+    "quiz_reset": "ធ្វើឱ្យដូចដើមវិញ"
+}

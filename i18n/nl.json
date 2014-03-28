@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "SPQRobin",
+            "Siebrand"
+        ]
+    },
+    "quiz_desc": "Maakt het aanmaken van tests mogelijk",
+    "quiz_addedPoints": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een fout antwoord",
+    "quiz_ignoreCoef": "De coëfficienten van de vragen negeren",
+    "quiz_shuffle": "Willekeurige volgorde voor vragen",
+    "quiz_colorRight": "Goed",
+    "quiz_colorWrong": "Fout",
+    "quiz_colorNA": "Niet beantwoord",
+    "quiz_colorError": "Er zit een fout in de syntaxis",
+    "quiz_correction": "Antwoord opslaan",
+    "quiz_score": "Uw score is $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punten}}",
+    "quiz_reset": "Herstellen"
+}

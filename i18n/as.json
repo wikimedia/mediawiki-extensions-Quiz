@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bishnu Saikia",
+            "Gitartha.bordoloi"
+        ]
+    },
+    "quiz_desc": "কুইজ সৃষ্টিৰ অনুমতি দিয়ে",
+    "quiz_addedPoints": "সঠিক উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
+    "quiz_cutoffPoints": "ভুল উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
+    "quiz_ignoreCoef": "প্ৰশ্নসমূহৰ সহগ উপেক্ষা কৰক",
+    "quiz_shuffle": "প্ৰশ্নৰ ক্ৰম উলটপালট কৰক",
+    "quiz_colorRight": "শুদ্ধ",
+    "quiz_colorWrong": "ভুল",
+    "quiz_colorNA": "উত্তৰ দিয়া হোৱা নাই",
+    "quiz_colorError": "চীন্‌টেক্স ত্ৰুটি",
+    "quiz_correction": "দাখিল কৰক",
+    "quiz_score": "আপোনাৰ নম্বৰ $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|1 পইণ্ট|$2 পইণ্ট}}",
+    "quiz_reset": "পূৰ্বৰ অৱস্থালৈ লৈ যাওক"
+}

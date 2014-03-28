@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Kaustubh",
+            "Siddhartha Ghai"
+        ]
+    },
+    "quiz_desc": "क्विज़ बनाना संभव करता है",
+    "quiz_addedPoints": "सही जवाब के लिये {{PLURAL:$1|मार्क दिया|मार्क्स दिये}}",
+    "quiz_cutoffPoints": "गलत जवाब के लिये {{PLURAL:$1|मार्क घटाया|मार्क्स घटाये}}",
+    "quiz_ignoreCoef": "प्रश्नों के कोएफिशेंट को नजरअंदाज करें",
+    "quiz_shuffle": "प्रश्न ऊपर नीचे करें",
+    "quiz_colorRight": "सही",
+    "quiz_colorWrong": "गलत",
+    "quiz_colorNA": "जवाब दिया नहीं",
+    "quiz_colorError": "सिन्टॅक्स त्रुटि",
+    "quiz_correction": "भेजें",
+    "quiz_score": "आपका स्कोर है $1 / $2",
+    "quiz_points": "$1 | {{PLURAL:$2|एक मार्क|$2 मार्क्स}}",
+    "quiz_reset": "रीसेट करें"
+}

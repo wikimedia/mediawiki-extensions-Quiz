@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Gazeb"
+        ]
+    },
+    "quiz_desc": "Уможнює створёвати квізы",
+    "quiz_addedPoints": "{{PLURAL:$1|Очко придане|Очка приданы}} за правилну одповідь",
+    "quiz_cutoffPoints": "{{PLURAL:$1|Очко одняте|Очка одняты}} за неправилну одповідь",
+    "quiz_ignoreCoef": "Іґноровати коефіціенты вопросів",
+    "quiz_shuffle": "Замішати вопросы",
+    "quiz_colorRight": "Правилно",
+    "quiz_colorWrong": "Неправилно",
+    "quiz_colorNA": "Неодповіджене",
+    "quiz_colorError": "Сінтаксічна хыба",
+    "quiz_correction": "Одослати",
+    "quiz_score": "Ваш резултат є $1 / $2",
+    "quiz_points": "$1 | $2 {{PLURAL:$2|очко|очка|очок}}",
+    "quiz_reset": "Ресетовати"
+}
