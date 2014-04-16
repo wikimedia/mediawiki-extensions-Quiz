@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gaoxuewei",
-            "Mark85296341",
-            "Oapbtommy"
-        ]
-    },
-    "quiz_desc": "容許建立小測題目",
-    "quiz_addedPoints": "答對加上的{{PLURAL:$1|分數|分數}}",
-    "quiz_cutoffPoints": "答錯減去的{{PLURAL:$1|分數|分數}}",
-    "quiz_ignoreCoef": "略過問題的係數",
-    "quiz_shuffle": "隨機問題",
-    "quiz_colorRight": "對",
-    "quiz_colorWrong": "錯",
-    "quiz_colorNA": "未回答",
-    "quiz_colorError": "語法錯誤",
-    "quiz_correction": "提交",
-    "quiz_score": "您的分數是 $1 / $2",
-    "quiz_points": "$1 | $2 分",
-    "quiz_reset": "重設"
+	"@metadata": {
+		"authors": [
+			"Gaoxuewei",
+			"Mark85296341",
+			"Oapbtommy"
+		]
+	},
+	"quiz_desc": "容許建立小測題目",
+	"quiz_addedPoints": "答對加上的{{PLURAL:$1|分數|分數}}",
+	"quiz_cutoffPoints": "答錯減去的{{PLURAL:$1|分數|分數}}",
+	"quiz_ignoreCoef": "略過問題的係數",
+	"quiz_shuffle": "隨機問題",
+	"quiz_colorRight": "對",
+	"quiz_colorWrong": "錯",
+	"quiz_colorNA": "未回答",
+	"quiz_colorError": "語法錯誤",
+	"quiz_correction": "提交",
+	"quiz_score": "您的分數是 $1 / $2",
+	"quiz_points": "$1 | $2 分",
+	"quiz_reset": "重設"
 }

@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Paucabot",
-            "SMP"
-        ]
-    },
-    "quiz_desc": "Permet la creació de concursos",
-    "quiz_addedPoints": "{{PLURAL:$1|punt|punts}} per resposta correcta",
-    "quiz_cutoffPoints": "{{PLURAL:$1|punt|punts}} per resposta incorrecta",
-    "quiz_ignoreCoef": "Ignora els coeficients de les qüestions",
-    "quiz_shuffle": "Preguntes aleatòries",
-    "quiz_colorRight": "Correcte",
-    "quiz_colorWrong": "Incorrecte",
-    "quiz_colorNA": "Sense resposta",
-    "quiz_colorError": "Error de sintaxi",
-    "quiz_correction": "Envia",
-    "quiz_score": "La vostra puntuació és $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
-    "quiz_reset": "Restaura"
+	"@metadata": {
+		"authors": [
+			"Paucabot",
+			"SMP"
+		]
+	},
+	"quiz_desc": "Permet la creació de concursos",
+	"quiz_addedPoints": "{{PLURAL:$1|punt|punts}} per resposta correcta",
+	"quiz_cutoffPoints": "{{PLURAL:$1|punt|punts}} per resposta incorrecta",
+	"quiz_ignoreCoef": "Ignora els coeficients de les qüestions",
+	"quiz_shuffle": "Preguntes aleatòries",
+	"quiz_colorRight": "Correcte",
+	"quiz_colorWrong": "Incorrecte",
+	"quiz_colorNA": "Sense resposta",
+	"quiz_colorError": "Error de sintaxi",
+	"quiz_correction": "Envia",
+	"quiz_score": "La vostra puntuació és $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
+	"quiz_reset": "Restaura"
 }

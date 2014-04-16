@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aotake",
-            "JtFuruhata",
-            "Shirayuki"
-        ]
-    },
-    "quiz_desc": "クイズを作成できるようにする",
-    "quiz_addedPoints": "正解により$1{{PLURAL:$1|点}}追加",
-    "quiz_cutoffPoints": "不正解に$1{{PLURAL:$1|点}}",
-    "quiz_ignoreCoef": "問題ごとの倍率を無視",
-    "quiz_shuffle": "問題をシャッフル",
-    "quiz_colorRight": "正解",
-    "quiz_colorWrong": "不正解",
-    "quiz_colorNA": "無回答",
-    "quiz_colorError": "構文エラー",
-    "quiz_correction": "採点",
-    "quiz_score": "得点: $1点 ($2点満点)",
-    "quiz_points": "$1 | $2{{PLURAL:$2|点}}",
-    "quiz_reset": "リセット"
+	"@metadata": {
+		"authors": [
+			"Aotake",
+			"JtFuruhata",
+			"Shirayuki"
+		]
+	},
+	"quiz_desc": "クイズを作成できるようにする",
+	"quiz_addedPoints": "正解により$1{{PLURAL:$1|点}}追加",
+	"quiz_cutoffPoints": "不正解に$1{{PLURAL:$1|点}}",
+	"quiz_ignoreCoef": "問題ごとの倍率を無視",
+	"quiz_shuffle": "問題をシャッフル",
+	"quiz_colorRight": "正解",
+	"quiz_colorWrong": "不正解",
+	"quiz_colorNA": "無回答",
+	"quiz_colorError": "構文エラー",
+	"quiz_correction": "採点",
+	"quiz_score": "得点: $1点 ($2点満点)",
+	"quiz_points": "$1 | $2{{PLURAL:$2|点}}",
+	"quiz_reset": "リセット"
 }

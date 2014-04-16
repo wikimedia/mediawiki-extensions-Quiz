@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yekrats"
-        ]
-    },
-    "quiz_desc": "Permesas kreadon de kvizoj",
-    "quiz_addedPoints": "{{PLURAL:$1|Poento|Poentoj}} por ĝusta respondo",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Poento subtrahita|Poentoj subtrahitaj}} por malĝusta respondo",
-    "quiz_ignoreCoef": "Ignoru la koeficientojn de demandoj.",
-    "quiz_shuffle": "Hazardmiksi demandaron",
-    "quiz_colorRight": "Ĝusta",
-    "quiz_colorWrong": "Malĝusta",
-    "quiz_colorNA": "Ne respondita",
-    "quiz_colorError": "Sintaksa eraro",
-    "quiz_correction": "Ek!",
-    "quiz_score": "Viaj poentoj estas $1 / $2",
-    "quiz_points": "$1 | $2 {{PLURAL:$2|1 poento|poentoj}}",
-    "quiz_reset": "Reŝarĝi"
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"quiz_desc": "Permesas kreadon de kvizoj",
+	"quiz_addedPoints": "{{PLURAL:$1|Poento|Poentoj}} por ĝusta respondo",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Poento subtrahita|Poentoj subtrahitaj}} por malĝusta respondo",
+	"quiz_ignoreCoef": "Ignoru la koeficientojn de demandoj.",
+	"quiz_shuffle": "Hazardmiksi demandaron",
+	"quiz_colorRight": "Ĝusta",
+	"quiz_colorWrong": "Malĝusta",
+	"quiz_colorNA": "Ne respondita",
+	"quiz_colorError": "Sintaksa eraro",
+	"quiz_correction": "Ek!",
+	"quiz_score": "Viaj poentoj estas $1 / $2",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|1 poento|poentoj}}",
+	"quiz_reset": "Reŝarĝi"
 }

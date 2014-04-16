@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Migraghvi"
-        ]
-    },
-    "quiz_colorRight": "Дуьз я",
-    "quiz_colorWrong": "Дуьз туш",
-    "quiz_correction": "Ракъурун",
-    "quiz_reset": "Гадарун"
+	"@metadata": {
+		"authors": [
+			"Migraghvi"
+		]
+	},
+	"quiz_colorRight": "Дуьз я",
+	"quiz_colorWrong": "Дуьз туш",
+	"quiz_correction": "Ракъурун",
+	"quiz_reset": "Гадарун"
 }

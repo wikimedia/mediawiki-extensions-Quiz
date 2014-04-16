@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Manuae"
-        ]
-    },
-    "quiz_colorRight": "Rischdisch",
-    "quiz_colorWrong": "Falsch"
+	"@metadata": {
+		"authors": [
+			"Manuae"
+		]
+	},
+	"quiz_colorRight": "Rischdisch",
+	"quiz_colorWrong": "Falsch"
 }

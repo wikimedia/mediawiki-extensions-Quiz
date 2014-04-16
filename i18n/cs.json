@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Li-sung",
-            "Matěj Grabovský"
-        ]
-    },
-    "quiz_desc": "Umožňuje tvorbu kvízů",
-    "quiz_addedPoints": "{{PLURAL:$1|Bod připočtený|Body připočtené|Body připočtené}} za správnou odpověď",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Bod odečtený|Body odečtené|Body odečtené}} za špatnou odpověď",
-    "quiz_ignoreCoef": "Ignorovat koeficienty otázek",
-    "quiz_shuffle": "Promíchat otázky",
-    "quiz_colorRight": "Správně",
-    "quiz_colorWrong": "Špatně",
-    "quiz_colorNA": "Nezodpovězeno",
-    "quiz_colorError": "Syntaktická chyba",
-    "quiz_correction": "Odeslat",
-    "quiz_score": "Váš výsledek je $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|$2 bod|$2 body|$2 bodů}}",
-    "quiz_reset": "Reset"
+	"@metadata": {
+		"authors": [
+			"Li-sung",
+			"Matěj Grabovský"
+		]
+	},
+	"quiz_desc": "Umožňuje tvorbu kvízů",
+	"quiz_addedPoints": "{{PLURAL:$1|Bod připočtený|Body připočtené|Body připočtené}} za správnou odpověď",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odečtený|Body odečtené|Body odečtené}} za špatnou odpověď",
+	"quiz_ignoreCoef": "Ignorovat koeficienty otázek",
+	"quiz_shuffle": "Promíchat otázky",
+	"quiz_colorRight": "Správně",
+	"quiz_colorWrong": "Špatně",
+	"quiz_colorNA": "Nezodpovězeno",
+	"quiz_colorError": "Syntaktická chyba",
+	"quiz_correction": "Odeslat",
+	"quiz_score": "Váš výsledek je $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|$2 bod|$2 body|$2 bodů}}",
+	"quiz_reset": "Reset"
 }

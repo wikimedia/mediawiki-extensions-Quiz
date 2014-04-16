@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "AS",
-            "Ahonc",
-            "Andriykopanytsia"
-        ]
-    },
-    "quiz_desc": "Дозволяє створювати питальники",
-    "quiz_addedPoints": "{{PLURAL:$1|1=Очко додане|Очки додані}} за правильну відповідь",
-    "quiz_cutoffPoints": "{{PLURAL:$1|1=Очко відняте|Очки відняті}} за неправильну відповідь",
-    "quiz_ignoreCoef": "Нехтувати коефіцієнтами запитань",
-    "quiz_shuffle": "Перемішати запитання",
-    "quiz_colorRight": "Правильно",
-    "quiz_colorWrong": "Неправильно",
-    "quiz_colorNA": "Нема відповіді",
-    "quiz_colorError": "Синтаксична помилка",
-    "quiz_correction": "Надіслати",
-    "quiz_score": "Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2",
-    "quiz_points": "$1 | $2 {{PLURAL:$2|очко|очки|очок}}",
-    "quiz_reset": "Скинути"
+	"@metadata": {
+		"authors": [
+			"AS",
+			"Ahonc",
+			"Andriykopanytsia"
+		]
+	},
+	"quiz_desc": "Дозволяє створювати питальники",
+	"quiz_addedPoints": "{{PLURAL:$1|1=Очко додане|Очки додані}} за правильну відповідь",
+	"quiz_cutoffPoints": "{{PLURAL:$1|1=Очко відняте|Очки відняті}} за неправильну відповідь",
+	"quiz_ignoreCoef": "Нехтувати коефіцієнтами запитань",
+	"quiz_shuffle": "Перемішати запитання",
+	"quiz_colorRight": "Правильно",
+	"quiz_colorWrong": "Неправильно",
+	"quiz_colorNA": "Нема відповіді",
+	"quiz_colorError": "Синтаксична помилка",
+	"quiz_correction": "Надіслати",
+	"quiz_score": "Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очки|очок}}",
+	"quiz_reset": "Скинути"
 }

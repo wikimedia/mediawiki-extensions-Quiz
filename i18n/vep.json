@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Игорь Бродский"
-        ]
-    },
-    "quiz_colorRight": "Oikti",
-    "quiz_colorWrong": "Värin",
-    "quiz_colorNA": "Ei ole vastust",
-    "quiz_colorError": "Sintaksine petuz",
-    "quiz_correction": "Oigeta"
+	"@metadata": {
+		"authors": [
+			"Игорь Бродский"
+		]
+	},
+	"quiz_colorRight": "Oikti",
+	"quiz_colorWrong": "Värin",
+	"quiz_colorNA": "Ei ole vastust",
+	"quiz_colorError": "Sintaksine petuz",
+	"quiz_correction": "Oigeta"
 }

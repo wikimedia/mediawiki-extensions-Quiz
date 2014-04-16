@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aushulz"
-        ]
-    },
-    "quiz_colorRight": "Giustu",
-    "quiz_colorWrong": "Sbajjàtu"
+	"@metadata": {
+		"authors": [
+			"Aushulz"
+		]
+	},
+	"quiz_colorRight": "Giustu",
+	"quiz_colorWrong": "Sbajjàtu"
 }

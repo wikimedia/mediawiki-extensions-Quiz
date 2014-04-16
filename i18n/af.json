@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Naudefj",
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "quiz_desc": "Maak dit moontlik om toetse te skep.",
-    "quiz_addedPoints": "{{PLURAL:$1|Punt|Punte}} bygevoeg vir 'n korrekte antwoord",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punte}} afgetrek vir 'n verkeerde antwoord",
-    "quiz_ignoreCoef": "Ignoreer die vrae 'koëffisiënte",
-    "quiz_shuffle": "Skommel vrae",
-    "quiz_colorRight": "Reg",
-    "quiz_colorWrong": "Verkeerd",
-    "quiz_colorNA": "Nie geantwoord",
-    "quiz_colorError": "Sintaksfout",
-    "quiz_correction": "Verbetering",
-    "quiz_score": "U punte is $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punte}}",
-    "quiz_reset": "Herstel"
+	"@metadata": {
+		"authors": [
+			"Naudefj",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"quiz_desc": "Maak dit moontlik om toetse te skep.",
+	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punte}} bygevoeg vir 'n korrekte antwoord",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punte}} afgetrek vir 'n verkeerde antwoord",
+	"quiz_ignoreCoef": "Ignoreer die vrae 'koëffisiënte",
+	"quiz_shuffle": "Skommel vrae",
+	"quiz_colorRight": "Reg",
+	"quiz_colorWrong": "Verkeerd",
+	"quiz_colorNA": "Nie geantwoord",
+	"quiz_colorError": "Sintaksfout",
+	"quiz_correction": "Verbetering",
+	"quiz_score": "U punte is $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punte}}",
+	"quiz_reset": "Herstel"
 }

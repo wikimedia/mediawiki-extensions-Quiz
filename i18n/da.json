@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Byrial",
-            "Jon Harald Søby",
-            "Peter Alberti"
-        ]
-    },
-    "quiz_desc": "Tillader oprettelse af quizzer",
-    "quiz_addedPoints": "{{PLURAL:$1|Point|point}} for korrekt svar",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Point|Point}} for et forkert svar",
-    "quiz_ignoreCoef": "Ignorer spørgsmålenes koefficienter",
-    "quiz_shuffle": "Bland spørgsmålene",
-    "quiz_colorRight": "Ret",
-    "quiz_colorWrong": "Fejl",
-    "quiz_colorNA": "Ikke svared",
-    "quiz_colorError": "syntaksfejl",
-    "quiz_correction": "Send",
-    "quiz_score": "Din pointsum er $1 af $2 mulige",
-    "quiz_points": "$1 | $2 {{PLURAL:$2|point|point}}",
-    "quiz_reset": "Nulstil"
+	"@metadata": {
+		"authors": [
+			"Byrial",
+			"Jon Harald Søby",
+			"Peter Alberti"
+		]
+	},
+	"quiz_desc": "Tillader oprettelse af quizzer",
+	"quiz_addedPoints": "{{PLURAL:$1|Point|point}} for korrekt svar",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Point}} for et forkert svar",
+	"quiz_ignoreCoef": "Ignorer spørgsmålenes koefficienter",
+	"quiz_shuffle": "Bland spørgsmålene",
+	"quiz_colorRight": "Ret",
+	"quiz_colorWrong": "Fejl",
+	"quiz_colorNA": "Ikke svared",
+	"quiz_colorError": "syntaksfejl",
+	"quiz_correction": "Send",
+	"quiz_score": "Din pointsum er $1 af $2 mulige",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|point|point}}",
+	"quiz_reset": "Nulstil"
 }

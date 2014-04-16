@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "quiz_desc": "Овозможува создавање на квизови",
-    "quiz_addedPoints": "добивате {{PLURAL:$1|бод|бода}} за точен одговор",
-    "quiz_cutoffPoints": "{{PLURAL:$1|бод|бода}} за погрешен одговор",
-    "quiz_ignoreCoef": "Занемари ги коефициентите на прашањата",
-    "quiz_shuffle": "Измешај ги прашањата",
-    "quiz_colorRight": "Точно",
-    "quiz_colorWrong": "Погрешно",
-    "quiz_colorNA": "Неодговорено",
-    "quiz_colorError": "синтаксна грешка",
-    "quiz_correction": "Поднеси",
-    "quiz_score": "Вашето бодовно салдо изнесува $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 бод|$2 бода}}",
-    "quiz_reset": "Врати одново"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"quiz_desc": "Овозможува создавање на квизови",
+	"quiz_addedPoints": "добивате {{PLURAL:$1|бод|бода}} за точен одговор",
+	"quiz_cutoffPoints": "{{PLURAL:$1|бод|бода}} за погрешен одговор",
+	"quiz_ignoreCoef": "Занемари ги коефициентите на прашањата",
+	"quiz_shuffle": "Измешај ги прашањата",
+	"quiz_colorRight": "Точно",
+	"quiz_colorWrong": "Погрешно",
+	"quiz_colorNA": "Неодговорено",
+	"quiz_colorError": "синтаксна грешка",
+	"quiz_correction": "Поднеси",
+	"quiz_score": "Вашето бодовно салдо изнесува $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 бод|$2 бода}}",
+	"quiz_reset": "Врати одново"
 }

@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "quiz_desc": "Zmóžnja wutwórjenje kwisow",
-    "quiz_addedPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypkow}} za pšawe wótegrono",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypjkow}} za wopacne wótegrono",
-    "quiz_ignoreCoef": "Ignorěruj koeficientow pšašanjow",
-    "quiz_shuffle": "Pšašanja měšaś",
-    "quiz_colorRight": "Pšawy",
-    "quiz_colorWrong": "Wopacny",
-    "quiz_colorNA": "Bźez wótegrona",
-    "quiz_colorError": "Syntaksowa zmólka",
-    "quiz_correction": "Wótpósłaś",
-    "quiz_score": "Twóje dypki: $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 dypk|$2 dypka|$2 dypki|$2 dypkow}}",
-    "quiz_reset": "Wót nowego zachopiś"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"quiz_desc": "Zmóžnja wutwórjenje kwisow",
+	"quiz_addedPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypkow}} za pšawe wótegrono",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypjkow}} za wopacne wótegrono",
+	"quiz_ignoreCoef": "Ignorěruj koeficientow pšašanjow",
+	"quiz_shuffle": "Pšašanja měšaś",
+	"quiz_colorRight": "Pšawy",
+	"quiz_colorWrong": "Wopacny",
+	"quiz_colorNA": "Bźez wótegrona",
+	"quiz_colorError": "Syntaksowa zmólka",
+	"quiz_correction": "Wótpósłaś",
+	"quiz_score": "Twóje dypki: $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 dypk|$2 dypka|$2 dypki|$2 dypkow}}",
+	"quiz_reset": "Wót nowego zachopiś"
 }

@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Malafaya",
-            "Smeira"
-        ]
-    },
-    "quiz_colorRight": "Verätik",
-    "quiz_colorWrong": "Neverätik",
-    "quiz_colorNA": "No pegesagon",
-    "quiz_colorError": "Süntagapöl",
-    "quiz_correction": "Sedön",
-    "quiz_reset": "Geükön ad stad kösömik"
+	"@metadata": {
+		"authors": [
+			"Malafaya",
+			"Smeira"
+		]
+	},
+	"quiz_colorRight": "Verätik",
+	"quiz_colorWrong": "Neverätik",
+	"quiz_colorNA": "No pegesagon",
+	"quiz_colorError": "Süntagapöl",
+	"quiz_correction": "Sedön",
+	"quiz_reset": "Geükön ad stad kösömik"
 }

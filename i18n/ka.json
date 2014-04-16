@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "BRUTE",
-            "David1010",
-            "ITshnik",
-            "Malafaya",
-            "გიორგიმელა"
-        ]
-    },
-    "quiz_desc": "იძლევა კითხვარების შექმნის საშუალებას",
-    "quiz_addedPoints": "{{PLURAL:$1|ქულა|ქულა}} დაემატა სწორი პასუხისათვის",
-    "quiz_cutoffPoints": "(($1 ქულა)) ერთი არასწორი პასუხისთვის",
-    "quiz_ignoreCoef": "შეკითხვების კოეფიციენტების იგნორირება",
-    "quiz_shuffle": "კითხვების არევა",
-    "quiz_colorRight": "სწორი",
-    "quiz_colorWrong": "არასწორი",
-    "quiz_colorNA": "პასუხი არ არის",
-    "quiz_colorError": "სინტაქსური შეცდომა",
-    "quiz_correction": "გაგზავნა",
-    "quiz_score": "თქვენ შეაგროვეთ $1 {{PLURAL:$1|ქულა|ქულები}} $2-დან",
-    "quiz_points": "$1 | $2 ქულა",
-    "quiz_reset": "გაუქმება"
+	"@metadata": {
+		"authors": [
+			"BRUTE",
+			"David1010",
+			"ITshnik",
+			"Malafaya",
+			"გიორგიმელა"
+		]
+	},
+	"quiz_desc": "იძლევა კითხვარების შექმნის საშუალებას",
+	"quiz_addedPoints": "{{PLURAL:$1|ქულა|ქულა}} დაემატა სწორი პასუხისათვის",
+	"quiz_cutoffPoints": "(($1 ქულა)) ერთი არასწორი პასუხისთვის",
+	"quiz_ignoreCoef": "შეკითხვების კოეფიციენტების იგნორირება",
+	"quiz_shuffle": "კითხვების არევა",
+	"quiz_colorRight": "სწორი",
+	"quiz_colorWrong": "არასწორი",
+	"quiz_colorNA": "პასუხი არ არის",
+	"quiz_colorError": "სინტაქსური შეცდომა",
+	"quiz_correction": "გაგზავნა",
+	"quiz_score": "თქვენ შეაგროვეთ $1 {{PLURAL:$1|ქულა|ქულები}} $2-დან",
+	"quiz_points": "$1 | $2 ქულა",
+	"quiz_reset": "გაუქმება"
 }

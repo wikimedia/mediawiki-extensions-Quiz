@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lloffiwr",
-            "Stephenwanjau"
-        ]
-    },
-    "quiz_colorRight": "Sahihi",
-    "quiz_colorWrong": "Batili",
-    "quiz_colorNA": "Haikujibiwa",
-    "quiz_correction": "Wasilisha",
-    "quiz_score": "Una maksi $1/$2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 point|$2 pointi}}",
-    "quiz_reset": "Panga upya"
+	"@metadata": {
+		"authors": [
+			"Lloffiwr",
+			"Stephenwanjau"
+		]
+	},
+	"quiz_colorRight": "Sahihi",
+	"quiz_colorWrong": "Batili",
+	"quiz_colorNA": "Haikujibiwa",
+	"quiz_correction": "Wasilisha",
+	"quiz_score": "Una maksi $1/$2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 point|$2 pointi}}",
+	"quiz_reset": "Panga upya"
 }

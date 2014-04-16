@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Botuzhaleny-sodamo"
-        ]
-    },
-    "quiz_colorRight": "Виде",
-    "quiz_colorWrong": "А виде",
-    "quiz_colorNA": "Апак пандо",
-    "quiz_correction": "Максомс"
+	"@metadata": {
+		"authors": [
+			"Botuzhaleny-sodamo"
+		]
+	},
+	"quiz_colorRight": "Виде",
+	"quiz_colorWrong": "А виде",
+	"quiz_colorNA": "Апак пандо",
+	"quiz_correction": "Максомс"
 }

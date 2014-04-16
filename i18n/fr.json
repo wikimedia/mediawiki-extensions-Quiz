@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Grondin",
-            "Meno25",
-            "Sherbrooke",
-            "Urhixidur",
-            "Verdy p"
-        ]
-    },
-    "quiz_desc": "Permet la création des quiz",
-    "quiz_addedPoints": "{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse erronée",
-    "quiz_ignoreCoef": "Ignorer les coefficients des questions",
-    "quiz_shuffle": "Mélanger les questions",
-    "quiz_colorRight": "Juste",
-    "quiz_colorWrong": "Faux",
-    "quiz_colorNA": "Non répondu",
-    "quiz_colorError": "Erreur de syntaxe",
-    "quiz_correction": "Soumettre",
-    "quiz_score": "Votre pointage est $1 / $2",
-    "quiz_points": "$1 | $2 point{{PLURAL:||s}}",
-    "quiz_reset": "Réinitialiser"
+	"@metadata": {
+		"authors": [
+			"Grondin",
+			"Meno25",
+			"Sherbrooke",
+			"Urhixidur",
+			"Verdy p"
+		]
+	},
+	"quiz_desc": "Permet la création des quiz",
+	"quiz_addedPoints": "{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse erronée",
+	"quiz_ignoreCoef": "Ignorer les coefficients des questions",
+	"quiz_shuffle": "Mélanger les questions",
+	"quiz_colorRight": "Juste",
+	"quiz_colorWrong": "Faux",
+	"quiz_colorNA": "Non répondu",
+	"quiz_colorError": "Erreur de syntaxe",
+	"quiz_correction": "Soumettre",
+	"quiz_score": "Votre pointage est $1 / $2",
+	"quiz_points": "$1 | $2 point{{PLURAL:||s}}",
+	"quiz_reset": "Réinitialiser"
 }

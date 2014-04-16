@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bennylin",
-            "Irwangatot",
-            "IvanLanin",
-            "Rex"
-        ]
-    },
-    "quiz_desc": "Menyediakan fasilitas pembuatan kuis",
-    "quiz_addedPoints": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat",
-    "quiz_cutoffPoints": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah",
-    "quiz_ignoreCoef": "Abaikan koefisien pertanyaan",
-    "quiz_shuffle": "Mengacak pertanyaan",
-    "quiz_colorRight": "Benar",
-    "quiz_colorWrong": "Salah",
-    "quiz_colorNA": "Tak dijawab",
-    "quiz_colorError": "Kesalahan sintaks",
-    "quiz_correction": "Kirim",
-    "quiz_score": "Skor Anda adalah $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
-    "quiz_reset": "Reset"
+	"@metadata": {
+		"authors": [
+			"Bennylin",
+			"Irwangatot",
+			"IvanLanin",
+			"Rex"
+		]
+	},
+	"quiz_desc": "Menyediakan fasilitas pembuatan kuis",
+	"quiz_addedPoints": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat",
+	"quiz_cutoffPoints": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah",
+	"quiz_ignoreCoef": "Abaikan koefisien pertanyaan",
+	"quiz_shuffle": "Mengacak pertanyaan",
+	"quiz_colorRight": "Benar",
+	"quiz_colorWrong": "Salah",
+	"quiz_colorNA": "Tak dijawab",
+	"quiz_colorError": "Kesalahan sintaks",
+	"quiz_correction": "Kirim",
+	"quiz_score": "Skor Anda adalah $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
+	"quiz_reset": "Reset"
 }

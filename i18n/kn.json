@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nayvik"
-        ]
-    },
-    "quiz_colorRight": "ಸರಿ",
-    "quiz_colorWrong": "ತಪ್ಪು"
+	"@metadata": {
+		"authors": [
+			"Nayvik"
+		]
+	},
+	"quiz_colorRight": "ಸರಿ",
+	"quiz_colorWrong": "ತಪ್ಪು"
 }

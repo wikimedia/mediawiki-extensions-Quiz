@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "HalanTul"
-        ]
-    },
-    "quiz_desc": "Вопросниктары оҥорор кыаҕы биэрэр",
-    "quiz_addedPoints": "$1 очкуо сөп эппиэт иһин эбилиннэ",
-    "quiz_cutoffPoints": "$1 очкуо сыыһа эппиэт иһин көҕүрэтилиннэ",
-    "quiz_ignoreCoef": "Ыйытыылар коэффициеннарын аахсыма",
-    "quiz_shuffle": "Ыйытыылары булкуй",
-    "quiz_colorRight": "Сөп",
-    "quiz_colorWrong": "Сыыһа",
-    "quiz_colorNA": "Эппиэт суох",
-    "quiz_colorError": "Синтаксическай алҕас",
-    "quiz_correction": "Ыыт",
-    "quiz_score": "$2 очкуоттан $1 очкуону ыллыҥ",
-    "quiz_points": "$1 | {{PLURAL:$2|1 очкуо|$2 очкуо}}",
-    "quiz_reset": "Саҥаттан"
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"quiz_desc": "Вопросниктары оҥорор кыаҕы биэрэр",
+	"quiz_addedPoints": "$1 очкуо сөп эппиэт иһин эбилиннэ",
+	"quiz_cutoffPoints": "$1 очкуо сыыһа эппиэт иһин көҕүрэтилиннэ",
+	"quiz_ignoreCoef": "Ыйытыылар коэффициеннарын аахсыма",
+	"quiz_shuffle": "Ыйытыылары булкуй",
+	"quiz_colorRight": "Сөп",
+	"quiz_colorWrong": "Сыыһа",
+	"quiz_colorNA": "Эппиэт суох",
+	"quiz_colorError": "Синтаксическай алҕас",
+	"quiz_correction": "Ыыт",
+	"quiz_score": "$2 очкуоттан $1 очкуону ыллыҥ",
+	"quiz_points": "$1 | {{PLURAL:$2|1 очкуо|$2 очкуо}}",
+	"quiz_reset": "Саҥаттан"
 }

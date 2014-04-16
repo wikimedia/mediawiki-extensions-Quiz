@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Boivie",
-            "Lejonel",
-            "M.M.S.",
-            "Najami"
-        ]
-    },
-    "quiz_desc": "Ger möjlighet att skapa frågeformulär",
-    "quiz_addedPoints": "{{PLURAL:$1|Poäng}} för rätt svar",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Poängavdrag}} för fel svar",
-    "quiz_ignoreCoef": "Använd inte frågornas koefficienter",
-    "quiz_shuffle": "Blanda om frågorna",
-    "quiz_colorRight": "Rätt",
-    "quiz_colorWrong": "Fel",
-    "quiz_colorNA": "Besvarades ej",
-    "quiz_colorError": "Syntaxfel",
-    "quiz_correction": "Skicka",
-    "quiz_score": "Din poäng är $1 av $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 poäng|$2 poäng}}",
-    "quiz_reset": "Återställ"
+	"@metadata": {
+		"authors": [
+			"Boivie",
+			"Lejonel",
+			"M.M.S.",
+			"Najami"
+		]
+	},
+	"quiz_desc": "Ger möjlighet att skapa frågeformulär",
+	"quiz_addedPoints": "{{PLURAL:$1|Poäng}} för rätt svar",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Poängavdrag}} för fel svar",
+	"quiz_ignoreCoef": "Använd inte frågornas koefficienter",
+	"quiz_shuffle": "Blanda om frågorna",
+	"quiz_colorRight": "Rätt",
+	"quiz_colorWrong": "Fel",
+	"quiz_colorNA": "Besvarades ej",
+	"quiz_colorError": "Syntaxfel",
+	"quiz_correction": "Skicka",
+	"quiz_score": "Din poäng är $1 av $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 poäng|$2 poäng}}",
+	"quiz_reset": "Återställ"
 }

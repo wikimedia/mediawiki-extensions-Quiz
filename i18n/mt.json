@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrisportelli",
-            "Roderick Mallia"
-        ]
-    },
-    "quiz_desc": "Tħalli l-ħolqien ta' kwizzijiet",
-    "quiz_addedPoints": "{{PLURAL:$1|Punt miżjud|Punti miżjuda}} għal tweġiba tajba",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Punt imnaqqas|Punti mnaqqas}} għal tweġiba ħażina",
-    "quiz_ignoreCoef": "Injora l-koeffiċjenti tal-mistoqsijiet",
-    "quiz_shuffle": "Qalleb il-mistoqsijiet",
-    "quiz_colorRight": "Tajjeb",
-    "quiz_colorWrong": "Ħażin",
-    "quiz_colorNA": "L-ebda risposta",
-    "quiz_colorError": "Żball fis-sintassi",
-    "quiz_correction": "Ibgħat",
-    "quiz_score": "L-iskor tiegħek hu ta' $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|punt|$2 punti}}",
-    "quiz_reset": "Irrisettja"
+	"@metadata": {
+		"authors": [
+			"Chrisportelli",
+			"Roderick Mallia"
+		]
+	},
+	"quiz_desc": "Tħalli l-ħolqien ta' kwizzijiet",
+	"quiz_addedPoints": "{{PLURAL:$1|Punt miżjud|Punti miżjuda}} għal tweġiba tajba",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punt imnaqqas|Punti mnaqqas}} għal tweġiba ħażina",
+	"quiz_ignoreCoef": "Injora l-koeffiċjenti tal-mistoqsijiet",
+	"quiz_shuffle": "Qalleb il-mistoqsijiet",
+	"quiz_colorRight": "Tajjeb",
+	"quiz_colorWrong": "Ħażin",
+	"quiz_colorNA": "L-ebda risposta",
+	"quiz_colorError": "Żball fis-sintassi",
+	"quiz_correction": "Ibgħat",
+	"quiz_score": "L-iskor tiegħek hu ta' $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|punt|$2 punti}}",
+	"quiz_reset": "Irrisettja"
 }

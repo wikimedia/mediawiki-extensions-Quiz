@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Als-Holder"
-        ]
-    },
-    "quiz_desc": "Macht s Aalege vu Quizspiiler megli",
-    "quiz_addedPoints": "{{PLURAL:$1|Punkt|Pinkt}} fir e richtigi Antwort",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspinkt}} fir e falschi Antwort",
-    "quiz_ignoreCoef": "Ignorier dr Froge-Koeffizient",
-    "quiz_shuffle": "Froge mischle",
-    "quiz_colorRight": "Richtig",
-    "quiz_colorWrong": "Falsch",
-    "quiz_colorNA": "Kei Antwort gee",
-    "quiz_colorError": "Syntaxfähler",
-    "quiz_correction": "Korrektur",
-    "quiz_score": "Pinkt: $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Pinkt}}",
-    "quiz_reset": "Nejstart"
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"quiz_desc": "Macht s Aalege vu Quizspiiler megli",
+	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Pinkt}} fir e richtigi Antwort",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspinkt}} fir e falschi Antwort",
+	"quiz_ignoreCoef": "Ignorier dr Froge-Koeffizient",
+	"quiz_shuffle": "Froge mischle",
+	"quiz_colorRight": "Richtig",
+	"quiz_colorWrong": "Falsch",
+	"quiz_colorNA": "Kei Antwort gee",
+	"quiz_colorError": "Syntaxfähler",
+	"quiz_correction": "Korrektur",
+	"quiz_score": "Pinkt: $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Pinkt}}",
+	"quiz_reset": "Nejstart"
 }

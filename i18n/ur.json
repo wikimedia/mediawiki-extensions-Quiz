@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "quiz_colorRight": "حق",
-    "quiz_colorWrong": "غلط",
-    "quiz_colorNA": "ان كا جواب نہیں تھا",
-    "quiz_correction": "جمع کرائیں",
-    "quiz_reset": "دوبارہ مرتب کریں"
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"quiz_colorRight": "حق",
+	"quiz_colorWrong": "غلط",
+	"quiz_colorNA": "ان كا جواب نہیں تھا",
+	"quiz_correction": "جمع کرائیں",
+	"quiz_reset": "دوبارہ مرتب کریں"
 }

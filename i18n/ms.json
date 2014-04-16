@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia",
-            "Aviator"
-        ]
-    },
-    "quiz_desc": "Membolehkan penciptaan kuiz",
-    "quiz_addedPoints": "$1 mata ditambah untuk jawapan salah",
-    "quiz_cutoffPoints": "$1 mata ditolak untuk jawapan salah",
-    "quiz_ignoreCoef": "Abaikan pekali soalan",
-    "quiz_shuffle": "Papar soalan",
-    "quiz_colorRight": "Betul",
-    "quiz_colorWrong": "Salah",
-    "quiz_colorNA": "Tidak dijawab",
-    "quiz_colorError": "Ralat sintaks",
-    "quiz_correction": "Serahkan",
-    "quiz_score": "Anda mendapat $1 daripada $2 mata",
-    "quiz_points": "$1 | $2 mata",
-    "quiz_reset": "Set semula"
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Aviator"
+		]
+	},
+	"quiz_desc": "Membolehkan penciptaan kuiz",
+	"quiz_addedPoints": "$1 mata ditambah untuk jawapan salah",
+	"quiz_cutoffPoints": "$1 mata ditolak untuk jawapan salah",
+	"quiz_ignoreCoef": "Abaikan pekali soalan",
+	"quiz_shuffle": "Papar soalan",
+	"quiz_colorRight": "Betul",
+	"quiz_colorWrong": "Salah",
+	"quiz_colorNA": "Tidak dijawab",
+	"quiz_colorError": "Ralat sintaks",
+	"quiz_correction": "Serahkan",
+	"quiz_score": "Anda mendapat $1 daripada $2 mata",
+	"quiz_points": "$1 | $2 mata",
+	"quiz_reset": "Set semula"
 }

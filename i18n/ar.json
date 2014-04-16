@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Alnokta",
-            "Meno25",
-            "OsamaK"
-        ]
-    },
-    "quiz_desc": "يسمح بإنشاء اختبارات",
-    "quiz_addedPoints": "أضيفت {{PLURAL:$1||نقطة|نقطتان|نقاط}} مقابل الإجابة الصحيحة",
-    "quiz_cutoffPoints": "خصمت {{PLURAL:$1||نقطة|نقطتان|نقطاط}} مقابل الإجابة الخاطئة",
-    "quiz_ignoreCoef": "تجاهل معاملات الأسئلة",
-    "quiz_shuffle": "أسئلة مختلطة",
-    "quiz_colorRight": "صواب",
-    "quiz_colorWrong": "خطأ",
-    "quiz_colorNA": "لم تتم الإجابة عليه",
-    "quiz_colorError": "خطأ صياغة",
-    "quiz_correction": "إرسال",
-    "quiz_score": "نتيجتك هي $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2||نقطة واحدة|نقطتان|$2 نقاط|$2 نقطة}}",
-    "quiz_reset": "إعادة ضبط"
+	"@metadata": {
+		"authors": [
+			"Alnokta",
+			"Meno25",
+			"OsamaK"
+		]
+	},
+	"quiz_desc": "يسمح بإنشاء اختبارات",
+	"quiz_addedPoints": "أضيفت {{PLURAL:$1||نقطة|نقطتان|نقاط}} مقابل الإجابة الصحيحة",
+	"quiz_cutoffPoints": "خصمت {{PLURAL:$1||نقطة|نقطتان|نقطاط}} مقابل الإجابة الخاطئة",
+	"quiz_ignoreCoef": "تجاهل معاملات الأسئلة",
+	"quiz_shuffle": "أسئلة مختلطة",
+	"quiz_colorRight": "صواب",
+	"quiz_colorWrong": "خطأ",
+	"quiz_colorNA": "لم تتم الإجابة عليه",
+	"quiz_colorError": "خطأ صياغة",
+	"quiz_correction": "إرسال",
+	"quiz_score": "نتيجتك هي $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2||نقطة واحدة|نقطتان|$2 نقاط|$2 نقطة}}",
+	"quiz_reset": "إعادة ضبط"
 }

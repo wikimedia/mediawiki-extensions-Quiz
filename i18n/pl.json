@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Derbeth",
-            "Maikking",
-            "Sp5uhe"
-        ]
-    },
-    "quiz_desc": "Umożliwia tworzenie quizów",
-    "quiz_addedPoints": "{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Punkt odejmowany|Punkty odejmowane|Punktów odejmowanych}} za niewłaściwą odpowiedź",
-    "quiz_ignoreCoef": "Ignoruj punktację pytań",
-    "quiz_shuffle": "Losuj kolejność pytań",
-    "quiz_colorRight": "Właściwa",
-    "quiz_colorWrong": "Niewłaściwa",
-    "quiz_colorNA": "Brak odpowiedzi",
-    "quiz_colorError": "Błąd składni",
-    "quiz_correction": "Wyślij",
-    "quiz_score": "Twoje punty to $1 na możliwych $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}",
-    "quiz_reset": "Wyzeruj"
+	"@metadata": {
+		"authors": [
+			"Derbeth",
+			"Maikking",
+			"Sp5uhe"
+		]
+	},
+	"quiz_desc": "Umożliwia tworzenie quizów",
+	"quiz_addedPoints": "{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt odejmowany|Punkty odejmowane|Punktów odejmowanych}} za niewłaściwą odpowiedź",
+	"quiz_ignoreCoef": "Ignoruj punktację pytań",
+	"quiz_shuffle": "Losuj kolejność pytań",
+	"quiz_colorRight": "Właściwa",
+	"quiz_colorWrong": "Niewłaściwa",
+	"quiz_colorNA": "Brak odpowiedzi",
+	"quiz_colorError": "Błąd składni",
+	"quiz_correction": "Wyślij",
+	"quiz_score": "Twoje punty to $1 na możliwych $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}",
+	"quiz_reset": "Wyzeruj"
 }

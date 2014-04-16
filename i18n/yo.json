@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Demmy"
-        ]
-    },
-    "quiz_colorRight": "Ẹ̀tọ́",
-    "quiz_colorWrong": "Àìtọ́",
-    "quiz_correction": "Fúnsílẹ̀",
-    "quiz_reset": "Ìtúntò"
+	"@metadata": {
+		"authors": [
+			"Demmy"
+		]
+	},
+	"quiz_colorRight": "Ẹ̀tọ́",
+	"quiz_colorWrong": "Àìtọ́",
+	"quiz_correction": "Fúnsílẹ̀",
+	"quiz_reset": "Ìtúntò"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dark Eagle",
-            "Xil",
-            "Yyy"
-        ]
-    },
-    "quiz_desc": "Ļauj veidot anketas",
-    "quiz_addedPoints": "{{PLURAL:$1|Punkts|Punkti}} par pareizu atbildi",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi",
-    "quiz_ignoreCoef": "Neņemt vērā jautājumu koeficientus",
-    "quiz_shuffle": "Sajaukt jautājumus",
-    "quiz_colorRight": "Pareizi",
-    "quiz_colorWrong": "Nepareizi",
-    "quiz_colorNA": "Nav atbildēts",
-    "quiz_colorError": "Sintakses kļūda",
-    "quiz_correction": "Sūtīt",
-    "quiz_score": "Tavs rezultāts ir $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 punkts|$2 punkti}}",
-    "quiz_reset": "Notīrīt"
+	"@metadata": {
+		"authors": [
+			"Dark Eagle",
+			"Xil",
+			"Yyy"
+		]
+	},
+	"quiz_desc": "Ļauj veidot anketas",
+	"quiz_addedPoints": "{{PLURAL:$1|Punkts|Punkti}} par pareizu atbildi",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi",
+	"quiz_ignoreCoef": "Neņemt vērā jautājumu koeficientus",
+	"quiz_shuffle": "Sajaukt jautājumus",
+	"quiz_colorRight": "Pareizi",
+	"quiz_colorWrong": "Nepareizi",
+	"quiz_colorNA": "Nav atbildēts",
+	"quiz_colorError": "Sintakses kļūda",
+	"quiz_correction": "Sūtīt",
+	"quiz_score": "Tavs rezultāts ir $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 punkts|$2 punkti}}",
+	"quiz_reset": "Notīrīt"
 }

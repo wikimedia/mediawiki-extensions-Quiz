@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Helix84"
-        ]
-    },
-    "quiz_desc": "Umožňuje tvorbu kvízov",
-    "quiz_addedPoints": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď",
-    "quiz_ignoreCoef": "Ignorovať koeficienty otázok",
-    "quiz_shuffle": "Náhodný výber otázok",
-    "quiz_colorRight": "Správne",
-    "quiz_colorWrong": "Nesprávne",
-    "quiz_colorNA": "Nezodpovedané",
-    "quiz_colorError": "Syntaktická chyba",
-    "quiz_correction": "Oprava",
-    "quiz_score": "Vaše skóre je $1 / $2",
-    "quiz_points": "$1 | $2 {{PLURAL:$2|bod|body|bodov}}",
-    "quiz_reset": "Reset"
+	"@metadata": {
+		"authors": [
+			"Helix84"
+		]
+	},
+	"quiz_desc": "Umožňuje tvorbu kvízov",
+	"quiz_addedPoints": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď",
+	"quiz_ignoreCoef": "Ignorovať koeficienty otázok",
+	"quiz_shuffle": "Náhodný výber otázok",
+	"quiz_colorRight": "Správne",
+	"quiz_colorWrong": "Nesprávne",
+	"quiz_colorNA": "Nezodpovedané",
+	"quiz_colorError": "Syntaktická chyba",
+	"quiz_correction": "Oprava",
+	"quiz_score": "Vaše skóre je $1 / $2",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|bod|body|bodov}}",
+	"quiz_reset": "Reset"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Borislav",
-            "DCLXVI",
-            "Spiritia"
-        ]
-    },
-    "quiz_desc": "Позволява създаването на анкети",
-    "quiz_addedPoints": "{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор",
-    "quiz_ignoreCoef": "Пренебрегване на коефициентите на въпросите",
-    "quiz_shuffle": "Разбъркване на въпросите",
-    "quiz_colorRight": "Правилно",
-    "quiz_colorWrong": "Грешно",
-    "quiz_colorNA": "Без отговор",
-    "quiz_colorError": "Синтактична грешка",
-    "quiz_correction": "Изпращане",
-    "quiz_score": "Постижението ви е $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|една точка|$2 точки}}",
-    "quiz_reset": "Отмяна"
+	"@metadata": {
+		"authors": [
+			"Borislav",
+			"DCLXVI",
+			"Spiritia"
+		]
+	},
+	"quiz_desc": "Позволява създаването на анкети",
+	"quiz_addedPoints": "{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор",
+	"quiz_ignoreCoef": "Пренебрегване на коефициентите на въпросите",
+	"quiz_shuffle": "Разбъркване на въпросите",
+	"quiz_colorRight": "Правилно",
+	"quiz_colorWrong": "Грешно",
+	"quiz_colorNA": "Без отговор",
+	"quiz_colorError": "Синтактична грешка",
+	"quiz_correction": "Изпращане",
+	"quiz_score": "Постижението ви е $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|една точка|$2 точки}}",
+	"quiz_reset": "Отмяна"
 }
