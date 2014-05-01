@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nayvik"
+			"Nayvik",
+			"VASANTH S.N."
 		]
 	},
 	"quiz_colorRight": "ಸರಿ",
-	"quiz_colorWrong": "ತಪ್ಪು"
+	"quiz_colorWrong": "ತಪ್ಪು",
+	"quiz_correction": "ಒಪ್ಪಿಸು",
+	"quiz_reset": "ಮರುಹೊಂದಿಸು"
 }
