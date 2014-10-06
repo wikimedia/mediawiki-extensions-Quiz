@@ -16,7 +16,7 @@
 	"quiz_colorRight": "정답",
 	"quiz_colorWrong": "오답",
 	"quiz_colorNA": "무응답",
-	"quiz_colorError": "문법 오류",
+	"quiz_colorError": "구문 오류",
 	"quiz_correction": "제출",
 	"quiz_score": "점수는 $1 / $2입니다.",
 	"quiz_points": "$1 | {{PLURAL:$2|1점|$2점}}",
