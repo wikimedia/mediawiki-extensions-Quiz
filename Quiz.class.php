@@ -137,13 +137,12 @@ class Quiz {
 		# Determine the content of the settings table.
 		$settings = array_fill( 0, 4, '' );
 		if( !$this->mDisplaySimple ) {
-			// @todo FIXME: Hard coded colons below (a few times). Should be part of messages.
-			$settings[0] .=	'<td>' . wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->escaped() . ':</td>' .
+			$settings[0] .=	'<td>' . wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->escaped() . '</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"addedPoints\" value=\"$this->mAddedPoints\"/>&#160;&#160;</td>";
-			$settings[1] .=	'<td>' . wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->escaped() . ':</td>' .
+			$settings[1] .=	'<td>' . wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->escaped() . '</td>' .
 							"<td><input class=\"numerical\" type=\"text\" name=\"cutoffPoints\" value=\"$this->mCutoffPoints\"/></td>";
 			$bChecked = ( $this->mIgnoringCoef ) ? ' checked="checked"' : '';
-			$settings[2] .=	'<td>' . wfMessage( 'quiz_ignoreCoef' )->escaped() . ':</td>' .
+			$settings[2] .=	'<td>' . wfMessage( 'quiz_ignoreCoef' )->escaped() . '</td>' .
 							"<td><input type=\"checkbox\" name=\"ignoringCoef\"$bChecked/></td>";
 			if( $this->mShuffle && !$this->mBeingCorrected ) {
 				$settings[3] .=	'<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMessage( 'quiz_shuffle' )->escaped() . '" style="display: none;"/></td>' .
