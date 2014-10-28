@@ -18,6 +18,6 @@
 	"quiz_colorError": "Синтаксическая ошибка",
 	"quiz_correction": "Отправить",
 	"quiz_score": "Ваш счёт: $1 из $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очков|очка}}",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очка|очков}}",
 	"quiz_reset": "Сбросить"
 }
