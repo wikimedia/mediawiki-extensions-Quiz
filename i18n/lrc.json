@@ -9,5 +9,6 @@
 	"quiz_colorNA": "جواو ندیئه",
 	"quiz_colorError": "خطا دستوری",
 	"quiz_correction": "كل كردن",
+	"quiz_score": "امتیاز شما $2/$1 ئه",
 	"quiz_reset": "د نو شرو كردن"
 }
