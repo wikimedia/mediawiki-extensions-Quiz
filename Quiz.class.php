@@ -89,14 +89,14 @@ class Quiz {
 	 * Displays an error message if the colorId doesn't exists.
 	 *
 	 * @param $colorId Integer: color hex code
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public static function getColor( $colorId ) {
 		if( array_key_exists( $colorId, self::$mColors ) ) {
 			return self::$mColors[$colorId];
 		}
 
-		throw new MWException( 'Invalid color ID: ' . $colorId );
+		throw new Exception( 'Invalid color ID: ' . $colorId );
 	}
 
 	/**
