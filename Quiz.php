@@ -45,7 +45,8 @@ $wgExtensionCredits['parserhook'][] = array(
 	'version'        => '1.2.0',
 	'author'         => 'Louis-Rémi Babe',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Quiz',
-	'descriptionmsg' => 'quiz_desc'
+	'descriptionmsg' => 'quiz_desc',
+	'license-name'   => 'GPL-2.0+'
 );
 
 /**
