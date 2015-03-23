@@ -7,10 +7,11 @@
 			"Purodha",
 			"Shirayuki",
 			"The Evil IP address",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Umherirrender"
 		]
 	},
-	"quiz_desc": "{{desc|name=Quiz|url=http://www.mediawiki.org/wiki/Extension:Quiz}}",
+	"quiz_desc": "{{desc|name=Quiz|url=https://www.mediawiki.org/wiki/Extension:Quiz}}",
 	"quiz_addedPoints": "Used as label for the \"Added points\" input box. Parameters:\n* $1 - number of points",
 	"quiz_cutoffPoints": "Used as label for \"cutoff points\" input box. Parameters:\n* $1 - cutoff points",
 	"quiz_ignoreCoef": "Used as label for the \"Ignore coef\" checkbox.",
