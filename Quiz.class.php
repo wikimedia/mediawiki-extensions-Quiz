@@ -762,8 +762,8 @@ class Question {
 						if( $this->mBeingCorrected && !empty( $value ) ) {
 							if(
 								$value == $possibility ||
-								( preg_match( '`^' . $value . ' \(i\)$`i', $possibility ) ) ||
-								( !$this->mCaseSensitive && preg_match( '`^' . $value . '$`i', $possibility ) )
+								( preg_match( '`^' . preg_quote( $value, '`' ) . ' \(i\)$`i', $possibility ) ) ||
+								( !$this->mCaseSensitive && preg_match( '`^' . preg_quote( $value, '`' ) . '$`i', $possibility ) )
 							) {
 								$state = 'right';
 								$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
