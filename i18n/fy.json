@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Snakesteuben"
+			"Snakesteuben",
+			"Robin0van0der0vliet"
 		]
 	},
+	"quiz_correction": "Ferstjoere",
 	"quiz_reset": "Leechmeitsje"
 }
