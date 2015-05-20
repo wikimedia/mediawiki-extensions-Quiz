@@ -5,5 +5,6 @@
 		]
 	},
 	"quiz_colorRight": "Раст",
-	"quiz_colorWrong": "Рæдыд"
+	"quiz_colorWrong": "Рæдыд",
+	"quiz_colorError": "Синтаксисы рæдыд"
 }
