@@ -1,20 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Huslåke"
+			"Huslåke",
+			"Jyllanj"
 		]
 	},
-	"quiz_desc": "Gæv kreåsje der kwesser æ mågleghed",
+	"quiz_desc": "Tillæde oprettels å quizze",
 	"quiz_addedPoints": "Punkt(er) tilføjer før æ korrekt answer",
 	"quiz_cutoffPoints": "Punkt(er) subtraktet før æ fejl answer",
-	"quiz_ignoreCoef": "Ignorær æ fråge han koeffisienter",
-	"quiz_shuffle": "Skuffel fråge",
-	"quiz_colorRight": "Gåd",
+	"quiz_ignoreCoef": "Ignoriir spöyrsmolens koefficientje",
+	"quiz_shuffle": "Blånj spöyrsmolen",
+	"quiz_colorRight": "Rett",
 	"quiz_colorWrong": "Fejl",
-	"quiz_colorNA": "Ekke answered",
-	"quiz_colorError": "Syntaks fejl",
-	"quiz_correction": "Gå",
-	"quiz_score": "Diin skår er $1 / $2",
+	"quiz_colorNA": "Ett swaren",
+	"quiz_colorError": "Syntaksfejl",
+	"quiz_correction": "Senj",
+	"quiz_score": "Din puntjsum ä $1 å $2 muli",
 	"quiz_points": "$1 | $2 punkt(er)",
-	"quiz_reset": "Reset"
+	"quiz_reset": "Nullstell"
 }
