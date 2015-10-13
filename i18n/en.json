@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Louis-Rémi Babe <lrbabe@gmail.com>"
-        ]
-    },
-    "quiz_desc": "Allows creation of quizzes",
-    "quiz_addedPoints": "{{PLURAL:$1|Point|Points}} added for a correct answer",
-    "quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} for a wrong answer",
-    "quiz_ignoreCoef": "Ignore the questions' coefficients",
-    "quiz_shuffle": "Shuffle questions",
-    "quiz_colorRight": "Right",
-    "quiz_colorWrong": "Wrong",
-    "quiz_colorNA": "Not answered",
-    "quiz_colorError": "Syntax error",
-    "quiz_correction": "Submit",
-    "quiz_score": "Your score is $1 / $2",
-    "quiz_points": "$1 | {{PLURAL:$2|1 point|$2 points}}",
-    "quiz_reset": "Reset"
+	"@metadata": {
+		"authors": [
+			"Louis-Rémi Babe <lrbabe@gmail.com>"
+		]
+	},
+	"quiz_desc": "Allows creation of quizzes",
+	"quiz_addedPoints": "{{PLURAL:$1|Point|Points}} added for a correct answer",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} for a wrong answer",
+	"quiz_ignoreCoef": "Ignore the questions' coefficients",
+	"quiz_shuffle": "Shuffle questions",
+	"quiz_colorRight": "Right",
+	"quiz_colorWrong": "Wrong",
+	"quiz_colorNA": "Not answered",
+	"quiz_colorError": "Syntax error",
+	"quiz_correction": "Submit",
+	"quiz_score": "Your score is $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 point|$2 points}}",
+	"quiz_reset": "Reset"
 }
