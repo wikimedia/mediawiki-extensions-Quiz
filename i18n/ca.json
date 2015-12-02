@@ -3,7 +3,8 @@
 		"authors": [
 			"Paucabot",
 			"SMP",
-			"Xavier Dengra"
+			"Xavier Dengra",
+			"Jaumeortola"
 		]
 	},
 	"quiz_desc": "Permet la creació de qüestionaris",
@@ -12,7 +13,7 @@
 	"quiz_ignoreCoef": "Ignora els coeficients de les qüestions",
 	"quiz_shuffle": "Preguntes aleatòries",
 	"quiz_colorRight": "Correcta",
-	"quiz_colorWrong": "Incorrecta",
+	"quiz_colorWrong": "Incorrecte",
 	"quiz_colorNA": "No contestada",
 	"quiz_colorError": "Error de sintaxi",
 	"quiz_correction": "Corregeix",
