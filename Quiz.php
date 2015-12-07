@@ -35,67 +35,14 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'This is not a valid entry point to MediaWiki.' );
 }
-
-/**
- * Extension credits that will show up on Special:Version
- */
-$wgExtensionCredits['parserhook'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'Quiz',
-	'version'        => '1.2.0',
-	'author'         => 'Louis-Rémi Babe',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Quiz',
-	'descriptionmsg' => 'quiz_desc',
-	'license-name'   => 'GPL-2.0+'
-);
-
-/**
- * Add this extension to MediaWiki's extensions list.
- */
-$dir = __DIR__ . '/';
-$wgAutoloadClasses['Quiz'] = $dir . 'Quiz.class.php';
-$wgAutoloadClasses['Question'] = $dir . 'Quiz.class.php';
-$wgMessagesDirs['QuizExtension'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['QuizExtension'] = $dir . 'Quiz.i18n.php';
-
-$wgHooks['ParserFirstCallInit'][] = 'wfQuizExtension';
-$wgHooks['ParserClearState'][] = 'Quiz::resetQuizID';
-
-$commonModuleInfo = array(
-	'localBasePath' => dirname( __FILE__ ) . '/modules',
-	'remoteExtPath' => 'Quiz/modules',
-);
-
-// Styles and any code common to all Special:Code subviews:
-$wgResourceModules['ext.quiz'] = array(
-	'scripts' => 'ext.quiz.js',
-	'styles' => 'ext.quiz.css',
-	'position' => 'top',
-) + $commonModuleInfo;
-
-/**
- * Register the extension with the WikiText parser.
- * The tag used is <quiz>
- *
- * @param $parser Parser the wikitext parser
- * @return Boolean true to continue hook processing
- */
-function wfQuizExtension( &$parser ) {
-	$parser->setHook( 'quiz', 'renderQuiz' );
-	return true;
-}
-
-/**
- * Call the quiz parser on an input text.
- *
- * @param $input String text between <quiz> and </quiz> tags, in quiz syntax.
- * @param $argv Array an array containing any arguments passed to the extension
- * @param $parser Parser the wikitext parser.
- *
- * @return string An HTML quiz.
- */
-function renderQuiz( $input, $argv, $parser ) {
-	$parser->disableCache();
-	$quiz = new Quiz( $argv, $parser );
-	return $quiz->parseQuiz( $input );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'Quiz' );
+	$wgMessagesDirs['QuizExtension'] = __DIR__ . '/i18n';
+	/* wfWarn(
+		'Deprecated PHP entry point used for Quiz extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return;
+} else {
+	die( 'This version of the Quiz extension requires MediaWiki 1.25+' );
 }

@@ -1,0 +1,39 @@
+{
+	"name": "Quiz",
+	"version": "1.2.0",
+	"author": "Louis-Rémi Babe",
+	"url": "https://www.mediawiki.org/wiki/Extension:Quiz",
+	"descriptionmsg": "quiz_desc",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"QuizExtension": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"Quiz": "Quiz.class.php",
+		"Question": "Quiz.class.php",
+		"QuizHooks": "Quiz.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.quiz": {
+			"scripts": "ext.quiz.js",
+			"styles": "ext.quiz.css",
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "Quiz/modules"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"QuizHooks::onParserFirstCallInit"
+		],
+		"ParserClearState": [
+			"Quiz::resetQuizID"
+		]
+	},
+	"manifest_version": 1
+}
