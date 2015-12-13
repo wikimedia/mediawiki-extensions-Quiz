@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue"
+		]
+	},
+	"quiz_desc": "ایجاد آزمون را ممکن می‌سازد",
+	"quiz_addedPoints": "{{PLURAL:$1|امتیاز|امتیاز ها}} هر پاسخ درست",
+	"quiz_cutoffPoints": "{{PLURAL:$1|امتیاز|امتیاز ها}} منفی هر پاسخ نادرست",
+	"quiz_ignoreCoef": "نادیده گرفتن ضریب سوال‌ها",
+	"quiz_shuffle": "برزدن سوال‌ها",
+	"quiz_colorRight": "درست",
+	"quiz_colorWrong": "نادرست",
+	"quiz_colorNA": "پاسخ داده نشده",
+	"quiz_colorError": "خطای نحوی",
+	"quiz_correction": "ارسال/کِل کردن",
+	"quiz_score": "امتیاز شما $1 از $2 است",
+	"quiz_points": "$1 | {{PLURAL:$2|۱ امتیاز|$2 امتیاز}}",
+	"quiz_reset": "إژ دووارة"
+}
