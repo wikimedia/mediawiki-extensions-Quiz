@@ -39,10 +39,12 @@
 	// Shuffle questions
 	function shuffle( area ) {
 		var div = area.childNodes;
+		var quizText;
+
 		for( var i = 0, questions = []; i < div.length; ++i ) {
 			if( div[i].className ) {
 				if( questions.length === 0 && div[i].className === 'quizText' ) {
-					var quizText = div[i];
+					quizText = div[i];
 				} else {
 					questions.push( div[i] );
 					if( div[i].className === 'shuffle' || div[i].className === 'noshuffle' ) {
@@ -79,6 +81,7 @@
 					// Displays the shuffle buttons.
 					else if( input[j].className === 'shuffle' ) {
 						input[j].style.display = 'inline';
+						/* jshint loopfunc:true */
 						input[j].onclick = function() {
 							shuffle( this.form.getElementsByTagName( 'div' )[0] );
 							var sh_input = this.form.getElementsByTagName( 'input' );
@@ -91,6 +94,7 @@
 								}
 							}
 						};
+						/* jshint loopfunc:false */
 					}
 					// Display the reset button
 					else if( input[j].className === 'reset' ) {
