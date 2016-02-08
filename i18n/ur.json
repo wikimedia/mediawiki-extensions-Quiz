@@ -1,12 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Muhammad Shuaib"
 		]
 	},
+	"quiz_desc": "سوال نامے تیار کرنے کی سہولت دیتا ہے",
+	"quiz_addedPoints": "درست جواب کے لیے {{PLURAL:$1|مارک دیا گیا|مارکس دیے گئے}}",
+	"quiz_cutoffPoints": "غلط جواب کے لیے {{PLURAL:$1|مارک|مارکس}}",
 	"quiz_colorRight": "حق",
 	"quiz_colorWrong": "غلط",
-	"quiz_colorNA": "ان كا جواب نہیں تھا",
-	"quiz_correction": "جمع کرائیں",
+	"quiz_colorNA": "غیر مندرج جوابات",
+	"quiz_colorError": "نحوی غلطی",
+	"quiz_correction": "روانہ کریں",
+	"quiz_score": "نتیجہ $1 / $2 ہے",
+	"quiz_points": "$1 | {{PLURAL:$2|1 مارک|$2 مارکس}}",
 	"quiz_reset": "دوبارہ مرتب کریں"
 }
