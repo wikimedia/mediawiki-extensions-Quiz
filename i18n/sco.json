@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"AmaryllisGardener"
+		]
+	},
+	"quiz_desc": "Allaes creation o quizzes",
+	"quiz_addedPoints": "{{PLURAL:$1|Point|Points}} addit for a correct answer",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Pynt|Pynts}} for a wrang answer",
+	"quiz_ignoreCoef": "Ignore the quaistiens' coefficients",
+	"quiz_shuffle": "Shuffle quaistiens",
+	"quiz_colorRight": "Richt",
+	"quiz_colorWrong": "Wrang",
+	"quiz_colorNA": "Nae answered",
+	"quiz_colorError": "Syntax error",
+	"quiz_correction": "Submit",
+	"quiz_score": "Yer score is $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|1 pynt|$2 pynts}}",
+	"quiz_reset": "Reset"
+}
