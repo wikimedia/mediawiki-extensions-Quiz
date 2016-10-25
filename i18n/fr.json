@@ -6,13 +6,14 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Verdy p",
-			"JackPotte"
+			"JackPotte",
+			"Gomoko"
 		]
 	},
 	"quiz_desc": "Permet la création des quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse erronée",
-	"quiz_ignoreCoef": "Ignorer les coefficients des questions",
+	"quiz_addedPoints": "{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste :",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse erronée :",
+	"quiz_ignoreCoef": "Ignorer les coefficients des questions :",
 	"quiz_shuffle": "Mélanger les questions",
 	"quiz_colorRight": "Juste",
 	"quiz_colorWrong": "Faux",

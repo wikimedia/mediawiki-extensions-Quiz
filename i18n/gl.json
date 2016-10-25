@@ -3,13 +3,14 @@
 		"authors": [
 			"Alma",
 			"Toliño",
-			"Xosé"
+			"Xosé",
+			"Banjo"
 		]
 	},
 	"quiz_desc": "Permite a creación de preguntas",
-	"quiz_addedPoints": "{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea",
-	"quiz_ignoreCoef": "Ignorar os coeficientes das preguntas",
+	"quiz_addedPoints": "{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea:",
+	"quiz_ignoreCoef": "Ignorar os coeficientes das preguntas:",
 	"quiz_shuffle": "Barallar as preguntas",
 	"quiz_colorRight": "Ben",
 	"quiz_colorWrong": "Mal",

@@ -5,9 +5,9 @@
 		]
 	},
 	"quiz_desc": "Erméiglecht et Quizzer ze maachen",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Punkten}} derbäi fir eng richteg Äntwert",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt|Punkten}} ofgezunn fir eng falsch Äntwert",
-	"quiz_ignoreCoef": "Koeffizient vun der Fro ignoréieren",
+	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Punkten}} derbäi fir eng richteg Äntwert:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt|Punkte}} fir eng falsch Äntwert:",
+	"quiz_ignoreCoef": "Koeffizient vun der Fro ignoréieren:",
 	"quiz_shuffle": "Froe meschen",
 	"quiz_colorRight": "Richteg",
 	"quiz_colorWrong": "Falsch",

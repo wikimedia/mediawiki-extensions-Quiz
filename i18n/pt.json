@@ -3,13 +3,14 @@
 		"authors": [
 			"Luckas",
 			"Malafaya",
-			"555"
+			"555",
+			"Vitorvicentevalente"
 		]
 	},
 	"quiz_desc": "Permite a criação de questionários",
-	"quiz_addedPoints": "{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} por cada resposta certa",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto subtraído|Pontos subtraídos}} por cada resposta errada",
-	"quiz_ignoreCoef": "Ignorar os coeficientes das questões",
+	"quiz_addedPoints": "{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} por cada resposta certa:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto|Pontos}} por cada resposta errada:",
+	"quiz_ignoreCoef": "Ignorar os coeficientes das questões:",
 	"quiz_shuffle": "Baralhar as questões",
 	"quiz_colorRight": "Corretas",
 	"quiz_colorWrong": "Erradas",

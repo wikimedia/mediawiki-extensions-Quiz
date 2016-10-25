@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
-			"Raimond Spekking"
+			"Raimond Spekking",
+			"Metalhead64"
 		]
 	},
 	"quiz_desc": "Ermöglicht die Erstellung von Quizspielen",
-	"quiz_addedPoints": "{{PLURAL:$1|Pluspunkt|Pluspunkte}} für eine richtige Antwort",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkte}} für eine falsche Antwort",
-	"quiz_ignoreCoef": "Ignoriere den Fragen-Koeffizienten",
+	"quiz_addedPoints": "{{PLURAL:$1|Pluspunkt|Pluspunkte}} für eine richtige Antwort:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkte}} für eine falsche Antwort:",
+	"quiz_ignoreCoef": "Ignoriere die Fragen-Koeffizienten:",
 	"quiz_shuffle": "Fragen mischen",
 	"quiz_colorRight": "Richtig",
 	"quiz_colorWrong": "Falsch",
