@@ -5,9 +5,9 @@
 		]
 	},
 	"quiz_desc": "Omogoča ustvarjanje kvizov",
-	"quiz_addedPoints": "{{PLURAL:$1|Točka dodana|Točki dodani|Točke dodane}} za pravilen odgovor",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Točka odbita|Točki odbiti|Točke odbite}} za napačen odgovor",
-	"quiz_ignoreCoef": "Prezri koeficiente vprašanj",
+	"quiz_addedPoints": "{{PLURAL:$1|Točka dodana|Točki dodani|Točke dodane}} za pravilen odgovor:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Točka odbita|Točki odbiti|Točke odbite}} za napačen odgovor:",
+	"quiz_ignoreCoef": "Prezri koeficiente vprašanj:",
 	"quiz_shuffle": "Premešaj vprašanja",
 	"quiz_colorRight": "Pravilno",
 	"quiz_colorWrong": "Napačno",

@@ -4,13 +4,14 @@
 			"Ascánder",
 			"Crazymadlover",
 			"Sanbec",
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"quiz_desc": "Permite la creación de quices",
-	"quiz_addedPoints": "{{PLURAL:$1|Punto agregado|Puntos agregados}} por una respuesta correcta",
+	"quiz_addedPoints": "{{PLURAL:$1|Punto agregado|Puntos agregados}} por una respuesta correcta:",
 	"quiz_cutoffPoints": "{{PLURAL:$1|Punto|Puntos}} por una respuesta incorrecta",
-	"quiz_ignoreCoef": "Ignorar los puntos de cada pregunta",
+	"quiz_ignoreCoef": "Ignorar los coeficientes de cada pregunta:",
 	"quiz_shuffle": "Mezclar preguntas",
 	"quiz_colorRight": "Correcta",
 	"quiz_colorWrong": "Incorrecta",
