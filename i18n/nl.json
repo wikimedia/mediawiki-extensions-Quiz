@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Hex"
 		]
 	},
 	"quiz_desc": "Maakt het aanmaken van tests mogelijk",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een fout antwoord",
-	"quiz_ignoreCoef": "De coëfficienten van de vragen negeren",
+	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een fout antwoord:",
+	"quiz_ignoreCoef": "De coëfficienten van de vragen negeren:",
 	"quiz_shuffle": "Willekeurige volgorde voor vragen",
 	"quiz_colorRight": "Goed",
 	"quiz_colorWrong": "Fout",
