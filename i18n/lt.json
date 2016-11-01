@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matasg"
+			"Matasg",
+			"Eitvys200"
 		]
 	},
 	"quiz_desc": "Leidžia kurti klausimynus",
-	"quiz_addedPoints": "{{PLURAL:$1|Taškas|Taškai}} {{PLURAL:$1|pridėtas|pridėti}} už teisingą atsakymą",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Taškas|Taškai}} {{PLURAL:$1|atimtas|atimti}} už neteisingą atsakymą",
-	"quiz_ignoreCoef": "Nepaisyti klausimų koeficientų",
+	"quiz_addedPoints": "{{PLURAL:$1|Taškas|Taškai}} pridėti už teisingą atsakymą:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Taškas|Taškai}} už neteisingą atsakymą:",
+	"quiz_ignoreCoef": "Nepaisyti klausimų koeficientų:",
 	"quiz_shuffle": "Maišyti klausimus",
 	"quiz_colorRight": "Teisingai",
 	"quiz_colorWrong": "Neteisingai",
