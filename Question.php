@@ -90,7 +90,7 @@ class Question {
 	/**
 	 * Determine the question's parameters.
 	 *
-	 * @param $matches Array: elements matching $parametersPattern
+	 * @param $matches array: elements matching $parametersPattern
 	 * 						$matches[0] are the potential question parameters.
 	 */
 	function parseParameters( $matches ) {
@@ -335,7 +335,7 @@ class Question {
 	 */
 	function parseTextField( $input ) {
 		global $wqInputId;
-		$wqInputId ++;
+		$wqInputId++;
 		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $a_inputBeg = $a_inputEnd = $big = '';
 		# determine size and maxlength of the input.
 		if( array_key_exists( 3, $input ) ) {

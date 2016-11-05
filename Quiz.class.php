@@ -89,6 +89,7 @@ class Quiz {
 	 * Displays an error message if the colorId doesn't exists.
 	 *
 	 * @param $colorId Integer: color hex code
+	 * @return string
 	 * @throws Exception
 	 */
 	public static function getColor( $colorId ) {
@@ -138,16 +139,16 @@ class Quiz {
 			}
 		}
 		if( $this->mBeingCorrected ) {
-			$settings[0] .= '<td class="margin" style="background: ' . $this->getColor( 'right' ) . '"></td>' .
+			$settings[0] .= '<td class="margin" style="background: ' . self::getColor( 'right' ) . '"></td>' .
 							'<td style="background: transparent;">' . wfMessage( 'quiz_colorRight' )->escaped() . '</td>';
-			$settings[1] .= '<td class="margin" style="background: ' . $this->getColor( 'wrong' ) . '"></td>' .
+			$settings[1] .= '<td class="margin" style="background: ' . self::getColor( 'wrong' ) . '"></td>' .
 							'<td style="background: transparent;">' . wfMessage( 'quiz_colorWrong' )->escaped() . '</td>';
-			$settings[2] .= '<td class="margin" style="background: ' . $this->getColor( 'NA' ) . '"></td>' .
+			$settings[2] .= '<td class="margin" style="background: ' . self::getColor( 'NA' ) . '"></td>' .
 							'<td style="background: transparent;">' . wfMessage( 'quiz_colorNA' )->escaped() . '</td>';
 		}
 		if( $this->mState == 'error' ) {
 			$errorKey = $this->mBeingCorrected ? 3 : 0;
-			$settings[$errorKey] .=	'<td class="margin" style=\"background: ' . $this->getColor( 'error' ) . '"></td>' .
+			$settings[$errorKey] .=	'<td class="margin" style=\"background: ' . self::getColor( 'error' ) . '"></td>' .
 									'<td>' . wfMessage( 'quiz_colorError' )->escaped() . '</td>';
 		}
 		# Build the settings table.
@@ -200,7 +201,7 @@ class Quiz {
 	/**
 	 * Include text between <quiz> and <quiz> from another page to this quiz.
 	 *
-	 * @param $matches Array: elements matching $includePattern.
+	 * @param $matches array: elements matching $includePattern.
 	 * 							$matches[1] is the page title.
 	 * @return mixed|string
 	 */
@@ -260,7 +261,7 @@ class Quiz {
 	/**
 	 * Convert a question from quiz syntax to HTML
 	 *
-	 * @param $matches Array: elements matching $questionPattern.
+	 * @param $matches array: elements matching $questionPattern.
 	 * 						$matches[1] is the question header.
 	 * 						$matches[3] is the question object.
 	 * @return string
@@ -310,7 +311,7 @@ class Quiz {
 		if( $lState != '' ) {
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
-			$output .= "style=\"$border:3px solid " . $this->getColor( $lState ) . '"';
+			$output .= "style=\"$border:3px solid " . self::getColor( $lState ) . '"';
 			if( $this->mIgnoringCoef ) {
 				$question->mCoef = 1;
 			}
