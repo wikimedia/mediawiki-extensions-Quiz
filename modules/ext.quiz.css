@@ -19,10 +19,48 @@
 }
 
 .quiz table.settings {
-	background-color: transparent; }
+	background-color: transparent;
+}
 
 .quiz .sign {
 	text-align: center;
+}
+
+.quiz .question {
+	margin-left: 2em;
+}
+
+.quiz .margin {
+	padding-left: 20px;
+}
+
+.quiz .header .questionId {
+	font-size: 1.1em;
+	font-weight: bold;
+	float: left;
+}
+
+.quiz a.input em {
+	color: black;
+	background-color: #DFDFDF;
+	margin-right: 1px;
+}
+
+.quiz a.input input {
+	padding-left: 2px;
+	border: 0;
+}
+
+.quiz .correction {
+	background-color: #F9F9F9;
+}
+
+.quiz a.input span.correction {
+	padding: 3px;
+	margin: 0;
+	list-style-type: none;
+	display: none;
+	background-color: #F9F9F9;
 }
 
 .quiz a.input, .quiz a.input:hover, .quiz a.input:active, .quiz a.input:visited {

@@ -108,22 +108,8 @@ class Quiz {
 	function parseQuiz( $input ) {
 		# Ouput the style and the script to the header once for all.
 		if( $this->mQuizId == 0 ) {
-			global $wgContLang;
-			$start = $wgContLang->isRTL() ? 'right' : 'left';
-			$end = $wgContLang->isRTL() ? 'left' : 'right';
-			$head  = "<style type=\"text/css\">\n";
-			$head .= ".quiz .question { margin-$start: 2em; }\n";
-			$head .= ".quiz .margin { padding-$start: 20px; }\n";
-			$head .= ".quiz .header .questionId { font-size: 1.1em; font-weight: bold; float: $start;}\n";
-			$head .= ".quiz a.input em { color:black; background-color:#DFDFDF; margin-$end:1px; }\n";
-			$head .= ".quiz a.input input { padding-$start:2px; border:0; }\n";
-
-			$head .= '.quiz .correction { background-color: ' . Quiz::getColor( 'correction' ) . ";}\n";
-			$head .= ".quiz a.input span.correction { padding:3px; margin:0; list-style-type:none; display:none; background-color:" . Quiz::getColor( 'correction' ) . "; }\n";
-			$head .= "</style>\n";
 			global $wgOut;
 
-			$wgOut->addScript( $head );
 			$wgOut->addModules( 'ext.quiz' );
 		}
 
