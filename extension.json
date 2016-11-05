@@ -13,7 +13,7 @@
 	},
 	"AutoloadClasses": {
 		"Quiz": "Quiz.class.php",
-		"Question": "Quiz.class.php",
+		"Question": "Question.php",
 		"QuizHooks": "Quiz.hooks.php"
 	},
 	"ResourceModules": {
