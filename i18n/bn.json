@@ -9,7 +9,7 @@
 	"quiz_desc": "কুইজ সৃষ্টির অনুমতি দেয়",
 	"quiz_addedPoints": "সঠিক উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}} যোগ হয়েছে:",
 	"quiz_cutoffPoints": "ভুল উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}}:",
-	"quiz_ignoreCoef": "প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক",
+	"quiz_ignoreCoef": "প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক:",
 	"quiz_shuffle": "প্রশ্ন উলোটপালোট করো",
 	"quiz_colorRight": "সঠিক",
 	"quiz_colorWrong": "ভুল",
