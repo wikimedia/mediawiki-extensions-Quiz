@@ -3,13 +3,14 @@
 		"authors": [
 			"AS",
 			"Ahonc",
-			"Andriykopanytsia"
+			"Andriykopanytsia",
+			"Piramidion"
 		]
 	},
 	"quiz_desc": "Дозволяє створювати питальники",
-	"quiz_addedPoints": "{{PLURAL:$1|1=Очко додане|Очки додані}} за правильну відповідь",
-	"quiz_cutoffPoints": "{{PLURAL:$1|1=Очко відняте|Очки відняті}} за неправильну відповідь",
-	"quiz_ignoreCoef": "Нехтувати коефіцієнтами запитань",
+	"quiz_addedPoints": "{{PLURAL:$1|1=Додане очко|Додані очки}} за правильну відповідь:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|1=Відняте очко|Відняті очки}} за неправильну відповідь:",
+	"quiz_ignoreCoef": "Нехтувати коефіцієнтами запитань:",
 	"quiz_shuffle": "Перемішати запитання",
 	"quiz_colorRight": "Правильно",
 	"quiz_colorWrong": "Неправильно",
