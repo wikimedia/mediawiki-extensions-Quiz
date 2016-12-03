@@ -33,7 +33,7 @@
  * @author Louis-Rémi Babe <lrbabe@gmail.com>
  */
 
-(function() {
+(function () {
 	'use strict';
 
 	// Shuffle questions
