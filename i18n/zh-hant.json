@@ -4,13 +4,14 @@
 			"Gaoxuewei",
 			"Mark85296341",
 			"Oapbtommy",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Alexsh"
 		]
 	},
 	"quiz_desc": "允許建立小測驗題目",
-	"quiz_addedPoints": "答對得到的{{PLURAL:$1|分數|分數}}",
-	"quiz_cutoffPoints": "答錯減少的{{PLURAL:$1|分數|分數}}",
-	"quiz_ignoreCoef": "忽略問題的係數",
+	"quiz_addedPoints": "答對得到的{{PLURAL:$1|分數|分數}}：",
+	"quiz_cutoffPoints": "答錯減少的{{PLURAL:$1|分數|分數}}：",
+	"quiz_ignoreCoef": "忽略問題的係數：",
 	"quiz_shuffle": "隨機問題",
 	"quiz_colorRight": "對",
 	"quiz_colorWrong": "錯",
