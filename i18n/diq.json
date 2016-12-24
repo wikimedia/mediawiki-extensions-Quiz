@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aspar",
-			"Mirzali"
+			"Mirzali",
+			"Gırd"
 		]
 	},
 	"quiz_desc": "desturê vıraştışê quizi dano",
@@ -13,7 +14,7 @@
 	"quiz_colorRight": "raşt",
 	"quiz_colorWrong": "şaş",
 	"quiz_colorNA": "cewab cı nêdiya",
-	"quiz_colorError": "xetaya sebtaksi",
+	"quiz_colorError": "xetay sebtaksi",
 	"quiz_correction": "Bırışe",
 	"quiz_score": "Skorê şıma $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
