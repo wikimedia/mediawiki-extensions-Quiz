@@ -67,7 +67,7 @@
 
 	// Prepare the quiz for "javascriptable" browsers
 	function prepareQuiz() {
-		var bodyContentDiv = document.getElementById( 'bodyContent' ).getElementsByTagName( 'div' );
+		var bodyContentDiv = document.getElementById( 'mw-content-text' ).getElementsByTagName( 'div' );
 		for( var i = 0; i < bodyContentDiv.length; ++i ) {
 			if( bodyContentDiv[i].className === 'quiz' ) {
 				var input = bodyContentDiv[i].getElementsByTagName( 'input' );
