@@ -1,0 +1,11 @@
+<div class="question">
+	<div class="header">
+		<span class="questionId">{{ question.id }}</span>
+		<span class="questionText">{{{ question.text }}}</span>
+	</div>
+	<table class="object" style="{{ state.tableStyle }}" title="{{ state.tableTitle }}">
+		<tbody>
+			{{{ question.answers }}}
+		</tbody>
+	</table>
+</div>

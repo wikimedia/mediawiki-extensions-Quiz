@@ -247,6 +247,7 @@ class Quiz {
 			-1,
 			PREG_SPLIT_NO_EMPTY
 		);
+
 		$output = '';
 		$questionPattern = '`(.*?[^|\}])\}[ \t]*(\n(.*)|$)`s';
 		foreach ( $unparsedQuestions as $unparsedQuestion ) {
@@ -288,8 +289,18 @@ class Quiz {
 			$this->mParser
 		);
 		Hooks::run( 'QuizQuestionCreated', array( $this, &$question ) );
-		$buffer = $question->parseHeader( $matches[1] );
-		if ( !array_key_exists( 3, $matches ) || trim( $matches[3] ) == '' ) {
+
+		// gets the question text
+		$questionText = $question->parseHeader( $matches[1] );
+
+		/*
+			What is this block of code?
+			The only place X !X and /X are spoken about is here
+			https://en.wikiversity.org/wiki/Help:Quiz
+			"A few exotic features are not yet covered, such as shuffle control using {X} {!X} {/X} tags."
+			These were added in commit fb53a3b0 back in 2007, without any explanation and/or documentation. The commit message is actually unrelated.
+		*/
+		if ( !array_key_exists(3, $matches ) || trim( $matches[3] ) == '' ) {
 			switch ( $matches[1] ) {
 				case 'X':
 					$this->mShuffleDiv++;
@@ -309,66 +320,89 @@ class Quiz {
 					}
 					break;
 				default:
-					return '<div class="quizText">' . $buffer . '<br /></div>' . "\n";
+					return '<div class="quizText">' . $questionText . '<br /></div>' . "\n";
 					break;
 			}
 		}
-		$output  = '<div class="question">' . "\n";
-		$output .= '<div class="header">' . "\n";
-		$output .= '<span class="questionId">' . ++$this->mQuestionId . '. </span>' . $buffer;
-		$output .= '</div>' . "\n";
 
-		// Store the parsed object into a buffer to determine some parameters before outputing it.
-		$buffer = call_user_func( array(
-			$question,
-			$question->mType . 'ParseObject'
-		), $matches[3]);
- 		$output .= '<table class="object" ';
-		$lState = $question->getState();
-		// Determine the side border color, title, score and the total of the question.
-		if ( $lState != '' ) {
+		$templateParser = new TemplateParser(  __DIR__ . '/templates' );
+
+		$this->mQuestionId++;
+
+		//this will generate the answers HTML code
+		$answers = call_user_func(
+			array( $question, $question->mType . 'ParseObject' ),
+			$matches[3]
+		);
+
+		$lState = $question->getState(); // right wrong or unanswered?
+
+		if( $lState != '' ) {
+			// TODO: convert to CSS classes
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
-			$output .= 'style="' . $border . ':3px solid ' . self::getColor( $lState ) . '"';
+			$tableStyle = $border . ': 3px solid ' . self::getColor( $lState ) . ';';
+
+			$tableTitle = "";
+
+			// if the question is of type=simple
 			if ( $this->mIgnoringCoef ) {
 				$question->mCoef = 1;
 			}
-
 			switch ( $lState ) {
 				case 'right':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore += $this->mAddedPoints * $question->mCoef;
-					$output .= 'title="' . wfMessage(
+
+					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorRight' )->text(),
+						wfMessage('quiz_colorRight' )->text(),
 						$this->mAddedPoints * $question->mCoef
-					)->escaped() . '"';
+					)->escaped();
 					break;
+
 				case 'wrong':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore -= $this->mCutoffPoints * $question->mCoef;
-					$output .= 'title="' . wfMessage(
+
+					$tableTitle= wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorWrong' )->text(),
+						wfMessage('quiz_colorWrong')->text(),
 						-$this->mCutoffPoints * $question->mCoef
-					)->escaped() . '"';
+					)->escaped();
 					break;
+
 				case 'NA':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
-					$output .= 'title="' . wfMessage(
+
+					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorNA' )->text(), 0
-					)->escaped() . '"';
+						wfMessage('quiz_colorNA')->text(),
+						0
+					)->escaped();
 					break;
+
 				case 'error':
 					$this->mState = 'error';
 					break;
 			}
+
+			$stateObject = array(
+				'tableStyle' => $tableStyle,
+				'tableTitle' => $tableTitle
+			);
 		}
-		$output .= '><tbody>' . "\n";
-		$output .= $buffer;
-		$output .= '</tbody></table>' . "\n";
-		$output .= '<br /></div>' . "\n";
-		return $output;
+
+		return $templateParser->processTemplate(
+			'Question',
+			array(
+				'question' => array(
+					'id' => $this->mQuestionId,
+					'text' => $questionText,
+					'answers' => $answers
+				),
+				'state' => $stateObject
+			)
+		);
 	}
 }
