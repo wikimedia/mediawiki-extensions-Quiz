@@ -10,6 +10,10 @@
 	background-color: transparent;
 }
 
+.quiz .hideCorrection .correction {
+	display: none;
+}
+
 .quiz .settings td {
 	padding: 0.1em 0.4em 0.1em 0.4em;
 }
