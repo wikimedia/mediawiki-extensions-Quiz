@@ -1,0 +1,24 @@
+<div class="quiz">
+	<form id="quiz{{ quiz.id }}" method="post" action="#quiz{{ quiz.id }}">
+		{{#settingsTable}}
+			<table class="settings">
+				{{{ . }}}
+			</table>
+		{{/settingsTable}}
+		<input type="hidden" name="quizId" value="{{ quiz.id }}" />
+		<div class="quizQuestions">
+			{{{ quiz.questions }}}
+		</div>
+		<p>
+			<input type="submit" value="{{ wfMessage.quiz_correction }}"/>
+			{{#if quiz.beingCorrected }}
+				<input class="reset" type="submit" value="{{ wfMessage.quiz_reset }}" style="display: none;">
+			{{/if}}
+		</p>
+		{{#if quiz.beingCorrected }}
+			<span class="correction">
+				{{{ wfMessage.quiz_score }}}
+			</span>
+		{{/if}}
+	</form>
+</div>

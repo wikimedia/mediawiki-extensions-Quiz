@@ -112,6 +112,7 @@ class Quiz {
 	 * @return string
 	 */
 	function parseQuiz( $input ) {
+
 		// Ouput the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
 			global $wgOut;
@@ -122,10 +123,8 @@ class Quiz {
 		$input = $this->parseQuestions( $this->parseIncludes( $input ) );
 
 		// Generates the output.
-		// TODO: Use TemplateParser instead of HTML tags in code to improve code readability in the future
-		$classHide = ( $this->mBeingCorrected ) ? '' : ' class="hideCorrection"';
-		$output  = '<div class="quiz">' . "\n";
-		$output .= '<form id="quiz' . $this->mQuizId . '" ' . $classHide . ' method="post" action="#quiz' . $this->mQuizId . '">' . "\n";
+
+		$templateParser = new TemplateParser(  __DIR__ . '/templates' );
 
 		// Determine the content of the settings table.
 		$settings = array_fill( 0, 4, '' );
@@ -173,33 +172,27 @@ class Quiz {
 			}
 		}
 
-		if ( !empty( $settingsTable ) ) {
-			$output .= '<table class="settings">' . "\n";
-			$output .= $settingsTable . "\n";
-			$output .= '</table>' . "\n";
-		}
-		$output .= '<input type="hidden" name="quizId" value="' . $this->mQuizId . '" />' . "\n";
-
-		$output .= '<div class="quizQuestions">' . "\n";
-		$output .= $input . "\n";
-		$output .= '</div>' . "\n";
-
-		$output .= '<p><input type="submit" value="' . wfMessage( 'quiz_correction' )->escaped() . '"/>';
-		if ( $this->mBeingCorrected ) {
-			$output .= '<input class="reset" type="submit" value="' .
-				wfMessage( 'quiz_reset' )->escaped() . '" style="display: none;" />';
-		}
-		$output .= '</p>' . "\n";
-
-		$output .= '<span class="correction">';
-		$output .= wfMessage( 'quiz_score' )->rawParams(
+		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
 			'<span class="score">' . $this->mScore . '</span>',
-			'<span class="total">' . $this->mTotal . '</span>'
-		)->escaped();
-		$output .= '</span>' . "\n";
+			'<span class="total">' . $this->mTotal . '</span>')->escaped();
 
-		$output .= '</form>' . "\n";
-		$output .= '</div>' . "\n";
+		return $templateParser->processTemplate(
+			'Quiz',
+			array(
+				'quiz' => array(
+					'id' => $this->mQuizId,
+					'beingCorrected' => $this->mBeingCorrected,
+					'questions' => $input
+				),
+				'settingsTable' => $settingsTable,
+				'wfMessage' => array(
+					'quiz_correction' => wfMessage( 'quiz_correction' )->escaped(),
+					'quiz_reset' => wfMessage( 'quiz_reset' )->escaped(),
+					'quiz_score' => $quiz_score
+				)
+			)
+		);
+
 		return $output;
 	}
 
