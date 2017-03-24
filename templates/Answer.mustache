@@ -1,0 +1,14 @@
+<div style="display:inline-block">
+	{{#if correction}}
+		<a class="input" href="#nogo">
+			<span class="correction">{{{ possibility }}}
+			</span>
+	{{/if}}		<span style="{{ style }}">
+				<input type="text" name="{{ name }}" title="{{ title }}" {{ disabled }} size="{{ size }}" maxlength="{{ maxlength }}" autocomplete="off" value="{{ value }}" />
+					<em style="{{ bigDisplay }}">{{ big }}
+					</em>
+			</span>
+	{{#if answer.corrected}}
+		</a>
+	{{/if}}
+</div>
