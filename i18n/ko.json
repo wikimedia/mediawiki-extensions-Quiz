@@ -10,7 +10,7 @@
 			"Ykhwong"
 		]
 	},
-	"quiz_desc": "퀴즈를 만들 수 있습니다",
+	"quiz_desc": "퀴즈를 만들 수 있게 합니다",
 	"quiz_addedPoints": "정답이면 {{PLURAL:$1|점수}} 득점",
 	"quiz_cutoffPoints": "틀린 답이면 {{PLURAL:$1|점수}} 감점",
 	"quiz_ignoreCoef": "문제의 배점 무시",
