@@ -329,11 +329,16 @@ class Quiz {
 
 		$this->mQuestionId++;
 
-		//this will generate the answers HTML code
+		// This will generate the answers HTML code
 		$answers = call_user_func(
 			array( $question, $question->mType . 'ParseObject' ),
 			$matches[3]
 		);
+
+		// Set default table title and style
+
+		$tableTitle = "";
+		$tableStyle = "";
 
 		$lState = $question->getState(); // right wrong or unanswered?
 
@@ -342,8 +347,6 @@ class Quiz {
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
 			$tableStyle = $border . ': 3px solid ' . self::getColor( $lState ) . ';';
-
-			$tableTitle = "";
 
 			// if the question is of type=simple
 			if ( $this->mIgnoringCoef ) {
@@ -386,12 +389,12 @@ class Quiz {
 					$this->mState = 'error';
 					break;
 			}
-
-			$stateObject = array(
-				'tableStyle' => $tableStyle,
-				'tableTitle' => $tableTitle
-			);
 		}
+
+		$stateObject = array(
+			'tableStyle' => $tableStyle,
+			'tableTitle' => $tableTitle
+		);
 
 		return $templateParser->processTemplate(
 			'Question',
