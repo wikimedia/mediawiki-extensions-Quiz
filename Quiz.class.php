@@ -28,7 +28,7 @@ class Quiz {
 		// Allot a unique identifier to the quiz.
 		$this->mQuizId = self::$sQuizId;
 		self::$sQuizId++;
-		//Reset the unique identifier of the questions.
+		// Reset the unique identifier of the questions.
 		$this->mQuestionId = 0;
 		// Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
 		$this->mShuffleDiv = 0;
@@ -124,7 +124,7 @@ class Quiz {
 
 		// Generates the output.
 
-		$templateParser = new TemplateParser(  __DIR__ . '/templates' );
+		$templateParser = new TemplateParser( __DIR__ . '/templates' );
 
 		// Determine the content of the settings table.
 		$settings = array_fill( 0, 4, '' );
@@ -174,7 +174,7 @@ class Quiz {
 
 		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
 			'<span class="score">' . $this->mScore . '</span>',
-			'<span class="total">' . $this->mTotal . '</span>')->escaped();
+			'<span class="total">' . $this->mTotal . '</span>' )->escaped();
 
 		return $templateParser->processTemplate(
 			'Quiz',
@@ -300,7 +300,7 @@ class Quiz {
 			"A few exotic features are not yet covered, such as shuffle control using {X} {!X} {/X} tags."
 			These were added in commit fb53a3b0 back in 2007, without any explanation and/or documentation. The commit message is actually unrelated.
 		*/
-		if ( !array_key_exists(3, $matches ) || trim( $matches[3] ) == '' ) {
+		if ( !array_key_exists( 3, $matches ) || trim( $matches[3] ) == '' ) {
 			switch ( $matches[1] ) {
 				case 'X':
 					$this->mShuffleDiv++;
@@ -325,7 +325,7 @@ class Quiz {
 			}
 		}
 
-		$templateParser = new TemplateParser(  __DIR__ . '/templates' );
+		$templateParser = new TemplateParser( __DIR__ . '/templates' );
 
 		$this->mQuestionId++;
 
@@ -342,7 +342,7 @@ class Quiz {
 
 		$lState = $question->getState(); // right wrong or unanswered?
 
-		if( $lState != '' ) {
+		if ( $lState != '' ) {
 			// TODO: convert to CSS classes
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
@@ -359,7 +359,7 @@ class Quiz {
 
 					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage('quiz_colorRight' )->text(),
+						wfMessage( 'quiz_colorRight' )->text(),
 						$this->mAddedPoints * $question->mCoef
 					)->escaped();
 					break;
@@ -368,9 +368,9 @@ class Quiz {
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore -= $this->mCutoffPoints * $question->mCoef;
 
-					$tableTitle= wfMessage(
+					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage('quiz_colorWrong')->text(),
+						wfMessage( 'quiz_colorWrong' )->text(),
 						-$this->mCutoffPoints * $question->mCoef
 					)->escaped();
 					break;
@@ -380,7 +380,7 @@ class Quiz {
 
 					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage('quiz_colorNA')->text(),
+						wfMessage( 'quiz_colorNA' )->text(),
 						0
 					)->escaped();
 					break;

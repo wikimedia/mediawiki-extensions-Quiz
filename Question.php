@@ -86,8 +86,8 @@ class Question {
 			$output .= $this->mParser->recursiveTagParse( trim( $unparsedHeader[1] ) );
 			$output .= '</td>';
 			$output .= '</tr></table>';
-	 	}
-	 	return $output;
+		}
+		return $output;
 	}
 
 	/**
@@ -232,7 +232,7 @@ class Question {
 						default:
 							$this->setState( 'error' );
 							$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) . ';"';
-							$title = 'title="' . wfMessage( 'quiz_colorError')->escaped() . "\"";
+							$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . "\"";
 							$disabled = 'disabled="disabled"';
 							break;
 					}
@@ -252,7 +252,7 @@ class Question {
 					$text = '???';
 					$this->setState( 'error' );
 				}
-			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches) && $this->mBeingCorrected ) {
+			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches ) && $this->mBeingCorrected ) {
 				$rawClass = 'correction';
 				$text = array_pop( $matches );
 				$signesOutput = '<td>&#x2192;</td>';
