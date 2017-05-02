@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"quiz_desc": "Omogućuje pravljenje kvizova",
-	"quiz_addedPoints": "{{PLURAL:$1|Bod dodan|Boda dodana|Bodova dodano}} za tačan odgovor",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor",
-	"quiz_ignoreCoef": "Zanemari koeficijente pitanja",
+	"quiz_addedPoints": "{{PLURAL:$1|Bod dodan|Boda dodana|Bodova dodano}} za tačan odgovor:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor:",
+	"quiz_ignoreCoef": "Zanemari koeficijente pitanja:",
 	"quiz_shuffle": "Izmiješaj pitanja",
 	"quiz_colorRight": "Tačno",
 	"quiz_colorWrong": "Pogrešno",
