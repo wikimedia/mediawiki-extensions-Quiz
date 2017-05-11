@@ -29,7 +29,7 @@
  * @ingroup Extensions
  * @version 1.1.0
  * @author Louis-Rémi Babe <lrbabe@gmail.com>
- * @link http://www.mediawiki.org/wiki/Extension:Quiz Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:Quiz Documentation
  */
 
 if ( !defined( 'MEDIAWIKI' ) ) {

@@ -29,7 +29,7 @@
  *
  * @file
  * @version 1.0
- * @link http://www.mediawiki.org/wiki/Extension:Quiz Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:Quiz Documentation
  * @author Louis-Rémi Babe <lrbabe@gmail.com>
  */
 
