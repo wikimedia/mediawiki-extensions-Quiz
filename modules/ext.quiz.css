@@ -6,8 +6,7 @@
 	text-indent: -1.5em;
 }
 
-.quiz table.object,
-.quiz table.correction {
+.quiz table.object {
 	background-color: transparent;
 }
 
@@ -50,6 +49,10 @@
 
 .quiz .correction {
 	background-color: #f9f9f9;
+}
+
+.quiz .object .correction {
+	background-color: transparent;
 }
 
 .quiz a.input span.correction {
