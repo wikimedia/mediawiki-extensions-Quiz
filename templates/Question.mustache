@@ -1,6 +1,8 @@
 <div class="question">
 	<div class="header">
-		<span class="questionId">{{ question.id }}</span>
+		{{#if question.numdis }}
+			<span class="questionId">{{ question.id }}</span>
+		{{/if}}
 		<span class="questionText">{{{ question.text }}}</span>
 	</div>
 	<table class="object" style="{{ state.tableStyle }}" title="{{ state.tableTitle }}">

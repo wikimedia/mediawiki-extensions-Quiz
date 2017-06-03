@@ -250,6 +250,8 @@ class Quiz {
 
 		$output = '';
 		$questionPattern = '`(.*?[^|\}])\}[ \t]*(\n(.*)|$)`s';
+		$numQuestion = count( $unparsedQuestions );
+		$numDisplay = $numQuestion > 1;
 		foreach ( $unparsedQuestions as $unparsedQuestion ) {
 			// If this "unparsedQuestion" is not a full question,
 			// we put the text into a buffer to add it at the beginning of the next question.
@@ -259,7 +261,7 @@ class Quiz {
 
 			if ( preg_match( $questionPattern, $unparsedQuestion, $matches ) ) {
 				$buffer = '';
-				$output .= $this->parseQuestion( $matches );
+				$output .= $this->parseQuestion( $matches, $numDisplay );
 			} else {
 				$buffer = $unparsedQuestion;
 			}
@@ -279,9 +281,10 @@ class Quiz {
 	 * @param $matches array: elements matching $questionPattern.
 	 * 						$matches[1] is the question header.
 	 * 						$matches[3] is the question object.
+	 * @param $numDisplay Boolean: specifies whether to display question number.
 	 * @return string
 	 */
-	function parseQuestion( $matches ) {
+	function parseQuestion( $matches, $numDisplay ) {
 		$question = new Question(
 			$this->mBeingCorrected,
 			$this->mCaseSensitive,
@@ -401,6 +404,7 @@ class Quiz {
 			array(
 				'question' => array(
 					'id' => $this->mQuestionId,
+					'numdis' => $numDisplay,
 					'text' => $questionText,
 					'answers' => $answers
 				),
