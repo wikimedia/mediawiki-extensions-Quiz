@@ -15,7 +15,7 @@
 	"quiz_colorWrong": "Sbagliato",
 	"quiz_colorNA": "Nessuna risposta",
 	"quiz_colorError": "Errore di sintassi",
-	"quiz_correction": "Correggi",
+	"quiz_correction": "Invia",
 	"quiz_score": "Il tuo punteggio è $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 punti}}",
 	"quiz_reset": "Reimposta"
