@@ -38,7 +38,9 @@
 	{{# notSimple}}
 		{{# shuffle}}
 			{{^ corrected}}
-				<td><input class="shuffle" name="shuffleButton" type="button" value="{{ wfMessage.quiz_shuffle }}" style="display: none;"/></td>
+				{{# shuffleDisplay}}
+					<td><input class="shuffle" name="shuffleButton" type="button" value="{{ wfMessage.quiz_shuffle }}" style="display: none;"/></td>
+				{{/ shuffleDisplay}}
 			{{/ corrected}}
 		{{/ shuffle}}
 		{{^ shuffle}}

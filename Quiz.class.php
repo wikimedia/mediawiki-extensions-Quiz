@@ -36,6 +36,7 @@ class Quiz {
 		$this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == strval( $this->mQuizId ) );
 		// Initialize various parameters used for the score calculation
 		$this->mState = 'NA';
+		$this->numberQuestions = 0;
 		$this->mTotal = $this->mScore = 0;
 		$this->mAddedPoints = 1;
 		$this->mCutoffPoints = 0;
@@ -152,7 +153,8 @@ class Quiz {
 				],
 				'mAddedPoints' => $this->mAddedPoints,
 				'mCutoffPoints' => $this->mCutoffPoints,
-				'checked' => $checked
+				'checked' => $checked,
+				'shuffleDisplay' => $this->numberQuestions > 1
 			]
 		);
 
@@ -234,8 +236,8 @@ class Quiz {
 
 		$output = '';
 		$questionPattern = '`(.*?[^|\}])\}[ \t]*(\n(.*)|$)`s';
-		$numQuestion = count( $unparsedQuestions );
-		$numDisplay = $numQuestion > 1;
+		$this->numberQuestions = count( $unparsedQuestions );
+		$numDisplay = $this->numberQuestions > 1;
 		foreach ( $unparsedQuestions as $unparsedQuestion ) {
 			// If this "unparsedQuestion" is not a full question,
 			// we put the text into a buffer to add it at the beginning of the next question.
