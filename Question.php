@@ -432,6 +432,8 @@ class Question {
 					}
 				}
 				if ( $this->mBeingCorrected ) {
+					$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
+					$possibility = substr( $possibility, 0, $strlen );
 					$poss .= $possibility . '<br />';
 				}
 			}
