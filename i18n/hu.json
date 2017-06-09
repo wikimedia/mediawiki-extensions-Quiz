@@ -3,12 +3,13 @@
 		"authors": [
 			"Dani",
 			"KossuthRad",
-			"Terik"
+			"Terik",
+			"Tacsipacsi"
 		]
 	},
 	"quiz_desc": "Lehetővé teszi kvízkérdések létrehozását",
-	"quiz_addedPoints": "Helyesen válaszoltál, így {{PLURAL:$1|pontot|pontokat}} szereztél",
-	"quiz_cutoffPoints": "Hibásan válaszoltál, így {{PLURAL:$1|pont lett|pontok lettek}} levonva",
+	"quiz_addedPoints": "Helyesen válaszoltál, így {{PLURAL:$1|pontot|pontokat}} szereztél:",
+	"quiz_cutoffPoints": "Hibásan válaszoltál, így {{PLURAL:$1|pontot|pontokat}} vesztettél:",
 	"quiz_ignoreCoef": "Ne vegye figyelembe a kérdések együtthatóit",
 	"quiz_shuffle": "Kérdések összekeverése",
 	"quiz_colorRight": "Jó",
