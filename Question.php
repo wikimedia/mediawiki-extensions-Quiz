@@ -354,31 +354,35 @@ class Question {
 	function parseTextField( $input ) {
 		global $wqInputId;
 		$wqInputId++;
-		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $a_inputBeg = $a_inputEnd = $big = '';
+		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $big = '';
 		// determine size and maxlength of the input.
 		if ( array_key_exists( 3, $input ) ) {
 			$size = $input[3];
 			if ( $size < 3 ) {
-				$size = 'size="1"';
+				$size = 1;
 			} elseif ( $size < 12 ) {
-				$size = 'size="' . ( $size - 2 ) . '"';
+				$size = $size - 2;
 			} else {
-				$size = 'size="' . ( $size - 1 ) . '"';
+				$size = $size - 1;
 			}
-			$maxlength = 'maxlength="' . $input[3] . '"';
+			$maxlength = $input[3];
 		}
 		// Syntax error if there is no input text.
 		if ( empty( $input[1] ) ) {
 			$value = 'value="???"';
 			$state = 'error';
 		} else {
+			$templateParser = new TemplateParser( __DIR__ . '/templates' );
+			// For hiding down arrow
+			$bigDisplay = 'display: none';
 			if ( $this->mBeingCorrected ) {
 				$value = trim( $this->mRequest->getVal( $wqInputId ) );
-				$a_inputBeg = '<a class="input" href="#nogo"><span class="correction">';
 				$state = 'NA';
-				$title = 'title="' . wfMessage( 'quiz_colorNA' )->escaped() . '"';
+				$title = wfMessage( 'quiz_colorNA' )->escaped();
+
 			}
-			$class = 'class="numbers"';
+			$class = 'numbers';
+			$poss = ' ';
 			foreach ( preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility ) {
 				if ( $state == '' || $state == 'NA' || $state == 'wrong' ) {
 					if ( preg_match( '`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`', str_replace( ',', '.', $possibility ), $matches ) ) {
@@ -399,25 +403,25 @@ class Question {
 									) || $value == $possibility )
 							) {
 								$state = 'right';
-								$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
+								$title = wfMessage( 'quiz_colorRight' )->escaped();
 							} else {
 								$state = 'wrong';
-								$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
+								$title = wfMessage( 'quiz_colorWrong' )->escaped();
 							}
 						}
 					} else {
 						$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
-						$class = 'class="words"';
+						$class = 'words';
 						if ( $this->mBeingCorrected && !empty( $value ) ) {
 							if ( $value == $possibility ||
 								( preg_match( '`^' . preg_quote( $value, '`' ) . ' \(i\)$`i', $possibility ) ) ||
 								( !$this->mCaseSensitive && preg_match( '`^' . preg_quote( $value, '`' ) . '$`i', $possibility ) )
 							) {
 								$state = 'right';
-								$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
+								$title = wfMessage( 'quiz_colorRight' )->escaped();
 							} else {
 								$state = 'wrong';
-								$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
+								$title = wfMessage( 'quiz_colorWrong' )->escaped();
 							}
 						}
 					}
@@ -428,30 +432,46 @@ class Question {
 					}
 				}
 				if ( $this->mBeingCorrected ) {
-					$a_inputBeg .= $possibility . '<br />';
+					$poss .= $possibility . '<br />';
 				}
 			}
-			$value = empty( $value ) ? '' : 'value="' . str_replace( '"', '&quot;', $value ) . '"';
+			$value = empty( $value ) ? '' : str_replace( '"', '&quot;', $value );
 			if ( $this->mBeingCorrected ) {
-				$a_inputBeg.= '</span>';
-				$a_inputEnd = '</a>';
-				$big = '<em>&#9660;</em>';
+				$big = '▼';
+				$bigDisplay = ' ';
 			}
 		}
 		if ( $state == 'error' || $this->mBeingCorrected ) {
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
-			$style = 'style="' . $border . ':3px solid ' . Quiz::getColor( $state ) . ';"';
+			$style = $border . ':3px solid ' . Quiz::getColor( $state ) . ';';
 			$this->setState( empty( $value ) ? 'new_NA' : $state );
 			if ( $state == 'error' ) {
 				$size = '';
 				$maxlength = '';
-				$disabled = 'disabled="disabled"';
-				$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . '"';
+				$disabled = 'disabled';
+				$title = wfMessage( 'quiz_colorError' )->escaped();
 			}
 		}
-		return $output = $a_inputBeg . '<span ' . $style . '>' .
-				'<input $class type="text" name="' . $wqInputId . '" ' . $title . ' ' . $size . ' ' . $maxlength . ' ' . $value . ' ' . $disabled . ' autocomplete="off" />' .
-				$big . '</span>' . $a_inputEnd;
+		$name = $wqInputId;
+
+		$temp = $templateParser->processTemplate(
+			'Answer',
+			array(
+				'style' => $style,
+				'title' => $title,
+				'class' => $class,
+				'value' => $value,
+				'correction' => $this->mBeingCorrected,
+				'possibility' => $poss,
+				'disabled' => $disabled,
+				'size' => $size,
+				'big' => $big,
+				'maxlength' => $maxlength,
+				'name' => $name,
+				'bigDisplay' => $bigDisplay,
+				)
+			);
+		return $temp;
 	}
 }
