@@ -354,7 +354,7 @@ class Question {
 	function parseTextField( $input ) {
 		global $wqInputId;
 		$wqInputId++;
-		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $big = '';
+		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $big = $poss = $name = $bigDisplay = '';
 		// determine size and maxlength of the input.
 		if ( array_key_exists( 3, $input ) ) {
 			$size = $input[3];
