@@ -428,7 +428,7 @@ class Question {
 					if ( array_key_exists( 3, $input ) && $strlen > $input[3] ) {
 						// The textfield is too short for the answer
 						$state = 'error';
-						$value = '&lt;_' . $possibility . '_ &gt;';
+						$value = '<_' . $possibility . '_>';
 					}
 				}
 				if ( $this->mBeingCorrected ) {
