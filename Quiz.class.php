@@ -4,14 +4,14 @@
  */
 class Quiz {
 	// Quiz colors
-	static $mColors = array(
+	private static $mColors = array(
 		'right' 		=> '#1FF72D',
 		'wrong' 		=> '#F74245',
 		'correction' 	=> '#F9F9F9',
 		'NA' 			=> '#2834FF',
 		'error' 		=> '#D700D7'
 	);
-	static $sQuizId = 0;
+	private static $sQuizId = 0;
 
 	protected $mScore;
 
