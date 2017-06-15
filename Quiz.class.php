@@ -4,13 +4,13 @@
  */
 class Quiz {
 	// Quiz colors
-	private static $mColors = array(
+	private static $mColors = [
 		'right' 		=> '#1FF72D',
 		'wrong' 		=> '#F74245',
 		'correction' 	=> '#F9F9F9',
 		'NA' 			=> '#2834FF',
 		'error' 		=> '#D700D7'
-	);
+	];
 	private static $sQuizId = 0;
 
 	protected $mScore;
@@ -178,19 +178,19 @@ class Quiz {
 
 		return $templateParser->processTemplate(
 			'Quiz',
-			array(
-				'quiz' => array(
+			[
+				'quiz' => [
 					'id' => $this->mQuizId,
 					'beingCorrected' => $this->mBeingCorrected,
 					'questions' => $input
-				),
+				],
 				'settingsTable' => $settingsTable,
-				'wfMessage' => array(
+				'wfMessage' => [
 					'quiz_correction' => wfMessage( 'quiz_correction' )->escaped(),
 					'quiz_reset' => wfMessage( 'quiz_reset' )->escaped(),
 					'quiz_score' => $quiz_score
-				)
-			)
+				]
+			]
 		);
 
 		return $output;
@@ -205,7 +205,7 @@ class Quiz {
 	function parseIncludes( $input ) {
 		return preg_replace_callback(
 			$this->mIncludePattern,
-			array( $this, 'parseInclude' ),
+			[ $this, 'parseInclude' ],
 			$input
 		);
 	}
@@ -291,7 +291,7 @@ class Quiz {
 			$this->mQuestionId,
 			$this->mParser
 		);
-		Hooks::run( 'QuizQuestionCreated', array( $this, &$question ) );
+		Hooks::run( 'QuizQuestionCreated', [ $this, &$question ] );
 
 		// gets the question text
 		$questionText = $question->parseHeader( $matches[1] );
@@ -334,7 +334,7 @@ class Quiz {
 
 		// This will generate the answers HTML code
 		$answers = call_user_func(
-			array( $question, $question->mType . 'ParseObject' ),
+			[ $question, $question->mType . 'ParseObject' ],
 			$matches[3]
 		);
 
@@ -394,22 +394,22 @@ class Quiz {
 			}
 		}
 
-		$stateObject = array(
+		$stateObject = [
 			'tableStyle' => $tableStyle,
 			'tableTitle' => $tableTitle
-		);
+		];
 
 		return $templateParser->processTemplate(
 			'Question',
-			array(
-				'question' => array(
+			[
+				'question' => [
 					'id' => $this->mQuestionId,
 					'numdis' => $numDisplay,
 					'text' => $questionText,
 					'answers' => $answers
-				),
+				],
 				'state' => $stateObject
-			)
+			]
 		);
 	}
 }

@@ -74,7 +74,7 @@ class Question {
 		$parametersPattern = '`\n\|([^\|].*)\s*$`';
 		$input = preg_replace_callback(
 			$parametersPattern,
-			array( $this, 'parseParameters' ),
+			[ $this, 'parseParameters' ],
 			$input
 		);
 		$splitHeaderPattern = '`\n\|\|`';
@@ -335,7 +335,7 @@ class Question {
 				$text = $this->mParser->recursiveTagParse( $raw );
 				$text = preg_replace_callback(
 					$this->mTextFieldPattern,
-					array( $this, 'parseTextField' ),
+					[ $this, 'parseTextField' ],
 					$text
 				);
 				$text = '<td class="input">' . $text . '</td>';
@@ -459,7 +459,7 @@ class Question {
 
 		$temp = $templateParser->processTemplate(
 			'Answer',
-			array(
+			[
 				'style' => $style,
 				'title' => $title,
 				'class' => $class,
@@ -472,7 +472,7 @@ class Question {
 				'maxlength' => $maxlength,
 				'name' => $name,
 				'bigDisplay' => $bigDisplay,
-				)
+				]
 			);
 		return $temp;
 	}
