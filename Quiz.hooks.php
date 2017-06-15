@@ -7,7 +7,7 @@ class QuizHooks {
 	 * The tag used is <quiz>
 	 * @param $parser Parser the wikitext parser
 	 * @return Boolean true to continue hook processing
-	*/
+	 */
 	public static function onParserFirstCallInit( &$parser ) {
 		$parser->setHook( 'quiz', 'QuizHooks::renderQuiz' );
 		return true;
@@ -21,7 +21,7 @@ class QuizHooks {
 	 * @param $parser Parser the wikitext parser.
 	 *
 	 * @return string An HTML quiz.
-	*/
+	 */
 	public static function renderQuiz( $input, $argv, $parser ) {
 		$parser->disableCache();
 		$quiz = new Quiz( $argv, $parser );

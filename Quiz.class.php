@@ -112,7 +112,6 @@ class Quiz {
 	 * @return string
 	 */
 	function parseQuiz( $input ) {
-
 		// Ouput the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
 			global $wgOut;

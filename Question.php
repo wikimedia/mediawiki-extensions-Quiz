@@ -19,10 +19,10 @@ class Question {
 		$this->mState = ( $beingCorrected ) ? 'NA' : '';
 		$this->mType = 'multipleChoice';
 		$this->mCoef = 1;
-		$this->mProposalPattern =	'`^([+-]) ?(.*)`';
-		$this->mCorrectionPattern =	'`^\|\|(.*)`';
-		$this->mCategoryPattern =	'`^\|(\n|[^\|].*\n)`';
-		$this->mTextFieldPattern =	'`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
+		$this->mProposalPattern = '`^([+-]) ?(.*)`';
+		$this->mCorrectionPattern = '`^\|\|(.*)`';
+		$this->mCategoryPattern = '`^\|(\n|[^\|].*\n)`';
+		$this->mTextFieldPattern = '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
 	}
 
 	/**
@@ -43,7 +43,8 @@ class Question {
 
 		// Special cases
 		if ( ( $pState == 'na_wrong' && $this->mState == 'right' ) ||
-			( $pState == 'right' && $this->mState == 'na_wrong' ) ) {
+			( $pState == 'right' && $this->mState == 'na_wrong' )
+		) {
 			$this->mState = 'wrong';
 		}
 		return;
@@ -114,7 +115,8 @@ class Question {
 		}
 		$coefPattern = '`[ck]oef="(.*?)"`';
 		if ( preg_match( $coefPattern, $matches[1], $coef ) &&
-				is_numeric( $coef[1] ) && $coef[1] > 0 ) {
+			is_numeric( $coef[1] ) && $coef[1] > 0
+		) {
 			$this->mCoef = $coef[1];
 		}
 		return;
@@ -151,8 +153,9 @@ class Question {
 	 * @return string A question object in HTML.
 	 */
 	function basicTypeParseObject( $input, $inputType ) {
-		$output = preg_match( $this->mCategoryPattern, $input, $matches ) ?
-			$this->parseCategories( $matches[1] ) : '';
+		$output = preg_match( $this->mCategoryPattern, $input, $matches )
+			? $this->parseCategories( $matches[1] )
+			: '';
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
 		// Parameters used in some special cases.
 		$expectOn = 0;
@@ -191,8 +194,9 @@ class Question {
 							break;
 					}
 					// Determine if the input had to be checked.
-					$checked = ( $this->mBeingCorrected &&
-							$this->mRequest->getVal( $name ) == $value ) ? 'checked="checked"' : null;
+					$checked = $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value
+						? 'checked="checked"'
+						: null;
 					// Determine the color of the cell and modify the state of the question.
 					switch ( $sign ) {
 						case '+':
@@ -379,7 +383,6 @@ class Question {
 				$value = trim( $this->mRequest->getVal( $wqInputId ) );
 				$state = 'NA';
 				$title = wfMessage( 'quiz_colorNA' )->escaped();
-
 			}
 			$class = 'numbers';
 			$poss = ' ';
@@ -396,11 +399,11 @@ class Question {
 						if ( $this->mBeingCorrected && !empty( $value ) ) {
 							$value = str_replace( ',', '.', $value );
 							if ( is_numeric( $value ) && (
-									( array_key_exists( 5, $matches )
-										&& $value >= ( $matches[1] - ( $matches[1] * $matches[4] ) / 100 )
-										&& $value <= ( $matches[1] + ( $matches[1] * $matches[4] ) / 100 )
-									) || ( array_key_exists( 3, $matches ) && $value >= $matches[1] && $value <= $matches[3]
-									) || $value == $possibility )
+								( array_key_exists( 5, $matches )
+									&& $value >= ( $matches[1] - ( $matches[1] * $matches[4] ) / 100 )
+									&& $value <= ( $matches[1] + ( $matches[1] * $matches[4] ) / 100 )
+								) || ( array_key_exists( 3, $matches ) && $value >= $matches[1] && $value <= $matches[3]
+								) || $value == $possibility )
 							) {
 								$state = 'right';
 								$title = wfMessage( 'quiz_colorRight' )->escaped();
@@ -472,8 +475,8 @@ class Question {
 				'maxlength' => $maxlength,
 				'name' => $name,
 				'bigDisplay' => $bigDisplay,
-				]
-			);
+			]
+		);
 		return $temp;
 	}
 }
