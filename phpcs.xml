@@ -8,7 +8,9 @@
 	<rule ref="Generic.Files.LineLength.TooLong">
 		<severity>0</severity>
 	</rule>
-	<rule ref="MediaWiki.NamingConventions.ValidGlobalName.wgPrefix">
-		<severity>0</severity>
+	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
+		<properties>
+			<property name="ignoreList" type="array" value="$wqInputId" />
+		</properties>
 	</rule>
 </ruleset>
