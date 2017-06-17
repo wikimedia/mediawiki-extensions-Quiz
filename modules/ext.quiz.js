@@ -83,7 +83,7 @@
 						input[j].style.display = 'inline';
 						/* jshint loopfunc:true */
 						input[j].onclick = function() {
-							shuffle( this.form.getElementsByTagName( 'div' )[0] );
+							shuffle( this.form.getElementsByTagName( 'div' )[1] );
 							var sh_input = this.form.getElementsByTagName( 'input' );
 							for( var k = 0; k < sh_input.length; ++k ) {
 								// Add the possibility of unchecking radio buttons

@@ -124,52 +124,37 @@ class Quiz {
 		// Generates the output.
 
 		$templateParser = new TemplateParser( __DIR__ . '/templates' );
-
+		$checked = '';
 		// Determine the content of the settings table.
-		$settings = array_fill( 0, 4, '' );
-		if ( !$this->mDisplaySimple ) {
-			$settings[0] .= '<td>' . wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->escaped() . '</td>' . "\n";
-			$settings[0] .= '<td><input class="numerical" type="text" name="addedPoints" value="' . $this->mAddedPoints .'"/>&#160;&#160;</td>' . "\n";
-
-			$settings[1] .= '<td>' . wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->escaped() . '</td>' . "\n";
-			$settings[1] .= '<td><input class="numerical" type="text" name="cutoffPoints" value="' . $this->mCutoffPoints . '"/></td>' . "\n";
-
-			$checked = ( $this->mIgnoringCoef ) ? ' checked="checked"' : '';
-			$settings[2] .= '<td>' . wfMessage( 'quiz_ignoreCoef' )->escaped() . '</td>' . "\n";
-			$settings[2] .= '<td><input type="checkbox" name="ignoringCoef"' . $checked . '/></td>' . "\n";
-
-			if ( $this->mShuffle && !$this->mBeingCorrected ) {
-				$settings[3] .= '<td><input class="shuffle" name="shuffleButton" type="button" value="' . wfMessage( 'quiz_shuffle' )->escaped() . '" style="display: none;"/></td>' . "\n";
-			} else {
-				$settings[3] .= '<td></td>' . "\n";
-			}
-			$settings[3] .= '<td></td>' . "\n";
-		}
-		if ( $this->mBeingCorrected ) {
-			$settings[0] .= '<td class="margin" style="background: ' . self::getColor( 'right' ) . '"></td>' . "\n";
-			$settings[0] .= '<td style="background: transparent;">' . wfMessage( 'quiz_colorRight' )->escaped() . '</td>' . "\n";
-
-			$settings[1] .= '<td class="margin" style="background: ' . self::getColor( 'wrong' ) . '"></td>' . "\n";
-			$settings[1] .= '<td style="background: transparent;">' . wfMessage( 'quiz_colorWrong' )->escaped() . '</td>' . "\n";
-
-			$settings[2] .= '<td class="margin" style="background: ' . self::getColor( 'NA' ) . '"></td>' . "\n";
-			$settings[2] .= '<td style="background: transparent;">' . wfMessage( 'quiz_colorNA' )->escaped() . '</td>' . "\n";
-		}
-		if ( $this->mState === 'error' ) {
-			$errorKey = $this->mBeingCorrected ? 3 : 0;
-			$settings[$errorKey] .= '<td class="margin" style="background: ' . self::getColor( 'error' ) . '"></td>' . "\n";
-			$settings[$errorKey] .= '<td>' . wfMessage( 'quiz_colorError' )->escaped() . '</td>' . "\n";
-		}
-
-		// Build the settings table.
 		$settingsTable = '';
-		foreach ( $settings as $settingsTr ) {
-			if ( !empty( $settingsTr ) ) {
-				$settingsTable .= '<tr>' . "\n";
-				$settingsTable .= $settingsTr . "\n";
-				$settingsTable .= '</tr>' . "\n";
-			}
-		}
+		$settingsTable = $templateParser->processTemplate(
+			'Setting',
+			[
+				'notSimple' => !$this->mDisplaySimple,
+				'corrected' => $this->mBeingCorrected,
+				'shuffle' => $this->mShuffle,
+				'error' => $this->mState === 'error',
+				'wfMessage' => [
+					'quiz_added' => wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->text(),
+					'quiz_cutoff' => wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->text(),
+					'quiz_ignoreCoef' => wfMessage( 'quiz_ignoreCoef' )->text(),
+					'quiz_colorRight' => wfMessage( 'quiz_colorRight' )->text(),
+					'quiz_colorWrong' => wfMessage( 'quiz_colorWrong' )->text(),
+					'quiz_colorNA' => wfMessage( 'quiz_colorNA' )->text(),
+					'quiz_colorError' => wfMessage( 'quiz_colorError' )->text(),
+					'quiz_shuffle' => wfMessage( 'quiz_shuffle' )->text()
+				],
+				'color' => [
+					'colorWrong' => self::getColor( 'wrong' ),
+					'colorRight' => self::getColor( 'right' ),
+					'colorNA' => self::getColor( 'NA' ),
+					'colorError' => self::getColor( 'error' )
+				],
+				'mAddedPoints' => $this->mAddedPoints,
+				'mCutoffPoints' => $this->mCutoffPoints,
+				'checked' => $checked
+			]
+		);
 
 		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
 			'<span class="score">' . $this->mScore . '</span>',

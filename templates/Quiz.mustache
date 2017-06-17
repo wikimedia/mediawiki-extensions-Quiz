@@ -1,10 +1,10 @@
 <div class="quiz">
 	<form id="quiz{{ quiz.id }}" method="post" action="#quiz{{ quiz.id }}">
-		{{#settingsTable}}
+		<div style="display:inline-flex">
 			<table class="settings">
-				{{{ . }}}
+				{{{ settingsTable }}}
 			</table>
-		{{/settingsTable}}
+		</div>
 		<input type="hidden" name="quizId" value="{{ quiz.id }}" />
 		<div class="quizQuestions">
 			{{{ quiz.questions }}}
