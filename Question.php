@@ -396,7 +396,7 @@ class Question {
 						} else {
 							$strlen = strlen( $matches[1] );
 						}
-						if ( $this->mBeingCorrected && !empty( $value ) ) {
+						if ( $this->mBeingCorrected && $value !== "" ) {
 							$value = str_replace( ',', '.', $value );
 							if ( is_numeric( $value ) && (
 								( array_key_exists( 5, $matches )
@@ -415,7 +415,7 @@ class Question {
 					} else {
 						$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
 						$class = 'words';
-						if ( $this->mBeingCorrected && !empty( $value ) ) {
+						if ( $this->mBeingCorrected && $value !== "" ) {
 							if ( $value == $possibility ||
 								( preg_match( '`^' . preg_quote( $value, '`' ) . ' \(i\)$`i', $possibility ) ) ||
 								( !$this->mCaseSensitive && preg_match( '`^' . preg_quote( $value, '`' ) . '$`i', $possibility ) )
@@ -440,7 +440,6 @@ class Question {
 					$poss .= $possibility . '<br />';
 				}
 			}
-			$value = empty( $value ) ? '' : str_replace( '"', '&quot;', $value );
 			if ( $this->mBeingCorrected ) {
 				$big = '▼';
 				$bigDisplay = ' ';
@@ -450,7 +449,7 @@ class Question {
 			global $wgContLang;
 			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
 			$style = $border . ':3px solid ' . Quiz::getColor( $state ) . ';';
-			$this->setState( empty( $value ) ? 'new_NA' : $state );
+			$this->setState( $value === "" ? 'new_NA' : $state );
 			if ( $state == 'error' ) {
 				$size = '';
 				$maxlength = '';
