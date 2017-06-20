@@ -80,9 +80,9 @@ class Question {
 		);
 		$splitHeaderPattern = '`\n\|\|`';
 		$unparsedHeader = preg_split( $splitHeaderPattern, $input );
-	 	$output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) . "\n" );
+		 $output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) . "\n" );
 		if ( array_key_exists( 1, $unparsedHeader ) && $this->mBeingCorrected ) {
-	 		$output .= '<table class="correction"><tr>';
+			 $output .= '<table class="correction"><tr>';
 			$output .= '<td>&#x2192;</td><td>';
 			$output .= $this->mParser->recursiveTagParse( trim( $unparsedHeader[1] ) );
 			$output .= '</td>';
@@ -328,7 +328,7 @@ class Question {
 		$output = '';
 		foreach ( $raws as $raw ) {
 			if ( preg_match( $this->mCorrectionPattern, $raw, $matches ) ) {
-				if ( $this->mBeingCorrected )  {
+				if ( $this->mBeingCorrected ) {
 					$rawClass = 'correction';
 					$text = '<td>&#x2192; ' . $this->mParser->recursiveTagParse( $matches[1] ) . '</td>';
 				} else {
