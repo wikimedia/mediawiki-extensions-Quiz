@@ -26,7 +26,7 @@ class Quiz {
 		$this->mParser = $parser;
 		$this->mRequest = &$wgRequest;
 		// Allot a unique identifier to the quiz.
-		$this->mQuizId = self::$sQuizId;
+		$this->mQuizId = $this->getQuizId();
 		self::$sQuizId++;
 		// Reset the unique identifier of the questions.
 		$this->mQuestionId = 0;
@@ -92,6 +92,13 @@ class Quiz {
 	static function resetQuizID() {
 		self::$sQuizId = 0;
 		return true;
+	}
+
+	/**
+	 * @return int Quiz Id
+	 */
+	public function getQuizId() {
+		return self::$sQuizId;
 	}
 
 	/**

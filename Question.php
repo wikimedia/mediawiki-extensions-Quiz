@@ -80,9 +80,10 @@ class Question {
 		);
 		$splitHeaderPattern = '`\n\|\|`';
 		$unparsedHeader = preg_split( $splitHeaderPattern, $input );
-		 $output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) . "\n" );
+		 $output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) );
 		if ( array_key_exists( 1, $unparsedHeader ) && $this->mBeingCorrected ) {
-			 $output .= '<table class="correction"><tr>';
+			$output .="\n";
+			$output .= '<table class="correction"><tr>';
 			$output .= '<td>&#x2192;</td><td>';
 			$output .= $this->mParser->recursiveTagParse( trim( $unparsedHeader[1] ) );
 			$output .= '</td>';
@@ -326,7 +327,6 @@ class Question {
 				$this->mProposalPattern .= '([+-])? ?';
 			}
 		}
-		$output .= '<th></th>';
 		$output .= '</tr>' . "\n";
 		$this->mProposalPattern .= '(.*)`';
 		return $output;
@@ -509,7 +509,6 @@ class Question {
 			}
 		}
 		$name = $wqInputId;
-
 		$temp = $templateParser->processTemplate(
 			'Answer',
 			[
