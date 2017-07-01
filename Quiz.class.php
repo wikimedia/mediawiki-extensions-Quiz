@@ -3,14 +3,6 @@
  * Processes quiz markup
  */
 class Quiz {
-	// Quiz colors
-	private static $mColors = [
-		'right' 		=> '#1FF72D',
-		'wrong' 		=> '#F74245',
-		'correction' 	=> '#F9F9F9',
-		'NA' 			=> '#2834FF',
-		'error' 		=> '#D700D7'
-	];
 	private static $sQuizId = 0;
 
 	protected $mScore;
@@ -102,21 +94,6 @@ class Quiz {
 	}
 
 	/**
-	 * Accessor for the color array
-	 * Displays an error message if the colorId doesn't exists.
-	 *
-	 * @param $colorId Integer: color hex code
-	 * @return string
-	 * @throws Exception
-	 */
-	public static function getColor( $colorId ) {
-		if ( array_key_exists( $colorId, self::$mColors ) ) {
-			return self::$mColors[$colorId];
-		}
-		throw new Exception( 'Invalid color ID: ' . $colorId );
-	}
-
-	/**
 	 * Convert the input text to an HTML output.
 	 *
 	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
@@ -125,8 +102,8 @@ class Quiz {
 	function parseQuiz( $input ) {
 		// Ouput the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
-			global $wgOut;
-			$wgOut->addModules( 'ext.quiz' );
+			$this->mParser->getOutput()->addModules( 'ext.quiz' );
+			$this->mParser->getOutput()->addModuleStyles( 'ext.quiz.styles' );
 		}
 
 		// Process the input
@@ -157,12 +134,6 @@ class Quiz {
 					'quiz_colorNA' => wfMessage( 'quiz_colorNA' )->text(),
 					'quiz_colorError' => wfMessage( 'quiz_colorError' )->text(),
 					'quiz_shuffle' => wfMessage( 'quiz_shuffle' )->text()
-				],
-				'color' => [
-					'colorWrong' => self::getColor( 'wrong' ),
-					'colorRight' => self::getColor( 'right' ),
-					'colorNA' => self::getColor( 'NA' ),
-					'colorError' => self::getColor( 'error' )
 				],
 				'mAddedPoints' => $this->mAddedPoints,
 				'mCutoffPoints' => $this->mCutoffPoints,
@@ -342,16 +313,10 @@ class Quiz {
 		// Set default table title and style
 
 		$tableTitle = "";
-		$tableStyle = "";
 
 		$lState = $question->getState(); // right wrong or unanswered?
 
 		if ( $lState != '' ) {
-			// TODO: convert to CSS classes
-			global $wgContLang;
-			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
-			$tableStyle = $border . ': 3px solid ' . self::getColor( $lState ) . ';';
-
 			// if the question is of type=simple
 			if ( $this->mIgnoringCoef ) {
 				$question->mCoef = 1;
@@ -396,7 +361,7 @@ class Quiz {
 		}
 
 		$stateObject = [
-			'tableStyle' => $tableStyle,
+			'state' => $lState,
 			'tableTitle' => $tableTitle
 		];
 

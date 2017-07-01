@@ -25,7 +25,7 @@
  * * Create a new directory named Quiz into the "extensions" directory of MediaWiki.
  * * Place this file and the files Quiz.i18n.php and Quiz.php there.
  * * Add this line at the end of your LocalSettings.php file :
- * require_once 'extensions/Quiz/Quiz.php';
+ * wfLoadExtension( 'Quiz' );
  *
  * @file
  * @version 1.0
@@ -36,119 +36,98 @@
 (function () {
 	'use strict';
 
-	// Shuffle questions
-	function shuffle( area ) {
-		var div = area.childNodes;
-		var quizText;
+	/**
+	 * Shuffle questions
+	 *
+	 * @private
+	 *
+	 * @param {jQuery} $area The quiz area to shuffle.
+	 */
+	function shuffle( $area ) {
+		var $div = $area.children(),
+			questions = [];
 
-		for( var i = 0, questions = []; i < div.length; ++i ) {
-			if( div[i].className ) {
-				if( questions.length === 0 && div[i].className === 'quizText' ) {
-					quizText = div[i];
-				} else {
-					questions.push( div[i] );
-					if( div[i].className === 'shuffle' || div[i].className === 'noshuffle' ) {
-						shuffle( div[i] );
-					}
+		$div.each( function () {
+			// Leave quiz text in place
+			if ( questions.length > 0 || !$( this ).hasClass( 'quizText' ) ) {
+				questions.push( this );
+				if ( $( this ).hasClass( 'shuffle' ) || $( this ).hasClass( 'noshuffle' ) ) {
+					shuffle( $( this ) );
 				}
+				$( this ).detach();
+			}
+		} );
+
+		if ( !$area.hasClass( 'noshuffle' ) ) {
+			var l, x;
+			for ( var m = questions.length - 1; m >= 0; m-- ) {
+				l = parseInt( Math.random() * m );
+				x = questions[ m ];
+				questions[ m ] = questions[ l ];
+				questions[ l ] = x;
 			}
 		}
-		if( area.className !== 'noshuffle' ) {
-			for( var l, x, m = questions.length; m; l = parseInt( Math.random() * m ), x = questions[--m], questions[m] = questions[l], questions[l] = x );
+		for ( var i = 0; i < questions.length; i++ ) {
+			$area.append( questions[ i ] );
 		}
-		if( quizText ) {
-			questions.unshift( quizText );
-		}
-		for( var j = 0, areaHTML = ''; j < questions.length; ++j ) {
-			areaHTML += '<div class="' + questions[j].className + '">' + questions[j].innerHTML + '</div>';
-		}
-		area.innerHTML = areaHTML;
 	}
 
-	// Prepare the quiz for "javascriptable" browsers
-	function prepareQuiz() {
-		var bodyContentDiv = document.getElementById( 'mw-content-text' ).getElementsByTagName( 'div' );
-		for( var i = 0; i < bodyContentDiv.length; ++i ) {
-			if( bodyContentDiv[i].className === 'quiz' ) {
-				var input = bodyContentDiv[i].getElementsByTagName( 'input' );
-				for( var j = 0; j < input.length; ++j ) {
-					// Add the possibility of unchecking radio buttons
-					if( input[j].type === 'radio' ) {
-						input[j].ondblclick = function() {
-							this.checked = false;
-						};
-					}
-					// Displays the shuffle buttons.
-					else if( input[j].className === 'shuffle' ) {
-						input[j].style.display = 'inline';
-						/* jshint loopfunc:true */
-						input[j].onclick = function() {
-							shuffle( this.form.getElementsByTagName( 'div' )[1] );
-							var sh_input = this.form.getElementsByTagName( 'input' );
-							for( var k = 0; k < sh_input.length; ++k ) {
-								// Add the possibility of unchecking radio buttons
-								if( input[k].type === 'radio' ) {
-									input[k].ondblclick = function() {
-										this.checked = false;
-									};
-								}
-							}
-						};
-						/* jshint loopfunc:false */
-					}
-					// Display the reset button
-					else if( input[j].className === 'reset' ) {
-						input[j].style.display = 'inline';
-						input[j].onclick = function() {
-							this.form.quizId.value = '';
-							this.form.submit();
-						};
-					}
-					// Correct the bug of ie6 on textfields
-					else if( input[j].className === 'numbers' || input[j].className === 'words' ) {
-						if( typeof document.body.style.maxHeight === 'undefined' ) {
-							input[j].parentNode.onclick = function() {
-								this.parentNode.firstChild.style.display = 'inline';
-								this.parentNode.firstChild.style.position = 'absolute';
-								this.parentNode.firstChild.style.marginTop = '1.7em';
-							};
-							input[j].parentNode.onmouseout = function() {
-								this.parentNode.firstChild.style.display = 'none';
-							};
-						}
-						input[j].onkeydown = function() {
-							if( this.form.shuffleButton ) {
-								this.form.shuffleButton.disabled = true;
-							}
-						};
-					}
-					if( input[j].className === 'check' ) {
-						input[j].onclick = function() {
-							if( this.form.shuffleButton ) {
-								this.form.shuffleButton.disabled = true;
-							}
-						};
-					}
-					// Disable the submit button if the page is in preview mode
-					if( input[j].type === 'submit' && document.editform ) {
-						input[j].disabled = true;
-					}
-				}
+	/**
+	 * Prepare the quiz for "javascriptable" browsers
+	 *
+	 * @param {jQuery} $content The content area of the wiki page,
+	 *  passed by the `wikipage.content` hook
+	 */
+	function prepareQuiz( $content ) {
+		var $input = $content.find( 'div.quiz input' );
+		// Add the possibility of unchecking radio buttons
+		$input.filter( ':radio' ).dblclick( function () {
+			this.checked = false;
+		} );
+		// Display the shuffle buttons
+		$input.filter( '.shuffle' ).click( function () {
+			shuffle( $( this.form ).find( 'div.quizQuestions' ) );
+		} );
+		// Display the reset button
+		$input.filter( '.reset' ).click( function () {
+			this.form.quizId.value = '';
+			this.form.submit();
+		} );
+		// Correct the bug of IE6 on textfields
+		// TODO: Is it still necessary? (IE<10 has no JS at all)
+		if ( document.body.style.maxHeight === undefined ) {
+			$input.filter( '.numbers, .words' ).parent()
+				.click( function () {
+					$( this ).parent().children( ':first' ).css( {
+						display: 'inline',
+						position: 'absolute',
+						marginTop: '1.7em'
+					} );
+				} )
+				.mouseout( function () {
+					$( this ).parent().children( ':first' ).css( 'display', 'inline' );
+				} );
+		}
+		$input.filter( '.numbers, .words' ).keydown( function () {
+			if ( this.form.shuffleButton ) {
+				this.form.shuffleButton.disabled = true;
 			}
-		}
+		} );
+		$input.filter( '.check' ).click( function () {
+			if ( this.form.shuffleButton ) {
+				this.form.shuffleButton.disabled = true;
+			}
+		} );
+		// Disable submit button while previewing the quiz as submitting would start a POST request
+		// without the edit data.
+		// This should be done after full page load as #editform may be outside $content.
+		// TODO: Use AJAX for quiz correction so that it can be corrected also while editing
+		$( function () {
+			if ( $( '#editform' ).length ) {
+				$input.filter( ':submit' ).prop( 'disabled', true );
+			}
+		} );
 	}
 
-	function addLoadListener( func ) {
-		if ( window.addEventListener ) {
-			window.addEventListener( 'load', func, false );
-		} else if ( document.addEventListener ) {
-			document.addEventListener( 'load', func, false );
-		} else if ( window.attachEvent ) {
-			window.attachEvent( 'onload', func );
-		}
-	}
-
-	if ( document.getElementById && document.createTextNode ) {
-		addLoadListener( prepareQuiz );
-	}
+	mw.hook( 'wikipage.content' ).add( prepareQuiz );
 })();

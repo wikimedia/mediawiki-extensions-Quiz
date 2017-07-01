@@ -1,43 +1,43 @@
 {{# isSettingFirstRow}}
 	<tr>
-		{{# notSimple}}
-			<td>{{ wfMessage.quiz_added }}</td>
-			<td><input class="numerical" type="text" name="addedPoints" value="{{ mAddedPoints }}"/>&#160;&#160;</td>
-		{{/ notSimple}}
-		{{# corrected}}
-			<td class="margin" style="background:{{ color.colorRight }}"></td>
+	{{# notSimple}}
+		<td><label for="addedPoints">{{ wfMessage.quiz_added }}</label></td>
+		<td><input class="numerical" type="number" name="addedPoints" id="addedPoints" value="{{ mAddedPoints }}"/>&#160;&#160;</td>
+	{{/ notSimple}}
+	{{# corrected}}
+		<td class="margin right"></td>
 			<td style="background: transparent;">{{ wfMessage.quiz_colorRight }}</td>
+	{{/corrected}}
+	{{# error}}
+		{{^ corrected}}
+			<td class="margin error"></td>
+			<td>{{ wfMessage.quiz_colorError }}</td>
 		{{/corrected}}
-		{{# error}}
-			{{^ corrected}}
-				<td class="margin" style="background:{{ color.colorError }}"></td>
-				<td>{{ wfMessage.quiz_colorError }}</td>
-			{{/corrected}}
-		{{/ error}}
+	{{/ error}}
 	</tr>
 {{/ isSettingFirstRow}}
 {{# isSettingOtherRow}}
 	<tr>
-		{{# notSimple}}
-			<td>{{ wfMessage.quiz_cutoff }}</td>
-			<td><input class="numerical" type="text" name="cutoffPoints" value="{{ mCutoffPoints }}"/></td>
-		{{/ notSimple}}
-		{{# corrected}}
-			<td class="margin" style="background:{{ color.colorWrong }}"></td>
-			<td style="background: transparent;">{{ wfMessage.quiz_colorWrong }}</td>
-		{{/ corrected}}
+	{{# notSimple}}
+		<td><label for="cutoffPoints">{{ wfMessage.quiz_cutoff }}</label></td>
+		<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints" value="{{ mCutoffPoints }}"/></td>
+	{{/ notSimple}}
+	{{# corrected}}
+		<td class="margin wrong"></td>
+		<td style="background: transparent;">{{ wfMessage.quiz_colorWrong }}</td>
+	{{/ corrected}}
 	</tr>
 {{/ isSettingOtherRow}}
 {{# isSettingOtherRow}}
 	<tr>
-		{{# notSimple}}
-			<td>{{{ wfMessage.quiz_ignoreCoef }}}</td>
-			<td><input type="checkbox" name="ignoringCoef" {{{ checked }}}/></td>
-		{{/ notSimple}}
-		{{# corrected}}
-			<td class="margin" style="background:{{ color.colorNA }}"></td>
-			<td style="background: transparent;">{{ wfMessage.quiz_colorNA }}</td>
-		{{/ corrected}}
+	{{# notSimple}}
+		<td><label for="ignoringCoef">{{{ wfMessage.quiz_ignoreCoef }}}</label></td>
+		<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef" {{{ checked }}}/></td>
+	{{/ notSimple}}
+	{{# corrected}}
+		<td class="margin NA"></td>
+		<td style="background: transparent;">{{ wfMessage.quiz_colorNA }}</td>
+	{{/ corrected}}
 	</tr>
 {{/ isSettingOtherRow}}
 {{# notSimple}}
@@ -45,7 +45,7 @@
 		{{# shuffle}}
 			{{^ corrected}}
 				{{# shuffleDisplay}}
-					<td><input class="shuffle" name="shuffleButton" type="button" value="{{ wfMessage.quiz_shuffle }}" style="display: none;"/></td>
+					<td><input class="shuffle" name="shuffleButton" type="button" value="{{ wfMessage.quiz_shuffle }}"/></td>
 				{{/ shuffleDisplay}}
 			{{/ corrected}}
 		{{/ shuffle}}
@@ -57,7 +57,7 @@
 		{{/ corrected}}
 		{{# error}}
 			{{# corrected}}
-				<td class="margin" style="background:{{ color.colorError }}"></td>
+				<td class="margin error"></td>
 				<td>{{ wfMessage.quiz_colorError }}</td>
 			{{/ corrected}}
 		{{/ error}}

@@ -35,25 +35,6 @@ class QuizTest extends MediaWikiLangTestCase {
 		);
 	}
 
-	public function provideGetColor() {
-		return [
-			[ 'right', '#1FF72D' ],
-			[ 'wrong', '#F74245' ],
-			[ 'correction', '#F9F9F9' ],
-			[ 'NA', '#2834FF' ],
-			[ 'error', '#D700D7' ],
-		];
-	}
-
-	/**
-	 * @dataProvider provideGetColor
-	 * @covers Question::getColor
-	 */
-	public function testGetColor( $colorId, $expected ) {
-		$color = $this->quiz->getColor( $colorId );
-		$this->assertEquals( $color, $expected );
-	}
-
 	public function testQuizHasQuizId() {
 		$this->assertClassHasStaticAttribute( 'sQuizId', Quiz::class );
 	}

@@ -1,5 +1,5 @@
 .quiz .settings input.numerical {
-	width: 2em;
+	width: 3em;
 }
 
 * > .quiz .header .questionId {
@@ -28,6 +28,90 @@
 
 .quiz .margin {
 	padding-left: 20px;
+}
+
+.quiz .margin.right {
+	background-color: #1ff72d;
+}
+
+.quiz .margin.wrong {
+	background-color: #f74245;
+}
+
+.quiz .margin.correction {
+	background-color: #f9f9f9;
+}
+
+.quiz .margin.NA {
+	background-color: #2834ff;
+}
+
+.quiz .margin.error {
+	background-color: #d700d7;
+}
+
+/* This should be based on content direction, not interface direction */
+/* @noflip */
+.mw-content-ltr .quiz .question .border {
+	border-width: 0 0 0 3px;
+}
+
+/* @noflip */
+.mw-content-rtl .quiz .question .border {
+	border-width: 0 3px 0 0;
+}
+
+.quiz .question .border.right,
+.quiz .question .border.wrong,
+.quiz .question .border.correction,
+.quiz .question .border.NA,
+.quiz .question .border.error {
+	border-style: solid;
+}
+
+.quiz .question .border.right {
+	border-color: #1ff72d;
+}
+
+.quiz .question .border.wrong {
+	border-color: #f74245;
+}
+
+.quiz .question .border.correction {
+	border-color: #f9f9f9;
+}
+
+.quiz .question .border.NA {
+	border-color: #2834ff;
+}
+
+.quiz .question .border.error {
+	border-color: #d700d7;
+}
+
+.quiz .question .check.right {
+	outline: 3px solid #1ff72d;
+	*border: 3px solid #1ff72d;
+}
+
+.quiz .question .check.wrong {
+	outline: 3px solid #f74245;
+	*border: 3px solid #f74245;
+}
+
+.quiz .question .check.correction {
+	outline: 3px solid #f9f9f9;
+	*border: 3px solid #f9f9f9;
+}
+
+.quiz .question .check.NA {
+	outline: 3px solid #2834ff;
+	*border: 3px solid #2834ff;
+}
+
+.quiz .question .check.error {
+	outline: 3px solid #d700d7;
+	*border: 3px solid #d700d7;
 }
 
 .quiz .header .questionId {
@@ -82,4 +166,9 @@
 	display: inline;
 	position: absolute;
 	margin: 1.8em 0 0 0.1em;
+}
+
+.client-nojs .quiz .shuffle,
+.client-nojs .quiz .reset {
+	display: none;
 }

@@ -174,7 +174,9 @@ class Question {
 				$typeId  = substr( $this->mType, 0, 1 );
 				$typeId .= array_key_exists( 1, $matches ) ? 'c' : 'n';
 				foreach ( $matches as $signId => $sign ) {
-					$title = $disabled = $inputStyle = '';
+					$attribs = [];
+					$attribs['type'] = $inputType;
+					$attribs['class'] = 'check';
 					// Determine the input's name and value.
 					switch ( $typeId ) {
 						case 'mn':
@@ -195,9 +197,9 @@ class Question {
 							break;
 					}
 					// Determine if the input had to be checked.
-					$checked = $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value
-						? 'checked="checked"'
-						: null;
+					if ( $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value ) {
+						$attribs['checked'] = 'checked';
+					}
 					// Determine the color of the cell and modify the state of the question.
 					switch ( $sign ) {
 						case '+':
@@ -205,42 +207,30 @@ class Question {
 							// A single choice object with many correct proposal is a syntax error.
 							if ( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
-								$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) .
-									' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) .
-									';"';
-								$title = 'title="' .
-									wfMessage( 'quiz_colorError' )->escaped() . '"';
-								$disabled = 'disabled="disabled"';
+								$attribs['class'] .= ' error';
+								$attribs['title'] = wfMessage( 'quiz_colorError' )->escaped();
+								$attribs['disabled'] = 'disabled';
 							}
 							if ( $this->mBeingCorrected ) {
-								if ( $checked ) {
+								if ( array_key_exists( 'checked', $attribs ) ) {
 									$checkedCount++;
 									$this->setState( 'right' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'right' ) .
-										' solid 3px; *border: 3px solid ' .
-										Quiz::getColor( 'right' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() .
-										'"';
+									$attribs['class'] .= ' right';
+									$attribs['title'] = wfMessage( 'quiz_colorRight' )->escaped();
 								} else {
 									$this->setState( 'na_wrong' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) .
-										' solid 3px; *border: 3px solid ' .
-										Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() .
-										'"';
+									$attribs['class'] .= ' wrong';
+									$attribs['title'] = wfMessage( 'quiz_colorWrong' )->escaped();
 								}
 							}
 							break;
 						case '-':
 							if ( $this->mBeingCorrected ) {
-								if ( $checked ) {
+								if ( array_key_exists( 'checked', $attribs ) ) {
 									$checkedCount++;
 									$this->setState( 'wrong' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) .
-										' solid 3px; *border: 3px solid ' .
-										Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() .
-										'"';
+									$attribs['class'] .= ' wrong';
+									$attribs['title'] = wfMessage( 'quiz_colorWrong' )->escaped();
 								} else {
 									$this->setState( 'na_right' );
 								}
@@ -248,17 +238,13 @@ class Question {
 							break;
 						default:
 							$this->setState( 'error' );
-							$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) .
-								' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) .
-								';"';
-							$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . "\"";
-							$disabled = 'disabled="disabled"';
+							$attribs['class'] .= ' error';
+							$attribs['title'] = wfMessage( 'quiz_colorError' )->escaped();
+							$attribs['disabled'] = 'disabled';
 							break;
 					}
 					$signesOutput .= '<td class="sign">';
-					$signesOutput .= '<input class="check" ' . $inputStyle . ' type="' .
-						$inputType . '" ' . $title . ' name="' . $name . '" value="' . $value .
-						'" ' . $checked . ' ' . $disabled . ' />';
+					$signesOutput .= Xml::input( $name, false, $value, $attribs );
 					$signesOutput .= '</td>';
 				}
 				if ( $typeId == 'sc' ) {
@@ -379,6 +365,7 @@ class Question {
 		$wqInputId++;
 		$title = '';
 		$state =  '';
+		$spanClass = '';
 		$size =  '';
 		$maxlength =  '';
 		$class =  '';
@@ -497,9 +484,7 @@ class Question {
 			}
 		}
 		if ( $state == 'error' || $this->mBeingCorrected ) {
-			global $wgContLang;
-			$border = $wgContLang->isRTL() ? 'border-right' : 'border-left';
-			$style = $border . ':3px solid ' . Quiz::getColor( $state ) . ';';
+			$spanClass .= " border $state";
 			$this->setState( $value === "" ? 'new_NA' : $state );
 			if ( $state == 'error' ) {
 				$size = '';
@@ -512,9 +497,9 @@ class Question {
 		$temp = $templateParser->processTemplate(
 			'Answer',
 			[
-				'style' => $style,
 				'title' => $title,
 				'class' => $class,
+				'spanClass' => trim( $spanClass ),
 				'value' => $value,
 				'correction' => $this->mBeingCorrected,
 				'possibility' => $poss,
