@@ -131,6 +131,8 @@ class Quiz {
 		$settingsTable = $templateParser->processTemplate(
 			'Setting',
 			[
+				'isSettingFirstRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected || $this->mState === 'error' ),
+				'isSettingOtherRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ),
 				'notSimple' => !$this->mDisplaySimple,
 				'corrected' => $this->mBeingCorrected,
 				'shuffle' => $this->mShuffle,
