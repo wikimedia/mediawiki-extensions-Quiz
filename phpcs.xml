@@ -7,11 +7,10 @@
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingReturn" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.ParamNameNoMatch" />
 		<exclude name="MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment.NewLineComment" />
-		<exclude name="Generic.Files.LineLength" />
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc" />
-	<arg name="encoding" value="utf8" />
+	<arg name="encoding" value="UTF-8" />
 	<exclude-pattern>vendor</exclude-pattern>
 	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
 		<properties>

@@ -41,7 +41,8 @@ class Quiz {
 		$this->mAddedPoints = 1;
 		$this->mCutoffPoints = 0;
 		$this->mIgnoringCoef = false;
-		$this->mDisplaySimple = ( array_key_exists( 'display', $argv ) && $argv['display'] == 'simple' );
+		$this->mDisplaySimple = ( array_key_exists( 'display', $argv ) &&
+			$argv['display'] == 'simple' );
 
 		if ( $this->mBeingCorrected ) {
 			$lAddedPoints = str_replace( ',', '.',
@@ -64,7 +65,9 @@ class Quiz {
 
 		if ( array_key_exists( 'points', $argv ) &&
 			( !$this->mBeingCorrected || $this->mDisplaySimple ) &&
-			preg_match( '`([\d\.]*)/?([\d\.]*)(!)?`', str_replace( ',', '.', $argv['points'] ), $matches )
+			preg_match(
+				'`([\d\.]*)/?([\d\.]*)(!)?`', str_replace( ',', '.', $argv['points'] ), $matches
+			)
 		) {
 			if ( is_numeric( $matches[1] ) ) {
 				$this->mAddedPoints = $matches[1];
@@ -131,7 +134,8 @@ class Quiz {
 		$settingsTable = $templateParser->processTemplate(
 			'Setting',
 			[
-				'isSettingFirstRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected || $this->mState === 'error' ),
+				'isSettingFirstRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ||
+					$this->mState === 'error' ),
 				'isSettingOtherRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ),
 				'notSimple' => !$this->mDisplaySimple,
 				'corrected' => $this->mBeingCorrected,
@@ -288,8 +292,10 @@ class Quiz {
 			What is this block of code?
 			The only place X !X and /X are spoken about is here
 			https://en.wikiversity.org/wiki/Help:Quiz
-			"A few exotic features are not yet covered, such as shuffle control using {X} {!X} {/X} tags."
-			These were added in commit fb53a3b0 back in 2007, without any explanation and/or documentation. The commit message is actually unrelated.
+			"A few exotic features are not yet covered,
+			such as shuffle control using {X} {!X} {/X} tags."
+			These were added in commit fb53a3b0 back in 2007,
+			without any explanation and/or documentation. The commit message is actually unrelated.
 		*/
 		if ( !array_key_exists( 3, $matches ) || trim( $matches[3] ) == '' ) {
 			switch ( $matches[1] ) {

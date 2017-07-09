@@ -204,20 +204,29 @@ class Question {
 							// A single choice object with many correct proposal is a syntax error.
 							if ( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
-								$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) . ';"';
-								$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . '"';
+								$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) .
+									' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) .
+									';"';
+								$title = 'title="' .
+									wfMessage( 'quiz_colorError' )->escaped() . '"';
 								$disabled = 'disabled="disabled"';
 							}
 							if ( $this->mBeingCorrected ) {
 								if ( $checked ) {
 									$checkedCount++;
 									$this->setState( 'right' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'right' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'right' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() . '"';
+									$inputStyle = 'style="outline: ' . Quiz::getColor( 'right' ) .
+										' solid 3px; *border: 3px solid ' .
+										Quiz::getColor( 'right' ) . ';"';
+									$title = 'title="' . wfMessage( 'quiz_colorRight' )->escaped() .
+										'"';
 								} else {
 									$this->setState( 'na_wrong' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
+									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) .
+										' solid 3px; *border: 3px solid ' .
+										Quiz::getColor( 'wrong' ) . ';"';
+									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() .
+										'"';
 								}
 							}
 							break;
@@ -226,8 +235,11 @@ class Question {
 								if ( $checked ) {
 									$checkedCount++;
 									$this->setState( 'wrong' );
-									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'wrong' ) . ';"';
-									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() . '"';
+									$inputStyle = 'style="outline: ' . Quiz::getColor( 'wrong' ) .
+										' solid 3px; *border: 3px solid ' .
+										Quiz::getColor( 'wrong' ) . ';"';
+									$title = 'title="' . wfMessage( 'quiz_colorWrong' )->escaped() .
+										'"';
 								} else {
 									$this->setState( 'na_right' );
 								}
@@ -235,13 +247,17 @@ class Question {
 							break;
 						default:
 							$this->setState( 'error' );
-							$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) . ' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) . ';"';
+							$inputStyle = 'style="outline: ' . Quiz::getColor( 'error' ) .
+								' solid 3px; *border: 3px solid ' . Quiz::getColor( 'error' ) .
+								';"';
 							$title = 'title="' . wfMessage( 'quiz_colorError' )->escaped() . "\"";
 							$disabled = 'disabled="disabled"';
 							break;
 					}
 					$signesOutput .= '<td class="sign">';
-					$signesOutput .= '<input class="check" ' . $inputStyle . ' type="' . $inputType . '" ' . $title . ' name="' . $name . '" value="' . $value . '" ' . $checked . ' ' . $disabled . ' />';
+					$signesOutput .= '<input class="check" ' . $inputStyle . ' type="' .
+						$inputType . '" ' . $title . ' name="' . $name . '" value="' . $value .
+						'" ' . $checked . ' ' . $disabled . ' />';
 					$signesOutput .= '</td>';
 				}
 				if ( $typeId == 'sc' ) {
@@ -256,7 +272,9 @@ class Question {
 					$text = '???';
 					$this->setState( 'error' );
 				}
-			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches ) && $this->mBeingCorrected ) {
+			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches ) &&
+				$this->mBeingCorrected
+			) {
 				$rawClass = 'correction';
 				$text = array_pop( $matches );
 				$signesOutput = '<td>&#x2192;</td>';
@@ -330,7 +348,8 @@ class Question {
 			if ( preg_match( $this->mCorrectionPattern, $raw, $matches ) ) {
 				if ( $this->mBeingCorrected ) {
 					$rawClass = 'correction';
-					$text = '<td>&#x2192; ' . $this->mParser->recursiveTagParse( $matches[1] ) . '</td>';
+					$text = '<td>&#x2192; ' . $this->mParser->recursiveTagParse( $matches[1] ) .
+						'</td>';
 				} else {
 					continue;
 				}
@@ -358,7 +377,18 @@ class Question {
 	function parseTextField( $input ) {
 		global $wqInputId;
 		$wqInputId++;
-		$title = $state = $size = $maxlength = $class = $style = $value = $disabled = $big = $poss = $name = $bigDisplay = '';
+		$title = '';
+		$state =  '';
+		$size =  '';
+		$maxlength =  '';
+		$class =  '';
+		$style =  '';
+		$value =  '';
+		$disabled =  '';
+		$big =  '';
+		$poss =  '';
+		$name =  '';
+		$bigDisplay = '';
 		// determine size and maxlength of the input.
 		if ( array_key_exists( 3, $input ) ) {
 			$size = $input[3];
@@ -386,23 +416,36 @@ class Question {
 			}
 			$class = 'numbers';
 			$poss = ' ';
-			foreach ( preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility ) {
+			foreach (
+				preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility
+			) {
 				if ( $state == '' || $state == 'NA' || $state == 'wrong' ) {
-					if ( preg_match( '`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`', str_replace( ',', '.', $possibility ), $matches ) ) {
+					if ( preg_match(
+						'`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`',
+						str_replace( ',', '.', $possibility ),
+						$matches )
+					) {
 						if ( array_key_exists( 5, $matches ) ) {
 							$strlen = $size = $maxlength = '';
 						} elseif ( array_key_exists( 3, $matches ) ) {
-							$strlen = strlen( $matches[1] ) > strlen( $matches[3] ) ? strlen( $matches[1] ) : strlen( $matches[3] );
+							$strlen = strlen( $matches[1] ) > strlen( $matches[3] )
+								? strlen( $matches[1] )
+								: strlen( $matches[3] );
 						} else {
 							$strlen = strlen( $matches[1] );
 						}
 						if ( $this->mBeingCorrected && $value !== "" ) {
 							$value = str_replace( ',', '.', $value );
 							if ( is_numeric( $value ) && (
-								( array_key_exists( 5, $matches )
-									&& $value >= ( $matches[1] - ( $matches[1] * $matches[4] ) / 100 )
-									&& $value <= ( $matches[1] + ( $matches[1] * $matches[4] ) / 100 )
-								) || ( array_key_exists( 3, $matches ) && $value >= $matches[1] && $value <= $matches[3]
+								(
+									array_key_exists( 5, $matches )
+									&& $value >=
+										( $matches[1] - ( $matches[1] * $matches[4] ) / 100 )
+									&& $value <=
+										( $matches[1] + ( $matches[1] * $matches[4] ) / 100 )
+								) || (
+									array_key_exists( 3, $matches ) &&
+									$value >= $matches[1] && $value <= $matches[3]
 								) || $value == $possibility )
 							) {
 								$state = 'right';
@@ -413,12 +456,18 @@ class Question {
 							}
 						}
 					} else {
-						$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
+						$strlen = preg_match( '` \(i\)$`', $possibility )
+							? mb_strlen( $possibility ) - 4
+							: mb_strlen( $possibility );
 						$class = 'words';
 						if ( $this->mBeingCorrected && $value !== "" ) {
 							if ( $value == $possibility ||
-								( preg_match( '`^' . preg_quote( $value, '`' ) . ' \(i\)$`i', $possibility ) ) ||
-								( !$this->mCaseSensitive && preg_match( '`^' . preg_quote( $value, '`' ) . '$`i', $possibility ) )
+								( preg_match(
+									'`^' . preg_quote( $value, '`' ) . ' \(i\)$`i', $possibility
+								) ) ||
+								( !$this->mCaseSensitive && preg_match(
+									'`^' . preg_quote( $value, '`' ) . '$`i', $possibility
+								) )
 							) {
 								$state = 'right';
 								$title = wfMessage( 'quiz_colorRight' )->escaped();
@@ -435,7 +484,9 @@ class Question {
 					}
 				}
 				if ( $this->mBeingCorrected ) {
-					$strlen = preg_match( '` \(i\)$`', $possibility ) ? mb_strlen( $possibility ) - 4 : mb_strlen( $possibility );
+					$strlen = preg_match( '` \(i\)$`', $possibility )
+						? mb_strlen( $possibility ) - 4
+						: mb_strlen( $possibility );
 					$possibility = substr( $possibility, 0, $strlen );
 					$poss .= $possibility . '<br />';
 				}
