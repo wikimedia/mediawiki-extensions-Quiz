@@ -401,12 +401,12 @@ class Question {
 			}
 			$maxlength = $input[3];
 		}
+		$templateParser = new TemplateParser( __DIR__ . '/templates' );
 		// Syntax error if there is no input text.
-		if ( empty( $input[1] ) ) {
+		if ( $input[1] === "" ) {
 			$value = 'value="???"';
 			$state = 'error';
 		} else {
-			$templateParser = new TemplateParser( __DIR__ . '/templates' );
 			// For hiding down arrow
 			$bigDisplay = 'display: none';
 			if ( $this->mBeingCorrected ) {

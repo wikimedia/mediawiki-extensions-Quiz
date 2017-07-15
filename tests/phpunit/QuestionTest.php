@@ -163,6 +163,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 
 	public function provideParseTextField() {
 		return [
+			// test case when quiz no input is provided for multiple answers
 			[ '1', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'
@@ -174,6 +175,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . '</span>' . "\n\t\n" . '</div>' . "\n",
 			 ''
 			],
+			// test case when the quiz is not being corrected
 			[
 			 '2', '0', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
@@ -184,6 +186,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . '</span>' . "\n\t\n" . '</div>' . "\n",
 			 ''
 			],
+			// test case when no user input is provided to case insensitive answer
 			[
 			 '3', '1', [ '{ Plato (i) _6 }', 'Plato (i)', '_6', '6' ],
 			  '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
@@ -195,6 +198,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
 			 ''
 			],
+			// test case when mulitple answers are provided and user input is one of them
 			[ '4', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'. "\n\t\t\t"
@@ -205,6 +209,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . "\n\t\n" . '</div>' . "\n",
 			 'Greece'
 			],
+			// test case using maxlength=6 but user input is more than more than maxlength
 			[
 			 '5', '1', [ '{ Plato (i) _6 }', 'Plato (i)', '_6', '6' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
@@ -216,7 +221,30 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
 			 'morethansix'
 			],
-
+			// test case for empty answer when user input is empty
+			[
+			 '6', '1', [ '{ }', '', '' ],
+			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 . "\n\t\t\t" . '<span class="correction">' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
+			 . '<span style="border-left:3px solid #D700D7;">' . "\n\t\t\t\t"
+			 . '<input type="text" name="6" title="Syntax error" disabled size="" '
+			 . 'maxlength="" autocomplete="off" value="value=&quot;???&quot;" />'
+			 . "\n\t\t\t\t\t" . '<em style="">' . "\n\t\t\t\t\t" . '</em>'
+			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 ''
+			],
+			// test case when answer is 0 and user input is zero
+			[
+			 '7', '1', [ '{ 0 }', '0', '' ],
+			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 . "\n\t\t\t" . '<span class="correction"> 0<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
+			 . '<span style="border-left:3px solid #1FF72D;">' . "\n\t\t\t\t"
+			 . '<input type="text" name="7" title="Right"  size="" '
+			 . 'maxlength="" autocomplete="off" value="0" />'
+			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
+			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 '0'
+			]
 		];
 	}
 
