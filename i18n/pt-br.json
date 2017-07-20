@@ -16,6 +16,6 @@
 	"quiz_colorError": "Erro de sintaxe",
 	"quiz_correction": "Enviar",
 	"quiz_score": "Pontuação atual: $1 certas em $2",
-	"quiz_points": "$1 | {{PLURAL:$2|um ponto|$2 pontos}}",
+	"quiz_points": "$1 | {{PLURAL:$2|1 ponto|$2 pontos}}",
 	"quiz_reset": "Reiniciar"
 }
