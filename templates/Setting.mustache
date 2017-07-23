@@ -41,14 +41,15 @@
 	</tr>
 {{/ isSettingOtherRow}}
 {{# notSimple}}
+	{{# shuffleOrError}}
 	<tr>
-		{{# shuffle}}
+		{{#if shuffle}}
 			{{^ corrected}}
 				{{# shuffleDisplay}}
 					<td><input class="shuffle" name="shuffleButton" type="button" value="{{ wfMessage.quiz_shuffle }}"/></td>
 				{{/ shuffleDisplay}}
 			{{/ corrected}}
-		{{/ shuffle}}
+		{{/if}}
 		{{^ shuffle}}
 			<td></td>
 		{{/ shuffle}}
@@ -62,4 +63,5 @@
 			{{/ corrected}}
 		{{/ error}}
 	</tr>
+	{{/ shuffleOrError}}
 {{/ notSimple}}

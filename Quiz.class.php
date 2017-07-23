@@ -94,27 +94,13 @@ class Quiz {
 	}
 
 	/**
-	 * Convert the input text to an HTML output.
+	 * Get HTML from template using TemplateParser
 	 *
-	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @param $templateParser TemplateParser
 	 * @return string
 	 */
-	function parseQuiz( $input ) {
-		// Ouput the style and the script to the header once for all.
-		if ( $this->mQuizId == 0 ) {
-			$this->mParser->getOutput()->addModules( 'ext.quiz' );
-			$this->mParser->getOutput()->addModuleStyles( 'ext.quiz.styles' );
-		}
-
-		// Process the input
-		$input = $this->parseQuestions( $this->parseIncludes( $input ) );
-
-		// Generates the output.
-
-		$templateParser = new TemplateParser( __DIR__ . '/templates' );
-		$checked = '';
-		// Determine the content of the settings table.
-		$settingsTable = '';
+	function getSettingsTable( $templateParser ) {
+		$checked = $this->mIgnoringCoef ? 'checked="checked"' : '';
 		$settingsTable = $templateParser->processTemplate(
 			'Setting',
 			[
@@ -122,8 +108,10 @@ class Quiz {
 					$this->mState === 'error' ),
 				'isSettingOtherRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ),
 				'notSimple' => !$this->mDisplaySimple,
-				'corrected' => $this->mBeingCorrected,
+				'corrected' => ( $this->mBeingCorrected && $this->mBeingCorrected ),
 				'shuffle' => $this->mShuffle,
+				'shuffleOrError' => ( $this->mShuffle && $this->numberQuestions > 1 ) ||
+					$this->mState === 'error',
 				'error' => $this->mState === 'error',
 				'wfMessage' => [
 					'quiz_added' => wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->text(),
@@ -141,6 +129,30 @@ class Quiz {
 				'shuffleDisplay' => $this->numberQuestions > 1
 			]
 		);
+		return $settingsTable;
+	}
+
+	/**
+	 * Convert the input text to an HTML output.
+	 *
+	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @return string
+	 */
+	function parseQuiz( $input ) {
+		// Ouput the style and the script to the header once for all.
+		if ( $this->mQuizId == 0 ) {
+			$this->mParser->getOutput()->addModules( 'ext.quiz' );
+			$this->mParser->getOutput()->addModules( 'ext.quiz.styles' );
+		}
+
+		// Process the input
+		$input = $this->parseQuestions( $this->parseIncludes( $input ) );
+
+		// Generates the output.
+		$templateParser = new TemplateParser( __DIR__ . '/templates' );
+		// Determine the content of the settings table.
+		$settingsTable = '';
+		$settingsTable = $this->getSettingsTable( $templateParser );
 
 		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
 			'<span class="score">' . $this->mScore . '</span>',
