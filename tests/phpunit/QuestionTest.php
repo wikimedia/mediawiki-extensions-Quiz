@@ -2,10 +2,15 @@
 
 class QuestionTest extends MediaWikiLangTestCase {
 
+	/**
+	 * @var Parser $parser
+	 */
 	private $parser;
+
+	/**
+	 * @var Question $question
+	 */
 	private $question;
-	private $inputId;
-	private $request;
 
 	protected function setUp() {
 		parent::setUp();
@@ -37,6 +42,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		global $wgRequest;
 		return $wgRequest;
 	}
+
 	public function testGetState() {
 		$this->question = $this->getQuestion( 1, 1, 2 );
 		$state = $this->question->getState();

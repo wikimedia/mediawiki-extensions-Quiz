@@ -2,7 +2,14 @@
 
 class QuizTest extends MediaWikiLangTestCase {
 
+	/**
+	 * @var Quiz $quiz
+	 */
 	private $quiz;
+
+	/**
+	 * @var Parser $parser
+	 */
 	private $parser;
 
 	protected function setUp() {
