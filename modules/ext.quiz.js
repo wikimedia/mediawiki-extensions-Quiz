@@ -72,8 +72,16 @@
 		}
 	}
 
-	/**
-	 * Prepare the quiz for "javascriptable" browsers
+	// Reassign numbering to shuffled questions
+	function shuffleNumbering( $area ) {
+		$area = $area[0];
+		var list = $area.getElementsByClassName( 'questionId' );
+		for( var i =0; i < list.length ; ++i ) {
+			list[i].innerHTML = i+1;
+		}
+	}
+
+	/** Prepare the quiz for "javascriptable" browsers
 	 *
 	 * @param {jQuery} $content The content area of the wiki page,
 	 *  passed by the `wikipage.content` hook
@@ -87,6 +95,7 @@
 		// Display the shuffle buttons
 		$input.filter( '.shuffle' ).click( function () {
 			shuffle( $( this.form ).find( 'div.quizQuestions' ) );
+			shuffleNumbering( $( this.form ).find( 'div.quizQuestions' ) );
 		} );
 		// Display the reset button
 		$input.filter( '.reset' ).click( function () {
