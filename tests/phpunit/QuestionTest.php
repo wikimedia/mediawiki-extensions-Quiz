@@ -175,7 +175,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'
 			 . "\n\t\t\t" . '</span>' . "\n\t\t\t" . '<span style="border-left:3px solid #2834FF;">'
 			 . "\n\t\t\t\t"
-			 . '<input type="text" name="1" title="Not answered"  size="" '
+			 . '<input type="text" name="1" class="words" title="Not answered"  size="" '
 			 . 'maxlength="" autocomplete="off" value="" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t"
 			 . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -187,9 +187,10 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction">' . " \n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span style="">' . "\n\t\t\t\t"
-			 . '<input type="text" name="2" title=""  size="" maxlength="" autocomplete="off" value="" />'
-			 . "\n\t\t\t\t\t" . '<em style="display: none">' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t"
-			 . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . '<input type="text" name="2" class="words" title=""  size="" maxlength="" '
+			 . 'autocomplete="off" value="" />' . "\n\t\t\t\t\t" . '<em style="display: none">'
+			 . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n"
+			 ,
 			 ''
 			],
 			// test case when no user input is provided to case insensitive answer
@@ -198,7 +199,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			  '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Plato<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span style="border-left:3px solid #2834FF;">' . "\n\t\t\t\t"
-			 . '<input type="text" name="3" title="Not answered"  size="4" '
+			 . '<input type="text" name="3" class="words" title="Not answered"  size="4" '
 			 . 'maxlength="6" autocomplete="off" value="" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -209,7 +210,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'. "\n\t\t\t"
 			 . '</span>' . "\n\t\t\t" . '<span style="border-left:3px solid #1FF72D;">' . "\n\t\t\t\t"
-			 . '<input type="text" name="4" title="Right"  size="" '
+			 . '<input type="text" name="4" class="words" title="Right"  size="" '
 			 . 'maxlength="" autocomplete="off" value="Greece" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>'
 			 . "\n\t\n" . '</div>' . "\n",
@@ -221,7 +222,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Plato<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span style="border-left:3px solid #F74245;">' . "\n\t\t\t\t"
-			 . '<input type="text" name="5" title="Wrong"  size="4" '
+			 . '<input type="text" name="5" class="words" title="Wrong"  size="4" '
 			 . 'maxlength="6" autocomplete="off" value="morethansix" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -233,7 +234,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction">' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span style="border-left:3px solid #D700D7;">' . "\n\t\t\t\t"
-			 . '<input type="text" name="6" title="Syntax error" disabled size="" '
+			 . '<input type="text" name="6" class="" title="Syntax error" disabled size="" '
 			 . 'maxlength="" autocomplete="off" value="value=&quot;???&quot;" />'
 			 . "\n\t\t\t\t\t" . '<em style="">' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -245,7 +246,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> 0<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span style="border-left:3px solid #1FF72D;">' . "\n\t\t\t\t"
-			 . '<input type="text" name="7" title="Right"  size="" '
+			 . '<input type="text" name="7" class="numbers" title="Right"  size="" '
 			 . 'maxlength="" autocomplete="off" value="0" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
