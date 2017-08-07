@@ -31,11 +31,11 @@
 }
 
 .quiz .margin.right {
-	background-color: #1ff72d;
+	background-color: #14866d;
 }
 
 .quiz .margin.wrong {
-	background-color: #f74245;
+	background-color: #d33;
 }
 
 .quiz .margin.correction {
@@ -43,11 +43,11 @@
 }
 
 .quiz .margin.NA {
-	background-color: #2834ff;
+	background-color: #36c;
 }
 
 .quiz .margin.error {
-	background-color: #d700d7;
+	background-color: #fc3;
 }
 
 /* This should be based on content direction, not interface direction */
@@ -70,11 +70,11 @@
 }
 
 .quiz .question .border.right {
-	border-color: #1ff72d;
+	border-color: #14866d;
 }
 
 .quiz .question .border.wrong {
-	border-color: #f74245;
+	border-color: #d33;
 }
 
 .quiz .question .border.correction {
@@ -82,21 +82,21 @@
 }
 
 .quiz .question .border.NA {
-	border-color: #2834ff;
+	border-color: #36c;
 }
 
 .quiz .question .border.error {
-	border-color: #d700d7;
+	border-color: #fc3;
 }
 
 .quiz .question .check.right {
-	outline: 3px solid #1ff72d;
-	*border: 3px solid #1ff72d;
+	outline: 3px solid #14866d;
+	*border: 3px solid #14866d;
 }
 
 .quiz .question .check.wrong {
-	outline: 3px solid #f74245;
-	*border: 3px solid #f74245;
+	outline: 3px solid #d33;
+	*border: 3px solid #d33;
 }
 
 .quiz .question .check.correction {
@@ -105,13 +105,13 @@
 }
 
 .quiz .question .check.NA {
-	outline: 3px solid #2834ff;
-	*border: 3px solid #2834ff;
+	outline: 3px solid #36c;
+	*border: 3px solid #36c;
 }
 
 .quiz .question .check.error {
-	outline: 3px solid #d700d7;
-	*border: 3px solid #d700d7;
+	outline: 3px solid #fc3;
+	*border: 3px solid #fc3;
 }
 
 .quiz .header .questionId {
