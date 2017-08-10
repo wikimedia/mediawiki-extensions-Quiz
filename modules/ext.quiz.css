@@ -131,6 +131,10 @@
 	border: 0;
 }
 
+.quiz .quizForm {
+	position: relative;
+}
+
 .quiz .correction {
 	background-color: #f9f9f9;
 }
