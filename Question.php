@@ -82,7 +82,7 @@ class Question {
 		$unparsedHeader = preg_split( $splitHeaderPattern, $input );
 		 $output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) );
 		if ( array_key_exists( 1, $unparsedHeader ) && $this->mBeingCorrected ) {
-			$output .="\n";
+			$output .= "\n";
 			$output .= '<table class="correction"><tr>';
 			$output .= '<td>&#x2192;</td><td>';
 			$output .= $this->mParser->recursiveTagParse( trim( $unparsedHeader[1] ) );
@@ -299,7 +299,7 @@ class Question {
 			$this->setState( 'error' );
 		}
 		$output = '<tr class="categories">' . "\n";
-		$this->mProposalPattern =  '`^';
+		$this->mProposalPattern = '`^';
 		foreach ( $categories as $key => $category ) {
 			// If a category name is empty, the question has a syntax error.
 			if ( trim( $category ) == '' ) {
@@ -364,17 +364,17 @@ class Question {
 		global $wqInputId;
 		$wqInputId++;
 		$title = '';
-		$state =  '';
+		$state = '';
 		$spanClass = '';
-		$size =  '';
-		$maxlength =  '';
-		$class =  '';
-		$style =  '';
-		$value =  '';
-		$disabled =  '';
-		$big =  '';
-		$poss =  '';
-		$name =  '';
+		$size = '';
+		$maxlength = '';
+		$class = '';
+		$style = '';
+		$value = '';
+		$disabled = '';
+		$big = '';
+		$poss = '';
+		$name = '';
 		$bigDisplay = '';
 		// determine size and maxlength of the input.
 		if ( array_key_exists( 3, $input ) ) {
