@@ -122,6 +122,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 
 	public function provideParseCategories() {
 		return [
+			// Test case when Question is being corrected and input has 3 Categories
 			[ '1', 'Option A | Option B | Option C',
 			 [ '<tr class="categories">'. "\n"
 			 . '<th>Option A </th><th> Option B </th><th> Option C</th></tr>' . "\n",
@@ -129,6 +130,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 'NA'
 			 ]
 			],
+			// Test case when Question is not being corrected and input has 3 Categories
 			[ '0', 'Option A | Option B | Option C',
 			 [ '<tr class="categories">'. "\n"
 			 . '<th>Option A </th><th> Option B </th><th> Option C</th></tr>' . "\n",
@@ -136,6 +138,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 ''
 			 ]
 			],
+			// Test case when Question is being corrected and input has syntax error
 			[ '1', '| B | C',
 			 [ '<tr class="categories">'. "\n"
 			 . '<th>???</th><th> B </th><th> C</th></tr>' . "\n",
@@ -143,11 +146,48 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 'error'
 			 ]
 			],
+			// Test case when Question is not being corrected and input has syntax error
 			[ '0', '| B | C',
 			 [ '<tr class="categories">'. "\n"
 			 . '<th>???</th><th> B </th><th> C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'error'
+			 ]
+			],
+			// Test case when Question is not being corrected and input has Categories with link
+			[ '0', 'Option A | [[Article name | Option B]] | Option C',
+			 [ '<tr class="categories">'. "\n"
+			 . '<th>Option A </th><th> <!--LINK 0:0--> </th><th> Option C</th></tr>' . "\n",
+			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
+			 ''
+			 ]
+			],
+			// Test case when Question is being corrected and input has Categories with link
+			[ '1', 'Option A | [[Article name | Option B]] | Option C',
+			 [ '<tr class="categories">'. "\n"
+			 . '<th>Option A </th><th> <!--LINK 0:0--> </th><th> Option C</th></tr>' . "\n",
+			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
+			 'NA'
+			 ]
+			],
+			// Test case when Question is not being corrected and input has Categories with template
+			[ '0', 'Option A | {{Template name | url=http://www.example.com}} | Option C',
+			 [ '<tr class="categories">'. "\n"
+			 . '<th>Option A </th><th> {{Template name | url=<a rel="nofollow" ' .
+			 'class="external free" href="http://www.example.com}}">http://www.example.com}}' .
+			 '</a> </th><th> Option C</th></tr>' . "\n",
+			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
+			 ''
+			 ]
+			],
+			// Test case when Question is being corrected and input has Categories with template
+			[ '1', 'Option A | {{Template name | url=http://www.example.com}} | Option C',
+			 [ '<tr class="categories">'. "\n"
+			 . '<th>Option A </th><th> {{Template name | url=<a rel="nofollow" ' .
+			 'class="external free" href="http://www.example.com}}">http://www.example.com}}' .
+			 '</a> </th><th> Option C</th></tr>' . "\n",
+			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
+			 'NA'
 			 ]
 			]
 		];

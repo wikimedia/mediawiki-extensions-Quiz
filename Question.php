@@ -292,7 +292,8 @@ class Question {
 	 * @return string
 	 */
 	function parseCategories( $input ) {
-		$categories = explode( '|', $input );
+		$linkPattern = '`(\[\[.*?\]\](*SKIP)(*FAIL)|\|)|({{.*?}}(*SKIP)(*FAIL)|\|)`';
+		$categories = preg_split( $linkPattern, $input );
 		// Less than two categories is a syntax error.
 		if ( !array_key_exists( 1, $categories ) ) {
 			$categories[1] = '???';
