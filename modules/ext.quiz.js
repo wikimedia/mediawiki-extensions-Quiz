@@ -72,13 +72,15 @@
 		}
 	}
 
-	// Reassign numbering to shuffled questions
+	/**
+	 * Reassign numbering to shuffled questions
+	 *
+	 * @param {jQuery} $area The shuffled quiz area.
+	 */
 	function shuffleNumbering( $area ) {
-		$area = $area[0];
-		var list = $area.getElementsByClassName( 'questionId' );
-		for( var i =0; i < list.length ; ++i ) {
-			list[i].innerHTML = i+1;
-		}
+		$area.find( '.questionId' ).each( function ( i ) {
+			$( this ).text( i+1 );
+		} );
 	}
 
 	/** Prepare the quiz for "javascriptable" browsers
