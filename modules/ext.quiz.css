@@ -50,6 +50,11 @@
 	background-color: #fc3;
 }
 
+.quiz .error {
+	color: #222;
+	font-size: inherit;
+}
+
 /* This should be based on content direction, not interface direction */
 /* @noflip */
 .mw-content-ltr .quiz .question .border {
