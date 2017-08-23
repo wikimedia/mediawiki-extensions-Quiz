@@ -144,6 +144,10 @@
 	background-color: #f9f9f9;
 }
 
+.quiz .correction.unselected {
+	display: none;
+}
+
 .quiz .object .correction {
 	background-color: transparent;
 }

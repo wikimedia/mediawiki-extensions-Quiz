@@ -160,6 +160,7 @@ class Question {
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
 		// Parameters used in some special cases.
 		$expectOn = 0;
+		$attemptChecker = 0;
 		$checkedCount = 0;
 		foreach ( $raws as $proposalId => $raw ) {
 			$text = null;
@@ -200,6 +201,10 @@ class Question {
 					if ( $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value ) {
 						$attribs['checked'] = 'checked';
 					}
+					// Determine if the proposal has been attempted
+					$attemptChecker = ( $this->mBeingCorrected && $this->mRequest->getVal( $name ) === $value )
+						? 1
+						: 0;
 					// Determine the color of the cell and modify the state of the question.
 					switch ( $sign ) {
 						case '+':
@@ -262,7 +267,7 @@ class Question {
 			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches ) &&
 				$this->mBeingCorrected
 			) {
-				$rawClass = 'correction';
+				$rawClass = $attemptChecker ? 'correction selected' : 'correction unselected';
 				$text = array_pop( $matches );
 				$signesOutput = '<td>&#x2192;</td>';
 				// Hacks to avoid counting the number of signes.
