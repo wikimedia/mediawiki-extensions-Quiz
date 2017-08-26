@@ -4,17 +4,19 @@ class Question {
 	/**
 	 * Constructor
 	 *
-	 * @param bool $beingCorrected
-	 * @param bool $caseSensitive
-	 * @param int $questionId the Identifier of the question used to generate input names.
-	 * @param Parser &$parser the wikitext parser.
+	 * @param Boolean $beingCorrected : Identifier for quiz being corrected.
+	 * @param Boolean $caseSensitive : Identifier for case sensitive inputs.
+	 * @param Integer $questionId : the Identifier of the question used to generate input names.
+	 * @param Integer $shufAns : Identifier if answers are supposed to be shuffled.
+	 * @param Parser &$parser : Parser the wikitext parser.
 	 */
-	public function __construct( $beingCorrected, $caseSensitive, $questionId, &$parser ) {
+	public function __construct( $beingCorrected, $caseSensitive, $questionId, $shufAns, &$parser ) {
 		global $wgRequest;
 		$this->mRequest = &$wgRequest;
 		$this->mQuestionId = $questionId;
 		$this->mBeingCorrected = $beingCorrected;
 		$this->mCaseSensitive = $caseSensitive;
+		$this->shuffleAnswers = $shufAns;
 		$this->mParser = $parser;
 		$this->mState = ( $beingCorrected ) ? 'NA' : '';
 		$this->mType = 'multipleChoice';
@@ -125,6 +127,44 @@ class Question {
 	}
 
 	/**
+	 * Check order obtained from request
+	 *
+	 * @param string $order : The order obtained from request
+	 * @param Integer $proposalIndex : Contains the index of last Proposal
+	 *
+	 * @return int
+	 */
+	function checkRequestOrder( $order, $proposalIndex ) {
+		$tempOrder = explode( ' ', $order );
+
+		// Check the number of order matches number of proposals
+		if ( count( $tempOrder ) !== $proposalIndex + 1 ) {
+			return 1;
+		}
+
+		// Check if each value is numeric and is within 0 to proposalIndex rannge
+		foreach ( $tempOrder as $orderVal ) {
+			if ( !is_numeric( $orderVal ) ) {
+				return 1;
+			}
+			if ( $orderVal < 0 || $orderVal > $proposalIndex ) {
+				return 1;
+			}
+		}
+
+		// Check for repeated values
+		$orderChecker = array_fill( 0, $proposalIndex + 1, 0 );
+		foreach ( $tempOrder as $orderVal ) {
+			if ( $orderChecker[ $orderVal ] !== 1 ) {
+				$orderChecker[ $orderVal ] = 1;
+			} else {
+				return 1;
+			}
+		}
+		return 0;
+	}
+
+	/**
 	 * Transmit a single choice object to the basic type parser.
 	 *
 	 * @param string $input A question object in quiz syntax.
@@ -162,12 +202,15 @@ class Question {
 		// Parameters used in some special cases.
 		$expectOn = 0;
 		$attemptChecker = 0;
+		$lines = [];
+		$proposalIndex = -1;
 		$checkedCount = 0;
 		foreach ( $raws as $proposalId => $raw ) {
 			$text = null;
 			$colSpan = '';
 			$signesOutput = '';
 			if ( preg_match( $this->mProposalPattern, $raw, $matches ) ) {
+				$proposalIndex++;
 				$rawClass = 'proposal';
 				// Insulate the proposal signes.
 				$text = array_pop( $matches );
@@ -275,18 +318,73 @@ class Question {
 				$colSpan = ' colspan="13"';
 			}
 			if ( $text ) {
-				$output .= '<tr class="' . $rawClass . '">' . "\n";
-				$output .= $signesOutput;
-				$output .= '<td' . $colSpan . '>';
-				$output .= $this->mParser->recursiveTagParse( $text );
-				$output .= '</td>';
-				$output .= '</tr>' . "\n";
+				$lineOutput = '';
+				$lineOutput = '<tr class="' . $rawClass . '">' . "\n";
+				$lineOutput .= $signesOutput;
+				$lineOutput .= '<td' . $colSpan . '>';
+				$lineOutput .= $this->mParser->recursiveTagParse( $text );
+				$lineOutput .= '</td>';
+				$lineOutput .= '</tr>' . "\n";
+				if ( $rawClass === 'correction selected' || $rawClass === 'correction unselected' ) {
+					if ( $proposalIndex === -1 ) {
+						// Add to output directly
+						$output .= $lineOutput;
+					} else {
+						// Add feedback to previous proposal
+						$lines[ $proposalIndex ] .= $lineOutput;
+					}
+				} else {
+					// Add lineOutput for proposal
+					$lines[ $proposalIndex ] = $lineOutput;
+				}
 			}
 		}
 		// A single choice object with no correct proposal is a syntax error.
 		if ( isset( $typeId ) && $typeId == 'sn' && $expectOn == 0 ) {
 			$this->setState( 'error' );
 		}
+		// Finding order of shuffled proposals
+		$order = '';
+		if ( $this->shuffleAnswers ) {
+			$order = '';
+			if ( $this->mBeingCorrected ) {
+				$orderInvalid = 0;
+				$order = $this->mRequest->getVal( $this->mQuestionId . '|order' );
+				// Check order values
+				$orderInvalid = $this->checkRequestOrder( $order, $proposalIndex );
+
+				// If order is invalid then order is reset
+				if ( $orderInvalid ) {
+					$order = '';
+					for ( $i = 0; $i <= $proposalIndex; $i++ ) {
+						$order .= ' '.$i;
+					}
+				}
+			} else {
+				for ( $i = 0; $i <= $proposalIndex; ) {
+					$j = rand( 0, $proposalIndex );
+					if ( strpos( $order, ''.$j ) == false ) {
+						$order .= ' '.$j;
+						$i++;
+					}
+				}
+			}
+		} else {
+			for ( $i = 0; $i <= $proposalIndex; $i++ ) {
+				$order .= ' '.$i;
+			}
+		}
+		$order = ltrim( $order );
+		$tempOrder = explode( ' ', $order );
+		for ( $i = 0; $i <= $proposalIndex; ++$i ) {
+			$output .= $lines[ $tempOrder[ $i ] ];
+		}
+		$orderName = $this->mQuestionId . '|order';
+		$orderValue = $order;
+		$attribs['hidden'] = 'hidden';
+		$attribs['checked'] = 'checked';
+		$orderHtml = Xml::input( $orderName, $orderSize = null, $orderValue, $attribs );
+		$output = $this->shuffleAnswers ? $orderHtml . $output : $output;
 		return $output;
 	}
 

@@ -35,7 +35,9 @@ class QuestionTest extends MediaWikiLangTestCase {
 	}
 
 	private function getQuestion( $beingCorrected, $caseSensitive, $questionId ) {
-		return new Question( $beingCorrected, $caseSensitive, $questionId, $this->parser );
+		// Randomly generate shuffle parameter value
+		$shuffle = rand( 0, 100 ) % 2 == 0 ? 0 : 1;
+		return new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser );
 	}
 
 	private function getRequest() {
@@ -303,6 +305,33 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$this->question->mRequest->setVal( $number, $requestValue );
 		$output = $this->question->parseTextField( $input );
+		$this->assertEquals( $output, $expected );
+	}
+
+	public function provideCheckRequestOrder() {
+		return [
+			// Test for correct order
+			[ '1 0 2 3', 3, 0 ],
+			// Test for order having repeated values
+			[ '3 3 2 2', 3, 1 ],
+			// Test for order having more values than the number of proposals
+			[ '0 1 4 3 5', 3, 1 ],
+			// Test for order having less values than the number of proposals
+			[ '0 1 3', 3, 1 ],
+			// Test for order having value more than proposalIndex
+			[ '0 1 2 4', 3, 1 ],
+			// Test for order having value less than proposalIndex
+			[ '0 -1 1 2', 3, 1 ]
+		];
+	}
+
+	/**
+	 * @dataProvider provideCheckRequestOrder
+	 * @covers Question::checkRequestOrder
+	 */
+	public function testCheckRequestOrder( $order, $proposalIndex, $expected ) {
+		$this->question = $this->getQuestion( $beingCorrected = 1, 1, 2 );
+		$output = $this->question->checkRequestOrder( $order, $proposalIndex );
 		$this->assertEquals( $output, $expected );
 	}
 

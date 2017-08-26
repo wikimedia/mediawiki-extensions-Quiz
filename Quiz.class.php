@@ -35,6 +35,8 @@ class Quiz {
 		$this->mIgnoringCoef = false;
 		$this->mDisplaySimple = ( array_key_exists( 'display', $argv ) &&
 			$argv['display'] == 'simple' );
+		$this->shuffleAnswers = ( array_key_exists( 'shuffleanswers', $argv ) &&
+			$argv['shuffleanswers'] == 'true' );
 
 		if ( $this->mBeingCorrected ) {
 			$lAddedPoints = str_replace( ',', '.',
@@ -271,6 +273,7 @@ class Quiz {
 			$this->mBeingCorrected,
 			$this->mCaseSensitive,
 			$this->mQuestionId,
+			$this->shuffleAnswers,
 			$this->mParser
 		);
 		Hooks::run( 'QuizQuestionCreated', [ $this, &$question ] );
