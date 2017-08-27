@@ -10,8 +10,8 @@ class Quiz {
 	/**
 	 * Constructor
 	 *
-	 * @param $argv array
-	 * @param $parser Parser
+	 * @param array $argv
+	 * @param Parser &$parser
 	 */
 	public function __construct( $argv, &$parser ) {
 		global $wgRequest;
@@ -96,7 +96,7 @@ class Quiz {
 	/**
 	 * Get HTML from template using TemplateParser
 	 *
-	 * @param $templateParser TemplateParser
+	 * @param TemplateParser $templateParser
 	 * @return string
 	 */
 	function getSettingsTable( $templateParser ) {
@@ -135,7 +135,7 @@ class Quiz {
 	/**
 	 * Convert the input text to an HTML output.
 	 *
-	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @param string $input text between <quiz> and </quiz> tags, in quiz syntax.
 	 * @return string
 	 */
 	function parseQuiz( $input ) {
@@ -181,7 +181,7 @@ class Quiz {
 	/**
 	 * Replace inclusions from other quizzes.
 	 *
-	 * @param $input String: text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @param string $input text between <quiz> and </quiz> tags, in quiz syntax.
 	 * @return string
 	 */
 	function parseIncludes( $input ) {
@@ -195,7 +195,7 @@ class Quiz {
 	/**
 	 * Include text between <quiz> and <quiz> from another page to this quiz.
 	 *
-	 * @param $matches array: elements matching $includePattern.
+	 * @param array $matches elements matching $includePattern
 	 * 							$matches[1] is the page title.
 	 * @return mixed|string
 	 */
@@ -218,7 +218,7 @@ class Quiz {
 	/**
 	 * Replace questions from quiz syntax to HTML.
 	 *
-	 * @param $input String: a question in quiz syntax.
+	 * @param string $input a question in quiz syntax.
 	 * @return string
 	 */
 	function parseQuestions( $input ) {
@@ -260,10 +260,10 @@ class Quiz {
 	/**
 	 * Convert a question from quiz syntax to HTML
 	 *
-	 * @param $matches array: elements matching $questionPattern.
+	 * @param array $matches elements matching $questionPattern
 	 * 						$matches[1] is the question header.
 	 * 						$matches[3] is the question object.
-	 * @param $numDisplay Boolean: specifies whether to display question number.
+	 * @param bool $numDisplay specifies whether to display question number.
 	 * @return string
 	 */
 	function parseQuestion( $matches, $numDisplay ) {

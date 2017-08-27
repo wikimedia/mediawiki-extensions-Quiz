@@ -4,10 +4,10 @@ class Question {
 	/**
 	 * Constructor
 	 *
-	 * @param $beingCorrected Boolean.
-	 * @param $caseSensitive Boolean.
-	 * @param $questionId Integer: the Identifier of the question used to generate input names.
-	 * @param $parser Parser the wikitext parser.
+	 * @param bool $beingCorrected
+	 * @param bool $caseSensitive
+	 * @param int $questionId the Identifier of the question used to generate input names.
+	 * @param Parser &$parser the wikitext parser.
 	 */
 	public function __construct( $beingCorrected, $caseSensitive, $questionId, &$parser ) {
 		global $wgRequest;
@@ -29,7 +29,7 @@ class Question {
 	 * Mutator of the question state
 	 *
 	 * @protected
-	 * @param $pState String:
+	 * @param string $pState
 	 */
 	function setState( $pState ) {
 		if ( $pState == 'error' || ( $pState == 'wrong' && $this->mState != 'error' ) ||
@@ -54,6 +54,7 @@ class Question {
 	 * Accessor of the question state.
 	 *
 	 * @protected
+	 * @return string
 	 */
 	function getState() {
 		if ( $this->mState == 'na_right' ) {
@@ -68,7 +69,7 @@ class Question {
 	/**
 	 * Convert the question's header into HTML.
 	 *
-	 * @param $input String: the quiz header in quiz syntax.
+	 * @param string $input the quiz header in quiz syntax.
 	 * @return string
 	 */
 	function parseHeader( $input ) {
@@ -95,7 +96,7 @@ class Question {
 	/**
 	 * Determine the question's parameters.
 	 *
-	 * @param $matches array: elements matching $parametersPattern
+	 * @param array $matches elements matching $parametersPattern
 	 * 						$matches[0] are the potential question parameters.
 	 */
 	function parseParameters( $matches ) {
@@ -126,7 +127,7 @@ class Question {
 	/**
 	 * Transmit a single choice object to the basic type parser.
 	 *
-	 * @param $input string A question object in quiz syntax.
+	 * @param string $input A question object in quiz syntax.
 	 *
 	 * @return string A question object in HTML.
 	 */
@@ -137,7 +138,7 @@ class Question {
 	/**
 	 * Transmit a multiple choice object to the basic type parser.
 	 *
-	 * @param $input string A question object in quiz syntax.
+	 * @param string $input A question object in quiz syntax.
 	 *
 	 * @return string A question object in HTML.
 	 */
@@ -148,8 +149,8 @@ class Question {
 	/**
 	 * Convert a basic type object from quiz syntax to HTML.
 	 *
-	 * @param $input string A question object in quiz syntax
-	 * @param $inputType string
+	 * @param string $input A question object in quiz syntax
+	 * @param string $inputType
 	 *
 	 * @return string A question object in HTML.
 	 */
@@ -293,7 +294,7 @@ class Question {
 	 * Determine the object's parameters and convert a list of categories from
 	 * quiz syntax to HTML.
 	 *
-	 * @param $input String: pipe-separated list of the various categories.
+	 * @param string $input pipe-separated list of the various categories.
 	 * @return string
 	 */
 	function parseCategories( $input ) {
@@ -327,7 +328,7 @@ class Question {
 	/**
 	 * Convert a "text field" object to HTML.
 	 *
-	 * @param $input string A question object in quiz syntax.
+	 * @param string $input A question object in quiz syntax.
 	 *
 	 * @return string A question object in HTML.
 	 */
@@ -363,7 +364,7 @@ class Question {
 	}
 
 	/**
-	 * @param $input array
+	 * @param array $input
 	 * @return string
 	 */
 	function parseTextField( $input ) {
