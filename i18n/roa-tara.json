@@ -5,9 +5,9 @@
 		]
 	},
 	"quiz_desc": "Permette de ccrejà le quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Punde|Punde}} aggiunde pe 'na resposta corrette",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punde|Punde}} pe 'na resposta sbagliate",
-	"quiz_ignoreCoef": "No scè penzanne a le coefficiende de le domande",
+	"quiz_addedPoints": "{{PLURAL:$1|Punde}} aggiunde pe 'na resposta corrette:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punde}} pe 'na resposta sbagliate:",
+	"quiz_ignoreCoef": "No scè penzanne a le coefficiende de le domande:",
 	"quiz_shuffle": "Miscke le domande",
 	"quiz_colorRight": "Esatte",
 	"quiz_colorWrong": "Sbagliete",
