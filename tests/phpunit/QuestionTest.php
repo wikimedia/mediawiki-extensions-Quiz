@@ -159,7 +159,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			// Test case when Question is not being corrected and input has Categories with link
 			[ '0', 'Option A | [[Article name | Option B]] | Option C',
 			 [ '<tr class="categories">'. "\n"
-			 . '<th>Option A </th><th> <!--LINK 0:0--> </th><th> Option C</th></tr>' . "\n",
+			 . '<th>Option A </th><th> <!--LINK\'" 0:0--> </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 ''
 			 ]
@@ -167,7 +167,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			// Test case when Question is being corrected and input has Categories with link
 			[ '1', 'Option A | [[Article name | Option B]] | Option C',
 			 [ '<tr class="categories">'. "\n"
-			 . '<th>Option A </th><th> <!--LINK 0:0--> </th><th> Option C</th></tr>' . "\n",
+			 . '<th>Option A </th><th> <!--LINK\'" 0:0--> </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'NA'
 			 ]
