@@ -77,7 +77,7 @@ class QuizTest extends MediaWikiLangTestCase {
 
 	/**
 	 * @dataProvider provideParseQuestion
-	 * @covers Question::parseQuestion
+	 * @covers Quiz::parseQuestion
 	 */
 	public function testParseQuestion( $input, $expected, $injectedValue, $expectedValue ) {
 		$this->quiz->mShuffleDiv = $injectedValue;
