@@ -33,7 +33,7 @@
  * @author Louis-Rémi Babe <lrbabe@gmail.com>
  */
 
-(function () {
+( function ( mw, $ ) {
 	'use strict';
 
 	/**
@@ -44,7 +44,7 @@
 	 * @param {jQuery} $area The quiz area to shuffle.
 	 */
 	function shuffle( $area ) {
-		var $div = $area.children(),
+		var l, x, m, i, $div = $area.children(),
 			questions = [];
 
 		$div.each( function () {
@@ -59,15 +59,14 @@
 		} );
 
 		if ( !$area.hasClass( 'noshuffle' ) ) {
-			var l, x;
-			for ( var m = questions.length - 1; m >= 0; m-- ) {
+			for ( m = questions.length - 1; m >= 0; m-- ) {
 				l = parseInt( Math.random() * m );
 				x = questions[ m ];
 				questions[ m ] = questions[ l ];
 				questions[ l ] = x;
 			}
 		}
-		for ( var i = 0; i < questions.length; i++ ) {
+		for ( i = 0; i < questions.length; i++ ) {
 			$area.append( questions[ i ] );
 		}
 	}
@@ -79,7 +78,7 @@
 	 */
 	function shuffleNumbering( $area ) {
 		$area.find( '.questionId' ).each( function ( i ) {
-			$( this ).text( i+1 );
+			$( this ).text( i + 1 );
 		} );
 	}
 
@@ -141,4 +140,4 @@
 	}
 
 	mw.hook( 'wikipage.content' ).add( prepareQuiz );
-})();
+}( mediaWiki, jQuery ) );

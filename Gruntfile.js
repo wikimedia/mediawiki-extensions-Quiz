@@ -1,7 +1,7 @@
-/*jshint node:true */
+/* eslint-env node */
 module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
@@ -9,7 +9,7 @@ module.exports = function ( grunt ) {
 		banana: {
 			all: 'i18n/'
 		},
-		jshint: {
+		eslint: {
 			all: [
 				'**/*.js',
 				'!node_modules/**',
@@ -32,6 +32,6 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'jshint', 'jsonlint', 'banana', 'stylelint' ] );
+	grunt.registerTask( 'test', [ 'banana', 'eslint', 'jsonlint', 'stylelint' ] );
 	grunt.registerTask( 'default', 'test' );
 };
