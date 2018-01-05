@@ -453,6 +453,8 @@ class Question {
 					$text
 				);
 				$text = '<td class="input">' . $text . '</td>';
+			} else {
+				continue;
 			}
 			$output .= '<tr class="' . $rawClass . '">' . "\n";
 			$output .= $text . "\n";
