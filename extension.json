@@ -19,7 +19,6 @@
 	"ResourceModules": {
 		"ext.quiz": {
 			"scripts": "ext.quiz.js",
-			"position": "top",
 			"targets": [ "desktop", "mobile" ]
 		},
 		"ext.quiz.styles": {
