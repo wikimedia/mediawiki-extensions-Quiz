@@ -176,8 +176,6 @@ class Quiz {
 				]
 			]
 		);
-
-		return $output;
 	}
 
 	/**
