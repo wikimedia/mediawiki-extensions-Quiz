@@ -3,13 +3,14 @@
 		"authors": [
 			"Consta",
 			"Protnet",
-			"ZaDiak"
+			"ZaDiak",
+			"Nikosgranturismogt"
 		]
 	},
 	"quiz_desc": "Επιτρέπει τη δημιουργία κουίζ",
-	"quiz_addedPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} που προστίθενται για σωστή απάντηση",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} για λανθασμένη απάντηση",
-	"quiz_ignoreCoef": "Αγνόηση συντελεστών ερωτήσεων",
+	"quiz_addedPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} που προστίθενται για σωστή απάντηση:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} για λανθασμένη απάντηση:",
+	"quiz_ignoreCoef": "Αγνόηση συντελεστών ερωτήσεων:",
 	"quiz_shuffle": "Ανακάτεμα ερωτήσεων",
 	"quiz_colorRight": "Σωστό",
 	"quiz_colorWrong": "Λάθος",
