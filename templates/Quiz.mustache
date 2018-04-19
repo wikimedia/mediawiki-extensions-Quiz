@@ -10,6 +10,7 @@
 			{{{ quiz.questions }}}
 		</div>
 		<p>
+		        <input type="hidden" name="quiz_time" value="0" />
 			<input type="submit" value="{{ wfMessage.quiz_correction }}"/>
 			{{#if quiz.beingCorrected }}
 				<input class="reset" type="submit" value="{{ wfMessage.quiz_reset }}">
@@ -17,7 +18,10 @@
 		</p>
 		{{#if quiz.beingCorrected }}
 			<span class="correction">
-				{{{ wfMessage.quiz_score }}}
+				{{{ wfMessage.quiz_score }}}.
+			</span>
+			<span class="quiz_time">
+			    {{{ wfMessage.quiz_time}}}
 			</span>
 		{{/if}}
 	</form>

@@ -16,5 +16,6 @@
 	"quiz_correction": "Submit",
 	"quiz_score": "Your score is $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 point|$2 points}}",
-	"quiz_reset": "Reset"
+        "quiz_reset": "Reset",
+        "quiz_time" : "You took you $1 $2 to complete this quiz."
 }

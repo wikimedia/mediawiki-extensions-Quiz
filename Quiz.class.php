@@ -25,8 +25,15 @@ class Quiz {
 		// Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
 		$this->mShuffleDiv = 0;
 		// Determine if this quiz is being corrected or not, according to the quizId
-		$this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == strval( $this->mQuizId ) );
-		// Initialize various parameters used for the score calculation
+	        $this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == strval( $this->mQuizId ) );
+	        // Get the time taken for solving the quiz
+	        $this->quiz_time = $wgRequest->getVal('quiz_time');
+	        $this->time_unit = "seconds";
+     	        if (is_numeric($this->quiz_time))
+		    $this->quiz_time = intval($this->quiz_time);
+	        else
+		    $this->quiz_time = 0;
+	        // Initialize various parameters used for the score calculation
 		$this->mState = 'NA';
 		$this->numberQuestions = 0;
 		$this->mTotal = $this->mScore = 0;
@@ -134,6 +141,27 @@ class Quiz {
 		return $settingsTable;
 	}
 
+        /** 
+	 *  Converts time to more human readable units
+	 *
+	 */
+        function human_readable_time(){
+	    $time = $this->quiz_time;
+	    $unit = $this->time_unit;
+	    
+	    if ($unit == "seconds" && $time > 60){
+		$time = $time / 60;
+		$unit = "minutes";
+	    }
+	     
+	    if ($unit == "minutes" && $time > 60){
+		$time = $time / 60;
+		$unit = "hours";
+	    }
+	    $this->quiz_time = $time;
+	    $this->time_unit = $unit;
+	}
+    
 	/**
 	 * Convert the input text to an HTML output.
 	 *
@@ -160,6 +188,9 @@ class Quiz {
 			'<span class="score">' . $this->mScore . '</span>',
 			'<span class="total">' . $this->mTotal . '</span>' )->escaped();
 
+   	        $this->human_readable_time();
+	        $quiz_time = wfMessage( 'quiz_time' )->rawParams($this->quiz_time, $this->time_unit)->escaped();
+	    
 		return $templateParser->processTemplate(
 			'Quiz',
 			[
@@ -172,7 +203,8 @@ class Quiz {
 				'wfMessage' => [
 					'quiz_correction' => wfMessage( 'quiz_correction' )->escaped(),
 					'quiz_reset' => wfMessage( 'quiz_reset' )->escaped(),
-					'quiz_score' => $quiz_score
+					'quiz_score' => $quiz_score,
+				        'quiz_time' => $quiz_time
 				]
 			]
 		);
@@ -338,7 +370,7 @@ class Quiz {
 				case 'right':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore += $this->mAddedPoints * $question->mCoef;
-
+				
 					$tableTitle = wfMessage(
 						'quiz_points',
 						wfMessage( 'quiz_colorRight' )->text(),

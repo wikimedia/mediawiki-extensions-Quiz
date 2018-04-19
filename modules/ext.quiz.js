@@ -103,6 +103,12 @@
 			this.form.quizId.value = '';
 			this.form.submit();
 		} );
+	        // Update time just before submit
+	        $content.find( 'div.quiz form').submit( function () {
+		    if (this.quiz_time.value != "0"){
+			this.quiz_time.value = Math.floor(Date.now() / 1000) - this.quiz_time.value;
+		    }
+		} );
 		// Correct the bug of IE6 on textfields
 		// TODO: Is it still necessary? (IE<10 has no JS at all)
 		if ( document.body.style.maxHeight === undefined ) {
@@ -118,16 +124,23 @@
 					$( this ).parent().children( ':first' ).css( 'display', 'inline' );
 				} );
 		}
-		$input.filter( '.numbers, .words' ).keydown( function () {
+   	        $input.filter( '.numbers, .words' ).keydown( function () {
+		        if (this.form.quiz_time.value == "0"){
+			    this.form.quiz_time.value = Math.floor(Date.now() / 1000);
+			}
 			if ( this.form.shuffleButton ) {
 				this.form.shuffleButton.disabled = true;
 			}
 		} );
-		$input.filter( '.check' ).click( function () {
+	        $input.filter( '.check' ).click( function () {
+		        if (this.form.quiz_time.value == "0"){
+			    this.form.quiz_time.value = Math.floor(Date.now() / 1000);
+			}
 			if ( this.form.shuffleButton ) {
 				this.form.shuffleButton.disabled = true;
 			}
 		} );
+	        $
 		// Disable submit button while previewing the quiz as submitting would start a POST request
 		// without the edit data.
 		// This should be done after full page load as #editform may be outside $content.
