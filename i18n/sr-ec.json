@@ -5,10 +5,11 @@
 			"Rancher",
 			"Sasa Stefanovic",
 			"Сербијана",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
-	"quiz_desc": "Омогућава стварање квизова",
+	"quiz_desc": "Омогућава прављење квизова",
 	"quiz_addedPoints": "{{PLURAL:$1|бод|бода|бодова}} се додаје на тачан одговор",
 	"quiz_cutoffPoints": "{{PLURAL:$1|Бод|Бода|Бодова}} за погрешан одговор",
 	"quiz_ignoreCoef": "Занемари коефицијенте питања:",
