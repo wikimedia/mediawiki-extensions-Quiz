@@ -30,11 +30,11 @@
 	padding-left: 20px;
 }
 
-.quiz .margin.right {
+.quiz .margin.correct {
 	background-color: #14866d;
 }
 
-.quiz .margin.wrong {
+.quiz .margin.incorrect {
 	background-color: #d33;
 }
 
@@ -66,19 +66,19 @@
 	border-width: 0 3px 0 0;
 }
 
-.quiz .question .border.right,
-.quiz .question .border.wrong,
+.quiz .question .border.correct,
+.quiz .question .border.incorrect,
 .quiz .question .border.correction,
 .quiz .question .border.NA,
 .quiz .question .border.error {
 	border-style: solid;
 }
 
-.quiz .question .border.right {
+.quiz .question .border.correct {
 	border-color: #14866d;
 }
 
-.quiz .question .border.wrong {
+.quiz .question .border.incorrect {
 	border-color: #d33;
 }
 
@@ -94,12 +94,12 @@
 	border-color: #fc3;
 }
 
-.quiz .question .check.right {
+.quiz .question .check.correct {
 	outline: 3px solid #14866d;
 	*border: 3px solid #14866d;
 }
 
-.quiz .question .check.wrong {
+.quiz .question .check.incorrect {
 	outline: 3px solid #d33;
 	*border: 3px solid #d33;
 }

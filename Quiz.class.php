@@ -119,10 +119,10 @@ class Quiz {
 					'quiz_added' => wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->text(),
 					'quiz_cutoff' => wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->text(),
 					'quiz_ignoreCoef' => wfMessage( 'quiz_ignoreCoef' )->text(),
-					'quiz_colorRight' => wfMessage( 'quiz_colorRight' )->text(),
-					'quiz_colorWrong' => wfMessage( 'quiz_colorWrong' )->text(),
-					'quiz_colorNA' => wfMessage( 'quiz_colorNA' )->text(),
-					'quiz_colorError' => wfMessage( 'quiz_colorError' )->text(),
+					'quiz_legend_correct' => wfMessage( 'quiz_legend_correct' )->text(),
+					'quiz_legend_incorrect' => wfMessage( 'quiz_legend_incorrect' )->text(),
+					'quiz_legend_unanswered' => wfMessage( 'quiz_legend_unanswered' )->text(),
+					'quiz_legend_error' => wfMessage( 'quiz_legend_error' )->text(),
 					'quiz_shuffle' => wfMessage( 'quiz_shuffle' )->text()
 				],
 				'mAddedPoints' => $this->mAddedPoints,
@@ -327,7 +327,7 @@ class Quiz {
 
 		$tableTitle = "";
 
-		$lState = $question->getState(); // right wrong or unanswered?
+		$lState = $question->getState(); // correct, incorrect or unanswered?
 
 		if ( $lState != '' ) {
 			// if the question is of type=simple
@@ -335,24 +335,24 @@ class Quiz {
 				$question->mCoef = 1;
 			}
 			switch ( $lState ) {
-				case 'right':
+				case 'correct':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore += $this->mAddedPoints * $question->mCoef;
 
 					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorRight' )->text(),
+						wfMessage( 'quiz_legend_correct' )->text(),
 						$this->mAddedPoints * $question->mCoef
 					)->escaped();
 					break;
 
-				case 'wrong':
+				case 'incorrect':
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 					$this->mScore -= $this->mCutoffPoints * $question->mCoef;
 
 					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorWrong' )->text(),
+						wfMessage( 'quiz_legend_incorrect' )->text(),
 						-$this->mCutoffPoints * $question->mCoef
 					)->escaped();
 					break;
@@ -362,7 +362,7 @@ class Quiz {
 
 					$tableTitle = wfMessage(
 						'quiz_points',
-						wfMessage( 'quiz_colorNA' )->text(),
+						wfMessage( 'quiz_legend_unanswered' )->text(),
 						0
 					)->escaped();
 					break;

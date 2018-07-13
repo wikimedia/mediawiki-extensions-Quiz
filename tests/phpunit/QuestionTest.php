@@ -51,10 +51,10 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertThat(
 			$state,
 			$this->logicalOr(
-				$this->equalTo( 'right' ),
+				$this->equalTo( 'correct' ),
 				$this->equalTo( 'error' ),
 				$this->equalTo( 'NA' ),
-				$this->equalTo( 'wrong' )
+				$this->equalTo( 'incorrect' )
 			)
 		);
 	}
@@ -62,12 +62,12 @@ class QuestionTest extends MediaWikiLangTestCase {
 	public function provideSetState() {
 		return [
 			[ 'NA', 'error', 'error' ],
-			[ 'NA', 'na_wrong', 'na_wrong' ],
-			[ 'na_right', 'na_wrong', 'na_wrong' ],
-			[ 'na_wrong', 'na_right', 'na_wrong' ],
-			[ 'right', 'na_wrong', 'wrong' ],
-			[ 'na_wrong', 'right', 'wrong' ],
-			[ 'error', 'na_wrong', 'error' ]
+			[ 'NA', 'na_incorrect', 'na_incorrect' ],
+			[ 'na_correct', 'na_incorrect', 'na_incorrect' ],
+			[ 'na_incorrect', 'na_correct', 'na_incorrect' ],
+			[ 'correct', 'na_incorrect', 'incorrect' ],
+			[ 'na_incorrect', 'correct', 'incorrect' ],
+			[ 'error', 'na_incorrect', 'error' ]
 		];
 	}
 
@@ -80,7 +80,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->question->setState( $previousState );
 		$this->question->setState( $inputState );
 		$state = $this->question->mState;
-		$this->assertEquals( $state, $expected );
+		$this->assertEquals( $expected, $state );
 	}
 
 	public function provideParseParameters() {
@@ -99,8 +99,8 @@ class QuestionTest extends MediaWikiLangTestCase {
 	public function testParseParameters( $beingCorrected, $input, $expected ) {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$this->question->parseParameters( $input );
-		$this->assertEquals( $this->question->mType, $expected[0] );
-		$this->assertEquals( $this->question->mCoef, $expected[1] );
+		$this->assertEquals( $expected[0], $this->question->mType );
+		$this->assertEquals( $expected[1], $this->question->mCoef );
 	}
 
 	public function provideParseHeader() {
@@ -119,7 +119,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 	public function testParseHeader( $beingCorrected, $input, $expected ) {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$header = $this->question->parseHeader( $input );
-		$this->assertEquals( $header, $expected );
+		$this->assertEquals( $expected, $header );
 	}
 
 	public function provideParseCategories() {
@@ -202,11 +202,11 @@ class QuestionTest extends MediaWikiLangTestCase {
 	public function testParseCategories( $beingCorrected, $input, $expected = [] ) {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$output = $this->question->parseCategories( $input );
-		$this->assertEquals( $output, $expected[0] );
+		$this->assertEquals( $expected[0], $output );
 		$pattern = $this->question->mProposalPattern;
-		$this->assertEquals( $pattern, $expected[1] );
+		$this->assertEquals( $expected[1], $pattern );
 		$state = $this->question->getState();
-		$this->assertEquals( $state, $expected[2] );
+		$this->assertEquals( $expected[2], $state );
 	}
 
 	public function provideParseTextField() {
@@ -251,8 +251,8 @@ class QuestionTest extends MediaWikiLangTestCase {
 			[ '4', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'. "\n\t\t\t"
-			 . '</span>' . "\n\t\t\t" . '<span class="border right">' . "\n\t\t\t\t"
-			 . '<input type="text" name="4" class="words" title="Right"  size="" '
+			 . '</span>' . "\n\t\t\t" . '<span class="border correct">' . "\n\t\t\t\t"
+			 . '<input type="text" name="4" class="words" title="Correct"  size="" '
 			 . 'maxlength="" autocomplete="off" value="Greece" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>'
 			 . "\n\t\n" . '</div>' . "\n",
@@ -263,8 +263,8 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '5', '1', [ '{ Plato (i) _6 }', 'Plato (i)', '_6', '6' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Plato<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
-			 . '<span class="border wrong">' . "\n\t\t\t\t"
-			 . '<input type="text" name="5" class="words" title="Wrong"  size="4" '
+			 . '<span class="border incorrect">' . "\n\t\t\t\t"
+			 . '<input type="text" name="5" class="words" title="Incorrect"  size="4" '
 			 . 'maxlength="6" autocomplete="off" value="morethansix" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -287,8 +287,8 @@ class QuestionTest extends MediaWikiLangTestCase {
 			 '7', '1', [ '{ 0 }', '0', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> 0<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
-			 . '<span class="border right">' . "\n\t\t\t\t"
-			 . '<input type="text" name="7" class="numbers" title="Right"  size="" '
+			 . '<span class="border correct">' . "\n\t\t\t\t"
+			 . '<input type="text" name="7" class="numbers" title="Correct"  size="" '
 			 . 'maxlength="" autocomplete="off" value="0" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
 			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
@@ -305,7 +305,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$this->question->mRequest->setVal( $number, $requestValue );
 		$output = $this->question->parseTextField( $input );
-		$this->assertEquals( $output, $expected );
+		$this->assertEquals( $expected, $output );
 	}
 
 	public function provideCheckRequestOrder() {
@@ -332,7 +332,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 	public function testCheckRequestOrder( $order, $proposalIndex, $expected ) {
 		$this->question = $this->getQuestion( $beingCorrected = 1, 1, 2 );
 		$output = $this->question->checkRequestOrder( $order, $proposalIndex );
-		$this->assertEquals( $output, $expected );
+		$this->assertEquals( $expected, $output );
 	}
 
 }

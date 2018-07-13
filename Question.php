@@ -34,20 +34,20 @@ class Question {
 	 * @param string $pState
 	 */
 	function setState( $pState ) {
-		if ( $pState == 'error' || ( $pState == 'wrong' && $this->mState != 'error' ) ||
-			( $pState == 'right' && ( $this->mState == 'NA' || $this->mState == 'na_right' ) ) ||
-			( $pState == 'na_wrong' && ( $this->mState == 'NA' || $this->mState == 'na_right' ) ) ||
-			( $pState == 'na_right' && ( $this->mState == 'NA' ) ) ||
-			( $pState == 'new_NA' && ( $this->mState == 'NA' || $this->mState == 'right' ) )
+		if ( $pState == 'error' || ( $pState == 'incorrect' && $this->mState != 'error' ) ||
+			( $pState == 'correct' && ( $this->mState == 'NA' || $this->mState == 'na_correct' ) ) ||
+			( $pState == 'na_incorrect' && ( $this->mState == 'NA' || $this->mState == 'na_correct' ) ) ||
+			( $pState == 'na_correct' && ( $this->mState == 'NA' ) ) ||
+			( $pState == 'new_NA' && ( $this->mState == 'NA' || $this->mState == 'correct' ) )
 		) {
 			$this->mState = $pState;
 		}
 
 		// Special cases
-		if ( ( $pState == 'na_wrong' && $this->mState == 'right' ) ||
-			( $pState == 'right' && $this->mState == 'na_wrong' )
+		if ( ( $pState == 'na_incorrect' && $this->mState == 'correct' ) ||
+			( $pState == 'correct' && $this->mState == 'na_incorrect' )
 		) {
-			$this->mState = 'wrong';
+			$this->mState = 'incorrect';
 		}
 		return;
 	}
@@ -59,9 +59,9 @@ class Question {
 	 * @return string
 	 */
 	function getState() {
-		if ( $this->mState == 'na_right' ) {
-			return 'right';
-		} elseif ( $this->mState == 'na_wrong' || $this->mState == 'new_NA' ) {
+		if ( $this->mState == 'na_correct' ) {
+			return 'correct';
+		} elseif ( $this->mState == 'na_incorrect' || $this->mState == 'new_NA' ) {
 			return 'NA';
 		} else {
 			return $this->mState;
@@ -257,19 +257,19 @@ class Question {
 							if ( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
 								$attribs['class'] .= ' error';
-								$attribs['title'] = wfMessage( 'quiz_colorError' )->escaped();
+								$attribs['title'] = wfMessage( 'quiz_legend_error' )->escaped();
 								$attribs['disabled'] = 'disabled';
 							}
 							if ( $this->mBeingCorrected ) {
 								if ( array_key_exists( 'checked', $attribs ) ) {
 									$checkedCount++;
-									$this->setState( 'right' );
-									$attribs['class'] .= ' right';
-									$attribs['title'] = wfMessage( 'quiz_colorRight' )->escaped();
+									$this->setState( 'correct' );
+									$attribs['class'] .= ' correct';
+									$attribs['title'] = wfMessage( 'quiz_legend_correct' )->escaped();
 								} else {
-									$this->setState( 'na_wrong' );
-									$attribs['class'] .= ' wrong';
-									$attribs['title'] = wfMessage( 'quiz_colorWrong' )->escaped();
+									$this->setState( 'na_incorrect' );
+									$attribs['class'] .= ' incorrect';
+									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->escaped();
 								}
 							}
 							break;
@@ -277,18 +277,18 @@ class Question {
 							if ( $this->mBeingCorrected ) {
 								if ( array_key_exists( 'checked', $attribs ) ) {
 									$checkedCount++;
-									$this->setState( 'wrong' );
-									$attribs['class'] .= ' wrong';
-									$attribs['title'] = wfMessage( 'quiz_colorWrong' )->escaped();
+									$this->setState( 'incorrect' );
+									$attribs['class'] .= ' incorrect';
+									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->escaped();
 								} else {
-									$this->setState( 'na_right' );
+									$this->setState( 'na_correct' );
 								}
 							}
 							break;
 						default:
 							$this->setState( 'error' );
 							$attribs['class'] .= ' error';
-							$attribs['title'] = wfMessage( 'quiz_colorError' )->escaped();
+							$attribs['title'] = wfMessage( 'quiz_legend_error' )->escaped();
 							$attribs['disabled'] = 'disabled';
 							break;
 					}
@@ -506,14 +506,14 @@ class Question {
 			if ( $this->mBeingCorrected ) {
 				$value = trim( $this->mRequest->getVal( $wqInputId ) );
 				$state = 'NA';
-				$title = wfMessage( 'quiz_colorNA' )->escaped();
+				$title = wfMessage( 'quiz_legend_unanswered' )->escaped();
 			}
 			$class = 'numbers';
 			$poss = ' ';
 			foreach (
 				preg_split( '` *\| *`', trim( $input[1] ), -1, PREG_SPLIT_NO_EMPTY ) as $possibility
 			) {
-				if ( $state == '' || $state == 'NA' || $state == 'wrong' ) {
+				if ( $state == '' || $state == 'NA' || $state == 'incorrect' ) {
 					if ( preg_match(
 						'`^(-?\d+\.?\d*)(-(-?\d+\.?\d*)| (\d+\.?\d*)(%))?$`',
 						str_replace( ',', '.', $possibility ),
@@ -542,11 +542,11 @@ class Question {
 									$value >= $matches[1] && $value <= $matches[3]
 								) || $value == $possibility )
 							) {
-								$state = 'right';
-								$title = wfMessage( 'quiz_colorRight' )->escaped();
+								$state = 'correct';
+								$title = wfMessage( 'quiz_legend_correct' )->escaped();
 							} else {
-								$state = 'wrong';
-								$title = wfMessage( 'quiz_colorWrong' )->escaped();
+								$state = 'incorrect';
+								$title = wfMessage( 'quiz_legend_incorrect' )->escaped();
 							}
 						}
 					} else {
@@ -563,11 +563,11 @@ class Question {
 									'`^' . preg_quote( $value, '`' ) . '$`i', $possibility
 								) )
 							) {
-								$state = 'right';
-								$title = wfMessage( 'quiz_colorRight' )->escaped();
+								$state = 'correct';
+								$title = wfMessage( 'quiz_legend_correct' )->escaped();
 							} else {
-								$state = 'wrong';
-								$title = wfMessage( 'quiz_colorWrong' )->escaped();
+								$state = 'incorrect';
+								$title = wfMessage( 'quiz_legend_incorrect' )->escaped();
 							}
 						}
 					}
@@ -597,7 +597,7 @@ class Question {
 				$size = '';
 				$maxlength = '';
 				$disabled = 'disabled';
-				$title = wfMessage( 'quiz_colorError' )->escaped();
+				$title = wfMessage( 'quiz_legend_error' )->escaped();
 			}
 		}
 		$name = $wqInputId;

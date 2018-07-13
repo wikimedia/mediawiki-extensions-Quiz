@@ -5,13 +5,13 @@
 		<td><input class="numerical" type="number" name="addedPoints" id="addedPoints" value="{{ mAddedPoints }}"/>&#160;&#160;</td>
 	{{/ notSimple}}
 	{{# corrected}}
-		<td class="margin right"></td>
-			<td style="background: transparent;">{{ wfMessage.quiz_colorRight }}</td>
+		<td class="margin correct"></td>
+			<td style="background: transparent;">{{ wfMessage.quiz_legend_correct }}</td>
 	{{/corrected}}
 	{{# error}}
 		{{^ corrected}}
 			<td class="margin error"></td>
-			<td>{{ wfMessage.quiz_colorError }}</td>
+			<td>{{ wfMessage.quiz_legend_error }}</td>
 		{{/corrected}}
 	{{/ error}}
 	</tr>
@@ -23,8 +23,8 @@
 		<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints" value="{{ mCutoffPoints }}"/></td>
 	{{/ notSimple}}
 	{{# corrected}}
-		<td class="margin wrong"></td>
-		<td style="background: transparent;">{{ wfMessage.quiz_colorWrong }}</td>
+		<td class="margin incorrect"></td>
+		<td style="background: transparent;">{{ wfMessage.quiz_legend_incorrect }}</td>
 	{{/ corrected}}
 	</tr>
 {{/ isSettingOtherRow}}
@@ -36,7 +36,7 @@
 	{{/ notSimple}}
 	{{# corrected}}
 		<td class="margin NA"></td>
-		<td style="background: transparent;">{{ wfMessage.quiz_colorNA }}</td>
+		<td style="background: transparent;">{{ wfMessage.quiz_legend_unanswered }}</td>
 	{{/ corrected}}
 	</tr>
 {{/ isSettingOtherRow}}
@@ -59,7 +59,7 @@
 		{{# error}}
 			{{# corrected}}
 				<td class="margin error"></td>
-				<td>{{ wfMessage.quiz_colorError }}</td>
+				<td>{{ wfMessage.quiz_legend_error }}</td>
 			{{/ corrected}}
 		{{/ error}}
 	</tr>

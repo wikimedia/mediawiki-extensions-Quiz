@@ -16,12 +16,12 @@
 	"quiz_cutoffPoints": "Used as label for \"cutoff points\" input box. Parameters:\n* $1 - cutoff points",
 	"quiz_ignoreCoef": "Used as label for the \"Ignore coef\" checkbox.",
 	"quiz_shuffle": "Used as label for the \"Shuffle\" button.",
-	"quiz_colorRight": "Used as label for correct answer.\n{{Related|Quiz color}}\n{{Identical|Right}}",
-	"quiz_colorWrong": "Used as label for wrong answer.\n{{Related|Quiz color}}",
-	"quiz_colorNA": "Used as label for \"Not answered question\".\n{{Related|Quiz color}}",
-	"quiz_colorError": "Used as label.\n{{Related|Quiz color}}\n{{Identical|Syntax error}}",
+	"quiz_legend_correct": "Used as label for correct answer.\n{{Related|Quiz color}}\n{{Identical|Correct}}",
+	"quiz_legend_incorrect": "Used as label for incorrect answer.\n{{Related|Quiz color}}",
+	"quiz_legend_unanswered": "Used as label for \"Not answered question\".\n{{Related|Quiz color}}",
+	"quiz_legend_error": "Used as label.\n{{Related|Quiz color}}\n{{Identical|Syntax error}}",
 	"quiz_correction": "Used as label for the \"Submit\" button.\n{{Identical|Submit}}",
 	"quiz_score": "Parameters:\n* $1 - examminee's score\n* $2 - perfect score",
-	"quiz_points": "Used as title for the <code><nowiki><table></nowiki></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz colorRight}}\n** {{msg-mw|Quiz colorWrong}}\n** {{msg-mw|Quiz colorNA}}\n* $2 - number of points",
+	"quiz_points": "Used as title for the <code><nowiki><table></nowiki></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz_legend_correct}}\n** {{msg-mw|Quiz_legend_incorrect}}\n** {{msg-mw|Quiz_legend_unanswered}}\n* $2 - number of points",
 	"quiz_reset": "Used as label for the \"Reset\" button.\n\nPreceded by the \"Submit\" button.\n{{Identical|Reset}}"
 }

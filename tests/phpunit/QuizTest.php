@@ -96,7 +96,7 @@ class QuizTest extends MediaWikiLangTestCase {
 			 "\n\t\t" . '<td><input class="numerical" type="number" ' .
 			 'name="addedPoints" id="addedPoints" value="3"/>&#160;&#160;</td>' . "\n\t\n\t\n\t\n\t" .
 			 '</tr>' . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="cutoffPoints">'
-			 . 'Point for a wrong answer:</label></td>'
+			 . 'Point for an incorrect answer:</label></td>'
 			 . "\n\t\t" . '<td><input class="numerical" type="number" ' .
 			 'name="cutoffPoints" id="cutoffPoints" value="-1"/></td>' . "\n\t\n\t\n\t" .
 			 '</tr>' . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="ignoringCoef">'
@@ -115,13 +115,13 @@ class QuizTest extends MediaWikiLangTestCase {
 			 'Point added for a correct answer:</label></td>'
 			 . "\n\t\t" . '<td><input class="numerical" type="number" name="addedPoints" ' .
 			 'id="addedPoints" value="1"/>&#160;&#160;</td>' . "\n\t\n\t\n\t\t" .
-			 '<td class="margin right"></td>' . "\n\t\t\t" .
-			 '<td style="background: transparent;">Right</td>' . "\n\t\n\t\n\t" . '</tr>' .
+			 '<td class="margin correct"></td>' . "\n\t\t\t" .
+			 '<td style="background: transparent;">Correct</td>' . "\n\t\n\t\n\t" . '</tr>' .
 			 "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="cutoffPoints">' .
-			 'Points for a wrong answer:</label></td>' . "\n\t\t" .
+			 'Points for an incorrect answer:</label></td>' . "\n\t\t" .
 			 '<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints"' .
-			 ' value="0"/></td>' . "\n\t\n\t\n\t\t" . '<td class="margin wrong"></td>' . "\n\t\t"
-			 . '<td style="background: transparent;">Wrong</td>' . "\n\t\n\t" . '</tr>'
+			 ' value="0"/></td>' . "\n\t\n\t\n\t\t" . '<td class="margin incorrect"></td>' . "\n\t\t"
+			 . '<td style="background: transparent;">Incorrect</td>' . "\n\t\n\t" . '</tr>'
 			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" .
 			 '<td><label for="ignoringCoef">Ignore the questions'
 			 . "'" . ' coefficients:</label></td>'
@@ -138,10 +138,10 @@ class QuizTest extends MediaWikiLangTestCase {
 			],
 			// Test case for simple display enabled and quiz is being corrected
 			[ [ '1', '1', 'NA', '1', '1', '0', '1', '2' ],
-			 "\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin right"></td>'
-			 . "\n\t\t\t" . '<td style="background: transparent;">Right</td>' . "\n\t\n\t\n\t" . '</tr>'
-			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin wrong"></td>'
-			 . "\n\t\t" . '<td style="background: transparent;">Wrong</td>' . "\n\t\n\t" . '</tr>'
+			 "\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin correct"></td>'
+			 . "\n\t\t\t" . '<td style="background: transparent;">Correct</td>' . "\n\t\n\t\n\t" . '</tr>'
+			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin incorrect"></td>'
+			 . "\n\t\t" . '<td style="background: transparent;">Incorrect</td>' . "\n\t\n\t" . '</tr>'
 			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin NA"></td>' . "\n\t\t"
 			 . '<td style="background: transparent;">Not answered</td>' . "\n\t\n\t" . '</tr>' . "\n\n\n"
 			],
