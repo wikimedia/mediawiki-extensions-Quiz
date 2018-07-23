@@ -4,8 +4,8 @@
 			"Botuzhaleny-sodamo"
 		]
 	},
-	"quiz_colorRight": "Виде",
-	"quiz_colorWrong": "А виде",
-	"quiz_colorNA": "Апак пандо",
+	"quiz_legend_correct": "Виде",
+	"quiz_legend_incorrect": "А виде",
+	"quiz_legend_unanswered": "Апак пандо",
 	"quiz_correction": "Максомс"
 }

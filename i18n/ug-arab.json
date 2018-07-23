@@ -4,8 +4,8 @@
 			"Sahran"
 		]
 	},
-	"quiz_colorRight": "ئوڭ",
-	"quiz_colorError": "گرامماتىكىلىق خاتالىق",
+	"quiz_legend_correct": "ئوڭ",
+	"quiz_legend_error": "گرامماتىكىلىق خاتالىق",
 	"quiz_correction": "تاپشۇر",
 	"quiz_reset": "ئەسلىگە قايتۇر"
 }

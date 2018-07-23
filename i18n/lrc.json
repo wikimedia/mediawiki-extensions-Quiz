@@ -5,10 +5,10 @@
 		]
 	},
 	"quiz_shuffle": "پرسایشتیا قر قاطی بیه",
-	"quiz_colorRight": "درست",
-	"quiz_colorWrong": "اشتوا",
-	"quiz_colorNA": "جواو ندیئه",
-	"quiz_colorError": "خطا دستوری",
+	"quiz_legend_correct": "درست",
+	"quiz_legend_incorrect": "اشتوا",
+	"quiz_legend_unanswered": "جواو ندیئه",
+	"quiz_legend_error": "خطا دستوری",
 	"quiz_correction": "كل كردن",
 	"quiz_score": "امتیاز شما $2/$1 ئه",
 	"quiz_reset": "د نو شرو كردن"

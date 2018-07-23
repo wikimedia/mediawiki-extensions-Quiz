@@ -5,9 +5,9 @@
 		]
 	},
 	"quiz_desc": "Loyvir upprættan av spurnarkappingum",
-	"quiz_colorRight": "Rætt",
-	"quiz_colorWrong": "Skeivt",
-	"quiz_colorNA": "Onki svar",
-	"quiz_colorError": "Syntaks feilur",
+	"quiz_legend_correct": "Rætt",
+	"quiz_legend_incorrect": "Skeivt",
+	"quiz_legend_unanswered": "Onki svar",
+	"quiz_legend_error": "Syntaks feilur",
 	"quiz_correction": "Send inn"
 }

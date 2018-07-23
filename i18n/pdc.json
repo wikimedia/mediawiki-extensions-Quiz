@@ -4,6 +4,6 @@
 			"Xqt"
 		]
 	},
-	"quiz_colorWrong": "Letz",
-	"quiz_colorNA": "Kene Antwatt gewwe"
+	"quiz_legend_incorrect": "Letz",
+	"quiz_legend_unanswered": "Kene Antwatt gewwe"
 }

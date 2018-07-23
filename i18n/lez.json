@@ -4,8 +4,8 @@
 			"Migraghvi"
 		]
 	},
-	"quiz_colorRight": "Дуьз я",
-	"quiz_colorWrong": "Дуьз туш",
+	"quiz_legend_correct": "Дуьз я",
+	"quiz_legend_incorrect": "Дуьз туш",
 	"quiz_correction": "Ракъурун",
 	"quiz_reset": "Гадарун"
 }

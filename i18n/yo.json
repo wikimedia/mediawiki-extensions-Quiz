@@ -4,8 +4,8 @@
 			"Demmy"
 		]
 	},
-	"quiz_colorRight": "Ẹ̀tọ́",
-	"quiz_colorWrong": "Àìtọ́",
+	"quiz_legend_correct": "Ẹ̀tọ́",
+	"quiz_legend_incorrect": "Àìtọ́",
 	"quiz_correction": "Fúnsílẹ̀",
 	"quiz_reset": "Ìtúntò"
 }

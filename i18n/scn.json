@@ -5,6 +5,6 @@
 			"Sarvaturi"
 		]
 	},
-	"quiz_colorRight": "Giustu",
-	"quiz_colorWrong": "Sbagghiatu"
+	"quiz_legend_correct": "Giustu",
+	"quiz_legend_incorrect": "Sbagghiatu"
 }

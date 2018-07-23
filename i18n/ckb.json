@@ -4,7 +4,7 @@
 			"Calak"
 		]
 	},
-	"quiz_colorRight": "ڕاست",
-	"quiz_colorWrong": "ھەڵە",
+	"quiz_legend_correct": "ڕاست",
+	"quiz_legend_incorrect": "ھەڵە",
 	"quiz_correction": "ناردن"
 }

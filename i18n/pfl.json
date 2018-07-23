@@ -4,6 +4,6 @@
 			"Manuae"
 		]
 	},
-	"quiz_colorRight": "Rischdisch",
-	"quiz_colorWrong": "Falsch"
+	"quiz_legend_correct": "Rischdisch",
+	"quiz_legend_incorrect": "Falsch"
 }

@@ -4,8 +4,8 @@
 			"Malafaya"
 		]
 	},
-	"quiz_colorRight": "Justa",
-	"quiz_colorWrong": "Nejusta",
+	"quiz_legend_correct": "Justa",
+	"quiz_legend_incorrect": "Nejusta",
 	"quiz_score": "Vua nombro di punti esas $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 punti}}"
 }
