@@ -4,12 +4,13 @@
 			"Derbeth",
 			"Maikking",
 			"Sp5uhe",
-			"Woytecr"
+			"Woytecr",
+			"Chrumps"
 		]
 	},
 	"quiz_desc": "Umożliwia tworzenie quizów",
 	"quiz_addedPoints": "{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt odejmowany|Punkty odejmowane|Punktów odejmowanych}} za niewłaściwą odpowiedź:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt|Punkty}} za niewłaściwą odpowiedź:",
 	"quiz_ignoreCoef": "Ignoruj punktację pytań:",
 	"quiz_shuffle": "Losuj kolejność pytań",
 	"quiz_legend_correct": "Właściwa",

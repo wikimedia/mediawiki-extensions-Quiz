@@ -8,7 +8,7 @@
 	},
 	"quiz_desc": "Consente di creare dei quiz",
 	"quiz_addedPoints": "{{PLURAL:$1|Punto aggiunto|Punti aggiunti}} per ogni risposta corretta:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punto sottratto|Punti sottratti}} per ogni risposta errata:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punto sottratto|Punti sottratti}} per ogni risposta non corretta:",
 	"quiz_ignoreCoef": "Ignora i coefficienti di domanda:",
 	"quiz_shuffle": "Mescola le domande",
 	"quiz_legend_correct": "Giusto",

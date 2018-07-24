@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bèrto 'd Sèra",
-			"Dragonòt"
+			"Dragonòt",
+			"Borichèt"
 		]
 	},
 	"quiz_desc": "A përmëtt la creassion ëd quiz",
@@ -12,7 +13,7 @@
 	"quiz_shuffle": "Mës-cé le domande",
 	"quiz_legend_correct": "Giust",
 	"quiz_legend_incorrect": "Pa giust",
-	"quiz_legend_unanswered": "Anco' nen d'arspòsta",
+	"quiz_legend_unanswered": "Ancor gnun-e rispòste",
 	"quiz_legend_error": "Eror ëd sintassi",
 	"quiz_correction": "Manda",
 	"quiz_score": "A l'ha pijait $1 pont ansima a $2",

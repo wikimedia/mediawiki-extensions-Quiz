@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo.mps",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"quiz_desc": "Permite a criação de questionários",
 	"quiz_addedPoints": "{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} para uma resposta certa:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto subtraído|Pontos subtraídos}} para uma resposta errada:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto|Pontos}} por uma resposta incorreta:",
 	"quiz_ignoreCoef": "Ignorar os coeficientes das questões:",
 	"quiz_shuffle": "Embaralhar as questões",
 	"quiz_legend_correct": "Direita",
