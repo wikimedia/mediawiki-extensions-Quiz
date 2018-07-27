@@ -5,9 +5,9 @@
 		]
 	},
 	"quiz_desc": "Овозможува создавање на квизови",
-	"quiz_addedPoints": "добивате {{PLURAL:$1|бод|бода}} за точен одговор",
-	"quiz_cutoffPoints": "{{PLURAL:$1|бод|бода}} за погрешен одговор",
-	"quiz_ignoreCoef": "Занемари ги коефициентите на прашањата",
+	"quiz_addedPoints": "добивате {{PLURAL:$1|бод|бода}} за точен одговор:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Бод|Бода}} за погрешен одговор:",
+	"quiz_ignoreCoef": "Занемари ги коефициентите на прашањата:",
 	"quiz_shuffle": "Измешај ги прашањата",
 	"quiz_legend_correct": "Точно",
 	"quiz_legend_incorrect": "Погрешно",

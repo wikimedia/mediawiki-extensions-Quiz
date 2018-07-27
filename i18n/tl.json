@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw"
+			"AnakngAraw",
+			"Sky Harbor"
 		]
 	},
 	"quiz_desc": "Nagpapahintulot na makalikha ng mumunting mga pagsusulit",
 	"quiz_addedPoints": "Nagdaragdag ng {{PLURAL:$1|puntos|mga puntos}} para sa isang tamang sagot",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puntos|Mga puntos}} para sa isang maling sagot",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Puntos|Mga puntos}} para sa maling sagot:",
 	"quiz_ignoreCoef": "Balewalain ang mga koepisyente (katuwang na bilang) ng mga katanungan.",
 	"quiz_shuffle": "Balasahin ang mga katanungan",
 	"quiz_legend_correct": "Tama",
