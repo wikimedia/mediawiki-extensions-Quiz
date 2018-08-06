@@ -3,12 +3,13 @@
 		"authors": [
 			"Byrial",
 			"Jon Harald Søby",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Saederup92"
 		]
 	},
 	"quiz_desc": "Tillader oprettelse af quizzer",
 	"quiz_addedPoints": "{{PLURAL:$1|Point|point}} for korrekt svar",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Point}} for et forkert svar",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Point}} for et forkert svar:",
 	"quiz_ignoreCoef": "Ignorer spørgsmålenes koefficienter",
 	"quiz_shuffle": "Bland spørgsmålene",
 	"quiz_legend_correct": "Ret",

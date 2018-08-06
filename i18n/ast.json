@@ -7,9 +7,9 @@
 		]
 	},
 	"quiz_desc": "Permite la creación d'encuestes",
-	"quiz_addedPoints": "{{PLURAL:$1|Puntu añadíu|Puntos añadíos}} por rempuesta correuta",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puntu|Puntos}} por rempuesta incorreuta",
-	"quiz_ignoreCoef": "Inorar los coeficientes de les entrugues",
+	"quiz_addedPoints": "{{PLURAL:$1|Puntu añadíu|Puntos añadíos}} por rempuesta correuta:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Puntu|Puntos}} por rempuesta incorreuta:",
+	"quiz_ignoreCoef": "Inorar los coeficientes de les entrugues:",
 	"quiz_shuffle": "Revolver les entrugues",
 	"quiz_legend_correct": "Correuto",
 	"quiz_legend_incorrect": "Incorreuto",
