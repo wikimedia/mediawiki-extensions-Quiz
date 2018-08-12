@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Huji"
+			"Huji",
+			"Ladsgroup"
 		]
 	},
 	"quiz_desc": "ایجاد آزمون را ممکن می‌سازد",
-	"quiz_addedPoints": "{{PLURAL:$1|امتیاز|امتیاز}} هر پاسخ درست",
-	"quiz_cutoffPoints": "{{PLURAL:$1|امتیاز|امتیاز}} منفی هر پاسخ نادرست",
-	"quiz_ignoreCoef": "نادیده گرفتن ضریب سوال‌ها",
+	"quiz_addedPoints": "{{PLURAL:$1|امتیاز|امتیاز}} اضافه شده برای هر پاسخ درست:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|امتیاز|امتیاز}} برای هر پاسخ نادرست:",
+	"quiz_ignoreCoef": "نادیده گرفتن ضریب سوال‌ها:",
 	"quiz_shuffle": "برزدن سوال‌ها",
 	"quiz_legend_correct": "درست",
 	"quiz_legend_incorrect": "نادرست",
