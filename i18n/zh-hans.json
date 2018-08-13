@@ -3,12 +3,13 @@
 		"authors": [
 			"Gaoxuewei",
 			"PhiLiP",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Hanyanbo98"
 		]
 	},
 	"quiz_desc": "允许创建测验",
 	"quiz_addedPoints": "答对加上的{{PLURAL:$1|分数}}：",
-	"quiz_cutoffPoints": "答错减去的{{PLURAL:$1|分数}}：",
+	"quiz_cutoffPoints": "答错的{{PLURAL:$1|分数}}：",
 	"quiz_ignoreCoef": "忽略问题的系数：",
 	"quiz_shuffle": "随机问题",
 	"quiz_legend_correct": "正确",
