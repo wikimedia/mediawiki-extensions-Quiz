@@ -21,5 +21,5 @@
 	"quiz_correction": "Пошаљи",
 	"quiz_score": "Ваш резултат је $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 бод|$2 бода|$2 бодова}}",
-	"quiz_reset": "Поништи"
+	"quiz_reset": "Ресетуј"
 }
