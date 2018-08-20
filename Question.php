@@ -317,7 +317,7 @@ class Question {
 				// Hacks to avoid counting the number of signes.
 				$colSpan = ' colspan="13"';
 			}
-			if ( $text ) {
+			if ( $text !== null ) {
 				$lineOutput = '';
 				$lineOutput = '<tr class="' . $rawClass . '">' . "\n";
 				$lineOutput .= $signesOutput;
