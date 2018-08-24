@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @covers Quiz
+ */
 class QuizTest extends MediaWikiLangTestCase {
 
 	/**
