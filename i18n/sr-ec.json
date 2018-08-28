@@ -6,12 +6,13 @@
 			"Sasa Stefanovic",
 			"Сербијана",
 			"Acamicamacaraca",
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
 	"quiz_desc": "Омогућава прављење квизова",
-	"quiz_addedPoints": "{{PLURAL:$1|бод|бода|бодова}} се додаје на тачан одговор",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Бод|Бода|Бодова}} за погрешан одговор",
+	"quiz_addedPoints": "{{PLURAL:$1|Бод|Бода|Бодова}} је додато за тачан одговор:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Бод|Бода|Бодова}} за погрешан одговор:",
 	"quiz_ignoreCoef": "Занемари коефицијенте питања:",
 	"quiz_shuffle": "Измешај питања",
 	"quiz_legend_correct": "Тачно",
