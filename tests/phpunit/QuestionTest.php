@@ -108,10 +108,10 @@ class QuestionTest extends MediaWikiLangTestCase {
 
 	public function provideParseHeader() {
 		return [
-			[ '0', 'Question '."\n".'|type="[]"', 'Question' ],
-			[ '1', 'Question '."\n".'|type="[]"', 'Question' ],
-			[ '0', 'Sample Question '."\n".'|type="{}" coef="3"', 'Sample Question' ],
-			[ '1', 'Sample Question '."\n".'|type="{}" coef="3"', 'Sample Question' ]
+			[ '0', 'Question ' . "\n" . '|type="[]"', 'Question' ],
+			[ '1', 'Question ' . "\n" . '|type="[]"', 'Question' ],
+			[ '0', 'Sample Question ' . "\n" . '|type="{}" coef="3"', 'Sample Question' ],
+			[ '1', 'Sample Question ' . "\n" . '|type="{}" coef="3"', 'Sample Question' ]
 		];
 	}
 
@@ -129,7 +129,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		return [
 			// Test case when Question is being corrected and input has 3 Categories
 			[ '1', 'Option A | Option B | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> Option B </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'NA'
@@ -137,7 +137,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is not being corrected and input has 3 Categories
 			[ '0', 'Option A | Option B | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> Option B </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 ''
@@ -145,7 +145,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is being corrected and input has syntax error
 			[ '1', '| B | C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>???</th><th> B </th><th> C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'error'
@@ -153,7 +153,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is not being corrected and input has syntax error
 			[ '0', '| B | C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>???</th><th> B </th><th> C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'error'
@@ -161,7 +161,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is not being corrected and input has Categories with link
 			[ '0', 'Option A | [[Article name | Option B]] | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> <!--LINK\'" 0:0--> </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 ''
@@ -169,7 +169,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is being corrected and input has Categories with link
 			[ '1', 'Option A | [[Article name | Option B]] | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> <!--LINK\'" 0:0--> </th><th> Option C</th></tr>' . "\n",
 			 '`^([+-]) ?([+-])? ?([+-])? ?(.*)`',
 			 'NA'
@@ -177,7 +177,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is not being corrected and input has Categories with template
 			[ '0', 'Option A | {{Template name | url=http://www.example.com}} | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> {{Template name | url=<a rel="nofollow" ' .
 			 'class="external free" href="http://www.example.com}}">http://www.example.com}}' .
 			 '</a> </th><th> Option C</th></tr>' . "\n",
@@ -187,7 +187,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			],
 			// Test case when Question is being corrected and input has Categories with template
 			[ '1', 'Option A | {{Template name | url=http://www.example.com}} | Option C',
-			 [ '<tr class="categories">'. "\n"
+			 [ '<tr class="categories">' . "\n"
 			 . '<th>Option A </th><th> {{Template name | url=<a rel="nofollow" ' .
 			 'class="external free" href="http://www.example.com}}">http://www.example.com}}' .
 			 '</a> </th><th> Option C</th></tr>' . "\n",
@@ -253,7 +253,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 			// test case when mulitple answers are provided and user input is one of them
 			[ '4', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
 			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
-			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'. "\n\t\t\t"
+			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />' . "\n\t\t\t"
 			 . '</span>' . "\n\t\t\t" . '<span class="border correct">' . "\n\t\t\t\t"
 			 . '<input type="text" name="4" class="words" title="Correct"  size="" '
 			 . 'maxlength="" autocomplete="off" value="Greece" />'
