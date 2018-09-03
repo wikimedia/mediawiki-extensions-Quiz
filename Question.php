@@ -357,21 +357,21 @@ class Question {
 				if ( $orderInvalid ) {
 					$order = '';
 					for ( $i = 0; $i <= $proposalIndex; $i++ ) {
-						$order .= ' '.$i;
+						$order .= ' ' . $i;
 					}
 				}
 			} else {
 				for ( $i = 0; $i <= $proposalIndex; ) {
 					$j = rand( 0, $proposalIndex );
-					if ( strpos( $order, ''.$j ) == false ) {
-						$order .= ' '.$j;
+					if ( strpos( $order, '' . $j ) == false ) {
+						$order .= ' ' . $j;
 						$i++;
 					}
 				}
 			}
 		} else {
 			for ( $i = 0; $i <= $proposalIndex; $i++ ) {
-				$order .= ' '.$i;
+				$order .= ' ' . $i;
 			}
 		}
 		$order = ltrim( $order );

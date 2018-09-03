@@ -109,7 +109,7 @@ class QuizTest extends MediaWikiLangTestCase {
 			 '</tr>' . "\n\n\n\t\n\t" . '<tr>' . "\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t"
 			 . '<td><input class="shuffle" name="shuffleButton" type="button" ' .
 			 'value="Shuffle questions"/></td>' . "\n\t\t\t\t\n\t\t\t\n\t\t\n\t\t"
-			 . "\n\t\t\n\t\t\t" . '<td></td>' ."\n\t\t\n\t\t\n\t" . '</tr>' . "\n\t\n\n"
+			 . "\n\t\t\n\t\t\t" . '<td></td>' . "\n\t\t\n\t\t\n\t" . '</tr>' . "\n\t\n\n"
 			],
 			// Test case when simple display is disabled, it is being corrected, state is NA
 			// added and cutoff points are 1 and 0 respectively with 2 questions in quiz
