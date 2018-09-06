@@ -361,13 +361,9 @@ class Question {
 					}
 				}
 			} else {
-				for ( $i = 0; $i <= $proposalIndex; ) {
-					$j = rand( 0, $proposalIndex );
-					if ( strpos( $order, '' . $j ) == false ) {
-						$order .= ' ' . $j;
-						$i++;
-					}
-				}
+				$orderArray = range( 0, $proposalIndex );
+				shuffle( $orderArray );
+				$order = implode( ' ', $orderArray );
 			}
 		} else {
 			for ( $i = 0; $i <= $proposalIndex; $i++ ) {
