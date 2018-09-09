@@ -49,7 +49,6 @@ class Question {
 		) {
 			$this->mState = 'incorrect';
 		}
-		return;
 	}
 
 	/**
@@ -123,7 +122,6 @@ class Question {
 		) {
 			$this->mCoef = $coef[1];
 		}
-		return;
 	}
 
 	/**

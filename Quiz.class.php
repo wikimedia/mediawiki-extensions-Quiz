@@ -293,11 +293,9 @@ class Quiz {
 				case 'X':
 					$this->mShuffleDiv++;
 					return '<div class="shuffle">' . "\n";
-					break;
 				case '!X':
 					$this->mShuffleDiv++;
 					return '<div class="noshuffle">' . "\n";
-					break;
 				case '/X':
 					// Prevent closing of other tags.
 					if ( $this->mShuffleDiv == 0 ) {
@@ -306,10 +304,8 @@ class Quiz {
 						$this->mShuffleDiv--;
 						return '</div>' . "\n";
 					}
-					break;
 				default:
 					return '<div class="quizText">' . $questionText . '<br /></div>' . "\n";
-					break;
 			}
 		}
 
