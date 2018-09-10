@@ -136,7 +136,7 @@ class Quiz {
 	/**
 	 * @return bool
 	 */
-	static function resetQuizID() {
+	public static function resetQuizID() {
 		self::$sQuizId = 0;
 		return true;
 	}
@@ -154,7 +154,7 @@ class Quiz {
 	 * @param TemplateParser $templateParser
 	 * @return string
 	 */
-	function getSettingsTable( $templateParser ) {
+	public function getSettingsTable( $templateParser ) {
 		$checked = $this->mIgnoringCoef ? 'checked="checked"' : '';
 		$settingsTable = $templateParser->processTemplate(
 			'Setting',
@@ -193,7 +193,7 @@ class Quiz {
 	 * @param string $input text between <quiz> and </quiz> tags, in quiz syntax.
 	 * @return string
 	 */
-	function parseQuiz( $input ) {
+	public function parseQuiz( $input ) {
 		// Ouput the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
 			$this->mParser->getOutput()->addModules( 'ext.quiz' );
@@ -237,7 +237,7 @@ class Quiz {
 	 * @param string $input text between <quiz> and </quiz> tags, in quiz syntax.
 	 * @return string
 	 */
-	function parseIncludes( $input ) {
+	private function parseIncludes( $input ) {
 		return preg_replace_callback(
 			$this->mIncludePattern,
 			[ $this, 'parseInclude' ],
@@ -252,7 +252,7 @@ class Quiz {
 	 * 							$matches[1] is the page title.
 	 * @return mixed|string
 	 */
-	function parseInclude( $matches ) {
+	private function parseInclude( $matches ) {
 		$title = Title::makeTitleSafe( NS_MAIN, $matches[1] );
 		$text = $this->mParser->fetchTemplate( $title );
 		$output = '';
@@ -274,7 +274,7 @@ class Quiz {
 	 * @param string $input a question in quiz syntax.
 	 * @return string
 	 */
-	function parseQuestions( $input ) {
+	private function parseQuestions( $input ) {
 		$splitPattern = '`(^|\n[ \t]*)\n\{`';
 		$unparsedQuestions = preg_split(
 			$splitPattern,
@@ -319,7 +319,7 @@ class Quiz {
 	 * @param bool $numDisplay specifies whether to display question number.
 	 * @return string
 	 */
-	function parseQuestion( $matches, $numDisplay ) {
+	public function parseQuestion( $matches, $numDisplay ) {
 		$question = new Question(
 			$this->mBeingCorrected,
 			$this->mCaseSensitive,
@@ -368,6 +368,7 @@ class Quiz {
 
 		// This will generate the answers HTML code
 		$answers = call_user_func(
+			// Calling singleChoiceParseObject, multipleChoiceParseObject and textFieldParseObject
 			[ $question, $question->mType . 'ParseObject' ],
 			$matches[3]
 		);

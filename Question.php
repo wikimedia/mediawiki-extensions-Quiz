@@ -68,10 +68,9 @@ class Question {
 	/**
 	 * Mutator of the question state
 	 *
-	 * @protected
 	 * @param string $pState
 	 */
-	function setState( $pState ) {
+	private function setState( $pState ) {
 		if ( $pState == 'error' || ( $pState == 'incorrect' && $this->mState != 'error' ) ||
 			( $pState == 'correct' && ( $this->mState == 'NA' || $this->mState == 'na_correct' ) ) ||
 			( $pState == 'na_incorrect' && ( $this->mState == 'NA' || $this->mState == 'na_correct' ) ) ||
@@ -92,10 +91,9 @@ class Question {
 	/**
 	 * Accessor of the question state.
 	 *
-	 * @protected
 	 * @return string
 	 */
-	function getState() {
+	public function getState() {
 		if ( $this->mState == 'na_correct' ) {
 			return 'correct';
 		} elseif ( $this->mState == 'na_incorrect' || $this->mState == 'new_NA' ) {
@@ -111,7 +109,7 @@ class Question {
 	 * @param string $input the quiz header in quiz syntax.
 	 * @return string
 	 */
-	function parseHeader( $input ) {
+	public function parseHeader( $input ) {
 		$parametersPattern = '`\n\|([^\|].*)\s*$`';
 		$input = preg_replace_callback(
 			$parametersPattern,
@@ -138,7 +136,7 @@ class Question {
 	 * @param array $matches elements matching $parametersPattern
 	 * 						$matches[0] are the potential question parameters.
 	 */
-	function parseParameters( $matches ) {
+	private function parseParameters( $matches ) {
 		$typePattern = '`t[yi]p[eo]?="(.*?)"`';
 		if ( preg_match( $typePattern, $matches[1], $type ) ) {
 			// List of all object type code and the correspondant question type.
@@ -170,7 +168,7 @@ class Question {
 	 *
 	 * @return int
 	 */
-	function checkRequestOrder( $order, $proposalIndex ) {
+	private function checkRequestOrder( $order, $proposalIndex ) {
 		$tempOrder = explode( ' ', $order );
 
 		// Check the number of order matches number of proposals
@@ -207,7 +205,7 @@ class Question {
 	 *
 	 * @return string A question object in HTML.
 	 */
-	function singleChoiceParseObject( $input ) {
+	public function singleChoiceParseObject( $input ) {
 		return $this->basicTypeParseObject( $input, 'radio' );
 	}
 
@@ -218,7 +216,7 @@ class Question {
 	 *
 	 * @return string A question object in HTML.
 	 */
-	function multipleChoiceParseObject( $input ) {
+	public function multipleChoiceParseObject( $input ) {
 		return $this->basicTypeParseObject( $input, 'checkbox' );
 	}
 
@@ -230,7 +228,7 @@ class Question {
 	 *
 	 * @return string A question object in HTML.
 	 */
-	function basicTypeParseObject( $input, $inputType ) {
+	private function basicTypeParseObject( $input, $inputType ) {
 		$output = preg_match( $this->mCategoryPattern, $input, $matches )
 			? $this->parseCategories( $matches[1] )
 			: '';
@@ -427,7 +425,7 @@ class Question {
 	 * @param string $input pipe-separated list of the various categories.
 	 * @return string
 	 */
-	function parseCategories( $input ) {
+	private function parseCategories( $input ) {
 		$linkPattern = '`(\[\[.*?\]\](*SKIP)(*FAIL)|\|)|({{.*?}}(*SKIP)(*FAIL)|\|)`';
 		$categories = preg_split( $linkPattern, $input );
 		// Less than two categories is a syntax error.
@@ -462,7 +460,7 @@ class Question {
 	 *
 	 * @return string A question object in HTML.
 	 */
-	function textFieldParseObject( $input ) {
+	public function textFieldParseObject( $input ) {
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
 		global $wqInputId;
 		$wqInputId = $this->mQuestionId * 100;
@@ -499,7 +497,7 @@ class Question {
 	 * @param array $input
 	 * @return string
 	 */
-	function parseTextField( $input ) {
+	private function parseTextField( $input ) {
 		global $wqInputId;
 		$wqInputId++;
 		$title = '';
