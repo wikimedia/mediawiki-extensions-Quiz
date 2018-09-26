@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\TestingAccessWrapper;
+
 /**
  * @covers Question
  */
@@ -40,7 +42,9 @@ class QuestionTest extends MediaWikiLangTestCase {
 	private function getQuestion( $beingCorrected, $caseSensitive, $questionId ) {
 		// Randomly generate shuffle parameter value
 		$shuffle = rand( 0, 100 ) % 2 == 0 ? 0 : 1;
-		return new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser );
+		return TestingAccessWrapper::newFromObject(
+			new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser )
+		);
 	}
 
 	private function getRequest() {

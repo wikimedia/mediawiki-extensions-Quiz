@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\TestingAccessWrapper;
+
 /**
  * @covers Quiz
  */
@@ -23,7 +25,9 @@ class QuizTest extends MediaWikiLangTestCase {
 		$title = $wgParser->getTitle();
 		$this->parser = &$wgParser;
 		$this->parser->startExternalParse( $title, $options, 'text', true );
-		$this->quiz = new Quiz( [], $this->parser );
+		$this->quiz = TestingAccessWrapper::newFromObject(
+			new Quiz( [], $this->parser )
+		);
 	}
 
 	protected function tearDown() {

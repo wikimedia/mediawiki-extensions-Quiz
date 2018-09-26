@@ -1,15 +1,68 @@
 <?php
+
 /**
  * Processes quiz markup
  */
 class Quiz {
+
+	/** @var int */
 	private static $sQuizId = 0;
 
-	protected $mScore;
+	/** @var Parser */
+	private $mParser;
+
+	/** @var WebRequest */
+	private $mRequest;
+
+	/** @var int */
+	private $mQuizId;
+
+	/** @var int */
+	private $mQuestionId;
+
+	/** @var int */
+	private $mShuffleDiv;
+
+	/** @var bool */
+	private $mBeingCorrected;
+
+	/** @var string */
+	private $mState;
+
+	/** @var int */
+	private $numberQuestions;
+
+	/** @var int */
+	private $mTotal;
+
+	/** @var int */
+	private $mScore;
+
+	/** @var int */
+	private $mAddedPoints;
+
+	/** @var int */
+	private $mCutoffPoints;
+
+	/** @var bool */
+	private $mIgnoringCoef;
+
+	/** @var bool */
+	private $mDisplaySimple;
+
+	/** @var bool */
+	private $shuffleAnswers;
+
+	/** @var bool */
+	private $mShuffle;
+
+	/** @var bool */
+	private $mCaseSensitive;
+
+	/** @var string */
+	private $mIncludePattern;
 
 	/**
-	 * Constructor
-	 *
 	 * @param array $argv
 	 * @param Parser &$parser
 	 */

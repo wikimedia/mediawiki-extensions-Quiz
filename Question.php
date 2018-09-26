@@ -1,14 +1,52 @@
 <?php
 
 class Question {
+
+	/** @var WebRequest */
+	private $mRequest;
+
+	/** @var int */
+	private $mQuestionId;
+
+	/** @var bool */
+	private $mBeingCorrected;
+
+	/** @var bool */
+	private $mCaseSensitive;
+
+	/** @var int */
+	private $shuffleAnswers;
+
+	/** @var Parser */
+	private $mParser;
+
+	/** @var string */
+	private $mState;
+
+	/** @var string */
+	private $mProposalPattern;
+
+	/** @var string */
+	private $mCorrectionPattern;
+
+	/** @var string */
+	private $mCategoryPattern;
+
+	/** @var string */
+	private $mTextFieldPattern;
+
+	/** @var string */
+	public $mType;
+
+	/** @var int */
+	public $mCoef;
+
 	/**
-	 * Constructor
-	 *
-	 * @param Boolean $beingCorrected : Identifier for quiz being corrected.
-	 * @param Boolean $caseSensitive : Identifier for case sensitive inputs.
-	 * @param Integer $questionId : the Identifier of the question used to generate input names.
-	 * @param Integer $shufAns : Identifier if answers are supposed to be shuffled.
-	 * @param Parser &$parser : Parser the wikitext parser.
+	 * @param bool $beingCorrected Identifier for quiz being corrected.
+	 * @param bool $caseSensitive Identifier for case sensitive inputs.
+	 * @param int $questionId the Identifier of the question used to generate input names.
+	 * @param int $shufAns Identifier if answers are supposed to be shuffled.
+	 * @param Parser &$parser Parser the wikitext parser.
 	 */
 	public function __construct( $beingCorrected, $caseSensitive, $questionId, $shufAns, &$parser ) {
 		global $wgRequest;
