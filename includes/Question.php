@@ -296,18 +296,18 @@ class Question {
 							if ( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
 								$attribs['class'] .= ' error';
-								$attribs['title'] = wfMessage( 'quiz_legend_error' )->text();
+								$attribs['title'] = wfMessage( 'quiz-legend-error' )->text();
 								$attribs['disabled'] = 'disabled';
 							}
 							if ( $this->mBeingCorrected ) {
 								if ( array_key_exists( 'checked', $attribs ) ) {
 									$this->setState( 'correct' );
 									$attribs['class'] .= ' correct';
-									$attribs['title'] = wfMessage( 'quiz_legend_correct' )->text();
+									$attribs['title'] = wfMessage( 'quiz-legend-correct' )->text();
 								} else {
 									$this->setState( 'na_incorrect' );
 									$attribs['class'] .= ' incorrect';
-									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->text();
+									$attribs['title'] = wfMessage( 'quiz-legend-incorrect' )->text();
 								}
 							}
 							break;
@@ -316,7 +316,7 @@ class Question {
 								if ( array_key_exists( 'checked', $attribs ) ) {
 									$this->setState( 'incorrect' );
 									$attribs['class'] .= ' incorrect';
-									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->text();
+									$attribs['title'] = wfMessage( 'quiz-legend-incorrect' )->text();
 								} else {
 									$this->setState( 'na_correct' );
 								}
@@ -325,7 +325,7 @@ class Question {
 						default:
 							$this->setState( 'error' );
 							$attribs['class'] .= ' error';
-							$attribs['title'] = wfMessage( 'quiz_legend_error' )->text();
+							$attribs['title'] = wfMessage( 'quiz-legend-error' )->text();
 							$attribs['disabled'] = 'disabled';
 							break;
 					}
@@ -538,7 +538,7 @@ class Question {
 				// @phan-suppress-next-line PhanTypeMismatchArgument
 				$value = trim( $this->mRequest->getVal( $wqInputId, '' ) );
 				$state = 'NA';
-				$title = wfMessage( 'quiz_legend_unanswered' )->escaped();
+				$title = wfMessage( 'quiz-legend-unanswered' )->escaped();
 			}
 			$class = 'numbers';
 			$poss = ' ';
@@ -575,10 +575,10 @@ class Question {
 								) || $value == $possibility )
 							) {
 								$state = 'correct';
-								$title = wfMessage( 'quiz_legend_correct' )->escaped();
+								$title = wfMessage( 'quiz-legend-correct' )->escaped();
 							} else {
 								$state = 'incorrect';
-								$title = wfMessage( 'quiz_legend_incorrect' )->escaped();
+								$title = wfMessage( 'quiz-legend-incorrect' )->escaped();
 							}
 						}
 					} else {
@@ -596,10 +596,10 @@ class Question {
 								) )
 							) {
 								$state = 'correct';
-								$title = wfMessage( 'quiz_legend_correct' )->escaped();
+								$title = wfMessage( 'quiz-legend-correct' )->escaped();
 							} else {
 								$state = 'incorrect';
-								$title = wfMessage( 'quiz_legend_incorrect' )->escaped();
+								$title = wfMessage( 'quiz-legend-incorrect' )->escaped();
 							}
 						}
 					}
@@ -629,7 +629,7 @@ class Question {
 				$size = '';
 				$maxlength = '';
 				$disabled = 'disabled';
-				$title = wfMessage( 'quiz_legend_error' )->escaped();
+				$title = wfMessage( 'quiz-legend-error' )->escaped();
 			}
 		}
 		$name = $wqInputId;

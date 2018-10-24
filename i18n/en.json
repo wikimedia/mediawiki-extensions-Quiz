@@ -4,17 +4,17 @@
 			"Louis-Rémi Babe <lrbabe@gmail.com>"
 		]
 	},
-	"quiz_desc": "Allows creation of quizzes",
-	"quiz_addedPoints": "{{PLURAL:$1|Point|Points}} added for a correct answer:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} for an incorrect answer:",
-	"quiz_ignoreCoef": "Ignore the questions' coefficients:",
-	"quiz_shuffle": "Shuffle questions",
-	"quiz_legend_correct": "Correct",
-	"quiz_legend_incorrect": "Incorrect",
-	"quiz_legend_unanswered": "Not answered",
-	"quiz_legend_error": "Syntax error",
-	"quiz_correction": "Submit",
-	"quiz_score": "Your score is $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 point|$2 points}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Allows creation of quizzes",
+	"quiz-added-points": "{{PLURAL:$1|Point|Points}} added for a correct answer:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Point|Points}} for an incorrect answer:",
+	"quiz-ignore-coef": "Ignore the questions' coefficients:",
+	"quiz-shuffle": "Shuffle questions",
+	"quiz-legend-correct": "Correct",
+	"quiz-legend-incorrect": "Incorrect",
+	"quiz-legend-unanswered": "Not answered",
+	"quiz-legend-error": "Syntax error",
+	"quiz-correction": "Submit",
+	"quiz-score": "Your score is $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 point|$2 points}}",
+	"quiz-reset": "Reset"
 }

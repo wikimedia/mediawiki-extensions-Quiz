@@ -176,14 +176,14 @@ class Quiz {
 					$this->mState === 'error',
 				'error' => $this->mState === 'error',
 				'wfMessage' => [
-					'quiz_added' => wfMessage( 'quiz_addedPoints', $this->mAddedPoints )->text(),
-					'quiz_cutoff' => wfMessage( 'quiz_cutoffPoints', $this->mCutoffPoints )->text(),
-					'quiz_ignoreCoef' => wfMessage( 'quiz_ignoreCoef' )->text(),
-					'quiz_legend_correct' => wfMessage( 'quiz_legend_correct' )->text(),
-					'quiz_legend_incorrect' => wfMessage( 'quiz_legend_incorrect' )->text(),
-					'quiz_legend_unanswered' => wfMessage( 'quiz_legend_unanswered' )->text(),
-					'quiz_legend_error' => wfMessage( 'quiz_legend_error' )->text(),
-					'quiz_shuffle' => wfMessage( 'quiz_shuffle' )->text()
+					'quiz_added' => wfMessage( 'quiz-added-points', $this->mAddedPoints )->text(),
+					'quiz_cutoff' => wfMessage( 'quiz-cutoff-points', $this->mCutoffPoints )->text(),
+					'quiz_ignoreCoef' => wfMessage( 'quiz-ignore-coef' )->text(),
+					'quiz_legend_correct' => wfMessage( 'quiz-legend-correct' )->text(),
+					'quiz_legend_incorrect' => wfMessage( 'quiz-legend-incorrect' )->text(),
+					'quiz_legend_unanswered' => wfMessage( 'quiz-legend-unanswered' )->text(),
+					'quiz_legend_error' => wfMessage( 'quiz-legend-error' )->text(),
+					'quiz_shuffle' => wfMessage( 'quiz-shuffle' )->text()
 				],
 				'mAddedPoints' => $this->mAddedPoints,
 				'mCutoffPoints' => $this->mCutoffPoints,
@@ -219,7 +219,7 @@ class Quiz {
 		// Determine the content of the settings table.
 		$settingsTable = $this->getSettingsTable( $templateParser );
 
-		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
+		$quiz_score = wfMessage( 'quiz-score' )->rawParams(
 			'<span class="score">' . $this->mScore . '</span>',
 			'<span class="total">' . $this->mTotal . '</span>' )->escaped();
 
@@ -233,8 +233,8 @@ class Quiz {
 				],
 				'settingsTable' => $settingsTable,
 				'wfMessage' => [
-					'quiz_correction' => wfMessage( 'quiz_correction' )->escaped(),
-					'quiz_reset' => wfMessage( 'quiz_reset' )->escaped(),
+					'quiz_correction' => wfMessage( 'quiz-correction' )->escaped(),
+					'quiz_reset' => wfMessage( 'quiz-reset' )->escaped(),
 					'quiz_score' => $quiz_score
 				]
 			]
@@ -405,8 +405,8 @@ class Quiz {
 					$this->mScore += $this->mAddedPoints * $question->mCoef;
 
 					$tableTitle = wfMessage(
-						'quiz_points',
-						wfMessage( 'quiz_legend_correct' )->text(),
+						'quiz-points',
+						wfMessage( 'quiz-legend-correct' )->text(),
 						$this->mAddedPoints * $question->mCoef
 					)->escaped();
 					break;
@@ -416,8 +416,8 @@ class Quiz {
 					$this->mScore -= $this->mCutoffPoints * $question->mCoef;
 
 					$tableTitle = wfMessage(
-						'quiz_points',
-						wfMessage( 'quiz_legend_incorrect' )->text(),
+						'quiz-points',
+						wfMessage( 'quiz-legend-incorrect' )->text(),
 						-$this->mCutoffPoints * $question->mCoef
 					)->escaped();
 					break;
@@ -426,8 +426,8 @@ class Quiz {
 					$this->mTotal += $this->mAddedPoints * $question->mCoef;
 
 					$tableTitle = wfMessage(
-						'quiz_points',
-						wfMessage( 'quiz_legend_unanswered' )->text(),
+						'quiz-points',
+						wfMessage( 'quiz-legend-unanswered' )->text(),
 						0
 					)->escaped();
 					break;

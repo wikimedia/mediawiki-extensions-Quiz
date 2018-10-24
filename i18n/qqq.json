@@ -13,17 +13,17 @@
 			"Александр Сигачёв"
 		]
 	},
-	"quiz_desc": "{{desc|name=Quiz|url=https://www.mediawiki.org/wiki/Extension:Quiz}}",
-	"quiz_addedPoints": "Used as label for the \"Added points\" input box. Parameters:\n* $1 - number of points",
-	"quiz_cutoffPoints": "Used as label for \"cutoff points\" input box. Parameters:\n* $1 - cutoff points",
-	"quiz_ignoreCoef": "Used as label for the \"Ignore coef\" checkbox.",
-	"quiz_shuffle": "Used as label for the \"Shuffle\" button.",
-	"quiz_legend_correct": "Used as label for correct answer.\n{{Related|Quiz color}}\n{{Identical|Correct}}",
-	"quiz_legend_incorrect": "Used as label for incorrect answer.\n{{Related|Quiz color}}",
-	"quiz_legend_unanswered": "Used as label for \"Not answered question\".\n{{Related|Quiz color}}",
-	"quiz_legend_error": "Used as label.\n{{Related|Quiz color}}\n{{Identical|Syntax error}}",
-	"quiz_correction": "Used as label for the \"Submit\" button.\n{{Identical|Submit}}",
-	"quiz_score": "Parameters:\n* $1 - the quiz taker's score\n* $2 - perfect score",
-	"quiz_points": "Used as title for the <code>&lt;table></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz_legend_correct}}\n** {{msg-mw|Quiz_legend_incorrect}}\n** {{msg-mw|Quiz_legend_unanswered}}\n* $2 - number of points",
-	"quiz_reset": "Used as label for the \"Reset\" button.\n\nPreceded by the \"Submit\" button.\n{{Identical|Reset}}"
+	"quiz-desc": "{{desc|name=Quiz|url=https://www.mediawiki.org/wiki/Extension:Quiz}}",
+	"quiz-added-points": "Used as label for the \"Added points\" input box. Parameters:\n* $1 - number of points",
+	"quiz-cutoff-points": "Used as label for \"cutoff points\" input box. Parameters:\n* $1 - cutoff points",
+	"quiz-ignore-coef": "Used as label for the \"Ignore coef\" checkbox.",
+	"quiz-shuffle": "Used as label for the \"Shuffle\" button.",
+	"quiz-legend-correct": "Used as label for correct answer.\n{{Related|Quiz color}}\n{{Identical|Correct}}",
+	"quiz-legend-incorrect": "Used as label for incorrect answer.\n{{Related|Quiz color}}",
+	"quiz-legend-unanswered": "Used as label for \"Not answered question\".\n{{Related|Quiz color}}",
+	"quiz-legend-error": "Used as label.\n{{Related|Quiz color}}\n{{Identical|Syntax error}}",
+	"quiz-correction": "Used as label for the \"Submit\" button.\n{{Identical|Submit}}",
+	"quiz-score": "Parameters:\n* $1 - the quiz taker's score\n* $2 - perfect score",
+	"quiz-points": "Used as title for the <code>&lt;table></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz-legend-correct}}\n** {{msg-mw|Quiz-legend-incorrect}}\n** {{msg-mw|Quiz-legend-unanswered}}\n* $2 - number of points",
+	"quiz-reset": "Used as label for the \"Reset\" button.\n\nPreceded by the \"Submit\" button.\n{{Identical|Reset}}"
 }
