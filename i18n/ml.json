@@ -3,13 +3,14 @@
 		"authors": [
 			"Jacob.jose",
 			"Praveenp",
-			"Shijualex"
+			"Shijualex",
+			"Adithyak1997"
 		]
 	},
 	"quiz_desc": "ക്വിസുകൾ സൃഷ്ടിക്കാൻ സഹായിക്കുന്നു",
-	"quiz_addedPoints": "ശരിയുത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} ചേർത്തു",
-	"quiz_cutoffPoints": "തെറ്റായ ഉത്തരത്തിനു {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} കുറച്ചു",
-	"quiz_ignoreCoef": "ചോദ്യത്തിനുള്ള ഗുണകം അവഗണിക്കുക",
+	"quiz_addedPoints": "ശരിയുത്തരത്തിന് {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} ചേർത്തു",
+	"quiz_cutoffPoints": "തെറ്റായ ഉത്തരത്തിന് {{PLURAL:$1|പോയിന്റ്|പോയിന്റുകൾ}} കുറച്ചു",
+	"quiz_ignoreCoef": "ചോദ്യത്തിനുള്ള ഗുണകം അവഗണിക്കുക:",
 	"quiz_shuffle": "ചോദ്യങ്ങൾ കശക്കുക",
 	"quiz_legend_correct": "ശരി",
 	"quiz_legend_incorrect": "തെറ്റ്",
