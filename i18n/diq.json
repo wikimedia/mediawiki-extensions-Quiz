@@ -3,13 +3,14 @@
 		"authors": [
 			"Aspar",
 			"Mirzali",
-			"Gırd"
+			"Gırd",
+			"Orbot707"
 		]
 	},
 	"quiz_desc": "desturê vıraştışê quizi dano",
-	"quiz_addedPoints": "{{PLURAL:$1|Puan|Puan}} qey cewabo raşt diyayo.",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puan|Puan}} qey cewabo şaş",
-	"quiz_ignoreCoef": "Soruların katsayısını ihmal et",
+	"quiz_addedPoints": "Seba {{PLURAL:$1|Puan|Puan}} dekerdışi cewabo raştay:",
+	"quiz_cutoffPoints": "Seba {{PLURAL:$1|Puan|Puani}} cewabo şaşo:",
+	"quiz_ignoreCoef": "Kat amarê persa peygoş kerê",
 	"quiz_shuffle": "persan têmiyan ker.",
 	"quiz_legend_correct": "raşt",
 	"quiz_legend_incorrect": "şaş",
