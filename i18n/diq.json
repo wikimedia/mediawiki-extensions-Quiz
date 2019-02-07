@@ -8,7 +8,7 @@
 		]
 	},
 	"quiz_desc": "desturê vıraştışê quizi dano",
-	"quiz_addedPoints": "Seba {{PLURAL:$1|Puan|Puan}} dekerdışi cewabo raştay:",
+	"quiz_addedPoints": "Seba {{PLURAL:$1|Puan|Puana}} dekerdışi cewabo raştay:",
 	"quiz_cutoffPoints": "Seba {{PLURAL:$1|Puan|Puani}} cewabo şaşo:",
 	"quiz_ignoreCoef": "Kat amarê persa peygoş kerê",
 	"quiz_shuffle": "persan têmiyan ker.",
