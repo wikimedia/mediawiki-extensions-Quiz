@@ -6,7 +6,7 @@
 	},
 	"quiz_desc": "Permitte le creation de quizes",
 	"quiz_addedPoints": "{{PLURAL:$1|Puncto|Punctos}} addite pro cata responsa correcte:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puncto|Punctos}} pro un responsa erronee:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Puncto|Punctos}} pro un responsa incorrecte:",
 	"quiz_ignoreCoef": "Ignorar le coefficientes del questiones:",
 	"quiz_shuffle": "Miscer questiones",
 	"quiz_legend_correct": "Juste",
