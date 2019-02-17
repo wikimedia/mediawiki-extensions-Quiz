@@ -15,7 +15,7 @@
 	"quiz_legend_correct": "raşt",
 	"quiz_legend_incorrect": "şaş",
 	"quiz_legend_unanswered": "cewab cı nêdiya",
-	"quiz_legend_error": "xetay sebtaksi",
+	"quiz_legend_error": "Xetaya rêza qıseyan",
 	"quiz_correction": "Bırışe",
 	"quiz_score": "Skorê şıma $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
