@@ -197,7 +197,7 @@ class Quiz {
 		// Ouput the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
 			$this->mParser->getOutput()->addModules( 'ext.quiz' );
-			$this->mParser->getOutput()->addModules( 'ext.quiz.styles' );
+			$this->mParser->getOutput()->addModuleStyles( 'ext.quiz.styles' );
 		}
 
 		// Process the input
