@@ -3,7 +3,8 @@
 		"authors": [
 			"Matasg",
 			"Eitvys200",
-			"Manvydasz"
+			"Manvydasz",
+			"Vogone"
 		]
 	},
 	"quiz_desc": "Leidžia kurti klausimynus",
@@ -17,6 +18,6 @@
 	"quiz_legend_error": "Sintaksės klaida",
 	"quiz_correction": "Pateikti",
 	"quiz_score": "Jūsų surinkti taškai yra $1 iš $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 taškas|$2 taškai}}",
+	"quiz_points": "$1 | $2 {{PLURAL:$2|taškas|taškai|taškų}}",
 	"quiz_reset": "Valyti"
 }
