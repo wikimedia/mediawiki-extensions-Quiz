@@ -525,7 +525,7 @@ class Question {
 			}
 			$maxlength = $input[3];
 		}
-		$templateParser = new TemplateParser( __DIR__ . '/templates' );
+		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
 		// Syntax error if there is no input text.
 		if ( $input[1] === "" ) {
 			$value = 'value="???"';

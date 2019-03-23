@@ -12,9 +12,9 @@
 		]
 	},
 	"AutoloadClasses": {
-		"Quiz": "Quiz.class.php",
-		"Question": "Question.php",
-		"QuizHooks": "Quiz.hooks.php"
+		"Quiz": "includes/Quiz.php",
+		"Question": "includes/Question.php",
+		"QuizHooks": "includes/QuizHooks.php"
 	},
 	"ResourceModules": {
 		"ext.quiz": {

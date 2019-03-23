@@ -204,7 +204,7 @@ class Quiz {
 		$input = $this->parseQuestions( $this->parseIncludes( $input ) );
 
 		// Generates the output.
-		$templateParser = new TemplateParser( __DIR__ . '/templates' );
+		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
 		// Determine the content of the settings table.
 		$settingsTable = '';
 		$settingsTable = $this->getSettingsTable( $templateParser );
@@ -362,7 +362,7 @@ class Quiz {
 			}
 		}
 
-		$templateParser = new TemplateParser( __DIR__ . '/templates' );
+		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
 
 		$this->mQuestionId++;
 
