@@ -4,12 +4,13 @@
 			"Cin",
 			"Firilacroco",
 			"Mihai",
-			"Minisarm"
+			"Minisarm",
+			"Andrei Stroe"
 		]
 	},
 	"quiz_desc": "Permite crearea de chestionare",
 	"quiz_addedPoints": "{{PLURAL:$1|Punct adăugat|Puncte adăugate}} pentru un răspuns corect",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greșit",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greșit:",
 	"quiz_ignoreCoef": "Ignoră coeficienții întrebărilor",
 	"quiz_shuffle": "Întrebări amestecate",
 	"quiz_legend_correct": "Corect",
