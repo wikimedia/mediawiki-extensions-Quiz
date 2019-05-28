@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
 	"quiz_desc": "Permesas kreadon de kvizoj",
-	"quiz_addedPoints": "{{PLURAL:$1|Poento|Poentoj}} por ĝusta respondo",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Poento subtrahita|Poentoj subtrahitaj}} por malĝusta respondo",
-	"quiz_ignoreCoef": "Ignoru la koeficientojn de demandoj.",
+	"quiz_addedPoints": "{{PLURAL:$1|Poento aldonita|Poentoj aldonitaj}} pro ĝusta respondo:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Poento subtrahita|Poentoj subtrahitaj}} pro malĝusta respondo:",
+	"quiz_ignoreCoef": "Ignori la koeficientojn de demandoj:",
 	"quiz_shuffle": "Hazardmiksi demandaron",
 	"quiz_legend_correct": "Ĝusta",
 	"quiz_legend_incorrect": "Malĝusta",
