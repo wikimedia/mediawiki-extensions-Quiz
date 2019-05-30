@@ -365,6 +365,7 @@ class Question {
 						$output .= $lineOutput;
 					} else {
 						// Add feedback to previous proposal
+						/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
 						$lines[ $proposalIndex ] .= $lineOutput;
 					}
 				} else {

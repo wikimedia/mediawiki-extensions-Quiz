@@ -163,6 +163,7 @@ class Quiz {
 					$this->mState === 'error' ),
 				'isSettingOtherRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ),
 				'notSimple' => !$this->mDisplaySimple,
+				/** @phan-suppress-next-line PhanPluginDuplicateExpressionBinaryOp FIXME */
 				'corrected' => ( $this->mBeingCorrected && $this->mBeingCorrected ),
 				'shuffle' => $this->mShuffle,
 				'shuffleOrError' => ( $this->mShuffle && $this->numberQuestions > 1 ) ||
