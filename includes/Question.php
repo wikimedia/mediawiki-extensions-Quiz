@@ -291,7 +291,7 @@ class Question {
 							if ( $this->mType == 'singleChoice' && $expectOn > 1 ) {
 								$this->setState( 'error' );
 								$attribs['class'] .= ' error';
-								$attribs['title'] = wfMessage( 'quiz_legend_error' )->escaped();
+								$attribs['title'] = wfMessage( 'quiz_legend_error' )->text();
 								$attribs['disabled'] = 'disabled';
 							}
 							if ( $this->mBeingCorrected ) {
@@ -299,11 +299,11 @@ class Question {
 									$checkedCount++;
 									$this->setState( 'correct' );
 									$attribs['class'] .= ' correct';
-									$attribs['title'] = wfMessage( 'quiz_legend_correct' )->escaped();
+									$attribs['title'] = wfMessage( 'quiz_legend_correct' )->text();
 								} else {
 									$this->setState( 'na_incorrect' );
 									$attribs['class'] .= ' incorrect';
-									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->escaped();
+									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->text();
 								}
 							}
 							break;
@@ -313,7 +313,7 @@ class Question {
 									$checkedCount++;
 									$this->setState( 'incorrect' );
 									$attribs['class'] .= ' incorrect';
-									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->escaped();
+									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->text();
 								} else {
 									$this->setState( 'na_correct' );
 								}
@@ -322,7 +322,7 @@ class Question {
 						default:
 							$this->setState( 'error' );
 							$attribs['class'] .= ' error';
-							$attribs['title'] = wfMessage( 'quiz_legend_error' )->escaped();
+							$attribs['title'] = wfMessage( 'quiz_legend_error' )->text();
 							$attribs['disabled'] = 'disabled';
 							break;
 					}
