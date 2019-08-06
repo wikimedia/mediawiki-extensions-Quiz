@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Filipinayzd",
-			"Geopoet"
+			"Geopoet",
+			"Brazal.dang"
 		]
 	},
 	"quiz_desc": "Minatugot sa pagmumukna kan mga halipot na kahaputan",
-	"quiz_addedPoints": "{{PLURAL:$1|Puntos|Mga Puntos}} pigdugang para sa sarong tama na kasimbagan",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} para sa sarong sala na kasimbagan",
-	"quiz_ignoreCoef": "Balewalaon an koepisyenteng mga kahaputan",
+	"quiz_addedPoints": "{{PLURAL:$1|Puntos|Mga Puntos}} pigdugang para sa sarong tama na kasimbagan:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} para sa sarong sala na kasimbagan:",
+	"quiz_ignoreCoef": "Balewalaon an koepisyenteng mga kahaputan:",
 	"quiz_shuffle": "Balasahon an mga hapot",
 	"quiz_legend_correct": "Tamâ",
 	"quiz_legend_incorrect": "Salâ",
