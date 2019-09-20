@@ -19,5 +19,5 @@
 	"quiz_correction": "Bırışe",
 	"quiz_score": "Skorê şıma $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
-	"quiz_reset": "sıfır ker/reset ker"
+	"quiz_reset": "Raçarne"
 }
