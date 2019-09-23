@@ -12,12 +12,12 @@
 	"quiz_cutoffPoints": "{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор:",
 	"quiz_ignoreCoef": "Пренебрегване на коефициентите на въпросите:",
 	"quiz_shuffle": "Разбъркване на въпросите",
-	"quiz_legend_correct": "Правилно",
-	"quiz_legend_incorrect": "Грешно",
+	"quiz_legend_correct": "Правилен",
+	"quiz_legend_incorrect": "Грешен",
 	"quiz_legend_unanswered": "Без отговор",
 	"quiz_legend_error": "Синтактична грешка",
 	"quiz_correction": "Изпращане",
-	"quiz_score": "Постижението ви е $1 / $2",
+	"quiz_score": "Вашият резултат е $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|една точка|$2 точки}}",
 	"quiz_reset": "Отмяна"
 }
