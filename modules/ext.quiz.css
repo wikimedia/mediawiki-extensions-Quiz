@@ -96,27 +96,22 @@
 
 .quiz .question .check.correct {
 	outline: 3px solid #14866d;
-	*border: 3px solid #14866d;
 }
 
 .quiz .question .check.incorrect {
 	outline: 3px solid #d33;
-	*border: 3px solid #d33;
 }
 
 .quiz .question .check.correction {
 	outline: 3px solid #f9f9f9;
-	*border: 3px solid #f9f9f9;
 }
 
 .quiz .question .check.NA {
 	outline: 3px solid #36c;
-	*border: 3px solid #36c;
 }
 
 .quiz .question .check.error {
 	outline: 3px solid #fc3;
-	*border: 3px solid #fc3;
 }
 
 .quiz .header .questionId {
