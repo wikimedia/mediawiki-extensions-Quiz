@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\TestingAccessWrapper;
 
 /**
@@ -17,26 +18,14 @@ class QuestionTest extends MediaWikiLangTestCase {
 	 */
 	private $question;
 
-	protected function setUp() {
+	protected function setUp() : void {
 		parent::setUp();
-		global $wgParser;
+
+		$services = MediaWikiServices::getInstance();
 		$options = new ParserOptions();
-		$wgParser = $this->getParser();
-		$title = $wgParser->getTitle();
-		$this->parser = &$wgParser;
+		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
+		$this->parser = $services->getParser();
 		$this->parser->startExternalParse( $title, $options, 'text', true );
-	}
-
-	protected function tearDown() {
-		parent::tearDown();
-		unset( $this->parser );
-	}
-
-	private function getParser() {
-		return new StubObject(
-			'wgParser', $GLOBALS['wgParserConf']['class'],
-			[ $GLOBALS['wgParserConf'] ]
-		);
 	}
 
 	private function getQuestion( $beingCorrected, $caseSensitive, $questionId ) {
@@ -45,11 +34,6 @@ class QuestionTest extends MediaWikiLangTestCase {
 		return TestingAccessWrapper::newFromObject(
 			new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser )
 		);
-	}
-
-	private function getRequest() {
-		global $wgRequest;
-		return $wgRequest;
 	}
 
 	public function testGetState() {
