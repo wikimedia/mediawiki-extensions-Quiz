@@ -31,13 +31,6 @@ class QuizTest extends MediaWikiLangTestCase {
 		);
 	}
 
-	private function getParser() {
-		return new StubObject(
-			'wgParser', $GLOBALS['wgParserConf']['class'],
-			[ $GLOBALS['wgParserConf'] ]
-		);
-	}
-
 	public function testQuizHasQuizId() {
 		$this->assertClassHasStaticAttribute( 'sQuizId', Quiz::class );
 	}
