@@ -23,7 +23,7 @@ class QuizHooks {
 	 * @return string An HTML quiz.
 	 */
 	public static function renderQuiz( $input, $argv, $parser ) {
-		$parser->disableCache();
+		$parser->getOutput()->updateCacheExpiry( 0 );
 		$quiz = new Quiz( $argv, $parser );
 		return $quiz->parseQuiz( $input );
 	}
