@@ -46,11 +46,11 @@ class Question {
 	 * @param bool $caseSensitive Identifier for case sensitive inputs.
 	 * @param int $questionId the Identifier of the question used to generate input names.
 	 * @param int $shufAns Identifier if answers are supposed to be shuffled.
-	 * @param Parser &$parser Parser the wikitext parser.
+	 * @param Parser $parser Parser the wikitext parser.
 	 */
-	public function __construct( $beingCorrected, $caseSensitive, $questionId, $shufAns, &$parser ) {
+	public function __construct( $beingCorrected, $caseSensitive, $questionId, $shufAns, $parser ) {
 		global $wgRequest;
-		$this->mRequest = &$wgRequest;
+		$this->mRequest = $wgRequest;
 		$this->mQuestionId = $questionId;
 		$this->mBeingCorrected = $beingCorrected;
 		$this->mCaseSensitive = $caseSensitive;

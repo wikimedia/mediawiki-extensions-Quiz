@@ -64,12 +64,12 @@ class Quiz {
 
 	/**
 	 * @param array $argv
-	 * @param Parser &$parser
+	 * @param Parser $parser
 	 */
-	public function __construct( $argv, &$parser ) {
+	public function __construct( $argv, Parser $parser ) {
 		global $wgRequest;
 		$this->mParser = $parser;
-		$this->mRequest = &$wgRequest;
+		$this->mRequest = $wgRequest;
 		// Allot a unique identifier to the quiz.
 		$this->mQuizId = $this->getQuizId();
 		self::$sQuizId++;

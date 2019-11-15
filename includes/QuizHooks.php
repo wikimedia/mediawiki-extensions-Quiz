@@ -5,10 +5,10 @@ class QuizHooks {
 	/**
 	 * Register the extension with the WikiText parser.
 	 * The tag used is <quiz>
-	 * @param Parser &$parser the wikitext parser
+	 * @param Parser $parser the wikitext parser
 	 * @return bool true to continue hook processing
 	 */
-	public static function onParserFirstCallInit( &$parser ) {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'quiz', 'QuizHooks::renderQuiz' );
 		return true;
 	}
