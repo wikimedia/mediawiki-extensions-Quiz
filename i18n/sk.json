@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Luky001"
 		]
 	},
 	"quiz_desc": "Umožňuje tvorbu kvízov",
-	"quiz_addedPoints": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď",
-	"quiz_ignoreCoef": "Ignorovať koeficienty otázok",
+	"quiz_addedPoints": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď:",
+	"quiz_ignoreCoef": "Ignorovať koeficienty otázok:",
 	"quiz_shuffle": "Náhodný výber otázok",
 	"quiz_legend_correct": "Správne",
 	"quiz_legend_incorrect": "Nesprávne",
