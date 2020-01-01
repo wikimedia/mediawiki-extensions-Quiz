@@ -7,7 +7,10 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		banana: {
-			all: 'i18n/'
+			all: 'i18n/',
+			options: {
+				requireLowerCase: 'initial'
+			}
 		},
 		eslint: {
 			options: {
