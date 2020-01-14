@@ -37,7 +37,7 @@ class QuizTest extends MediaWikiLangTestCase {
 
 	public function testResetQuizId() {
 		$this->quiz->resetQuizId();
-		$this->assertEquals( 0, $this->quiz->getQuizId() );
+		$this->assertSame( 0, $this->quiz->getQuizId() );
 	}
 
 	public function provideParseQuestion() {
