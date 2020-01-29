@@ -255,7 +255,7 @@ class Quiz {
 	 */
 	private function parseInclude( $matches ) {
 		$title = Title::makeTitleSafe( NS_MAIN, $matches[1] );
-		$text = $this->mParser->fetchTemplate( $title );
+		$text = $this->mParser->fetchTemplateAndTitle( $title )[0];
 		$output = '';
 		if ( preg_match( '`<quiz[^>]*>(.*?)</quiz>`sU', $text, $unparsedQuiz ) ) {
 			// Remove inclusions from included quiz.
