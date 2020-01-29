@@ -204,85 +204,85 @@ class QuestionTest extends MediaWikiLangTestCase {
 		return [
 			// test case when quiz no input is provided for multiple answers
 			[ '1', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />'
 			 . "\n\t\t\t" . '</span>' . "\n\t\t\t" . '<span class="border NA">'
 			 . "\n\t\t\t\t"
 			 . '<input type="text" name="1" class="words" title="Not answered"  size="" '
 			 . 'maxlength="" autocomplete="off" value="" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t"
-			 . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . '</span>' . "\n" . '</div>' . "\n",
 			 ''
 			],
 			// test case when the quiz is not being corrected
 			[
 			 '2', '0', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction">' . " \n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span class="">' . "\n\t\t\t\t"
 			 . '<input type="text" name="2" class="words" title=""  size="" maxlength="" '
 			 . 'autocomplete="off" value="" />' . "\n\t\t\t\t\t" . '<em style="display: none">'
-			 . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n"
+			 . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n"
 			 ,
 			 ''
 			],
 			// test case when no user input is provided to case insensitive answer
 			[
 			 '3', '1', [ '{ Plato (i) _6 }', 'Plato (i)', '_6', '6' ],
-			  '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			  '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Plato<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span class="border NA">' . "\n\t\t\t\t"
 			 . '<input type="text" name="3" class="words" title="Not answered"  size="4" '
 			 . 'maxlength="6" autocomplete="off" value="" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
-			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n",
 			 ''
 			],
 			// test case when mulitple answers are provided and user input is one of them
 			[ '4', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Stageira<br />Plato<br />Greece<br />' . "\n\t\t\t"
 			 . '</span>' . "\n\t\t\t" . '<span class="border correct">' . "\n\t\t\t\t"
 			 . '<input type="text" name="4" class="words" title="Correct"  size="" '
 			 . 'maxlength="" autocomplete="off" value="Greece" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>'
-			 . "\n\t\n" . '</div>' . "\n",
+			 . "\n" . '</div>' . "\n",
 			 'Greece'
 			],
 			// test case using maxlength=6 but user input is more than more than maxlength
 			[
 			 '5', '1', [ '{ Plato (i) _6 }', 'Plato (i)', '_6', '6' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> Plato<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span class="border incorrect">' . "\n\t\t\t\t"
 			 . '<input type="text" name="5" class="words" title="Incorrect"  size="4" '
 			 . 'maxlength="6" autocomplete="off" value="morethansix" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
-			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n",
 			 'morethansix'
 			],
 			// test case for empty answer when user input is empty
 			[
 			 '6', '1', [ '{ }', '', '' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction">' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span class="border error">' . "\n\t\t\t\t"
 			 . '<input type="text" name="6" class="" title="Syntax error" disabled size="" '
 			 . 'maxlength="" autocomplete="off" value="value=&quot;???&quot;" />'
 			 . "\n\t\t\t\t\t" . '<em style="">' . "\n\t\t\t\t\t" . '</em>'
-			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n",
 			 ''
 			],
 			// test case when answer is 0 and user input is zero
 			[
 			 '7', '1', [ '{ 0 }', '0', '' ],
-			 '<div style="display:inline-block">' . "\n\t\n\t\t" . '<a class="input" href="#nogo">'
+			 '<div style="display:inline-block">' . "\n\t\t" . '<a class="input" href="#nogo">'
 			 . "\n\t\t\t" . '<span class="correction"> 0<br />' . "\n\t\t\t" . '</span>' . "\n\t\t\t"
 			 . '<span class="border correct">' . "\n\t\t\t\t"
 			 . '<input type="text" name="7" class="numbers" title="Correct"  size="" '
 			 . 'maxlength="" autocomplete="off" value="0" />'
 			 . "\n\t\t\t\t\t" . '<em style=" ">▼' . "\n\t\t\t\t\t" . '</em>'
-			 . "\n\t\t\t" . '</span>' . "\n\t\n" . '</div>' . "\n",
+			 . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n",
 			 '0'
 			]
 		];

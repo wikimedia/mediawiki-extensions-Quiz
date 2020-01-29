@@ -86,59 +86,59 @@ class QuizTest extends MediaWikiLangTestCase {
 			// Test case when simple display is disabled, it is not being corrected, state is NA
 			// added and cutoff points are 3 and -1 respectively with 4 questions in quiz
 			[ [ '0', '0', 'NA', '1', '3', '-1', '1', '4' ],
-			 "\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="addedPoints">' .
+			 "\t" . '<tr>' . "\n\t\t" . '<td><label for="addedPoints">' .
 			 'Points added for a correct answer:</label></td>' .
 			 "\n\t\t" . '<td><input class="numerical" type="number" ' .
-			 'name="addedPoints" id="addedPoints" value="3"/>&#160;&#160;</td>' . "\n\t\n\t\n\t\n\t" .
-			 '</tr>' . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="cutoffPoints">'
+			 'name="addedPoints" id="addedPoints" value="3"/>&#160;&#160;</td>' . "\n\t" .
+			 '</tr>' . "\n\t" . '<tr>' . "\n\t\t" . '<td><label for="cutoffPoints">'
 			 . 'Point for an incorrect answer:</label></td>'
 			 . "\n\t\t" . '<td><input class="numerical" type="number" ' .
-			 'name="cutoffPoints" id="cutoffPoints" value="-1"/></td>' . "\n\t\n\t\n\t" .
-			 '</tr>' . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="ignoringCoef">'
+			 'name="cutoffPoints" id="cutoffPoints" value="-1"/></td>' . "\n\t" .
+			 '</tr>' . "\n\t" . '<tr>' . "\n\t\t" . '<td><label for="ignoringCoef">'
 			 . 'Ignore the questions' . "'" . ' coefficients:</label></td>'
 			 . "\n\t\t" . '<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef" ' .
-			 'checked="checked"/></td>' . "\n\t\n\t\n\t" .
-			 '</tr>' . "\n\n\n\t\n\t" . '<tr>' . "\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t"
+			 'checked="checked"/></td>' . "\n\t" .
+			 '</tr>' . "\n\t" . '<tr>' . "\n\t\t\t\t\t"
 			 . '<td><input class="shuffle" name="shuffleButton" type="button" ' .
-			 'value="Shuffle questions"/></td>' . "\n\t\t\t\t\n\t\t\t\n\t\t\n\t\t"
-			 . "\n\t\t\n\t\t\t" . '<td></td>' . "\n\t\t\n\t\t\n\t" . '</tr>' . "\n\t\n\n"
+			 'value="Shuffle questions"/></td>'
+			 . "\n\t\t\t" . '<td></td>' . "\n\t" . '</tr>' . "\n"
 			],
 			// Test case when simple display is disabled, it is being corrected, state is NA
 			// added and cutoff points are 1 and 0 respectively with 2 questions in quiz
 			[ [ '0', '1', 'NA', '1', '1', '0', '1', '2' ],
-			 "\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="addedPoints">' .
+			 "\t" . '<tr>' . "\n\t\t" . '<td><label for="addedPoints">' .
 			 'Point added for a correct answer:</label></td>'
 			 . "\n\t\t" . '<td><input class="numerical" type="number" name="addedPoints" ' .
-			 'id="addedPoints" value="1"/>&#160;&#160;</td>' . "\n\t\n\t\n\t\t" .
+			 'id="addedPoints" value="1"/>&#160;&#160;</td>' . "\n\t\t" .
 			 '<td class="margin correct"></td>' . "\n\t\t\t" .
-			 '<td style="background: transparent;">Correct</td>' . "\n\t\n\t\n\t" . '</tr>' .
-			 "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" . '<td><label for="cutoffPoints">' .
+			 '<td style="background: transparent;">Correct</td>' . "\n\t" . '</tr>' .
+			 "\n\t" . '<tr>' . "\n\t\t" . '<td><label for="cutoffPoints">' .
 			 'Points for an incorrect answer:</label></td>' . "\n\t\t" .
 			 '<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints"' .
-			 ' value="0"/></td>' . "\n\t\n\t\n\t\t" . '<td class="margin incorrect"></td>' . "\n\t\t"
-			 . '<td style="background: transparent;">Incorrect</td>' . "\n\t\n\t" . '</tr>'
-			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\t" .
+			 ' value="0"/></td>' . "\n\t\t" . '<td class="margin incorrect"></td>' . "\n\t\t"
+			 . '<td style="background: transparent;">Incorrect</td>' . "\n\t" . '</tr>'
+			 . "\n\t" . '<tr>' . "\n\t\t" .
 			 '<td><label for="ignoringCoef">Ignore the questions'
 			 . "'" . ' coefficients:</label></td>'
 			 . "\n\t\t" . '<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef"' .
-			 ' checked="checked"/></td>' . "\n\t\n\t\n\t\t" .
+			 ' checked="checked"/></td>' . "\n\t\t" .
 			 '<td class="margin NA"></td>' . "\n\t\t" .
-			 '<td style="background: transparent;">Not answered</td>' . "\n\t\n\t"
-			 . '</tr>' . "\n\n\n\t\n\t" . '<tr>' . "\n\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t" .
-			 '</tr>' . "\n\t\n\n"
+			 '<td style="background: transparent;">Not answered</td>' . "\n\t"
+			 . '</tr>' . "\n\t" . '<tr>' . "\n\t" .
+			 '</tr>' . "\n"
 			],
 			// Test case for simple display enabled and quiz is not being corrected
 			[ [ '1', '0', 'NA', '1', '1', '0', '1', '3' ],
-			 "\n\n\n\n"
+			 ""
 			],
 			// Test case for simple display enabled and quiz is being corrected
 			[ [ '1', '1', 'NA', '1', '1', '0', '1', '2' ],
-			 "\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin correct"></td>'
-			 . "\n\t\t\t" . '<td style="background: transparent;">Correct</td>' . "\n\t\n\t\n\t" . '</tr>'
-			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin incorrect"></td>'
-			 . "\n\t\t" . '<td style="background: transparent;">Incorrect</td>' . "\n\t\n\t" . '</tr>'
-			 . "\n\n\n\t" . '<tr>' . "\n\t\n\t\n\t\t" . '<td class="margin NA"></td>' . "\n\t\t"
-			 . '<td style="background: transparent;">Not answered</td>' . "\n\t\n\t" . '</tr>' . "\n\n\n"
+			 "\t" . '<tr>' . "\n\t\t" . '<td class="margin correct"></td>'
+			 . "\n\t\t\t" . '<td style="background: transparent;">Correct</td>' . "\n\t" . '</tr>'
+			 . "\n\t" . '<tr>' . "\n\t\t" . '<td class="margin incorrect"></td>'
+			 . "\n\t\t" . '<td style="background: transparent;">Incorrect</td>' . "\n\t" . '</tr>'
+			 . "\n\t" . '<tr>' . "\n\t\t" . '<td class="margin NA"></td>' . "\n\t\t"
+			 . '<td style="background: transparent;">Not answered</td>' . "\n\t" . '</tr>' . "\n"
 			],
 		];
 	}
@@ -159,7 +159,7 @@ class QuizTest extends MediaWikiLangTestCase {
 		$this->quiz->numberQuestions = $injected[7];
 		$templateParser = new TemplateParser( __DIR__ . '/../../templates' );
 		$settingsTable = $this->quiz->getSettingsTable( $templateParser );
-		$this->assertEquals( $settingsTable, $expected );
+		$this->assertEquals( $expected, $settingsTable );
 	}
 
 }
