@@ -242,6 +242,7 @@ class Question {
 		foreach ( $raws as $proposalId => $raw ) {
 			$text = null;
 			$colSpan = '';
+			$rawClass = '';
 			$signesOutput = '';
 			if ( preg_match( $this->mProposalPattern, $raw, $matches ) ) {
 				$proposalIndex++;
@@ -274,6 +275,8 @@ class Question {
 							$name = 'q' . $this->mQuestionId . 'p' . $proposalId;
 							$value = 's' . $signId;
 							break;
+						default:
+							throw new Exception( 'unknown typeId' );
 					}
 					// Determine if the input had to be checked.
 					if ( $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value ) {
