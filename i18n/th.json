@@ -2,12 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Mopza",
-			"Passawuth"
+			"Passawuth",
+			"Aefgh39622"
 		]
 	},
+	"quiz_desc": "อนุญาตการสร้างแบบทดสอบ",
+	"quiz_shuffle": "สุ่มคำถาม",
 	"quiz_legend_correct": "ถูกต้อง",
 	"quiz_legend_incorrect": "ผิด",
+	"quiz_legend_unanswered": "ไม่ได้ตอบ",
+	"quiz_legend_error": "ข้อผิดพลาดไวยากรณ์",
 	"quiz_correction": "ยืนยัน",
 	"quiz_score": "คุณได้คะแนน $1 จาก $2 คะแนน",
+	"quiz_points": "$1 | $2 คะแนน",
 	"quiz_reset": "ตั้งค่าใหม่"
 }
