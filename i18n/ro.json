@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Andrei Stroe",
 			"Cin",
 			"Firilacroco",
 			"Mihai",
-			"Minisarm",
-			"Andrei Stroe"
+			"Minisarm"
 		]
 	},
 	"quiz_desc": "Permite crearea de chestionare",

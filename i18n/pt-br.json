@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eduardo Addad de Oliveira",
 			"Eduardo.mps",
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Felipe L. Ewald"
 		]
 	},
 	"quiz_desc": "Permite a criação de questionários",

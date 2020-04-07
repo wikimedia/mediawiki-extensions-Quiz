@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hex",
 			"SPQRobin",
-			"Siebrand",
-			"Hex"
+			"Siebrand"
 		]
 	},
 	"quiz_desc": "Maakt het aanmaken van tests mogelijk",

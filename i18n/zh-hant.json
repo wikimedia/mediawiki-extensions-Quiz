@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gaoxuewei",
-			"Mark85296341",
-			"Oapbtommy",
-			"Cwlin0416",
 			"Alexsh",
-			"Kly"
+			"Cwlin0416",
+			"Gaoxuewei",
+			"Kly",
+			"Mark85296341",
+			"Oapbtommy"
 		]
 	},
 	"quiz_desc": "允許建立小測驗題目",

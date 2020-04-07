@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Grondin",
+			"JackPotte",
 			"Meno25",
 			"Sherbrooke",
 			"Urhixidur",
-			"Verdy p",
-			"JackPotte",
-			"Gomoko"
+			"Verdy p"
 		]
 	},
 	"quiz_desc": "Permet la création des quiz",
