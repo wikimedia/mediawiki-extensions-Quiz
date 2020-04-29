@@ -255,6 +255,10 @@ class Quiz {
 	 */
 	private function parseInclude( $matches ) {
 		$title = Title::makeTitleSafe( NS_MAIN, $matches[1] );
+		if ( $title === null ) {
+			// Not a valid title for this include; replace w/ empty string.
+			return '';
+		}
 		$text = $this->mParser->fetchTemplateAndTitle( $title )[0];
 		$output = '';
 		if ( preg_match( '`<quiz[^>]*>(.*?)</quiz>`sU', $text, $unparsedQuiz ) ) {
