@@ -6,6 +6,9 @@
 	"descriptionmsg": "quiz_desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"MessagesDirs": {
 		"QuizExtension": [
 			"i18n"
@@ -38,8 +41,5 @@
 			"Quiz::resetQuizID"
 		]
 	},
-	"manifest_version": 1,
-	"requires": {
-		"MediaWiki": ">= 1.16.3"
-	}
+	"manifest_version": 2
 }
