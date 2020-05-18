@@ -147,7 +147,7 @@ class QuizTest extends MediaWikiLangTestCase {
 	 * @dataProvider provideGetSettingsTable
 	 * @covers Quiz::getSettingsTable
 	 */
-	public function testGetSettingsTable( $injected = [], $expected ) {
+	public function testGetSettingsTable( $injected, $expected ) {
 		// Setting quiz variables
 		$this->quiz->mDisplaySimple = $injected[0];
 		$this->quiz->mBeingCorrected = $injected[1];
