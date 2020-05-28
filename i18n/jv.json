@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"Meursault2004",
 			"Pras"
 		]
@@ -13,7 +14,7 @@
 	"quiz_legend_correct": "Bener",
 	"quiz_legend_incorrect": "Salah",
 	"quiz_legend_unanswered": "Ora diwangsuli",
-	"quiz_legend_error": "Kaluputan sintaksis (''syntax error'')",
+	"quiz_legend_error": "Kasalahan sintaksis",
 	"quiz_correction": "Kirim",
 	"quiz_score": "Skor biji panjenengan iku $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
