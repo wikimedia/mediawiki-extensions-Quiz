@@ -164,7 +164,7 @@ class Question {
 	 * Check order obtained from request
 	 *
 	 * @param string $order : The order obtained from request
-	 * @param Integer $proposalIndex : Contains the index of last Proposal
+	 * @param int $proposalIndex : Contains the index of last Proposal
 	 *
 	 * @return int
 	 */
