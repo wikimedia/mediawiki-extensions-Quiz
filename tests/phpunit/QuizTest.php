@@ -22,7 +22,7 @@ class QuizTest extends MediaWikiLangTestCase {
 		parent::setUp();
 
 		$services = MediaWikiServices::getInstance();
-		$options = new ParserOptions();
+		$options = new ParserOptions( $this->getTestUser()->getUser() );
 		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
 		$this->parser = $services->getParser();
 		$this->parser->startExternalParse( $title, $options, 'text', true );
