@@ -9,12 +9,12 @@ use Wikimedia\TestingAccessWrapper;
 class QuizTest extends MediaWikiLangTestCase {
 
 	/**
-	 * @var Quiz $quiz
+	 * @var Quiz
 	 */
 	private $quiz;
 
 	/**
-	 * @var Parser $parser
+	 * @var Parser
 	 */
 	private $parser;
 
