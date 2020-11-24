@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"01miki10",
 			"Cimon Avaro",
 			"Crt",
 			"Pe3",
@@ -9,7 +10,7 @@
 		]
 	},
 	"quiz_desc": "Mahdollistaa kyselyiden luomisen.",
-	"quiz_addedPoints": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta",
+	"quiz_addedPoints": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta:",
 	"quiz_cutoffPoints": "{{PLURAL:$1|Piste|Pisteitä}} väärästä vastauksesta",
 	"quiz_ignoreCoef": "Jätä huomioimatta kysymysten kertoimet",
 	"quiz_shuffle": "Sekoita kysymykset",
