@@ -522,9 +522,9 @@ class Question {
 			if ( $size < 3 ) {
 				$size = 1;
 			} elseif ( $size < 12 ) {
-				$size = $size - 2;
+				$size -= 2;
 			} else {
-				$size = $size - 1;
+				$size--;
 			}
 			$maxlength = $input[3];
 		}
