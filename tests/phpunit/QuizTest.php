@@ -18,7 +18,7 @@ class QuizTest extends MediaWikiLangTestCase {
 	 */
 	private $parser;
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$services = MediaWikiServices::getInstance();

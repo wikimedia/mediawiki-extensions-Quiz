@@ -18,7 +18,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 	 */
 	private $question;
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$services = MediaWikiServices::getInstance();
