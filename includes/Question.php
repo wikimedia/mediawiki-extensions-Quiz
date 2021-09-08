@@ -383,7 +383,6 @@ class Question {
 		// Finding order of shuffled proposals
 		$order = '';
 		if ( $this->shuffleAnswers ) {
-			$order = '';
 			if ( $this->mBeingCorrected ) {
 				$orderInvalid = 0;
 				$order = $this->mRequest->getVal( $this->mQuestionId . '|order' );
