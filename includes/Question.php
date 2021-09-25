@@ -163,8 +163,8 @@ class Question {
 	/**
 	 * Check order obtained from request
 	 *
-	 * @param string $order : The order obtained from request
-	 * @param int $proposalIndex : Contains the index of last Proposal
+	 * @param string $order The order obtained from request
+	 * @param int $proposalIndex Contains the index of last Proposal
 	 *
 	 * @return int
 	 */
@@ -385,7 +385,7 @@ class Question {
 		if ( $this->shuffleAnswers ) {
 			if ( $this->mBeingCorrected ) {
 				$orderInvalid = 0;
-				$order = $this->mRequest->getVal( $this->mQuestionId . '|order' );
+				$order = $this->mRequest->getVal( $this->mQuestionId . '|order', '' );
 				// Check order values
 				$orderInvalid = $this->checkRequestOrder( $order, $proposalIndex );
 
@@ -406,6 +406,7 @@ class Question {
 				$order .= ' ' . $i;
 			}
 		}
+		// @phan-suppress-next-line PhanTypeMismatchArgumentNullableInternal
 		$order = ltrim( $order );
 		$tempOrder = explode( ' ', $order );
 		for ( $i = 0; $i <= $proposalIndex; ++$i ) {
