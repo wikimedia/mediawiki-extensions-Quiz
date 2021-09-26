@@ -22,7 +22,7 @@ class Question {
 	/** @var bool */
 	private $mCaseSensitive;
 
-	/** @var int */
+	/** @var bool */
 	private $shuffleAnswers;
 
 	/** @var Parser */
@@ -53,7 +53,7 @@ class Question {
 	 * @param bool $beingCorrected Identifier for quiz being corrected.
 	 * @param bool $caseSensitive Identifier for case sensitive inputs.
 	 * @param int $questionId the Identifier of the question used to generate input names.
-	 * @param int $shufAns Identifier if answers are supposed to be shuffled.
+	 * @param bool $shufAns Identifier if answers are supposed to be shuffled.
 	 * @param Parser $parser Parser the wikitext parser.
 	 */
 	public function __construct( $beingCorrected, $caseSensitive, $questionId, $shufAns, $parser ) {
@@ -164,7 +164,7 @@ class Question {
 		if ( preg_match( $coefPattern, $matches[1], $coef ) &&
 			is_numeric( $coef[1] ) && $coef[1] > 0
 		) {
-			$this->mCoef = $coef[1];
+			$this->mCoef = (int)$coef[1];
 		}
 	}
 
@@ -193,6 +193,7 @@ class Question {
 				return 1;
 			}
 		}
+		'@phan-var int[] $tempOrder';
 
 		// Check for repeated values
 		$orderChecker = array_fill( 0, $proposalIndex + 1, 0 );
@@ -422,7 +423,7 @@ class Question {
 		$attribs['checked'] = 'checked';
 
 		return $this->shuffleAnswers
-			? Xml::input( $orderName, null, $orderValue, $attribs ) . $output
+			? Xml::input( $orderName, false, $orderValue, $attribs ) . $output
 			: $output;
 	}
 
@@ -540,7 +541,8 @@ class Question {
 			// For hiding down arrow
 			$bigDisplay = 'display: none';
 			if ( $this->mBeingCorrected ) {
-				$value = trim( $this->mRequest->getVal( $wqInputId ) );
+				// @phan-suppress-next-line PhanTypeMismatchArgument
+				$value = trim( $this->mRequest->getVal( $wqInputId, '' ) );
 				$state = 'NA';
 				$title = wfMessage( 'quiz_legend_unanswered' )->escaped();
 			}
@@ -570,9 +572,9 @@ class Question {
 								(
 									array_key_exists( 5, $matches )
 									&& $value >=
-										( $matches[1] - ( $matches[1] * $matches[4] ) / 100 )
+										( (int)$matches[1] - ( (int)$matches[1] * (int)$matches[4] ) / 100 )
 									&& $value <=
-										( $matches[1] + ( $matches[1] * $matches[4] ) / 100 )
+										( (int)$matches[1] + ( (int)$matches[1] * (int)$matches[4] ) / 100 )
 								) || (
 									array_key_exists( 3, $matches ) &&
 									$value >= $matches[1] && $value <= $matches[3]
