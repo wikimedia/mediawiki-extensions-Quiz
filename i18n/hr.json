@@ -3,6 +3,7 @@
 		"authors": [
 			"Dalibor Bosits",
 			"Dnik",
+			"Ponor",
 			"Roberta F.",
 			"SpeedyGonsales"
 		]
@@ -15,7 +16,7 @@
 	"quiz_legend_correct": "Točno",
 	"quiz_legend_incorrect": "Netočno",
 	"quiz_legend_unanswered": "Neodgovoreno",
-	"quiz_legend_error": "Sintaksna pogrješka",
+	"quiz_legend_error": "Sintaksna pogreška",
 	"quiz_correction": "Ocijeni kviz",
 	"quiz_score": "Vaš rezultat je $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 bod|$2 bodova}}",
