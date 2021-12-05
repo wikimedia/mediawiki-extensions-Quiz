@@ -1,6 +1,4 @@
 /**
- * ***** BEGIN LICENSE BLOCK *****
- * This file is part of Quiz.
  * Copyright © 2007 Louis-Rémi Babe. All rights reserved.
  *
  * Quiz is free software; you can redistribute it and/or modify
@@ -16,16 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with Quiz; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * ***** END LICENSE BLOCK *****
- *
- * Quiz is a quiz tool for mediawiki.
- *
- * To activate this extension :
- * * Create a new directory named Quiz into the "extensions" directory of MediaWiki.
- * * Place this file and the files Quiz.i18n.php and Quiz.php there.
- * * Add this line at the end of your LocalSettings.php file :
- * wfLoadExtension( 'Quiz' );
  *
  * @file
  * @version 1.0
