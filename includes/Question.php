@@ -118,7 +118,7 @@ class Question {
 		);
 		$splitHeaderPattern = '`\n\|\|`';
 		$unparsedHeader = preg_split( $splitHeaderPattern, $input );
-		 $output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) );
+		$output = $this->mParser->recursiveTagParse( trim( $unparsedHeader[0] ) );
 		if ( array_key_exists( 1, $unparsedHeader ) && $this->mBeingCorrected ) {
 			$output .= "\n";
 			$output .= '<table class="correction"><tr>';
@@ -614,7 +614,7 @@ class Question {
 					$strlen = preg_match( '` \(i\)$`', $possibility )
 						? mb_strlen( $possibility ) - 4
 						: mb_strlen( $possibility );
-					$possibility = substr( $possibility, 0, $strlen );
+					$possibility = mb_substr( $possibility, 0, $strlen );
 					$poss .= $possibility . '<br />';
 				}
 			}
