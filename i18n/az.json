@@ -3,12 +3,13 @@
 		"authors": [
 			"Cekli829",
 			"Vugar 1981",
-			"Wertuose"
+			"Wertuose",
+			"IBAnk"
 		]
 	},
 	"quiz_legend_correct": "Doğru",
 	"quiz_legend_incorrect": "Yanlış",
 	"quiz_legend_unanswered": "Cavabsız",
 	"quiz_correction": "Təsdiq et",
-	"quiz_reset": "Qur"
+	"quiz_reset": "Sıfırla"
 }

@@ -4,13 +4,14 @@
 			"Jaumeortola",
 			"Paucabot",
 			"SMP",
-			"Xavier Dengra"
+			"Xavier Dengra",
+			"Jmarchn"
 		]
 	},
 	"quiz_desc": "Permet la creació de qüestionaris",
-	"quiz_addedPoints": "Puntuació per resposta correcta",
-	"quiz_cutoffPoints": "Puntuació per resposta incorrecta",
-	"quiz_ignoreCoef": "Ignora els coeficients de les qüestions",
+	"quiz_addedPoints": "{{PLURAL:$1|Punt afegit|Punts afegits}} per una resposta correcta:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punts}} per una resposta incorrecta:",
+	"quiz_ignoreCoef": "Ignora els coeficients de les preguntes:",
 	"quiz_shuffle": "Preguntes aleatòries",
 	"quiz_legend_correct": "Correcta",
 	"quiz_legend_incorrect": "Incorrecte",

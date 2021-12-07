@@ -3,12 +3,13 @@
 		"authors": [
 			"Hex",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
 	"quiz_desc": "Maakt het aanmaken van tests mogelijk",
 	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een fout antwoord:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een onjuist antwoord:",
 	"quiz_ignoreCoef": "De coëfficienten van de vragen negeren:",
 	"quiz_shuffle": "Willekeurige volgorde voor vragen",
 	"quiz_legend_correct": "Goed",
