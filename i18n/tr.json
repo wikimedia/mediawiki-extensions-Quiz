@@ -4,10 +4,11 @@
 			"BaRaN6161 TURK",
 			"Erkan Yilmaz",
 			"Joseph",
-			"Runningfridgesrule"
+			"Runningfridgesrule",
+			"MuratTheTurkish"
 		]
 	},
-	"quiz_desc": "Quiz oluşturulmasına izin verir",
+	"quiz_desc": "Sınav oluşturulmasına izin verir",
 	"quiz_addedPoints": "{{PLURAL:$1|Puan|Puan}} doğru cevap için eklendi:",
 	"quiz_cutoffPoints": "{{PLURAL:$1|Puan|Puan}} yanlış cevap için:",
 	"quiz_ignoreCoef": "Soruların katsayısını ihmal et:",

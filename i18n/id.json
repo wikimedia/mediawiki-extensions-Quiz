@@ -4,13 +4,14 @@
 			"Bennylin",
 			"Irwangatot",
 			"IvanLanin",
-			"Rex"
+			"Rex",
+			"Daud I.F. Argana"
 		]
 	},
 	"quiz_desc": "Menyediakan fasilitas pembuatan kuis",
-	"quiz_addedPoints": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat",
-	"quiz_cutoffPoints": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah",
-	"quiz_ignoreCoef": "Abaikan koefisien pertanyaan",
+	"quiz_addedPoints": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat:",
+	"quiz_cutoffPoints": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah:",
+	"quiz_ignoreCoef": "Abaikan koefisien pertanyaan:",
 	"quiz_shuffle": "Mengacak pertanyaan",
 	"quiz_legend_correct": "Benar",
 	"quiz_legend_incorrect": "Salah",

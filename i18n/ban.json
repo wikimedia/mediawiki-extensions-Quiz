@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chinamoonroll"
+		]
+	},
+	"quiz_desc": "Nyadiayang pangardian tebag-tebagan",
+	"quiz_addedPoints": "{{PLURAL:$1|poin}} antuk pacawisan sané patut:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|poin}} antuk pacawisan sané iwang:",
+	"quiz_ignoreCoef": "Depin koéfisién pitakén:",
+	"quiz_shuffle": "Acak pitakén",
+	"quiz_legend_correct": "Beneh",
+	"quiz_legend_incorrect": "Iwang",
+	"quiz_legend_unanswered": "Tan nyawis",
+	"quiz_legend_error": "Galat sintaks",
+	"quiz_correction": "Kumpulang",
+	"quiz_score": "Skir ragané $1 / $2",
+	"quiz_points": "$1 | {{PLURAL:$2|apoin|$2 poin}}",
+	"quiz_reset": "Jumu"
+}

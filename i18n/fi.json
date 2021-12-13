@@ -5,11 +5,12 @@
 			"Crt",
 			"Pe3",
 			"Str4nd",
-			"Tarmo"
+			"Tarmo",
+			"01miki10"
 		]
 	},
 	"quiz_desc": "Mahdollistaa kyselyiden luomisen.",
-	"quiz_addedPoints": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta",
+	"quiz_addedPoints": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta:",
 	"quiz_cutoffPoints": "{{PLURAL:$1|Piste|Pisteitä}} väärästä vastauksesta",
 	"quiz_ignoreCoef": "Jätä huomioimatta kysymysten kertoimet",
 	"quiz_shuffle": "Sekoita kysymykset",
