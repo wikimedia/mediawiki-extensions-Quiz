@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Aushulz",
-			"Sarvaturi"
+			"Sarvaturi",
+			"Ajeje Brazorf"
 		]
 	},
 	"quiz_legend_correct": "Giustu",
-	"quiz_legend_incorrect": "Sbagghiatu"
+	"quiz_legend_incorrect": "Sbagghiatu",
+	"quiz_correction": "Manna"
 }
