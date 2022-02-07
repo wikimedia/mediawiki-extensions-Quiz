@@ -1,5 +1,13 @@
 <?php
 
+namespace MediaWiki\Extension\Quiz;
+
+use Exception;
+use Parser;
+use TemplateParser;
+use WebRequest;
+use Xml;
+
 class Question {
 
 	/** @var WebRequest */
@@ -238,7 +246,6 @@ class Question {
 		$attemptChecker = 0;
 		$lines = [];
 		$proposalIndex = -1;
-		$checkedCount = 0;
 		foreach ( $raws as $proposalId => $raw ) {
 			$text = null;
 			$colSpan = '';
@@ -299,7 +306,6 @@ class Question {
 							}
 							if ( $this->mBeingCorrected ) {
 								if ( array_key_exists( 'checked', $attribs ) ) {
-									$checkedCount++;
 									$this->setState( 'correct' );
 									$attribs['class'] .= ' correct';
 									$attribs['title'] = wfMessage( 'quiz_legend_correct' )->text();
@@ -313,7 +319,6 @@ class Question {
 						case '-':
 							if ( $this->mBeingCorrected ) {
 								if ( array_key_exists( 'checked', $attribs ) ) {
-									$checkedCount++;
 									$this->setState( 'incorrect' );
 									$attribs['class'] .= ' incorrect';
 									$attribs['title'] = wfMessage( 'quiz_legend_incorrect' )->text();
@@ -355,7 +360,6 @@ class Question {
 				$colSpan = ' colspan="13"';
 			}
 			if ( $text !== null ) {
-				$lineOutput = '';
 				$lineOutput = '<tr class="' . $rawClass . '">' . "\n";
 				$lineOutput .= $signesOutput;
 				$lineOutput .= '<td' . $colSpan . '>';
@@ -384,8 +388,8 @@ class Question {
 		$order = '';
 		if ( $this->shuffleAnswers ) {
 			if ( $this->mBeingCorrected ) {
-				$orderInvalid = 0;
 				$order = $this->mRequest->getVal( $this->mQuestionId . '|order', '' );
+
 				// Check order values
 				$orderInvalid = $this->checkRequestOrder( $order, $proposalIndex );
 
@@ -416,9 +420,10 @@ class Question {
 		$orderValue = $order;
 		$attribs['hidden'] = 'hidden';
 		$attribs['checked'] = 'checked';
-		$orderHtml = Xml::input( $orderName, $orderSize = null, $orderValue, $attribs );
-		$output = $this->shuffleAnswers ? $orderHtml . $output : $output;
-		return $output;
+
+		return $this->shuffleAnswers
+			? Xml::input( $orderName, null, $orderValue, $attribs ) . $output
+			: $output;
 	}
 
 	/**
@@ -509,12 +514,10 @@ class Question {
 		$size = '';
 		$maxlength = '';
 		$class = '';
-		$style = '';
 		$value = '';
 		$disabled = '';
 		$big = '';
 		$poss = '';
-		$name = '';
 		$bigDisplay = '';
 		// determine size and maxlength of the input.
 		if ( array_key_exists( 3, $input ) ) {
@@ -634,7 +637,7 @@ class Question {
 			}
 		}
 		$name = $wqInputId;
-		$temp = $templateParser->processTemplate(
+		return $templateParser->processTemplate(
 			'Answer',
 			[
 				'title' => $title,
@@ -651,6 +654,5 @@ class Question {
 				'bigDisplay' => $bigDisplay,
 			]
 		);
-		return $temp;
 	}
 }
