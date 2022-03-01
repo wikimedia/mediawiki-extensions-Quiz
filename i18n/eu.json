@@ -2,10 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"Kobazulo"
+			"Kobazulo",
+			"Theklan"
 		]
 	},
 	"quiz_desc": "Galdera-sortak sortzeko",
+	"quiz_addedPoints": "Erantzun zuzen bakoitzeko gehitutako {{PLURAL:$1|puntua|puntuak}}:",
+	"quiz_cutoffPoints": "Erantzun oker bakoitzeko kendutako {{PLURAL:$1|puntua|puntuak}}:",
+	"quiz_ignoreCoef": "Ez hartu kontuan galderen koefizienteak:",
+	"quiz_shuffle": "Galderak nahastu",
 	"quiz_legend_correct": "Zuzenak",
 	"quiz_legend_incorrect": "Okerrak",
 	"quiz_legend_unanswered": "Erantzun gabe",
