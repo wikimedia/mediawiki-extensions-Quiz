@@ -14,10 +14,8 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"Quiz": "includes/Quiz.php",
-		"Question": "includes/Question.php",
-		"QuizHooks": "includes/QuizHooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\Quiz\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.quiz": {
@@ -35,10 +33,10 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
-			"QuizHooks::onParserFirstCallInit"
+			"MediaWiki\\Extension\\Quiz\\Hooks::onParserFirstCallInit"
 		],
 		"ParserAfterTidy": [
-			"Quiz::resetQuizID"
+			"MediaWiki\\Extension\\Quiz\\Quiz::resetQuizID"
 		]
 	},
 	"manifest_version": 2

@@ -1,6 +1,10 @@
 <?php
 
-class QuizHooks {
+namespace MediaWiki\Extension\Quiz;
+
+use Parser;
+
+class Hooks {
 
 	/**
 	 * Register the extension with the WikiText parser.
@@ -9,7 +13,7 @@ class QuizHooks {
 	 * @return bool true to continue hook processing
 	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setHook( 'quiz', 'QuizHooks::renderQuiz' );
+		$parser->setHook( 'quiz', [ self::class, 'renderQuiz' ] );
 		return true;
 	}
 

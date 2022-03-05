@@ -1,5 +1,14 @@
 <?php
 
+namespace MediaWiki\Extension\Quiz;
+
+use Hooks as MWHooks;
+use Parser;
+use StringUtils;
+use TemplateParser;
+use Title;
+use WebRequest;
+
 /**
  * Processes quiz markup
  */
@@ -127,7 +136,7 @@ class Quiz {
 			}
 		}
 		$this->mShuffle = !( array_key_exists( 'shuffle', $argv ) && $argv['shuffle'] == 'none' );
-		$this->mCaseSensitive = !( array_key_exists( 'case', $argv ) &&	$argv['case'] == '(i)' );
+		$this->mCaseSensitive = !( array_key_exists( 'case', $argv ) && $argv['case'] == '(i)' );
 
 		// Patterns used in several places
 		$this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
@@ -207,7 +216,6 @@ class Quiz {
 		// Generates the output.
 		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
 		// Determine the content of the settings table.
-		$settingsTable = '';
 		$settingsTable = $this->getSettingsTable( $templateParser );
 
 		$quiz_score = wfMessage( 'quiz_score' )->rawParams(
@@ -332,7 +340,7 @@ class Quiz {
 			$this->shuffleAnswers,
 			$this->mParser
 		);
-		Hooks::run( 'QuizQuestionCreated', [ $this, &$question ] );
+		MWHooks::run( 'QuizQuestionCreated', [ $this, &$question ] );
 
 		// gets the question text
 		$questionText = $question->parseHeader( $matches[1] );

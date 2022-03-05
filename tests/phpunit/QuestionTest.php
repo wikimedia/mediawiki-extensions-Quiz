@@ -1,10 +1,11 @@
 <?php
 
+use MediaWiki\Extension\Quiz\Question;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\TestingAccessWrapper;
 
 /**
- * @covers Question
+ * @covers \MediaWiki\Extension\Quiz\Question
  */
 class QuestionTest extends MediaWikiLangTestCase {
 
@@ -290,7 +291,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 
 	/**
 	 * @dataProvider provideParseTextField
-	 * @covers Question::parseTextField
+	 * @covers \MediaWiki\Extension\Quiz\Question::parseTextField
 	 */
 	public function testParseTextField( $number, $beingCorrected, $input, $expected, $requestValue ) {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
@@ -318,7 +319,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 
 	/**
 	 * @dataProvider provideCheckRequestOrder
-	 * @covers Question::checkRequestOrder
+	 * @covers \MediaWiki\Extension\Quiz\Question::checkRequestOrder
 	 */
 	public function testCheckRequestOrder( $order, $proposalIndex, $expected ) {
 		$this->question = $this->getQuestion( $beingCorrected = 1, 1, 2 );

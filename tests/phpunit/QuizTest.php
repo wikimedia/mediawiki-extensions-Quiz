@@ -1,10 +1,11 @@
 <?php
 
+use MediaWiki\Extension\Quiz\Quiz;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\TestingAccessWrapper;
 
 /**
- * @covers Quiz
+ * @covers \MediaWiki\Extension\Quiz\Quiz
  */
 class QuizTest extends MediaWikiLangTestCase {
 
@@ -72,7 +73,7 @@ class QuizTest extends MediaWikiLangTestCase {
 
 	/**
 	 * @dataProvider provideParseQuestion
-	 * @covers Quiz::parseQuestion
+	 * @covers \MediaWiki\Extension\Quiz\Quiz::parseQuestion
 	 */
 	public function testParseQuestion( $input, $expected, $injectedValue, $expectedValue ) {
 		$this->quiz->mShuffleDiv = $injectedValue;
@@ -145,7 +146,7 @@ class QuizTest extends MediaWikiLangTestCase {
 
 	/**
 	 * @dataProvider provideGetSettingsTable
-	 * @covers Quiz::getSettingsTable
+	 * @covers \MediaWiki\Extension\Quiz\Quiz::getSettingsTable
 	 */
 	public function testGetSettingsTable( $injected, $expected ) {
 		// Setting quiz variables
