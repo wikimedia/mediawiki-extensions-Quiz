@@ -78,8 +78,8 @@ class QuizTest extends MediaWikiLangTestCase {
 	public function testParseQuestion( $input, $expected, $injectedValue, $expectedValue ) {
 		$this->quiz->mShuffleDiv = $injectedValue;
 		$output = $this->quiz->parseQuestion( $input[0], $input[1] );
-		$this->assertEquals( $this->quiz->mShuffleDiv, $expectedValue );
-		$this->assertEquals( $output, $expected );
+		$this->assertEquals( $expectedValue, $this->quiz->mShuffleDiv );
+		$this->assertEquals( $expected, $output );
 	}
 
 	public function provideGetSettingsTable() {
