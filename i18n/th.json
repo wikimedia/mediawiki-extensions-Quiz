@@ -3,12 +3,14 @@
 		"authors": [
 			"Aefgh39622",
 			"Mopza",
-			"Passawuth"
+			"Passawuth",
+			"Geonuch"
 		]
 	},
 	"quiz_desc": "อนุญาตการสร้างแบบทดสอบ",
 	"quiz_addedPoints": "{{PLURAL:$1|คะแนน|}}ที่เพิ่มสำหรับคำตอบที่ถูกต้อง:",
 	"quiz_cutoffPoints": "{{PLURAL:$1|คะแนน}}สำหรับคำตอบที่ไม่ถูกต้อง:",
+	"quiz_ignoreCoef": "ละเว้นค่าสัมประสิทธิ์ของคำถาม:",
 	"quiz_shuffle": "สุ่มคำถาม",
 	"quiz_legend_correct": "ถูกต้อง",
 	"quiz_legend_incorrect": "ผิด",
