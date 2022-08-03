@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Boukman",
 			"Jvm"
 		]
 	},
 	"quiz_desc": "Pemèt Kreyasyon kwiz yo",
-	"quiz_addedPoints": "{{PLURAL:$1|Pwen|Pwen}} mete pou repons ki bon",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pwen|Pwen}} retire pou repons ki pa bon",
-	"quiz_ignoreCoef": "Inyore koefisyan kesyon yo",
+	"quiz_addedPoints": "{{PLURAL:$1|Pwen}} mete pou repons ki bon :",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Pwen}} retire pou repons ki pa bon :",
+	"quiz_ignoreCoef": "Inyore koefisyan kesyon yo :",
 	"quiz_shuffle": "Mikse kesyon yo",
 	"quiz_legend_correct": "Bon",
 	"quiz_legend_incorrect": "Move",
