@@ -105,14 +105,14 @@ class Quiz {
 				$this->mRequest->getVal( 'addedPoints' )
 			);
 			if ( is_numeric( $lAddedPoints ) ) {
-				$this->mAddedPoints = $lAddedPoints;
+				$this->mAddedPoints = (int)$lAddedPoints;
 			}
 
 			$lCutoffPoints = str_replace( ',', '.',
 				$this->mRequest->getVal( 'cutoffPoints' )
 			);
 			if ( is_numeric( $lCutoffPoints ) ) {
-				$this->mCutoffPoints = $lCutoffPoints;
+				$this->mCutoffPoints = (int)$lCutoffPoints;
 			}
 			if ( $this->mRequest->getVal( 'ignoringCoef' ) == 'on' ) {
 				$this->mIgnoringCoef = true;
@@ -126,10 +126,10 @@ class Quiz {
 			)
 		) {
 			if ( is_numeric( $matches[1] ) ) {
-				$this->mAddedPoints = $matches[1];
+				$this->mAddedPoints = (int)$matches[1];
 			}
 			if ( is_numeric( $matches[2] ) ) {
-				$this->mCutoffPoints = $matches[2];
+				$this->mCutoffPoints = (int)$matches[2];
 			}
 			if ( array_key_exists( 3, $matches ) ) {
 				$this->mIgnoringCoef = true;
