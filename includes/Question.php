@@ -32,22 +32,22 @@ class Question {
 	private $mState;
 
 	/** @var string */
-	private $mProposalPattern;
+	private $mProposalPattern = '`^([+-]) ?(.*)`';
 
 	/** @var string */
-	private $mCorrectionPattern;
+	private $mCorrectionPattern = '`^\|\|(.*)`';
 
 	/** @var string */
-	private $mCategoryPattern;
+	private $mCategoryPattern = '`^\|(\n|[^\|].*\n)`';
 
 	/** @var string */
-	private $mTextFieldPattern;
+	private $mTextFieldPattern = '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
 
 	/** @var string */
-	public $mType;
+	public $mType = 'multipleChoice';
 
 	/** @var int */
-	public $mCoef;
+	public $mCoef = 1;
 
 	/**
 	 * @param bool $beingCorrected Identifier for quiz being corrected.
@@ -65,12 +65,6 @@ class Question {
 		$this->shuffleAnswers = $shufAns;
 		$this->mParser = $parser;
 		$this->mState = ( $beingCorrected ) ? 'NA' : '';
-		$this->mType = 'multipleChoice';
-		$this->mCoef = 1;
-		$this->mProposalPattern = '`^([+-]) ?(.*)`';
-		$this->mCorrectionPattern = '`^\|\|(.*)`';
-		$this->mCategoryPattern = '`^\|(\n|[^\|].*\n)`';
-		$this->mTextFieldPattern = '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
 	}
 
 	/**
