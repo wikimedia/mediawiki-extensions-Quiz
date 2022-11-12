@@ -17,6 +17,9 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\Quiz\\": "includes/"
 	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\Quiz\\Tests\\": "tests/phpunit/"
+	},
 	"ResourceModules": {
 		"ext.quiz": {
 			"scripts": "ext.quiz.js",

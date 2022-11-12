@@ -1,36 +1,20 @@
 <?php
 
+namespace MediaWiki\Extension\Quiz\Tests;
+
 use MediaWiki\Extension\Quiz\Question;
-use MediaWiki\MediaWikiServices;
 use Wikimedia\TestingAccessWrapper;
 
 /**
  * @covers \MediaWiki\Extension\Quiz\Question
  * @group Database
  */
-class QuestionTest extends MediaWikiLangTestCase {
-
-	/**
-	 * @var Parser
-	 */
-	private $parser;
+class QuestionTest extends QuizTestCase {
 
 	/**
 	 * @var Question
 	 */
 	private $question;
-
-	protected function setUp(): void {
-		parent::setUp();
-
-		$this->setMwGlobals( 'wgUsePigLatinVariant', false );
-
-		$services = MediaWikiServices::getInstance();
-		$options = new ParserOptions( $this->getTestUser()->getUser() );
-		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
-		$this->parser = $services->getParser();
-		$this->parser->startExternalParse( $title, $options, 'text', true );
-	}
 
 	private function getQuestion( $beingCorrected, $caseSensitive, $questionId ) {
 		// Randomly generate shuffle parameter value

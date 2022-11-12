@@ -1,33 +1,24 @@
 <?php
 
+namespace MediaWiki\Extension\Quiz\Tests;
+
 use MediaWiki\Extension\Quiz\Quiz;
-use MediaWiki\MediaWikiServices;
+use TemplateParser;
 use Wikimedia\TestingAccessWrapper;
 
 /**
  * @covers \MediaWiki\Extension\Quiz\Quiz
  * @group Database
  */
-class QuizTest extends MediaWikiLangTestCase {
+class QuizTest extends QuizTestCase {
 
 	/**
 	 * @var Quiz
 	 */
 	private $quiz;
 
-	/**
-	 * @var Parser
-	 */
-	private $parser;
-
 	protected function setUp(): void {
 		parent::setUp();
-
-		$services = MediaWikiServices::getInstance();
-		$options = new ParserOptions( $this->getTestUser()->getUser() );
-		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
-		$this->parser = $services->getParser();
-		$this->parser->startExternalParse( $title, $options, 'text', true );
 		$this->quiz = TestingAccessWrapper::newFromObject(
 			new Quiz( [], $this->parser )
 		);
