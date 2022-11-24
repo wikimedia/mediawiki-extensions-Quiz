@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khalid Mahmood"
+			"Khalid Mahmood",
+			"Bgo eiu"
 		]
 	},
 	"quiz_desc": "کوئز دے بنن دی اجازت",
@@ -14,7 +15,7 @@
 	"quiz_legend_unanswered": "جواب نئیں دتا گیا۔",
 	"quiz_legend_error": "بولی دی غلطی",
 	"quiz_correction": "اگے رکھو",
-	"quiz_score": "تواڈا سکور اے $1 / $2",
+	"quiz_score": "تہاڈے سکور $1 / $2 اے",
 	"quiz_points": "$1 | {{PLURAL:$2|1 پوائینٹ|$2 پوائینٹ}}",
 	"quiz_reset": "دوبارہ ٹھیک کرنا"
 }
