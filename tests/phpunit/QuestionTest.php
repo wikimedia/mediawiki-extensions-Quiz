@@ -22,6 +22,8 @@ class QuestionTest extends MediaWikiLangTestCase {
 	protected function setUp(): void {
 		parent::setUp();
 
+		$this->setMwGlobals( 'wgUsePigLatinVariant', false );
+
 		$services = MediaWikiServices::getInstance();
 		$options = new ParserOptions( $this->getTestUser()->getUser() );
 		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
