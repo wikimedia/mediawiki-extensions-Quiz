@@ -20,7 +20,7 @@
 	"quiz_legend_unanswered": "Non répondu",
 	"quiz_legend_error": "Erreur de syntaxe",
 	"quiz_correction": "Soumettre",
-	"quiz_score": "Votre pointage est $1 / $2",
+	"quiz_score": "Votre pointage est $1 / $2",
 	"quiz_points": "$1 | $2 point{{PLURAL:||s}}",
 	"quiz_reset": "Réinitialiser"
 }
