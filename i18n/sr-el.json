@@ -5,17 +5,17 @@
 			"Rancher"
 		]
 	},
-	"quiz_desc": "Omogući stvaranje upitnika.",
-	"quiz_addedPoints": "{{PLURAL:$1|bod|boda|bodova}} se dodaje na tačan odgovor",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor",
-	"quiz_ignoreCoef": "Ignoriši koeficijente pitanja",
+	"quiz_desc": "Omogućava pravljenje kvizova",
+	"quiz_addedPoints": "{{PLURAL:$1|Bod|Boda|Bodova}} je dodato za tačan odgovor:",
+	"quiz_cutoffPoints": "{{PLURAL:$1|Bod|Boda|Bodova}} za pogrešan odgovor:",
+	"quiz_ignoreCoef": "Zanemari koeficijente pitanja:",
 	"quiz_shuffle": "Izmešaj pitanja",
 	"quiz_legend_correct": "Tačno",
 	"quiz_legend_incorrect": "Pogrešno",
-	"quiz_legend_unanswered": "Nije odgovoreno",
-	"quiz_legend_error": "Greška u sintaksi",
-	"quiz_correction": "Postavi",
+	"quiz_legend_unanswered": "Neodgovoreno",
+	"quiz_legend_error": "Sintaktička greška",
+	"quiz_correction": "Pošalji",
 	"quiz_score": "Vaš rezultat je $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 bod|$2 boda|$2 bodova}}",
-	"quiz_reset": "Poništi"
+	"quiz_reset": "Resetuj"
 }
