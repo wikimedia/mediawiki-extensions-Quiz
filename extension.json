@@ -7,7 +7,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.31.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
 		"QuizExtension": [
@@ -20,11 +20,17 @@
 	"ResourceModules": {
 		"ext.quiz": {
 			"scripts": "ext.quiz.js",
-			"targets": [ "desktop", "mobile" ]
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		},
 		"ext.quiz.styles": {
 			"styles": "ext.quiz.css",
-			"targets": [ "desktop", "mobile" ]
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
