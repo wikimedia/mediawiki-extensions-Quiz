@@ -70,7 +70,8 @@
 		} );
 	}
 
-	/** Prepare the quiz for "javascriptable" browsers
+	/**
+	 * Prepare the quiz for "javascriptable" browsers
 	 *
 	 * @param {jQuery} $content The content area of the wiki page,
 	 *  passed by the `wikipage.content` hook
