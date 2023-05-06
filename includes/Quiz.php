@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Quiz;
 
-use Hooks as MWHooks;
+use MediaWiki\MediaWikiServices;
 use Parser;
 use StringUtils;
 use TemplateParser;
@@ -340,7 +340,7 @@ class Quiz {
 			$this->shuffleAnswers,
 			$this->mParser
 		);
-		MWHooks::run( 'QuizQuestionCreated', [ $this, &$question ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'QuizQuestionCreated', [ $this, &$question ] );
 
 		// gets the question text
 		$questionText = $question->parseHeader( $matches[1] );
