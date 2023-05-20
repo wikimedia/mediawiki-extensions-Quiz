@@ -53,7 +53,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		);
 	}
 
-	public function provideSetState() {
+	public static function provideSetState() {
 		return [
 			[ 'NA', 'error', 'error' ],
 			[ 'NA', 'na_incorrect', 'na_incorrect' ],
@@ -77,7 +77,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected, $state );
 	}
 
-	public function provideParseParameters() {
+	public static function provideParseParameters() {
 		return [
 			[ '0', [ '|type="{}"', 'type="{}"' ], [ 'textField', '1' ] ],
 			[ '1', [ '|type="{}"', 'type="{}"' ], [ 'textField', '1' ] ],
@@ -97,7 +97,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected[1], $this->question->mCoef );
 	}
 
-	public function provideParseHeader() {
+	public static function provideParseHeader() {
 		return [
 			[ '0', 'Question ' . "\n" . '|type="[]"', 'Question' ],
 			[ '1', 'Question ' . "\n" . '|type="[]"', 'Question' ],
@@ -116,7 +116,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected, $header );
 	}
 
-	public function provideParseCategories() {
+	public static function provideParseCategories() {
 		return [
 			// Test case when Question is being corrected and input has 3 Categories
 			[ '1', 'Option A | Option B | Option C',
@@ -203,7 +203,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected[2], $state );
 	}
 
-	public function provideParseTextField() {
+	public static function provideParseTextField() {
 		return [
 			// test case when quiz no input is provided for multiple answers
 			[ '1', '1', [ '{ Stageira | Plato | Greece }', 'Stageira | Plato | Greece', '' ],
@@ -302,7 +302,7 @@ class QuestionTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected, $output );
 	}
 
-	public function provideCheckRequestOrder() {
+	public static function provideCheckRequestOrder() {
 		return [
 			// Test for correct order
 			[ '1 0 2 3', 3, 0 ],

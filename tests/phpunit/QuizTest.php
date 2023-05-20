@@ -41,7 +41,7 @@ class QuizTest extends MediaWikiLangTestCase {
 		$this->assertSame( 0, $this->quiz->getQuizId() );
 	}
 
-	public function provideParseQuestion() {
+	public static function provideParseQuestion() {
 		return [
 			// Test for {X} tag
 			[
@@ -82,7 +82,7 @@ class QuizTest extends MediaWikiLangTestCase {
 		$this->assertEquals( $expected, $output );
 	}
 
-	public function provideGetSettingsTable() {
+	public static function provideGetSettingsTable() {
 		return [
 			// Test case when simple display is disabled, it is not being corrected, state is NA
 			// added and cutoff points are 3 and -1 respectively with 4 questions in quiz
