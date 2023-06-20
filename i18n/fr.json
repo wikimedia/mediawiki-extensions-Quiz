@@ -10,17 +10,17 @@
 			"Verdy p"
 		]
 	},
-	"quiz_desc": "Permet la création des quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Point ajouté|Points ajoutés}} pour une réponse juste :",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point retiré|Points retirés}} pour une réponse incorrecte :",
-	"quiz_ignoreCoef": "Ignorer les coefficients des questions :",
+	"quiz_desc": "Permet la création de quiz",
+	"quiz_addedPoints": "Point{{PLURAL:$1||s}} ajouté{{PLURAL:$1||s}} pour une réponse juste :",
+	"quiz_cutoffPoints": "Point{{PLURAL:$1||s}} retiré{{PLURAL:$1||s}} pour une réponse incorrecte :",
+	"quiz_ignoreCoef": "Ignorer les coefficients des questions :",
 	"quiz_shuffle": "Mélanger les questions",
 	"quiz_legend_correct": "Juste",
-	"quiz_legend_incorrect": "Faux",
-	"quiz_legend_unanswered": "Non répondu",
+	"quiz_legend_incorrect": "Incorrecte",
+	"quiz_legend_unanswered": "Non répondue",
 	"quiz_legend_error": "Erreur de syntaxe",
 	"quiz_correction": "Soumettre",
 	"quiz_score": "Votre pointage est $1 / $2",
-	"quiz_points": "$1 | $2 point{{PLURAL:||s}}",
+	"quiz_points": "$1 | $2 point{{PLURAL:||s}}",
 	"quiz_reset": "Réinitialiser"
 }
