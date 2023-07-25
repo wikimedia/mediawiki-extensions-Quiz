@@ -12,6 +12,6 @@
 	"quiz_legend_error": "kosa la kimpangilio wa lugha",
 	"quiz_correction": "Wasilisha",
 	"quiz_score": "Una maksi $1/$2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 point|$2 pointi}}",
+	"quiz_points": "$1 | {{PLURAL:$2|point 1|pointi $2}}",
 	"quiz_reset": "Panga upya"
 }
