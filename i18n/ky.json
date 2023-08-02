@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chorobek"
+			"Chorobek",
+			"Bosogo"
 		]
 	},
+	"quiz_legend_correct": "Туура",
 	"quiz_reset": "Тазала"
 }
