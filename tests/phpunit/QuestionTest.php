@@ -6,6 +6,7 @@ use Wikimedia\TestingAccessWrapper;
 
 /**
  * @covers \MediaWiki\Extension\Quiz\Question
+ * @group Database
  */
 class QuestionTest extends MediaWikiLangTestCase {
 
