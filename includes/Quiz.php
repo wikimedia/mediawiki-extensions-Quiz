@@ -3,11 +3,11 @@
 namespace MediaWiki\Extension\Quiz;
 
 use MediaWiki\Extension\Quiz\Hooks\HookRunner;
+use MediaWiki\Html\TemplateParser;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use Parser;
 use StringUtils;
-use TemplateParser;
 use WebRequest;
 
 /**
