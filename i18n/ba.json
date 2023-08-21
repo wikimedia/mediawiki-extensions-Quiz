@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Assele",
-			"Haqmar"
+			"Haqmar",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"quiz_desc": "Һораулыҡ булдырырға мөмкинлек бирә",
-	"quiz_addedPoints": "Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй|мәрәй}} өҫтәлде",
-	"quiz_cutoffPoints": "Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй|мәрәй}}",
-	"quiz_ignoreCoef": "Һорау коэффициенттарын иҫәпкә алмаҫҡа",
+	"quiz_addedPoints": "Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй}} өҫтәлде",
+	"quiz_cutoffPoints": "Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй}}",
+	"quiz_ignoreCoef": "Һорау коэффициенттарын иғтибарға алмаҫҡа:",
 	"quiz_shuffle": "Һорауҙарҙы бутарға",
 	"quiz_legend_correct": "Дөрөҫ",
 	"quiz_legend_incorrect": "Яңылыш",
