@@ -143,12 +143,8 @@ class Quiz {
 		$this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
 
-	/**
-	 * @return bool
-	 */
 	public static function resetQuizID() {
 		self::$sQuizId = 0;
-		return true;
 	}
 
 	/**

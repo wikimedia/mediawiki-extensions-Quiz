@@ -2,19 +2,22 @@
 
 namespace MediaWiki\Extension\Quiz;
 
+use MediaWiki\Hook\ParserAfterTidyHook;
+use MediaWiki\Hook\ParserFirstCallInitHook;
 use Parser;
 
-class Hooks {
+class Hooks implements
+	ParserFirstCallInitHook,
+	ParserAfterTidyHook
+{
 
 	/**
 	 * Register the extension with the WikiText parser.
 	 * The tag used is <quiz>
 	 * @param Parser $parser the wikitext parser
-	 * @return bool true to continue hook processing
 	 */
-	public static function onParserFirstCallInit( Parser $parser ) {
+	public function onParserFirstCallInit( $parser ) {
 		$parser->setHook( 'quiz', [ self::class, 'renderQuiz' ] );
-		return true;
 	}
 
 	/**
@@ -30,5 +33,13 @@ class Hooks {
 		$parser->getOutput()->updateCacheExpiry( 0 );
 		$quiz = new Quiz( $argv, $parser );
 		return $quiz->parseQuiz( $input );
+	}
+
+	/**
+	 * @param Parser $parser
+	 * @param string &$text
+	 */
+	public function onParserAfterTidy( $parser, &$text ) {
+		Quiz::resetQuizID();
 	}
 }

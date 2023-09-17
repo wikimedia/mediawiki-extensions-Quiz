@@ -41,12 +41,13 @@
 		"remoteExtPath": "Quiz/modules"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"MediaWiki\\Extension\\Quiz\\Hooks::onParserFirstCallInit"
-		],
-		"ParserAfterTidy": [
-			"MediaWiki\\Extension\\Quiz\\Quiz::resetQuizID"
-		]
+		"ParserFirstCallInit": "main",
+		"ParserAfterTidy": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\Quiz\\Hooks"
+		}
 	},
 	"manifest_version": 2
 }
