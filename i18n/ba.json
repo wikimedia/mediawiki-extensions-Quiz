@@ -10,13 +10,13 @@
 	"quiz_addedPoints": "Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй}} өҫтәлде",
 	"quiz_cutoffPoints": "Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй}}",
 	"quiz_ignoreCoef": "Һорау коэффициенттарын иғтибарға алмаҫҡа:",
-	"quiz_shuffle": "Һорауҙарҙы бутарға",
+	"quiz_shuffle": "Һорауҙарҙы аралаштырырға",
 	"quiz_legend_correct": "Дөрөҫ",
-	"quiz_legend_incorrect": "Яңылыш",
-	"quiz_legend_unanswered": "Яуапланманы",
+	"quiz_legend_incorrect": "Хаталы",
+	"quiz_legend_unanswered": "Яуап булманы",
 	"quiz_legend_error": "Синтаксик хата",
 	"quiz_correction": "Ебәрергә",
-	"quiz_score": "Мәрәйегеҙ: $1 / $2",
+	"quiz_score": "Һөҙөмтәгеҙ: $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1=1 мәрәй|$2 мәрәй}}",
-	"quiz_reset": "Баштан алырға"
+	"quiz_reset": "Алып ташларға"
 }
