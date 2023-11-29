@@ -110,7 +110,7 @@ class Quiz {
 			}
 
 			$lCutoffPoints = str_replace( ',', '.',
-				$this->mRequest->getVal( 'cutoffPoints' )
+				(string)$this->mRequest->getVal( 'cutoffPoints' )
 			);
 			if ( is_numeric( $lCutoffPoints ) ) {
 				$this->mCutoffPoints = (int)$lCutoffPoints;
