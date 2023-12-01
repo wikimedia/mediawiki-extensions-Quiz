@@ -330,6 +330,7 @@ class Question {
 							break;
 					}
 					$signesOutput .= '<td class="sign">';
+					$attribs['id'] = $name;
 					$signesOutput .= Xml::input( $name, false, $value, $attribs );
 					$signesOutput .= '</td>';
 				}
@@ -357,9 +358,9 @@ class Question {
 			if ( $text !== null ) {
 				$lineOutput = '<tr class="' . $rawClass . '">' . "\n";
 				$lineOutput .= $signesOutput;
-				$lineOutput .= '<td' . $colSpan . '>';
+				$lineOutput .= '<td' . $colSpan . '><label for="'.$name.'">';
 				$lineOutput .= $this->mParser->recursiveTagParse( $text );
-				$lineOutput .= '</td>';
+				$lineOutput .= '</label></td>';
 				$lineOutput .= '</tr>' . "\n";
 				if ( $rawClass === 'correction selected' || $rawClass === 'correction unselected' ) {
 					if ( $proposalIndex === -1 ) {
