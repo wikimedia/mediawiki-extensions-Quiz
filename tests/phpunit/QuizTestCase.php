@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\Quiz\Tests;
 
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWikiLangTestCase;
 use Parser;
 use ParserOptions;
-use SpecialPage;
 
 abstract class QuizTestCase extends MediaWikiLangTestCase {
 	/** @var Parser */

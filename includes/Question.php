@@ -4,8 +4,8 @@ namespace MediaWiki\Extension\Quiz;
 
 use Exception;
 use MediaWiki\Html\TemplateParser;
+use MediaWiki\Request\WebRequest;
 use Parser;
-use WebRequest;
 use Xml;
 
 class Question {

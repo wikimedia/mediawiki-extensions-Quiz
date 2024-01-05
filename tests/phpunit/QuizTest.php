@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\Quiz\Tests;
 
 use MediaWiki\Extension\Quiz\Quiz;
-use TemplateParser;
+use MediaWiki\Html\TemplateParser;
 use Wikimedia\TestingAccessWrapper;
 
 /**
