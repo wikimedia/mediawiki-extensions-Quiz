@@ -103,14 +103,14 @@ class Quiz {
 
 		if ( $this->mBeingCorrected ) {
 			$lAddedPoints = str_replace( ',', '.',
-				$this->mRequest->getVal( 'addedPoints' )
+				$this->mRequest->getVal( 'addedPoints', '' )
 			);
 			if ( is_numeric( $lAddedPoints ) ) {
 				$this->mAddedPoints = (int)$lAddedPoints;
 			}
 
 			$lCutoffPoints = str_replace( ',', '.',
-				(string)$this->mRequest->getVal( 'cutoffPoints' )
+				$this->mRequest->getVal( 'cutoffPoints', '' )
 			);
 			if ( is_numeric( $lCutoffPoints ) ) {
 				$this->mCutoffPoints = (int)$lCutoffPoints;
