@@ -22,18 +22,10 @@
 	},
 	"ResourceModules": {
 		"ext.quiz": {
-			"scripts": "ext.quiz.js",
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"scripts": "ext.quiz.js"
 		},
 		"ext.quiz.styles": {
-			"styles": "ext.quiz.css",
-			"targets": [
-				"desktop",
-				"mobile"
-			]
+			"styles": "ext.quiz.css"
 		}
 	},
 	"ResourceFileModulePaths": {
