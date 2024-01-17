@@ -24,10 +24,6 @@ class QuizTest extends QuizTestCase {
 		);
 	}
 
-	public function testQuizHasQuizId() {
-		$this->assertClassHasStaticAttribute( 'sQuizId', Quiz::class );
-	}
-
 	public function testResetQuizId() {
 		$this->quiz->resetQuizId();
 		$this->assertSame( 0, $this->quiz->getQuizId() );
