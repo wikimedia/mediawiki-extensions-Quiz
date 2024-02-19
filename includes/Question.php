@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\Quiz;
 
-use Exception;
 use MediaWiki\Html\TemplateParser;
 use MediaWiki\Request\WebRequest;
 use Parser;
+use UnexpectedValueException;
 use Xml;
 
 class Question {
@@ -278,7 +278,7 @@ class Question {
 							$value = 's' . $signId;
 							break;
 						default:
-							throw new Exception( 'unknown typeId' );
+							throw new UnexpectedValueException( 'unknown typeId' );
 					}
 					// Determine if the input had to be checked.
 					if ( $this->mBeingCorrected && $this->mRequest->getVal( $name ) == $value ) {
