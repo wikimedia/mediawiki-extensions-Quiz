@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"S.Örvarr.S",
-			"Snævar"
+			"Snævar",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
 	"quiz_desc": "Heimilar gerð skyndiprófa",
@@ -12,7 +13,7 @@
 	"quiz_legend_correct": "Rétt",
 	"quiz_legend_incorrect": "Röng",
 	"quiz_legend_unanswered": "Ósvarað",
-	"quiz_legend_error": "Málfræðivilla",
+	"quiz_legend_error": "Málskipanarvilla",
 	"quiz_correction": "Senda",
 	"quiz_score": "Stigafjöldinn þinn er $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 stig|$2 stig}}",
