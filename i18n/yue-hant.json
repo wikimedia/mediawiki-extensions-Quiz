@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"H78c67c"
 		]
 	},
 	"quiz_desc": "容許開小測題",
-	"quiz_addedPoints": "答啱咗加上嘅{{PLURAL:$1|分數}}",
-	"quiz_cutoffPoints": "答錯咗減去嘅{{PLURAL:$1|分數}}",
+	"quiz_addedPoints": "答啱而加咗嘅{{PLURAL:$1|分數}}：",
+	"quiz_cutoffPoints": "答錯而減咗嘅{{PLURAL:$1|分數}}：",
 	"quiz_ignoreCoef": "略過問題嘅系數",
 	"quiz_shuffle": "撈亂問題",
 	"quiz_legend_correct": "啱",
