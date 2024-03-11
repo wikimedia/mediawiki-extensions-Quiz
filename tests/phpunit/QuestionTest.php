@@ -210,8 +210,7 @@ class QuestionTest extends QuizTestCase {
 			 . '<span class="">' . "\n\t\t\t\t"
 			 . '<input type="text" name="2" class="words" title=""  size="" maxlength="" '
 			 . 'autocomplete="off" value="" />' . "\n\t\t\t\t\t" . '<em style="display: none">'
-			 . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n"
-			 ,
+			 . "\n\t\t\t\t\t" . '</em>' . "\n\t\t\t" . '</span>' . "\n" . '</div>' . "\n",
 			 ''
 			],
 			// test case when no user input is provided to case insensitive answer
