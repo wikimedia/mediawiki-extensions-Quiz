@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"EugeneZelenko",
 			"Jon Harald Søby",
 			"Kwj2772",
@@ -23,6 +24,6 @@
 	"quiz_legend_error": "Used as label.\n{{Related|Quiz color}}\n{{Identical|Syntax error}}",
 	"quiz_correction": "Used as label for the \"Submit\" button.\n{{Identical|Submit}}",
 	"quiz_score": "Parameters:\n* $1 - examminee's score\n* $2 - perfect score",
-	"quiz_points": "Used as title for the <code><nowiki><table></nowiki></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz_legend_correct}}\n** {{msg-mw|Quiz_legend_incorrect}}\n** {{msg-mw|Quiz_legend_unanswered}}\n* $2 - number of points",
+	"quiz_points": "Used as title for the <code>&lt;table></code>. Parameters:\n* $1 - label for <code>$2</code>. Any one of the following messages:\n** {{msg-mw|Quiz_legend_correct}}\n** {{msg-mw|Quiz_legend_incorrect}}\n** {{msg-mw|Quiz_legend_unanswered}}\n* $2 - number of points",
 	"quiz_reset": "Used as label for the \"Reset\" button.\n\nPreceded by the \"Submit\" button.\n{{Identical|Reset}}"
 }
