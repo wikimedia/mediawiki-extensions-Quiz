@@ -35,7 +35,7 @@
 }
 
 .quiz .margin.incorrect {
-	background-color: #d33;
+	background-color: #d73333;
 }
 
 .quiz .margin.correction {
@@ -79,7 +79,7 @@
 }
 
 .quiz .question .border.incorrect {
-	border-color: #d33;
+	border-color: #d73333;
 }
 
 .quiz .question .border.correction {
@@ -99,7 +99,7 @@
 }
 
 .quiz .question .check.incorrect {
-	outline: 3px solid #d33;
+	outline: 3px solid #d73333;
 }
 
 .quiz .question .check.correction {
