@@ -5,6 +5,7 @@
 			"Malafaya"
 		]
 	},
+	"quiz_addedPoints": "{{PLURAL:$1|punto|punti}} adjuntita por korekta respondo:",
 	"quiz_legend_correct": "Justa",
 	"quiz_legend_incorrect": "Nejusta",
 	"quiz_correction": "Sendez",
