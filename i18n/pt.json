@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			555,
 			"Hamilton Abreu",
 			"Luckas",
 			"Malafaya",
-			"Vitorvicentevalente",
-			555
+			"Vitorvicentevalente"
 		]
 	},
 	"quiz_desc": "Permite a criação de questionários",
