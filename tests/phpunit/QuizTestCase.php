@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\Quiz\Tests;
 
+use MediaWiki\Parser\Parser;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWikiLangTestCase;
-use Parser;
 use ParserOptions;
 
 abstract class QuizTestCase extends MediaWikiLangTestCase {

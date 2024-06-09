@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\Quiz;
 
 use MediaWiki\Html\TemplateParser;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
-use Parser;
 use UnexpectedValueException;
 use Xml;
 

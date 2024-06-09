@@ -5,9 +5,9 @@ namespace MediaWiki\Extension\Quiz;
 use MediaWiki\Extension\Quiz\Hooks\HookRunner;
 use MediaWiki\Html\TemplateParser;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
-use Parser;
 use StringUtils;
 
 /**
