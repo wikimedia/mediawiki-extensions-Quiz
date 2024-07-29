@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\Quiz\Tests;
 
+use MediaWiki\MainConfigNames;
 use MediaWiki\Parser\Parser;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWikiLangTestCase;
@@ -14,7 +15,7 @@ abstract class QuizTestCase extends MediaWikiLangTestCase {
 	protected function setUp(): void {
 		parent::setUp();
 
-		$this->setMwGlobals( 'wgUsePigLatinVariant', false );
+		$this->overrideConfigValue( MainConfigNames::UsePigLatinVariant, false );
 
 		$options = new ParserOptions( $this->getTestUser()->getUser() );
 		$title = SpecialPage::getTitleFor( 'Blankpage', '/dummy by Quiz' );
