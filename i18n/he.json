@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"Rotem Liss"
+			"Rotem Liss",
+			"Amire80"
 		]
 	},
 	"quiz_desc": "אפשרות ליצירת חידונים",
@@ -15,7 +16,7 @@
 	"quiz_legend_unanswered": "לא סומנה תשובה",
 	"quiz_legend_error": "שגיאת תחביר",
 	"quiz_correction": "שליחה",
-	"quiz_score": "הניקוד שלך הוא $1 / $2",
+	"quiz_score": "הציון שלך הוא $1 / $2",
 	"quiz_points": "$1 | {{PLURAL:$2|נקודה אחת|$2 נקודות}}",
 	"quiz_reset": "איפוס"
 }
