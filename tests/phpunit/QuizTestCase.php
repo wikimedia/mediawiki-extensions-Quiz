@@ -4,9 +4,9 @@ namespace MediaWiki\Extension\Quiz\Tests;
 
 use MediaWiki\MainConfigNames;
 use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\ParserOptions;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWikiLangTestCase;
-use ParserOptions;
 
 abstract class QuizTestCase extends MediaWikiLangTestCase {
 	/** @var Parser */
