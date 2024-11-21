@@ -1,3 +1,5 @@
+@import 'mediawiki.skin.variables.less';
+
 .quiz .settings input.numerical {
 	width: 3em;
 }
@@ -31,27 +33,27 @@
 }
 
 .quiz .margin.correct {
-	background-color: #14866d;
+	background-color: @color-success;
 }
 
 .quiz .margin.incorrect {
-	background-color: #d73333;
+	background-color: @background-color-error;
 }
 
 .quiz .margin.correction {
-	background-color: #f9f9f9;
+	background-color: @background-color-neutral-subtle;
 }
 
 .quiz .margin.NA {
-	background-color: #36c;
+	background-color: @background-color-progressive;
 }
 
 .quiz .margin.error {
-	background-color: #fc3;
+	background-color: @color-warning;
 }
 
 .quiz .error {
-	color: #000;
+	color: @color-emphasized;
 	font-size: inherit;
 }
 
@@ -75,43 +77,43 @@
 }
 
 .quiz .question .border.correct {
-	border-color: #14866d;
+	border-color: @border-color-success;
 }
 
 .quiz .question .border.incorrect {
-	border-color: #d73333;
+	border-color: @border-color-error;
 }
 
 .quiz .question .border.correction {
-	border-color: #f9f9f9;
+	border-color: @border-color-subtle;
 }
 
 .quiz .question .border.NA {
-	border-color: #36c;
+	border-color: @border-color-progressive;
 }
 
 .quiz .question .border.error {
-	border-color: #fc3;
+	border-color: @border-color-warning;
 }
 
 .quiz .question .check.correct {
-	outline: 3px solid #14866d;
+	outline: 3px solid @border-color-success;
 }
 
 .quiz .question .check.incorrect {
-	outline: 3px solid #d73333;
+	outline: 3px solid @border-color-error;
 }
 
 .quiz .question .check.correction {
-	outline: 3px solid #f9f9f9;
+	outline: 3px solid @border-color-subtle;
 }
 
 .quiz .question .check.NA {
-	outline: 3px solid #36c;
+	outline: 3px solid @border-color-progressive;
 }
 
 .quiz .question .check.error {
-	outline: 3px solid #fc3;
+	outline: 3px solid @border-color-warning;
 }
 
 .quiz .header .questionId {
@@ -121,8 +123,8 @@
 }
 
 .quiz a.input em {
-	color: #000;
-	background-color: #dfdfdf;
+	color: @color-emphasized;
+	background-color: @background-color-neutral;
 	margin-right: 1px;
 }
 
@@ -136,7 +138,7 @@
 }
 
 .quiz .correction {
-	background-color: #f9f9f9;
+	background-color: @background-color-neutral-subtle;
 }
 
 .quiz .correction.unselected {
@@ -152,7 +154,7 @@
 	margin: 0;
 	list-style-type: none;
 	display: none;
-	background-color: #f9f9f9;
+	background-color: @background-color-neutral-subtle;
 }
 
 .quiz a.input,
@@ -160,12 +162,12 @@
 .quiz a.input:active,
 .quiz a.input:visited {
 	text-decoration: none;
-	color: #000;
+	color: @color-emphasized;
 	outline: 0;
 }
 
 .quiz a.input span {
-	outline: #7f9db9 solid 1px;
+	outline: 1px solid @border-color-notice;
 }
 
 .quiz a.input:active span.correction,

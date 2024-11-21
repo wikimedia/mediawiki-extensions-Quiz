@@ -25,7 +25,7 @@
 			"scripts": "ext.quiz.js"
 		},
 		"ext.quiz.styles": {
-			"styles": "ext.quiz.css"
+			"styles": "ext.quiz.less"
 		}
 	},
 	"ResourceFileModulePaths": {
