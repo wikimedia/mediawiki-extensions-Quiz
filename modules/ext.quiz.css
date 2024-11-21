@@ -166,7 +166,6 @@
 
 .quiz a.input span {
 	outline: #7f9db9 solid 1px;
-	*border: 1px solid #7f9db9;
 }
 
 .quiz a.input:active span.correction,
