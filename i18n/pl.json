@@ -18,7 +18,7 @@
 	"quiz_legend_unanswered": "Brak odpowiedzi",
 	"quiz_legend_error": "Błąd składni",
 	"quiz_correction": "Wyślij",
-	"quiz_score": "Twoje punty to $1 na możliwych $2",
+	"quiz_score": "Twoje punkty to $1 na możliwych $2",
 	"quiz_points": "$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}",
 	"quiz_reset": "Wyzeruj"
 }
