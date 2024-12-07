@@ -388,7 +388,7 @@ class Quiz {
 
 		$tableTitle = "";
 
-		$lState = $question->getState(); // correct, incorrect or unanswered?
+		$lState = $question->getState();
 
 		if ( $lState != '' ) {
 			// if the question is of type=simple
