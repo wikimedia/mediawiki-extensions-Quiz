@@ -25,7 +25,7 @@ class QuizTest extends QuizTestCase {
 	}
 
 	public function testResetQuizId() {
-		$this->quiz->resetQuizId();
+		Quiz::resetQuizId();
 		$this->assertSame( 0, $this->quiz->getQuizId() );
 	}
 
