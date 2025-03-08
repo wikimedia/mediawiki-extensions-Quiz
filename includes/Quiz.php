@@ -200,11 +200,11 @@ class Quiz {
 	/**
 	 * Convert the input text to an HTML output.
 	 *
-	 * @param string $input text between <quiz> and </quiz> tags, in quiz syntax.
+	 * @param string|null $input text between <quiz> and </quiz> tags, in quiz syntax.
 	 * @return string
 	 */
 	public function parseQuiz( $input ) {
-		// Ouput the style and the script to the header once for all.
+		// Output the style and the script to the header once for all.
 		if ( $this->mQuizId == 0 ) {
 			$this->mParser->getOutput()->addModules( [ 'ext.quiz' ] );
 			$this->mParser->getOutput()->addModuleStyles( [ 'ext.quiz.styles' ] );
