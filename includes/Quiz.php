@@ -210,6 +210,10 @@ class Quiz {
 			$this->mParser->getOutput()->addModuleStyles( [ 'ext.quiz.styles' ] );
 		}
 
+		if ( $input === null ) {
+			return '';
+		}
+
 		// Process the input
 		$input = $this->parseQuestions( $this->parseIncludes( $input ) );
 
