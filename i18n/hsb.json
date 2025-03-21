@@ -4,17 +4,17 @@
 			"Michawiki"
 		]
 	},
-	"quiz_desc": "Dowola wutworjenje kwisow",
-	"quiz_addedPoints": "{{PLURAL:$1|Plusdypk|Plusdypkaj|Plusdypki|Plusdypkow}} za prawu wotmołwu",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Minusdypk|Minusdypkaj|Minusdypki|Minusdypkow}} za wopačnu wotmołwu",
-	"quiz_ignoreCoef": "Prašenske koeficienty ignorować",
-	"quiz_shuffle": "Prašenja měšeć",
-	"quiz_legend_correct": "Prawje",
-	"quiz_legend_incorrect": "Wopak",
-	"quiz_legend_unanswered": "Žana wotmołwa",
-	"quiz_legend_error": "Syntaksowy zmylk",
-	"quiz_correction": "Korektura",
-	"quiz_score": "Twój hrajny staw je: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 dypk|$2 dypkaj|$2 dypki|$2 dypkow}}",
-	"quiz_reset": "Znowastartowanje"
+	"quiz-desc": "Dowola wutworjenje kwisow",
+	"quiz-added-points": "{{PLURAL:$1|Plusdypk|Plusdypkaj|Plusdypki|Plusdypkow}} za prawu wotmołwu",
+	"quiz-cutoff-points": "{{PLURAL:$1|Minusdypk|Minusdypkaj|Minusdypki|Minusdypkow}} za wopačnu wotmołwu",
+	"quiz-ignore-coef": "Prašenske koeficienty ignorować",
+	"quiz-shuffle": "Prašenja měšeć",
+	"quiz-legend-correct": "Prawje",
+	"quiz-legend-incorrect": "Wopak",
+	"quiz-legend-unanswered": "Žana wotmołwa",
+	"quiz-legend-error": "Syntaksowy zmylk",
+	"quiz-correction": "Korektura",
+	"quiz-score": "Twój hrajny staw je: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 dypk|$2 dypkaj|$2 dypki|$2 dypkow}}",
+	"quiz-reset": "Znowastartowanje"
 }

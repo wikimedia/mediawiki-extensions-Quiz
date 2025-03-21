@@ -4,17 +4,17 @@
 			"Pyt"
 		]
 	},
-	"quiz_desc": "Moaket dät Moakjen fon Quizspiele muugelk",
-	"quiz_addedPoints": "{{PLURAL:$1|Pluspunkt|Pluspunkte}} foar ne gjuchte Oantwoud",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkte}} foar ne falske Oantwoud",
-	"quiz_ignoreCoef": "Ignorierje do Froagen-Koeffiziente",
-	"quiz_shuffle": "Froagen miskje",
-	"quiz_legend_correct": "Gjucht",
-	"quiz_legend_incorrect": "Falsk",
-	"quiz_legend_unanswered": "Nit beoantwouded",
-	"quiz_legend_error": "Syntaxfailer",
-	"quiz_correction": "Korrektuur",
-	"quiz_score": "Punkte: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}",
-	"quiz_reset": "Näistart"
+	"quiz-desc": "Moaket dät Moakjen fon Quizspiele muugelk",
+	"quiz-added-points": "{{PLURAL:$1|Pluspunkt|Pluspunkte}} foar ne gjuchte Oantwoud",
+	"quiz-cutoff-points": "{{PLURAL:$1|Minuspunkt|Minuspunkte}} foar ne falske Oantwoud",
+	"quiz-ignore-coef": "Ignorierje do Froagen-Koeffiziente",
+	"quiz-shuffle": "Froagen miskje",
+	"quiz-legend-correct": "Gjucht",
+	"quiz-legend-incorrect": "Falsk",
+	"quiz-legend-unanswered": "Nit beoantwouded",
+	"quiz-legend-error": "Syntaxfailer",
+	"quiz-correction": "Korrektuur",
+	"quiz-score": "Punkte: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkte}}",
+	"quiz-reset": "Näistart"
 }

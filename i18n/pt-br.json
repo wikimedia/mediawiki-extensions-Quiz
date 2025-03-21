@@ -7,17 +7,17 @@
 			"Felipe L. Ewald"
 		]
 	},
-	"quiz_desc": "Permite a criação de questionários",
-	"quiz_addedPoints": "{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} para uma resposta certa:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto|Pontos}} por uma resposta incorreta:",
-	"quiz_ignoreCoef": "Ignorar os coeficientes das questões:",
-	"quiz_shuffle": "Embaralhar as questões",
-	"quiz_legend_correct": "Direita",
-	"quiz_legend_incorrect": "Erradas",
-	"quiz_legend_unanswered": "Não respondidas",
-	"quiz_legend_error": "Erro de sintaxe",
-	"quiz_correction": "Enviar",
-	"quiz_score": "Pontuação atual: $1 certas em $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 ponto|$2 pontos}}",
-	"quiz_reset": "Reiniciar"
+	"quiz-desc": "Permite a criação de questionários",
+	"quiz-added-points": "{{PLURAL:$1|Ponto adicionado|Pontos adicionados}} para uma resposta certa:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Ponto|Pontos}} por uma resposta incorreta:",
+	"quiz-ignore-coef": "Ignorar os coeficientes das questões:",
+	"quiz-shuffle": "Embaralhar as questões",
+	"quiz-legend-correct": "Direita",
+	"quiz-legend-incorrect": "Erradas",
+	"quiz-legend-unanswered": "Não respondidas",
+	"quiz-legend-error": "Erro de sintaxe",
+	"quiz-correction": "Enviar",
+	"quiz-score": "Pontuação atual: $1 certas em $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 ponto|$2 pontos}}",
+	"quiz-reset": "Reiniciar"
 }

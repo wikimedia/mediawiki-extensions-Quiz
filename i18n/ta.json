@@ -6,17 +6,17 @@
 			"செல்வா"
 		]
 	},
-	"quiz_desc": "புதிர்களை உருவாக்க அனுமதிக்கிறது",
-	"quiz_addedPoints": "சரியான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது",
-	"quiz_cutoffPoints": "தவறான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது",
-	"quiz_ignoreCoef": "கேள்வியின் பெருக்கும் எண்ணை ஒதுக்கித்தள்ளவும்",
-	"quiz_shuffle": "கேள்விகளை மாற்றிப்போடவும்",
-	"quiz_legend_correct": "சரி",
-	"quiz_legend_incorrect": "தவறு",
-	"quiz_legend_unanswered": "விடை அளிக்கவில்லை",
-	"quiz_legend_error": "வழிமுறைத் தொடரமைப்பு பிழை",
-	"quiz_correction": "சமர்ப்பி",
-	"quiz_score": "தங்களுக்குக் கிடைத்த மதிப்பெண்கள் $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|புள்ளி|$2 புள்ளிகள்}}",
-	"quiz_reset": "மீட்டமைக்க"
+	"quiz-desc": "புதிர்களை உருவாக்க அனுமதிக்கிறது",
+	"quiz-added-points": "சரியான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது",
+	"quiz-cutoff-points": "தவறான விடைகளுக்கு {{PLURAL:$1|Point|$1 புள்ளிகள்}} கொடுக்கப்பட்டுள்ளது",
+	"quiz-ignore-coef": "கேள்வியின் பெருக்கும் எண்ணை ஒதுக்கித்தள்ளவும்",
+	"quiz-shuffle": "கேள்விகளை மாற்றிப்போடவும்",
+	"quiz-legend-correct": "சரி",
+	"quiz-legend-incorrect": "தவறு",
+	"quiz-legend-unanswered": "விடை அளிக்கவில்லை",
+	"quiz-legend-error": "வழிமுறைத் தொடரமைப்பு பிழை",
+	"quiz-correction": "சமர்ப்பி",
+	"quiz-score": "தங்களுக்குக் கிடைத்த மதிப்பெண்கள் $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|புள்ளி|$2 புள்ளிகள்}}",
+	"quiz-reset": "மீட்டமைக்க"
 }

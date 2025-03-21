@@ -8,17 +8,17 @@
 			"გიორგიმელა"
 		]
 	},
-	"quiz_desc": "იძლევა კითხვარების შექმნის საშუალებას",
-	"quiz_addedPoints": "{{PLURAL:$1|ქულა|ქულა}} დაემატა სწორი პასუხისათვის",
-	"quiz_cutoffPoints": "(($1 ქულა)) ერთი არასწორი პასუხისთვის",
-	"quiz_ignoreCoef": "შეკითხვების კოეფიციენტების იგნორირება",
-	"quiz_shuffle": "კითხვების არევა",
-	"quiz_legend_correct": "სწორი",
-	"quiz_legend_incorrect": "არასწორი",
-	"quiz_legend_unanswered": "პასუხი არ არის",
-	"quiz_legend_error": "სინტაქსური შეცდომა",
-	"quiz_correction": "გაგზავნა",
-	"quiz_score": "თქვენ შეაგროვეთ $1 {{PLURAL:$1|ქულა|ქულები}} $2-დან",
-	"quiz_points": "$1 | $2 ქულა",
-	"quiz_reset": "გაუქმება"
+	"quiz-desc": "იძლევა კითხვარების შექმნის საშუალებას",
+	"quiz-added-points": "{{PLURAL:$1|ქულა|ქულა}} დაემატა სწორი პასუხისათვის",
+	"quiz-cutoff-points": "(($1 ქულა)) ერთი არასწორი პასუხისთვის",
+	"quiz-ignore-coef": "შეკითხვების კოეფიციენტების იგნორირება",
+	"quiz-shuffle": "კითხვების არევა",
+	"quiz-legend-correct": "სწორი",
+	"quiz-legend-incorrect": "არასწორი",
+	"quiz-legend-unanswered": "პასუხი არ არის",
+	"quiz-legend-error": "სინტაქსური შეცდომა",
+	"quiz-correction": "გაგზავნა",
+	"quiz-score": "თქვენ შეაგროვეთ $1 {{PLURAL:$1|ქულა|ქულები}} $2-დან",
+	"quiz-points": "$1 | $2 ქულა",
+	"quiz-reset": "გაუქმება"
 }

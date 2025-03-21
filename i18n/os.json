@@ -4,7 +4,7 @@
 			"Amikeco"
 		]
 	},
-	"quiz_legend_correct": "Раст",
-	"quiz_legend_incorrect": "Рæдыд",
-	"quiz_legend_error": "Синтаксисы рæдыд"
+	"quiz-legend-correct": "Раст",
+	"quiz-legend-incorrect": "Рæдыд",
+	"quiz-legend-error": "Синтаксисы рæдыд"
 }

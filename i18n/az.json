@@ -7,9 +7,9 @@
 			"Wertuose"
 		]
 	},
-	"quiz_legend_correct": "Doğru",
-	"quiz_legend_incorrect": "Yanlış",
-	"quiz_legend_unanswered": "Cavabsız",
-	"quiz_correction": "Təsdiq et",
-	"quiz_reset": "Sıfırla"
+	"quiz-legend-correct": "Doğru",
+	"quiz-legend-incorrect": "Yanlış",
+	"quiz-legend-unanswered": "Cavabsız",
+	"quiz-correction": "Təsdiq et",
+	"quiz-reset": "Sıfırla"
 }

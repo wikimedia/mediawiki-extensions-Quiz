@@ -5,17 +5,17 @@
 			"Roderick Mallia"
 		]
 	},
-	"quiz_desc": "Tħalli l-ħolqien ta' kwizzijiet",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt miżjud|Punti miżjuda}} għal tweġiba tajba",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt imnaqqas|Punti mnaqqas}} għal tweġiba ħażina",
-	"quiz_ignoreCoef": "Injora l-koeffiċjenti tal-mistoqsijiet",
-	"quiz_shuffle": "Qalleb il-mistoqsijiet",
-	"quiz_legend_correct": "Tajjeb",
-	"quiz_legend_incorrect": "Ħażin",
-	"quiz_legend_unanswered": "L-ebda risposta",
-	"quiz_legend_error": "Żball fis-sintassi",
-	"quiz_correction": "Ibgħat",
-	"quiz_score": "L-iskor tiegħek hu ta' $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|punt|$2 punti}}",
-	"quiz_reset": "Irrisettja"
+	"quiz-desc": "Tħalli l-ħolqien ta' kwizzijiet",
+	"quiz-added-points": "{{PLURAL:$1|Punt miżjud|Punti miżjuda}} għal tweġiba tajba",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punt imnaqqas|Punti mnaqqas}} għal tweġiba ħażina",
+	"quiz-ignore-coef": "Injora l-koeffiċjenti tal-mistoqsijiet",
+	"quiz-shuffle": "Qalleb il-mistoqsijiet",
+	"quiz-legend-correct": "Tajjeb",
+	"quiz-legend-incorrect": "Ħażin",
+	"quiz-legend-unanswered": "L-ebda risposta",
+	"quiz-legend-error": "Żball fis-sintassi",
+	"quiz-correction": "Ibgħat",
+	"quiz-score": "L-iskor tiegħek hu ta' $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|punt|$2 punti}}",
+	"quiz-reset": "Irrisettja"
 }

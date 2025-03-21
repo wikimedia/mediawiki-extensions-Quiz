@@ -4,17 +4,17 @@
 			"Hosseinblue"
 		]
 	},
-	"quiz_desc": "ایجاد آزمون را ممکن می‌سازد",
-	"quiz_addedPoints": "{{PLURAL:$1|امتیاز|امتیاز ها}} هر پاسخ درست",
-	"quiz_cutoffPoints": "{{PLURAL:$1|امتیاز|امتیاز ها}} منفی هر پاسخ نادرست",
-	"quiz_ignoreCoef": "نادیده گرفتن ضریب سوال‌ها",
-	"quiz_shuffle": "برزدن سوال‌ها",
-	"quiz_legend_correct": "درست",
-	"quiz_legend_incorrect": "نادرست",
-	"quiz_legend_unanswered": "پاسخ داده نشده",
-	"quiz_legend_error": "خطای نحوی",
-	"quiz_correction": "ارسال/کِل کردن",
-	"quiz_score": "امتیاز شما $1 از $2 است",
-	"quiz_points": "$1 | {{PLURAL:$2|۱ امتیاز|$2 امتیاز}}",
-	"quiz_reset": "إژ دووارة"
+	"quiz-desc": "ایجاد آزمون را ممکن می‌سازد",
+	"quiz-added-points": "{{PLURAL:$1|امتیاز|امتیاز ها}} هر پاسخ درست",
+	"quiz-cutoff-points": "{{PLURAL:$1|امتیاز|امتیاز ها}} منفی هر پاسخ نادرست",
+	"quiz-ignore-coef": "نادیده گرفتن ضریب سوال‌ها",
+	"quiz-shuffle": "برزدن سوال‌ها",
+	"quiz-legend-correct": "درست",
+	"quiz-legend-incorrect": "نادرست",
+	"quiz-legend-unanswered": "پاسخ داده نشده",
+	"quiz-legend-error": "خطای نحوی",
+	"quiz-correction": "ارسال/کِل کردن",
+	"quiz-score": "امتیاز شما $1 از $2 است",
+	"quiz-points": "$1 | {{PLURAL:$2|۱ امتیاز|$2 امتیاز}}",
+	"quiz-reset": "إژ دووارة"
 }

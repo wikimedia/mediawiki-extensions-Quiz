@@ -6,17 +6,17 @@
 			"Jvm"
 		]
 	},
-	"quiz_desc": "Pemèt Kreyasyon kwiz yo",
-	"quiz_addedPoints": "{{PLURAL:$1|Pwen}} mete pou repons ki bon :",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pwen}} retire pou repons ki pa bon :",
-	"quiz_ignoreCoef": "Inyore koefisyan kesyon yo :",
-	"quiz_shuffle": "Mikse kesyon yo",
-	"quiz_legend_correct": "Bon",
-	"quiz_legend_incorrect": "Move",
-	"quiz_legend_unanswered": "San repons",
-	"quiz_legend_error": "Erè Sentaks",
-	"quiz_correction": "Soumèt",
-	"quiz_score": "Rezilta w se $1 / $2",
-	"quiz_points": "$1 | $2 pwen{{PLURAL:||}}",
-	"quiz_reset": "Rekomanse"
+	"quiz-desc": "Pemèt Kreyasyon kwiz yo",
+	"quiz-added-points": "{{PLURAL:$1|Pwen}} mete pou repons ki bon :",
+	"quiz-cutoff-points": "{{PLURAL:$1|Pwen}} retire pou repons ki pa bon :",
+	"quiz-ignore-coef": "Inyore koefisyan kesyon yo :",
+	"quiz-shuffle": "Mikse kesyon yo",
+	"quiz-legend-correct": "Bon",
+	"quiz-legend-incorrect": "Move",
+	"quiz-legend-unanswered": "San repons",
+	"quiz-legend-error": "Erè Sentaks",
+	"quiz-correction": "Soumèt",
+	"quiz-score": "Rezilta w se $1 / $2",
+	"quiz-points": "$1 | $2 pwen{{PLURAL:||}}",
+	"quiz-reset": "Rekomanse"
 }

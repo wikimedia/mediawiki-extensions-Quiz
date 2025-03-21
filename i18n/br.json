@@ -5,17 +5,17 @@
 			"Huñvreüs"
 		]
 	},
-	"quiz_desc": "Aotren a ra krouiñ kwizoù",
-	"quiz_addedPoints": "{{PLURAL:$1|Poent}} ouzhpennet dre respont mat:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Poent}} tennet dre respont fall:",
-	"quiz_ignoreCoef": "Na ober van ouzh kenefeder ar goulennoù",
-	"quiz_shuffle": "Meskañ ar goulennoù",
-	"quiz_legend_correct": "Mat",
-	"quiz_legend_incorrect": "Fall",
-	"quiz_legend_unanswered": "Direspont",
-	"quiz_legend_error": "Fazi ereadur",
-	"quiz_correction": "Kas",
-	"quiz_score": "Ho skor zo par da $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poent|$2 poent}}",
-	"quiz_reset": "Adderaouekaat"
+	"quiz-desc": "Aotren a ra krouiñ kwizoù",
+	"quiz-added-points": "{{PLURAL:$1|Poent}} ouzhpennet dre respont mat:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Poent}} tennet dre respont fall:",
+	"quiz-ignore-coef": "Na ober van ouzh kenefeder ar goulennoù",
+	"quiz-shuffle": "Meskañ ar goulennoù",
+	"quiz-legend-correct": "Mat",
+	"quiz-legend-incorrect": "Fall",
+	"quiz-legend-unanswered": "Direspont",
+	"quiz-legend-error": "Fazi ereadur",
+	"quiz-correction": "Kas",
+	"quiz-score": "Ho skor zo par da $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poent|$2 poent}}",
+	"quiz-reset": "Adderaouekaat"
 }

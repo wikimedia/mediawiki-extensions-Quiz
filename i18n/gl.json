@@ -7,17 +7,17 @@
 			"Xosé"
 		]
 	},
-	"quiz_desc": "Permite a creación de preguntas",
-	"quiz_addedPoints": "{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea:",
-	"quiz_ignoreCoef": "Ignorar os coeficientes das preguntas:",
-	"quiz_shuffle": "Barallar as preguntas",
-	"quiz_legend_correct": "Ben",
-	"quiz_legend_incorrect": "Mal",
-	"quiz_legend_unanswered": "Sen resposta",
-	"quiz_legend_error": "Erro de sintaxe",
-	"quiz_correction": "Enviar",
-	"quiz_score": "A súa puntuación é $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
-	"quiz_reset": "Limpar"
+	"quiz-desc": "Permite a creación de preguntas",
+	"quiz-added-points": "{{PLURAL:$1|Punto engadido|Puntos engadidos}} por cada resposta correcta:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punto restado|Puntos restados}} por cada resposta errónea:",
+	"quiz-ignore-coef": "Ignorar os coeficientes das preguntas:",
+	"quiz-shuffle": "Barallar as preguntas",
+	"quiz-legend-correct": "Ben",
+	"quiz-legend-incorrect": "Mal",
+	"quiz-legend-unanswered": "Sen resposta",
+	"quiz-legend-error": "Erro de sintaxe",
+	"quiz-correction": "Enviar",
+	"quiz-score": "A súa puntuación é $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
+	"quiz-reset": "Limpar"
 }

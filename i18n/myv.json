@@ -5,8 +5,8 @@
 			"Rueter"
 		]
 	},
-	"quiz_legend_correct": "Виде",
-	"quiz_legend_incorrect": "А виде",
-	"quiz_legend_unanswered": "Апак пандо",
-	"quiz_correction": "Кучомс"
+	"quiz-legend-correct": "Виде",
+	"quiz-legend-incorrect": "А виде",
+	"quiz-legend-unanswered": "Апак пандо",
+	"quiz-correction": "Кучомс"
 }

@@ -6,17 +6,17 @@
 			"Yyy"
 		]
 	},
-	"quiz_desc": "Ļauj veidot anketas",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkti|Punkts|Punkti}} par pareizu atbildi",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punkti|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi",
-	"quiz_ignoreCoef": "Neņemt vērā jautājumu koeficientus",
-	"quiz_shuffle": "Sajaukt jautājumus",
-	"quiz_legend_correct": "Pareizi",
-	"quiz_legend_incorrect": "Nepareizi",
-	"quiz_legend_unanswered": "Nav atbildēts",
-	"quiz_legend_error": "Sintakses kļūda",
-	"quiz_correction": "Sūtīt",
-	"quiz_score": "Tavs rezultāts ir $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|$2 punkti|1 punkts|$2 punkti}}",
-	"quiz_reset": "Notīrīt"
+	"quiz-desc": "Ļauj veidot anketas",
+	"quiz-added-points": "{{PLURAL:$1|Punkti|Punkts|Punkti}} par pareizu atbildi",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punkti|Punkts|Punkti}}, kas tiek atņemti par nepareizu atbildi",
+	"quiz-ignore-coef": "Neņemt vērā jautājumu koeficientus",
+	"quiz-shuffle": "Sajaukt jautājumus",
+	"quiz-legend-correct": "Pareizi",
+	"quiz-legend-incorrect": "Nepareizi",
+	"quiz-legend-unanswered": "Nav atbildēts",
+	"quiz-legend-error": "Sintakses kļūda",
+	"quiz-correction": "Sūtīt",
+	"quiz-score": "Tavs rezultāts ir $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|$2 punkti|1 punkts|$2 punkti}}",
+	"quiz-reset": "Notīrīt"
 }

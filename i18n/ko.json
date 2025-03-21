@@ -10,17 +10,17 @@
 			"아라"
 		]
 	},
-	"quiz_desc": "퀴즈를 만들 수 있게 합니다",
-	"quiz_addedPoints": "정답이면 {{PLURAL:$1|점수}} 득점:",
-	"quiz_cutoffPoints": "틀린 답이면 {{PLURAL:$1|점수}} 감점:",
-	"quiz_ignoreCoef": "문제의 배점 무시",
-	"quiz_shuffle": "문제 섞기",
-	"quiz_legend_correct": "정답",
-	"quiz_legend_incorrect": "오답",
-	"quiz_legend_unanswered": "무응답",
-	"quiz_legend_error": "구문 오류",
-	"quiz_correction": "제출",
-	"quiz_score": "점수는 $1 / $2입니다.",
-	"quiz_points": "$1 | {{PLURAL:$2|1점|$2점}}",
-	"quiz_reset": "초기화"
+	"quiz-desc": "퀴즈를 만들 수 있게 합니다",
+	"quiz-added-points": "정답이면 {{PLURAL:$1|점수}} 득점:",
+	"quiz-cutoff-points": "틀린 답이면 {{PLURAL:$1|점수}} 감점:",
+	"quiz-ignore-coef": "문제의 배점 무시",
+	"quiz-shuffle": "문제 섞기",
+	"quiz-legend-correct": "정답",
+	"quiz-legend-incorrect": "오답",
+	"quiz-legend-unanswered": "무응답",
+	"quiz-legend-error": "구문 오류",
+	"quiz-correction": "제출",
+	"quiz-score": "점수는 $1 / $2입니다.",
+	"quiz-points": "$1 | {{PLURAL:$2|1점|$2점}}",
+	"quiz-reset": "초기화"
 }

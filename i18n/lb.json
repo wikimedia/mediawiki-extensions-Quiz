@@ -4,17 +4,17 @@
 			"Robby"
 		]
 	},
-	"quiz_desc": "Erméiglecht et Quizzer ze maachen",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Punkten}} dobäi fir eng richteg Äntwert:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt|Punkte}} fir eng net richteg Äntwert:",
-	"quiz_ignoreCoef": "Koeffizient vun der Fro ignoréieren:",
-	"quiz_shuffle": "Froe meschen",
-	"quiz_legend_correct": "Richteg",
-	"quiz_legend_incorrect": "Falsch",
-	"quiz_legend_unanswered": "Net beäntwert",
-	"quiz_legend_error": "Syntaxfeeler",
-	"quiz_correction": "Verbesserung",
-	"quiz_score": "Punkten: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkten}}",
-	"quiz_reset": "Zrécksetzen"
+	"quiz-desc": "Erméiglecht et Quizzer ze maachen",
+	"quiz-added-points": "{{PLURAL:$1|Punkt|Punkten}} dobäi fir eng richteg Äntwert:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punkt|Punkte}} fir eng net richteg Äntwert:",
+	"quiz-ignore-coef": "Koeffizient vun der Fro ignoréieren:",
+	"quiz-shuffle": "Froe meschen",
+	"quiz-legend-correct": "Richteg",
+	"quiz-legend-incorrect": "Falsch",
+	"quiz-legend-unanswered": "Net beäntwert",
+	"quiz-legend-error": "Syntaxfeeler",
+	"quiz-correction": "Verbesserung",
+	"quiz-score": "Punkten: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkten}}",
+	"quiz-reset": "Zrécksetzen"
 }

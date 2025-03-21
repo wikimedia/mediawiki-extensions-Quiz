@@ -7,17 +7,17 @@
 			"Passawuth"
 		]
 	},
-	"quiz_desc": "อนุญาตการสร้างแบบทดสอบ",
-	"quiz_addedPoints": "{{PLURAL:$1|คะแนน|}}ที่เพิ่มสำหรับคำตอบที่ถูกต้อง:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|คะแนน}}สำหรับคำตอบที่ไม่ถูกต้อง:",
-	"quiz_ignoreCoef": "ละเว้นค่าสัมประสิทธิ์ของคำถาม:",
-	"quiz_shuffle": "สุ่มคำถาม",
-	"quiz_legend_correct": "ถูกต้อง",
-	"quiz_legend_incorrect": "ผิด",
-	"quiz_legend_unanswered": "ไม่ได้ตอบ",
-	"quiz_legend_error": "ข้อผิดพลาดไวยากรณ์",
-	"quiz_correction": "ยืนยัน",
-	"quiz_score": "คุณได้คะแนน $1 จาก $2 คะแนน",
-	"quiz_points": "$1 | $2 คะแนน",
-	"quiz_reset": "ตั้งค่าใหม่"
+	"quiz-desc": "อนุญาตการสร้างแบบทดสอบ",
+	"quiz-added-points": "{{PLURAL:$1|คะแนน|}}ที่เพิ่มสำหรับคำตอบที่ถูกต้อง:",
+	"quiz-cutoff-points": "{{PLURAL:$1|คะแนน}}สำหรับคำตอบที่ไม่ถูกต้อง:",
+	"quiz-ignore-coef": "ละเว้นค่าสัมประสิทธิ์ของคำถาม:",
+	"quiz-shuffle": "สุ่มคำถาม",
+	"quiz-legend-correct": "ถูกต้อง",
+	"quiz-legend-incorrect": "ผิด",
+	"quiz-legend-unanswered": "ไม่ได้ตอบ",
+	"quiz-legend-error": "ข้อผิดพลาดไวยากรณ์",
+	"quiz-correction": "ยืนยัน",
+	"quiz-score": "คุณได้คะแนน $1 จาก $2 คะแนน",
+	"quiz-points": "$1 | $2 คะแนน",
+	"quiz-reset": "ตั้งค่าใหม่"
 }

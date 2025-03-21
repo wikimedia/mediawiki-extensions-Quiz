@@ -5,14 +5,14 @@
 			"Kandar"
 		]
 	},
-	"quiz_addedPoints": "Peunteun ditambahan pikeun jawaban nu bener",
-	"quiz_cutoffPoints": "Peunteun dikurangan pikeun jawaban nu salah",
-	"quiz_legend_correct": "Bener",
-	"quiz_legend_incorrect": "Salah",
-	"quiz_legend_unanswered": "Teu dijawab",
-	"quiz_legend_error": "Salah rumpaka",
-	"quiz_correction": "Kirim",
-	"quiz_score": "Peunteun anjeun $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
-	"quiz_reset": "Rését"
+	"quiz-added-points": "Peunteun ditambahan pikeun jawaban nu bener",
+	"quiz-cutoff-points": "Peunteun dikurangan pikeun jawaban nu salah",
+	"quiz-legend-correct": "Bener",
+	"quiz-legend-incorrect": "Salah",
+	"quiz-legend-unanswered": "Teu dijawab",
+	"quiz-legend-error": "Salah rumpaka",
+	"quiz-correction": "Kirim",
+	"quiz-score": "Peunteun anjeun $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
+	"quiz-reset": "Rését"
 }

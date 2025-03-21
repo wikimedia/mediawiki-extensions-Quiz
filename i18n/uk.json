@@ -7,17 +7,17 @@
 			"Piramidion"
 		]
 	},
-	"quiz_desc": "Дозволяє створювати питальники",
-	"quiz_addedPoints": "{{PLURAL:$1|1=Додане очко|Додані очки}} за правильну відповідь:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|1=Відняте очко|Відняті очки}} за неправильну відповідь:",
-	"quiz_ignoreCoef": "Нехтувати коефіцієнтами запитань:",
-	"quiz_shuffle": "Перемішати запитання",
-	"quiz_legend_correct": "Правильно",
-	"quiz_legend_incorrect": "Неправильно",
-	"quiz_legend_unanswered": "Нема відповіді",
-	"quiz_legend_error": "Синтаксична помилка",
-	"quiz_correction": "Надіслати",
-	"quiz_score": "Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очки|очок}}",
-	"quiz_reset": "Скинути"
+	"quiz-desc": "Дозволяє створювати питальники",
+	"quiz-added-points": "{{PLURAL:$1|1=Додане очко|Додані очки}} за правильну відповідь:",
+	"quiz-cutoff-points": "{{PLURAL:$1|1=Відняте очко|Відняті очки}} за неправильну відповідь:",
+	"quiz-ignore-coef": "Нехтувати коефіцієнтами запитань:",
+	"quiz-shuffle": "Перемішати запитання",
+	"quiz-legend-correct": "Правильно",
+	"quiz-legend-incorrect": "Неправильно",
+	"quiz-legend-unanswered": "Нема відповіді",
+	"quiz-legend-error": "Синтаксична помилка",
+	"quiz-correction": "Надіслати",
+	"quiz-score": "Ви набрали {{PLURAL:$1|$1 очко|$1 очки|$1 очок}} із $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|очко|очки|очок}}",
+	"quiz-reset": "Скинути"
 }

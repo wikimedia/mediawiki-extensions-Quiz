@@ -5,17 +5,17 @@
 			"Siddhartha Ghai"
 		]
 	},
-	"quiz_desc": "क्विज़ बनाना संभव करता है",
-	"quiz_addedPoints": "सही जवाब के लिये {{PLURAL:$1|मार्क दिया|मार्क्स दिये}}",
-	"quiz_cutoffPoints": "गलत जवाब के लिये {{PLURAL:$1|मार्क घटाया|मार्क्स घटाये}}",
-	"quiz_ignoreCoef": "प्रश्नों के कोएफिशेंट को नजरअंदाज करें",
-	"quiz_shuffle": "प्रश्न ऊपर नीचे करें",
-	"quiz_legend_correct": "सही",
-	"quiz_legend_incorrect": "गलत",
-	"quiz_legend_unanswered": "जवाब दिया नहीं",
-	"quiz_legend_error": "सिन्टॅक्स त्रुटि",
-	"quiz_correction": "भेजें",
-	"quiz_score": "आपका स्कोर है $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|एक मार्क|$2 मार्क्स}}",
-	"quiz_reset": "रीसेट करें"
+	"quiz-desc": "क्विज़ बनाना संभव करता है",
+	"quiz-added-points": "सही जवाब के लिये {{PLURAL:$1|मार्क दिया|मार्क्स दिये}}",
+	"quiz-cutoff-points": "गलत जवाब के लिये {{PLURAL:$1|मार्क घटाया|मार्क्स घटाये}}",
+	"quiz-ignore-coef": "प्रश्नों के कोएफिशेंट को नजरअंदाज करें",
+	"quiz-shuffle": "प्रश्न ऊपर नीचे करें",
+	"quiz-legend-correct": "सही",
+	"quiz-legend-incorrect": "गलत",
+	"quiz-legend-unanswered": "जवाब दिया नहीं",
+	"quiz-legend-error": "सिन्टॅक्स त्रुटि",
+	"quiz-correction": "भेजें",
+	"quiz-score": "आपका स्कोर है $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|एक मार्क|$2 मार्क्स}}",
+	"quiz-reset": "रीसेट करें"
 }

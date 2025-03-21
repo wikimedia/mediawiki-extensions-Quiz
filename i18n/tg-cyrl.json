@@ -4,17 +4,17 @@
 			"Ibrahim"
 		]
 	},
-	"quiz_desc": "Эҷоди озмунҳоро мумкин месозад",
-	"quiz_addedPoints": "Имтиёзи ҳар посухи дуруст",
-	"quiz_cutoffPoints": "Имтиёзи манфии ҳар посухи нодуруст",
-	"quiz_ignoreCoef": "Нодида гирифтани зариби саволҳо",
-	"quiz_shuffle": "Бар задани саволҳо",
-	"quiz_legend_correct": "Дуруст",
-	"quiz_legend_incorrect": "Нодуруст",
-	"quiz_legend_unanswered": "Посух дода нашуд",
-	"quiz_legend_error": "Хатои наҳвӣ",
-	"quiz_correction": "Ирсол",
-	"quiz_score": "Имтиёзи шумо $1 аз $2 аст",
-	"quiz_points": "$1 | $2 имтиёз",
-	"quiz_reset": "Аз нав"
+	"quiz-desc": "Эҷоди озмунҳоро мумкин месозад",
+	"quiz-added-points": "Имтиёзи ҳар посухи дуруст",
+	"quiz-cutoff-points": "Имтиёзи манфии ҳар посухи нодуруст",
+	"quiz-ignore-coef": "Нодида гирифтани зариби саволҳо",
+	"quiz-shuffle": "Бар задани саволҳо",
+	"quiz-legend-correct": "Дуруст",
+	"quiz-legend-incorrect": "Нодуруст",
+	"quiz-legend-unanswered": "Посух дода нашуд",
+	"quiz-legend-error": "Хатои наҳвӣ",
+	"quiz-correction": "Ирсол",
+	"quiz-score": "Имтиёзи шумо $1 аз $2 аст",
+	"quiz-points": "$1 | $2 имтиёз",
+	"quiz-reset": "Аз нав"
 }

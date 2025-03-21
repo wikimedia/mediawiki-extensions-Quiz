@@ -5,17 +5,17 @@
 			"Sultanselim baloch"
 		]
 	},
-	"quiz_desc": "اجازه دنت په شرکتن معما",
-	"quiz_addedPoints": "نمره په درستین جواب اضافه بوت",
-	"quiz_cutoffPoints": "نمره په جواب غلظ کم بوت",
-	"quiz_ignoreCoef": "ضریب سوالات مه دید",
-	"quiz_shuffle": "جوستان به هم ریچ",
-	"quiz_legend_correct": "راست",
-	"quiz_legend_incorrect": "اشتباه",
-	"quiz_legend_unanswered": "بی پسوء",
-	"quiz_legend_error": "حطا ساختار",
-	"quiz_correction": "دݔمی دئ",
-	"quiz_score": "شمی نمره $1 / $2 اینت",
-	"quiz_points": "$1 | $2 نکته(s)",
-	"quiz_reset": "برگردینگ"
+	"quiz-desc": "اجازه دنت په شرکتن معما",
+	"quiz-added-points": "نمره په درستین جواب اضافه بوت",
+	"quiz-cutoff-points": "نمره په جواب غلظ کم بوت",
+	"quiz-ignore-coef": "ضریب سوالات مه دید",
+	"quiz-shuffle": "جوستان به هم ریچ",
+	"quiz-legend-correct": "راست",
+	"quiz-legend-incorrect": "اشتباه",
+	"quiz-legend-unanswered": "بی پسوء",
+	"quiz-legend-error": "حطا ساختار",
+	"quiz-correction": "دݔمی دئ",
+	"quiz-score": "شمی نمره $1 / $2 اینت",
+	"quiz-points": "$1 | $2 نکته(s)",
+	"quiz-reset": "برگردینگ"
 }

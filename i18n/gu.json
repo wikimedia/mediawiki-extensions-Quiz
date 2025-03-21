@@ -6,17 +6,17 @@
 			"Sushant savla"
 		]
 	},
-	"quiz_desc": "પ્રશ્નોત્તરી રચવાની પરવાનગી આપો",
-	"quiz_addedPoints": "ખરા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}} ઉમેરાયા.",
-	"quiz_cutoffPoints": "ખોટા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}}.",
-	"quiz_ignoreCoef": "પ્રશ્નોના અચળાંકો અવગણો",
-	"quiz_shuffle": "પ્રશ્ન બદલો",
-	"quiz_legend_correct": "સાચું",
-	"quiz_legend_incorrect": "ખોટું",
-	"quiz_legend_unanswered": "જવાબ ન અપાયેલ",
-	"quiz_legend_error": "સૂત્રલેખન ત્રુટિ",
-	"quiz_correction": "જમા કરો",
-	"quiz_score": "તમારા ગુણ છે $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 પોઈન્ટ|$2 પોઈન્ટ}}",
-	"quiz_reset": "ફરી ગોઠવો"
+	"quiz-desc": "પ્રશ્નોત્તરી રચવાની પરવાનગી આપો",
+	"quiz-added-points": "ખરા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}} ઉમેરાયા.",
+	"quiz-cutoff-points": "ખોટા જવાબ માટે {{PLURAL:$1|ગુણ|ગુણો}}.",
+	"quiz-ignore-coef": "પ્રશ્નોના અચળાંકો અવગણો",
+	"quiz-shuffle": "પ્રશ્ન બદલો",
+	"quiz-legend-correct": "સાચું",
+	"quiz-legend-incorrect": "ખોટું",
+	"quiz-legend-unanswered": "જવાબ ન અપાયેલ",
+	"quiz-legend-error": "સૂત્રલેખન ત્રુટિ",
+	"quiz-correction": "જમા કરો",
+	"quiz-score": "તમારા ગુણ છે $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 પોઈન્ટ|$2 પોઈન્ટ}}",
+	"quiz-reset": "ફરી ગોઠવો"
 }

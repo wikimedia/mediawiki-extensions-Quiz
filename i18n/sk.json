@@ -5,17 +5,17 @@
 			"Luky001"
 		]
 	},
-	"quiz_desc": "Umožňuje tvorbu kvízov",
-	"quiz_addedPoints": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď:",
-	"quiz_ignoreCoef": "Ignorovať koeficienty otázok:",
-	"quiz_shuffle": "Náhodný výber otázok",
-	"quiz_legend_correct": "Správne",
-	"quiz_legend_incorrect": "Nesprávne",
-	"quiz_legend_unanswered": "Nezodpovedané",
-	"quiz_legend_error": "Syntaktická chyba",
-	"quiz_correction": "Oprava",
-	"quiz_score": "Vaše skóre je $1 / $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|bod|body|bodov}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Umožňuje tvorbu kvízov",
+	"quiz-added-points": "{{PLURAL:$1|Bod pričítaný|Body pričítané}} za správnu odpoveď:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Bod odčítaný|Body odčítané}} za nesprávnu odpoveď:",
+	"quiz-ignore-coef": "Ignorovať koeficienty otázok:",
+	"quiz-shuffle": "Náhodný výber otázok",
+	"quiz-legend-correct": "Správne",
+	"quiz-legend-incorrect": "Nesprávne",
+	"quiz-legend-unanswered": "Nezodpovedané",
+	"quiz-legend-error": "Syntaktická chyba",
+	"quiz-correction": "Oprava",
+	"quiz-score": "Vaše skóre je $1 / $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|bod|body|bodov}}",
+	"quiz-reset": "Reset"
 }

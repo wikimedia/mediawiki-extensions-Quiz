@@ -6,17 +6,17 @@
 			"Geopoet"
 		]
 	},
-	"quiz_desc": "Minatugot sa pagmumukna kan mga halipot na kahaputan",
-	"quiz_addedPoints": "{{PLURAL:$1|Puntos|Mga Puntos}} pigdugang para sa sarong tama na kasimbagan:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Points}} para sa sarong sala na kasimbagan:",
-	"quiz_ignoreCoef": "Balewalaon an koepisyenteng mga kahaputan:",
-	"quiz_shuffle": "Balasahon an mga hapot",
-	"quiz_legend_correct": "Tamâ",
-	"quiz_legend_incorrect": "Salâ",
-	"quiz_legend_unanswered": "Dae pinagsimbagan",
-	"quiz_legend_error": "Kasalaan sa sintaks",
-	"quiz_correction": "Isumitir",
-	"quiz_score": "An eskor mo $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}",
-	"quiz_reset": "Ibalik"
+	"quiz-desc": "Minatugot sa pagmumukna kan mga halipot na kahaputan",
+	"quiz-added-points": "{{PLURAL:$1|Puntos|Mga Puntos}} pigdugang para sa sarong tama na kasimbagan:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Point|Points}} para sa sarong sala na kasimbagan:",
+	"quiz-ignore-coef": "Balewalaon an koepisyenteng mga kahaputan:",
+	"quiz-shuffle": "Balasahon an mga hapot",
+	"quiz-legend-correct": "Tamâ",
+	"quiz-legend-incorrect": "Salâ",
+	"quiz-legend-unanswered": "Dae pinagsimbagan",
+	"quiz-legend-error": "Kasalaan sa sintaks",
+	"quiz-correction": "Isumitir",
+	"quiz-score": "An eskor mo $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}",
+	"quiz-reset": "Ibalik"
 }

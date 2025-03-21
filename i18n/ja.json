@@ -7,17 +7,17 @@
 			"ネイ"
 		]
 	},
-	"quiz_desc": "クイズを作成できるようにする",
-	"quiz_addedPoints": "正解により{{PLURAL:$1|点}}追加:",
-	"quiz_cutoffPoints": "不正解に{{PLURAL:$1|点}}:",
-	"quiz_ignoreCoef": "問題ごとの倍率を無視:",
-	"quiz_shuffle": "問題をシャッフル",
-	"quiz_legend_correct": "正解",
-	"quiz_legend_incorrect": "不正解",
-	"quiz_legend_unanswered": "無回答",
-	"quiz_legend_error": "構文エラー",
-	"quiz_correction": "採点",
-	"quiz_score": "得点: $1点 ($2点満点)",
-	"quiz_points": "$1 | $2{{PLURAL:$2|点}}",
-	"quiz_reset": "リセット"
+	"quiz-desc": "クイズを作成できるようにする",
+	"quiz-added-points": "正解により{{PLURAL:$1|点}}追加:",
+	"quiz-cutoff-points": "不正解に{{PLURAL:$1|点}}:",
+	"quiz-ignore-coef": "問題ごとの倍率を無視:",
+	"quiz-shuffle": "問題をシャッフル",
+	"quiz-legend-correct": "正解",
+	"quiz-legend-incorrect": "不正解",
+	"quiz-legend-unanswered": "無回答",
+	"quiz-legend-error": "構文エラー",
+	"quiz-correction": "採点",
+	"quiz-score": "得点: $1点 ($2点満点)",
+	"quiz-points": "$1 | $2{{PLURAL:$2|点}}",
+	"quiz-reset": "リセット"
 }

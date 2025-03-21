@@ -10,17 +10,17 @@
 			"Verdy p"
 		]
 	},
-	"quiz_desc": "Permet la création de quiz",
-	"quiz_addedPoints": "Point{{PLURAL:$1||s}} ajouté{{PLURAL:$1||s}} pour une réponse juste :",
-	"quiz_cutoffPoints": "Point{{PLURAL:$1||s}} retiré{{PLURAL:$1||s}} pour une réponse incorrecte :",
-	"quiz_ignoreCoef": "Ignorer les coefficients des questions :",
-	"quiz_shuffle": "Mélanger les questions",
-	"quiz_legend_correct": "Juste",
-	"quiz_legend_incorrect": "Incorrecte",
-	"quiz_legend_unanswered": "Non répondue",
-	"quiz_legend_error": "Erreur de syntaxe",
-	"quiz_correction": "Soumettre",
-	"quiz_score": "Votre pointage est $1 / $2",
-	"quiz_points": "$1 | $2 point{{PLURAL:||s}}",
-	"quiz_reset": "Réinitialiser"
+	"quiz-desc": "Permet la création de quiz",
+	"quiz-added-points": "Point{{PLURAL:$1||s}} ajouté{{PLURAL:$1||s}} pour une réponse juste :",
+	"quiz-cutoff-points": "Point{{PLURAL:$1||s}} retiré{{PLURAL:$1||s}} pour une réponse incorrecte :",
+	"quiz-ignore-coef": "Ignorer les coefficients des questions :",
+	"quiz-shuffle": "Mélanger les questions",
+	"quiz-legend-correct": "Juste",
+	"quiz-legend-incorrect": "Incorrecte",
+	"quiz-legend-unanswered": "Non répondue",
+	"quiz-legend-error": "Erreur de syntaxe",
+	"quiz-correction": "Soumettre",
+	"quiz-score": "Votre pointage est $1 / $2",
+	"quiz-points": "$1 | $2 point{{PLURAL:||s}}",
+	"quiz-reset": "Réinitialiser"
 }

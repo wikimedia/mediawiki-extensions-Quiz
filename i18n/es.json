@@ -9,17 +9,17 @@
 			"Sanbec"
 		]
 	},
-	"quiz_desc": "Permite la creación de quices",
-	"quiz_addedPoints": "{{PLURAL:$1|Punto agregado|Puntos agregados}} por una respuesta correcta:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punto|Puntos}} por una respuesta incorrecta:",
-	"quiz_ignoreCoef": "Ignorar los coeficientes de cada pregunta:",
-	"quiz_shuffle": "Mezclar preguntas",
-	"quiz_legend_correct": "Correcta",
-	"quiz_legend_incorrect": "Incorrecta",
-	"quiz_legend_unanswered": "No contestada",
-	"quiz_legend_error": "Error de sintaxis",
-	"quiz_correction": "Enviar",
-	"quiz_score": "Tu puntuación es de $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
-	"quiz_reset": "Restablecer"
+	"quiz-desc": "Permite la creación de quices",
+	"quiz-added-points": "{{PLURAL:$1|Punto agregado|Puntos agregados}} por una respuesta correcta:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punto|Puntos}} por una respuesta incorrecta:",
+	"quiz-ignore-coef": "Ignorar los coeficientes de cada pregunta:",
+	"quiz-shuffle": "Mezclar preguntas",
+	"quiz-legend-correct": "Correcta",
+	"quiz-legend-incorrect": "Incorrecta",
+	"quiz-legend-unanswered": "No contestada",
+	"quiz-legend-error": "Error de sintaxis",
+	"quiz-correction": "Enviar",
+	"quiz-score": "Tu puntuación es de $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punto|$2 puntos}}",
+	"quiz-reset": "Restablecer"
 }

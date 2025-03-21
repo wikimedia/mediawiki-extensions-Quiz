@@ -7,17 +7,17 @@
 			"আফতাবুজ্জামান"
 		]
 	},
-	"quiz_desc": "কুইজ সৃষ্টির অনুমতি দেয়",
-	"quiz_addedPoints": "সঠিক উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}} যোগ হয়েছে:",
-	"quiz_cutoffPoints": "ভুল উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}}:",
-	"quiz_ignoreCoef": "প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক:",
-	"quiz_shuffle": "প্রশ্ন উলোটপালোট করো",
-	"quiz_legend_correct": "সঠিক",
-	"quiz_legend_incorrect": "ভুল",
-	"quiz_legend_unanswered": "উত্তর দেওয়া হয়নি",
-	"quiz_legend_error": "বাক্যপ্রকরণ ত্রুটি",
-	"quiz_correction": "জমা দাও",
-	"quiz_score": "আপনার স্কোর $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 পয়েন্ট|$2 পয়েন্টসমূহ}}",
-	"quiz_reset": "পুনরায় আরম্ভ করুন"
+	"quiz-desc": "কুইজ সৃষ্টির অনুমতি দেয়",
+	"quiz-added-points": "সঠিক উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}} যোগ হয়েছে:",
+	"quiz-cutoff-points": "ভুল উত্তরের জন্য {{PLURAL:$1|পয়েন্ট}}:",
+	"quiz-ignore-coef": "প্রশ্নগুলির সহগগুলি উপেক্ষা করা হোক:",
+	"quiz-shuffle": "প্রশ্ন উলোটপালোট করো",
+	"quiz-legend-correct": "সঠিক",
+	"quiz-legend-incorrect": "ভুল",
+	"quiz-legend-unanswered": "উত্তর দেওয়া হয়নি",
+	"quiz-legend-error": "বাক্যপ্রকরণ ত্রুটি",
+	"quiz-correction": "জমা দাও",
+	"quiz-score": "আপনার স্কোর $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 পয়েন্ট|$2 পয়েন্টসমূহ}}",
+	"quiz-reset": "পুনরায় আরম্ভ করুন"
 }

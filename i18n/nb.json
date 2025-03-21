@@ -4,17 +4,17 @@
 			"Jon Harald Søby"
 		]
 	},
-	"quiz_desc": "Tillater oppretting av quizer",
-	"quiz_addedPoints": "{{PLURAL:$1|Plusspoeng}} lagt til for et korrekt svar:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Poeng}} for galt svar:",
-	"quiz_ignoreCoef": "Ignorer spørsmålenes koeffisienter:",
-	"quiz_shuffle": "Stokk spørsmålene",
-	"quiz_legend_correct": "Riktig",
-	"quiz_legend_incorrect": "Galt",
-	"quiz_legend_unanswered": "Ikke besvart",
-	"quiz_legend_error": "Syntaksfeil",
-	"quiz_correction": "Svar",
-	"quiz_score": "Din poengsum er $1 av $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poeng|$2 poeng}}",
-	"quiz_reset": "Nullstill"
+	"quiz-desc": "Tillater oppretting av quizer",
+	"quiz-added-points": "{{PLURAL:$1|Plusspoeng}} lagt til for et korrekt svar:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Poeng}} for galt svar:",
+	"quiz-ignore-coef": "Ignorer spørsmålenes koeffisienter:",
+	"quiz-shuffle": "Stokk spørsmålene",
+	"quiz-legend-correct": "Riktig",
+	"quiz-legend-incorrect": "Galt",
+	"quiz-legend-unanswered": "Ikke besvart",
+	"quiz-legend-error": "Syntaksfeil",
+	"quiz-correction": "Svar",
+	"quiz-score": "Din poengsum er $1 av $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poeng|$2 poeng}}",
+	"quiz-reset": "Nullstill"
 }

@@ -4,17 +4,17 @@
 			"Slomox"
 		]
 	},
-	"quiz_desc": "Verlööft dat Opstellen vun Quizspelen",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Punkten}} för richtige Antwoord",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspunkten}} för verkehrte Antwoord",
-	"quiz_ignoreCoef": "op Fragen-Koeffizienten nix op geven",
-	"quiz_shuffle": "Fragen mischen",
-	"quiz_legend_correct": "Stimmt",
-	"quiz_legend_incorrect": "Verkehrt",
-	"quiz_legend_unanswered": "Nich antert",
-	"quiz_legend_error": "Syntaxfehler",
-	"quiz_correction": "Korrektur",
-	"quiz_score": "Punkten: $1 / $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|Punkt|Punkten}}",
-	"quiz_reset": "Trüchsetten"
+	"quiz-desc": "Verlööft dat Opstellen vun Quizspelen",
+	"quiz-added-points": "{{PLURAL:$1|Punkt|Punkten}} för richtige Antwoord",
+	"quiz-cutoff-points": "{{PLURAL:$1|Minuspunkt|Minuspunkten}} för verkehrte Antwoord",
+	"quiz-ignore-coef": "op Fragen-Koeffizienten nix op geven",
+	"quiz-shuffle": "Fragen mischen",
+	"quiz-legend-correct": "Stimmt",
+	"quiz-legend-incorrect": "Verkehrt",
+	"quiz-legend-unanswered": "Nich antert",
+	"quiz-legend-error": "Syntaxfehler",
+	"quiz-correction": "Korrektur",
+	"quiz-score": "Punkten: $1 / $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|Punkt|Punkten}}",
+	"quiz-reset": "Trüchsetten"
 }

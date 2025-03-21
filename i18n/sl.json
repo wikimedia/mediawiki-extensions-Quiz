@@ -4,17 +4,17 @@
 			"Dbc334"
 		]
 	},
-	"quiz_desc": "Omogoča ustvarjanje kvizov",
-	"quiz_addedPoints": "{{PLURAL:$1|Točka dodana|Točki dodani|Točke dodane}} za pravilen odgovor:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Točka odbita|Točki odbiti|Točke odbite}} za napačen odgovor:",
-	"quiz_ignoreCoef": "Prezri koeficiente vprašanj:",
-	"quiz_shuffle": "Premešaj vprašanja",
-	"quiz_legend_correct": "Pravilno",
-	"quiz_legend_incorrect": "Napačno",
-	"quiz_legend_unanswered": "Ni odgovorjeno",
-	"quiz_legend_error": "Skladenjska napaka",
-	"quiz_correction": "Pošlji",
-	"quiz_score": "Vaš rezultat je $1 / $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|točka|točki|točke|točk}}",
-	"quiz_reset": "Ponastavi"
+	"quiz-desc": "Omogoča ustvarjanje kvizov",
+	"quiz-added-points": "{{PLURAL:$1|Točka dodana|Točki dodani|Točke dodane}} za pravilen odgovor:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Točka odbita|Točki odbiti|Točke odbite}} za napačen odgovor:",
+	"quiz-ignore-coef": "Prezri koeficiente vprašanj:",
+	"quiz-shuffle": "Premešaj vprašanja",
+	"quiz-legend-correct": "Pravilno",
+	"quiz-legend-incorrect": "Napačno",
+	"quiz-legend-unanswered": "Ni odgovorjeno",
+	"quiz-legend-error": "Skladenjska napaka",
+	"quiz-correction": "Pošlji",
+	"quiz-score": "Vaš rezultat je $1 / $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|točka|točki|točke|točk}}",
+	"quiz-reset": "Ponastavi"
 }

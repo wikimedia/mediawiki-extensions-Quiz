@@ -8,17 +8,17 @@
 			"SpeedyGonsales"
 		]
 	},
-	"quiz_desc": "Dozvoljava kreiranje kvizova",
-	"quiz_addedPoints": "{{PLURAL:$1|Bod|Bodovi}} za točan odgovor",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod|Bodovi}} za netočan odgovor",
-	"quiz_ignoreCoef": "Ignoriraj težinske koeficijente pitanja",
-	"quiz_shuffle": "Promiješaj pitanja",
-	"quiz_legend_correct": "Točno",
-	"quiz_legend_incorrect": "Netočno",
-	"quiz_legend_unanswered": "Neodgovoreno",
-	"quiz_legend_error": "Sintaksna pogreška",
-	"quiz_correction": "Ocijeni kviz",
-	"quiz_score": "Vaš rezultat je $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 bod|$2 bodova}}",
-	"quiz_reset": "Poništi kviz"
+	"quiz-desc": "Dozvoljava kreiranje kvizova",
+	"quiz-added-points": "{{PLURAL:$1|Bod|Bodovi}} za točan odgovor",
+	"quiz-cutoff-points": "{{PLURAL:$1|Bod|Bodovi}} za netočan odgovor",
+	"quiz-ignore-coef": "Ignoriraj težinske koeficijente pitanja",
+	"quiz-shuffle": "Promiješaj pitanja",
+	"quiz-legend-correct": "Točno",
+	"quiz-legend-incorrect": "Netočno",
+	"quiz-legend-unanswered": "Neodgovoreno",
+	"quiz-legend-error": "Sintaksna pogreška",
+	"quiz-correction": "Ocijeni kviz",
+	"quiz-score": "Vaš rezultat je $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 bod|$2 bodova}}",
+	"quiz-reset": "Poništi kviz"
 }

@@ -8,17 +8,17 @@
 			"ZaDiak"
 		]
 	},
-	"quiz_desc": "Επιτρέπει τη δημιουργία κουίζ",
-	"quiz_addedPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} που προστίθενται για σωστή απάντηση:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Πόντος|Πόντοι}} για λανθασμένη απάντηση:",
-	"quiz_ignoreCoef": "Αγνόηση συντελεστών ερωτήσεων:",
-	"quiz_shuffle": "Ανακάτεμα ερωτήσεων",
-	"quiz_legend_correct": "Σωστό",
-	"quiz_legend_incorrect": "Λάθος",
-	"quiz_legend_unanswered": "Δεν απαντήθηκε",
-	"quiz_legend_error": "Συντακτικό λάθος",
-	"quiz_correction": "Υποβολή",
-	"quiz_score": "Η βαθμολογία σας είναι $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 βαθμό|$2 βαθμούς}}",
-	"quiz_reset": "Επαναφορά"
+	"quiz-desc": "Επιτρέπει τη δημιουργία κουίζ",
+	"quiz-added-points": "{{PLURAL:$1|Πόντος|Πόντοι}} που προστίθενται για σωστή απάντηση:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Πόντος|Πόντοι}} για λανθασμένη απάντηση:",
+	"quiz-ignore-coef": "Αγνόηση συντελεστών ερωτήσεων:",
+	"quiz-shuffle": "Ανακάτεμα ερωτήσεων",
+	"quiz-legend-correct": "Σωστό",
+	"quiz-legend-incorrect": "Λάθος",
+	"quiz-legend-unanswered": "Δεν απαντήθηκε",
+	"quiz-legend-error": "Συντακτικό λάθος",
+	"quiz-correction": "Υποβολή",
+	"quiz-score": "Η βαθμολογία σας είναι $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 βαθμό|$2 βαθμούς}}",
+	"quiz-reset": "Επαναφορά"
 }

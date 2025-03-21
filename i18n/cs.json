@@ -5,17 +5,17 @@
 			"Matěj Grabovský"
 		]
 	},
-	"quiz_desc": "Umožňuje tvorbu kvízů",
-	"quiz_addedPoints": "{{PLURAL:$1|Bod připočtený|Body připočtené|Body připočtené}} za správnou odpověď",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Bod odečtený|Body odečtené|Body odečtené}} za špatnou odpověď",
-	"quiz_ignoreCoef": "Ignorovat koeficienty otázek",
-	"quiz_shuffle": "Promíchat otázky",
-	"quiz_legend_correct": "Správně",
-	"quiz_legend_incorrect": "Špatně",
-	"quiz_legend_unanswered": "Nezodpovězeno",
-	"quiz_legend_error": "Syntaktická chyba",
-	"quiz_correction": "Odeslat",
-	"quiz_score": "Váš výsledek je $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|$2 bod|$2 body|$2 bodů}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Umožňuje tvorbu kvízů",
+	"quiz-added-points": "{{PLURAL:$1|Bod připočtený|Body připočtené|Body připočtené}} za správnou odpověď",
+	"quiz-cutoff-points": "{{PLURAL:$1|Bod odečtený|Body odečtené|Body odečtené}} za špatnou odpověď",
+	"quiz-ignore-coef": "Ignorovat koeficienty otázek",
+	"quiz-shuffle": "Promíchat otázky",
+	"quiz-legend-correct": "Správně",
+	"quiz-legend-incorrect": "Špatně",
+	"quiz-legend-unanswered": "Nezodpovězeno",
+	"quiz-legend-error": "Syntaktická chyba",
+	"quiz-correction": "Odeslat",
+	"quiz-score": "Váš výsledek je $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|$2 bod|$2 body|$2 bodů}}",
+	"quiz-reset": "Reset"
 }

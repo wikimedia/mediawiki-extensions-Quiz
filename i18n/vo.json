@@ -5,10 +5,10 @@
 			"Smeira"
 		]
 	},
-	"quiz_legend_correct": "Verätik",
-	"quiz_legend_incorrect": "Neverätik",
-	"quiz_legend_unanswered": "No pegesagon",
-	"quiz_legend_error": "Süntagapöl",
-	"quiz_correction": "Sedön",
-	"quiz_reset": "Geükön ad stad kösömik"
+	"quiz-legend-correct": "Verätik",
+	"quiz-legend-incorrect": "Neverätik",
+	"quiz-legend-unanswered": "No pegesagon",
+	"quiz-legend-error": "Süntagapöl",
+	"quiz-correction": "Sedön",
+	"quiz-reset": "Geükön ad stad kösömik"
 }

@@ -6,17 +6,17 @@
 			"Vinhtantran"
 		]
 	},
-	"quiz_desc": "Tạo ra bài thi",
-	"quiz_addedPoints": "{{PLURAL:$1|Điểm|Số điểm}} cộng khi trả lời đúng",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Điểm|Số điểm}} trừ khi trả lời sai",
-	"quiz_ignoreCoef": "Bỏ qua hệ số điểm của các câu hỏi",
-	"quiz_shuffle": "Xáo trộn các câu hỏi",
-	"quiz_legend_correct": "Đúng",
-	"quiz_legend_incorrect": "Sai",
-	"quiz_legend_unanswered": "Không trả lời",
-	"quiz_legend_error": "Lỗi cú pháp",
-	"quiz_correction": "Gửi",
-	"quiz_score": "Điểm của bạn là $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 điểm|$2 điểm}}",
-	"quiz_reset": "Làm lại"
+	"quiz-desc": "Tạo ra bài thi",
+	"quiz-added-points": "{{PLURAL:$1|Điểm|Số điểm}} cộng khi trả lời đúng",
+	"quiz-cutoff-points": "{{PLURAL:$1|Điểm|Số điểm}} trừ khi trả lời sai",
+	"quiz-ignore-coef": "Bỏ qua hệ số điểm của các câu hỏi",
+	"quiz-shuffle": "Xáo trộn các câu hỏi",
+	"quiz-legend-correct": "Đúng",
+	"quiz-legend-incorrect": "Sai",
+	"quiz-legend-unanswered": "Không trả lời",
+	"quiz-legend-error": "Lỗi cú pháp",
+	"quiz-correction": "Gửi",
+	"quiz-score": "Điểm của bạn là $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 điểm|$2 điểm}}",
+	"quiz-reset": "Làm lại"
 }

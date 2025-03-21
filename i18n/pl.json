@@ -8,17 +8,17 @@
 			"Woytecr"
 		]
 	},
-	"quiz_desc": "Umożliwia tworzenie quizów",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punkt|Punkty}} za niewłaściwą odpowiedź:",
-	"quiz_ignoreCoef": "Ignoruj punktację pytań:",
-	"quiz_shuffle": "Losuj kolejność pytań",
-	"quiz_legend_correct": "Właściwa",
-	"quiz_legend_incorrect": "Niewłaściwa",
-	"quiz_legend_unanswered": "Brak odpowiedzi",
-	"quiz_legend_error": "Błąd składni",
-	"quiz_correction": "Wyślij",
-	"quiz_score": "Twoje punkty to $1 na możliwych $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}",
-	"quiz_reset": "Wyzeruj"
+	"quiz-desc": "Umożliwia tworzenie quizów",
+	"quiz-added-points": "{{PLURAL:$1|Punkt dodawany|Punkty dodawane|Punktów dodawanych}} za właściwą odpowiedź:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punkt|Punkty}} za niewłaściwą odpowiedź:",
+	"quiz-ignore-coef": "Ignoruj punktację pytań:",
+	"quiz-shuffle": "Losuj kolejność pytań",
+	"quiz-legend-correct": "Właściwa",
+	"quiz-legend-incorrect": "Niewłaściwa",
+	"quiz-legend-unanswered": "Brak odpowiedzi",
+	"quiz-legend-error": "Błąd składni",
+	"quiz-correction": "Wyślij",
+	"quiz-score": "Twoje punkty to $1 na możliwych $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punkt|$2 punkty|$2 punktów}}",
+	"quiz-reset": "Wyzeruj"
 }

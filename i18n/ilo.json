@@ -4,17 +4,17 @@
 			"Lam-ang"
 		]
 	},
-	"quiz_desc": "Agpalubos ti agramid kadagiti saludsod",
-	"quiz_addedPoints": "{{PLURAL:$1|Puntos|Pun-puntos}} ti mainayon iti pudno a sungbat",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puntos|Pun-puntos}} para iti di umisu a sungbat",
-	"quiz_ignoreCoef": "Saan nga ikaskaso dagiti coefficient ti salusod",
-	"quiz_shuffle": "Yakar-akaren dagiti saludsod",
-	"quiz_legend_correct": "Umisu",
-	"quiz_legend_incorrect": "Di umisu",
-	"quiz_legend_unanswered": "Saan a nasungbatan",
-	"quiz_legend_error": "Biddut ti gramatika",
-	"quiz_correction": "Ited",
-	"quiz_score": "Ti iskor mo ket $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puntos|$2 pun-puntos}}",
-	"quiz_reset": "Isubli"
+	"quiz-desc": "Agpalubos ti agramid kadagiti saludsod",
+	"quiz-added-points": "{{PLURAL:$1|Puntos|Pun-puntos}} ti mainayon iti pudno a sungbat",
+	"quiz-cutoff-points": "{{PLURAL:$1|Puntos|Pun-puntos}} para iti di umisu a sungbat",
+	"quiz-ignore-coef": "Saan nga ikaskaso dagiti coefficient ti salusod",
+	"quiz-shuffle": "Yakar-akaren dagiti saludsod",
+	"quiz-legend-correct": "Umisu",
+	"quiz-legend-incorrect": "Di umisu",
+	"quiz-legend-unanswered": "Saan a nasungbatan",
+	"quiz-legend-error": "Biddut ti gramatika",
+	"quiz-correction": "Ited",
+	"quiz-score": "Ti iskor mo ket $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puntos|$2 pun-puntos}}",
+	"quiz-reset": "Isubli"
 }

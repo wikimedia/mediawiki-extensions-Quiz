@@ -4,17 +4,17 @@
 			"Candalua"
 		]
 	},
-	"quiz_desc": "Perméte de crear dei zughi a quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Ponto|Ponti}} zontà par ogni risposta giusta",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Ponto|Ponti}} cavà par ogni risposta sbaglià",
-	"quiz_ignoreCoef": "Ignora i coeficenti de domanda",
-	"quiz_shuffle": "Mìssia le domande",
-	"quiz_legend_correct": "Giusto",
-	"quiz_legend_incorrect": "Sbaglià",
-	"quiz_legend_unanswered": "Nissuna risposta",
-	"quiz_legend_error": "Eror de sintassi",
-	"quiz_correction": "Corègi",
-	"quiz_score": "El to puntegio el xe $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 ponto|$2 ponti}}",
-	"quiz_reset": "Azzèra"
+	"quiz-desc": "Perméte de crear dei zughi a quiz",
+	"quiz-added-points": "{{PLURAL:$1|Ponto|Ponti}} zontà par ogni risposta giusta",
+	"quiz-cutoff-points": "{{PLURAL:$1|Ponto|Ponti}} cavà par ogni risposta sbaglià",
+	"quiz-ignore-coef": "Ignora i coeficenti de domanda",
+	"quiz-shuffle": "Mìssia le domande",
+	"quiz-legend-correct": "Giusto",
+	"quiz-legend-incorrect": "Sbaglià",
+	"quiz-legend-unanswered": "Nissuna risposta",
+	"quiz-legend-error": "Eror de sintassi",
+	"quiz-correction": "Corègi",
+	"quiz-score": "El to puntegio el xe $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 ponto|$2 ponti}}",
+	"quiz-reset": "Azzèra"
 }

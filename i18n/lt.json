@@ -8,17 +8,17 @@
 			"Vogone"
 		]
 	},
-	"quiz_desc": "Leidžia kurti klausimynus",
-	"quiz_addedPoints": "{{PLURAL:$1|Taškas|Taškai}} pridėti už teisingą atsakymą:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Taškas|Taškai|Taškų}} už neteisingą atsakymą:",
-	"quiz_ignoreCoef": "Nepaisyti klausimų koeficientų:",
-	"quiz_shuffle": "Maišyti klausimus",
-	"quiz_legend_correct": "Teisingai",
-	"quiz_legend_incorrect": "Neteisingai",
-	"quiz_legend_unanswered": "Neatsakyta",
-	"quiz_legend_error": "Sintaksės klaida",
-	"quiz_correction": "Pateikti",
-	"quiz_score": "Jūsų surinkti taškai yra $1 iš $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|taškas|taškai|taškų}}",
-	"quiz_reset": "Valyti"
+	"quiz-desc": "Leidžia kurti klausimynus",
+	"quiz-added-points": "{{PLURAL:$1|Taškas|Taškai}} pridėti už teisingą atsakymą:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Taškas|Taškai|Taškų}} už neteisingą atsakymą:",
+	"quiz-ignore-coef": "Nepaisyti klausimų koeficientų:",
+	"quiz-shuffle": "Maišyti klausimus",
+	"quiz-legend-correct": "Teisingai",
+	"quiz-legend-incorrect": "Neteisingai",
+	"quiz-legend-unanswered": "Neatsakyta",
+	"quiz-legend-error": "Sintaksės klaida",
+	"quiz-correction": "Pateikti",
+	"quiz-score": "Jūsų surinkti taškai yra $1 iš $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|taškas|taškai|taškų}}",
+	"quiz-reset": "Valyti"
 }

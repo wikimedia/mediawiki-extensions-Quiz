@@ -6,16 +6,16 @@
 			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"quiz_desc": "Heimilar gerð skyndiprófa",
-	"quiz_addedPoints": "{{PLURAL:$1|Stig}} fyrir rétt svar:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Stig dregið|Stig dregin}} frá fyrir rangt svar:",
-	"quiz_shuffle": "Stokka svörin",
-	"quiz_legend_correct": "Rétt",
-	"quiz_legend_incorrect": "Röng",
-	"quiz_legend_unanswered": "Ósvarað",
-	"quiz_legend_error": "Málskipanarvilla",
-	"quiz_correction": "Senda",
-	"quiz_score": "Stigafjöldinn þinn er $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 stig|$2 stig}}",
-	"quiz_reset": "Endurstilla"
+	"quiz-desc": "Heimilar gerð skyndiprófa",
+	"quiz-added-points": "{{PLURAL:$1|Stig}} fyrir rétt svar:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Stig dregið|Stig dregin}} frá fyrir rangt svar:",
+	"quiz-shuffle": "Stokka svörin",
+	"quiz-legend-correct": "Rétt",
+	"quiz-legend-incorrect": "Röng",
+	"quiz-legend-unanswered": "Ósvarað",
+	"quiz-legend-error": "Málskipanarvilla",
+	"quiz-correction": "Senda",
+	"quiz-score": "Stigafjöldinn þinn er $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 stig|$2 stig}}",
+	"quiz-reset": "Endurstilla"
 }

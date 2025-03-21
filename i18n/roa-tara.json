@@ -4,17 +4,17 @@
 			"Joetaras"
 		]
 	},
-	"quiz_desc": "Permette de ccrejà le quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Punde}} aggiunde pe 'na resposta corrette:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punde}} pe 'na resposta sbagliate:",
-	"quiz_ignoreCoef": "No scè penzanne a le coefficiende de le domande:",
-	"quiz_shuffle": "Miscke le domande",
-	"quiz_legend_correct": "Esatte",
-	"quiz_legend_incorrect": "Sbagliate",
-	"quiz_legend_unanswered": "Nò resposte",
-	"quiz_legend_error": "Errore de sindasse",
-	"quiz_correction": "Conferme",
-	"quiz_score": "'U pundegge tue ète $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punde|$2 punde}}",
-	"quiz_reset": "Azzera"
+	"quiz-desc": "Permette de ccrejà le quiz",
+	"quiz-added-points": "{{PLURAL:$1|Punde}} aggiunde pe 'na resposta corrette:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punde}} pe 'na resposta sbagliate:",
+	"quiz-ignore-coef": "No scè penzanne a le coefficiende de le domande:",
+	"quiz-shuffle": "Miscke le domande",
+	"quiz-legend-correct": "Esatte",
+	"quiz-legend-incorrect": "Sbagliate",
+	"quiz-legend-unanswered": "Nò resposte",
+	"quiz-legend-error": "Errore de sindasse",
+	"quiz-correction": "Conferme",
+	"quiz-score": "'U pundegge tue ète $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punde|$2 punde}}",
+	"quiz-reset": "Azzera"
 }

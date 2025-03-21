@@ -6,17 +6,17 @@
 			"Dragonòt"
 		]
 	},
-	"quiz_desc": "A përmëtt la creassion ëd quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Pont|Pont}} da dé për n'aspòsta giusta",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pont|Pont}} da gavé për n'aspòsta pa giusta",
-	"quiz_ignoreCoef": "Pa dovré ij coeficent dle domande",
-	"quiz_shuffle": "Mës-cé le domande",
-	"quiz_legend_correct": "Giust",
-	"quiz_legend_incorrect": "Pa giust",
-	"quiz_legend_unanswered": "Ancor gnun-e rispòste",
-	"quiz_legend_error": "Eror ëd sintassi",
-	"quiz_correction": "Manda",
-	"quiz_score": "A l'ha pijait $1 pont ansima a $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 pont|$2 pont}}",
-	"quiz_reset": "Aseré"
+	"quiz-desc": "A përmëtt la creassion ëd quiz",
+	"quiz-added-points": "{{PLURAL:$1|Pont|Pont}} da dé për n'aspòsta giusta",
+	"quiz-cutoff-points": "{{PLURAL:$1|Pont|Pont}} da gavé për n'aspòsta pa giusta",
+	"quiz-ignore-coef": "Pa dovré ij coeficent dle domande",
+	"quiz-shuffle": "Mës-cé le domande",
+	"quiz-legend-correct": "Giust",
+	"quiz-legend-incorrect": "Pa giust",
+	"quiz-legend-unanswered": "Ancor gnun-e rispòste",
+	"quiz-legend-error": "Eror ëd sintassi",
+	"quiz-correction": "Manda",
+	"quiz-score": "A l'ha pijait $1 pont ansima a $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 pont|$2 pont}}",
+	"quiz-reset": "Aseré"
 }

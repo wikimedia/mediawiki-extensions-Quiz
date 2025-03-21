@@ -7,17 +7,17 @@
 			"គីមស៊្រុន"
 		]
 	},
-	"quiz_desc": "អនុញ្ញាតឱ្យបង្កើតចំណោទសួរ",
-	"quiz_addedPoints": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}}$1 ត្រូវបានបូកចូលចំពោះចម្លើយត្រឹមត្រូវ",
-	"quiz_cutoffPoints": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}} $1 ត្រូវបានដកចេញចំពោះចម្លើយខុស",
-	"quiz_ignoreCoef": "មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ",
-	"quiz_shuffle": "សាប់សំណួរ",
-	"quiz_legend_correct": "ត្រូវ",
-	"quiz_legend_incorrect": "ខុស",
-	"quiz_legend_unanswered": "មិនបានឆ្លើយ",
-	"quiz_legend_error": "កំហុសពាក្យសម័្ពន្ធ",
-	"quiz_correction": "ដាក់ស្នើ",
-	"quiz_score": "តារាងពិន្ទុរបស់អ្នកគឺ  $1/$2",
-	"quiz_points": "$1 | {{PLURAL:$2|១ពិន្ទុ|$2ពិន្ទុ}}",
-	"quiz_reset": "ធ្វើឱ្យដូចដើមវិញ"
+	"quiz-desc": "អនុញ្ញាតឱ្យបង្កើតចំណោទសួរ",
+	"quiz-added-points": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}}$1 ត្រូវបានបូកចូលចំពោះចម្លើយត្រឹមត្រូវ",
+	"quiz-cutoff-points": "{{PLURAL:$1|ពិន្ទុ|ពិន្ទុ}} $1 ត្រូវបានដកចេញចំពោះចម្លើយខុស",
+	"quiz-ignore-coef": "មិនខ្វល់ពី​មេគុណ​នៃ​សំណួរ",
+	"quiz-shuffle": "សាប់សំណួរ",
+	"quiz-legend-correct": "ត្រូវ",
+	"quiz-legend-incorrect": "ខុស",
+	"quiz-legend-unanswered": "មិនបានឆ្លើយ",
+	"quiz-legend-error": "កំហុសពាក្យសម័្ពន្ធ",
+	"quiz-correction": "ដាក់ស្នើ",
+	"quiz-score": "តារាងពិន្ទុរបស់អ្នកគឺ  $1/$2",
+	"quiz-points": "$1 | {{PLURAL:$2|១ពិន្ទុ|$2ពិន្ទុ}}",
+	"quiz-reset": "ធ្វើឱ្យដូចដើមវិញ"
 }

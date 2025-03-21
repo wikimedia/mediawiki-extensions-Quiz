@@ -5,17 +5,17 @@
 			"Sky Harbor"
 		]
 	},
-	"quiz_desc": "Nagpapahintulot na makalikha ng mumunting mga pagsusulit",
-	"quiz_addedPoints": "Nagdaragdag ng {{PLURAL:$1|puntos|mga puntos}} para sa isang tamang sagot",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puntos|Mga puntos}} para sa maling sagot:",
-	"quiz_ignoreCoef": "Balewalain ang mga koepisyente (katuwang na bilang) ng mga katanungan.",
-	"quiz_shuffle": "Balasahin ang mga katanungan",
-	"quiz_legend_correct": "Tama",
-	"quiz_legend_incorrect": "Mali",
-	"quiz_legend_unanswered": "Hindi nasagot",
-	"quiz_legend_error": "Kamalian sa palaugnayan",
-	"quiz_correction": "Ipasa",
-	"quiz_score": "Ang puntos mo ay $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}",
-	"quiz_reset": "Itakdang muli"
+	"quiz-desc": "Nagpapahintulot na makalikha ng mumunting mga pagsusulit",
+	"quiz-added-points": "Nagdaragdag ng {{PLURAL:$1|puntos|mga puntos}} para sa isang tamang sagot",
+	"quiz-cutoff-points": "{{PLURAL:$1|Puntos|Mga puntos}} para sa maling sagot:",
+	"quiz-ignore-coef": "Balewalain ang mga koepisyente (katuwang na bilang) ng mga katanungan.",
+	"quiz-shuffle": "Balasahin ang mga katanungan",
+	"quiz-legend-correct": "Tama",
+	"quiz-legend-incorrect": "Mali",
+	"quiz-legend-unanswered": "Hindi nasagot",
+	"quiz-legend-error": "Kamalian sa palaugnayan",
+	"quiz-correction": "Ipasa",
+	"quiz-score": "Ang puntos mo ay $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puntos|$2 mga puntos}}",
+	"quiz-reset": "Itakdang muli"
 }

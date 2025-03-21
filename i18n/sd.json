@@ -5,6 +5,6 @@
 			"Tweety"
 		]
 	},
-	"quiz_legend_correct": "درست",
-	"quiz_points": "$1 | {{PLURAL:$2|1 پوائنٽ|$2 پوائنٽون}}"
+	"quiz-legend-correct": "درست",
+	"quiz-points": "$1 | {{PLURAL:$2|1 پوائنٽ|$2 پوائنٽون}}"
 }

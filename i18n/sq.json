@@ -7,17 +7,17 @@
 			"Olsi"
 		]
 	},
-	"quiz_desc": "Lejon krijimin e enigmave",
-	"quiz_addedPoints": "{{PLURAL:$1|Pika|Pikët}} shtuar për një përgjigje të saktë",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pika|Pikët}} për një përgjigje të gabuar",
-	"quiz_ignoreCoef": "Injoro koificientin e pyetjes",
-	"quiz_shuffle": "Përziej pyetjet",
-	"quiz_legend_correct": "Korrekt",
-	"quiz_legend_incorrect": "Gabim",
-	"quiz_legend_unanswered": "S'ka përgjigje",
-	"quiz_legend_error": "Gabim sintakse",
-	"quiz_correction": "Dërgo",
-	"quiz_score": "Rezultati juaj është $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 pikë|$2 pikë}}",
-	"quiz_reset": "Riktheje"
+	"quiz-desc": "Lejon krijimin e enigmave",
+	"quiz-added-points": "{{PLURAL:$1|Pika|Pikët}} shtuar për një përgjigje të saktë",
+	"quiz-cutoff-points": "{{PLURAL:$1|Pika|Pikët}} për një përgjigje të gabuar",
+	"quiz-ignore-coef": "Injoro koificientin e pyetjes",
+	"quiz-shuffle": "Përziej pyetjet",
+	"quiz-legend-correct": "Korrekt",
+	"quiz-legend-incorrect": "Gabim",
+	"quiz-legend-unanswered": "S'ka përgjigje",
+	"quiz-legend-error": "Gabim sintakse",
+	"quiz-correction": "Dërgo",
+	"quiz-score": "Rezultati juaj është $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 pikë|$2 pikë}}",
+	"quiz-reset": "Riktheje"
 }

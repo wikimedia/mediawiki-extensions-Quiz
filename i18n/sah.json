@@ -4,17 +4,17 @@
 			"HalanTul"
 		]
 	},
-	"quiz_desc": "Вопросниктары оҥорор кыаҕы биэрэр",
-	"quiz_addedPoints": "$1 очкуо сөп эппиэт иһин эбилиннэ",
-	"quiz_cutoffPoints": "$1 очкуо сыыһа эппиэт иһин көҕүрэтилиннэ",
-	"quiz_ignoreCoef": "Ыйытыылар коэффициеннарын аахсыма",
-	"quiz_shuffle": "Ыйытыылары булкуй",
-	"quiz_legend_correct": "Сөп",
-	"quiz_legend_incorrect": "Сыыһа",
-	"quiz_legend_unanswered": "Эппиэт суох",
-	"quiz_legend_error": "Синтаксическай алҕас",
-	"quiz_correction": "Ыыт",
-	"quiz_score": "$2 очкуоттан $1 очкуону ыллыҥ",
-	"quiz_points": "$1 | {{PLURAL:$2|1 очкуо|$2 очкуо}}",
-	"quiz_reset": "Саҥаттан"
+	"quiz-desc": "Вопросниктары оҥорор кыаҕы биэрэр",
+	"quiz-added-points": "$1 очкуо сөп эппиэт иһин эбилиннэ",
+	"quiz-cutoff-points": "$1 очкуо сыыһа эппиэт иһин көҕүрэтилиннэ",
+	"quiz-ignore-coef": "Ыйытыылар коэффициеннарын аахсыма",
+	"quiz-shuffle": "Ыйытыылары булкуй",
+	"quiz-legend-correct": "Сөп",
+	"quiz-legend-incorrect": "Сыыһа",
+	"quiz-legend-unanswered": "Эппиэт суох",
+	"quiz-legend-error": "Синтаксическай алҕас",
+	"quiz-correction": "Ыыт",
+	"quiz-score": "$2 очкуоттан $1 очкуону ыллыҥ",
+	"quiz-points": "$1 | {{PLURAL:$2|1 очкуо|$2 очкуо}}",
+	"quiz-reset": "Саҥаттан"
 }

@@ -8,17 +8,17 @@
 			"Runningfridgesrule"
 		]
 	},
-	"quiz_desc": "Sınav oluşturulmasına izin verir",
-	"quiz_addedPoints": "{{PLURAL:$1|Puan|Puan}} doğru cevap için eklendi:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Puan|Puan}} yanlış cevap için:",
-	"quiz_ignoreCoef": "Soruların katsayısını ihmal et:",
-	"quiz_shuffle": "Soruları karıştır",
-	"quiz_legend_correct": "Doğru",
-	"quiz_legend_incorrect": "Yanlış",
-	"quiz_legend_unanswered": "Cevaplandırılmadı",
-	"quiz_legend_error": "Sözdizim hatası",
-	"quiz_correction": "Gönder",
-	"quiz_score": "Skorunuz $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
-	"quiz_reset": "Sıfırla"
+	"quiz-desc": "Sınav oluşturulmasına izin verir",
+	"quiz-added-points": "{{PLURAL:$1|Puan|Puan}} doğru cevap için eklendi:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Puan|Puan}} yanlış cevap için:",
+	"quiz-ignore-coef": "Soruların katsayısını ihmal et:",
+	"quiz-shuffle": "Soruları karıştır",
+	"quiz-legend-correct": "Doğru",
+	"quiz-legend-incorrect": "Yanlış",
+	"quiz-legend-unanswered": "Cevaplandırılmadı",
+	"quiz-legend-error": "Sözdizim hatası",
+	"quiz-correction": "Gönder",
+	"quiz-score": "Skorunuz $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
+	"quiz-reset": "Sıfırla"
 }

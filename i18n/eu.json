@@ -6,17 +6,17 @@
 			"Theklan"
 		]
 	},
-	"quiz_desc": "Galdera-sortak sortzeko",
-	"quiz_addedPoints": "Erantzun zuzen bakoitzeko gehitutako {{PLURAL:$1|puntua|puntuak}}:",
-	"quiz_cutoffPoints": "Erantzun oker bakoitzeko kendutako {{PLURAL:$1|puntua|puntuak}}:",
-	"quiz_ignoreCoef": "Ez hartu kontuan galderen koefizienteak:",
-	"quiz_shuffle": "Galderak nahastu",
-	"quiz_legend_correct": "Zuzenak",
-	"quiz_legend_incorrect": "Okerrak",
-	"quiz_legend_unanswered": "Erantzun gabe",
-	"quiz_legend_error": "Sintaxi-errorea",
-	"quiz_correction": "Bidali",
-	"quiz_score": "Zure kalifikazioa $1 / $2 da",
-	"quiz_points": "$1 | {{PLURAL:$2|puntu 1|$2 puntu}}",
-	"quiz_reset": "Hasieratu"
+	"quiz-desc": "Galdera-sortak sortzeko",
+	"quiz-added-points": "Erantzun zuzen bakoitzeko gehitutako {{PLURAL:$1|puntua|puntuak}}:",
+	"quiz-cutoff-points": "Erantzun oker bakoitzeko kendutako {{PLURAL:$1|puntua|puntuak}}:",
+	"quiz-ignore-coef": "Ez hartu kontuan galderen koefizienteak:",
+	"quiz-shuffle": "Galderak nahastu",
+	"quiz-legend-correct": "Zuzenak",
+	"quiz-legend-incorrect": "Okerrak",
+	"quiz-legend-unanswered": "Erantzun gabe",
+	"quiz-legend-error": "Sintaxi-errorea",
+	"quiz-correction": "Bidali",
+	"quiz-score": "Zure kalifikazioa $1 / $2 da",
+	"quiz-points": "$1 | {{PLURAL:$2|puntu 1|$2 puntu}}",
+	"quiz-reset": "Hasieratu"
 }

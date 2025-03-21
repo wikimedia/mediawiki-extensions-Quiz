@@ -8,17 +8,17 @@
 			"Александр Сигачёв"
 		]
 	},
-	"quiz_desc": "Позволяет создавать вопросники",
-	"quiz_addedPoints": "{{PLURAL:$1|1=Добавлено очко|Добавлены очки}} за правильный ответ:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|1=Очко|Очки}} за неправильный ответ:",
-	"quiz_ignoreCoef": "Пренебрегать коэффициентами вопросов:",
-	"quiz_shuffle": "Перемешать вопросы",
-	"quiz_legend_correct": "Правильно",
-	"quiz_legend_incorrect": "Ошибка",
-	"quiz_legend_unanswered": "Нет ответа",
-	"quiz_legend_error": "Синтаксическая ошибка",
-	"quiz_correction": "Отправить",
-	"quiz_score": "Ваш счёт: $1 из $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очка|очков}}",
-	"quiz_reset": "Сбросить"
+	"quiz-desc": "Позволяет создавать вопросники",
+	"quiz-added-points": "{{PLURAL:$1|1=Добавлено очко|Добавлены очки}} за правильный ответ:",
+	"quiz-cutoff-points": "{{PLURAL:$1|1=Очко|Очки}} за неправильный ответ:",
+	"quiz-ignore-coef": "Пренебрегать коэффициентами вопросов:",
+	"quiz-shuffle": "Перемешать вопросы",
+	"quiz-legend-correct": "Правильно",
+	"quiz-legend-incorrect": "Ошибка",
+	"quiz-legend-unanswered": "Нет ответа",
+	"quiz-legend-error": "Синтаксическая ошибка",
+	"quiz-correction": "Отправить",
+	"quiz-score": "Ваш счёт: $1 из $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|очко|очка|очков}}",
+	"quiz-reset": "Сбросить"
 }

@@ -5,17 +5,17 @@
 			"Khalid Mahmood"
 		]
 	},
-	"quiz_desc": "کوئز دے بنن دی اجازت",
-	"quiz_addedPoints": "{{PLURAL:$1|نمبر}} جوڑے گۓ ٹھیک جواب لئی۔",
-	"quiz_cutoffPoints": "{{PLURAL:$1|پوائینٹ|پوائینٹ}} غلط جواب لئی",
-	"quiz_ignoreCoef": "سوال دے کوایفیشینٹو نوں چھڈو",
-	"quiz_shuffle": "سوال رلاؤ",
-	"quiz_legend_correct": "ٹھیک۔ سجے پاسے",
-	"quiz_legend_incorrect": "غلط",
-	"quiz_legend_unanswered": "جواب نئیں دتا گیا۔",
-	"quiz_legend_error": "بولی دی غلطی",
-	"quiz_correction": "اگے رکھو",
-	"quiz_score": "تہاڈے سکور $1 / $2 اے",
-	"quiz_points": "$1 | {{PLURAL:$2|1 پوائینٹ|$2 پوائینٹ}}",
-	"quiz_reset": "دوبارہ ٹھیک کرنا"
+	"quiz-desc": "کوئز دے بنن دی اجازت",
+	"quiz-added-points": "{{PLURAL:$1|نمبر}} جوڑے گۓ ٹھیک جواب لئی۔",
+	"quiz-cutoff-points": "{{PLURAL:$1|پوائینٹ|پوائینٹ}} غلط جواب لئی",
+	"quiz-ignore-coef": "سوال دے کوایفیشینٹو نوں چھڈو",
+	"quiz-shuffle": "سوال رلاؤ",
+	"quiz-legend-correct": "ٹھیک۔ سجے پاسے",
+	"quiz-legend-incorrect": "غلط",
+	"quiz-legend-unanswered": "جواب نئیں دتا گیا۔",
+	"quiz-legend-error": "بولی دی غلطی",
+	"quiz-correction": "اگے رکھو",
+	"quiz-score": "تہاڈے سکور $1 / $2 اے",
+	"quiz-points": "$1 | {{PLURAL:$2|1 پوائینٹ|$2 پوائینٹ}}",
+	"quiz-reset": "دوبارہ ٹھیک کرنا"
 }

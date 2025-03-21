@@ -7,17 +7,17 @@
 			"StanProg"
 		]
 	},
-	"quiz_desc": "Позволява създаването на анкети",
-	"quiz_addedPoints": "{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор:",
-	"quiz_ignoreCoef": "Пренебрегване на коефициентите на въпросите:",
-	"quiz_shuffle": "Разбъркване на въпросите",
-	"quiz_legend_correct": "Правилен",
-	"quiz_legend_incorrect": "Грешен",
-	"quiz_legend_unanswered": "Без отговор",
-	"quiz_legend_error": "Синтактична грешка",
-	"quiz_correction": "Изпращане",
-	"quiz_score": "Вашият резултат е $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|една точка|$2 точки}}",
-	"quiz_reset": "Отмяна"
+	"quiz-desc": "Позволява създаването на анкети",
+	"quiz-added-points": "{{PLURAL:$1|Точка, добавяна|Точки, добавяни}} за правилен отговор:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Точка, отнемана|Точки, отнемани}} за грешен отговор:",
+	"quiz-ignore-coef": "Пренебрегване на коефициентите на въпросите:",
+	"quiz-shuffle": "Разбъркване на въпросите",
+	"quiz-legend-correct": "Правилен",
+	"quiz-legend-incorrect": "Грешен",
+	"quiz-legend-unanswered": "Без отговор",
+	"quiz-legend-error": "Синтактична грешка",
+	"quiz-correction": "Изпращане",
+	"quiz-score": "Вашият резултат е $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|една точка|$2 точки}}",
+	"quiz-reset": "Отмяна"
 }

@@ -4,12 +4,12 @@
 			"Mogoeilor"
 		]
 	},
-	"quiz_shuffle": "پرسایشتیا قر قاطی بیه",
-	"quiz_legend_correct": "درست",
-	"quiz_legend_incorrect": "اشتوا",
-	"quiz_legend_unanswered": "جواو ندیئه",
-	"quiz_legend_error": "خطا دستوری",
-	"quiz_correction": "كل كردن",
-	"quiz_score": "امتیاز شما $2/$1 ئه",
-	"quiz_reset": "د نو شرو كردن"
+	"quiz-shuffle": "پرسایشتیا قر قاطی بیه",
+	"quiz-legend-correct": "درست",
+	"quiz-legend-incorrect": "اشتوا",
+	"quiz-legend-unanswered": "جواو ندیئه",
+	"quiz-legend-error": "خطا دستوری",
+	"quiz-correction": "كل كردن",
+	"quiz-score": "امتیاز شما $2/$1 ئه",
+	"quiz-reset": "د نو شرو كردن"
 }

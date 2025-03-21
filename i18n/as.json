@@ -5,17 +5,17 @@
 			"Gitartha.bordoloi"
 		]
 	},
-	"quiz_desc": "কুইজ সৃষ্টিৰ অনুমতি দিয়ে",
-	"quiz_addedPoints": "সঠিক উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
-	"quiz_cutoffPoints": "ভুল উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
-	"quiz_ignoreCoef": "প্ৰশ্নসমূহৰ সহগ উপেক্ষা কৰক",
-	"quiz_shuffle": "প্ৰশ্নৰ ক্ৰম উলটপালট কৰক",
-	"quiz_legend_correct": "শুদ্ধ",
-	"quiz_legend_incorrect": "ভুল",
-	"quiz_legend_unanswered": "উত্তৰ দিয়া হোৱা নাই",
-	"quiz_legend_error": "চীন্‌টেক্স ত্ৰুটি",
-	"quiz_correction": "দাখিল কৰক",
-	"quiz_score": "আপোনাৰ নম্বৰ $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 পইণ্ট|$2 পইণ্ট}}",
-	"quiz_reset": "পূৰ্বৰ অৱস্থালৈ লৈ যাওক"
+	"quiz-desc": "কুইজ সৃষ্টিৰ অনুমতি দিয়ে",
+	"quiz-added-points": "সঠিক উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
+	"quiz-cutoff-points": "ভুল উত্তৰৰ বাবে {{PLURAL:$1|পইণ্ট|পইণ্ট}} যোগ হয়",
+	"quiz-ignore-coef": "প্ৰশ্নসমূহৰ সহগ উপেক্ষা কৰক",
+	"quiz-shuffle": "প্ৰশ্নৰ ক্ৰম উলটপালট কৰক",
+	"quiz-legend-correct": "শুদ্ধ",
+	"quiz-legend-incorrect": "ভুল",
+	"quiz-legend-unanswered": "উত্তৰ দিয়া হোৱা নাই",
+	"quiz-legend-error": "চীন্‌টেক্স ত্ৰুটি",
+	"quiz-correction": "দাখিল কৰক",
+	"quiz-score": "আপোনাৰ নম্বৰ $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 পইণ্ট|$2 পইণ্ট}}",
+	"quiz-reset": "পূৰ্বৰ অৱস্থালৈ লৈ যাওক"
 }

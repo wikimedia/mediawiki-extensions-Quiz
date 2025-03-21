@@ -6,17 +6,17 @@
 			"Ramsis II"
 		]
 	},
-	"quiz_desc": "بيسمح بعمل امتحانات",
-	"quiz_addedPoints": "{{PLURAL:$1|النقطة|النقط}} اللى بتضاف لما تجاوب صح",
-	"quiz_cutoffPoints": "{{PLURAL:$1|النقطة|النقط}} اللى بتتخصم لما تجاوب غلط",
-	"quiz_ignoreCoef": "اتجاهل معاملات الاسئلة",
-	"quiz_shuffle": "اسئلة متلخبطة",
-	"quiz_legend_correct": "صح",
-	"quiz_legend_incorrect": "غلط",
-	"quiz_legend_unanswered": "ماتجاوبش عليه",
-	"quiz_legend_error": "غلط فى السينتاكس",
-	"quiz_correction": "تنفيذ",
-	"quiz_score": "$1 / $2 النتيجة بتاعتك هي",
-	"quiz_points": "$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}",
-	"quiz_reset": "اضبط من تاني"
+	"quiz-desc": "بيسمح بعمل امتحانات",
+	"quiz-added-points": "{{PLURAL:$1|النقطة|النقط}} اللى بتضاف لما تجاوب صح",
+	"quiz-cutoff-points": "{{PLURAL:$1|النقطة|النقط}} اللى بتتخصم لما تجاوب غلط",
+	"quiz-ignore-coef": "اتجاهل معاملات الاسئلة",
+	"quiz-shuffle": "اسئلة متلخبطة",
+	"quiz-legend-correct": "صح",
+	"quiz-legend-incorrect": "غلط",
+	"quiz-legend-unanswered": "ماتجاوبش عليه",
+	"quiz-legend-error": "غلط فى السينتاكس",
+	"quiz-correction": "تنفيذ",
+	"quiz-score": "$1 / $2 النتيجة بتاعتك هي",
+	"quiz-points": "$1 | {{PLURAL:$2|1 نقطة|$2 نقطة}}",
+	"quiz-reset": "اضبط من تاني"
 }

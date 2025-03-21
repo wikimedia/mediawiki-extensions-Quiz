@@ -4,17 +4,17 @@
 			"Hanberke"
 		]
 	},
-	"quiz_desc": "Soragnama döretmeklige rugsat berýär",
-	"quiz_addedPoints": "Dogry jogap üçin {{PLURAL:$1|utuk|utuk}} goşuldy",
-	"quiz_cutoffPoints": "Nädogry jogap üçin {{PLURAL:$1|utuk|utuk}}",
-	"quiz_ignoreCoef": "Soraglaryň koeffisientlerine üns berme",
-	"quiz_shuffle": "Soraglary gar",
-	"quiz_legend_correct": "Dogry",
-	"quiz_legend_incorrect": "Ýalňyş",
-	"quiz_legend_unanswered": "Jogapsyz",
-	"quiz_legend_error": "Sintaksis säwligi",
-	"quiz_correction": "Tabşyr",
-	"quiz_score": "Utugyňyz $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 utuk|$2 utuk}}",
-	"quiz_reset": "Başky ýagdaýa getir"
+	"quiz-desc": "Soragnama döretmeklige rugsat berýär",
+	"quiz-added-points": "Dogry jogap üçin {{PLURAL:$1|utuk|utuk}} goşuldy",
+	"quiz-cutoff-points": "Nädogry jogap üçin {{PLURAL:$1|utuk|utuk}}",
+	"quiz-ignore-coef": "Soraglaryň koeffisientlerine üns berme",
+	"quiz-shuffle": "Soraglary gar",
+	"quiz-legend-correct": "Dogry",
+	"quiz-legend-incorrect": "Ýalňyş",
+	"quiz-legend-unanswered": "Jogapsyz",
+	"quiz-legend-error": "Sintaksis säwligi",
+	"quiz-correction": "Tabşyr",
+	"quiz-score": "Utugyňyz $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 utuk|$2 utuk}}",
+	"quiz-reset": "Başky ýagdaýa getir"
 }

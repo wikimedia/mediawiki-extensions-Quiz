@@ -6,17 +6,17 @@
 			"Ooswesthoesbes"
 		]
 	},
-	"quiz_desc": "Maak 't aanmake van tes meugelik",
-	"quiz_addedPoints": "{{PLURAL:$1|Pöntj|Pöntjer}} toegevoeg veur 'n good antjwaord",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pöntj|Pöntjer}} aafgetróg veur 'n fout antjwaord",
-	"quiz_ignoreCoef": "De coëfficiente van de vräög negere",
-	"quiz_shuffle": "De vräög in willekäörige volgorde",
-	"quiz_legend_correct": "Ramkrèk",
-	"quiz_legend_incorrect": "Verkièrd",
-	"quiz_legend_unanswered": "Neet beantjwaord",
-	"quiz_legend_error": "Algemeine fout",
-	"quiz_correction": "Verbaetering",
-	"quiz_score": "Dien score is $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puntj|$2 puntje}}",
-	"quiz_reset": "Oppernuuj"
+	"quiz-desc": "Maak 't aanmake van tes meugelik",
+	"quiz-added-points": "{{PLURAL:$1|Pöntj|Pöntjer}} toegevoeg veur 'n good antjwaord",
+	"quiz-cutoff-points": "{{PLURAL:$1|Pöntj|Pöntjer}} aafgetróg veur 'n fout antjwaord",
+	"quiz-ignore-coef": "De coëfficiente van de vräög negere",
+	"quiz-shuffle": "De vräög in willekäörige volgorde",
+	"quiz-legend-correct": "Ramkrèk",
+	"quiz-legend-incorrect": "Verkièrd",
+	"quiz-legend-unanswered": "Neet beantjwaord",
+	"quiz-legend-error": "Algemeine fout",
+	"quiz-correction": "Verbaetering",
+	"quiz-score": "Dien score is $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puntj|$2 puntje}}",
+	"quiz-reset": "Oppernuuj"
 }

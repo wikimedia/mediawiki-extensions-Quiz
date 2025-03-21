@@ -4,12 +4,12 @@
 			"Ahmed-Najib-Biabani-Ibrahimkhel"
 		]
 	},
-	"quiz_shuffle": "پوښتنې ګډوډول",
-	"quiz_legend_correct": "سم",
-	"quiz_legend_incorrect": "ناسم",
-	"quiz_legend_unanswered": "بې ځوابه",
-	"quiz_correction": "سپارل",
-	"quiz_score": "ستاسې نومرې $1 / $2 دي",
-	"quiz_points": "$1 | {{PLURAL:$2|1 نمره|$2 نمرې}}",
-	"quiz_reset": "بياايښودل"
+	"quiz-shuffle": "پوښتنې ګډوډول",
+	"quiz-legend-correct": "سم",
+	"quiz-legend-incorrect": "ناسم",
+	"quiz-legend-unanswered": "بې ځوابه",
+	"quiz-correction": "سپارل",
+	"quiz-score": "ستاسې نومرې $1 / $2 دي",
+	"quiz-points": "$1 | {{PLURAL:$2|1 نمره|$2 نمرې}}",
+	"quiz-reset": "بياايښودل"
 }

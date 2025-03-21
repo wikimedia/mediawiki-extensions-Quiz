@@ -4,8 +4,8 @@
 			"Migraghvi"
 		]
 	},
-	"quiz_legend_correct": "Дуьз я",
-	"quiz_legend_incorrect": "Дуьз туш",
-	"quiz_correction": "Ракъурун",
-	"quiz_reset": "Гадарун"
+	"quiz-legend-correct": "Дуьз я",
+	"quiz-legend-incorrect": "Дуьз туш",
+	"quiz-correction": "Ракъурун",
+	"quiz-reset": "Гадарун"
 }

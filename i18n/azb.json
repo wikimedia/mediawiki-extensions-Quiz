@@ -5,9 +5,9 @@
 			"Mousa"
 		]
 	},
-	"quiz_legend_correct": "دوغرو",
-	"quiz_legend_incorrect": "یانلیش",
-	"quiz_legend_unanswered": "جوابسیز",
-	"quiz_correction": "گؤندر",
-	"quiz_reset": "قور"
+	"quiz-legend-correct": "دوغرو",
+	"quiz-legend-incorrect": "یانلیش",
+	"quiz-legend-unanswered": "جوابسیز",
+	"quiz-correction": "گؤندر",
+	"quiz-reset": "قور"
 }

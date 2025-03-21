@@ -4,17 +4,17 @@
 			"Michawiki"
 		]
 	},
-	"quiz_desc": "Zmóžnja wutwórjenje kwisow",
-	"quiz_addedPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypkow}} za pšawe wótegrono",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypjkow}} za wopacne wótegrono",
-	"quiz_ignoreCoef": "Ignorěruj koeficientow pšašanjow",
-	"quiz_shuffle": "Pšašanja měšaś",
-	"quiz_legend_correct": "Pšawy",
-	"quiz_legend_incorrect": "Wopacny",
-	"quiz_legend_unanswered": "Bźez wótegrona",
-	"quiz_legend_error": "Syntaksowa zmólka",
-	"quiz_correction": "Wótpósłaś",
-	"quiz_score": "Twóje dypki: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 dypk|$2 dypka|$2 dypki|$2 dypkow}}",
-	"quiz_reset": "Wót nowego zachopiś"
+	"quiz-desc": "Zmóžnja wutwórjenje kwisow",
+	"quiz-added-points": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypkow}} za pšawe wótegrono",
+	"quiz-cutoff-points": "{{PLURAL:$1|Dypk|Dypka|Dypki|Dypjkow}} za wopacne wótegrono",
+	"quiz-ignore-coef": "Ignorěruj koeficientow pšašanjow",
+	"quiz-shuffle": "Pšašanja měšaś",
+	"quiz-legend-correct": "Pšawy",
+	"quiz-legend-incorrect": "Wopacny",
+	"quiz-legend-unanswered": "Bźez wótegrona",
+	"quiz-legend-error": "Syntaksowa zmólka",
+	"quiz-correction": "Wótpósłaś",
+	"quiz-score": "Twóje dypki: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 dypk|$2 dypka|$2 dypki|$2 dypkow}}",
+	"quiz-reset": "Wót nowego zachopiś"
 }

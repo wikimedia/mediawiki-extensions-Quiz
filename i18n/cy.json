@@ -4,17 +4,17 @@
 			"Lloffiwr"
 		]
 	},
-	"quiz_desc": "Yn galluogi llunio cwisiau",
-	"quiz_addedPoints": "Nifer y {{PLURAL:$1|pwyntiau}} am ateb cywir",
-	"quiz_cutoffPoints": "Nifer y {{PLURAL:$1|pwyntiau}} am ateb anghywir",
-	"quiz_ignoreCoef": "Anwybyddu cyfernodau'r cwestiynau",
-	"quiz_shuffle": "Cymysger y cwestiynau",
-	"quiz_legend_correct": "Cywir",
-	"quiz_legend_incorrect": "Anghywir",
-	"quiz_legend_unanswered": "Heb ei ateb",
-	"quiz_legend_error": "Gwall yn y gystrawen",
-	"quiz_correction": "Cyflwyner",
-	"quiz_score": "Eich sgôr yw $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|0 pwyntiau|1 pwynt|2 bwynt|3 phwynt|6 phwynt|$2 pwynt}}",
-	"quiz_reset": "Ailosoder"
+	"quiz-desc": "Yn galluogi llunio cwisiau",
+	"quiz-added-points": "Nifer y {{PLURAL:$1|pwyntiau}} am ateb cywir",
+	"quiz-cutoff-points": "Nifer y {{PLURAL:$1|pwyntiau}} am ateb anghywir",
+	"quiz-ignore-coef": "Anwybyddu cyfernodau'r cwestiynau",
+	"quiz-shuffle": "Cymysger y cwestiynau",
+	"quiz-legend-correct": "Cywir",
+	"quiz-legend-incorrect": "Anghywir",
+	"quiz-legend-unanswered": "Heb ei ateb",
+	"quiz-legend-error": "Gwall yn y gystrawen",
+	"quiz-correction": "Cyflwyner",
+	"quiz-score": "Eich sgôr yw $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|0 pwyntiau|1 pwynt|2 bwynt|3 phwynt|6 phwynt|$2 pwynt}}",
+	"quiz-reset": "Ailosoder"
 }

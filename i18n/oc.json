@@ -4,17 +4,17 @@
 			"Cedric31"
 		]
 	},
-	"quiz_desc": "Permet la creacion dels Quiz",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt apondut|Punts aponduts}} per una responsa corrècta :",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt levat|Punts levats}} per una responsa erronèa :",
-	"quiz_ignoreCoef": "Ignorar los coeficients de las questions :",
-	"quiz_shuffle": "Mesclar las questions",
-	"quiz_legend_correct": "Just",
-	"quiz_legend_incorrect": "Fals",
-	"quiz_legend_unanswered": "Pas respondut",
-	"quiz_legend_error": "Error de sintaxi",
-	"quiz_correction": "Correccion",
-	"quiz_score": "Vòstra marca es $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
-	"quiz_reset": "Reïnicializar"
+	"quiz-desc": "Permet la creacion dels Quiz",
+	"quiz-added-points": "{{PLURAL:$1|Punt apondut|Punts aponduts}} per una responsa corrècta :",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punt levat|Punts levats}} per una responsa erronèa :",
+	"quiz-ignore-coef": "Ignorar los coeficients de las questions :",
+	"quiz-shuffle": "Mesclar las questions",
+	"quiz-legend-correct": "Just",
+	"quiz-legend-incorrect": "Fals",
+	"quiz-legend-unanswered": "Pas respondut",
+	"quiz-legend-error": "Error de sintaxi",
+	"quiz-correction": "Correccion",
+	"quiz-score": "Vòstra marca es $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
+	"quiz-reset": "Reïnicializar"
 }

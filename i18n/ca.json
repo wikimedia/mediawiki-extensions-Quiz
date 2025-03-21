@@ -8,17 +8,17 @@
 			"Xavier Dengra"
 		]
 	},
-	"quiz_desc": "Permet la creació de qüestionaris",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt afegit|Punts afegits}} per una resposta correcta:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punts}} per una resposta incorrecta:",
-	"quiz_ignoreCoef": "Ignora els coeficients de les preguntes:",
-	"quiz_shuffle": "Preguntes aleatòries",
-	"quiz_legend_correct": "Correcta",
-	"quiz_legend_incorrect": "Incorrecte",
-	"quiz_legend_unanswered": "No contestada",
-	"quiz_legend_error": "Error de sintaxi",
-	"quiz_correction": "Corregeix",
-	"quiz_score": "La vostra puntuació és $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
-	"quiz_reset": "Reinicia"
+	"quiz-desc": "Permet la creació de qüestionaris",
+	"quiz-added-points": "{{PLURAL:$1|Punt afegit|Punts afegits}} per una resposta correcta:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punt|Punts}} per una resposta incorrecta:",
+	"quiz-ignore-coef": "Ignora els coeficients de les preguntes:",
+	"quiz-shuffle": "Preguntes aleatòries",
+	"quiz-legend-correct": "Correcta",
+	"quiz-legend-incorrect": "Incorrecte",
+	"quiz-legend-unanswered": "No contestada",
+	"quiz-legend-error": "Error de sintaxi",
+	"quiz-correction": "Corregeix",
+	"quiz-score": "La vostra puntuació és $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punt|$2 punts}}",
+	"quiz-reset": "Reinicia"
 }

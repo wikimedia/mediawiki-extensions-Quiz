@@ -6,17 +6,17 @@
 			"Njardarlogar"
 		]
 	},
-	"quiz_desc": "Gjer oppretting av spørjekonkurransar mogleg",
-	"quiz_addedPoints": "Plusspoeng for rett svar",
-	"quiz_cutoffPoints": "Minuspoeng for feil svar",
-	"quiz_ignoreCoef": "Oversjå verdiane på spørsmåla",
-	"quiz_shuffle": "Stokk om på spørsmåla",
-	"quiz_legend_correct": "Rett",
-	"quiz_legend_incorrect": "Feil",
-	"quiz_legend_unanswered": "Ikkje svara på",
-	"quiz_legend_error": "Syntaksfeil",
-	"quiz_correction": "Svar",
-	"quiz_score": "Poengsummen din er $1 av $2 moglege",
-	"quiz_points": "$1 | {{PLURAL:$2|eitt poeng|$2 poeng}}",
-	"quiz_reset": "Nullstill"
+	"quiz-desc": "Gjer oppretting av spørjekonkurransar mogleg",
+	"quiz-added-points": "Plusspoeng for rett svar",
+	"quiz-cutoff-points": "Minuspoeng for feil svar",
+	"quiz-ignore-coef": "Oversjå verdiane på spørsmåla",
+	"quiz-shuffle": "Stokk om på spørsmåla",
+	"quiz-legend-correct": "Rett",
+	"quiz-legend-incorrect": "Feil",
+	"quiz-legend-unanswered": "Ikkje svara på",
+	"quiz-legend-error": "Syntaksfeil",
+	"quiz-correction": "Svar",
+	"quiz-score": "Poengsummen din er $1 av $2 moglege",
+	"quiz-points": "$1 | {{PLURAL:$2|eitt poeng|$2 poeng}}",
+	"quiz-reset": "Nullstill"
 }

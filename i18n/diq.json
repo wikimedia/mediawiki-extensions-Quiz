@@ -7,17 +7,17 @@
 			"Orbot707"
 		]
 	},
-	"quiz_desc": "desturê vıraştışê quizi dano",
-	"quiz_addedPoints": "Seba {{PLURAL:$1|Puan|Puana}} dekerdışi cewabo raştay:",
-	"quiz_cutoffPoints": "Seba {{PLURAL:$1|Puan|Puani}} cewabo şaşo:",
-	"quiz_ignoreCoef": "Kat amarê persa peygoş kerê",
-	"quiz_shuffle": "persan têmiyan ker.",
-	"quiz_legend_correct": "raşt",
-	"quiz_legend_incorrect": "şaş",
-	"quiz_legend_unanswered": "cewab cı nêdiya",
-	"quiz_legend_error": "Xetaya rêza qıseyan",
-	"quiz_correction": "Bırışe",
-	"quiz_score": "Skorê şıma $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
-	"quiz_reset": "Raçarne"
+	"quiz-desc": "desturê vıraştışê quizi dano",
+	"quiz-added-points": "Seba {{PLURAL:$1|Puan|Puana}} dekerdışi cewabo raştay:",
+	"quiz-cutoff-points": "Seba {{PLURAL:$1|Puan|Puani}} cewabo şaşo:",
+	"quiz-ignore-coef": "Kat amarê persa peygoş kerê",
+	"quiz-shuffle": "persan têmiyan ker.",
+	"quiz-legend-correct": "raşt",
+	"quiz-legend-incorrect": "şaş",
+	"quiz-legend-unanswered": "cewab cı nêdiya",
+	"quiz-legend-error": "Xetaya rêza qıseyan",
+	"quiz-correction": "Bırışe",
+	"quiz-score": "Skorê şıma $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 puan|$2 puan}}",
+	"quiz-reset": "Raçarne"
 }

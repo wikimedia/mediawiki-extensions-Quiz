@@ -6,17 +6,17 @@
 			"З. ӘЙЛЕ"
 		]
 	},
-	"quiz_desc": "Һораулыҡ булдырырға мөмкинлек бирә",
-	"quiz_addedPoints": "Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй}} өҫтәлде",
-	"quiz_cutoffPoints": "Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй}}",
-	"quiz_ignoreCoef": "Һорау коэффициенттарын иғтибарға алмаҫҡа:",
-	"quiz_shuffle": "Һорауҙарҙы аралаштырырға",
-	"quiz_legend_correct": "Дөрөҫ",
-	"quiz_legend_incorrect": "Хаталы",
-	"quiz_legend_unanswered": "Яуап булманы",
-	"quiz_legend_error": "Синтаксик хата",
-	"quiz_correction": "Ебәрергә",
-	"quiz_score": "Һөҙөмтәгеҙ: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1=1 мәрәй|$2 мәрәй}}",
-	"quiz_reset": "Алып ташларға"
+	"quiz-desc": "Һораулыҡ булдырырға мөмкинлек бирә",
+	"quiz-added-points": "Дөрөҫ яуап өсөн {{PLURAL:$1|1=мәрәй}} өҫтәлде",
+	"quiz-cutoff-points": "Яңылыш яуап өсөн {{PLURAL:$1|1=мәрәй}}",
+	"quiz-ignore-coef": "Һорау коэффициенттарын иғтибарға алмаҫҡа:",
+	"quiz-shuffle": "Һорауҙарҙы аралаштырырға",
+	"quiz-legend-correct": "Дөрөҫ",
+	"quiz-legend-incorrect": "Хаталы",
+	"quiz-legend-unanswered": "Яуап булманы",
+	"quiz-legend-error": "Синтаксик хата",
+	"quiz-correction": "Ебәрергә",
+	"quiz-score": "Һөҙөмтәгеҙ: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1=1 мәрәй|$2 мәрәй}}",
+	"quiz-reset": "Алып ташларға"
 }

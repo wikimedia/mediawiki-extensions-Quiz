@@ -7,17 +7,17 @@
 			"Sumbukompor"
 		]
 	},
-	"quiz_desc": "Nyedyakaké fasilitas nggawé kuis",
-	"quiz_addedPoints": "Panambahan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing bener",
-	"quiz_cutoffPoints": "Pangurangan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing salah",
-	"quiz_ignoreCoef": "Lirwakna koéfisièn pitakonan",
-	"quiz_shuffle": "Ngacak pitakonan",
-	"quiz_legend_correct": "Bener",
-	"quiz_legend_incorrect": "Salah",
-	"quiz_legend_unanswered": "Ora diwangsuli",
-	"quiz_legend_error": "Kasalahan sintaksis",
-	"quiz_correction": "Kirim",
-	"quiz_score": "Skor biji panjenengan iku $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Nyedyakaké fasilitas nggawé kuis",
+	"quiz-added-points": "Panambahan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing bener",
+	"quiz-cutoff-points": "Pangurangan {{PLURAL:$1|angka|angka}} kanggo wangsulan sing salah",
+	"quiz-ignore-coef": "Lirwakna koéfisièn pitakonan",
+	"quiz-shuffle": "Ngacak pitakonan",
+	"quiz-legend-correct": "Bener",
+	"quiz-legend-incorrect": "Salah",
+	"quiz-legend-unanswered": "Ora diwangsuli",
+	"quiz-legend-error": "Kasalahan sintaksis",
+	"quiz-correction": "Kirim",
+	"quiz-score": "Skor biji panjenengan iku $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
+	"quiz-reset": "Reset"
 }

@@ -8,17 +8,17 @@
 			"Rex"
 		]
 	},
-	"quiz_desc": "Menyediakan fasilitas pembuatan kuis",
-	"quiz_addedPoints": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat:",
-	"quiz_cutoffPoints": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah:",
-	"quiz_ignoreCoef": "Abaikan koefisien pertanyaan:",
-	"quiz_shuffle": "Mengacak pertanyaan",
-	"quiz_legend_correct": "Benar",
-	"quiz_legend_incorrect": "Salah",
-	"quiz_legend_unanswered": "Tak dijawab",
-	"quiz_legend_error": "Kesalahan sintaks",
-	"quiz_correction": "Kirim",
-	"quiz_score": "Skor Anda adalah $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Menyediakan fasilitas pembuatan kuis",
+	"quiz-added-points": "Penambahan {{PLURAL:$1|angka|angka}} untuk jawaban yang tepat:",
+	"quiz-cutoff-points": "Pengurangan {{PLURAL:$1|angka|angka}} untuk jawaban yang salah:",
+	"quiz-ignore-coef": "Abaikan koefisien pertanyaan:",
+	"quiz-shuffle": "Mengacak pertanyaan",
+	"quiz-legend-correct": "Benar",
+	"quiz-legend-incorrect": "Salah",
+	"quiz-legend-unanswered": "Tak dijawab",
+	"quiz-legend-error": "Kesalahan sintaks",
+	"quiz-correction": "Kirim",
+	"quiz-score": "Skor Anda adalah $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poin|$2 poin}}",
+	"quiz-reset": "Reset"
 }

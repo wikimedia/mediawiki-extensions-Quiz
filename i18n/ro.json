@@ -8,17 +8,17 @@
 			"Minisarm"
 		]
 	},
-	"quiz_desc": "Permite crearea de chestionare",
-	"quiz_addedPoints": "{{PLURAL:$1|Punct adăugat|Puncte adăugate}} pentru un răspuns corect",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greșit:",
-	"quiz_ignoreCoef": "Ignoră coeficienții întrebărilor",
-	"quiz_shuffle": "Întrebări amestecate",
-	"quiz_legend_correct": "Corect",
-	"quiz_legend_incorrect": "Greșit",
-	"quiz_legend_unanswered": "Fără răspuns",
-	"quiz_legend_error": "Eroare de sintaxă",
-	"quiz_correction": "Trimitere",
-	"quiz_score": "Scorul tău este $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punct|$2 puncte}}",
-	"quiz_reset": "Reinițializare"
+	"quiz-desc": "Permite crearea de chestionare",
+	"quiz-added-points": "{{PLURAL:$1|Punct adăugat|Puncte adăugate}} pentru un răspuns corect",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punct scăzut|Puncte scăzute}} pentru un răspuns greșit:",
+	"quiz-ignore-coef": "Ignoră coeficienții întrebărilor",
+	"quiz-shuffle": "Întrebări amestecate",
+	"quiz-legend-correct": "Corect",
+	"quiz-legend-incorrect": "Greșit",
+	"quiz-legend-unanswered": "Fără răspuns",
+	"quiz-legend-error": "Eroare de sintaxă",
+	"quiz-correction": "Trimitere",
+	"quiz-score": "Scorul tău este $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punct|$2 puncte}}",
+	"quiz-reset": "Reinițializare"
 }

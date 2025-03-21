@@ -4,17 +4,17 @@
 			"Gazeb"
 		]
 	},
-	"quiz_desc": "Уможнює створёвати квізы",
-	"quiz_addedPoints": "{{PLURAL:$1|Очко придане|Очка приданы}} за правилну одповідь",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Очко одняте|Очка одняты}} за неправилну одповідь",
-	"quiz_ignoreCoef": "Іґноровати коефіціенты вопросів",
-	"quiz_shuffle": "Замішати вопросы",
-	"quiz_legend_correct": "Правилно",
-	"quiz_legend_incorrect": "Неправилно",
-	"quiz_legend_unanswered": "Неодповіджене",
-	"quiz_legend_error": "Сінтаксічна хыба",
-	"quiz_correction": "Одослати",
-	"quiz_score": "Ваш резултат є $1 / $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|очко|очка|очок}}",
-	"quiz_reset": "Ресетовати"
+	"quiz-desc": "Уможнює створёвати квізы",
+	"quiz-added-points": "{{PLURAL:$1|Очко придане|Очка приданы}} за правилну одповідь",
+	"quiz-cutoff-points": "{{PLURAL:$1|Очко одняте|Очка одняты}} за неправилну одповідь",
+	"quiz-ignore-coef": "Іґноровати коефіціенты вопросів",
+	"quiz-shuffle": "Замішати вопросы",
+	"quiz-legend-correct": "Правилно",
+	"quiz-legend-incorrect": "Неправилно",
+	"quiz-legend-unanswered": "Неодповіджене",
+	"quiz-legend-error": "Сінтаксічна хыба",
+	"quiz-correction": "Одослати",
+	"quiz-score": "Ваш резултат є $1 / $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|очко|очка|очок}}",
+	"quiz-reset": "Ресетовати"
 }

@@ -7,12 +7,12 @@
 			"Stephenwanjau"
 		]
 	},
-	"quiz_legend_correct": "Sahihi",
-	"quiz_legend_incorrect": "Batili",
-	"quiz_legend_unanswered": "Haikujibiwa",
-	"quiz_legend_error": "kosa la kimpangilio wa lugha",
-	"quiz_correction": "Wasilisha",
-	"quiz_score": "Una maksi $1/$2",
-	"quiz_points": "$1 | {{PLURAL:$2|point 1|pointi $2}}",
-	"quiz_reset": "Panga upya"
+	"quiz-legend-correct": "Sahihi",
+	"quiz-legend-incorrect": "Batili",
+	"quiz-legend-unanswered": "Haikujibiwa",
+	"quiz-legend-error": "kosa la kimpangilio wa lugha",
+	"quiz-correction": "Wasilisha",
+	"quiz-score": "Una maksi $1/$2",
+	"quiz-points": "$1 | {{PLURAL:$2|point 1|pointi $2}}",
+	"quiz-reset": "Panga upya"
 }

@@ -4,9 +4,9 @@
 			"Basharh"
 		]
 	},
-	"quiz_legend_correct": "ܬܪܝܨܐ",
-	"quiz_legend_incorrect": "ܠܐ ܬܪܝܨܐ",
-	"quiz_correction": "ܫܕܪ",
-	"quiz_score": "ܦܠܛܐ ܕܝܠܟ ܗܘ $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 ܢܘܩܙܐ|$2 ܢܘܩܙ̈ܐ}}"
+	"quiz-legend-correct": "ܬܪܝܨܐ",
+	"quiz-legend-incorrect": "ܠܐ ܬܪܝܨܐ",
+	"quiz-correction": "ܫܕܪ",
+	"quiz-score": "ܦܠܛܐ ܕܝܠܟ ܗܘ $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 ܢܘܩܙܐ|$2 ܢܘܩܙ̈ܐ}}"
 }

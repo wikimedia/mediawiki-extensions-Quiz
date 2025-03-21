@@ -5,17 +5,17 @@
 			"පසිඳු කාවින්ද"
 		]
 	},
-	"quiz_desc": "Maak dit moontlik om toetse te skep.",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punte}} bygevoeg vir 'n korrekte antwoord",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punte}} afgetrek vir 'n verkeerde antwoord",
-	"quiz_ignoreCoef": "Ignoreer die vrae 'koëffisiënte",
-	"quiz_shuffle": "Skommel vrae",
-	"quiz_legend_correct": "Reg",
-	"quiz_legend_incorrect": "Verkeerd",
-	"quiz_legend_unanswered": "Nie geantwoord",
-	"quiz_legend_error": "Sintaksfout",
-	"quiz_correction": "Verbetering",
-	"quiz_score": "U punte is $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punte}}",
-	"quiz_reset": "Herstel"
+	"quiz-desc": "Maak dit moontlik om toetse te skep.",
+	"quiz-added-points": "{{PLURAL:$1|Punt|Punte}} bygevoeg vir 'n korrekte antwoord",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punt|Punte}} afgetrek vir 'n verkeerde antwoord",
+	"quiz-ignore-coef": "Ignoreer die vrae 'koëffisiënte",
+	"quiz-shuffle": "Skommel vrae",
+	"quiz-legend-correct": "Reg",
+	"quiz-legend-incorrect": "Verkeerd",
+	"quiz-legend-unanswered": "Nie geantwoord",
+	"quiz-legend-error": "Sintaksfout",
+	"quiz-correction": "Verbetering",
+	"quiz-score": "U punte is $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punt|$2 punte}}",
+	"quiz-reset": "Herstel"
 }

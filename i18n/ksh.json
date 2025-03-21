@@ -4,17 +4,17 @@
 			"Purodha"
 		]
 	},
-	"quiz_desc": "Määd ed möjjelesch, em Wiki e Quiß opzesäze.",
-	"quiz_addedPoints": "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en reschtijje Antwoot dobeijezallt {{PLURAL:$1|weed|wäde|weede}}",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en fo'keehte Antwoot affjetroke {{PLURAL:$1|weed|wäde|weede}}",
-	"quiz_ignoreCoef": "Donn de einzel Jeweschte fun de Froore nit zälle",
-	"quiz_shuffle": "Frore neu mesche",
-	"quiz_legend_correct": "Reschtesch",
-	"quiz_legend_incorrect": "Fo'keeht",
-	"quiz_legend_unanswered": "Kei Antwoot",
-	"quiz_legend_error": "Fääler en de Syntax",
-	"quiz_correction": "Verbessere!",
-	"quiz_score": "Do häs zesamme {{PLURAL:$1|eine Punk|$1 Punkte|keine Punk}} {{PLURAL:$2|fun einem müjjelesche Punk jemaat|fun müjjelesche $2 Punke jemaat|Punk jemaat, et wohr ävver och nix ze holle do}}.",
-	"quiz_points": "$1 | {{PLURAL:$2|1 Punk|$2 Punkte|Nix}}",
-	"quiz_reset": "Neu Aanfange!"
+	"quiz-desc": "Määd ed möjjelesch, em Wiki e Quiß opzesäze.",
+	"quiz-added-points": "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en reschtijje Antwoot dobeijezallt {{PLURAL:$1|weed|wäde|weede}}",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punk, dä|Punkte, di|Püngkscher, di}} för en fo'keehte Antwoot affjetroke {{PLURAL:$1|weed|wäde|weede}}",
+	"quiz-ignore-coef": "Donn de einzel Jeweschte fun de Froore nit zälle",
+	"quiz-shuffle": "Frore neu mesche",
+	"quiz-legend-correct": "Reschtesch",
+	"quiz-legend-incorrect": "Fo'keeht",
+	"quiz-legend-unanswered": "Kei Antwoot",
+	"quiz-legend-error": "Fääler en de Syntax",
+	"quiz-correction": "Verbessere!",
+	"quiz-score": "Do häs zesamme {{PLURAL:$1|eine Punk|$1 Punkte|keine Punk}} {{PLURAL:$2|fun einem müjjelesche Punk jemaat|fun müjjelesche $2 Punke jemaat|Punk jemaat, et wohr ävver och nix ze holle do}}.",
+	"quiz-points": "$1 | {{PLURAL:$2|1 Punk|$2 Punkte|Nix}}",
+	"quiz-reset": "Neu Aanfange!"
 }

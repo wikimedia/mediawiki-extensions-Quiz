@@ -4,14 +4,14 @@
 			"Liangent"
 		]
 	},
-	"quiz_desc": "Eçodi ozmunhoro mumkin mesozad",
-	"quiz_ignoreCoef": "Nodida giriftani zaribi savolho",
-	"quiz_shuffle": "Bar zadani savolho",
-	"quiz_legend_correct": "Durust",
-	"quiz_legend_incorrect": "Nodurust",
-	"quiz_legend_unanswered": "Posux doda naşud",
-	"quiz_legend_error": "Xatoi nahvī",
-	"quiz_correction": "Irsol",
-	"quiz_score": "Imtijozi şumo $1 az $2 ast",
-	"quiz_reset": "Az nav"
+	"quiz-desc": "Eçodi ozmunhoro mumkin mesozad",
+	"quiz-ignore-coef": "Nodida giriftani zaribi savolho",
+	"quiz-shuffle": "Bar zadani savolho",
+	"quiz-legend-correct": "Durust",
+	"quiz-legend-incorrect": "Nodurust",
+	"quiz-legend-unanswered": "Posux doda naşud",
+	"quiz-legend-error": "Xatoi nahvī",
+	"quiz-correction": "Irsol",
+	"quiz-score": "Imtijozi şumo $1 az $2 ast",
+	"quiz-reset": "Az nav"
 }

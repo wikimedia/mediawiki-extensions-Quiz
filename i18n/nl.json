@@ -7,17 +7,17 @@
 			"Siebrand"
 		]
 	},
-	"quiz_desc": "Maakt het aanmaken van tests mogelijk",
-	"quiz_addedPoints": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een onjuist antwoord:",
-	"quiz_ignoreCoef": "De coëfficienten van de vragen negeren:",
-	"quiz_shuffle": "Willekeurige volgorde voor vragen",
-	"quiz_legend_correct": "Goed",
-	"quiz_legend_incorrect": "Fout",
-	"quiz_legend_unanswered": "Niet beantwoord",
-	"quiz_legend_error": "Er zit een fout in de syntaxis",
-	"quiz_correction": "Antwoord opslaan",
-	"quiz_score": "Uw score is $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 punt|$2 punten}}",
-	"quiz_reset": "Herstellen"
+	"quiz-desc": "Maakt het aanmaken van tests mogelijk",
+	"quiz-added-points": "{{PLURAL:$1|Punt|Punten}} toegevoegd voor een goed antwoord:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Punt|Punten}} afgetrokken voor een onjuist antwoord:",
+	"quiz-ignore-coef": "De coëfficienten van de vragen negeren:",
+	"quiz-shuffle": "Willekeurige volgorde voor vragen",
+	"quiz-legend-correct": "Goed",
+	"quiz-legend-incorrect": "Fout",
+	"quiz-legend-unanswered": "Niet beantwoord",
+	"quiz-legend-error": "Er zit een fout in de syntaxis",
+	"quiz-correction": "Antwoord opslaan",
+	"quiz-score": "Uw score is $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 punt|$2 punten}}",
+	"quiz-reset": "Herstellen"
 }

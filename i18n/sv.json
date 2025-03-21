@@ -8,17 +8,17 @@
 			"WikiPhoenix"
 		]
 	},
-	"quiz_desc": "Ger möjlighet att skapa frågeformulär",
-	"quiz_addedPoints": "{{PLURAL:$1|Poäng}} för rätt svar:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Poängavdrag}} för ett felaktigt svar:",
-	"quiz_ignoreCoef": "Använd inte frågornas koefficienter",
-	"quiz_shuffle": "Blanda om frågorna",
-	"quiz_legend_correct": "Rätt",
-	"quiz_legend_incorrect": "Fel",
-	"quiz_legend_unanswered": "Besvarades ej",
-	"quiz_legend_error": "Syntaxfel",
-	"quiz_correction": "Skicka",
-	"quiz_score": "Din poäng är $1 av $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 poäng|$2 poäng}}",
-	"quiz_reset": "Återställ"
+	"quiz-desc": "Ger möjlighet att skapa frågeformulär",
+	"quiz-added-points": "{{PLURAL:$1|Poäng}} för rätt svar:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Poängavdrag}} för ett felaktigt svar:",
+	"quiz-ignore-coef": "Använd inte frågornas koefficienter",
+	"quiz-shuffle": "Blanda om frågorna",
+	"quiz-legend-correct": "Rätt",
+	"quiz-legend-incorrect": "Fel",
+	"quiz-legend-unanswered": "Besvarades ej",
+	"quiz-legend-error": "Syntaxfel",
+	"quiz-correction": "Skicka",
+	"quiz-score": "Din poäng är $1 av $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 poäng|$2 poäng}}",
+	"quiz-reset": "Återställ"
 }

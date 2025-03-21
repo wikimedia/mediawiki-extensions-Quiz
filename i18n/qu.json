@@ -4,17 +4,17 @@
 			"AlimanRuna"
 		]
 	},
-	"quiz_desc": "Watuchi pukllay kamariyta saqillan",
-	"quiz_addedPoints": "Allin kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} yapasqa",
-	"quiz_cutoffPoints": "Panta kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} qichusqa",
-	"quiz_ignoreCoef": "Sapa tapuypaq iñukunata qhawarpariy",
-	"quiz_shuffle": "Tapuykunata arwiy",
-	"quiz_legend_correct": "Allin",
-	"quiz_legend_incorrect": "Panta",
-	"quiz_legend_unanswered": "Mana kutichisqa",
-	"quiz_legend_error": "Sintaksis pantasqa",
-	"quiz_correction": "Kachay",
-	"quiz_score": "Taripasqaykikunaqa kay hinam: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$1|huk iñu|$2 iñukuna}}",
-	"quiz_reset": "Musuqmanta qallariy"
+	"quiz-desc": "Watuchi pukllay kamariyta saqillan",
+	"quiz-added-points": "Allin kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} yapasqa",
+	"quiz-cutoff-points": "Panta kutichisqapaq {{PLURAL:$1|iñu|iñukuna}} qichusqa",
+	"quiz-ignore-coef": "Sapa tapuypaq iñukunata qhawarpariy",
+	"quiz-shuffle": "Tapuykunata arwiy",
+	"quiz-legend-correct": "Allin",
+	"quiz-legend-incorrect": "Panta",
+	"quiz-legend-unanswered": "Mana kutichisqa",
+	"quiz-legend-error": "Sintaksis pantasqa",
+	"quiz-correction": "Kachay",
+	"quiz-score": "Taripasqaykikunaqa kay hinam: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$1|huk iñu|$2 iñukuna}}",
+	"quiz-reset": "Musuqmanta qallariy"
 }

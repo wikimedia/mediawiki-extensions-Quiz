@@ -4,17 +4,17 @@
 			"Умар"
 		]
 	},
-	"quiz_desc": "Хеттарийн гулам кхолла аьтто бо",
-	"quiz_addedPoints": "{{PLURAL:$1|Очко тӀетоьхна}} нийса жоп даларна:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Очко}} харц жоп даларна:",
-	"quiz_ignoreCoef": "Хаттаран коэффициенташ тидамза дита:",
-	"quiz_shuffle": "Хаттарш вовшахъэдан",
-	"quiz_legend_correct": "Нийса ду",
-	"quiz_legend_incorrect": "ГӀалат",
-	"quiz_legend_unanswered": "Жоп дац",
-	"quiz_legend_error": "Синтаксин гӀалат",
-	"quiz_correction": "ДӀадахьийта",
-	"quiz_score": "Хьан счет: $1 / $2",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|очко}}",
-	"quiz_reset": "Кхоссар"
+	"quiz-desc": "Хеттарийн гулам кхолла аьтто бо",
+	"quiz-added-points": "{{PLURAL:$1|Очко тӀетоьхна}} нийса жоп даларна:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Очко}} харц жоп даларна:",
+	"quiz-ignore-coef": "Хаттаран коэффициенташ тидамза дита:",
+	"quiz-shuffle": "Хаттарш вовшахъэдан",
+	"quiz-legend-correct": "Нийса ду",
+	"quiz-legend-incorrect": "ГӀалат",
+	"quiz-legend-unanswered": "Жоп дац",
+	"quiz-legend-error": "Синтаксин гӀалат",
+	"quiz-correction": "ДӀадахьийта",
+	"quiz-score": "Хьан счет: $1 / $2",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|очко}}",
+	"quiz-reset": "Кхоссар"
 }

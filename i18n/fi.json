@@ -9,17 +9,17 @@
 			"Tarmo"
 		]
 	},
-	"quiz_desc": "Mahdollistaa kyselyiden luomisen.",
-	"quiz_addedPoints": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Piste|Pisteitä}} väärästä vastauksesta",
-	"quiz_ignoreCoef": "Jätä huomioimatta kysymysten kertoimet",
-	"quiz_shuffle": "Sekoita kysymykset",
-	"quiz_legend_correct": "Oikein",
-	"quiz_legend_incorrect": "Väärin",
-	"quiz_legend_unanswered": "Vastaamatta",
-	"quiz_legend_error": "Jäsennysvirhe",
-	"quiz_correction": "Lähetä",
-	"quiz_score": "Tuloksesi on $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 piste|$2 pistettä}}",
-	"quiz_reset": "Tyhjennä"
+	"quiz-desc": "Mahdollistaa kyselyiden luomisen.",
+	"quiz-added-points": "{{PLURAL:$1|Piste|Pisteitä}} lisätty oikeasta vastauksesta:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Piste|Pisteitä}} väärästä vastauksesta",
+	"quiz-ignore-coef": "Jätä huomioimatta kysymysten kertoimet",
+	"quiz-shuffle": "Sekoita kysymykset",
+	"quiz-legend-correct": "Oikein",
+	"quiz-legend-incorrect": "Väärin",
+	"quiz-legend-unanswered": "Vastaamatta",
+	"quiz-legend-error": "Jäsennysvirhe",
+	"quiz-correction": "Lähetä",
+	"quiz-score": "Tuloksesi on $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 piste|$2 pistettä}}",
+	"quiz-reset": "Tyhjennä"
 }

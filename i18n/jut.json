@@ -5,17 +5,17 @@
 			"Jyllanj"
 		]
 	},
-	"quiz_desc": "Tillæde oprettels å quizze",
-	"quiz_addedPoints": "Punkt(er) tilføjer før æ korrekt answer",
-	"quiz_cutoffPoints": "Punkt(er) subtraktet før æ fejl answer",
-	"quiz_ignoreCoef": "Ignoriir spöyrsmolens koefficientje",
-	"quiz_shuffle": "Blånj spöyrsmolen",
-	"quiz_legend_correct": "Rett",
-	"quiz_legend_incorrect": "Fejl",
-	"quiz_legend_unanswered": "Ett swaren",
-	"quiz_legend_error": "Syntaksfejl",
-	"quiz_correction": "Senj",
-	"quiz_score": "Din puntjsum ä $1 å $2 muli",
-	"quiz_points": "$1 | $2 punkt(er)",
-	"quiz_reset": "Nullstell"
+	"quiz-desc": "Tillæde oprettels å quizze",
+	"quiz-added-points": "Punkt(er) tilføjer før æ korrekt answer",
+	"quiz-cutoff-points": "Punkt(er) subtraktet før æ fejl answer",
+	"quiz-ignore-coef": "Ignoriir spöyrsmolens koefficientje",
+	"quiz-shuffle": "Blånj spöyrsmolen",
+	"quiz-legend-correct": "Rett",
+	"quiz-legend-incorrect": "Fejl",
+	"quiz-legend-unanswered": "Ett swaren",
+	"quiz-legend-error": "Syntaksfejl",
+	"quiz-correction": "Senj",
+	"quiz-score": "Din puntjsum ä $1 å $2 muli",
+	"quiz-points": "$1 | $2 punkt(er)",
+	"quiz-reset": "Nullstell"
 }

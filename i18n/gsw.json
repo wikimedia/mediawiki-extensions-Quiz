@@ -4,17 +4,17 @@
 			"Als-Holder"
 		]
 	},
-	"quiz_desc": "Macht s Aalege vu Quizspiiler megli",
-	"quiz_addedPoints": "{{PLURAL:$1|Punkt|Pinkt}} fir e richtigi Antwort",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Minuspunkt|Minuspinkt}} fir e falschi Antwort",
-	"quiz_ignoreCoef": "Ignorier dr Froge-Koeffizient",
-	"quiz_shuffle": "Froge mischle",
-	"quiz_legend_correct": "Richtig",
-	"quiz_legend_incorrect": "Falsch",
-	"quiz_legend_unanswered": "Kei Antwort gee",
-	"quiz_legend_error": "Syntaxfähler",
-	"quiz_correction": "Korrektur",
-	"quiz_score": "Pinkt: $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 Punkt|$2 Pinkt}}",
-	"quiz_reset": "Nejstart"
+	"quiz-desc": "Macht s Aalege vu Quizspiiler megli",
+	"quiz-added-points": "{{PLURAL:$1|Punkt|Pinkt}} fir e richtigi Antwort",
+	"quiz-cutoff-points": "{{PLURAL:$1|Minuspunkt|Minuspinkt}} fir e falschi Antwort",
+	"quiz-ignore-coef": "Ignorier dr Froge-Koeffizient",
+	"quiz-shuffle": "Froge mischle",
+	"quiz-legend-correct": "Richtig",
+	"quiz-legend-incorrect": "Falsch",
+	"quiz-legend-unanswered": "Kei Antwort gee",
+	"quiz-legend-error": "Syntaxfähler",
+	"quiz-correction": "Korrektur",
+	"quiz-score": "Pinkt: $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 Punkt|$2 Pinkt}}",
+	"quiz-reset": "Nejstart"
 }

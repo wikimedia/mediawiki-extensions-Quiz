@@ -5,8 +5,8 @@
 			"VASANTH S.N."
 		]
 	},
-	"quiz_legend_correct": "ಸರಿ",
-	"quiz_legend_incorrect": "ತಪ್ಪು",
-	"quiz_correction": "ಒಪ್ಪಿಸು",
-	"quiz_reset": "ಮರುಹೊಂದಿಸು"
+	"quiz-legend-correct": "ಸರಿ",
+	"quiz-legend-incorrect": "ತಪ್ಪು",
+	"quiz-correction": "ಒಪ್ಪಿಸು",
+	"quiz-reset": "ಮರುಹೊಂದಿಸು"
 }

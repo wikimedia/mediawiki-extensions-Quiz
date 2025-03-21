@@ -4,17 +4,17 @@
 			"AmaryllisGardener"
 		]
 	},
-	"quiz_desc": "Allaes creation o quizzes",
-	"quiz_addedPoints": "{{PLURAL:$1|Point|Points}} addit for a correct answer",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Pynt|Pynts}} for a wrang answer",
-	"quiz_ignoreCoef": "Ignore the quaistiens' coefficients",
-	"quiz_shuffle": "Shuffle quaistiens",
-	"quiz_legend_correct": "Richt",
-	"quiz_legend_incorrect": "Wrang",
-	"quiz_legend_unanswered": "Nae answered",
-	"quiz_legend_error": "Syntax error",
-	"quiz_correction": "Submit",
-	"quiz_score": "Yer score is $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 pynt|$2 pynts}}",
-	"quiz_reset": "Reset"
+	"quiz-desc": "Allaes creation o quizzes",
+	"quiz-added-points": "{{PLURAL:$1|Point|Points}} addit for a correct answer",
+	"quiz-cutoff-points": "{{PLURAL:$1|Pynt|Pynts}} for a wrang answer",
+	"quiz-ignore-coef": "Ignore the quaistiens' coefficients",
+	"quiz-shuffle": "Shuffle quaistiens",
+	"quiz-legend-correct": "Richt",
+	"quiz-legend-incorrect": "Wrang",
+	"quiz-legend-unanswered": "Nae answered",
+	"quiz-legend-error": "Syntax error",
+	"quiz-correction": "Submit",
+	"quiz-score": "Yer score is $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 pynt|$2 pynts}}",
+	"quiz-reset": "Reset"
 }

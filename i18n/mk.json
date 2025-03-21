@@ -4,17 +4,17 @@
 			"Bjankuloski06"
 		]
 	},
-	"quiz_desc": "Овозможува создавање на квизови",
-	"quiz_addedPoints": "добивате {{PLURAL:$1|бод|бода}} за точен одговор:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Бод|Бода}} за погрешен одговор:",
-	"quiz_ignoreCoef": "Занемари ги коефициентите на прашањата:",
-	"quiz_shuffle": "Измешај ги прашањата",
-	"quiz_legend_correct": "Точно",
-	"quiz_legend_incorrect": "Погрешно",
-	"quiz_legend_unanswered": "Неодговорено",
-	"quiz_legend_error": "синтаксна грешка",
-	"quiz_correction": "Поднеси",
-	"quiz_score": "Вашето бодовно салдо изнесува $1 / $2",
-	"quiz_points": "$1 | {{PLURAL:$2|1 бод|$2 бода}}",
-	"quiz_reset": "Врати одново"
+	"quiz-desc": "Овозможува создавање на квизови",
+	"quiz-added-points": "добивате {{PLURAL:$1|бод|бода}} за точен одговор:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Бод|Бода}} за погрешен одговор:",
+	"quiz-ignore-coef": "Занемари ги коефициентите на прашањата:",
+	"quiz-shuffle": "Измешај ги прашањата",
+	"quiz-legend-correct": "Точно",
+	"quiz-legend-incorrect": "Погрешно",
+	"quiz-legend-unanswered": "Неодговорено",
+	"quiz-legend-error": "синтаксна грешка",
+	"quiz-correction": "Поднеси",
+	"quiz-score": "Вашето бодовно салдо изнесува $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 бод|$2 бода}}",
+	"quiz-reset": "Врати одново"
 }

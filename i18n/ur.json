@@ -5,15 +5,15 @@
 			"පසිඳු කාවින්ද"
 		]
 	},
-	"quiz_desc": "سوال نامے تیار کرنے کی سہولت دیتا ہے",
-	"quiz_addedPoints": "درست جواب کے لیے {{PLURAL:$1|مارک دیا گیا|مارکس دیے گئے}}",
-	"quiz_cutoffPoints": "غلط جواب کے لیے {{PLURAL:$1|مارک|مارکس}}",
-	"quiz_legend_correct": "حق",
-	"quiz_legend_incorrect": "غلط",
-	"quiz_legend_unanswered": "غیر مندرج جوابات",
-	"quiz_legend_error": "نحوی غلطی",
-	"quiz_correction": "روانہ کریں",
-	"quiz_score": "نتیجہ $1 / $2 ہے",
-	"quiz_points": "$1 | {{PLURAL:$2|1 مارک|$2 مارکس}}",
-	"quiz_reset": "دوبارہ مرتب کریں"
+	"quiz-desc": "سوال نامے تیار کرنے کی سہولت دیتا ہے",
+	"quiz-added-points": "درست جواب کے لیے {{PLURAL:$1|مارک دیا گیا|مارکس دیے گئے}}",
+	"quiz-cutoff-points": "غلط جواب کے لیے {{PLURAL:$1|مارک|مارکس}}",
+	"quiz-legend-correct": "حق",
+	"quiz-legend-incorrect": "غلط",
+	"quiz-legend-unanswered": "غیر مندرج جوابات",
+	"quiz-legend-error": "نحوی غلطی",
+	"quiz-correction": "روانہ کریں",
+	"quiz-score": "نتیجہ $1 / $2 ہے",
+	"quiz-points": "$1 | {{PLURAL:$2|1 مارک|$2 مارکس}}",
+	"quiz-reset": "دوبارہ مرتب کریں"
 }

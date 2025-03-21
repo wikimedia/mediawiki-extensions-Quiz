@@ -5,17 +5,17 @@
 			"Winston Sung"
 		]
 	},
-	"quiz_desc": "容許開小測題",
-	"quiz_addedPoints": "答啱而加咗嘅{{PLURAL:$1|分數}}：",
-	"quiz_cutoffPoints": "答錯而減咗嘅{{PLURAL:$1|分數}}：",
-	"quiz_ignoreCoef": "略過問題嘅系數",
-	"quiz_shuffle": "撈亂問題",
-	"quiz_legend_correct": "啱",
-	"quiz_legend_incorrect": "錯",
-	"quiz_legend_unanswered": "未答",
-	"quiz_legend_error": "語法錯咗",
-	"quiz_correction": "遞交",
-	"quiz_score": "你嘅分數係 $1 / $2",
-	"quiz_points": "$1 | $2 分",
-	"quiz_reset": "重設"
+	"quiz-desc": "容許開小測題",
+	"quiz-added-points": "答啱而加咗嘅{{PLURAL:$1|分數}}：",
+	"quiz-cutoff-points": "答錯而減咗嘅{{PLURAL:$1|分數}}：",
+	"quiz-ignore-coef": "略過問題嘅系數",
+	"quiz-shuffle": "撈亂問題",
+	"quiz-legend-correct": "啱",
+	"quiz-legend-incorrect": "錯",
+	"quiz-legend-unanswered": "未答",
+	"quiz-legend-error": "語法錯咗",
+	"quiz-correction": "遞交",
+	"quiz-score": "你嘅分數係 $1 / $2",
+	"quiz-points": "$1 | $2 分",
+	"quiz-reset": "重設"
 }

@@ -5,17 +5,17 @@
 			"Psubhashish"
 		]
 	},
-	"quiz_desc": "ପ୍ରଶ୍ନୋତ୍ତର ତିଆରି କରିବାରେ ସହଯୋଗ କରିଥାଏ ।",
-	"quiz_addedPoints": "ଠିକ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟି ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}} ଯୋଡ଼ାଗଲା",
-	"quiz_cutoffPoints": "ଭୁଲ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟିଏ ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}}",
-	"quiz_ignoreCoef": "ପ୍ରଶ୍ନର ଗୁଣାଙ୍କସବୁକୁ ଅଣଦେଖା କରନ୍ତୁ",
-	"quiz_shuffle": "ପ୍ରଶ୍ନ ସବୁକୁ ଗୋଳାଇଘାଣ୍ଟି ଦିଅନ୍ତୁ",
-	"quiz_legend_correct": "ଠିକ",
-	"quiz_legend_incorrect": "ଭୁଲ",
-	"quiz_legend_unanswered": "ଉତ୍ତର ଦିଆଯାଇନାହିଁ",
-	"quiz_legend_error": "ସିଣ୍ଟାକ୍ସ ଭୁଲ",
-	"quiz_correction": "ଦାଖଲ କରିବା",
-	"quiz_score": "ଆପଣଙ୍କର ସ୍କୋର $1 / $2 ହେଲା",
-	"quiz_points": "$1 | {{PLURAL:$2|ଗୋଟିଏ ପଏଣ୍ଟ|$2 ଗୋଟି ପଏଣ୍ଟ}}",
-	"quiz_reset": "ପୁନସ୍ଥାପନ"
+	"quiz-desc": "ପ୍ରଶ୍ନୋତ୍ତର ତିଆରି କରିବାରେ ସହଯୋଗ କରିଥାଏ ।",
+	"quiz-added-points": "ଠିକ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟି ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}} ଯୋଡ଼ାଗଲା",
+	"quiz-cutoff-points": "ଭୁଲ ଉତ୍ତର ନିମନ୍ତେ {{PLURAL:$1|ଗୋଟିଏ ପଏଣ୍ଟ|ଗୋଟି ପଏଣ୍ଟ}}",
+	"quiz-ignore-coef": "ପ୍ରଶ୍ନର ଗୁଣାଙ୍କସବୁକୁ ଅଣଦେଖା କରନ୍ତୁ",
+	"quiz-shuffle": "ପ୍ରଶ୍ନ ସବୁକୁ ଗୋଳାଇଘାଣ୍ଟି ଦିଅନ୍ତୁ",
+	"quiz-legend-correct": "ଠିକ",
+	"quiz-legend-incorrect": "ଭୁଲ",
+	"quiz-legend-unanswered": "ଉତ୍ତର ଦିଆଯାଇନାହିଁ",
+	"quiz-legend-error": "ସିଣ୍ଟାକ୍ସ ଭୁଲ",
+	"quiz-correction": "ଦାଖଲ କରିବା",
+	"quiz-score": "ଆପଣଙ୍କର ସ୍କୋର $1 / $2 ହେଲା",
+	"quiz-points": "$1 | {{PLURAL:$2|ଗୋଟିଏ ପଏଣ୍ଟ|$2 ଗୋଟି ପଏଣ୍ଟ}}",
+	"quiz-reset": "ପୁନସ୍ଥାପନ"
 }

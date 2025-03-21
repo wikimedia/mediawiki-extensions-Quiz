@@ -7,17 +7,17 @@
 			"Saederup92"
 		]
 	},
-	"quiz_desc": "Tillader oprettelse af quizzer",
-	"quiz_addedPoints": "{{PLURAL:$1|Point|point}} for korrekt svar:",
-	"quiz_cutoffPoints": "{{PLURAL:$1|Point|Point}} for forkert svar:",
-	"quiz_ignoreCoef": "Ignorer spørgsmålenes koefficienter",
-	"quiz_shuffle": "Bland spørgsmålene",
-	"quiz_legend_correct": "Ret",
-	"quiz_legend_incorrect": "Fejl",
-	"quiz_legend_unanswered": "Ikke svared",
-	"quiz_legend_error": "syntaksfejl",
-	"quiz_correction": "Send",
-	"quiz_score": "Din pointsum er $1 af $2 mulige",
-	"quiz_points": "$1 | $2 {{PLURAL:$2|point|point}}",
-	"quiz_reset": "Nulstil"
+	"quiz-desc": "Tillader oprettelse af quizzer",
+	"quiz-added-points": "{{PLURAL:$1|Point|point}} for korrekt svar:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Point|Point}} for forkert svar:",
+	"quiz-ignore-coef": "Ignorer spørgsmålenes koefficienter",
+	"quiz-shuffle": "Bland spørgsmålene",
+	"quiz-legend-correct": "Ret",
+	"quiz-legend-incorrect": "Fejl",
+	"quiz-legend-unanswered": "Ikke svared",
+	"quiz-legend-error": "syntaksfejl",
+	"quiz-correction": "Send",
+	"quiz-score": "Din pointsum er $1 af $2 mulige",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|point|point}}",
+	"quiz-reset": "Nulstil"
 }
