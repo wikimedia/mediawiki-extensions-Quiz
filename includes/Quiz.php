@@ -381,12 +381,10 @@ class Quiz {
 
 		$this->mQuestionId++;
 
+		// Calling singleChoiceParseObject, multipleChoiceParseObject and textFieldParseObject
+		$method = $question->mType . 'ParseObject';
 		// This will generate the answers HTML code
-		$answers = call_user_func(
-			// Calling singleChoiceParseObject, multipleChoiceParseObject and textFieldParseObject
-			[ $question, $question->mType . 'ParseObject' ],
-			$matches[3]
-		);
+		$answers = $question->$method( $matches[3] );
 
 		// Set default table title and style
 
