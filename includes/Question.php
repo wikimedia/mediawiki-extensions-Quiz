@@ -202,25 +202,23 @@ class Question {
 	}
 
 	/**
-	 * Transmit a single choice object to the basic type parser.
+	 * Convert a question object to HTML.
 	 *
 	 * @param string $input A question object in quiz syntax.
 	 *
 	 * @return string A question object in HTML.
 	 */
-	public function singleChoiceParseObject( $input ) {
-		return $this->basicTypeParseObject( $input, 'radio' );
-	}
-
-	/**
-	 * Transmit a multiple choice object to the basic type parser.
-	 *
-	 * @param string $input A question object in quiz syntax.
-	 *
-	 * @return string A question object in HTML.
-	 */
-	public function multipleChoiceParseObject( $input ) {
-		return $this->basicTypeParseObject( $input, 'checkbox' );
+	public function parseObject( string $input ): string {
+		switch ( $this->mType ) {
+			case 'singleChoice':
+				return $this->basicTypeParseObject( $input, 'radio' );
+			case 'multipleChoice':
+				return $this->basicTypeParseObject( $input, 'checkbox' );
+			case 'textField':
+				return $this->textFieldParseObject( $input );
+			default:
+				throw new UnexpectedValueException( "Invalid type '{$this->mType}'" );
+		}
 	}
 
 	/**
@@ -463,7 +461,7 @@ class Question {
 	 *
 	 * @return string A question object in HTML.
 	 */
-	public function textFieldParseObject( $input ) {
+	private function textFieldParseObject( $input ) {
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
 		global $wqInputId;
 		$wqInputId = $this->mQuestionId * 100;
