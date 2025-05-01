@@ -13,7 +13,7 @@
 	"quiz-legend-correct": "শুদ্ধ",
 	"quiz-legend-incorrect": "ভুল",
 	"quiz-legend-unanswered": "উত্তৰ দিয়া হোৱা নাই",
-	"quiz-legend-error": "চীন্‌টেক্স ত্ৰুটি",
+	"quiz-legend-error": "শব্দবিন্যাস ত্ৰুটি",
 	"quiz-correction": "দাখিল কৰক",
 	"quiz-score": "আপোনাৰ নম্বৰ $1 / $2",
 	"quiz-points": "$1 | {{PLURAL:$2|1 পইণ্ট|$2 পইণ্ট}}",
