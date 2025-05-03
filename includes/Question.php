@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\Quiz;
 
+use MediaWiki\Html\Html;
 use MediaWiki\Html\TemplateParser;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
-use MediaWiki\Xml\Xml;
 use UnexpectedValueException;
 
 class Question {
@@ -255,7 +255,6 @@ class Question {
 				$typeId .= array_key_exists( 1, $matches ) ? 'c' : 'n';
 				foreach ( $matches as $signId => $sign ) {
 					$attribs = [];
-					$attribs['type'] = $inputType;
 					$attribs['class'] = 'check';
 					// Determine the input's name and value.
 					switch ( $typeId ) {
@@ -328,7 +327,7 @@ class Question {
 							break;
 					}
 					$signesOutput .= '<td class="sign">';
-					$signesOutput .= Xml::input( $name, false, $value, $attribs );
+					$signesOutput .= Html::input( $name, $value, $inputType, $attribs );
 					$signesOutput .= '</td>';
 				}
 				if ( $typeId == 'sc' ) {
@@ -411,11 +410,9 @@ class Question {
 		}
 		$orderName = $this->mQuestionId . '|order';
 		$orderValue = $order;
-		$attribs['hidden'] = 'hidden';
-		$attribs['checked'] = 'checked';
 
 		return $this->shuffleAnswers
-			? Xml::input( $orderName, false, $orderValue, $attribs ) . $output
+			? Html::input( $orderName, $orderValue, 'hidden' ) . $output
 			: $output;
 	}
 
