@@ -67,7 +67,9 @@ class QuestionTest extends QuizTestCase {
 			[ '0', [ '|type="{}"', 'type="{}"' ], [ 'textField', '1' ] ],
 			[ '1', [ '|type="{}"', 'type="{}"' ], [ 'textField', '1' ] ],
 			[ '0', [ '|type="()" coef="2"', 'type="()" coef="2"' ], [ 'singleChoice', '2' ] ],
-			[ '1', [ '|type="()" coef="2"', 'type="()" coef="2"' ], [ 'singleChoice', '2' ] ]
+			[ '1', [ '|type="()" coef="2"', 'type="()" coef="2"' ], [ 'singleChoice', '2' ] ],
+			[ '0', [ '|type="V"', 'type="V"' ], [ 'dropdown', '1' ] ],
+			[ '1', [ '|type="V"', 'type="V"' ], [ 'dropdown', '1' ] ],
 		];
 	}
 

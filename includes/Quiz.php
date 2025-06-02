@@ -349,7 +349,7 @@ class Quiz {
 			->onQuizQuestionCreated( $this, $question );
 
 		// gets the question text
-		$questionText = $question->parseHeader( $matches[1] );
+		$questionText = $question->parseHeader( $matches[1] );;
 
 		/*
 			What is this block of code?

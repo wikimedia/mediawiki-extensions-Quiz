@@ -146,6 +146,9 @@ class Question {
 		if ( preg_match( $typePattern, $matches[1], $type ) ) {
 			// List of all object type code and the correspondant question type.
 			switch ( $type[1] ) {
+				case 'V':
+					$this->mType = 'dropdown';
+					break;
 				case '{}':
 					$this->mType = 'textField';
 					break;
@@ -217,15 +220,10 @@ class Question {
 				return $this->basicTypeParseObject( $input, 'radio' );
 			case 'multipleChoice':
 				return $this->basicTypeParseObject( $input, 'checkbox' );
+			case 'dropdown':
+				return $this->dropdownParseObject( $input );
 			case 'textField':
-				// POZ: Check if this is a dropdown question by looking at the first line
-				$firstLine = strtok( $input, "\n" );
-				if ( preg_match( '`\|?([^\|]+\|)+`', $firstLine ) ) {
-					return $this->dropdownParseObject( $input );
-				} else {
-					// Standard text field
-					return $this->textFieldParseObject( $input );
-				}
+				return $this->textFieldParseObject( $input );
 			default:
 				throw new UnexpectedValueException( "Invalid type '{$this->mType}'" );
 		}
