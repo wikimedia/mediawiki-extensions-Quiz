@@ -96,7 +96,7 @@ class QuizTest extends MediaWikiLangTestCase {
 			 . "\n\t\t" . '<td><input class="numerical" type="number" ' .
 			 'name="cutoffPoints" id="cutoffPoints" value="-1"/></td>' . "\n\t" .
 			 '</tr>' . "\n\t" . '<tr>' . "\n\t\t" . '<td><label for="ignoringCoef">'
-			 . 'Ignore the questions' . "'" . ' coefficients:</label></td>'
+			 . 'Ignore the questions&#039; coefficients:</label></td>'
 			 . "\n\t\t" . '<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef" ' .
 			 'checked="checked"/></td>' . "\n\t" .
 			 '</tr>' . "\n\t" . '<tr>' . "\n\t\t\t\t\t"
@@ -119,8 +119,7 @@ class QuizTest extends MediaWikiLangTestCase {
 			 ' value="0"/></td>' . "\n\t\t" . '<td class="margin incorrect"></td>' . "\n\t\t"
 			 . '<td style="background: transparent;">Incorrect</td>' . "\n\t" . '</tr>'
 			 . "\n\t" . '<tr>' . "\n\t\t" .
-			 '<td><label for="ignoringCoef">Ignore the questions'
-			 . "'" . ' coefficients:</label></td>'
+			 '<td><label for="ignoringCoef">Ignore the questions&#039; coefficients:</label></td>'
 			 . "\n\t\t" . '<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef"' .
 			 ' checked="checked"/></td>' . "\n\t\t" .
 			 '<td class="margin NA"></td>' . "\n\t\t" .
