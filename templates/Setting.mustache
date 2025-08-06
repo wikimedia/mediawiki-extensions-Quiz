@@ -1,8 +1,8 @@
 {{# isSettingFirstRow}}
 	<tr>
 	{{# notSimple}}
-		<td><label for="addedPoints">{{ wfMessage.quiz_added }}</label></td>
-		<td><input class="numerical" type="number" name="addedPoints" id="addedPoints" value="{{ mAddedPoints }}"/>&#160;&#160;</td>
+		<td><label for="addedPoints{{ quizId }}">{{ wfMessage.quiz_added }}</label></td>
+		<td><input class="numerical" type="number" name="addedPoints" id="addedPoints{{ quizId }}" value="{{ mAddedPoints }}"/>&#160;&#160;</td>
 	{{/ notSimple}}
 	{{# corrected}}
 		<td class="margin correct"></td>
@@ -19,8 +19,8 @@
 {{# isSettingOtherRow}}
 	<tr>
 	{{# notSimple}}
-		<td><label for="cutoffPoints">{{ wfMessage.quiz_cutoff }}</label></td>
-		<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints" value="{{ mCutoffPoints }}"/></td>
+		<td><label for="cutoffPoints{{ quizId }}">{{ wfMessage.quiz_cutoff }}</label></td>
+		<td><input class="numerical" type="number" name="cutoffPoints" id="cutoffPoints{{ quizId }}" value="{{ mCutoffPoints }}"/></td>
 	{{/ notSimple}}
 	{{# corrected}}
 		<td class="margin incorrect"></td>
@@ -31,8 +31,8 @@
 {{# isSettingOtherRow}}
 	<tr>
 	{{# notSimple}}
-		<td><label for="ignoringCoef">{{ wfMessage.quiz_ignoreCoef }}</label></td>
-		<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef" {{{ checked }}}/></td>
+		<td><label for="ignoringCoef{{ quizId }}">{{ wfMessage.quiz_ignoreCoef }}</label></td>
+		<td><input type="checkbox" name="ignoringCoef" id="ignoringCoef{{ quizId }}" {{{ checked }}}/></td>
 	{{/ notSimple}}
 	{{# corrected}}
 		<td class="margin NA"></td>

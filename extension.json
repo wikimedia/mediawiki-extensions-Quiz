@@ -33,8 +33,7 @@
 		"remoteExtPath": "Quiz/modules"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "main",
-		"ParserAfterTidy": "main"
+		"ParserFirstCallInit": "main"
 	},
 	"HookHandlers": {
 		"main": {

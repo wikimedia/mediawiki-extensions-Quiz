@@ -2,13 +2,11 @@
 
 namespace MediaWiki\Extension\Quiz;
 
-use MediaWiki\Hook\ParserAfterTidyHook;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 
 class Hooks implements
-	ParserFirstCallInitHook,
-	ParserAfterTidyHook
+	ParserFirstCallInitHook
 {
 
 	/**
@@ -35,11 +33,4 @@ class Hooks implements
 		return $quiz->parseQuiz( $input );
 	}
 
-	/**
-	 * @param Parser $parser
-	 * @param string &$text
-	 */
-	public function onParserAfterTidy( $parser, &$text ) {
-		Quiz::resetQuizID();
-	}
 }

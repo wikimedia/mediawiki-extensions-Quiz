@@ -81,8 +81,7 @@ class Quiz {
 		$this->mParser = $parser;
 		$this->mRequest = $wgRequest;
 		// Allot a unique identifier to the quiz.
-		$this->mQuizId = $this->getQuizId();
-		self::$sQuizId++;
+		$this->mQuizId = self::$sQuizId++;
 		// Reset the unique identifier of the questions.
 		$this->mQuestionId = 0;
 		// Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
@@ -143,17 +142,6 @@ class Quiz {
 		$this->mIncludePattern = '`^\{\{:?(.*)\}\}[ \t]*`m';
 	}
 
-	public static function resetQuizID() {
-		self::$sQuizId = 0;
-	}
-
-	/**
-	 * @return int Quiz Id
-	 */
-	public function getQuizId() {
-		return self::$sQuizId;
-	}
-
 	/**
 	 * Get HTML from template using TemplateParser
 	 *
@@ -165,6 +153,7 @@ class Quiz {
 		$settingsTable = $templateParser->processTemplate(
 			'Setting',
 			[
+				'quizId' => $this->mQuizId,
 				'isSettingFirstRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ||
 					$this->mState === 'error' ),
 				'isSettingOtherRow' => ( !$this->mDisplaySimple || $this->mBeingCorrected ),
@@ -201,11 +190,8 @@ class Quiz {
 	 * @return string
 	 */
 	public function parseQuiz( $input ) {
-		// Output the style and the script to the header once for all.
-		if ( $this->mQuizId == 0 ) {
-			$this->mParser->getOutput()->addModules( [ 'ext.quiz' ] );
-			$this->mParser->getOutput()->addModuleStyles( [ 'ext.quiz.styles' ] );
-		}
+		$this->mParser->getOutput()->addModules( [ 'ext.quiz' ] );
+		$this->mParser->getOutput()->addModuleStyles( [ 'ext.quiz.styles' ] );
 
 		if ( $input === null ) {
 			return '';
