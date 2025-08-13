@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"H78c67c",
-			"Winston Sung"
+			"Winston Sung",
+			"Yueman"
 		]
 	},
 	"quiz-desc": "容許開小測題",
@@ -16,6 +17,6 @@
 	"quiz-legend-error": "語法錯咗",
 	"quiz-correction": "遞交",
 	"quiz-score": "你嘅分數係 $1 / $2",
-	"quiz-points": "$1 | $2 分",
+	"quiz-points": "$1 | {{PLURAL:$2|1 分|$2 分}}",
 	"quiz-reset": "重設"
 }
