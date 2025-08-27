@@ -10,8 +10,8 @@
 		]
 	},
 	"quiz-desc": "允許建立小測驗題目",
-	"quiz-added-points": "答對得到的{{PLURAL:$1|分數|分數}}：",
-	"quiz-cutoff-points": "錯誤答案減少的{{PLURAL:$1|分數|分數}}：",
+	"quiz-added-points": "答對得到的{{PLURAL:$1|分數}}：",
+	"quiz-cutoff-points": "答錯的{{PLURAL:$1|分數}}：",
 	"quiz-ignore-coef": "忽略問題的係數：",
 	"quiz-shuffle": "隨機問題",
 	"quiz-legend-correct": "對",
@@ -20,6 +20,6 @@
 	"quiz-legend-error": "語法錯誤",
 	"quiz-correction": "送出",
 	"quiz-score": "您的分數是 $1 / $2",
-	"quiz-points": "$1 | $2 分",
+	"quiz-points": "$1 | {{PLURAL:$2|1|$2}} 分",
 	"quiz-reset": "重設"
 }
