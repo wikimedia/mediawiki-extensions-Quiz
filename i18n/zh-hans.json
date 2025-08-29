@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gaoxuewei",
+			"GuoPC",
 			"Hanyanbo98",
 			"Liuxinyu970226",
 			"PhiLiP"
@@ -18,6 +19,6 @@
 	"quiz-legend-error": "语法错误",
 	"quiz-correction": "递交",
 	"quiz-score": "您的分数是 $1 / $2",
-	"quiz-points": "$1 | $2 分",
+	"quiz-points": "$1 | $2 {{PLURAL:$2|分}}",
 	"quiz-reset": "重置"
 }
