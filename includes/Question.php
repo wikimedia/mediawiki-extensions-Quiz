@@ -16,6 +16,8 @@ class Question {
 	/** @var int */
 	private $mQuestionId;
 
+	private int $inputId;
+
 	/** @var bool */
 	private $mBeingCorrected;
 
@@ -460,8 +462,7 @@ class Question {
 	 */
 	private function textFieldParseObject( $input ) {
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
-		global $wqInputId;
-		$wqInputId = $this->mQuestionId * 100;
+		$this->inputId = $this->mQuestionId * 100;
 		$output = '';
 		foreach ( $raws as $raw ) {
 			if ( preg_match( $this->mCorrectionPattern, $raw, $matches ) ) {
@@ -496,8 +497,7 @@ class Question {
 	 * @return string
 	 */
 	private function parseTextField( $input ) {
-		global $wqInputId;
-		$wqInputId++;
+		++$this->inputId;
 		$title = '';
 		$state = '';
 		$spanClass = '';
@@ -531,7 +531,7 @@ class Question {
 			$bigDisplay = 'display: none';
 			if ( $this->mBeingCorrected ) {
 				// @phan-suppress-next-line PhanTypeMismatchArgument
-				$value = trim( $this->mRequest->getVal( $wqInputId, '' ) );
+				$value = trim( $this->mRequest->getVal( $this->inputId, '' ) );
 				$state = 'NA';
 				$title = wfMessage( 'quiz-legend-unanswered' )->escaped();
 			}
@@ -627,7 +627,6 @@ class Question {
 				$title = wfMessage( 'quiz-legend-error' )->escaped();
 			}
 		}
-		$name = $wqInputId;
 		return $templateParser->processTemplate(
 			'Answer',
 			[
@@ -641,7 +640,7 @@ class Question {
 				'size' => $size,
 				'big' => $big,
 				'maxlength' => $maxlength,
-				'name' => $name,
+				'name' => $this->inputId,
 				'bigDisplay' => $bigDisplay,
 			]
 		);

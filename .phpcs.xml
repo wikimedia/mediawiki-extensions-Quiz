@@ -4,9 +4,4 @@
 	<file>.</file>
 	<arg name="extensions" value="php" />
 	<arg name="encoding" value="UTF-8" />
-	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
-		<properties>
-			<property name="ignoreList" type="array" value="$wqInputId" />
-		</properties>
-	</rule>
 </ruleset>

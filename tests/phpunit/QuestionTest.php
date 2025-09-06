@@ -282,6 +282,7 @@ class QuestionTest extends QuizTestCase {
 	public function testParseTextField( $number, $beingCorrected, $input, $expected, $requestValue ) {
 		$this->question = $this->getQuestion( $beingCorrected, 1, 2 );
 		$this->question->mRequest->setVal( $number, $requestValue );
+		$this->question->inputId = $number - 1;
 		$output = $this->question->parseTextField( $input );
 		$this->assertEquals( $expected, $output );
 	}
