@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"quiz-desc": "Erméiglecht et Quizzer ze maachen",
@@ -16,5 +17,5 @@
 	"quiz-correction": "Verbesserung",
 	"quiz-score": "Punkten: $1 / $2",
 	"quiz-points": "$1 | {{PLURAL:$2|1 Punkt|$2 Punkten}}",
-	"quiz-reset": "Zrécksetzen"
+	"quiz-reset": "Zerécksetzen"
 }
