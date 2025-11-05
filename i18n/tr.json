@@ -5,12 +5,13 @@
 			"Erkan Yilmaz",
 			"Joseph",
 			"MuratTheTurkish",
-			"Runningfridgesrule"
+			"Runningfridgesrule",
+			"SaldırganSincap"
 		]
 	},
 	"quiz-desc": "Sınav oluşturulmasına izin verir",
-	"quiz-added-points": "{{PLURAL:$1|Puan|Puan}} doğru cevap için eklendi:",
-	"quiz-cutoff-points": "{{PLURAL:$1|Puan|Puan}} yanlış cevap için:",
+	"quiz-added-points": "Doğru cevap için {{PLURAL:$1|puan|puanlar}} eklendi:",
+	"quiz-cutoff-points": "Yanlış cevap için {{PLURAL:$1|puan|puanlar}}:",
 	"quiz-ignore-coef": "Soruların katsayısını ihmal et:",
 	"quiz-shuffle": "Soruları karıştır",
 	"quiz-legend-correct": "Doğru",
