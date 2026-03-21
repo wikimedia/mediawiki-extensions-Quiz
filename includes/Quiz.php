@@ -2,6 +2,7 @@
 
 namespace MediaWiki\Extension\Quiz;
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\Quiz\Hooks\HookRunner;
 use MediaWiki\Html\TemplateParser;
 use MediaWiki\MediaWikiServices;
@@ -77,9 +78,8 @@ class Quiz {
 	 * @param Parser $parser
 	 */
 	public function __construct( $argv, Parser $parser ) {
-		global $wgRequest;
 		$this->mParser = $parser;
-		$this->mRequest = $wgRequest;
+		$this->mRequest = RequestContext::getMain()->getRequest();
 		// Allot a unique identifier to the quiz.
 		$this->mQuizId = self::$sQuizId++;
 		// Reset the unique identifier of the questions.
@@ -87,7 +87,7 @@ class Quiz {
 		// Reset the counter of div "shuffle" or "noshuffle" inside the quiz.
 		$this->mShuffleDiv = 0;
 		// Determine if this quiz is being corrected or not, according to the quizId
-		$this->mBeingCorrected = ( $wgRequest->getVal( 'quizId' ) == strval( $this->mQuizId ) );
+		$this->mBeingCorrected = ( $this->mRequest->getVal( 'quizId' ) == strval( $this->mQuizId ) );
 		// Initialize various parameters used for the score calculation
 		$this->mState = 'NA';
 		$this->numberQuestions = 0;
@@ -325,7 +325,8 @@ class Quiz {
 			$this->mCaseSensitive,
 			$this->mQuestionId,
 			$this->shuffleAnswers,
-			$this->mParser
+			$this->mParser,
+			$this->mRequest,
 		);
 		( new HookRunner( MediaWikiServices::getInstance()->getHookContainer() ) )
 			->onQuizQuestionCreated( $this, $question );

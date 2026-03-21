@@ -3,6 +3,7 @@
 namespace MediaWiki\Extension\Quiz\Tests;
 
 use MediaWiki\Extension\Quiz\Question;
+use MediaWiki\Request\FauxRequest;
 use Wikimedia\TestingAccessWrapper;
 
 /**
@@ -19,8 +20,9 @@ class QuestionTest extends QuizTestCase {
 	private function getQuestion( $beingCorrected, $caseSensitive, $questionId ) {
 		// Randomly generate shuffle parameter value
 		$shuffle = rand( 0, 100 ) % 2 == 0 ? 0 : 1;
+		$request = new FauxRequest();
 		return TestingAccessWrapper::newFromObject(
-			new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser )
+			new Question( $beingCorrected, $caseSensitive, $questionId, $shuffle, $this->parser, $request )
 		);
 	}
 
