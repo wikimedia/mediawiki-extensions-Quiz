@@ -9,7 +9,7 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
-use StringUtils;
+use Wikimedia\StringUtils\StringUtils;
 
 /**
  * Processes quiz markup

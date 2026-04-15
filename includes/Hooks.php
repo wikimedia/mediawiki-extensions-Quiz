@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\Quiz;
 
-use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 
 class Hooks implements
