@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"quiz-desc": "Waxay ogolaataa samaynta kedisyo",
+	"quiz-added-points": "{{PLURAL:$1|Dhibic|Dhibco}} lagu daray jawaabta saxda ah:",
+	"quiz-cutoff-points": "{{PLURAL:$1|Dhibic|Dhibco}} jawaabta khaldan:",
+	"quiz-ignore-coef": "Iska indhatir isku-dhacyada su'aalaha:",
+	"quiz-shuffle": "Isku qas su'aalaha",
+	"quiz-legend-correct": "Sax",
+	"quiz-legend-incorrect": "Khalad ah",
+	"quiz-legend-unanswered": "Lama jawaabin",
+	"quiz-legend-error": "Qalad naxwe",
+	"quiz-correction": "Gudbi",
+	"quiz-score": "Dhibcahaagu waa $1 / $2",
+	"quiz-points": "$1 | {{PLURAL:$2|1 dhibic|$2 dhibcood}}",
+	"quiz-reset": "Dib u deji"
+}
