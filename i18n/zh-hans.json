@@ -5,7 +5,8 @@
 			"GuoPC",
 			"Hanyanbo98",
 			"Liuxinyu970226",
-			"PhiLiP"
+			"PhiLiP",
+			"Pawsdt"
 		]
 	},
 	"quiz-desc": "允许创建测验",
@@ -17,7 +18,7 @@
 	"quiz-legend-incorrect": "不正确",
 	"quiz-legend-unanswered": "未回答",
 	"quiz-legend-error": "语法错误",
-	"quiz-correction": "递交",
+	"quiz-correction": "提交",
 	"quiz-score": "您的分数是 $1 / $2",
 	"quiz-points": "$1 | $2 {{PLURAL:$2|分}}",
 	"quiz-reset": "重置"
