@@ -36,14 +36,9 @@ class Question {
 	/** @var string */
 	private $mProposalPattern = '`^([+-]) ?(.*)`';
 
-	/** @var string */
-	private $mCorrectionPattern = '`^\|\|(.*)`';
-
-	/** @var string */
-	private $mCategoryPattern = '`^\|(\n|[^\|].*\n)`';
-
-	/** @var string */
-	private $mTextFieldPattern = '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
+	private const CORRECTION_PATTERN = '`^\|\|(.*)`';
+	private const CATEGORY_PATTERN = '`^\|(\n|[^\|].*\n)`';
+	private const TEXT_FIELD_PATTERN = '`\{ ([^\}]*?)(_([\d]*) ?| )\}`';
 
 	/** @var string */
 	public $mType = 'multipleChoice';
@@ -232,7 +227,7 @@ class Question {
 	 * @return string A question object in HTML.
 	 */
 	private function basicTypeParseObject( $input, $inputType ) {
-		$output = preg_match( $this->mCategoryPattern, $input, $matches )
+		$output = preg_match( self::CATEGORY_PATTERN, $input, $matches )
 			? $this->parseCategories( $matches[1] )
 			: '';
 		$raws = preg_split( '`\n`s', $input, -1, PREG_SPLIT_NO_EMPTY );
@@ -344,7 +339,7 @@ class Question {
 					$text = '???';
 					$this->setState( 'error' );
 				}
-			} elseif ( preg_match( $this->mCorrectionPattern, $raw, $matches ) &&
+			} elseif ( preg_match( self::CORRECTION_PATTERN, $raw, $matches ) &&
 				$this->mBeingCorrected
 			) {
 				$rawClass = $attemptChecker ? 'correction selected' : 'correction unselected';
@@ -465,7 +460,7 @@ class Question {
 		$this->inputId = $this->mQuestionId * 100;
 		$output = '';
 		foreach ( $raws as $raw ) {
-			if ( preg_match( $this->mCorrectionPattern, $raw, $matches ) ) {
+			if ( preg_match( self::CORRECTION_PATTERN, $raw, $matches ) ) {
 				if ( $this->mBeingCorrected ) {
 					$rawClass = 'correction';
 					$text = '<td>&#x2192; ' . $this->mParser->recursiveTagParse( $matches[1] ) .
@@ -477,7 +472,7 @@ class Question {
 				$rawClass = 'proposal';
 				$text = $this->mParser->recursiveTagParse( $raw );
 				$text = preg_replace_callback(
-					$this->mTextFieldPattern,
+					self::TEXT_FIELD_PATTERN,
 					[ $this, 'parseTextField' ],
 					$text
 				);
